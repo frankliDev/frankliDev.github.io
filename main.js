@@ -19055,12 +19055,12 @@ var HomeComponent = /* @__PURE__ */ (() => {
         logo: "chatGPT-logo.png",
         title: "Artificial Intelligence",
         descs: ["\u4EBA\u5DE5\u667A\u80FD\uFF0C\u82F1\u6587\u7F29\u5199\u4E3AAI\u3002\u5B83\u662F\u7814\u7A76\u3001\u5F00\u53D1\u7528\u4E8E\u6A21\u62DF\u3001\u5EF6\u4F38\u548C\u6269\u5C55\u4EBA\u7684\u667A\u80FD\u7684\u7406\u8BBA\u3001\u65B9\u6CD5\u3001\u6280\u672F\u53CA\u5E94\u7528\u7CFB\u7EDF\u7684\u4E00\u95E8\u65B0\u7684\u6280\u672F\u79D1\u5B66\u3002\u4EBA\u5DE5\u667A\u80FD\u662F\u65B0\u4E00\u8F6E\u79D1\u6280\u9769\u547D\u548C\u4EA7\u4E1A\u53D8\u9769\u7684\u91CD\u8981\u9A71\u52A8\u529B\u91CF\u3002", "\u76EE\u524D\u7684\u4EBA\u5DE5\u667A\u80FD\u6280\u672F\u5DF2\u7ECF\u53D1\u5C55\u5230 2.0 \u9636\u6BB5\uFF0C\u5373 AIGC\uFF08Artificial Intelligence Generated Content\uFF0C\u751F\u6210\u5F0F\u4EBA\u5DE5\u667A\u80FD\uFF09\u3002GAN\u3001CLIP\u3001Transformer\u3001Diffusion\u3001\u9884\u8BAD\u7EC3\u6A21\u578B\u3001\u591A\u6A21\u6001\u6280\u672F\u3001\u751F\u6210\u7B97\u6CD5\u7B49\u6280\u672F\u7684\u7D2F\u79EF\u878D\u5408\uFF0C\u50AC\u751F\u4E86AIGC\u7684\u7206\u53D1\u3002\u7B97\u6CD5\u4E0D\u65AD\u8FED\u4EE3\u521B\u65B0\u3001\u9884\u8BAD\u7EC3\u6A21\u578B\u5F15\u53D1AIGC\u6280\u672F\u80FD\u529B\u8D28\u53D8\uFF0C\u591A\u6A21\u6001\u63A8\u52A8AIGC\u5185\u5BB9\u591A\u8FB9\u5F62\uFF0C\u4F7F\u5F97AIGC\u5177\u6709\u66F4\u901A\u7528\u548C\u66F4\u5F3A\u7684\u57FA\u7840\u80FD\u529B\u3002", "\u6BD4\u8F83\u6D41\u884C\u7684 AIGC \u6A21\u578B\u4E3B\u8981\u6709\u56FD\u5916 OpenAI \u516C\u53F8\u53D1\u5E03\u7684 ChatGPT\u3001\u963F\u91CC\u4E91\u53D1\u5E03\u7684\u901A\u4E49\u5343\u95EE\u3001\u79D1\u5927\u8BAF\u98DE\u7684\u661F\u706B\u8BA4\u77E5\u3001\u767E\u5EA6\u7684\u6587\u5FC3\u4E00\u8A00\u7B49"],
-        url: "ai"
+        url: "/#/ai"
       }, {
         logo: "huawei-logo.png",
         title: "Harmony OS",
         descs: ["\u534E\u4E3A\u9E3F\u8499\u7CFB\u7EDF\uFF08HUAWEI Harmony OS\uFF09\uFF0C\u662F\u534E\u4E3A\u516C\u53F8\u57282019\u5E748\u67089\u65E5\u4E8E\u4E1C\u839E\u4E3E\u884C\u7684\u534E\u4E3A\u5F00\u53D1\u8005\u5927\u4F1A\uFF08HDC.2019\uFF09\u4E0A\u6B63\u5F0F\u53D1\u5E03\u7684\u64CD\u4F5C\u7CFB\u7EDF\u3002", "\u534E\u4E3A\u9E3F\u8499\u7CFB\u7EDF\u662F\u4E00\u6B3E\u5168\u65B0\u7684\u9762\u5411\u5168\u573A\u666F\u7684\u5206\u5E03\u5F0F\u64CD\u4F5C\u7CFB\u7EDF\uFF0C\u521B\u9020\u4E00\u4E2A\u8D85\u7EA7\u865A\u62DF\u7EC8\u7AEF\u4E92\u8054\u7684\u4E16\u754C\uFF0C\u5C06\u4EBA\u3001\u8BBE\u5907\u3001\u573A\u666F\u6709\u673A\u5730\u8054\u7CFB\u5728\u4E00\u8D77\uFF0C\u5C06\u6D88\u8D39\u8005\u5728\u5168\u573A\u666F\u751F\u6D3B\u4E2D\u63A5\u89E6\u7684\u591A\u79CD\u667A\u80FD\u7EC8\u7AEF\uFF0C\u5B9E\u73B0\u6781\u901F\u53D1\u73B0\u3001\u6781\u901F\u8FDE\u63A5\u3001\u786C\u4EF6\u4E92\u52A9\u3001\u8D44\u6E90\u5171\u4EAB\uFF0C\u7528\u5408\u9002\u7684\u8BBE\u5907\u63D0\u4F9B\u573A\u666F\u4F53\u9A8C\u3002", "2023\u5E748\u67084\u65E5\uFF0C\u534E\u4E3A\u9E3F\u84994\uFF08HarmonyOS 4\uFF09\u64CD\u4F5C\u7CFB\u7EDF\u6B63\u5F0F\u53D1\u5E03\u3002\u534E\u4E3A\u9E3F\u8499Next\uFF08HarmonyOS Next\uFF09\u64CD\u4F5C\u7CFB\u7EDF\u5F00\u53D1\u8005\u9884\u89C8\u7248(Developer Preview)\u53D1\u5E03\u3002", "\u9E3F\u8499\u64CD\u4F5C\u7CFB\u7EDF\u53EF\u4EE5\u6EE1\u8DB3\u5927\u5927\u5C0F\u5C0F\u6240\u6709\u8BBE\u5907\u7684\u9700\u6C42\uFF0C\u5C0F\u5230\u8033\u673A\uFF0C\u5927\u5230\u8F66\u673A\uFF0C\u667A\u6167\u5C4F\uFF0C\u624B\u673A\u7B49\uFF0C\u8BA9\u4E0D\u540C\u8BBE\u5907\u4F7F\u7528\u540C\u4E00\u8BED\u8A00\u65E0\u7F1D\u6C9F\u901A\u3002"],
-        url: "harmonyos"
+        url: "/#/harmonyos"
       }];
     }
   };
@@ -19072,7 +19072,7 @@ var HomeComponent = /* @__PURE__ */ (() => {
     selectors: [["app-home"]],
     decls: 21,
     vars: 1,
-    consts: [[1, "box"], [1, "container-fluid", "p-5", "slogan-box"], [1, "row"], [1, "col-4"], [1, "col", "text-center", "text-white", "fw-bold"], [1, "pt-5", "pb-4", "slogan"], [2, "border-bottom", "solid 1px gray"], [1, "pt-4", "pb-5", "slogan"], [1, "fw-normal", "pt-4", "fs-5", "text-light"], [1, "px-2", "text-warning"], [1, "text-warning", "px-2"], [1, "container-fluid", "p-5", "sections"], [1, "row", "justify-content-evenly"], ["class", "col-5 text-light section", 4, "ngFor", "ngForOf"], [1, "col-5", "text-light", "section"], [1, "text-center", "mb-5", "fs-1", "fw-bold"], [1, "logo", "me-3"], ["class", "lead text-secondary", 4, "ngFor", "ngForOf"], [1, "text-center", "mt-5"], ["type", "button", 1, "btn", "btn-primary", "px-5", "py-2", "fs-5", "rounded-5"], [1, "lead", "text-secondary"]],
+    consts: [[1, "box", "pt-5"], [1, "container-fluid", "p-5", "slogan-box"], [1, "row"], [1, "col-4"], [1, "col", "text-center", "text-white", "fw-bold"], [1, "pt-5", "pb-4", "slogan"], [2, "border-bottom", "solid 1px gray"], [1, "pt-4", "pb-5", "slogan"], [1, "fw-normal", "pt-4", "fs-5", "text-light"], [1, "px-2", "text-warning"], [1, "text-warning", "px-2"], [1, "container-fluid", "p-5", "sections"], [1, "row", "justify-content-evenly"], ["class", "col-5 text-light section", 4, "ngFor", "ngForOf"], [1, "col-5", "text-light", "section"], [1, "text-center", "mb-5", "fs-1", "fw-bold"], [1, "logo", "me-3"], ["class", "text-secondary", 4, "ngFor", "ngForOf"], [1, "text-center", "mt-5"], ["type", "button", 1, "btn", "btn-primary", "px-5", "py-2", "fs-5", "rounded-5"], [1, "text-secondary"]],
     template: function HomeComponent_Template(rf, ctx) {
       if (rf & 1) {
         \u0275\u0275elementStart(0, "div", 0)(1, "div", 1)(2, "div", 2);
@@ -19105,7 +19105,7 @@ var HomeComponent = /* @__PURE__ */ (() => {
       }
     },
     dependencies: [NgForOf],
-    styles: ['\n\n.box[_ngcontent-%COMP%] {\n  background-color: rgb(1, 4, 9);\n}\n.box[_ngcontent-%COMP%]   .slogan-box[_ngcontent-%COMP%] {\n  background-image: url("./media/slogan_bg.jpg");\n  background-repeat: no-repeat;\n  background-position: center;\n  background-clip: border-box;\n  background-size: cover;\n}\n.box[_ngcontent-%COMP%]   .slogan-box[_ngcontent-%COMP%]   .slogan[_ngcontent-%COMP%] {\n  font-size: 3rem;\n  font-weight: 700;\n}\n.box[_ngcontent-%COMP%]   .slogan-box[_ngcontent-%COMP%]   .desc[_ngcontent-%COMP%] {\n  font-size: 1.5rem;\n  color: #ccc;\n}\n.box[_ngcontent-%COMP%]   .sections[_ngcontent-%COMP%]   .section[_ngcontent-%COMP%]   .logo[_ngcontent-%COMP%] {\n  height: 4rem;\n  width: auto;\n}\n/*# sourceMappingURL=data:application/json;base64,ewogICJ2ZXJzaW9uIjogMywKICAic291cmNlcyI6IFsic3JjL2FwcC9ob21lL2hvbWUuY29tcG9uZW50LnNjc3MiXSwKICAic291cmNlc0NvbnRlbnQiOiBbIi5ib3gge1xuICAgIGJhY2tncm91bmQtY29sb3I6IHJnYigxLCA0LCA5KTtcblxuICAgIC5zbG9nYW4tYm94IHtcbiAgICAgICAgYmFja2dyb3VuZC1pbWFnZTogdXJsKCcuLi8uLi9hc3NldHMvaW1nL3Nsb2dhbl9iZy5qcGcnKTtcbiAgICAgICAgYmFja2dyb3VuZC1yZXBlYXQ6IG5vLXJlcGVhdDtcbiAgICAgICAgYmFja2dyb3VuZC1wb3NpdGlvbjogY2VudGVyO1xuICAgICAgICBiYWNrZ3JvdW5kLWNsaXA6IGJvcmRlci1ib3g7XG4gICAgICAgIGJhY2tncm91bmQtc2l6ZTogY292ZXI7XG5cbiAgICAgICAgLnNsb2dhbiB7XG4gICAgICAgICAgICBmb250LXNpemU6IDNyZW07XG4gICAgICAgICAgICBmb250LXdlaWdodDogNzAwO1xuICAgICAgICB9XG5cbiAgICAgICAgLmRlc2Mge1xuICAgICAgICAgICAgZm9udC1zaXplOiAxLjVyZW07XG4gICAgICAgICAgICBjb2xvcjogI2NjYztcbiAgICAgICAgfVxuICAgIH1cblxuICAgIC5zZWN0aW9ucyB7XG4gICAgICAgIC5zZWN0aW9uIHtcbiAgICAgICAgICAgIC5sb2dvIHtcbiAgICAgICAgICAgICAgICBoZWlnaHQ6IDRyZW07XG4gICAgICAgICAgICAgICAgd2lkdGg6IGF1dG87XG4gICAgICAgICAgICB9XG4gICAgICAgIH1cbiAgICB9XG5cbn0iXSwKICAibWFwcGluZ3MiOiAiO0FBQUEsQ0FBQTtBQUNJLG9CQUFBLElBQUEsQ0FBQSxFQUFBLENBQUEsRUFBQTs7QUFFQSxDQUhKLElBR0ksQ0FBQTtBQUNJLG9CQUFBO0FBQ0EscUJBQUE7QUFDQSx1QkFBQTtBQUNBLG1CQUFBO0FBQ0EsbUJBQUE7O0FBRUEsQ0FWUixJQVVRLENBUEosV0FPSSxDQUFBO0FBQ0ksYUFBQTtBQUNBLGVBQUE7O0FBR0osQ0FmUixJQWVRLENBWkosV0FZSSxDQUFBO0FBQ0ksYUFBQTtBQUNBLFNBQUE7O0FBTUEsQ0F2QlosSUF1QlksQ0FBQSxTQUFBLENBQUEsUUFBQSxDQUFBO0FBQ0ksVUFBQTtBQUNBLFNBQUE7OyIsCiAgIm5hbWVzIjogW10KfQo= */']
+    styles: ["\n\n.box[_ngcontent-%COMP%] {\n  background-color: rgb(1, 4, 9);\n}\n.box[_ngcontent-%COMP%]   .slogan-box[_ngcontent-%COMP%] {\n  background-image: url(https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/slogan_bg.jpg);\n  background-repeat: no-repeat;\n  background-position: center;\n  background-clip: border-box;\n  background-size: cover;\n}\n.box[_ngcontent-%COMP%]   .slogan-box[_ngcontent-%COMP%]   .slogan[_ngcontent-%COMP%] {\n  font-size: 3rem;\n  font-weight: 700;\n}\n.box[_ngcontent-%COMP%]   .slogan-box[_ngcontent-%COMP%]   .desc[_ngcontent-%COMP%] {\n  font-size: 1.5rem;\n  color: #ccc;\n}\n.box[_ngcontent-%COMP%]   .sections[_ngcontent-%COMP%]   .section[_ngcontent-%COMP%]   .logo[_ngcontent-%COMP%] {\n  height: 4rem;\n  width: auto;\n}\n/*# sourceMappingURL=data:application/json;base64,ewogICJ2ZXJzaW9uIjogMywKICAic291cmNlcyI6IFsic3JjL2FwcC9ob21lL2hvbWUuY29tcG9uZW50LnNjc3MiXSwKICAic291cmNlc0NvbnRlbnQiOiBbIi5ib3gge1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogcmdiKDEsIDQsIDkpO1xyXG5cclxuICAgIC5zbG9nYW4tYm94IHtcclxuICAgICAgICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoJ2h0dHBzOi8vZnJhbmstbGktZmlsZXMub3NzLWNuLWJlaWppbmcuYWxpeXVuY3MuY29tL3N0dWR5X2NlbnRlci9zbG9nYW5fYmcuanBnJyk7XHJcbiAgICAgICAgYmFja2dyb3VuZC1yZXBlYXQ6IG5vLXJlcGVhdDtcclxuICAgICAgICBiYWNrZ3JvdW5kLXBvc2l0aW9uOiBjZW50ZXI7XHJcbiAgICAgICAgYmFja2dyb3VuZC1jbGlwOiBib3JkZXItYm94O1xyXG4gICAgICAgIGJhY2tncm91bmQtc2l6ZTogY292ZXI7XHJcblxyXG4gICAgICAgIC5zbG9nYW4ge1xyXG4gICAgICAgICAgICBmb250LXNpemU6IDNyZW07XHJcbiAgICAgICAgICAgIGZvbnQtd2VpZ2h0OiA3MDA7XHJcbiAgICAgICAgfVxyXG5cclxuICAgICAgICAuZGVzYyB7XHJcbiAgICAgICAgICAgIGZvbnQtc2l6ZTogMS41cmVtO1xyXG4gICAgICAgICAgICBjb2xvcjogI2NjYztcclxuICAgICAgICB9XHJcbiAgICB9XHJcblxyXG4gICAgLnNlY3Rpb25zIHtcclxuICAgICAgICAuc2VjdGlvbiB7XHJcbiAgICAgICAgICAgIC5sb2dvIHtcclxuICAgICAgICAgICAgICAgIGhlaWdodDogNHJlbTtcclxuICAgICAgICAgICAgICAgIHdpZHRoOiBhdXRvO1xyXG4gICAgICAgICAgICB9XHJcbiAgICAgICAgfVxyXG4gICAgfVxyXG5cclxufSJdLAogICJtYXBwaW5ncyI6ICI7QUFBQSxDQUFBO0FBQ0ksb0JBQUEsSUFBQSxDQUFBLEVBQUEsQ0FBQSxFQUFBOztBQUVBLENBSEosSUFHSSxDQUFBO0FBQ0ksb0JBQUE7QUFDQSxxQkFBQTtBQUNBLHVCQUFBO0FBQ0EsbUJBQUE7QUFDQSxtQkFBQTs7QUFFQSxDQVZSLElBVVEsQ0FQSixXQU9JLENBQUE7QUFDSSxhQUFBO0FBQ0EsZUFBQTs7QUFHSixDQWZSLElBZVEsQ0FaSixXQVlJLENBQUE7QUFDSSxhQUFBO0FBQ0EsU0FBQTs7QUFNQSxDQXZCWixJQXVCWSxDQUFBLFNBQUEsQ0FBQSxRQUFBLENBQUE7QUFDSSxVQUFBO0FBQ0EsU0FBQTs7IiwKICAibmFtZXMiOiBbXQp9Cg== */"]
   });
   let HomeComponent2 = _HomeComponent;
   return HomeComponent2;
@@ -19140,24 +19140,23 @@ var ai_list_default = [
 ];
 
 // src/app/ai/ai.component.ts
-function AiComponent_li_22_Template(rf, ctx) {
+function AiComponent_li_34_Template(rf, ctx) {
   if (rf & 1) {
     const _r6 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "li", 25);
-    \u0275\u0275listener("click", function AiComponent_li_22_Template_li_click_0_listener() {
+    \u0275\u0275elementStart(0, "li", 31);
+    \u0275\u0275listener("click", function AiComponent_li_34_Template_li_click_0_listener() {
       const restoredCtx = \u0275\u0275restoreView(_r6);
       const item_r3 = restoredCtx.$implicit;
       const ctx_r5 = \u0275\u0275nextContext();
       return \u0275\u0275resetView(ctx_r5.selectTitle(item_r3));
     });
-    \u0275\u0275elementStart(1, "div", 26)(2, "div", 27)(3, "span", 28);
+    \u0275\u0275elementStart(1, "div", 32)(2, "div", 33)(3, "span", 34);
     \u0275\u0275text(4);
-    \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(5, "div", 29);
-    \u0275\u0275text(6);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(7, "div", 30);
-    \u0275\u0275text(8);
+    \u0275\u0275text(5);
+    \u0275\u0275elementEnd();
+    \u0275\u0275elementStart(6, "div", 35);
+    \u0275\u0275text(7);
     \u0275\u0275elementEnd()()();
   }
   if (rf & 2) {
@@ -19165,22 +19164,22 @@ function AiComponent_li_22_Template(rf, ctx) {
     const i_r4 = ctx.index;
     \u0275\u0275advance(4);
     \u0275\u0275textInterpolate(i_r4 + 1);
-    \u0275\u0275advance(2);
-    \u0275\u0275textInterpolate(item_r3.title);
+    \u0275\u0275advance(1);
+    \u0275\u0275textInterpolate1(" ", item_r3.title, " ");
     \u0275\u0275advance(2);
     \u0275\u0275textInterpolate(item_r3.datetime);
   }
 }
-function AiComponent_button_31_Template(rf, ctx) {
+function AiComponent_button_43_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "button", 31);
-    \u0275\u0275element(1, "i", 32);
+    \u0275\u0275elementStart(0, "button", 36);
+    \u0275\u0275element(1, "i", 37);
     \u0275\u0275elementEnd();
   }
 }
-function AiComponent_object_32_Template(rf, ctx) {
+function AiComponent_object_44_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275element(0, "object", 33);
+    \u0275\u0275element(0, "object", 38);
   }
   if (rf & 2) {
     const ctx_r2 = \u0275\u0275nextContext();
@@ -19221,9 +19220,9 @@ var AiComponent = /* @__PURE__ */ (() => {
   _AiComponent.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({
     type: _AiComponent,
     selectors: [["app-ai"]],
-    decls: 33,
+    decls: 45,
     vars: 5,
-    consts: [[1, "box", "bg-dark"], [1, "container-fluid", "px-5", "py-4"], [1, "row", "mb-4"], [1, "col-12", "text-center", "text-light", "fs-1", "fw-bold"], ["src", "../../assets/img/chatGPT-logo.png", 1, "logo", "me-2"], [1, "col-12", "text-center", "my-3"], ["type", "button", "data-bs-toggle", "offcanvas", "data-bs-target", "#offcanvasExample", "aria-controls", "offcanvasExample", 1, "btn", "btn-success"], [1, "bi", "bi-list-columns-reverse", "me-2"], [1, "col-12", "text-secondary", "text-center", "mt-3"], [1, "row"], ["tabindex", "-1", "id", "offcanvasExample", "aria-labelledby", "offcanvasExampleLabel", 1, "offcanvas", "offcanvas-start", "bg-dark"], [1, "offcanvas-header"], ["id", "offcanvasExampleLabel", 1, "offcanvas-title", "text-light"], ["type", "button", "data-bs-dismiss", "offcanvas", "aria-label", "Close", 1, "btn", "btn-outline-secondary", "btn-sm"], [1, "bi", "bi-x-lg"], [1, "offcanvas-body"], [1, "list-group", "title-list"], ["class", "list-group-item text-light border-secondary fw-normal", 3, "click", 4, "ngFor", "ngForOf"], [1, "mt-2"], [1, "text-warning"], [1, "ms-2", "text-light", "small"], [1, "col-12", "detail"], [1, "mb-2", "lead", "text-warning"], ["class", "btn btn-success btn-sm ms-2", "type", "button", "data-bs-toggle", "offcanvas", "data-bs-target", "#offcanvasExample", "aria-controls", "offcanvasExample", 4, "ngIf"], ["type", "application/pdf", "width", "100%", 4, "ngIf"], [1, "list-group-item", "text-light", "border-secondary", "fw-normal", 3, "click"], [1, "row", "align-items-center"], [1, "col-2"], [1, "badge", "rounded-pill", "text-bg-success"], [1, "col-10"], [1, "col-12", "text-end", "text-secondary", "small"], ["type", "button", "data-bs-toggle", "offcanvas", "data-bs-target", "#offcanvasExample", "aria-controls", "offcanvasExample", 1, "btn", "btn-success", "btn-sm", "ms-2"], [1, "bi", "bi-list-columns-reverse"], ["type", "application/pdf", "width", "100%"]],
+    consts: [[1, "box", "bg-dark", "pt-5", "mt-4"], [1, "container-fluid", "px-5", "py-4"], [1, "row", "mb-4"], [1, "col-12", "text-center", "text-light", "fs-1", "fw-bold"], ["src", "../../assets/img/chatGPT-logo.png", 1, "logo", "me-2"], [1, "col-12", "text-center", "my-3"], ["type", "button", "data-bs-toggle", "offcanvas", "data-bs-target", "#offcanvasExample", "aria-controls", "offcanvasExample", "accesskey", "x", 1, "btn", "btn-success"], [1, "bi", "bi-list-columns-reverse", "me-2"], [1, "text-secondary", "mt-2"], [1, "mx-2"], [1, "bi", "bi-windows", "me-1"], [1, "bi", "bi-apple", "me-1"], [1, "col-12", "text-secondary", "text-center", "mt-3"], [1, "bi", "bi-markdown-fill"], [1, "bi", "bi-file-earmark-pdf-fill"], [1, "row"], ["tabindex", "-1", "id", "offcanvasExample", "aria-labelledby", "offcanvasExampleLabel", 1, "offcanvas", "offcanvas-start", "bg-dark"], [1, "offcanvas-header"], ["id", "offcanvasExampleLabel", 1, "offcanvas-title", "text-light"], ["type", "button", "data-bs-dismiss", "offcanvas", "aria-label", "Close", 1, "btn", "btn-outline-secondary", "btn-sm"], [1, "bi", "bi-x-lg"], [1, "offcanvas-body"], [1, "list-group", "title-list"], ["class", "list-group-item text-light border-secondary fw-normal", 3, "click", 4, "ngFor", "ngForOf"], [1, "mt-2"], [1, "text-warning"], [1, "ms-2", "text-light", "small"], [1, "col-12", "detail"], [1, "mb-2", "lead", "text-warning"], ["class", "btn btn-success btn-sm ms-2", "type", "button", "data-bs-toggle", "offcanvas", "data-bs-target", "#offcanvasExample", "aria-controls", "offcanvasExample", 4, "ngIf"], ["type", "application/pdf", "width", "100%", 4, "ngIf"], [1, "list-group-item", "text-light", "border-secondary", "fw-normal", 3, "click"], [1, "row", "align-items-center"], [1, "col-12"], [1, "badge", "rounded-pill", "text-bg-success", "me-2"], [1, "col-12", "text-end", "text-secondary", "small"], ["type", "button", "data-bs-toggle", "offcanvas", "data-bs-target", "#offcanvasExample", "aria-controls", "offcanvasExample", 1, "btn", "btn-success", "btn-sm", "ms-2"], [1, "bi", "bi-list-columns-reverse"], ["type", "application/pdf", "width", "100%"]],
     template: function AiComponent_Template(rf, ctx) {
       if (rf & 1) {
         \u0275\u0275elementStart(0, "div", 0)(1, "div", 1)(2, "div", 2)(3, "div", 3);
@@ -19233,34 +19232,47 @@ var AiComponent = /* @__PURE__ */ (() => {
         \u0275\u0275elementStart(6, "div", 5)(7, "button", 6);
         \u0275\u0275element(8, "i", 7);
         \u0275\u0275text(9, " Show Articles List ");
-        \u0275\u0275elementEnd()();
-        \u0275\u0275elementStart(10, "div", 8)(11, "p");
-        \u0275\u0275text(12, " Notice : Use MarkText to write markdown file, and export as PDF file.");
+        \u0275\u0275elementEnd();
+        \u0275\u0275elementStart(10, "div", 8)(11, "small", 9);
+        \u0275\u0275element(12, "i", 10);
+        \u0275\u0275text(13, " Shift + Alt + X ");
+        \u0275\u0275elementEnd();
+        \u0275\u0275text(14, " | ");
+        \u0275\u0275elementStart(15, "small", 9);
+        \u0275\u0275element(16, "i", 11);
+        \u0275\u0275text(17, " Control + Alt + X ");
         \u0275\u0275elementEnd()()();
-        \u0275\u0275elementStart(13, "div", 9)(14, "div", 10)(15, "div", 11)(16, "h5", 12);
-        \u0275\u0275text(17, "Articles List");
+        \u0275\u0275elementStart(18, "div", 12)(19, "p");
+        \u0275\u0275text(20, " Notice : Use MarkText to write ");
+        \u0275\u0275element(21, "i", 13);
+        \u0275\u0275text(22, " markdown file, and export as ");
+        \u0275\u0275element(23, "i", 14);
+        \u0275\u0275text(24, " PDF file.");
+        \u0275\u0275elementEnd()()();
+        \u0275\u0275elementStart(25, "div", 15)(26, "div", 16)(27, "div", 17)(28, "h5", 18);
+        \u0275\u0275text(29, "Articles List");
         \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(18, "button", 13);
-        \u0275\u0275element(19, "i", 14);
+        \u0275\u0275elementStart(30, "button", 19);
+        \u0275\u0275element(31, "i", 20);
         \u0275\u0275elementEnd()();
-        \u0275\u0275elementStart(20, "div", 15)(21, "ul", 16);
-        \u0275\u0275template(22, AiComponent_li_22_Template, 9, 3, "li", 17);
+        \u0275\u0275elementStart(32, "div", 21)(33, "ul", 22);
+        \u0275\u0275template(34, AiComponent_li_34_Template, 8, 3, "li", 23);
         \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(23, "div", 18)(24, "span", 19);
-        \u0275\u0275text(25);
+        \u0275\u0275elementStart(35, "div", 24)(36, "span", 25);
+        \u0275\u0275text(37);
         \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(26, "span", 20);
-        \u0275\u0275text(27, "\u6309\u751F\u6210\u65F6\u95F4\u6B63\u5E8F\u6392\u5217");
+        \u0275\u0275elementStart(38, "span", 26);
+        \u0275\u0275text(39, "\u6309\u751F\u6210\u65F6\u95F4\u6B63\u5E8F\u6392\u5217");
         \u0275\u0275elementEnd()()()();
-        \u0275\u0275elementStart(28, "div", 21)(29, "div", 22);
-        \u0275\u0275text(30);
-        \u0275\u0275template(31, AiComponent_button_31_Template, 2, 0, "button", 23);
+        \u0275\u0275elementStart(40, "div", 27)(41, "div", 28);
+        \u0275\u0275text(42);
+        \u0275\u0275template(43, AiComponent_button_43_Template, 2, 0, "button", 29);
         \u0275\u0275elementEnd();
-        \u0275\u0275template(32, AiComponent_object_32_Template, 1, 1, "object", 24);
+        \u0275\u0275template(44, AiComponent_object_44_Template, 1, 1, "object", 30);
         \u0275\u0275elementEnd()()()();
       }
       if (rf & 2) {
-        \u0275\u0275advance(22);
+        \u0275\u0275advance(34);
         \u0275\u0275property("ngForOf", ctx.articles);
         \u0275\u0275advance(3);
         \u0275\u0275textInterpolate1("Total: ", ctx.articles.length, "");
@@ -19273,7 +19285,7 @@ var AiComponent = /* @__PURE__ */ (() => {
       }
     },
     dependencies: [NgForOf, NgIf],
-    styles: ["\n\n.box[_ngcontent-%COMP%]   .logo[_ngcontent-%COMP%] {\n  height: 3rem;\n  width: auto;\n}\n.box[_ngcontent-%COMP%]   .title-list[_ngcontent-%COMP%] {\n  max-height: 80vh;\n  height: 80vh;\n  overflow-y: scroll;\n}\n.box[_ngcontent-%COMP%]   .title-list[_ngcontent-%COMP%]   li[_ngcontent-%COMP%] {\n  background: none;\n  transition: background-color 0.1s;\n}\n.box[_ngcontent-%COMP%]   .title-list[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]:hover {\n  background-color: #0066CC;\n  cursor: pointer;\n}\n.box[_ngcontent-%COMP%]   object[_ngcontent-%COMP%] {\n  height: 80vh;\n}\n/*# sourceMappingURL=data:application/json;base64,ewogICJ2ZXJzaW9uIjogMywKICAic291cmNlcyI6IFsic3JjL2FwcC9haS9haS5jb21wb25lbnQuc2NzcyJdLAogICJzb3VyY2VzQ29udGVudCI6IFsiJG15SGVpZ2h0OiA4MHZoO1xuXG4uYm94IHtcblxuICAgIC5sb2dvIHtcbiAgICAgICAgaGVpZ2h0OiAzcmVtO1xuICAgICAgICB3aWR0aDogYXV0bztcbiAgICB9XG5cbiAgICAudGl0bGUtbGlzdCB7XG4gICAgICAgIG1heC1oZWlnaHQ6ICRteUhlaWdodDtcbiAgICAgICAgaGVpZ2h0OiAkbXlIZWlnaHQ7XG4gICAgICAgIG92ZXJmbG93LXk6IHNjcm9sbDtcblxuICAgICAgICBsaSB7XG4gICAgICAgICAgICBiYWNrZ3JvdW5kOiBub25lO1xuICAgICAgICAgICAgdHJhbnNpdGlvbjogYmFja2dyb3VuZC1jb2xvciAuMXM7XG5cbiAgICAgICAgICAgICY6aG92ZXIge1xuICAgICAgICAgICAgICAgIGJhY2tncm91bmQtY29sb3I6ICMwMDY2Q0M7XG4gICAgICAgICAgICAgICAgY3Vyc29yOiBwb2ludGVyO1xuICAgICAgICAgICAgfVxuICAgICAgICB9XG5cbiAgICB9XG5cbiAgICBvYmplY3Qge1xuICAgICAgICBoZWlnaHQ6ICRteUhlaWdodDtcbiAgICB9XG5cbn0iXSwKICAibWFwcGluZ3MiOiAiO0FBSUksQ0FBQSxJQUFBLENBQUE7QUFDSSxVQUFBO0FBQ0EsU0FBQTs7QUFHSixDQUxBLElBS0EsQ0FBQTtBQUNJLGNBVkc7QUFXSCxVQVhHO0FBWUgsY0FBQTs7QUFFQSxDQVZKLElBVUksQ0FMSixXQUtJO0FBQ0ksY0FBQTtBQUNBLGNBQUEsaUJBQUE7O0FBRUEsQ0FkUixJQWNRLENBVFIsV0FTUSxFQUFBO0FBQ0ksb0JBQUE7QUFDQSxVQUFBOztBQU1aLENBdEJBLElBc0JBO0FBQ0ksVUEzQkc7OyIsCiAgIm5hbWVzIjogW10KfQo= */"]
+    styles: ["\n\n.box[_ngcontent-%COMP%]   .logo[_ngcontent-%COMP%] {\n  height: 3rem;\n  width: auto;\n}\n.box[_ngcontent-%COMP%]   .title-list[_ngcontent-%COMP%] {\n  max-height: 80vh;\n  height: 80vh;\n  overflow-y: scroll;\n}\n.box[_ngcontent-%COMP%]   .title-list[_ngcontent-%COMP%]   li[_ngcontent-%COMP%] {\n  background: none;\n  transition: background-color 0.1s;\n}\n.box[_ngcontent-%COMP%]   .title-list[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]:hover {\n  background-color: #0066CC;\n  cursor: pointer;\n}\n.box[_ngcontent-%COMP%]   .offcanvas[_ngcontent-%COMP%] {\n  width: 40% !important;\n}\n.box[_ngcontent-%COMP%]   object[_ngcontent-%COMP%] {\n  height: 80vh;\n}\n/*# sourceMappingURL=data:application/json;base64,ewogICJ2ZXJzaW9uIjogMywKICAic291cmNlcyI6IFsic3JjL2FwcC9haS9haS5jb21wb25lbnQuc2NzcyJdLAogICJzb3VyY2VzQ29udGVudCI6IFsiJG15SGVpZ2h0OiA4MHZoO1xyXG4kb2ZmY2FudmFzLXdpZHRoOiA0MCU7XHJcblxyXG4uYm94IHtcclxuXHJcbiAgICAubG9nbyB7XHJcbiAgICAgICAgaGVpZ2h0OiAzcmVtO1xyXG4gICAgICAgIHdpZHRoOiBhdXRvO1xyXG4gICAgfVxyXG5cclxuICAgIC50aXRsZS1saXN0IHtcclxuICAgICAgICBtYXgtaGVpZ2h0OiAkbXlIZWlnaHQ7XHJcbiAgICAgICAgaGVpZ2h0OiAkbXlIZWlnaHQ7XHJcbiAgICAgICAgb3ZlcmZsb3cteTogc2Nyb2xsO1xyXG5cclxuICAgICAgICBsaSB7XHJcbiAgICAgICAgICAgIGJhY2tncm91bmQ6IG5vbmU7XHJcbiAgICAgICAgICAgIHRyYW5zaXRpb246IGJhY2tncm91bmQtY29sb3IgLjFzO1xyXG5cclxuICAgICAgICAgICAgJjpob3ZlciB7XHJcbiAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjMDA2NkNDO1xyXG4gICAgICAgICAgICAgICAgY3Vyc29yOiBwb2ludGVyO1xyXG4gICAgICAgICAgICB9XHJcbiAgICAgICAgfVxyXG5cclxuICAgIH1cclxuXHJcbiAgICAub2ZmY2FudmFzIHtcclxuICAgICAgICB3aWR0aDogJG9mZmNhbnZhcy13aWR0aCAhaW1wb3J0YW50O1xyXG4gICAgfVxyXG5cclxuICAgIG9iamVjdCB7XHJcbiAgICAgICAgaGVpZ2h0OiAkbXlIZWlnaHQ7XHJcbiAgICB9XHJcblxyXG59Il0sCiAgIm1hcHBpbmdzIjogIjtBQUtJLENBQUEsSUFBQSxDQUFBO0FBQ0ksVUFBQTtBQUNBLFNBQUE7O0FBR0osQ0FMQSxJQUtBLENBQUE7QUFDSSxjQVhHO0FBWUgsVUFaRztBQWFILGNBQUE7O0FBRUEsQ0FWSixJQVVJLENBTEosV0FLSTtBQUNJLGNBQUE7QUFDQSxjQUFBLGlCQUFBOztBQUVBLENBZFIsSUFjUSxDQVRSLFdBU1EsRUFBQTtBQUNJLG9CQUFBO0FBQ0EsVUFBQTs7QUFNWixDQXRCQSxJQXNCQSxDQUFBO0FBQ0ksU0FBQTs7QUFHSixDQTFCQSxJQTBCQTtBQUNJLFVBaENHOzsiLAogICJuYW1lcyI6IFtdCn0K */"]
   });
   let AiComponent2 = _AiComponent;
   return AiComponent2;
@@ -19308,24 +19320,23 @@ var harmonyos_list_default = [
 ];
 
 // src/app/harmonyos/harmonyos.component.ts
-function HarmonyosComponent_li_22_Template(rf, ctx) {
+function HarmonyosComponent_li_34_Template(rf, ctx) {
   if (rf & 1) {
     const _r6 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "li", 25);
-    \u0275\u0275listener("click", function HarmonyosComponent_li_22_Template_li_click_0_listener() {
+    \u0275\u0275elementStart(0, "li", 31);
+    \u0275\u0275listener("click", function HarmonyosComponent_li_34_Template_li_click_0_listener() {
       const restoredCtx = \u0275\u0275restoreView(_r6);
       const item_r3 = restoredCtx.$implicit;
       const ctx_r5 = \u0275\u0275nextContext();
       return \u0275\u0275resetView(ctx_r5.selectTitle(item_r3));
     });
-    \u0275\u0275elementStart(1, "div", 26)(2, "div", 27)(3, "span", 28);
+    \u0275\u0275elementStart(1, "div", 32)(2, "div", 33)(3, "span", 34);
     \u0275\u0275text(4);
-    \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(5, "div", 29);
-    \u0275\u0275text(6);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(7, "div", 30);
-    \u0275\u0275text(8);
+    \u0275\u0275text(5);
+    \u0275\u0275elementEnd();
+    \u0275\u0275elementStart(6, "div", 35);
+    \u0275\u0275text(7);
     \u0275\u0275elementEnd()()();
   }
   if (rf & 2) {
@@ -19333,22 +19344,22 @@ function HarmonyosComponent_li_22_Template(rf, ctx) {
     const i_r4 = ctx.index;
     \u0275\u0275advance(4);
     \u0275\u0275textInterpolate(i_r4 + 1);
-    \u0275\u0275advance(2);
-    \u0275\u0275textInterpolate(item_r3.title);
+    \u0275\u0275advance(1);
+    \u0275\u0275textInterpolate1(" ", item_r3.title, " ");
     \u0275\u0275advance(2);
     \u0275\u0275textInterpolate(item_r3.datetime);
   }
 }
-function HarmonyosComponent_button_31_Template(rf, ctx) {
+function HarmonyosComponent_button_43_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "button", 31);
-    \u0275\u0275element(1, "i", 32);
+    \u0275\u0275elementStart(0, "button", 36);
+    \u0275\u0275element(1, "i", 37);
     \u0275\u0275elementEnd();
   }
 }
-function HarmonyosComponent_object_32_Template(rf, ctx) {
+function HarmonyosComponent_object_44_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275element(0, "object", 33);
+    \u0275\u0275element(0, "object", 38);
   }
   if (rf & 2) {
     const ctx_r2 = \u0275\u0275nextContext();
@@ -19389,9 +19400,9 @@ var HarmonyosComponent = /* @__PURE__ */ (() => {
   _HarmonyosComponent.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({
     type: _HarmonyosComponent,
     selectors: [["app-harmonyos"]],
-    decls: 33,
+    decls: 45,
     vars: 5,
-    consts: [[1, "box", "bg-dark"], [1, "container-fluid", "px-5", "py-4"], [1, "row", "mb-4"], [1, "col-12", "text-center", "text-light", "fs-1", "fw-bold"], ["src", "../../assets/img/huawei-logo.png", 1, "logo", "me-2"], [1, "col-12", "text-center", "my-3"], ["type", "button", "data-bs-toggle", "offcanvas", "data-bs-target", "#offcanvasExample", "aria-controls", "offcanvasExample", 1, "btn", "btn-danger"], [1, "bi", "bi-list-columns-reverse", "me-2"], [1, "col-12", "text-secondary", "text-center", "mt-3"], [1, "row"], ["tabindex", "-1", "id", "offcanvasExample", "aria-labelledby", "offcanvasExampleLabel", 1, "offcanvas", "offcanvas-start", "bg-dark"], [1, "offcanvas-header"], ["id", "offcanvasExampleLabel", 1, "offcanvas-title", "text-light"], ["type", "button", "data-bs-dismiss", "offcanvas", "aria-label", "Close", 1, "btn", "btn-outline-secondary", "btn-sm"], [1, "bi", "bi-x-lg"], [1, "offcanvas-body"], [1, "list-group", "title-list"], ["class", "list-group-item text-light border-secondary fw-normal", 3, "click", 4, "ngFor", "ngForOf"], [1, "mt-2"], [1, "text-warning"], [1, "ms-2", "text-light", "small"], [1, "col-12", "detail"], [1, "mb-2", "lead", "text-warning"], ["class", "btn btn-danger btn-sm ms-2", "type", "button", "data-bs-toggle", "offcanvas", "data-bs-target", "#offcanvasExample", "aria-controls", "offcanvasExample", 4, "ngIf"], ["type", "application/pdf", "width", "100%", 4, "ngIf"], [1, "list-group-item", "text-light", "border-secondary", "fw-normal", 3, "click"], [1, "row", "align-items-center"], [1, "col-2"], [1, "badge", "rounded-pill", "text-bg-danger"], [1, "col-10"], [1, "col-12", "text-end", "text-secondary", "small"], ["type", "button", "data-bs-toggle", "offcanvas", "data-bs-target", "#offcanvasExample", "aria-controls", "offcanvasExample", 1, "btn", "btn-danger", "btn-sm", "ms-2"], [1, "bi", "bi-list-columns-reverse"], ["type", "application/pdf", "width", "100%"]],
+    consts: [[1, "box", "bg-dark", "pt-5", "mt-4"], [1, "container-fluid", "px-5", "py-4"], [1, "row", "mb-4"], [1, "col-12", "text-center", "text-light", "fs-1", "fw-bold"], ["src", "../../assets/img/huawei-logo.png", 1, "logo", "me-2"], [1, "col-12", "text-center", "my-3"], ["type", "button", "data-bs-toggle", "offcanvas", "data-bs-target", "#offcanvasExample", "aria-controls", "offcanvasExample", "accesskey", "x", 1, "btn", "btn-danger"], [1, "bi", "bi-list-columns-reverse", "me-2"], [1, "text-secondary", "mt-2"], [1, "mx-2"], [1, "bi", "bi-windows", "me-1"], [1, "bi", "bi-apple", "me-1"], [1, "col-12", "text-secondary", "text-center", "mt-3"], [1, "bi", "bi-markdown-fill"], [1, "bi", "bi-file-earmark-pdf-fill"], [1, "row"], ["tabindex", "-1", "id", "offcanvasExample", "aria-labelledby", "offcanvasExampleLabel", 1, "offcanvas", "offcanvas-start", "bg-dark"], [1, "offcanvas-header"], ["id", "offcanvasExampleLabel", 1, "offcanvas-title", "text-light"], ["type", "button", "data-bs-dismiss", "offcanvas", "aria-label", "Close", 1, "btn", "btn-outline-secondary", "btn-sm"], [1, "bi", "bi-x-lg"], [1, "offcanvas-body"], [1, "list-group", "title-list"], ["class", "list-group-item text-light border-secondary fw-normal", 3, "click", 4, "ngFor", "ngForOf"], [1, "mt-2"], [1, "text-warning"], [1, "ms-2", "text-light", "small"], [1, "col-12", "detail"], [1, "mb-2", "lead", "text-warning"], ["class", "btn btn-danger btn-sm ms-2", "type", "button", "data-bs-toggle", "offcanvas", "data-bs-target", "#offcanvasExample", "aria-controls", "offcanvasExample", 4, "ngIf"], ["type", "application/pdf", "width", "100%", 4, "ngIf"], [1, "list-group-item", "text-light", "border-secondary", "fw-normal", 3, "click"], [1, "row", "align-items-center"], [1, "col-12"], [1, "badge", "rounded-pill", "text-bg-danger", "me-2"], [1, "col-12", "text-end", "text-secondary", "small"], ["type", "button", "data-bs-toggle", "offcanvas", "data-bs-target", "#offcanvasExample", "aria-controls", "offcanvasExample", 1, "btn", "btn-danger", "btn-sm", "ms-2"], [1, "bi", "bi-list-columns-reverse"], ["type", "application/pdf", "width", "100%"]],
     template: function HarmonyosComponent_Template(rf, ctx) {
       if (rf & 1) {
         \u0275\u0275elementStart(0, "div", 0)(1, "div", 1)(2, "div", 2)(3, "div", 3);
@@ -19401,34 +19412,47 @@ var HarmonyosComponent = /* @__PURE__ */ (() => {
         \u0275\u0275elementStart(6, "div", 5)(7, "button", 6);
         \u0275\u0275element(8, "i", 7);
         \u0275\u0275text(9, " Show Articles List ");
-        \u0275\u0275elementEnd()();
-        \u0275\u0275elementStart(10, "div", 8)(11, "p");
-        \u0275\u0275text(12, " Notice : Use MarkText to write markdown file, and export as PDF file.");
+        \u0275\u0275elementEnd();
+        \u0275\u0275elementStart(10, "div", 8)(11, "small", 9);
+        \u0275\u0275element(12, "i", 10);
+        \u0275\u0275text(13, " Shift + Alt + X ");
+        \u0275\u0275elementEnd();
+        \u0275\u0275text(14, " | ");
+        \u0275\u0275elementStart(15, "small", 9);
+        \u0275\u0275element(16, "i", 11);
+        \u0275\u0275text(17, " Control + Alt + X ");
         \u0275\u0275elementEnd()()();
-        \u0275\u0275elementStart(13, "div", 9)(14, "div", 10)(15, "div", 11)(16, "h5", 12);
-        \u0275\u0275text(17, "Articles List");
+        \u0275\u0275elementStart(18, "div", 12)(19, "p");
+        \u0275\u0275text(20, " Notice : Use MarkText to write ");
+        \u0275\u0275element(21, "i", 13);
+        \u0275\u0275text(22, " markdown file, and export as ");
+        \u0275\u0275element(23, "i", 14);
+        \u0275\u0275text(24, " PDF file.");
+        \u0275\u0275elementEnd()()();
+        \u0275\u0275elementStart(25, "div", 15)(26, "div", 16)(27, "div", 17)(28, "h5", 18);
+        \u0275\u0275text(29, "Articles List");
         \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(18, "button", 13);
-        \u0275\u0275element(19, "i", 14);
+        \u0275\u0275elementStart(30, "button", 19);
+        \u0275\u0275element(31, "i", 20);
         \u0275\u0275elementEnd()();
-        \u0275\u0275elementStart(20, "div", 15)(21, "ul", 16);
-        \u0275\u0275template(22, HarmonyosComponent_li_22_Template, 9, 3, "li", 17);
+        \u0275\u0275elementStart(32, "div", 21)(33, "ul", 22);
+        \u0275\u0275template(34, HarmonyosComponent_li_34_Template, 8, 3, "li", 23);
         \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(23, "div", 18)(24, "span", 19);
-        \u0275\u0275text(25);
+        \u0275\u0275elementStart(35, "div", 24)(36, "span", 25);
+        \u0275\u0275text(37);
         \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(26, "span", 20);
-        \u0275\u0275text(27, "\u6309\u751F\u6210\u65F6\u95F4\u6B63\u5E8F\u6392\u5217");
+        \u0275\u0275elementStart(38, "span", 26);
+        \u0275\u0275text(39, "\u6309\u751F\u6210\u65F6\u95F4\u6B63\u5E8F\u6392\u5217");
         \u0275\u0275elementEnd()()()();
-        \u0275\u0275elementStart(28, "div", 21)(29, "div", 22);
-        \u0275\u0275text(30);
-        \u0275\u0275template(31, HarmonyosComponent_button_31_Template, 2, 0, "button", 23);
+        \u0275\u0275elementStart(40, "div", 27)(41, "div", 28);
+        \u0275\u0275text(42);
+        \u0275\u0275template(43, HarmonyosComponent_button_43_Template, 2, 0, "button", 29);
         \u0275\u0275elementEnd();
-        \u0275\u0275template(32, HarmonyosComponent_object_32_Template, 1, 1, "object", 24);
+        \u0275\u0275template(44, HarmonyosComponent_object_44_Template, 1, 1, "object", 30);
         \u0275\u0275elementEnd()()()();
       }
       if (rf & 2) {
-        \u0275\u0275advance(22);
+        \u0275\u0275advance(34);
         \u0275\u0275property("ngForOf", ctx.articles);
         \u0275\u0275advance(3);
         \u0275\u0275textInterpolate1("Total: ", ctx.articles.length, "");
@@ -19441,7 +19465,7 @@ var HarmonyosComponent = /* @__PURE__ */ (() => {
       }
     },
     dependencies: [NgForOf, NgIf],
-    styles: ["\n\n.box[_ngcontent-%COMP%]   .logo[_ngcontent-%COMP%] {\n  height: 3rem;\n  width: auto;\n}\n.box[_ngcontent-%COMP%]   .title-list[_ngcontent-%COMP%] {\n  max-height: 80vh;\n  height: 80vh;\n  overflow-y: scroll;\n}\n.box[_ngcontent-%COMP%]   .title-list[_ngcontent-%COMP%]   li[_ngcontent-%COMP%] {\n  background: none;\n  transition: background-color 0.1s;\n}\n.box[_ngcontent-%COMP%]   .title-list[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]:hover {\n  background-color: #0066CC;\n  cursor: pointer;\n}\n.box[_ngcontent-%COMP%]   object[_ngcontent-%COMP%] {\n  height: 80vh;\n}\n/*# sourceMappingURL=data:application/json;base64,ewogICJ2ZXJzaW9uIjogMywKICAic291cmNlcyI6IFsic3JjL2FwcC9oYXJtb255b3MvaGFybW9ueW9zLmNvbXBvbmVudC5zY3NzIl0sCiAgInNvdXJjZXNDb250ZW50IjogWyIkbXlIZWlnaHQ6IDgwdmg7XG5cbi5ib3gge1xuXG4gICAgLmxvZ28ge1xuICAgICAgICBoZWlnaHQ6IDNyZW07XG4gICAgICAgIHdpZHRoOiBhdXRvO1xuICAgIH1cblxuICAgIC50aXRsZS1saXN0IHtcbiAgICAgICAgbWF4LWhlaWdodDogJG15SGVpZ2h0O1xuICAgICAgICBoZWlnaHQ6ICRteUhlaWdodDtcbiAgICAgICAgb3ZlcmZsb3cteTogc2Nyb2xsO1xuXG4gICAgICAgIGxpIHtcbiAgICAgICAgICAgIGJhY2tncm91bmQ6IG5vbmU7XG4gICAgICAgICAgICB0cmFuc2l0aW9uOiBiYWNrZ3JvdW5kLWNvbG9yIC4xcztcblxuICAgICAgICAgICAgJjpob3ZlciB7XG4gICAgICAgICAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogIzAwNjZDQztcbiAgICAgICAgICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICAgICAgICB9XG4gICAgICAgIH1cblxuICAgIH1cblxuICAgIG9iamVjdCB7XG4gICAgICAgIGhlaWdodDogJG15SGVpZ2h0O1xuICAgIH1cblxufSJdLAogICJtYXBwaW5ncyI6ICI7QUFJSSxDQUFBLElBQUEsQ0FBQTtBQUNJLFVBQUE7QUFDQSxTQUFBOztBQUdKLENBTEEsSUFLQSxDQUFBO0FBQ0ksY0FWRztBQVdILFVBWEc7QUFZSCxjQUFBOztBQUVBLENBVkosSUFVSSxDQUxKLFdBS0k7QUFDSSxjQUFBO0FBQ0EsY0FBQSxpQkFBQTs7QUFFQSxDQWRSLElBY1EsQ0FUUixXQVNRLEVBQUE7QUFDSSxvQkFBQTtBQUNBLFVBQUE7O0FBTVosQ0F0QkEsSUFzQkE7QUFDSSxVQTNCRzs7IiwKICAibmFtZXMiOiBbXQp9Cg== */"]
+    styles: ["\n\n.box[_ngcontent-%COMP%]   .logo[_ngcontent-%COMP%] {\n  height: 3rem;\n  width: auto;\n}\n.box[_ngcontent-%COMP%]   .title-list[_ngcontent-%COMP%] {\n  max-height: 80vh;\n  height: 80vh;\n  overflow-y: scroll;\n}\n.box[_ngcontent-%COMP%]   .title-list[_ngcontent-%COMP%]   li[_ngcontent-%COMP%] {\n  background: none;\n  transition: background-color 0.1s;\n}\n.box[_ngcontent-%COMP%]   .title-list[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]:hover {\n  background-color: #0066CC;\n  cursor: pointer;\n}\n.box[_ngcontent-%COMP%]   .offcanvas[_ngcontent-%COMP%] {\n  width: 40% !important;\n}\n.box[_ngcontent-%COMP%]   object[_ngcontent-%COMP%] {\n  height: 80vh;\n}\n/*# sourceMappingURL=data:application/json;base64,ewogICJ2ZXJzaW9uIjogMywKICAic291cmNlcyI6IFsic3JjL2FwcC9oYXJtb255b3MvaGFybW9ueW9zLmNvbXBvbmVudC5zY3NzIl0sCiAgInNvdXJjZXNDb250ZW50IjogWyIkbXlIZWlnaHQ6IDgwdmg7XHJcbiRvZmZjYW52YXMtd2lkdGg6IDQwJTtcclxuXHJcbi5ib3gge1xyXG5cclxuICAgIC5sb2dvIHtcclxuICAgICAgICBoZWlnaHQ6IDNyZW07XHJcbiAgICAgICAgd2lkdGg6IGF1dG87XHJcbiAgICB9XHJcblxyXG4gICAgLnRpdGxlLWxpc3Qge1xyXG4gICAgICAgIG1heC1oZWlnaHQ6ICRteUhlaWdodDtcclxuICAgICAgICBoZWlnaHQ6ICRteUhlaWdodDtcclxuICAgICAgICBvdmVyZmxvdy15OiBzY3JvbGw7XHJcblxyXG4gICAgICAgIGxpIHtcclxuICAgICAgICAgICAgYmFja2dyb3VuZDogbm9uZTtcclxuICAgICAgICAgICAgdHJhbnNpdGlvbjogYmFja2dyb3VuZC1jb2xvciAuMXM7XHJcblxyXG4gICAgICAgICAgICAmOmhvdmVyIHtcclxuICAgICAgICAgICAgICAgIGJhY2tncm91bmQtY29sb3I6ICMwMDY2Q0M7XHJcbiAgICAgICAgICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XHJcbiAgICAgICAgICAgIH1cclxuICAgICAgICB9XHJcblxyXG4gICAgfVxyXG5cclxuICAgIC5vZmZjYW52YXMge1xyXG4gICAgICAgIHdpZHRoOiAkb2ZmY2FudmFzLXdpZHRoICFpbXBvcnRhbnQ7XHJcbiAgICB9XHJcblxyXG4gICAgb2JqZWN0IHtcclxuICAgICAgICBoZWlnaHQ6ICRteUhlaWdodDtcclxuICAgIH1cclxuXHJcbn0iXSwKICAibWFwcGluZ3MiOiAiO0FBS0ksQ0FBQSxJQUFBLENBQUE7QUFDSSxVQUFBO0FBQ0EsU0FBQTs7QUFHSixDQUxBLElBS0EsQ0FBQTtBQUNJLGNBWEc7QUFZSCxVQVpHO0FBYUgsY0FBQTs7QUFFQSxDQVZKLElBVUksQ0FMSixXQUtJO0FBQ0ksY0FBQTtBQUNBLGNBQUEsaUJBQUE7O0FBRUEsQ0FkUixJQWNRLENBVFIsV0FTUSxFQUFBO0FBQ0ksb0JBQUE7QUFDQSxVQUFBOztBQU1aLENBdEJBLElBc0JBLENBQUE7QUFDSSxTQUFBOztBQUdKLENBMUJBLElBMEJBO0FBQ0ksVUFoQ0c7OyIsCiAgIm5hbWVzIjogW10KfQo= */"]
   });
   let HarmonyosComponent2 = _HarmonyosComponent;
   return HarmonyosComponent2;
@@ -19459,7 +19483,7 @@ var ErrorComponent = /* @__PURE__ */ (() => {
     selectors: [["app-error"]],
     decls: 9,
     vars: 0,
-    consts: [[1, "error"], [1, "container"], [1, "col"], [1, "row", "text-center", "py-5", "justify-content-md-center"], ["src", "../../assets/img/404.jpg", 1, "w-25"], [1, "my-5", "text-danger"]],
+    consts: [[1, "error", "pt-5", "mt-4"], [1, "container"], [1, "col"], [1, "row", "text-center", "py-5", "justify-content-md-center"], ["src", "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/404.jpg", 1, "w-25"], [1, "my-5", "text-danger"]],
     template: function ErrorComponent_Template(rf, ctx) {
       if (rf & 1) {
         \u0275\u0275elementStart(0, "div", 0)(1, "div", 1)(2, "div", 2)(3, "div", 3);
@@ -19520,8 +19544,7 @@ var life_philosophy_list_default = [
       "\u5BCC\u517B\u81EA\u5DF1\u7684\u65B9\u5F0F\u505A\u5230\u516B\u4E2A\u5B57\uFF1A\u6765\u8005\u8981\u60DC\uFF0C\u53BB\u8005\u8981\u653E",
       "\u8D35\u4EBA\u56E0\u4F60\u81EA\u4FE1\u800C\u6765\u3002\u6B3A\u4F60\u7684\u4EBA\u56E0\u4F60\u8F6F\u5F31\u800C\u6765",
       "\u8F9C\u8D1F\u4F60\u7684\u4EBA\uFF0C\u56E0\u4F60\u5351\u5FAE\u800C\u6765",
-      "\u7231\u4F60\u7684\u4EBA\uFF0C\u56E0\u4F60\u81EA\u7231\u800C\u6765",
-      ""
+      "\u7231\u4F60\u7684\u4EBA\uFF0C\u56E0\u4F60\u81EA\u7231\u800C\u6765"
     ]
   },
   {
@@ -19578,11 +19601,11 @@ var LifePhilosophyComponent = /* @__PURE__ */ (() => {
     selectors: [["app-life-philosophy"]],
     decls: 10,
     vars: 2,
-    consts: [[1, "box", "bg-dark"], [1, "container-fluid", "px-5", "py-4"], [1, "row"], [1, "col-12"], [1, "fs-1", "fw-bold", "text-info"], [1, "col-12", "text-secondary", "mb-2"], ["class", "card text-bg-dark mb-3 border-info text-light", 4, "ngFor", "ngForOf"], [1, "card", "text-bg-dark", "mb-3", "border-info", "text-light"], [1, "card-body"], ["class", "card-text", 4, "ngFor", "ngForOf"], [1, "card-text"]],
+    consts: [[1, "box", "bg-dark", "pt-5", "mt-4"], [1, "container-fluid", "px-5", "py-4"], [1, "row"], [1, "col-12"], [1, "fs-1", "fw-bold", "text-primary"], [1, "col-12", "text-secondary", "mb-2"], ["class", "card text-bg-dark mb-2 border-secondary border text-secondary", 4, "ngFor", "ngForOf"], [1, "card", "text-bg-dark", "mb-2", "border-secondary", "border", "text-secondary"], [1, "card-body"], ["class", "card-text lead", 4, "ngFor", "ngForOf"], [1, "card-text", "lead"]],
     template: function LifePhilosophyComponent_Template(rf, ctx) {
       if (rf & 1) {
         \u0275\u0275elementStart(0, "div", 0)(1, "div", 1)(2, "div", 2)(3, "div", 3)(4, "p", 4);
-        \u0275\u0275text(5, "\u505A\u4E00\u4E2A\u6709\u667A\u6167\uFF0C\u4E14\u884C\u52A8\u529B\u5F3A\u7684\u4EBA");
+        \u0275\u0275text(5, "\u505A\u4E00\u4E2A\u6709\u667A\u6167\u3001\u6267\u884C\u529B\u5F3A\u7684\u4EBA");
         \u0275\u0275elementEnd()();
         \u0275\u0275elementStart(6, "div", 5);
         \u0275\u0275text(7);
@@ -19599,7 +19622,7 @@ var LifePhilosophyComponent = /* @__PURE__ */ (() => {
       }
     },
     dependencies: [NgForOf],
-    styles: ["\n\n/*# sourceMappingURL=data:application/json;base64,ewogICJ2ZXJzaW9uIjogMywKICAic291cmNlcyI6IFtdLAogICJzb3VyY2VzQ29udGVudCI6IFtdLAogICJtYXBwaW5ncyI6ICIiLAogICJuYW1lcyI6IFtdCn0K */"]
+    styles: ["\n\n.box[_ngcontent-%COMP%]   .card[_ngcontent-%COMP%] {\n  transition: color 0.2s, border-color 0.2s;\n}\n.box[_ngcontent-%COMP%]   .card[_ngcontent-%COMP%]:hover {\n  color: white !important;\n  border-color: rgb(13, 110, 253) !important;\n}\n/*# sourceMappingURL=data:application/json;base64,ewogICJ2ZXJzaW9uIjogMywKICAic291cmNlcyI6IFsic3JjL2FwcC9saWZlLXBoaWxvc29waHkvbGlmZS1waGlsb3NvcGh5LmNvbXBvbmVudC5zY3NzIl0sCiAgInNvdXJjZXNDb250ZW50IjogWyIuYm94IHtcclxuICAgIC5jYXJkIHtcclxuICAgICAgICB0cmFuc2l0aW9uOiBjb2xvciAwLjJzLCBib3JkZXItY29sb3IgLjJzO1xyXG5cclxuICAgICAgICAmOmhvdmVyIHtcclxuICAgICAgICAgICAgY29sb3I6IHdoaXRlICFpbXBvcnRhbnQ7XHJcbiAgICAgICAgICAgIGJvcmRlci1jb2xvcjogcmdiKDEzLCAxMTAsIDI1MykgIWltcG9ydGFudDtcclxuICAgICAgICB9XHJcblxyXG4gICAgfVxyXG5cclxuXHJcbn0iXSwKICAibWFwcGluZ3MiOiAiO0FBQ0ksQ0FBQSxJQUFBLENBQUE7QUFDSSxjQUFBLE1BQUEsSUFBQSxFQUFBLGFBQUE7O0FBRUEsQ0FISixJQUdJLENBSEosSUFHSTtBQUNJLFNBQUE7QUFDQSxnQkFBQSxJQUFBLEVBQUEsRUFBQSxHQUFBLEVBQUE7OyIsCiAgIm5hbWVzIjogW10KfQo= */"]
   });
   let LifePhilosophyComponent2 = _LifePhilosophyComponent;
   return LifePhilosophyComponent2;
@@ -19670,7 +19693,7 @@ var AppComponent = /* @__PURE__ */ (() => {
     selectors: [["app-root"]],
     decls: 30,
     vars: 1,
-    consts: [["data-bs-theme", "dark", 1, "navbar", "bg-primary", "navbar-expand-lg", "rounded-0"], [1, "container-fluid", "px-5"], ["href", "#", 1, "navbar-brand", "fs-4"], ["src", "../assets/img/logo.png", "alt", "Study center", "width", "30", "height", "30", 1, "me-1"], ["type", "button", "data-bs-toggle", "collapse", "data-bs-target", "#navbarNav", "aria-controls", "navbarNav", "aria-expanded", "false", "aria-label", "Toggle navigation", 1, "navbar-toggler"], [1, "navbar-toggler-icon"], ["id", "navbarNav", 1, "collapse", "navbar-collapse", "justify-content-end"], [1, "navbar-nav"], [1, "nav-item"], ["aria-current", "page", "href", "/", 1, "nav-link", "active"], [1, "bi", "bi-house-fill", "me-1"], [1, "nav-item", "ms-2"], ["href", "/#/ai", 1, "nav-link", "active"], ["src", "../assets/img/chatGPT-logo.png", 1, "icon", "me-1", "mb-1"], ["href", "/#/harmonyos", 1, "nav-link", "active"], ["src", "../assets/img/huawei-logo.png", 1, "icon", "me-1", "mb-1"], ["href", "/#/life-philosophy", 1, "nav-link", "active"], [1, "bi", "bi-book-fill", "me-1"], [1, "footer"], [1, "container-fluid", "px-5", "text-secondary", "py-3"], [1, "m-0", "text-center"]],
+    consts: [["data-bs-theme", "dark", 1, "navbar", "fixed-top", "bg-body-tertiary", "navbar-expand-lg", "rounded-0"], [1, "container-fluid", "px-5"], ["href", "#", 1, "navbar-brand", "fs-4"], ["src", "../assets/img/logo.png", "alt", "Study center", "width", "30", "height", "30", 1, "me-1"], ["type", "button", "data-bs-toggle", "collapse", "data-bs-target", "#navbarNav", "aria-controls", "navbarNav", "aria-expanded", "false", "aria-label", "Toggle navigation", 1, "navbar-toggler"], [1, "navbar-toggler-icon"], ["id", "navbarNav", 1, "collapse", "navbar-collapse", "justify-content-end"], [1, "navbar-nav"], [1, "nav-item"], ["aria-current", "page", "href", "/", 1, "nav-link", "active"], [1, "bi", "bi-house-fill", "me-1"], [1, "nav-item", "ms-2"], ["href", "/#/ai", 1, "nav-link", "active"], ["src", "../assets/img/chatGPT-logo.png", 1, "icon", "me-1", "mb-1"], ["href", "/#/harmonyos", 1, "nav-link", "active"], ["src", "../assets/img/huawei-logo.png", 1, "icon", "me-1", "mb-1"], ["href", "/#/life-philosophy", 1, "nav-link", "active"], [1, "bi", "bi-book-fill", "me-1", "text-primary"], [1, "footer"], [1, "container-fluid", "px-5", "text-secondary", "py-3"], [1, "m-0", "text-center"]],
     template: function AppComponent_Template(rf, ctx) {
       if (rf & 1) {
         \u0275\u0275elementStart(0, "nav", 0)(1, "div", 1)(2, "a", 2);
@@ -19707,7 +19730,7 @@ var AppComponent = /* @__PURE__ */ (() => {
       }
     },
     dependencies: [RouterOutlet],
-    styles: ["\n\n.nav-item[_ngcontent-%COMP%]   .active[_ngcontent-%COMP%]:hover {\n  color: orange !important;\n}\n.nav-item[_ngcontent-%COMP%]   .icon[_ngcontent-%COMP%] {\n  height: 1.1rem;\n  width: auto;\n}\n.footer[_ngcontent-%COMP%] {\n  background-color: rgb(13, 17, 23);\n}\n/*# sourceMappingURL=data:application/json;base64,ewogICJ2ZXJzaW9uIjogMywKICAic291cmNlcyI6IFsic3JjL2FwcC9hcHAuY29tcG9uZW50LnNjc3MiXSwKICAic291cmNlc0NvbnRlbnQiOiBbIi5uYXYtaXRlbSB7XG4gICAgLmFjdGl2ZTpob3ZlciB7XG4gICAgICAgIGNvbG9yOiBvcmFuZ2UgIWltcG9ydGFudDtcbiAgICB9XG5cbiAgICAuaWNvbiB7XG4gICAgICAgIGhlaWdodDogMS4xcmVtO1xuICAgICAgICB3aWR0aDogYXV0bztcbiAgICB9XG59XG5cbi5mb290ZXIge1xuICAgIGJhY2tncm91bmQtY29sb3I6IHJnYigxMywgMTcsIDIzKTtcbn0iXSwKICAibWFwcGluZ3MiOiAiO0FBQ0ksQ0FBQSxTQUFBLENBQUEsTUFBQTtBQUNJLFNBQUE7O0FBR0osQ0FKQSxTQUlBLENBQUE7QUFDSSxVQUFBO0FBQ0EsU0FBQTs7QUFJUixDQUFBO0FBQ0ksb0JBQUEsSUFBQSxFQUFBLEVBQUEsRUFBQSxFQUFBOzsiLAogICJuYW1lcyI6IFtdCn0K */"]
+    styles: ["\n\n.navbar[_ngcontent-%COMP%] {\n  background-color: #111 !important;\n}\n.navbar[_ngcontent-%COMP%]   .nav-item[_ngcontent-%COMP%]   .active[_ngcontent-%COMP%]:hover {\n  color: orange !important;\n}\n.navbar[_ngcontent-%COMP%]   .nav-item[_ngcontent-%COMP%]   .icon[_ngcontent-%COMP%] {\n  height: 1.1rem;\n  width: auto;\n}\n.footer[_ngcontent-%COMP%] {\n  background-color: rgb(13, 17, 23);\n}\n/*# sourceMappingURL=data:application/json;base64,ewogICJ2ZXJzaW9uIjogMywKICAic291cmNlcyI6IFsic3JjL2FwcC9hcHAuY29tcG9uZW50LnNjc3MiXSwKICAic291cmNlc0NvbnRlbnQiOiBbIi5uYXZiYXIge1xyXG5cclxuICAgIGJhY2tncm91bmQtY29sb3I6ICMxMTEgIWltcG9ydGFudDtcclxuXHJcbiAgICAubmF2LWl0ZW0ge1xyXG4gICAgICAgIC5hY3RpdmU6aG92ZXIge1xyXG4gICAgICAgICAgICBjb2xvcjogb3JhbmdlICFpbXBvcnRhbnQ7XHJcbiAgICAgICAgfVxyXG5cclxuICAgICAgICAuaWNvbiB7XHJcbiAgICAgICAgICAgIGhlaWdodDogMS4xcmVtO1xyXG4gICAgICAgICAgICB3aWR0aDogYXV0bztcclxuICAgICAgICB9XHJcbiAgICB9XHJcbn1cclxuXHJcbi5mb290ZXIge1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogcmdiKDEzLCAxNywgMjMpO1xyXG59Il0sCiAgIm1hcHBpbmdzIjogIjtBQUFBLENBQUE7QUFFSSxvQkFBQTs7QUFHSSxDQUxSLE9BS1EsQ0FBQSxTQUFBLENBQUEsTUFBQTtBQUNJLFNBQUE7O0FBR0osQ0FUUixPQVNRLENBSkEsU0FJQSxDQUFBO0FBQ0ksVUFBQTtBQUNBLFNBQUE7O0FBS1osQ0FBQTtBQUNJLG9CQUFBLElBQUEsRUFBQSxFQUFBLEVBQUEsRUFBQTs7IiwKICAibmFtZXMiOiBbXQp9Cg== */"]
   });
   let AppComponent2 = _AppComponent;
   return AppComponent2;
