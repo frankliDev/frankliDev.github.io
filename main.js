@@ -3522,6 +3522,14 @@ function setIsInCheckNoChangesMode(mode) {
   !ngDevMode && throwError2("Must never be called in production mode");
   _isInCheckNoChangesMode = mode;
 }
+function getBindingRoot() {
+  const lFrame = instructionState.lFrame;
+  let index = lFrame.bindingRootIndex;
+  if (index === -1) {
+    index = lFrame.bindingRootIndex = lFrame.tView.bindingStartIndex;
+  }
+  return index;
+}
 function getBindingIndex() {
   return instructionState.lFrame.bindingIndex;
 }
@@ -6438,6 +6446,22 @@ var ElementRef = /* @__PURE__ */ (() => {
 })();
 var RendererFactory2 = class {
 };
+var Renderer2 = /* @__PURE__ */ (() => {
+  const _Renderer2 = class _Renderer2 {
+    constructor() {
+      this.destroyNode = null;
+    }
+  };
+  _Renderer2.__NG_ELEMENT_ID__ = () => injectRenderer2();
+  let Renderer22 = _Renderer2;
+  return Renderer22;
+})();
+function injectRenderer2() {
+  const lView = getLView();
+  const tNode = getCurrentTNode();
+  const nodeAtIndex = getComponentLViewByIndex(tNode.index, lView);
+  return (isLView(nodeAtIndex) ? nodeAtIndex : lView)[RENDERER];
+}
 var Sanitizer = /* @__PURE__ */ (() => {
   const _Sanitizer = class _Sanitizer {
   };
@@ -7045,6 +7069,232 @@ function getPreviousIndex(item, addRemoveOffset, moveOffsets) {
   }
   return previousIndex + addRemoveOffset + moveOffset;
 }
+var DefaultKeyValueDifferFactory = class {
+  constructor() {
+  }
+  supports(obj) {
+    return obj instanceof Map || isJsObject(obj);
+  }
+  create() {
+    return new DefaultKeyValueDiffer();
+  }
+};
+var DefaultKeyValueDiffer = class {
+  constructor() {
+    this._records = /* @__PURE__ */ new Map();
+    this._mapHead = null;
+    this._appendAfter = null;
+    this._previousMapHead = null;
+    this._changesHead = null;
+    this._changesTail = null;
+    this._additionsHead = null;
+    this._additionsTail = null;
+    this._removalsHead = null;
+    this._removalsTail = null;
+  }
+  get isDirty() {
+    return this._additionsHead !== null || this._changesHead !== null || this._removalsHead !== null;
+  }
+  forEachItem(fn) {
+    let record;
+    for (record = this._mapHead; record !== null; record = record._next) {
+      fn(record);
+    }
+  }
+  forEachPreviousItem(fn) {
+    let record;
+    for (record = this._previousMapHead; record !== null; record = record._nextPrevious) {
+      fn(record);
+    }
+  }
+  forEachChangedItem(fn) {
+    let record;
+    for (record = this._changesHead; record !== null; record = record._nextChanged) {
+      fn(record);
+    }
+  }
+  forEachAddedItem(fn) {
+    let record;
+    for (record = this._additionsHead; record !== null; record = record._nextAdded) {
+      fn(record);
+    }
+  }
+  forEachRemovedItem(fn) {
+    let record;
+    for (record = this._removalsHead; record !== null; record = record._nextRemoved) {
+      fn(record);
+    }
+  }
+  diff(map2) {
+    if (!map2) {
+      map2 = /* @__PURE__ */ new Map();
+    } else if (!(map2 instanceof Map || isJsObject(map2))) {
+      throw new RuntimeError(900, ngDevMode && `Error trying to diff '${stringify(map2)}'. Only maps and objects are allowed`);
+    }
+    return this.check(map2) ? this : null;
+  }
+  onDestroy() {
+  }
+  /**
+   * Check the current state of the map vs the previous.
+   * The algorithm is optimised for when the keys do no change.
+   */
+  check(map2) {
+    this._reset();
+    let insertBefore = this._mapHead;
+    this._appendAfter = null;
+    this._forEach(map2, (value, key) => {
+      if (insertBefore && insertBefore.key === key) {
+        this._maybeAddToChanges(insertBefore, value);
+        this._appendAfter = insertBefore;
+        insertBefore = insertBefore._next;
+      } else {
+        const record = this._getOrCreateRecordForKey(key, value);
+        insertBefore = this._insertBeforeOrAppend(insertBefore, record);
+      }
+    });
+    if (insertBefore) {
+      if (insertBefore._prev) {
+        insertBefore._prev._next = null;
+      }
+      this._removalsHead = insertBefore;
+      for (let record = insertBefore; record !== null; record = record._nextRemoved) {
+        if (record === this._mapHead) {
+          this._mapHead = null;
+        }
+        this._records.delete(record.key);
+        record._nextRemoved = record._next;
+        record.previousValue = record.currentValue;
+        record.currentValue = null;
+        record._prev = null;
+        record._next = null;
+      }
+    }
+    if (this._changesTail)
+      this._changesTail._nextChanged = null;
+    if (this._additionsTail)
+      this._additionsTail._nextAdded = null;
+    return this.isDirty;
+  }
+  /**
+   * Inserts a record before `before` or append at the end of the list when `before` is null.
+   *
+   * Notes:
+   * - This method appends at `this._appendAfter`,
+   * - This method updates `this._appendAfter`,
+   * - The return value is the new value for the insertion pointer.
+   */
+  _insertBeforeOrAppend(before, record) {
+    if (before) {
+      const prev = before._prev;
+      record._next = before;
+      record._prev = prev;
+      before._prev = record;
+      if (prev) {
+        prev._next = record;
+      }
+      if (before === this._mapHead) {
+        this._mapHead = record;
+      }
+      this._appendAfter = before;
+      return before;
+    }
+    if (this._appendAfter) {
+      this._appendAfter._next = record;
+      record._prev = this._appendAfter;
+    } else {
+      this._mapHead = record;
+    }
+    this._appendAfter = record;
+    return null;
+  }
+  _getOrCreateRecordForKey(key, value) {
+    if (this._records.has(key)) {
+      const record2 = this._records.get(key);
+      this._maybeAddToChanges(record2, value);
+      const prev = record2._prev;
+      const next = record2._next;
+      if (prev) {
+        prev._next = next;
+      }
+      if (next) {
+        next._prev = prev;
+      }
+      record2._next = null;
+      record2._prev = null;
+      return record2;
+    }
+    const record = new KeyValueChangeRecord_(key);
+    this._records.set(key, record);
+    record.currentValue = value;
+    this._addToAdditions(record);
+    return record;
+  }
+  /** @internal */
+  _reset() {
+    if (this.isDirty) {
+      let record;
+      this._previousMapHead = this._mapHead;
+      for (record = this._previousMapHead; record !== null; record = record._next) {
+        record._nextPrevious = record._next;
+      }
+      for (record = this._changesHead; record !== null; record = record._nextChanged) {
+        record.previousValue = record.currentValue;
+      }
+      for (record = this._additionsHead; record != null; record = record._nextAdded) {
+        record.previousValue = record.currentValue;
+      }
+      this._changesHead = this._changesTail = null;
+      this._additionsHead = this._additionsTail = null;
+      this._removalsHead = null;
+    }
+  }
+  // Add the record or a given key to the list of changes only when the value has actually changed
+  _maybeAddToChanges(record, newValue) {
+    if (!Object.is(newValue, record.currentValue)) {
+      record.previousValue = record.currentValue;
+      record.currentValue = newValue;
+      this._addToChanges(record);
+    }
+  }
+  _addToAdditions(record) {
+    if (this._additionsHead === null) {
+      this._additionsHead = this._additionsTail = record;
+    } else {
+      this._additionsTail._nextAdded = record;
+      this._additionsTail = record;
+    }
+  }
+  _addToChanges(record) {
+    if (this._changesHead === null) {
+      this._changesHead = this._changesTail = record;
+    } else {
+      this._changesTail._nextChanged = record;
+      this._changesTail = record;
+    }
+  }
+  /** @internal */
+  _forEach(obj, fn) {
+    if (obj instanceof Map) {
+      obj.forEach(fn);
+    } else {
+      Object.keys(obj).forEach((k) => fn(obj[k], k));
+    }
+  }
+};
+var KeyValueChangeRecord_ = class {
+  constructor(key) {
+    this.key = key;
+    this.previousValue = null;
+    this.currentValue = null;
+    this._nextPrevious = null;
+    this._next = null;
+    this._prev = null;
+    this._nextAdded = null;
+    this._nextRemoved = null;
+    this._nextChanged = null;
+  }
+};
 function defaultIterableDiffersFactory() {
   return new IterableDiffers([new DefaultIterableDifferFactory()]);
 }
@@ -7110,6 +7360,67 @@ var IterableDiffers = /* @__PURE__ */ (() => {
 function getTypeNameForDebugging(type) {
   return type["name"] || typeof type;
 }
+function defaultKeyValueDiffersFactory() {
+  return new KeyValueDiffers([new DefaultKeyValueDifferFactory()]);
+}
+var KeyValueDiffers = /* @__PURE__ */ (() => {
+  const _KeyValueDiffers = class _KeyValueDiffers {
+    constructor(factories) {
+      this.factories = factories;
+    }
+    static create(factories, parent) {
+      if (parent) {
+        const copied = parent.factories.slice();
+        factories = factories.concat(copied);
+      }
+      return new _KeyValueDiffers(factories);
+    }
+    /**
+     * Takes an array of {@link KeyValueDifferFactory} and returns a provider used to extend the
+     * inherited {@link KeyValueDiffers} instance with the provided factories and return a new
+     * {@link KeyValueDiffers} instance.
+     *
+     * @usageNotes
+     * ### Example
+     *
+     * The following example shows how to extend an existing list of factories,
+     * which will only be applied to the injector for this component and its children.
+     * This step is all that's required to make a new {@link KeyValueDiffer} available.
+     *
+     * ```
+     * @Component({
+     *   viewProviders: [
+     *     KeyValueDiffers.extend([new ImmutableMapDiffer()])
+     *   ]
+     * })
+     * ```
+     */
+    static extend(factories) {
+      return {
+        provide: _KeyValueDiffers,
+        useFactory: (parent) => {
+          return _KeyValueDiffers.create(factories, parent || defaultKeyValueDiffersFactory());
+        },
+        // Dependency technically isn't optional, but we can provide a better error message this way.
+        deps: [[_KeyValueDiffers, new SkipSelf(), new Optional()]]
+      };
+    }
+    find(kv) {
+      const factory = this.factories.find((f) => f.supports(kv));
+      if (factory) {
+        return factory;
+      }
+      throw new RuntimeError(901, ngDevMode && `Cannot find a differ supporting object '${kv}'`);
+    }
+  };
+  _KeyValueDiffers.\u0275prov = \u0275\u0275defineInjectable({
+    token: _KeyValueDiffers,
+    providedIn: "root",
+    factory: defaultKeyValueDiffersFactory
+  });
+  let KeyValueDiffers2 = _KeyValueDiffers;
+  return KeyValueDiffers2;
+})();
 function devModeEqual(a, b) {
   const isListLikeIterableA = isListLikeIterable(a);
   const isListLikeIterableB = isListLikeIterable(b);
@@ -9664,6 +9975,9 @@ function LifecycleHooksFeature() {
   ngDevMode && assertDefined(tNode, "TNode is required");
   registerPostOrderHooks(getLView()[TVIEW], tNode);
 }
+function updateBinding(lView, bindingIndex, value) {
+  return lView[bindingIndex] = value;
+}
 function bindingUpdated(lView, bindingIndex, value) {
   ngDevMode && assertNotSame(value, NO_CHANGE, "Incoming value should never be NO_CHANGE.");
   ngDevMode && assertLessThan(bindingIndex, lView.length, `Slot should have been initialized to NO_CHANGE`);
@@ -10561,6 +10875,18 @@ function assertDomElement(value) {
   if (typeof Element !== "undefined" && !(value instanceof Element)) {
     throw new Error("Expecting instance of DOM Element");
   }
+}
+function \u0275\u0275pureFunction1(slotOffset, pureFn, exp, thisArg) {
+  return pureFunction1Internal(getLView(), getBindingRoot(), slotOffset, pureFn, exp, thisArg);
+}
+function getPureFunctionReturnValue(lView, returnValueIndex) {
+  ngDevMode && assertIndexInRange(lView, returnValueIndex);
+  const lastReturnValue = lView[returnValueIndex];
+  return lastReturnValue === NO_CHANGE ? void 0 : lastReturnValue;
+}
+function pureFunction1Internal(lView, bindingRoot, slotOffset, pureFn, exp, thisArg) {
+  const bindingIndex = bindingRoot + slotOffset;
+  return bindingUpdated(lView, bindingIndex, exp) ? updateBinding(lView, bindingIndex + 1, thisArg ? pureFn.call(thisArg, exp) : pureFn(exp)) : getPureFunctionReturnValue(lView, bindingIndex + 1);
 }
 var TemplateRef = /* @__PURE__ */ (() => {
   const _TemplateRef = class _TemplateRef {
@@ -12699,6 +13025,127 @@ function parseCookieValue(cookieStr, name) {
   }
   return null;
 }
+var WS_REGEXP = /\s+/;
+var EMPTY_ARRAY2 = [];
+var NgClass = /* @__PURE__ */ (() => {
+  const _NgClass = class _NgClass {
+    constructor(_iterableDiffers, _keyValueDiffers, _ngEl, _renderer) {
+      this._iterableDiffers = _iterableDiffers;
+      this._keyValueDiffers = _keyValueDiffers;
+      this._ngEl = _ngEl;
+      this._renderer = _renderer;
+      this.initialClasses = EMPTY_ARRAY2;
+      this.stateMap = /* @__PURE__ */ new Map();
+    }
+    set klass(value) {
+      this.initialClasses = value != null ? value.trim().split(WS_REGEXP) : EMPTY_ARRAY2;
+    }
+    set ngClass(value) {
+      this.rawClass = typeof value === "string" ? value.trim().split(WS_REGEXP) : value;
+    }
+    /*
+    The NgClass directive uses the custom change detection algorithm for its inputs. The custom
+    algorithm is necessary since inputs are represented as complex object or arrays that need to be
+    deeply-compared.
+       This algorithm is perf-sensitive since NgClass is used very frequently and its poor performance
+    might negatively impact runtime performance of the entire change detection cycle. The design of
+    this algorithm is making sure that:
+    - there is no unnecessary DOM manipulation (CSS classes are added / removed from the DOM only when
+    needed), even if references to bound objects change;
+    - there is no memory allocation if nothing changes (even relatively modest memory allocation
+    during the change detection cycle can result in GC pauses for some of the CD cycles).
+       The algorithm works by iterating over the set of bound classes, staring with [class] binding and
+    then going over [ngClass] binding. For each CSS class name:
+    - check if it was seen before (this information is tracked in the state map) and if its value
+    changed;
+    - mark it as "touched" - names that are not marked are not present in the latest set of binding
+    and we can remove such class name from the internal data structures;
+       After iteration over all the CSS class names we've got data structure with all the information
+    necessary to synchronize changes to the DOM - it is enough to iterate over the state map, flush
+    changes to the DOM and reset internal data structures so those are ready for the next change
+    detection cycle.
+     */
+    ngDoCheck() {
+      for (const klass of this.initialClasses) {
+        this._updateState(klass, true);
+      }
+      const rawClass = this.rawClass;
+      if (Array.isArray(rawClass) || rawClass instanceof Set) {
+        for (const klass of rawClass) {
+          this._updateState(klass, true);
+        }
+      } else if (rawClass != null) {
+        for (const klass of Object.keys(rawClass)) {
+          this._updateState(klass, Boolean(rawClass[klass]));
+        }
+      }
+      this._applyStateDiff();
+    }
+    _updateState(klass, nextEnabled) {
+      const state = this.stateMap.get(klass);
+      if (state !== void 0) {
+        if (state.enabled !== nextEnabled) {
+          state.changed = true;
+          state.enabled = nextEnabled;
+        }
+        state.touched = true;
+      } else {
+        this.stateMap.set(klass, {
+          enabled: nextEnabled,
+          changed: true,
+          touched: true
+        });
+      }
+    }
+    _applyStateDiff() {
+      for (const stateEntry of this.stateMap) {
+        const klass = stateEntry[0];
+        const state = stateEntry[1];
+        if (state.changed) {
+          this._toggleClass(klass, state.enabled);
+          state.changed = false;
+        } else if (!state.touched) {
+          if (state.enabled) {
+            this._toggleClass(klass, false);
+          }
+          this.stateMap.delete(klass);
+        }
+        state.touched = false;
+      }
+    }
+    _toggleClass(klass, enabled) {
+      if (ngDevMode) {
+        if (typeof klass !== "string") {
+          throw new Error(`NgClass can only toggle CSS classes expressed as strings, got ${stringify(klass)}`);
+        }
+      }
+      klass = klass.trim();
+      if (klass.length > 0) {
+        klass.split(WS_REGEXP).forEach((klass2) => {
+          if (enabled) {
+            this._renderer.addClass(this._ngEl.nativeElement, klass2);
+          } else {
+            this._renderer.removeClass(this._ngEl.nativeElement, klass2);
+          }
+        });
+      }
+    }
+  };
+  _NgClass.\u0275fac = function NgClass_Factory(t) {
+    return new (t || _NgClass)(\u0275\u0275directiveInject(IterableDiffers), \u0275\u0275directiveInject(KeyValueDiffers), \u0275\u0275directiveInject(ElementRef), \u0275\u0275directiveInject(Renderer2));
+  };
+  _NgClass.\u0275dir = /* @__PURE__ */ \u0275\u0275defineDirective({
+    type: _NgClass,
+    selectors: [["", "ngClass", ""]],
+    inputs: {
+      klass: ["class", "klass"],
+      ngClass: "ngClass"
+    },
+    standalone: true
+  });
+  let NgClass2 = _NgClass;
+  return NgClass2;
+})();
 var NgForOfContext = class {
   constructor($implicit, ngForOf, index, count) {
     this.$implicit = $implicit;
@@ -19111,192 +19558,6 @@ var HomeComponent = /* @__PURE__ */ (() => {
   return HomeComponent2;
 })();
 
-// src/assets/ai_list.json
-var ai_list_default = [
-  {
-    title: "Accelerating human",
-    url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/Accelerating%20human.pdf",
-    datetime: "2023-11-26 22:11",
-    timestamp: ""
-  },
-  {
-    title: "of_organisations_75",
-    url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/of_organisations_75.pdf",
-    datetime: "2023-11-26 22:13",
-    timestamp: ""
-  },
-  {
-    title: "\u5FEB\u901F\u5F00\u59CB",
-    url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/%E5%BF%AB%E9%80%9F%E5%BC%80%E5%A7%8B.pdf",
-    datetime: "2023-11-26 22:16",
-    timestamp: ""
-  },
-  {
-    title: "1-Transform\u6A21\u578B",
-    url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/1-Transform%E6%A8%A1%E5%9E%8B.pdf",
-    datetime: "2023-12-05 22:22",
-    timestamp: ""
-  },
-  {
-    title: "2-\u4F7F\u7528Transformers\u6A21\u578B",
-    url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/2-%E4%BD%BF%E7%94%A8Transformers.pdf",
-    datetime: "2023-12-7 10:28",
-    timestamp: ""
-  }
-];
-
-// src/app/ai/ai.component.ts
-function AiComponent_li_34_Template(rf, ctx) {
-  if (rf & 1) {
-    const _r6 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "li", 31);
-    \u0275\u0275listener("click", function AiComponent_li_34_Template_li_click_0_listener() {
-      const restoredCtx = \u0275\u0275restoreView(_r6);
-      const item_r3 = restoredCtx.$implicit;
-      const ctx_r5 = \u0275\u0275nextContext();
-      return \u0275\u0275resetView(ctx_r5.selectTitle(item_r3));
-    });
-    \u0275\u0275elementStart(1, "div", 32)(2, "div", 33)(3, "span", 34);
-    \u0275\u0275text(4);
-    \u0275\u0275elementEnd();
-    \u0275\u0275text(5);
-    \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(6, "div", 35);
-    \u0275\u0275text(7);
-    \u0275\u0275elementEnd()()();
-  }
-  if (rf & 2) {
-    const item_r3 = ctx.$implicit;
-    const i_r4 = ctx.index;
-    \u0275\u0275advance(4);
-    \u0275\u0275textInterpolate(i_r4 + 1);
-    \u0275\u0275advance(1);
-    \u0275\u0275textInterpolate1(" ", item_r3.title, " ");
-    \u0275\u0275advance(2);
-    \u0275\u0275textInterpolate(item_r3.datetime);
-  }
-}
-function AiComponent_button_43_Template(rf, ctx) {
-  if (rf & 1) {
-    \u0275\u0275elementStart(0, "button", 36);
-    \u0275\u0275element(1, "i", 37);
-    \u0275\u0275elementEnd();
-  }
-}
-function AiComponent_object_44_Template(rf, ctx) {
-  if (rf & 1) {
-    \u0275\u0275element(0, "object", 38);
-  }
-  if (rf & 2) {
-    const ctx_r2 = \u0275\u0275nextContext();
-    \u0275\u0275attribute("data", ctx_r2.pdfSrc, \u0275\u0275sanitizeResourceUrl);
-  }
-}
-var AiComponent = /* @__PURE__ */ (() => {
-  const _AiComponent = class _AiComponent {
-    constructor(sanitizer) {
-      this.sanitizer = sanitizer;
-      this.articles = ai_list_default;
-      this.pdfSrc = "";
-      this.currentTitle = "";
-    }
-    ngOnInit() {
-      this.articles.forEach((element) => {
-        const dt = new Date(element["datetime"]);
-        element["timestamp"] = dt.getTime().toString();
-      });
-      this.articles.sort((a, b) => {
-        let firstTimestamp = Number(a.timestamp);
-        let secondTimestamp = Number(b.timestamp);
-        if (firstTimestamp > secondTimestamp) {
-          return 1;
-        } else {
-          return -1;
-        }
-      });
-    }
-    selectTitle(article) {
-      this.currentTitle = article.title;
-      this.pdfSrc = this.sanitizer.bypassSecurityTrustResourceUrl(article.url);
-    }
-  };
-  _AiComponent.\u0275fac = function AiComponent_Factory(t) {
-    return new (t || _AiComponent)(\u0275\u0275directiveInject(DomSanitizer));
-  };
-  _AiComponent.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({
-    type: _AiComponent,
-    selectors: [["app-ai"]],
-    decls: 45,
-    vars: 5,
-    consts: [[1, "box", "bg-dark", "pt-5", "mt-4"], [1, "container-fluid", "px-5", "py-4"], [1, "row", "mb-4"], [1, "col-12", "text-center", "text-light", "fs-1", "fw-bold"], ["src", "../../assets/img/chatGPT-logo.png", 1, "logo", "me-2"], [1, "col-12", "text-center", "my-3"], ["type", "button", "data-bs-toggle", "offcanvas", "data-bs-target", "#offcanvasExample", "aria-controls", "offcanvasExample", "accesskey", "x", 1, "btn", "btn-success"], [1, "bi", "bi-list-columns-reverse", "me-2"], [1, "text-secondary", "mt-2"], [1, "mx-2"], [1, "bi", "bi-windows", "me-1"], [1, "bi", "bi-apple", "me-1"], [1, "col-12", "text-secondary", "text-center", "mt-3"], [1, "bi", "bi-markdown-fill"], [1, "bi", "bi-file-earmark-pdf-fill"], [1, "row"], ["tabindex", "-1", "id", "offcanvasExample", "aria-labelledby", "offcanvasExampleLabel", 1, "offcanvas", "offcanvas-start", "bg-dark"], [1, "offcanvas-header"], ["id", "offcanvasExampleLabel", 1, "offcanvas-title", "text-light"], ["type", "button", "data-bs-dismiss", "offcanvas", "aria-label", "Close", 1, "btn", "btn-outline-secondary", "btn-sm"], [1, "bi", "bi-x-lg"], [1, "offcanvas-body"], [1, "list-group", "title-list"], ["class", "list-group-item text-light border-secondary fw-normal", 3, "click", 4, "ngFor", "ngForOf"], [1, "mt-2"], [1, "text-warning"], [1, "ms-2", "text-light", "small"], [1, "col-12", "detail"], [1, "mb-2", "lead", "text-warning"], ["class", "btn btn-success btn-sm ms-2", "type", "button", "data-bs-toggle", "offcanvas", "data-bs-target", "#offcanvasExample", "aria-controls", "offcanvasExample", 4, "ngIf"], ["type", "application/pdf", "width", "100%", 4, "ngIf"], [1, "list-group-item", "text-light", "border-secondary", "fw-normal", 3, "click"], [1, "row", "align-items-center"], [1, "col-12"], [1, "badge", "rounded-pill", "text-bg-success", "me-2"], [1, "col-12", "text-end", "text-secondary", "small"], ["type", "button", "data-bs-toggle", "offcanvas", "data-bs-target", "#offcanvasExample", "aria-controls", "offcanvasExample", 1, "btn", "btn-success", "btn-sm", "ms-2"], [1, "bi", "bi-list-columns-reverse"], ["type", "application/pdf", "width", "100%"]],
-    template: function AiComponent_Template(rf, ctx) {
-      if (rf & 1) {
-        \u0275\u0275elementStart(0, "div", 0)(1, "div", 1)(2, "div", 2)(3, "div", 3);
-        \u0275\u0275element(4, "img", 4);
-        \u0275\u0275text(5, " Artificial Intelligence ");
-        \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(6, "div", 5)(7, "button", 6);
-        \u0275\u0275element(8, "i", 7);
-        \u0275\u0275text(9, " Show Articles List ");
-        \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(10, "div", 8)(11, "small", 9);
-        \u0275\u0275element(12, "i", 10);
-        \u0275\u0275text(13, " Shift + Alt + X ");
-        \u0275\u0275elementEnd();
-        \u0275\u0275text(14, " | ");
-        \u0275\u0275elementStart(15, "small", 9);
-        \u0275\u0275element(16, "i", 11);
-        \u0275\u0275text(17, " Control + Alt + X ");
-        \u0275\u0275elementEnd()()();
-        \u0275\u0275elementStart(18, "div", 12)(19, "p");
-        \u0275\u0275text(20, " Notice : Use MarkText to write ");
-        \u0275\u0275element(21, "i", 13);
-        \u0275\u0275text(22, " markdown file, and export as ");
-        \u0275\u0275element(23, "i", 14);
-        \u0275\u0275text(24, " PDF file.");
-        \u0275\u0275elementEnd()()();
-        \u0275\u0275elementStart(25, "div", 15)(26, "div", 16)(27, "div", 17)(28, "h5", 18);
-        \u0275\u0275text(29, "Articles List");
-        \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(30, "button", 19);
-        \u0275\u0275element(31, "i", 20);
-        \u0275\u0275elementEnd()();
-        \u0275\u0275elementStart(32, "div", 21)(33, "ul", 22);
-        \u0275\u0275template(34, AiComponent_li_34_Template, 8, 3, "li", 23);
-        \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(35, "div", 24)(36, "span", 25);
-        \u0275\u0275text(37);
-        \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(38, "span", 26);
-        \u0275\u0275text(39, "\u6309\u751F\u6210\u65F6\u95F4\u6B63\u5E8F\u6392\u5217");
-        \u0275\u0275elementEnd()()()();
-        \u0275\u0275elementStart(40, "div", 27)(41, "div", 28);
-        \u0275\u0275text(42);
-        \u0275\u0275template(43, AiComponent_button_43_Template, 2, 0, "button", 29);
-        \u0275\u0275elementEnd();
-        \u0275\u0275template(44, AiComponent_object_44_Template, 1, 1, "object", 30);
-        \u0275\u0275elementEnd()()()();
-      }
-      if (rf & 2) {
-        \u0275\u0275advance(34);
-        \u0275\u0275property("ngForOf", ctx.articles);
-        \u0275\u0275advance(3);
-        \u0275\u0275textInterpolate1("Total: ", ctx.articles.length, "");
-        \u0275\u0275advance(5);
-        \u0275\u0275textInterpolate1(" ", ctx.currentTitle, " ");
-        \u0275\u0275advance(1);
-        \u0275\u0275property("ngIf", ctx.currentTitle != "");
-        \u0275\u0275advance(1);
-        \u0275\u0275property("ngIf", ctx.pdfSrc != "");
-      }
-    },
-    dependencies: [NgForOf, NgIf],
-    styles: ["\n\n.box[_ngcontent-%COMP%]   .logo[_ngcontent-%COMP%] {\n  height: 3rem;\n  width: auto;\n}\n.box[_ngcontent-%COMP%]   .title-list[_ngcontent-%COMP%] {\n  max-height: 80vh;\n  height: 80vh;\n  overflow-y: scroll;\n}\n.box[_ngcontent-%COMP%]   .title-list[_ngcontent-%COMP%]   li[_ngcontent-%COMP%] {\n  background: none;\n  transition: background-color 0.1s;\n}\n.box[_ngcontent-%COMP%]   .title-list[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]:hover {\n  background-color: #0066CC;\n  cursor: pointer;\n}\n.box[_ngcontent-%COMP%]   .offcanvas[_ngcontent-%COMP%] {\n  width: 40% !important;\n}\n.box[_ngcontent-%COMP%]   object[_ngcontent-%COMP%] {\n  height: 80vh;\n}\n/*# sourceMappingURL=data:application/json;base64,ewogICJ2ZXJzaW9uIjogMywKICAic291cmNlcyI6IFsic3JjL2FwcC9haS9haS5jb21wb25lbnQuc2NzcyJdLAogICJzb3VyY2VzQ29udGVudCI6IFsiJG15SGVpZ2h0OiA4MHZoO1xuJG9mZmNhbnZhcy13aWR0aDogNDAlO1xuXG4uYm94IHtcblxuICAgIC5sb2dvIHtcbiAgICAgICAgaGVpZ2h0OiAzcmVtO1xuICAgICAgICB3aWR0aDogYXV0bztcbiAgICB9XG5cbiAgICAudGl0bGUtbGlzdCB7XG4gICAgICAgIG1heC1oZWlnaHQ6ICRteUhlaWdodDtcbiAgICAgICAgaGVpZ2h0OiAkbXlIZWlnaHQ7XG4gICAgICAgIG92ZXJmbG93LXk6IHNjcm9sbDtcblxuICAgICAgICBsaSB7XG4gICAgICAgICAgICBiYWNrZ3JvdW5kOiBub25lO1xuICAgICAgICAgICAgdHJhbnNpdGlvbjogYmFja2dyb3VuZC1jb2xvciAuMXM7XG5cbiAgICAgICAgICAgICY6aG92ZXIge1xuICAgICAgICAgICAgICAgIGJhY2tncm91bmQtY29sb3I6ICMwMDY2Q0M7XG4gICAgICAgICAgICAgICAgY3Vyc29yOiBwb2ludGVyO1xuICAgICAgICAgICAgfVxuICAgICAgICB9XG5cbiAgICB9XG5cbiAgICAub2ZmY2FudmFzIHtcbiAgICAgICAgd2lkdGg6ICRvZmZjYW52YXMtd2lkdGggIWltcG9ydGFudDtcbiAgICB9XG5cbiAgICBvYmplY3Qge1xuICAgICAgICBoZWlnaHQ6ICRteUhlaWdodDtcbiAgICB9XG5cbn0iXSwKICAibWFwcGluZ3MiOiAiO0FBS0ksQ0FBQSxJQUFBLENBQUE7QUFDSSxVQUFBO0FBQ0EsU0FBQTs7QUFHSixDQUxBLElBS0EsQ0FBQTtBQUNJLGNBWEc7QUFZSCxVQVpHO0FBYUgsY0FBQTs7QUFFQSxDQVZKLElBVUksQ0FMSixXQUtJO0FBQ0ksY0FBQTtBQUNBLGNBQUEsaUJBQUE7O0FBRUEsQ0FkUixJQWNRLENBVFIsV0FTUSxFQUFBO0FBQ0ksb0JBQUE7QUFDQSxVQUFBOztBQU1aLENBdEJBLElBc0JBLENBQUE7QUFDSSxTQUFBOztBQUdKLENBMUJBLElBMEJBO0FBQ0ksVUFoQ0c7OyIsCiAgIm5hbWVzIjogW10KfQo= */"]
-  });
-  let AiComponent2 = _AiComponent;
-  return AiComponent2;
-})();
-
 // src/assets/harmonyos_list.json
 var harmonyos_list_default = [
   {
@@ -19408,7 +19669,7 @@ var HarmonyosComponent = /* @__PURE__ */ (() => {
     selectors: [["app-harmonyos"]],
     decls: 45,
     vars: 5,
-    consts: [[1, "box", "bg-dark", "pt-5", "mt-4"], [1, "container-fluid", "px-5", "py-4"], [1, "row", "mb-4"], [1, "col-12", "text-center", "text-light", "fs-1", "fw-bold"], ["src", "../../assets/img/huawei-logo.png", 1, "logo", "me-2"], [1, "col-12", "text-center", "my-3"], ["type", "button", "data-bs-toggle", "offcanvas", "data-bs-target", "#offcanvasExample", "aria-controls", "offcanvasExample", "accesskey", "x", 1, "btn", "btn-danger"], [1, "bi", "bi-list-columns-reverse", "me-2"], [1, "text-secondary", "mt-2"], [1, "mx-2"], [1, "bi", "bi-windows", "me-1"], [1, "bi", "bi-apple", "me-1"], [1, "col-12", "text-secondary", "text-center", "mt-3"], [1, "bi", "bi-markdown-fill"], [1, "bi", "bi-file-earmark-pdf-fill"], [1, "row"], ["tabindex", "-1", "id", "offcanvasExample", "aria-labelledby", "offcanvasExampleLabel", 1, "offcanvas", "offcanvas-start", "bg-dark"], [1, "offcanvas-header"], ["id", "offcanvasExampleLabel", 1, "offcanvas-title", "text-light"], ["type", "button", "data-bs-dismiss", "offcanvas", "aria-label", "Close", 1, "btn", "btn-outline-secondary", "btn-sm"], [1, "bi", "bi-x-lg"], [1, "offcanvas-body"], [1, "list-group", "title-list"], ["class", "list-group-item text-light border-secondary fw-normal", 3, "click", 4, "ngFor", "ngForOf"], [1, "mt-2"], [1, "text-warning"], [1, "ms-2", "text-light", "small"], [1, "col-12", "detail"], [1, "mb-2", "lead", "text-warning"], ["class", "btn btn-danger btn-sm ms-2", "type", "button", "data-bs-toggle", "offcanvas", "data-bs-target", "#offcanvasExample", "aria-controls", "offcanvasExample", 4, "ngIf"], ["type", "application/pdf", "width", "100%", 4, "ngIf"], [1, "list-group-item", "text-light", "border-secondary", "fw-normal", 3, "click"], [1, "row", "align-items-center"], [1, "col-12"], [1, "badge", "rounded-pill", "text-bg-danger", "me-2"], [1, "col-12", "text-end", "text-secondary", "small"], ["type", "button", "data-bs-toggle", "offcanvas", "data-bs-target", "#offcanvasExample", "aria-controls", "offcanvasExample", 1, "btn", "btn-danger", "btn-sm", "ms-2"], [1, "bi", "bi-list-columns-reverse"], ["type", "application/pdf", "width", "100%"]],
+    consts: [[1, "box", "bg-dark", "pt-5", "mt-4"], [1, "container-fluid", "px-5", "py-4"], [1, "row", "mb-4"], [1, "col-12", "text-center", "text-light", "fs-1", "fw-bold"], ["src", "../../assets/img/huawei-logo.png", 1, "logo", "me-2"], [1, "col-12", "text-center", "my-3"], ["type", "button", "data-bs-toggle", "offcanvas", "data-bs-target", "#offcanvasExample", "aria-controls", "offcanvasExample", "accesskey", "x", 1, "btn", "btn-danger"], [1, "bi", "bi-list-columns-reverse", "me-2"], [1, "text-secondary", "mt-2"], [1, "mx-2"], [1, "bi", "bi-windows", "me-1"], [1, "bi", "bi-apple", "me-1"], [1, "col-12", "text-secondary", "text-center", "mt-3"], [1, "bi", "bi-markdown-fill"], [1, "bi", "bi-file-earmark-pdf-fill"], [1, "row"], ["tabindex", "-1", "id", "offcanvasExample", "aria-labelledby", "offcanvasExampleLabel", 1, "offcanvas", "offcanvas-start", "bg-dark"], [1, "offcanvas-header"], ["id", "offcanvasExampleLabel", 1, "offcanvas-title", "text-danger"], ["type", "button", "data-bs-dismiss", "offcanvas", "aria-label", "Close", 1, "btn", "btn-outline-secondary", "btn-sm"], [1, "bi", "bi-x-lg"], [1, "offcanvas-body"], [1, "list-group", "title-list"], ["class", "list-group-item text-light border-secondary fw-normal", 3, "click", 4, "ngFor", "ngForOf"], [1, "mt-2"], [1, "text-warning"], [1, "ms-2", "text-light", "small"], [1, "col-12", "detail"], [1, "mb-2", "lead", "text-warning"], ["class", "btn btn-danger btn-sm ms-2", "type", "button", "data-bs-toggle", "offcanvas", "data-bs-target", "#offcanvasExample", "aria-controls", "offcanvasExample", 4, "ngIf"], ["type", "application/pdf", "width", "100%", 4, "ngIf"], [1, "list-group-item", "text-light", "border-secondary", "fw-normal", 3, "click"], [1, "row", "align-items-center"], [1, "col-12"], [1, "badge", "rounded-pill", "text-bg-danger", "me-2"], [1, "col-12", "text-end", "text-secondary", "small"], ["type", "button", "data-bs-toggle", "offcanvas", "data-bs-target", "#offcanvasExample", "aria-controls", "offcanvasExample", 1, "btn", "btn-danger", "btn-sm", "ms-2"], [1, "bi", "bi-list-columns-reverse"], ["type", "application/pdf", "width", "100%"]],
     template: function HarmonyosComponent_Template(rf, ctx) {
       if (rf & 1) {
         \u0275\u0275elementStart(0, "div", 0)(1, "div", 1)(2, "div", 2)(3, "div", 3);
@@ -19634,15 +19895,618 @@ var LifePhilosophyComponent = /* @__PURE__ */ (() => {
   return LifePhilosophyComponent2;
 })();
 
+// src/app/about/about.component.ts
+var AboutComponent = /* @__PURE__ */ (() => {
+  const _AboutComponent = class _AboutComponent {
+  };
+  _AboutComponent.\u0275fac = function AboutComponent_Factory(t) {
+    return new (t || _AboutComponent)();
+  };
+  _AboutComponent.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({
+    type: _AboutComponent,
+    selectors: [["app-about"]],
+    decls: 11,
+    vars: 0,
+    consts: [[1, "box", "bg-dark", "pt-5", "mt-4"], [1, "container-fluid", "px-5", "py-4"], [1, "row", "mb-4"], [1, "text-light"], ["src", "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface-course/1.png", 1, "w-100"], ["src", "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface-course/10.png", 1, "w-100"]],
+    template: function AboutComponent_Template(rf, ctx) {
+      if (rf & 1) {
+        \u0275\u0275elementStart(0, "div", 0)(1, "div", 1)(2, "div", 2)(3, "h1", 3);
+        \u0275\u0275text(4, "\u4E2A\u4EBA\u4E2D\u5FC3");
+        \u0275\u0275elementEnd();
+        \u0275\u0275elementStart(5, "ul")(6, "li")(7, "p");
+        \u0275\u0275element(8, "img", 4);
+        \u0275\u0275elementEnd();
+        \u0275\u0275elementStart(9, "p");
+        \u0275\u0275element(10, "img", 5);
+        \u0275\u0275elementEnd()()()()()();
+      }
+    },
+    styles: ["\n\n/*# sourceMappingURL=data:application/json;base64,ewogICJ2ZXJzaW9uIjogMywKICAic291cmNlcyI6IFtdLAogICJzb3VyY2VzQ29udGVudCI6IFtdLAogICJtYXBwaW5ncyI6ICIiLAogICJuYW1lcyI6IFtdCn0K */"]
+  });
+  let AboutComponent2 = _AboutComponent;
+  return AboutComponent2;
+})();
+
+// src/app/tongyi/tongyi.component.ts
+var TongyiComponent = /* @__PURE__ */ (() => {
+  const _TongyiComponent = class _TongyiComponent {
+  };
+  _TongyiComponent.\u0275fac = function TongyiComponent_Factory(t) {
+    return new (t || _TongyiComponent)();
+  };
+  _TongyiComponent.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({
+    type: _TongyiComponent,
+    selectors: [["app-tongyi"]],
+    decls: 5,
+    vars: 0,
+    consts: [[1, "box", "bg-dark", "pt-5", "mt-4"], [1, "container-fluid", "px-5", "py-4"], [1, "row", "mb-4"], [1, "text-light"]],
+    template: function TongyiComponent_Template(rf, ctx) {
+      if (rf & 1) {
+        \u0275\u0275elementStart(0, "div", 0)(1, "div", 1)(2, "div", 2)(3, "h1", 3);
+        \u0275\u0275text(4, "Tongyi");
+        \u0275\u0275elementEnd()()()();
+      }
+    },
+    styles: ["\n\n/*# sourceMappingURL=data:application/json;base64,ewogICJ2ZXJzaW9uIjogMywKICAic291cmNlcyI6IFtdLAogICJzb3VyY2VzQ29udGVudCI6IFtdLAogICJtYXBwaW5ncyI6ICIiLAogICJuYW1lcyI6IFtdCn0K */"]
+  });
+  let TongyiComponent2 = _TongyiComponent;
+  return TongyiComponent2;
+})();
+
+// src/assets/huggingface_list.json
+var huggingface_list_default = [
+  {
+    title: "NLP \u81EA\u7136\u8BED\u8A00\u5904\u7406",
+    chapters: [
+      {
+        title: "Transformer \u6A21\u578B",
+        articles: [
+          {
+            title: "\u672C\u7AE0\u7B80\u4ECB",
+            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/1.png"
+          },
+          {
+            title: "Transformer \u80FD\u505A\u4EC0\u4E48",
+            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/2.png"
+          },
+          {
+            title: "Transformer \u662F\u5982\u4F55\u5DE5\u4F5C\u7684",
+            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/3.png"
+          },
+          {
+            title: "\u7F16\u7801\u5668\u6A21\u578B",
+            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/4.png"
+          },
+          {
+            title: "\u89E3\u7801\u5668\u6A21\u578B",
+            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/5.png"
+          },
+          {
+            title: "\u5E8F\u5217\u5230\u5E8F\u5217\u6A21\u578B",
+            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/6.png"
+          },
+          {
+            title: "\u504F\u89C1\u548C\u5C40\u9650\u6027",
+            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/7.png"
+          },
+          {
+            title: "\u603B\u7ED3",
+            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/8.png"
+          },
+          {
+            title: "\u7AE0\u672B\u5C0F\u6D4B\u8BD5",
+            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/9.png"
+          }
+        ]
+      },
+      {
+        title: "\u4F7F\u7528 Transformers",
+        articles: [
+          {
+            title: "\u672C\u7AE0\u7B80\u4ECB",
+            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/10.png"
+          },
+          {
+            title: "\u7BA1\u9053\u7684\u5185\u90E8",
+            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/11.png"
+          },
+          {
+            title: "\u6A21\u578B",
+            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/12.png"
+          },
+          {
+            title: "\u6807\u8BB0\u5668",
+            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/13.png"
+          },
+          {
+            title: "\u5904\u7406\u591A\u4E2A\u5E8F\u5217",
+            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/14.png"
+          },
+          {
+            title: "\u628A\u5B83\u4EEC\u653E\u5728\u4E00\u8D77",
+            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/15.png"
+          },
+          {
+            title: "\u57FA\u672C\u7528\u6CD5\u5B8C\u6210",
+            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/16.png"
+          },
+          {
+            title: "\u7AE0\u672B\u5C0F\u6D4B\u8BD5",
+            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/17.png"
+          }
+        ]
+      },
+      {
+        title: "\u5FAE\u8C03\u9884\u8BAD\u7EC3\u6A21\u578B",
+        articles: [
+          {
+            title: "\u7B80\u4ECB",
+            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/18.png"
+          },
+          {
+            title: "\u9884\u5904\u7406\u6570\u636E",
+            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/19.png"
+          },
+          {
+            title: "\u4F7F\u7528 Trainer API \u5FAE\u8C03\u6A21\u578B",
+            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/20.png"
+          },
+          {
+            title: "\u4E00\u4E2A\u5B8C\u6574\u7684\u8BAD\u7EC3\u8FC7\u7A0B",
+            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/21.png"
+          },
+          {
+            title: "\u5FAE\u8C03\u7AE0\u8282\u56DE\u987E",
+            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/22.png"
+          },
+          {
+            title: "\u7AE0\u672B\u5C0F\u6D4B\u9A8C",
+            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/23.png"
+          }
+        ]
+      },
+      {
+        title: "HuggingfaceHub",
+        articles: [
+          {
+            title: "HuggingfaceHub \u4ECB\u7ECD",
+            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/24.png"
+          },
+          {
+            title: "\u4F7F\u7528\u9884\u8BAD\u7EC3\u6A21\u578B",
+            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/25.png"
+          },
+          {
+            title: "\u5171\u4EAB\u9884\u8BAD\u7EC3\u6A21\u578B",
+            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/26.png"
+          },
+          {
+            title: "\u6784\u5EFA\u6A21\u578B\u5361\u7247",
+            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/27.png"
+          },
+          {
+            title: "Part 1 \u5B8C\u7ED3",
+            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/28.png"
+          },
+          {
+            title: "\u7AE0\u672B\u5C0F\u6D4B\u8BD5",
+            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/29.png"
+          }
+        ]
+      },
+      {
+        title: "Datasets \u5E93",
+        articles: [
+          {
+            title: "Datasets \u7B80\u4ECB",
+            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/30.png"
+          },
+          {
+            title: "\u5982\u679C\u6211\u7684\u6570\u636E\u96C6\u4E0D\u5728 hub \u4E0A\u600E\u4E48\u529E",
+            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/31.png"
+          },
+          {
+            title: "\u662F\u65F6\u5019\u5B66\u4E00\u4E0B\u5207\u7247\u4E86",
+            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/32.png"
+          },
+          {
+            title: "\u5927\u6570\u636E datasets \u6765\u6551\u63F4",
+            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/33.png"
+          },
+          {
+            title: "\u521B\u5EFA\u81EA\u5DF1\u7684\u6570\u636E\u96C6",
+            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/34.png"
+          },
+          {
+            title: "\u4F7F\u7528 FAISS \u8FDB\u884C\u8BED\u4E49\u641C\u7D22",
+            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/35.png"
+          },
+          {
+            title: "Datasets \u56DE\u987E",
+            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/36.png"
+          },
+          {
+            title: "\u7AE0\u672B\u5C0F\u6D4B\u8BD5",
+            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/37.png"
+          }
+        ]
+      },
+      {
+        title: "Tokenizer",
+        articles: [
+          {
+            title: "tokenizer \u7B80\u4ECB",
+            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/38.png"
+          },
+          {
+            title: "\u6839\u636E\u5DF2\u6709\u7684 tokenizer \u8BAD\u7EC3\u65B0\u7684 tokenizer",
+            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/39.png"
+          },
+          {
+            title: "\u5FEB\u901F\u6807\u8BB0\u5668\u7684\u7279\u6B8A\u80FD\u529B",
+            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/40.png"
+          },
+          {
+            title: "QA \u7BA1\u9053\u4E2D\u7684\u5FEB\u901F\u6807\u8BB0\u5668",
+            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/41.png"
+          },
+          {
+            title: "\u6807\u51C6\u5316\u548C\u9884\u6807\u51C6\u5316",
+            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/42.png"
+          },
+          {
+            title: "\u5B57\u8282\u5BF9\u7F16\u7801\u6807\u51C6\u5316",
+            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/43.png"
+          },
+          {
+            title: "WordPiece \u6807\u51C6\u5316",
+            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/44.png"
+          },
+          {
+            title: "Unigram \u6807\u51C6\u5316",
+            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/45.png"
+          },
+          {
+            title: "\u9010\u5757\u7684\u6784\u5EFA\u6807\u8BB0\u5668",
+            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/46.png"
+          },
+          {
+            title: "\u6807\u8BB0\u5668\u56DE\u987E",
+            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/47.png"
+          },
+          {
+            title: "\u7AE0\u672B\u5C0F\u6D4B\u9A8C",
+            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/48.png"
+          }
+        ]
+      },
+      {
+        title: "\u5904\u7406\u5E38\u89C1\u7684 NLP \u4EFB\u52A1",
+        articles: [
+          {
+            title: "\u7B80\u4ECB",
+            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/49.png"
+          },
+          {
+            title: "\u6807\u8BB0 token \u5206\u7C7B",
+            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/50.png"
+          },
+          {
+            title: "\u5FAE\u8C03\u63A9\u7801\u8BED\u8A00\u6A21\u578B",
+            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/51.png"
+          },
+          {
+            title: "\u7FFB\u8BD1",
+            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/52.png"
+          },
+          {
+            title: "\u63D0\u53D6\u6587\u672C\u6458\u8981",
+            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/53.png"
+          },
+          {
+            title: "\u4ECE\u5934\u5F00\u59CB\u8BAD\u7EC3\u56E0\u679C\u8BED\u8A00\u6A21\u578B",
+            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/54.png"
+          },
+          {
+            title: "\u95EE\u7B54",
+            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/55.png"
+          },
+          {
+            title: "\u7CBE\u901A\u81EA\u7136\u8BED\u8A00\u5904\u7406",
+            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/56.png"
+          },
+          {
+            title: "\u7AE0\u672B\u5C0F\u6D4B\u9A8C",
+            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/57.png"
+          }
+        ]
+      },
+      {
+        title: "\u5904\u7406\u9047\u5230\u7684\u95EE\u9898",
+        articles: [
+          {
+            title: "\u7B80\u4ECB",
+            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/58.png"
+          },
+          {
+            title: "\u51FA\u73B0\u9519\u8BEF\u65F6\u8BE5\u600E\u4E48\u529E",
+            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/59.png"
+          },
+          {
+            title: "\u5728\u8BBA\u575B\u4E0A\u5BFB\u6C42\u5E2E\u52A9",
+            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/60.png"
+          },
+          {
+            title: "\u8C03\u8BD5\u8BAD\u7EC3\u7BA1\u9053",
+            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/61.png"
+          },
+          {
+            title: "\u5982\u4F55\u63D0\u51FA\u4E00\u4E2A\u597D\u95EE\u9898",
+            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/62.png"
+          },
+          {
+            title: "Part 2 \u5B8C\u7ED3",
+            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/63.png"
+          },
+          {
+            title: "\u7AE0\u672B\u5C0F\u6D4B\u9A8C",
+            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/64.png"
+          }
+        ]
+      },
+      {
+        title: "Gradio",
+        articles: [
+          {
+            title: "Gradio \u7B80\u4ECB",
+            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/65.png"
+          },
+          {
+            title: "\u6784\u5EFA\u4F60\u7684\u7B2C\u4E00\u4E2A\u6F14\u793A",
+            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/66.png"
+          },
+          {
+            title: "\u4E86\u89E3\u63A5\u53E3\u7C7B",
+            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/67.png"
+          },
+          {
+            title: "\u4E0E\u4ED6\u4EBA\u5206\u4EAB\u6F14\u793A",
+            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/68.png"
+          },
+          {
+            title: "\u4E0E HuggingfaceHub \u6574\u5408",
+            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/69.png"
+          },
+          {
+            title: "\u9AD8\u7EA7\u63A5\u53E3\u529F\u80FD",
+            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/70.png"
+          },
+          {
+            title: "Gradio \u5757\u7B80\u4ECB",
+            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/71.png"
+          },
+          {
+            title: "Gradio \u56DE\u987E",
+            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/72.png"
+          },
+          {
+            title: "\u7AE0\u672B\u5C0F\u6D4B\u9A8C",
+            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/73.png"
+          },
+          {
+            title: "Part 2 \u53D1\u5E03\u6D3B\u52A8",
+            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/74.png"
+          }
+        ]
+      }
+    ]
+  }
+];
+
+// src/app/huggingface/huggingface.component.ts
+var _c0 = (a0) => ({
+  selectedArticle: a0
+});
+function HuggingfaceComponent_li_30_li_5_li_5_Template(rf, ctx) {
+  if (rf & 1) {
+    const _r13 = \u0275\u0275getCurrentView();
+    \u0275\u0275elementStart(0, "li", 37);
+    \u0275\u0275listener("click", function HuggingfaceComponent_li_30_li_5_li_5_Template_li_click_0_listener() {
+      const restoredCtx = \u0275\u0275restoreView(_r13);
+      const article_r9 = restoredCtx.$implicit;
+      const chapter_r6 = \u0275\u0275nextContext().$implicit;
+      const course_r3 = \u0275\u0275nextContext().$implicit;
+      const ctx_r11 = \u0275\u0275nextContext();
+      return \u0275\u0275resetView(ctx_r11.clickArticle(course_r3, chapter_r6, article_r9));
+    });
+    \u0275\u0275elementStart(1, "span", 38);
+    \u0275\u0275text(2);
+    \u0275\u0275elementEnd();
+    \u0275\u0275text(3);
+    \u0275\u0275elementEnd();
+  }
+  if (rf & 2) {
+    const article_r9 = ctx.$implicit;
+    const k_r10 = ctx.index;
+    const ctx_r8 = \u0275\u0275nextContext(3);
+    \u0275\u0275property("ngClass", \u0275\u0275pureFunction1(3, _c0, ctx_r8.currentArticleUrl == article_r9.url));
+    \u0275\u0275advance(2);
+    \u0275\u0275textInterpolate(k_r10 + 1);
+    \u0275\u0275advance(1);
+    \u0275\u0275textInterpolate1(" ", article_r9.title, " ");
+  }
+}
+function HuggingfaceComponent_li_30_li_5_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementStart(0, "li", 34)(1, "span", 35);
+    \u0275\u0275text(2);
+    \u0275\u0275elementEnd();
+    \u0275\u0275text(3);
+    \u0275\u0275elementStart(4, "ul", 32);
+    \u0275\u0275template(5, HuggingfaceComponent_li_30_li_5_li_5_Template, 4, 5, "li", 36);
+    \u0275\u0275elementEnd()();
+  }
+  if (rf & 2) {
+    const chapter_r6 = ctx.$implicit;
+    const j_r7 = ctx.index;
+    \u0275\u0275advance(2);
+    \u0275\u0275textInterpolate1("Chapter ", j_r7 + 1, "");
+    \u0275\u0275advance(1);
+    \u0275\u0275textInterpolate1(" ", chapter_r6.title, " ");
+    \u0275\u0275advance(2);
+    \u0275\u0275property("ngForOf", chapter_r6.articles);
+  }
+}
+function HuggingfaceComponent_li_30_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementStart(0, "li", 30)(1, "span", 31);
+    \u0275\u0275text(2);
+    \u0275\u0275elementEnd();
+    \u0275\u0275text(3);
+    \u0275\u0275elementStart(4, "ul", 32);
+    \u0275\u0275template(5, HuggingfaceComponent_li_30_li_5_Template, 6, 3, "li", 33);
+    \u0275\u0275elementEnd()();
+  }
+  if (rf & 2) {
+    const course_r3 = ctx.$implicit;
+    const i_r4 = ctx.index;
+    \u0275\u0275advance(2);
+    \u0275\u0275textInterpolate1("Course ", i_r4 + 1, "");
+    \u0275\u0275advance(1);
+    \u0275\u0275textInterpolate1(" ", course_r3.title, " ");
+    \u0275\u0275advance(2);
+    \u0275\u0275property("ngForOf", course_r3.chapters);
+  }
+}
+function HuggingfaceComponent_i_35_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275element(0, "i", 39);
+  }
+}
+function HuggingfaceComponent_i_37_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275element(0, "i", 39);
+  }
+}
+var HuggingfaceComponent = /* @__PURE__ */ (() => {
+  const _HuggingfaceComponent = class _HuggingfaceComponent {
+    constructor() {
+      this.courses = huggingface_list_default;
+      this.currentCourseTitle = "";
+      this.currentChapterTitle = "";
+      this.currentArticleTitle = "";
+      this.currentArticleUrl = "";
+    }
+    ngOnInit() {
+    }
+    clickArticle(course, chapter, article) {
+      this.currentCourseTitle = "\uFF08\u8BFE\uFF09" + course.title;
+      this.currentChapterTitle = "\uFF08\u7AE0\uFF09" + chapter.title;
+      this.currentArticleTitle = "\uFF08\u6587\uFF09" + article.title;
+      this.currentArticleUrl = article.url;
+    }
+    goToTop() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  };
+  _HuggingfaceComponent.\u0275fac = function HuggingfaceComponent_Factory(t) {
+    return new (t || _HuggingfaceComponent)();
+  };
+  _HuggingfaceComponent.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({
+    type: _HuggingfaceComponent,
+    selectors: [["app-huggingface"]],
+    decls: 45,
+    vars: 7,
+    consts: [[1, "box", "bg-dark", "pt-5", "mt-4"], [1, "container-fluid", "px-3", "py-4"], [1, "row", "mb-4"], [1, "col-12", "text-center", "text-light", "fs-1", "fw-bold"], ["src", "../../assets/img/huggingface-logo.png", 1, "logo", "me-2"], [1, "col-12", "text-center", "my-3"], ["type", "button", "data-bs-toggle", "offcanvas", "data-bs-target", "#offcanvasExample", "aria-controls", "offcanvasExample", "accesskey", "x", 1, "btn", "btn-warning"], [1, "bi", "bi-list-columns-reverse", "me-2"], [1, "text-secondary", "mt-2"], [1, "mx-2"], [1, "bi", "bi-windows", "me-1"], [1, "bi", "bi-apple", "me-1"], [1, "col-12", "text-secondary", "text-center", "mt-2"], [1, "row"], ["tabindex", "-1", "id", "offcanvasExample", "aria-labelledby", "offcanvasExampleLabel", 1, "offcanvas", "offcanvas-start", "bg-dark"], [1, "offcanvas-header"], ["id", "offcanvasExampleLabel", 1, "offcanvas-title", "text-warning"], ["type", "button", "data-bs-dismiss", "offcanvas", "aria-label", "Close", 1, "btn", "btn-outline-secondary", "btn-sm"], [1, "bi", "bi-x-lg"], [1, "offcanvas-body"], [1, "list-group", "list-group-flush", "title-list"], ["class", "list-group-item text-light fs-4 fw-normal course", 4, "ngFor", "ngForOf"], [1, "col-12"], [1, "col-12", "text-light", "mb-2"], ["class", "bi bi-chevron-right", 4, "ngIf"], [1, "article-detail"], ["type", "button", 1, "btn", "btn-outline-primary", "py-1", "px-2", "goTopBtn", 3, "click"], [1, "bi", "bi-chevron-up", "lead"], ["type", "button", "data-bs-toggle", "offcanvas", "data-bs-target", "#offcanvasExample", "aria-controls", "offcanvasExample", "accesskey", "x", 1, "btn", "btn-outline-warning", "py-1", "px-2", "showMenuBtn"], [1, "bi", "bi-list", "lead"], [1, "list-group-item", "text-light", "fs-4", "fw-normal", "course"], [1, "badge", "text-bg-primary", "me-2"], [1, "list-group", "list-group-flush", "title-list", "my-2"], ["class", "list-group-item text-light fs-5 fw-normal border-0 chapter", 4, "ngFor", "ngForOf"], [1, "list-group-item", "text-light", "fs-5", "fw-normal", "border-0", "chapter"], [1, "badge", "text-bg-danger", "me-2"], ["class", "list-group-item text-light fw-normal border-0 fs-6 article", 3, "ngClass", "click", 4, "ngFor", "ngForOf"], [1, "list-group-item", "text-light", "fw-normal", "border-0", "fs-6", "article", 3, "ngClass", "click"], [1, "badge", "text-bg-warning", "me-2"], [1, "bi", "bi-chevron-right"]],
+    template: function HuggingfaceComponent_Template(rf, ctx) {
+      if (rf & 1) {
+        \u0275\u0275elementStart(0, "div", 0)(1, "div", 1)(2, "div", 2)(3, "div", 3);
+        \u0275\u0275element(4, "img", 4);
+        \u0275\u0275text(5, " Hugging Face ");
+        \u0275\u0275elementEnd();
+        \u0275\u0275elementStart(6, "div", 5)(7, "button", 6);
+        \u0275\u0275element(8, "i", 7);
+        \u0275\u0275text(9, " Show Articles List ");
+        \u0275\u0275elementEnd();
+        \u0275\u0275elementStart(10, "div", 8)(11, "small", 9);
+        \u0275\u0275element(12, "i", 10);
+        \u0275\u0275text(13, " Shift + Alt + X ");
+        \u0275\u0275elementEnd();
+        \u0275\u0275text(14, " | ");
+        \u0275\u0275elementStart(15, "small", 9);
+        \u0275\u0275element(16, "i", 11);
+        \u0275\u0275text(17, " Control + Alt + X ");
+        \u0275\u0275elementEnd()()();
+        \u0275\u0275elementStart(18, "div", 12)(19, "p");
+        \u0275\u0275text(20, " Notice : \u56E0\u4E3A\u7F51\u7EDC\u7684\u539F\u56E0\uFF0CHuggingface \u7684\u76F8\u5173\u6587\u6863\u901A\u8FC7\u622A\u56FE\u7684\u65B9\u5F0F\u83B7\u53D6\u7684\uFF0C\u5728\u8FD9\u91CC\u6682\u65F6\u4EE5\u56FE\u7247\u7684\u5F62\u5F0F\u5C55\u73B0\u3002");
+        \u0275\u0275elementEnd()()();
+        \u0275\u0275elementStart(21, "div", 13)(22, "div", 14)(23, "div", 15)(24, "h5", 16);
+        \u0275\u0275text(25, "Articles List");
+        \u0275\u0275elementEnd();
+        \u0275\u0275elementStart(26, "button", 17);
+        \u0275\u0275element(27, "i", 18);
+        \u0275\u0275elementEnd()();
+        \u0275\u0275elementStart(28, "div", 19)(29, "ul", 20);
+        \u0275\u0275template(30, HuggingfaceComponent_li_30_Template, 6, 3, "li", 21);
+        \u0275\u0275elementEnd()()();
+        \u0275\u0275elementStart(31, "div", 22)(32, "div", 13)(33, "div", 23);
+        \u0275\u0275text(34);
+        \u0275\u0275template(35, HuggingfaceComponent_i_35_Template, 1, 0, "i", 24);
+        \u0275\u0275text(36);
+        \u0275\u0275template(37, HuggingfaceComponent_i_37_Template, 1, 0, "i", 24);
+        \u0275\u0275text(38);
+        \u0275\u0275elementEnd();
+        \u0275\u0275elementStart(39, "div", 22);
+        \u0275\u0275element(40, "img", 25);
+        \u0275\u0275elementEnd()()()()();
+        \u0275\u0275elementStart(41, "button", 26);
+        \u0275\u0275listener("click", function HuggingfaceComponent_Template_button_click_41_listener() {
+          return ctx.goToTop();
+        });
+        \u0275\u0275element(42, "i", 27);
+        \u0275\u0275elementEnd();
+        \u0275\u0275elementStart(43, "button", 28);
+        \u0275\u0275element(44, "i", 29);
+        \u0275\u0275elementEnd()();
+      }
+      if (rf & 2) {
+        \u0275\u0275advance(30);
+        \u0275\u0275property("ngForOf", ctx.courses);
+        \u0275\u0275advance(4);
+        \u0275\u0275textInterpolate1(" ", ctx.currentCourseTitle, " ");
+        \u0275\u0275advance(1);
+        \u0275\u0275property("ngIf", ctx.currentCourseTitle != "");
+        \u0275\u0275advance(1);
+        \u0275\u0275textInterpolate1(" ", ctx.currentChapterTitle, " ");
+        \u0275\u0275advance(1);
+        \u0275\u0275property("ngIf", ctx.currentArticleTitle != "");
+        \u0275\u0275advance(1);
+        \u0275\u0275textInterpolate1(" ", ctx.currentArticleTitle, " ");
+        \u0275\u0275advance(2);
+        \u0275\u0275attribute("src", ctx.currentArticleUrl, \u0275\u0275sanitizeUrl);
+      }
+    },
+    dependencies: [NgClass, NgForOf, NgIf],
+    styles: ["\n\n.box[_ngcontent-%COMP%]   .logo[_ngcontent-%COMP%] {\n  height: 3rem;\n  width: auto;\n}\n.box[_ngcontent-%COMP%]   .title-list[_ngcontent-%COMP%] {\n  overflow-y: scroll;\n}\n.box[_ngcontent-%COMP%]   .title-list[_ngcontent-%COMP%]   li[_ngcontent-%COMP%] {\n  background: none;\n}\n.box[_ngcontent-%COMP%]   .article[_ngcontent-%COMP%]:hover {\n  color: black !important;\n  background-color: #ffc107 !important;\n  cursor: pointer;\n}\n.box[_ngcontent-%COMP%]   img.article-detail[_ngcontent-%COMP%] {\n  width: 100%;\n  max-width: 100%;\n  overflow: scroll;\n}\n.box[_ngcontent-%COMP%]   .offcanvas[_ngcontent-%COMP%] {\n  width: 40% !important;\n}\n.box[_ngcontent-%COMP%]   object[_ngcontent-%COMP%] {\n  height: 80vh;\n}\n.box[_ngcontent-%COMP%]   .selectedArticle[_ngcontent-%COMP%] {\n  color: black !important;\n  background-color: #ffc107 !important;\n}\n.box[_ngcontent-%COMP%]   .goTopBtn[_ngcontent-%COMP%] {\n  position: fixed !important;\n  bottom: 1rem;\n  right: 1rem;\n}\n.box[_ngcontent-%COMP%]   .showMenuBtn[_ngcontent-%COMP%] {\n  position: fixed !important;\n  bottom: 4rem;\n  right: 1rem;\n}\n/*# sourceMappingURL=data:application/json;base64,ewogICJ2ZXJzaW9uIjogMywKICAic291cmNlcyI6IFsic3JjL2FwcC9odWdnaW5nZmFjZS9odWdnaW5nZmFjZS5jb21wb25lbnQuc2NzcyJdLAogICJzb3VyY2VzQ29udGVudCI6IFsiJG15SGVpZ2h0OiA4MHZoO1xuJG9mZmNhbnZhcy13aWR0aDogNDAlO1xuJHllbGxvdzogI2ZmYzEwNztcbiRhcnRpY2xlLWRldGFpbC13aWR0aDogMTAwJTtcblxuLmJveCB7XG5cbiAgICAubG9nbyB7XG4gICAgICAgIGhlaWdodDogM3JlbTtcbiAgICAgICAgd2lkdGg6IGF1dG87XG4gICAgfVxuXG4gICAgLnRpdGxlLWxpc3Qge1xuICAgICAgICAvLyBtYXgtaGVpZ2h0OiAkbXlIZWlnaHQ7XG4gICAgICAgIC8vIGhlaWdodDogJG15SGVpZ2h0O1xuICAgICAgICBvdmVyZmxvdy15OiBzY3JvbGw7XG5cbiAgICAgICAgbGkge1xuICAgICAgICAgICAgYmFja2dyb3VuZDogbm9uZTtcbiAgICAgICAgICAgIC8vIHRyYW5zaXRpb246IGJhY2tncm91bmQtY29sb3IgLjFzO1xuXG4gICAgICAgICAgICAvLyAmOmhvdmVyIHtcbiAgICAgICAgICAgIC8vICAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjMDA2NkNDO1xuICAgICAgICAgICAgLy8gICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICAgICAgICAgIC8vIH1cbiAgICAgICAgfVxuXG4gICAgfVxuXG4gICAgLmFydGljbGUge1xuICAgICAgICAmOmhvdmVyIHtcbiAgICAgICAgICAgIGNvbG9yOiBibGFjayAhaW1wb3J0YW50O1xuICAgICAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogJHllbGxvdyAhaW1wb3J0YW50O1xuICAgICAgICAgICAgY3Vyc29yOiBwb2ludGVyO1xuICAgICAgICB9XG4gICAgfVxuXG4gICAgaW1nLmFydGljbGUtZGV0YWlsIHtcbiAgICAgICAgd2lkdGg6ICRhcnRpY2xlLWRldGFpbC13aWR0aDtcbiAgICAgICAgbWF4LXdpZHRoOiAkYXJ0aWNsZS1kZXRhaWwtd2lkdGg7XG4gICAgICAgIG92ZXJmbG93OiBzY3JvbGw7XG4gICAgfVxuXG4gICAgLm9mZmNhbnZhcyB7XG4gICAgICAgIHdpZHRoOiAkb2ZmY2FudmFzLXdpZHRoICFpbXBvcnRhbnQ7XG4gICAgfVxuXG4gICAgb2JqZWN0IHtcbiAgICAgICAgaGVpZ2h0OiAkbXlIZWlnaHQ7XG4gICAgfVxuXG4gICAgLnNlbGVjdGVkQXJ0aWNsZSB7XG4gICAgICAgIGNvbG9yOiBibGFjayAhaW1wb3J0YW50O1xuICAgICAgICBiYWNrZ3JvdW5kLWNvbG9yOiAkeWVsbG93ICFpbXBvcnRhbnQ7XG4gICAgfVxuXG4gICAgLmdvVG9wQnRuIHtcbiAgICAgICAgcG9zaXRpb246IGZpeGVkICFpbXBvcnRhbnQ7XG4gICAgICAgIGJvdHRvbTogMXJlbTtcbiAgICAgICAgcmlnaHQ6IDFyZW07XG4gICAgfVxuXG4gICAgLnNob3dNZW51QnRuIHtcbiAgICAgICAgcG9zaXRpb246IGZpeGVkICFpbXBvcnRhbnQ7XG4gICAgICAgIGJvdHRvbTogNHJlbTtcbiAgICAgICAgcmlnaHQ6IDFyZW07XG4gICAgfVxuXG59Il0sCiAgIm1hcHBpbmdzIjogIjtBQU9JLENBQUEsSUFBQSxDQUFBO0FBQ0ksVUFBQTtBQUNBLFNBQUE7O0FBR0osQ0FMQSxJQUtBLENBQUE7QUFHSSxjQUFBOztBQUVBLENBVkosSUFVSSxDQUxKLFdBS0k7QUFDSSxjQUFBOztBQVlKLENBdkJKLElBdUJJLENBQUEsT0FBQTtBQUNJLFNBQUE7QUFDQSxvQkFBQTtBQUNBLFVBQUE7O0FBSVIsQ0E5QkEsSUE4QkEsR0FBQSxDQUFBO0FBQ0ksU0FuQ2U7QUFvQ2YsYUFwQ2U7QUFxQ2YsWUFBQTs7QUFHSixDQXBDQSxJQW9DQSxDQUFBO0FBQ0ksU0FBQTs7QUFHSixDQXhDQSxJQXdDQTtBQUNJLFVBaERHOztBQW1EUCxDQTVDQSxJQTRDQSxDQUFBO0FBQ0ksU0FBQTtBQUNBLG9CQUFBOztBQUdKLENBakRBLElBaURBLENBQUE7QUFDSSxZQUFBO0FBQ0EsVUFBQTtBQUNBLFNBQUE7O0FBR0osQ0F2REEsSUF1REEsQ0FBQTtBQUNJLFlBQUE7QUFDQSxVQUFBO0FBQ0EsU0FBQTs7IiwKICAibmFtZXMiOiBbXQp9Cg== */"]
+  });
+  let HuggingfaceComponent2 = _HuggingfaceComponent;
+  return HuggingfaceComponent2;
+})();
+
 // src/app/app-routing.module.ts
 var routes = [{
   path: "",
-  title: "Home Page",
+  title: "Frank Li Study Center",
   component: HomeComponent
 }, {
-  path: "ai",
-  title: "Artificial Intelligence",
-  component: AiComponent
+  path: "huggingface",
+  title: "HuggingFace",
+  component: HuggingfaceComponent
+}, {
+  path: "tongyi",
+  title: "\u901A\u4E49\u5343\u95EE",
+  component: TongyiComponent
 }, {
   path: "harmonyos",
   title: "Harmony OS",
@@ -19655,6 +20519,10 @@ var routes = [{
   path: "life-philosophy",
   title: "Life Philosophy",
   component: LifePhilosophyComponent
+}, {
+  path: "about",
+  title: "About",
+  component: AboutComponent
 }, {
   path: "**",
   title: "Error",
@@ -19697,9 +20565,9 @@ var AppComponent = /* @__PURE__ */ (() => {
   _AppComponent.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({
     type: _AppComponent,
     selectors: [["app-root"]],
-    decls: 30,
+    decls: 45,
     vars: 1,
-    consts: [["data-bs-theme", "dark", 1, "navbar", "fixed-top", "bg-body-tertiary", "navbar-expand-lg", "rounded-0"], [1, "container-fluid", "px-5"], ["href", "#", 1, "navbar-brand", "fs-4"], ["src", "../assets/img/logo.png", "alt", "Study center", "width", "30", "height", "30", 1, "me-1"], ["type", "button", "data-bs-toggle", "collapse", "data-bs-target", "#navbarNav", "aria-controls", "navbarNav", "aria-expanded", "false", "aria-label", "Toggle navigation", 1, "navbar-toggler"], [1, "navbar-toggler-icon"], ["id", "navbarNav", 1, "collapse", "navbar-collapse", "justify-content-end"], [1, "navbar-nav"], [1, "nav-item"], ["aria-current", "page", "href", "/", 1, "nav-link", "active"], [1, "bi", "bi-house-fill", "me-1"], [1, "nav-item", "ms-2"], ["href", "/#/ai", 1, "nav-link", "active"], ["src", "../assets/img/chatGPT-logo.png", 1, "icon", "me-1", "mb-1"], ["href", "/#/harmonyos", 1, "nav-link", "active"], ["src", "../assets/img/huawei-logo.png", 1, "icon", "me-1", "mb-1"], ["href", "/#/life-philosophy", 1, "nav-link", "active"], [1, "bi", "bi-book-fill", "me-1", "text-primary"], [1, "footer"], [1, "container-fluid", "px-5", "text-secondary", "py-3"], [1, "m-0", "text-center"]],
+    consts: [["data-bs-theme", "dark", 1, "navbar", "fixed-top", "bg-body-tertiary", "navbar-expand-lg", "rounded-0"], [1, "container-fluid", "px-5"], ["href", "#", 1, "navbar-brand", "fs-4"], ["src", "../assets/img/logo.png", "alt", "Study center", "width", "30", "height", "30", 1, "me-1"], ["type", "button", "data-bs-toggle", "collapse", "data-bs-target", "#navbarNav", "aria-controls", "navbarNav", "aria-expanded", "false", "aria-label", "Toggle navigation", 1, "navbar-toggler"], [1, "navbar-toggler-icon"], ["id", "navbarNav", 1, "collapse", "navbar-collapse", "justify-content-end"], [1, "navbar-nav"], [1, "nav-item"], ["aria-current", "page", "href", "/", 1, "nav-link", "active"], [1, "bi", "bi-house-fill", "me-1"], [1, "nav-item", "dropdown"], ["href", "#", "role", "button", "data-bs-toggle", "dropdown", "aria-expanded", "false", 1, "nav-link", "dropdown-toggle", "active"], ["src", "../assets/img/chatGPT-logo.png", 1, "icon", "me-1", "mb-1"], [1, "dropdown-menu"], ["href", "/#/huggingface", 1, "dropdown-item"], ["src", "../assets/img/huggingface-logo.png", 1, "icon", "me-1", "mb-1"], [1, "dropdown-divider"], ["href", "/#/tongyi", 1, "dropdown-item"], ["src", "../assets/img/tongyi-logo.svg", 1, "icon", "me-1", "mb-1"], [1, "nav-item", "ms-2"], ["href", "/#/harmonyos", 1, "nav-link", "active"], ["src", "../assets/img/huawei-logo.png", 1, "icon", "me-1", "mb-1"], ["href", "/#/life-philosophy", 1, "nav-link", "active"], [1, "bi", "bi-book-fill", "me-1", "text-primary"], ["href", "/#/about", 1, "nav-link", "active"], [1, "bi", "bi-person-circle", "me-1", "text-warning"], [1, "footer"], [1, "container-fluid", "px-5", "text-secondary", "py-3"], [1, "m-0", "text-center"]],
     template: function AppComponent_Template(rf, ctx) {
       if (rf & 1) {
         \u0275\u0275elementStart(0, "nav", 0)(1, "div", 1)(2, "a", 2);
@@ -19715,23 +20583,38 @@ var AppComponent = /* @__PURE__ */ (() => {
         \u0275\u0275elementEnd()();
         \u0275\u0275elementStart(13, "li", 11)(14, "a", 12);
         \u0275\u0275element(15, "img", 13);
-        \u0275\u0275text(16, " \u4EBA\u5DE5\u667A\u80FD");
+        \u0275\u0275text(16, " \u4EBA\u5DE5\u667A\u80FD ");
+        \u0275\u0275elementEnd();
+        \u0275\u0275elementStart(17, "ul", 14)(18, "li")(19, "a", 15);
+        \u0275\u0275element(20, "img", 16);
+        \u0275\u0275text(21, " HuggingFace ");
         \u0275\u0275elementEnd()();
-        \u0275\u0275elementStart(17, "li", 11)(18, "a", 14);
-        \u0275\u0275element(19, "img", 15);
-        \u0275\u0275text(20, " \u9E3F\u8499\u7CFB\u7EDF ");
+        \u0275\u0275elementStart(22, "li");
+        \u0275\u0275element(23, "hr", 17);
+        \u0275\u0275elementEnd();
+        \u0275\u0275elementStart(24, "li")(25, "a", 18);
+        \u0275\u0275element(26, "img", 19);
+        \u0275\u0275text(27, " \u901A\u4E49\u5343\u95EE ");
+        \u0275\u0275elementEnd()()()();
+        \u0275\u0275elementStart(28, "li", 20)(29, "a", 21);
+        \u0275\u0275element(30, "img", 22);
+        \u0275\u0275text(31, " \u9E3F\u8499\u7CFB\u7EDF ");
         \u0275\u0275elementEnd()();
-        \u0275\u0275elementStart(21, "li", 11)(22, "a", 16);
-        \u0275\u0275element(23, "i", 17);
-        \u0275\u0275text(24, " \u751F\u6D3B\u54F2\u7406 ");
+        \u0275\u0275elementStart(32, "li", 20)(33, "a", 23);
+        \u0275\u0275element(34, "i", 24);
+        \u0275\u0275text(35, " \u751F\u6D3B\u54F2\u7406 ");
+        \u0275\u0275elementEnd()();
+        \u0275\u0275elementStart(36, "li", 20)(37, "a", 25);
+        \u0275\u0275element(38, "i", 26);
+        \u0275\u0275text(39, " \u4E2A\u4EBA\u4E2D\u5FC3 ");
         \u0275\u0275elementEnd()()()()()();
-        \u0275\u0275element(25, "router-outlet");
-        \u0275\u0275elementStart(26, "div", 18)(27, "div", 19)(28, "p", 20);
-        \u0275\u0275text(29);
+        \u0275\u0275element(40, "router-outlet");
+        \u0275\u0275elementStart(41, "div", 27)(42, "div", 28)(43, "p", 29);
+        \u0275\u0275text(44);
         \u0275\u0275elementEnd()()();
       }
       if (rf & 2) {
-        \u0275\u0275advance(29);
+        \u0275\u0275advance(44);
         \u0275\u0275textInterpolate1("Copyright 2012-", ctx.currentYear, " \u674E\u9E4F\uFF08Frank Li\uFF09\u7248\u6743\u6240\u6709");
       }
     },
