@@ -22355,9 +22355,9 @@ function provideRouterInitializer() {
 }
 
 // src/app/home/home.component.ts
-function HomeComponent_div_20_p_4_Template(rf, ctx) {
+function HomeComponent_div_11_p_4_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "p", 20);
+    \u0275\u0275elementStart(0, "p", 16);
     \u0275\u0275text(1);
     \u0275\u0275elementEnd();
   }
@@ -22367,15 +22367,15 @@ function HomeComponent_div_20_p_4_Template(rf, ctx) {
     \u0275\u0275textInterpolate(desc_r3);
   }
 }
-function HomeComponent_div_20_Template(rf, ctx) {
+function HomeComponent_div_11_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 14)(1, "h1", 15);
-    \u0275\u0275element(2, "img", 16);
+    \u0275\u0275elementStart(0, "div", 10)(1, "h1", 11);
+    \u0275\u0275element(2, "img", 12);
     \u0275\u0275text(3);
     \u0275\u0275elementEnd();
-    \u0275\u0275template(4, HomeComponent_div_20_p_4_Template, 2, 1, "p", 17);
-    \u0275\u0275elementStart(5, "div", 18)(6, "a", 19);
-    \u0275\u0275text(7, "Learn more");
+    \u0275\u0275template(4, HomeComponent_div_11_p_4_Template, 2, 1, "p", 13);
+    \u0275\u0275elementStart(5, "div", 14)(6, "a", 15);
+    \u0275\u0275text(7, "Learn More");
     \u0275\u0275elementEnd()()();
   }
   if (rf & 2) {
@@ -22396,14 +22396,19 @@ var HomeComponent = /* @__PURE__ */ (() => {
       this.sections = [{
         logo: "chatGPT-logo.png",
         title: "Artificial Intelligence",
-        descs: ["\u4EBA\u5DE5\u667A\u80FD\uFF0C\u82F1\u6587\u7F29\u5199\u4E3AAI\u3002\u5B83\u662F\u7814\u7A76\u3001\u5F00\u53D1\u7528\u4E8E\u6A21\u62DF\u3001\u5EF6\u4F38\u548C\u6269\u5C55\u4EBA\u7684\u667A\u80FD\u7684\u7406\u8BBA\u3001\u65B9\u6CD5\u3001\u6280\u672F\u53CA\u5E94\u7528\u7CFB\u7EDF\u7684\u4E00\u95E8\u65B0\u7684\u6280\u672F\u79D1\u5B66\u3002\u4EBA\u5DE5\u667A\u80FD\u662F\u65B0\u4E00\u8F6E\u79D1\u6280\u9769\u547D\u548C\u4EA7\u4E1A\u53D8\u9769\u7684\u91CD\u8981\u9A71\u52A8\u529B\u91CF\u3002", "\u76EE\u524D\u7684\u4EBA\u5DE5\u667A\u80FD\u6280\u672F\u5DF2\u7ECF\u53D1\u5C55\u5230 2.0 \u9636\u6BB5\uFF0C\u5373 AIGC\uFF08Artificial Intelligence Generated Content\uFF0C\u751F\u6210\u5F0F\u4EBA\u5DE5\u667A\u80FD\uFF09\u3002GAN\u3001CLIP\u3001Transformer\u3001Diffusion\u3001\u9884\u8BAD\u7EC3\u6A21\u578B\u3001\u591A\u6A21\u6001\u6280\u672F\u3001\u751F\u6210\u7B97\u6CD5\u7B49\u6280\u672F\u7684\u7D2F\u79EF\u878D\u5408\uFF0C\u50AC\u751F\u4E86AIGC\u7684\u7206\u53D1\u3002\u7B97\u6CD5\u4E0D\u65AD\u8FED\u4EE3\u521B\u65B0\u3001\u9884\u8BAD\u7EC3\u6A21\u578B\u5F15\u53D1AIGC\u6280\u672F\u80FD\u529B\u8D28\u53D8\uFF0C\u591A\u6A21\u6001\u63A8\u52A8AIGC\u5185\u5BB9\u591A\u8FB9\u5F62\uFF0C\u4F7F\u5F97AIGC\u5177\u6709\u66F4\u901A\u7528\u548C\u66F4\u5F3A\u7684\u57FA\u7840\u80FD\u529B\u3002", "\u6BD4\u8F83\u6D41\u884C\u7684 AIGC \u6A21\u578B\u4E3B\u8981\u6709\u56FD\u5916 OpenAI \u516C\u53F8\u53D1\u5E03\u7684 ChatGPT\u3001\u963F\u91CC\u4E91\u53D1\u5E03\u7684\u901A\u4E49\u5343\u95EE\u3001\u79D1\u5927\u8BAF\u98DE\u7684\u661F\u706B\u8BA4\u77E5\u3001\u767E\u5EA6\u7684\u6587\u5FC3\u4E00\u8A00\u7B49"],
-        url: "/#/ai"
+        descs: ["\u76EE\u524D\u7684\u4EBA\u5DE5\u667A\u80FD\u6280\u672F\u5DF2\u7ECF\u53D1\u5C55\u5230 2.0 \u9636\u6BB5\uFF0C\u5373 AIGC\uFF08Artificial Intelligence Generated Content\uFF0C\u751F\u6210\u5F0F\u4EBA\u5DE5\u667A\u80FD\uFF09\u3002GAN\u3001CLIP\u3001Transformer\u3001Diffusion\u3001\u9884\u8BAD\u7EC3\u6A21\u578B\u3001\u591A\u6A21\u6001\u6280\u672F\u3001\u751F\u6210\u7B97\u6CD5\u7B49\u6280\u672F\u7684\u7D2F\u79EF\u878D\u5408\uFF0C\u50AC\u751F\u4E86AIGC\u7684\u7206\u53D1\u3002\u7B97\u6CD5\u4E0D\u65AD\u8FED\u4EE3\u521B\u65B0\u3001\u9884\u8BAD\u7EC3\u6A21\u578B\u5F15\u53D1AIGC\u6280\u672F\u80FD\u529B\u8D28\u53D8\uFF0C\u591A\u6A21\u6001\u63A8\u52A8AIGC\u5185\u5BB9\u591A\u8FB9\u5F62\uFF0C\u4F7F\u5F97AIGC\u5177\u6709\u66F4\u901A\u7528\u548C\u66F4\u5F3A\u7684\u57FA\u7840\u80FD\u529B\u3002", "AIGC\u5BF9\u4E8E\u4EBA\u7C7B\u793E\u4F1A\u3001\u4EBA\u5DE5\u667A\u80FD\u7684\u610F\u4E49\u662F\u91CC\u7A0B\u7891\u5F0F\u7684\u3002\u77ED\u671F\u6765\u770BAIGC\u6539\u53D8\u4E86\u57FA\u7840\u7684\u751F\u4EA7\u529B\u5DE5\u5177\uFF0C\u4E2D\u671F\u6765\u770B\u4F1A\u6539\u53D8\u793E\u4F1A\u7684\u751F\u4EA7\u5173\u7CFB\uFF0C\u957F\u671F\u6765\u770B\u4FC3\u4F7F\u6574\u4E2A\u793E\u4F1A\u751F\u4EA7\u529B\u53D1\u751F\u8D28\u7684\u7A81\u7834\uFF0C\u5728\u8FD9\u6837\u7684\u751F\u4EA7\u529B\u5DE5\u5177\u3001\u751F\u4EA7\u5173\u7CFB\u3001\u751F\u4EA7\u529B\u53D8\u9769\u4E2D\uFF0C\u751F\u4EA7\u8981\u7D20\u2014\u2014\u6570\u636E\u4EF7\u503C\u88AB\u6781\u5EA6\u653E\u5927\u3002", "AIGC\u628A\u6570\u636E\u8981\u7D20\u63D0\u5230\u65F6\u4EE3\u6838\u5FC3\u8D44\u6E90\u7684\u4F4D\u7F6E\uFF0C\u5728\u4E00\u5B9A\u7A0B\u5EA6\u4E0A\u52A0\u5FEB\u4E86\u6574\u4E2A\u793E\u4F1A\u7684\u6570\u5B57\u5316\u8F6C\u578B\u8FDB\u7A0B\u3002"],
+        url: "/#/ai-concept"
       }, {
         logo: "huawei-logo.png",
         title: "Harmony OS",
-        descs: ["\u534E\u4E3A\u9E3F\u8499\u7CFB\u7EDF\uFF08HUAWEI Harmony OS\uFF09\uFF0C\u662F\u534E\u4E3A\u516C\u53F8\u57282019\u5E748\u67089\u65E5\u4E8E\u4E1C\u839E\u4E3E\u884C\u7684\u534E\u4E3A\u5F00\u53D1\u8005\u5927\u4F1A\uFF08HDC.2019\uFF09\u4E0A\u6B63\u5F0F\u53D1\u5E03\u7684\u64CD\u4F5C\u7CFB\u7EDF\u3002", "\u534E\u4E3A\u9E3F\u8499\u7CFB\u7EDF\u662F\u4E00\u6B3E\u5168\u65B0\u7684\u9762\u5411\u5168\u573A\u666F\u7684\u5206\u5E03\u5F0F\u64CD\u4F5C\u7CFB\u7EDF\uFF0C\u521B\u9020\u4E00\u4E2A\u8D85\u7EA7\u865A\u62DF\u7EC8\u7AEF\u4E92\u8054\u7684\u4E16\u754C\uFF0C\u5C06\u4EBA\u3001\u8BBE\u5907\u3001\u573A\u666F\u6709\u673A\u5730\u8054\u7CFB\u5728\u4E00\u8D77\uFF0C\u5C06\u6D88\u8D39\u8005\u5728\u5168\u573A\u666F\u751F\u6D3B\u4E2D\u63A5\u89E6\u7684\u591A\u79CD\u667A\u80FD\u7EC8\u7AEF\uFF0C\u5B9E\u73B0\u6781\u901F\u53D1\u73B0\u3001\u6781\u901F\u8FDE\u63A5\u3001\u786C\u4EF6\u4E92\u52A9\u3001\u8D44\u6E90\u5171\u4EAB\uFF0C\u7528\u5408\u9002\u7684\u8BBE\u5907\u63D0\u4F9B\u573A\u666F\u4F53\u9A8C\u3002", "2023\u5E748\u67084\u65E5\uFF0C\u534E\u4E3A\u9E3F\u84994\uFF08HarmonyOS 4\uFF09\u64CD\u4F5C\u7CFB\u7EDF\u6B63\u5F0F\u53D1\u5E03\u3002\u534E\u4E3A\u9E3F\u8499Next\uFF08HarmonyOS Next\uFF09\u64CD\u4F5C\u7CFB\u7EDF\u5F00\u53D1\u8005\u9884\u89C8\u7248(Developer Preview)\u53D1\u5E03\u3002", "\u9E3F\u8499\u64CD\u4F5C\u7CFB\u7EDF\u53EF\u4EE5\u6EE1\u8DB3\u5927\u5927\u5C0F\u5C0F\u6240\u6709\u8BBE\u5907\u7684\u9700\u6C42\uFF0C\u5C0F\u5230\u8033\u673A\uFF0C\u5927\u5230\u8F66\u673A\uFF0C\u667A\u6167\u5C4F\uFF0C\u624B\u673A\u7B49\uFF0C\u8BA9\u4E0D\u540C\u8BBE\u5907\u4F7F\u7528\u540C\u4E00\u8BED\u8A00\u65E0\u7F1D\u6C9F\u901A\u3002"],
+        descs: ["\u534E\u4E3A\u9E3F\u8499\u7CFB\u7EDF\uFF08HUAWEI Harmony OS\uFF09\uFF0C\u662F\u534E\u4E3A\u516C\u53F8\u57282019\u5E748\u67089\u65E5\u4E8E\u4E1C\u839E\u4E3E\u884C\u7684\u534E\u4E3A\u5F00\u53D1\u8005\u5927\u4F1A\uFF08HDC.2019\uFF09\u4E0A\u6B63\u5F0F\u53D1\u5E03\u7684\u64CD\u4F5C\u7CFB\u7EDF\u3002", "HarmonyOS \u9E3F\u8499\u7CFB\u7EDF\uFF08\u9E3F\u8499 OS\uFF09\u662F\u4E00\u6B3E\u201C\u9762\u5411\u672A\u6765\u201D\u3001\u9762\u5411\u5168\u573A\u666F\uFF08\u79FB\u52A8\u529E\u516C\u3001\u8FD0\u52A8\u5065\u5EB7\u3001\u793E\u4EA4\u901A\u4FE1\u3001\u5A92\u4F53\u5A31\u4E50\u7B49\uFF09\u7684\u5206\u5E03\u5F0F\u64CD\u4F5C\u7CFB\u7EDF\u3002\u5728\u4F20\u7EDF\u7684\u5355\u8BBE\u5907\u7CFB\u7EDF\u80FD\u529B\u7684\u57FA\u7840\u4E0A\uFF0CHarmonyOS\u63D0\u51FA\u4E86\u57FA\u4E8E\u540C\u4E00\u5957\u7CFB\u7EDF\u80FD\u529B\u3001\u9002\u914D\u591A\u79CD\u7EC8\u7AEF\u5F62\u6001\u7684\u5206\u5E03\u5F0F\u7406\u5FF5\uFF0C\u80FD\u591F\u652F\u6301\u591A\u79CD\u7EC8\u7AEF\u8BBE\u5907\u3002", "HarmonyOS\u63D0\u4F9B\u4E86\u652F\u6301\u591A\u79CD\u5F00\u53D1\u8BED\u8A00\u7684API\uFF0C\u4F9B\u5F00\u53D1\u8005\u8FDB\u884C\u5E94\u7528\u5F00\u53D1\u3002\u652F\u6301\u7684\u5F00\u53D1\u8BED\u8A00\u5305\u62ECJava\u3001XML\uFF08Extensible Markup Language\uFF09\u3001C/C++ \u3001 JS\uFF08JavaScript\uFF09\u3001CSS\uFF08Cascading Style Sheets\uFF09\u548CHML\uFF08HarmonyOS Markup Language\uFF09\u3002"],
         url: "/#/harmonyos"
       }];
+    }
+    ngOnInit() {
+      window.scrollTo({
+        top: 0
+      });
     }
   };
   _HomeComponent.\u0275fac = function HomeComponent_Factory(t) {
@@ -22412,9 +22417,9 @@ var HomeComponent = /* @__PURE__ */ (() => {
   _HomeComponent.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({
     type: _HomeComponent,
     selectors: [["app-home"]],
-    decls: 21,
+    decls: 12,
     vars: 1,
-    consts: [[1, "box", "pt-5"], [1, "container-fluid", "p-5", "slogan-box"], [1, "row"], [1, "col-4"], [1, "col", "text-center", "text-white", "fw-bold"], [1, "pt-5", "pb-4", "slogan"], [2, "border-bottom", "solid 1px gray"], [1, "pt-4", "pb-5", "slogan"], [1, "fw-normal", "pt-4", "fs-5", "text-light"], [1, "px-2", "text-warning"], [1, "text-warning", "px-2"], [1, "container-fluid", "mt-5", "p-5", "sections"], [1, "row", "justify-content-evenly"], ["class", "col-5 text-light section", 4, "ngFor", "ngForOf"], [1, "col-5", "text-light", "section"], [1, "text-center", "mb-5", "fs-1", "fw-bold"], [1, "logo", "me-3"], ["class", "text-secondary", 4, "ngFor", "ngForOf"], [1, "text-center", "mt-5"], ["type", "button", 1, "btn", "btn-primary", "px-5", "py-2", "fs-5", "rounded-5"], [1, "text-secondary"]],
+    consts: [[1, "box", "pt-5"], [1, "container-fluid", "p-5", "slogan-box"], [1, "row"], [1, "col-4"], [1, "col", "text-center", "text-white", "fw-bold"], [1, "pt-5", "pb-4", "slogan"], [1, "pt-4", "pb-5", "slogan"], [1, "container-fluid", "mt-5", "p-5", "sections"], [1, "row", "justify-content-evenly"], ["class", "col-5 text-light section", 4, "ngFor", "ngForOf"], [1, "col-5", "text-light", "section"], [1, "text-center", "mb-5", "fs-1", "fw-bold"], [1, "logo", "me-3"], ["class", "text-secondary", 4, "ngFor", "ngForOf"], [1, "text-center", "mt-5"], ["type", "button", 1, "btn", "btn-primary", "px-5", "py-2", "fs-5", "rounded-5"], [1, "text-secondary"]],
     template: function HomeComponent_Template(rf, ctx) {
       if (rf & 1) {
         \u0275\u0275elementStart(0, "div", 0)(1, "div", 1)(2, "div", 2);
@@ -22422,27 +22427,15 @@ var HomeComponent = /* @__PURE__ */ (() => {
         \u0275\u0275elementStart(4, "div", 4)(5, "h1", 5);
         \u0275\u0275text(6, "\u8FF7\u832B\u65F6\u8BFB\u4E66\xA0\xA0\xA0\u6E05\u9192\u65F6\u505A\u4E8B\xA0\xA0\xA0\u5FD9\u788C\u65F6\u4E13\u6CE8");
         \u0275\u0275elementEnd();
-        \u0275\u0275element(7, "div", 6);
-        \u0275\u0275elementStart(8, "h1", 7);
-        \u0275\u0275text(9, "\u95F2\u6687\u65F6\u84C4\u529B\xA0\xA0\xA0\u70E6\u607C\u65F6\u8FD0\u52A8\xA0\xA0\xA0\u7126\u8651\u65F6\u884C\u52A8");
-        \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(10, "p", 8);
-        \u0275\u0275text(11, "\u642D\u5EFA\u672C\u7F51\u7AD9\u7684\u76EE\u7684\u662F\u8BB0\u5F55\u672C\u4EBA\u5728\u5B66\u4E60");
-        \u0275\u0275elementStart(12, "span", 9);
-        \u0275\u0275text(13, "\u4EBA\u5DE5\u667A\u80FD");
-        \u0275\u0275elementEnd();
-        \u0275\u0275text(14, "\u548C");
-        \u0275\u0275elementStart(15, "span", 10);
-        \u0275\u0275text(16, "\u9E3F\u8499\u64CD\u4F5C\u7CFB\u7EDF");
-        \u0275\u0275elementEnd();
-        \u0275\u0275text(17, "\u7684\u8FC7\u7A0B\u4E2D\u4EA7\u751F\u7684\u5FC3\u5F97\u4F53\u4F1A\u548C\u5148\u8FDB\u65B9\u6CD5\uFF0C\u4EE5\u6B64\u65B9\u5F0F\u5728 Web 4.0 \u65F6\u4EE3\u63D0\u9AD8\u6280\u672F\u80FD\u529B\uFF0C\u62D3\u5BBD\u53D1\u5C55\u89C6\u91CE\uFF0C\u4E3A\u5230\u6765\u7684\u673A\u4F1A\u505A\u597D\u51C6\u5907");
+        \u0275\u0275elementStart(7, "h1", 6);
+        \u0275\u0275text(8, "\u95F2\u6687\u65F6\u84C4\u529B\xA0\xA0\xA0\u70E6\u607C\u65F6\u8FD0\u52A8\xA0\xA0\xA0\u7126\u8651\u65F6\u884C\u52A8");
         \u0275\u0275elementEnd()()()();
-        \u0275\u0275elementStart(18, "div", 11)(19, "div", 12);
-        \u0275\u0275template(20, HomeComponent_div_20_Template, 8, 4, "div", 13);
+        \u0275\u0275elementStart(9, "div", 7)(10, "div", 8);
+        \u0275\u0275template(11, HomeComponent_div_11_Template, 8, 4, "div", 9);
         \u0275\u0275elementEnd()()();
       }
       if (rf & 2) {
-        \u0275\u0275advance(20);
+        \u0275\u0275advance(11);
         \u0275\u0275property("ngForOf", ctx.sections);
       }
     },
@@ -22537,6 +22530,9 @@ var HarmonyosComponent = /* @__PURE__ */ (() => {
       this.currentTitle = "";
     }
     ngOnInit() {
+      window.scrollTo({
+        top: 0
+      });
       this.articles.forEach((element) => {
         const dt = new Date(element["datetime"]);
         element["timestamp"] = dt.getTime().toString();
@@ -22636,6 +22632,11 @@ var HarmonyosComponent = /* @__PURE__ */ (() => {
 // src/app/error/error.component.ts
 var ErrorComponent = /* @__PURE__ */ (() => {
   const _ErrorComponent = class _ErrorComponent {
+    ngOnInit() {
+      window.scrollTo({
+        top: 0
+      });
+    }
   };
   _ErrorComponent.\u0275fac = function ErrorComponent_Factory(t) {
     return new (t || _ErrorComponent)();
@@ -22753,6 +22754,9 @@ var LifePhilosophyComponent = /* @__PURE__ */ (() => {
       this.articles = life_philosophy_list_default;
     }
     ngOnInit() {
+      window.scrollTo({
+        top: 0
+      });
     }
   };
   _LifePhilosophyComponent.\u0275fac = function LifePhilosophyComponent_Factory(t) {
@@ -22793,6 +22797,11 @@ var LifePhilosophyComponent = /* @__PURE__ */ (() => {
 // src/app/about/about.component.ts
 var AboutComponent = /* @__PURE__ */ (() => {
   const _AboutComponent = class _AboutComponent {
+    ngOnInit() {
+      window.scrollTo({
+        top: 0
+      });
+    }
   };
   _AboutComponent.\u0275fac = function AboutComponent_Factory(t) {
     return new (t || _AboutComponent)();
@@ -22819,6 +22828,11 @@ var AboutComponent = /* @__PURE__ */ (() => {
 // src/app/tongyi/tongyi.component.ts
 var TongyiComponent = /* @__PURE__ */ (() => {
   const _TongyiComponent = class _TongyiComponent {
+    ngOnInit() {
+      window.scrollTo({
+        top: 0
+      });
+    }
   };
   _TongyiComponent.\u0275fac = function TongyiComponent_Factory(t) {
     return new (t || _TongyiComponent)();
@@ -23288,6 +23302,9 @@ var HuggingfaceComponent = /* @__PURE__ */ (() => {
       this.currentArticleUrl = "";
     }
     ngOnInit() {
+      window.scrollTo({
+        top: 0
+      });
     }
     clickArticle(course, chapter, article) {
       this.currentCourseTitle = "\uFF08\u8BFE\uFF09" + course.title;
@@ -23818,6 +23835,11 @@ var AiConceptComponent = /* @__PURE__ */ (() => {
     goToTop() {
       document.body.scrollTop = 0;
       document.documentElement.scrollTop = 0;
+    }
+    ngOnInit() {
+      window.scrollTo({
+        top: 0
+      });
     }
   };
   _AiConceptComponent.\u0275fac = function AiConceptComponent_Factory(t) {
@@ -27382,6 +27404,9 @@ var MdScreenRecordComponent = /* @__PURE__ */ (() => {
       });
     }
     ngOnInit() {
+      window.scrollTo({
+        top: 0
+      });
     }
     goToTop() {
       window.scrollTo(0, 0);
@@ -27626,6 +27651,9 @@ var AppComponent = /* @__PURE__ */ (() => {
       this.currentYear = "";
     }
     ngOnInit() {
+      window.scrollTo({
+        top: 0
+      });
       this.currentYear = this.getCurrentYear();
     }
     getCurrentYear() {
@@ -27641,12 +27669,12 @@ var AppComponent = /* @__PURE__ */ (() => {
     selectors: [["app-root"]],
     decls: 56,
     vars: 1,
-    consts: [["data-bs-theme", "dark", 1, "navbar", "fixed-top", "bg-body-tertiary", "navbar-expand-lg", "rounded-0"], [1, "container-fluid", "px-5"], ["href", "#", 1, "navbar-brand", "fs-4"], ["src", "../assets/img/logo.png", "alt", "Study center", "width", "30", "height", "30", 1, "me-1"], ["type", "button", "data-bs-toggle", "collapse", "data-bs-target", "#navbarNav", "aria-controls", "navbarNav", "aria-expanded", "false", "aria-label", "Toggle navigation", 1, "navbar-toggler"], [1, "navbar-toggler-icon"], ["id", "navbarNav", 1, "collapse", "navbar-collapse", "justify-content-end"], [1, "navbar-nav"], [1, "nav-item"], ["aria-current", "page", "href", "/", 1, "nav-link", "active"], [1, "bi", "bi-house-fill", "me-1"], [1, "nav-item", "dropdown"], ["href", "#", "role", "button", "data-bs-toggle", "dropdown", "aria-expanded", "false", 1, "nav-link", "dropdown-toggle", "active"], ["src", "../assets/img/ai-logo.png", 1, "icon", "me-1", "mb-1"], [1, "dropdown-menu"], ["href", "/#/huggingface", 1, "dropdown-item"], ["src", "../assets/img/huggingface-logo.png", 1, "icon", "me-1"], [1, "dropdown-divider"], ["href", "/#/tongyi", 1, "dropdown-item"], ["src", "../assets/img/tongyi-logo.svg", 1, "icon", "me-1"], ["href", "/#/ai-concept", 1, "dropdown-item"], ["src", "../assets/img/ai-concept.png", 1, "icon", "me-1"], [1, "nav-item", "ms-2"], ["href", "/#/harmonyos", 1, "nav-link", "active"], ["src", "../assets/img/huawei-logo.png", 1, "icon", "me-1", "mb-1"], ["src", "../assets/img/tools.png", 1, "icon", "me-1", "mb-1"], ["href", "/#/md-screen-record", 1, "dropdown-item"], [1, "bi", "bi-markdown-fill", "me-1"], ["href", "/#/life-philosophy", 1, "nav-link", "active"], [1, "bi", "bi-book-fill", "me-1", "text-primary"], [1, "footer"], [1, "container-fluid", "px-5", "text-secondary", "py-3"], [1, "m-0", "text-center"]],
+    consts: [["data-bs-theme", "dark", 1, "navbar", "fixed-top", "bg-body-tertiary", "navbar-expand-lg", "rounded-0"], [1, "container-fluid", "px-5"], ["href", "#", 1, "navbar-brand", "fs-4"], ["src", "../assets/img/city.png", "width", "auto", "height", "30", 1, "me-1"], ["type", "button", "data-bs-toggle", "collapse", "data-bs-target", "#navbarNav", "aria-controls", "navbarNav", "aria-expanded", "false", "aria-label", "Toggle navigation", 1, "navbar-toggler"], [1, "navbar-toggler-icon"], ["id", "navbarNav", 1, "collapse", "navbar-collapse", "justify-content-end"], [1, "navbar-nav"], [1, "nav-item"], ["aria-current", "page", "href", "/", 1, "nav-link", "active"], [1, "bi", "bi-house-fill", "me-1"], [1, "nav-item", "dropdown"], ["href", "#", "role", "button", "data-bs-toggle", "dropdown", "aria-expanded", "false", 1, "nav-link", "dropdown-toggle", "active"], ["src", "../assets/img/ai-logo.png", 1, "icon", "me-1", "mb-1"], [1, "dropdown-menu"], ["href", "/#/huggingface", 1, "dropdown-item"], ["src", "../assets/img/huggingface-logo.png", 1, "icon", "me-1"], [1, "dropdown-divider"], ["href", "/#/tongyi", 1, "dropdown-item"], ["src", "../assets/img/tongyi-logo.svg", 1, "icon", "me-1"], ["href", "/#/ai-concept", 1, "dropdown-item"], ["src", "../assets/img/ai-concept.png", 1, "icon", "me-1"], [1, "nav-item", "ms-2"], ["href", "/#/harmonyos", 1, "nav-link", "active"], ["src", "../assets/img/huawei-logo.png", 1, "icon", "me-1", "mb-1"], ["src", "../assets/img/tools.png", 1, "icon", "me-1", "mb-1"], ["href", "/#/md-screen-record", 1, "dropdown-item"], [1, "bi", "bi-markdown-fill", "me-1"], ["href", "/#/life-philosophy", 1, "nav-link", "active"], [1, "bi", "bi-book-fill", "me-1", "text-primary"], [1, "footer"], [1, "container-fluid", "px-5", "text-secondary", "py-3"], [1, "m-0", "text-center"]],
     template: function AppComponent_Template(rf, ctx) {
       if (rf & 1) {
         \u0275\u0275elementStart(0, "nav", 0)(1, "div", 1)(2, "a", 2);
         \u0275\u0275element(3, "img", 3);
-        \u0275\u0275text(4, " Study Center ");
+        \u0275\u0275text(4, " Startup Center ");
         \u0275\u0275elementEnd();
         \u0275\u0275elementStart(5, "button", 4);
         \u0275\u0275element(6, "span", 5);
@@ -27704,7 +27732,7 @@ var AppComponent = /* @__PURE__ */ (() => {
       }
     },
     dependencies: [RouterOutlet],
-    styles: ["\n\n.navbar[_ngcontent-%COMP%] {\n  background-color: #111 !important;\n}\n.navbar[_ngcontent-%COMP%]   .nav-item[_ngcontent-%COMP%]   .active[_ngcontent-%COMP%]:hover {\n  color: orange !important;\n}\n.navbar[_ngcontent-%COMP%]   .nav-item[_ngcontent-%COMP%]   .icon[_ngcontent-%COMP%] {\n  height: 1.1rem;\n  width: auto;\n}\n.footer[_ngcontent-%COMP%] {\n  background-color: rgb(13, 17, 23);\n}\n/*# sourceMappingURL=data:application/json;base64,ewogICJ2ZXJzaW9uIjogMywKICAic291cmNlcyI6IFsic3JjL2FwcC9hcHAuY29tcG9uZW50LnNjc3MiXSwKICAic291cmNlc0NvbnRlbnQiOiBbIi5uYXZiYXIge1xyXG5cclxuICAgIGJhY2tncm91bmQtY29sb3I6ICMxMTEgIWltcG9ydGFudDtcclxuXHJcbiAgICAubmF2LWl0ZW0ge1xyXG4gICAgICAgIC5hY3RpdmU6aG92ZXIge1xyXG4gICAgICAgICAgICBjb2xvcjogb3JhbmdlICFpbXBvcnRhbnQ7XHJcbiAgICAgICAgfVxyXG5cclxuICAgICAgICAuaWNvbiB7XHJcbiAgICAgICAgICAgIGhlaWdodDogMS4xcmVtO1xyXG4gICAgICAgICAgICB3aWR0aDogYXV0bztcclxuICAgICAgICB9XHJcbiAgICB9XHJcbn1cclxuXHJcbi5mb290ZXIge1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogcmdiKDEzLCAxNywgMjMpO1xyXG59Il0sCiAgIm1hcHBpbmdzIjogIjtBQUFBLENBQUE7QUFFSSxvQkFBQTs7QUFHSSxDQUxSLE9BS1EsQ0FBQSxTQUFBLENBQUEsTUFBQTtBQUNJLFNBQUE7O0FBR0osQ0FUUixPQVNRLENBSkEsU0FJQSxDQUFBO0FBQ0ksVUFBQTtBQUNBLFNBQUE7O0FBS1osQ0FBQTtBQUNJLG9CQUFBLElBQUEsRUFBQSxFQUFBLEVBQUEsRUFBQTs7IiwKICAibmFtZXMiOiBbXQp9Cg== */"]
+    styles: ["\n\n.navbar[_ngcontent-%COMP%] {\n  background-color: #111 !important;\n}\n.navbar[_ngcontent-%COMP%]   .nav-item[_ngcontent-%COMP%]   .active[_ngcontent-%COMP%]:hover {\n  color: orange !important;\n}\n.navbar[_ngcontent-%COMP%]   .nav-item[_ngcontent-%COMP%]   .icon[_ngcontent-%COMP%] {\n  height: 1.1rem;\n  width: auto;\n}\n.footer[_ngcontent-%COMP%] {\n  background-color: rgb(13, 17, 23);\n}\n/*# sourceMappingURL=data:application/json;base64,ewogICJ2ZXJzaW9uIjogMywKICAic291cmNlcyI6IFsic3JjL2FwcC9hcHAuY29tcG9uZW50LnNjc3MiXSwKICAic291cmNlc0NvbnRlbnQiOiBbIi5uYXZiYXIge1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogIzExMSAhaW1wb3J0YW50O1xyXG5cclxuICAgIC5uYXYtaXRlbSB7XHJcbiAgICAgICAgLmFjdGl2ZTpob3ZlciB7XHJcbiAgICAgICAgICAgIGNvbG9yOiBvcmFuZ2UgIWltcG9ydGFudDtcclxuICAgICAgICB9XHJcblxyXG4gICAgICAgIC5pY29uIHtcclxuICAgICAgICAgICAgaGVpZ2h0OiAxLjFyZW07XHJcbiAgICAgICAgICAgIHdpZHRoOiBhdXRvO1xyXG4gICAgICAgIH1cclxuICAgIH1cclxuXHJcbn1cclxuXHJcbi5mb290ZXIge1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogcmdiKDEzLCAxNywgMjMpO1xyXG59Il0sCiAgIm1hcHBpbmdzIjogIjtBQUFBLENBQUE7QUFDSSxvQkFBQTs7QUFHSSxDQUpSLE9BSVEsQ0FBQSxTQUFBLENBQUEsTUFBQTtBQUNJLFNBQUE7O0FBR0osQ0FSUixPQVFRLENBSkEsU0FJQSxDQUFBO0FBQ0ksVUFBQTtBQUNBLFNBQUE7O0FBTVosQ0FBQTtBQUNJLG9CQUFBLElBQUEsRUFBQSxFQUFBLEVBQUEsRUFBQTs7IiwKICAibmFtZXMiOiBbXQp9Cg== */"]
   });
   let AppComponent2 = _AppComponent;
   return AppComponent2;
