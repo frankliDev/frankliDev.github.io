@@ -22419,7 +22419,7 @@ var HomeComponent = /* @__PURE__ */ (() => {
     selectors: [["app-home"]],
     decls: 12,
     vars: 1,
-    consts: [[1, "box", "pt-5"], [1, "container-fluid", "p-5", "slogan-box"], [1, "row"], [1, "col-4"], [1, "col", "text-center", "text-white", "fw-bold"], [1, "pt-5", "pb-4", "slogan"], [1, "pt-4", "pb-5", "slogan"], [1, "container-fluid", "mt-5", "p-5", "sections"], [1, "row", "justify-content-evenly"], ["class", "col-5 text-light section", 4, "ngFor", "ngForOf"], [1, "col-5", "text-light", "section"], [1, "text-center", "mb-5", "fs-1", "fw-bold"], [1, "logo", "me-3"], ["class", "text-secondary", 4, "ngFor", "ngForOf"], [1, "text-center", "mt-5"], ["type", "button", 1, "btn", "btn-primary", "px-5", "py-2", "fs-5", "rounded-5"], [1, "text-secondary"]],
+    consts: [[1, "box", "pt-5"], [1, "container-fluid", "p-5", "slogan-box"], [1, "row"], [1, "col-4"], [1, "col", "text-center", "text-white", "fw-bold"], [1, "pt-5", "pb-4", "slogan"], [1, "pt-4", "pb-5", "slogan"], [1, "container-fluid", "mt-5", "p-5", "sections"], [1, "row", "mb-4", "justify-content-evenly"], ["class", "col-5 text-light section", 4, "ngFor", "ngForOf"], [1, "col-5", "text-light", "section"], [1, "text-center", "mb-5", "fs-1", "fw-bold"], [1, "logo", "me-3"], ["class", "text-secondary", 4, "ngFor", "ngForOf"], [1, "text-center", "mt-5"], ["type", "button", 1, "btn", "btn-primary", "px-5", "py-2", "fs-5", "rounded-5"], [1, "text-secondary"]],
     template: function HomeComponent_Template(rf, ctx) {
       if (rf & 1) {
         \u0275\u0275elementStart(0, "div", 0)(1, "div", 1)(2, "div", 2);
@@ -22720,13 +22720,27 @@ var life_philosophy_list_default = [
       "\u8FF7\u832B\u65F6\u8BFB\u4E66\uFF0C\u6E05\u9192\u65F6\u505A\u4E8B\uFF0C\u5FD9\u788C\u65F6\u4E13\u6CE8",
       "\u95F2\u6687\u65F6\u84C4\u529B\uFF0C\u70E6\u8E81\u65F6\u8FD0\u52A8\uFF0C\u7126\u8651\u65F6\u884C\u52A8"
     ]
+  },
+  {
+    lines: [
+      "\u771F\u6B63\u6210\u719F\u7684\u4EBA\u4F1A\u660E\u767D\uFF0C\u4E0E\u5176\u7B49\u7740\u751F\u6D3B\u5BF9\u4F60\u4E0B\u624B\uFF0C\u4E0D\u5982\u9009\u62E9\u5148\u5BF9\u751F\u6D3B\u4E0B\u624B"
+    ]
+  },
+  {
+    lines: [
+      "\u4EBA\u5230\u4E2D\u5E74\u7684\u751F\u6D3B\u5C31\u50CF\u4E00\u573A\u6DF7\u6218\uFF0C\u4E0A\u6709\u8001\u4E0B\u6709\u5C0F\uFF0C\u5DE6\u6709\u5DE5\u4F5C\u53F3\u6709\u5BB6\u5EAD\uFF0C\u5185\u5FE7\u5916\u60A3\u662F\u5E38\u6001",
+      "\u53EF\u53EA\u8981\u4F60\u80FD\u4E3B\u52A8\u8FCE\u6218\uFF0C\u6240\u8C13\u4E2D\u5E74\u5371\u673A\uFF0C\u4F55\u5C1D\u4E0D\u80FD\u6210\u4E3A\u4EBA\u751F\u8F6C\u673A"
+    ]
+  },
+  {
+    lines: ["\u7406\u8BBA / \u5B9E\u8DF5 / \u51B7\u9177 / \u7406\u667A / \u5224\u65AD / \u575A\u5F3A / \u8FD0\u6C14"]
   }
 ];
 
 // src/app/life-philosophy/life-philosophy.component.ts
 function LifePhilosophyComponent_div_9_p_2_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "p", 10);
+    \u0275\u0275elementStart(0, "p", 11);
     \u0275\u0275text(1);
     \u0275\u0275elementEnd();
   }
@@ -22738,8 +22752,8 @@ function LifePhilosophyComponent_div_9_p_2_Template(rf, ctx) {
 }
 function LifePhilosophyComponent_div_9_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 7)(1, "div", 8);
-    \u0275\u0275template(2, LifePhilosophyComponent_div_9_p_2_Template, 2, 1, "p", 9);
+    \u0275\u0275elementStart(0, "div", 8)(1, "div", 9);
+    \u0275\u0275template(2, LifePhilosophyComponent_div_9_p_2_Template, 2, 1, "p", 10);
     \u0275\u0275elementEnd()();
   }
   if (rf & 2) {
@@ -22767,7 +22781,7 @@ var LifePhilosophyComponent = /* @__PURE__ */ (() => {
     selectors: [["app-life-philosophy"]],
     decls: 10,
     vars: 2,
-    consts: [[1, "box", "bg-dark", "pt-5", "mt-4"], [1, "container-fluid", "px-5", "py-4"], [1, "row"], [1, "col-12"], [1, "fs-1", "fw-bold", "text-primary"], [1, "col-12", "text-secondary", "mb-2"], ["class", "card text-bg-dark mb-2 border-secondary border text-secondary", 4, "ngFor", "ngForOf"], [1, "card", "text-bg-dark", "mb-2", "border-secondary", "border", "text-secondary"], [1, "card-body"], ["class", "card-text lead", 4, "ngFor", "ngForOf"], [1, "card-text", "lead"]],
+    consts: [[1, "box", "bg-dark", "pt-5", "mt-4"], [1, "container-fluid", "px-5", "py-4"], [1, "row"], [1, "col-12"], [1, "fs-1", "fw-bold", "text-primary"], [1, "col-12", "text-secondary", "mb-2"], [1, "col-12", "mb-5"], ["class", "card text-bg-dark mb-2 border-secondary border text-secondary", 4, "ngFor", "ngForOf"], [1, "card", "text-bg-dark", "mb-2", "border-secondary", "border", "text-secondary"], [1, "card-body"], ["class", "card-text lead", 4, "ngFor", "ngForOf"], [1, "card-text", "lead"]],
     template: function LifePhilosophyComponent_Template(rf, ctx) {
       if (rf & 1) {
         \u0275\u0275elementStart(0, "div", 0)(1, "div", 1)(2, "div", 2)(3, "div", 3)(4, "p", 4);
@@ -22776,8 +22790,8 @@ var LifePhilosophyComponent = /* @__PURE__ */ (() => {
         \u0275\u0275elementStart(6, "div", 5);
         \u0275\u0275text(7);
         \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(8, "div", 3);
-        \u0275\u0275template(9, LifePhilosophyComponent_div_9_Template, 3, 1, "div", 6);
+        \u0275\u0275elementStart(8, "div", 6);
+        \u0275\u0275template(9, LifePhilosophyComponent_div_9_Template, 3, 1, "div", 7);
         \u0275\u0275elementEnd()()()();
       }
       if (rf & 2) {
@@ -22826,8 +22840,53 @@ var AboutComponent = /* @__PURE__ */ (() => {
 })();
 
 // src/app/tongyi/tongyi.component.ts
+function TongyiComponent_p_8_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementStart(0, "p", 12);
+    \u0275\u0275text(1);
+    \u0275\u0275elementEnd();
+  }
+  if (rf & 2) {
+    const item_r2 = ctx.$implicit;
+    \u0275\u0275advance(1);
+    \u0275\u0275textInterpolate(item_r2);
+  }
+}
+function TongyiComponent_span_10_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementStart(0, "span", 13)(1, "span", 14);
+    \u0275\u0275text(2);
+    \u0275\u0275elementEnd();
+    \u0275\u0275elementStart(3, "a", 15);
+    \u0275\u0275text(4);
+    \u0275\u0275elementEnd()();
+  }
+  if (rf & 2) {
+    const item_r3 = ctx.$implicit;
+    \u0275\u0275advance(2);
+    \u0275\u0275textInterpolate1("", item_r3.desc, "\uFF1A");
+    \u0275\u0275advance(1);
+    \u0275\u0275attribute("href", item_r3.url, \u0275\u0275sanitizeUrl);
+    \u0275\u0275advance(1);
+    \u0275\u0275textInterpolate(item_r3.title);
+  }
+}
 var TongyiComponent = /* @__PURE__ */ (() => {
   const _TongyiComponent = class _TongyiComponent {
+    constructor() {
+      this.video_url = "https://acd-assets.alicdn.com/acd_work/tongyi/assets/hero/tongyi_branding.mp4";
+      this.introductions = ["\u901A\u4E49\u5343\u95EE\uFF0C\u662F\u963F\u91CC\u4E91\u63A8\u51FA\u7684\u4E00\u4E2A\u8D85\u5927\u89C4\u6A21\u7684\u8BED\u8A00\u6A21\u578B\uFF0C\u529F\u80FD\u5305\u62EC\u591A\u8F6E\u5BF9\u8BDD\u3001\u6587\u6848\u521B\u4F5C\u3001\u903B\u8F91\u63A8\u7406\u3001\u591A\u6A21\u6001\u7406\u89E3\u3001\u591A\u8BED\u8A00\u652F\u6301\u3002\u80FD\u591F\u8DDF\u4EBA\u7C7B\u8FDB\u884C\u591A\u8F6E\u7684\u4EA4\u4E92\uFF0C\u4E5F\u878D\u5165\u4E86\u591A\u6A21\u6001\u7684\u77E5\u8BC6\u7406\u89E3\uFF0C\u4E14\u6709\u6587\u6848\u521B\u4F5C\u80FD\u529B\uFF0C\u80FD\u591F\u7EED\u5199\u5C0F\u8BF4\uFF0C\u7F16\u5199\u90AE\u4EF6\u7B49\u3002", "2023\u5E7412\u670822\u65E5\uFF0C\u963F\u91CC\u4E91\u901A\u4E49\u5343\u95EE\u6210\u4E3A\u9996\u4E2A\u201C\u5927\u6A21\u578B\u6807\u51C6\u7B26\u5408\u6027\u8BC4\u6D4B\u201D\u4E2D\u9996\u6279\u901A\u8FC7\u8BC4\u6D4B\u7684\u56DB\u6B3E\u56FD\u4EA7\u5927\u6A21\u578B\u4E4B\u4E00\uFF0C\u5728\u901A\u7528\u6027\u3001\u667A\u80FD\u6027\u7B49\u7EF4\u5EA6\u5747\u8FBE\u5230\u56FD\u5BB6\u76F8\u5173\u6807\u51C6\u8981\u6C42\u3002"];
+      this.pages = [{
+        title: "\u901A\u4E49\u5343\u95EE",
+        desc: "\u5B98\u65B9\u7F51\u7AD9",
+        url: "https://tongyi.aliyun.com/"
+      }, {
+        title: "\u9B54\u642D\u793E\u533A",
+        desc: "\u6A21\u578B\u3001\u6570\u636E\u96C6\u3001\u6587\u6863\u3001\u793E\u533A",
+        url: "https://www.modelscope.cn/home"
+      }];
+      this.products = ["\u901A\u4E49\u7075\u7801-\u667A\u80FD\u7F16\u7801\u52A9\u624B", "\u901A\u4E49\u667A\u6587-AI\u9605\u8BFB\u52A9\u624B", "\u901A\u4E49\u542C\u609F-\u5DE5\u4F5C\u5B66\u4E60AI\u52A9\u624B", "\u901A\u4E49\u661F\u5C18-\u4E2A\u6027\u5316\u89D2\u8272\u521B\u4F5C\u5E73\u53F0", "\u901A\u4E49\u70B9\u91D1-\u667A\u80FD\u6295\u7814\u52A9\u624B", "\u901A\u4E49\u6653\u871C-\u667A\u80FD\u5BA2\u670D", "\u901A\u4E49\u4EC1\u5FC3-\u4E2A\u4EBA\u4E13\u5C5E\u5065\u5EB7\u52A9\u624B", "\u901A\u4E49\u6CD5\u777F-AI\u6CD5\u5F8B\u987E\u95EE"];
+    }
     ngOnInit() {
       window.scrollTo({
         top: 0
@@ -22840,21 +22899,186 @@ var TongyiComponent = /* @__PURE__ */ (() => {
   _TongyiComponent.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({
     type: _TongyiComponent,
     selectors: [["app-tongyi"]],
-    decls: 6,
-    vars: 0,
-    consts: [[1, "box", "bg-dark", "pt-5", "mt-4"], [1, "container-fluid", "px-5", "py-4"], [1, "row", "mb-4"], [1, "text-light"], ["src", "../../assets/img/tongyi-logo.svg", 1, "logo", "me-2"]],
+    decls: 15,
+    vars: 2,
+    consts: [[1, "box", "bg-dark", "p-5", "mt-5"], [1, "container-fluid", "p-0"], [1, "row", "slogan", "align-items-center"], [1, "col-7", "text-center"], [1, "fs-1", "text-light"], ["src", "../../assets/img/tongyi-logo.svg", 1, "logo", "me-3"], [1, "mt-5"], ["class", "text-light lead text-start", 4, "ngFor", "ngForOf"], ["class", "lead text-light mx-5", 4, "ngFor", "ngForOf"], [1, "col", "text-center"], ["loop", "", "autoplay", "", "muted", "", 1, "slogan-video", "mt-4"], ["src", "https://acd-assets.alicdn.com/acd_work/tongyi/assets/hero/tongyi_branding.mp4", "type", "video/mp4"], [1, "text-light", "lead", "text-start"], [1, "lead", "text-light", "mx-5"], [1, "text-secondary"], ["target", "_blank", 1, "url", "text-info"]],
     template: function TongyiComponent_Template(rf, ctx) {
       if (rf & 1) {
-        \u0275\u0275elementStart(0, "div", 0)(1, "div", 1)(2, "div", 2)(3, "h1", 3);
-        \u0275\u0275element(4, "img", 4);
-        \u0275\u0275text(5, " \u901A\u4E49\u5343\u95EE ");
-        \u0275\u0275elementEnd()()()();
+        \u0275\u0275elementStart(0, "div", 0)(1, "div", 1)(2, "div", 2)(3, "div", 3)(4, "h1", 4);
+        \u0275\u0275element(5, "img", 5);
+        \u0275\u0275text(6, " \u901A\u4E49\u5343\u95EE ");
+        \u0275\u0275elementEnd();
+        \u0275\u0275elementStart(7, "div", 6);
+        \u0275\u0275template(8, TongyiComponent_p_8_Template, 2, 1, "p", 7);
+        \u0275\u0275elementEnd();
+        \u0275\u0275elementStart(9, "div", 6);
+        \u0275\u0275template(10, TongyiComponent_span_10_Template, 5, 3, "span", 8);
+        \u0275\u0275elementEnd()();
+        \u0275\u0275elementStart(11, "div", 9)(12, "video", 10);
+        \u0275\u0275element(13, "source", 11);
+        \u0275\u0275text(14, " \u60A8\u7684\u6D4F\u89C8\u5668\u4E0D\u652F\u6301Video\u6807\u7B7E\u3002 ");
+        \u0275\u0275elementEnd()()()()();
+      }
+      if (rf & 2) {
+        \u0275\u0275advance(8);
+        \u0275\u0275property("ngForOf", ctx.introductions);
+        \u0275\u0275advance(2);
+        \u0275\u0275property("ngForOf", ctx.pages);
       }
     },
-    styles: ["\n\n.box[_ngcontent-%COMP%]   .logo[_ngcontent-%COMP%] {\n  height: 2.5rem;\n  width: auto;\n}\n/*# sourceMappingURL=data:application/json;base64,ewogICJ2ZXJzaW9uIjogMywKICAic291cmNlcyI6IFsic3JjL2FwcC90b25neWkvdG9uZ3lpLmNvbXBvbmVudC5zY3NzIl0sCiAgInNvdXJjZXNDb250ZW50IjogWyIuYm94e1xyXG4gICAgLmxvZ297XHJcbiAgICAgICAgaGVpZ2h0OiAyLjVyZW07XHJcbiAgICAgICAgd2lkdGg6IGF1dG87XHJcbiAgICB9XHJcbn0iXSwKICAibWFwcGluZ3MiOiAiO0FBQ0ksQ0FBQSxJQUFBLENBQUE7QUFDSSxVQUFBO0FBQ0EsU0FBQTs7IiwKICAibmFtZXMiOiBbXQp9Cg== */"]
+    dependencies: [NgForOf],
+    styles: ["\n\n.box[_ngcontent-%COMP%]   .slogan[_ngcontent-%COMP%]   .logo[_ngcontent-%COMP%] {\n  height: 2.5rem;\n  width: auto;\n}\n.box[_ngcontent-%COMP%]   .slogan[_ngcontent-%COMP%]   .slogan-video[_ngcontent-%COMP%] {\n  width: 60%;\n  height: auto;\n  border-radius: 10px;\n}\n.box[_ngcontent-%COMP%]   .slogan[_ngcontent-%COMP%]   .url[_ngcontent-%COMP%] {\n  text-decoration: none;\n}\n/*# sourceMappingURL=data:application/json;base64,ewogICJ2ZXJzaW9uIjogMywKICAic291cmNlcyI6IFsic3JjL2FwcC90b25neWkvdG9uZ3lpLmNvbXBvbmVudC5zY3NzIl0sCiAgInNvdXJjZXNDb250ZW50IjogWyIuYm94IHtcclxuICAgIC5zbG9nYW4ge1xyXG4gICAgICAgIC5sb2dvIHtcclxuICAgICAgICAgICAgaGVpZ2h0OiAyLjVyZW07XHJcbiAgICAgICAgICAgIHdpZHRoOiBhdXRvO1xyXG4gICAgICAgIH1cclxuXHJcbiAgICAgICAgLnNsb2dhbi12aWRlbyB7XHJcbiAgICAgICAgICAgIHdpZHRoOiA2MCU7XHJcbiAgICAgICAgICAgIGhlaWdodDogYXV0bztcclxuICAgICAgICAgICAgYm9yZGVyLXJhZGl1czogMTBweDtcclxuICAgICAgICB9XHJcblxyXG4gICAgICAgIC51cmwge1xyXG4gICAgICAgICAgICB0ZXh0LWRlY29yYXRpb246IG5vbmU7XHJcbiAgICAgICAgfVxyXG4gICAgfVxyXG59Il0sCiAgIm1hcHBpbmdzIjogIjtBQUVRLENBQUEsSUFBQSxDQUFBLE9BQUEsQ0FBQTtBQUNJLFVBQUE7QUFDQSxTQUFBOztBQUdKLENBTEEsSUFLQSxDQUxBLE9BS0EsQ0FBQTtBQUNJLFNBQUE7QUFDQSxVQUFBO0FBQ0EsaUJBQUE7O0FBR0osQ0FYQSxJQVdBLENBWEEsT0FXQSxDQUFBO0FBQ0ksbUJBQUE7OyIsCiAgIm5hbWVzIjogW10KfQo= */"]
   });
   let TongyiComponent2 = _TongyiComponent;
   return TongyiComponent2;
+})();
+
+// src/app/local.service.ts
+var LocalService = /* @__PURE__ */ (() => {
+  const _LocalService = class _LocalService {
+    constructor() {
+      this.fileReader = new FileReader();
+    }
+    hello() {
+      console.log("Local Service function: hello");
+    }
+    scrollToTop() {
+      window.scrollTo({
+        top: 0
+      });
+    }
+    // 检查是否为 markdown 格式的文件
+    checkFileType(filename, filetype) {
+      if (filename.split(".")[1] == filetype) {
+        return true;
+      } else {
+        return false;
+      }
+    }
+    decodeMarkdownText(markdownText) {
+      let result = [];
+      let tempList = markdownText.split("\n");
+      for (let i = 0; i < tempList.length; i++) {
+        let item = tempList[i];
+        if (item != "" && item != "\r") {
+          result.push(item);
+        }
+      }
+      console.log("result");
+      console.log(result);
+      let allTitleIndexs = [];
+      for (let i = 0; i < result.length; i++) {
+        let element = result[i];
+        if (element.startsWith("#")) {
+          allTitleIndexs.push(i);
+        }
+      }
+      allTitleIndexs.push(result.length);
+      let sectionsList = [];
+      let isCode = false;
+      for (let i = 0; i < allTitleIndexs.length; i++) {
+        let startIndex = allTitleIndexs[i];
+        let endIndex = allTitleIndexs[i + 1];
+        if (endIndex == void 0) {
+          continue;
+        }
+        let contents = [];
+        for (let j = startIndex; j < endIndex; j++) {
+          if (result[j].startsWith("#") == true && isCode == false) {
+            contents.push({
+              key: "title",
+              value: this.getMarkdownTitle(result[j])
+            });
+          } else if (result[j].startsWith(">") == true) {
+            contents.push({
+              key: "desc",
+              value: this.getMarkdownDesc(result[j])
+            });
+          } else if (result[j].startsWith("![") == true) {
+            contents.push({
+              key: "graph",
+              value: this.getMarkdownGraphUrl(result[j])
+            });
+          } else if (result[j].startsWith("    ") == true && isCode == false) {
+            contents.push({
+              key: "output",
+              // 输出结果的前4个位置是空格，过滤掉前面4个空格，拿到后面的所有内容（包括剩余空格）
+              value: result[j].substring(4)
+            });
+          } else if (result[j].startsWith("```python") == true) {
+            isCode = true;
+            contents.push({
+              key: "option",
+              value: "codeStart"
+            });
+          } else if (result[j].startsWith("```") == true) {
+            isCode = false;
+            contents.push({
+              key: "option",
+              value: "codeEnd"
+            });
+          } else if (result[j].indexOf("#") != -1 && isCode == true) {
+            let annotation = result[j].replace(/ /g, " ");
+            contents.push({
+              key: "annotation",
+              value: annotation
+            });
+          } else if (isCode == true) {
+            let code = result[j].replace(/ /g, " ");
+            contents.push({
+              key: "code",
+              // value: result[j]
+              value: code
+            });
+          }
+        }
+        sectionsList.push(contents);
+      }
+      return sectionsList;
+    }
+    splitStringAsType(obj) {
+      let result = [];
+      switch (obj["key"]) {
+        case "title":
+          result = obj["value"].split("");
+          break;
+        default:
+          break;
+      }
+      return result;
+    }
+    // 从markdown的标题字符串（# ...）中提取内容
+    getMarkdownTitle(str) {
+      let title = "";
+      if (str.split("")[0] == "#") {
+        title = str.split("# ")[1];
+      }
+      return title;
+    }
+    // 从markdown的注释字符串（> ...）中提取内容
+    getMarkdownDesc(str) {
+      let desc = "";
+      if (str.split("")[0] == ">") {
+        desc = str.substring(2);
+      }
+      return desc;
+    }
+    // 从 markdown 的图像字符串里提取图片的 URL
+    getMarkdownGraphUrl(str) {
+      let reg = new RegExp("(?<=\\().+?(?=\\))", "g");
+      return str.match(reg);
+    }
+  };
+  _LocalService.\u0275fac = function LocalService_Factory(t) {
+    return new (t || _LocalService)();
+  };
+  _LocalService.\u0275prov = /* @__PURE__ */ \u0275\u0275defineInjectable({
+    token: _LocalService,
+    factory: _LocalService.\u0275fac,
+    providedIn: "root"
+  });
+  let LocalService2 = _LocalService;
+  return LocalService2;
 })();
 
 // src/assets/huggingface_list.json
@@ -23295,6 +23519,7 @@ function HuggingfaceComponent_i_37_Template(rf, ctx) {
 var HuggingfaceComponent = /* @__PURE__ */ (() => {
   const _HuggingfaceComponent = class _HuggingfaceComponent {
     constructor() {
+      this.localService = new LocalService();
       this.courses = huggingface_list_default;
       this.currentCourseTitle = "";
       this.currentChapterTitle = "";
@@ -23302,19 +23527,19 @@ var HuggingfaceComponent = /* @__PURE__ */ (() => {
       this.currentArticleUrl = "";
     }
     ngOnInit() {
-      window.scrollTo({
-        top: 0
-      });
+      this.localService.scrollToTop();
     }
     clickArticle(course, chapter, article) {
       this.currentCourseTitle = "\uFF08\u8BFE\uFF09" + course.title;
       this.currentChapterTitle = "\uFF08\u7AE0\uFF09" + chapter.title;
       this.currentArticleTitle = "\uFF08\u6587\uFF09" + article.title;
       this.currentArticleUrl = article.url;
+      this.localService.scrollToTop();
     }
     goToTop() {
       document.body.scrollTop = 0;
       document.documentElement.scrollTop = 0;
+      this.localService.scrollToTop();
     }
   };
   _HuggingfaceComponent.\u0275fac = function HuggingfaceComponent_Factory(t) {
@@ -23912,149 +24137,6 @@ var AiConceptComponent = /* @__PURE__ */ (() => {
   });
   let AiConceptComponent2 = _AiConceptComponent;
   return AiConceptComponent2;
-})();
-
-// src/app/local.service.ts
-var LocalService = /* @__PURE__ */ (() => {
-  const _LocalService = class _LocalService {
-    constructor() {
-      this.fileReader = new FileReader();
-    }
-    hello() {
-      console.log("Local Service function: hello");
-    }
-    // 检查是否为 markdown 格式的文件
-    checkFileType(filename, filetype) {
-      if (filename.split(".")[1] == filetype) {
-        return true;
-      } else {
-        return false;
-      }
-    }
-    decodeMarkdownText(markdownText) {
-      let result = [];
-      let tempList = markdownText.split("\n");
-      for (let i = 0; i < tempList.length; i++) {
-        let item = tempList[i];
-        if (item != "" && item != "\r") {
-          result.push(item);
-        }
-      }
-      console.log("result");
-      console.log(result);
-      let allTitleIndexs = [];
-      for (let i = 0; i < result.length; i++) {
-        let element = result[i];
-        if (element.startsWith("#")) {
-          allTitleIndexs.push(i);
-        }
-      }
-      allTitleIndexs.push(result.length);
-      let sectionsList = [];
-      let isCode = false;
-      for (let i = 0; i < allTitleIndexs.length; i++) {
-        let startIndex = allTitleIndexs[i];
-        let endIndex = allTitleIndexs[i + 1];
-        if (endIndex == void 0) {
-          continue;
-        }
-        let contents = [];
-        for (let j = startIndex; j < endIndex; j++) {
-          if (result[j].startsWith("#") == true && isCode == false) {
-            contents.push({
-              key: "title",
-              value: this.getMarkdownTitle(result[j])
-            });
-          } else if (result[j].startsWith(">") == true) {
-            contents.push({
-              key: "desc",
-              value: this.getMarkdownDesc(result[j])
-            });
-          } else if (result[j].startsWith("![") == true) {
-            contents.push({
-              key: "graph",
-              value: this.getMarkdownGraphUrl(result[j])
-            });
-          } else if (result[j].startsWith("    ") == true && isCode == false) {
-            contents.push({
-              key: "output",
-              // 输出结果的前4个位置是空格，过滤掉前面4个空格，拿到后面的所有内容（包括剩余空格）
-              value: result[j].substring(4)
-            });
-          } else if (result[j].startsWith("```python") == true) {
-            isCode = true;
-            contents.push({
-              key: "option",
-              value: "codeStart"
-            });
-          } else if (result[j].startsWith("```") == true) {
-            isCode = false;
-            contents.push({
-              key: "option",
-              value: "codeEnd"
-            });
-          } else if (result[j].indexOf("#") != -1 && isCode == true) {
-            let annotation = result[j].replace(/ /g, " ");
-            contents.push({
-              key: "annotation",
-              value: annotation
-            });
-          } else if (isCode == true) {
-            let code = result[j].replace(/ /g, " ");
-            contents.push({
-              key: "code",
-              // value: result[j]
-              value: code
-            });
-          }
-        }
-        sectionsList.push(contents);
-      }
-      return sectionsList;
-    }
-    splitStringAsType(obj) {
-      let result = [];
-      switch (obj["key"]) {
-        case "title":
-          result = obj["value"].split("");
-          break;
-        default:
-          break;
-      }
-      return result;
-    }
-    // 从markdown的标题字符串（# ...）中提取内容
-    getMarkdownTitle(str) {
-      let title = "";
-      if (str.split("")[0] == "#") {
-        title = str.split("# ")[1];
-      }
-      return title;
-    }
-    // 从markdown的注释字符串（> ...）中提取内容
-    getMarkdownDesc(str) {
-      let desc = "";
-      if (str.split("")[0] == ">") {
-        desc = str.substring(2);
-      }
-      return desc;
-    }
-    // 从 markdown 的图像字符串里提取图片的 URL
-    getMarkdownGraphUrl(str) {
-      let reg = new RegExp("(?<=\\().+?(?=\\))", "g");
-      return str.match(reg);
-    }
-  };
-  _LocalService.\u0275fac = function LocalService_Factory(t) {
-    return new (t || _LocalService)();
-  };
-  _LocalService.\u0275prov = /* @__PURE__ */ \u0275\u0275defineInjectable({
-    token: _LocalService,
-    factory: _LocalService.\u0275fac,
-    providedIn: "root"
-  });
-  let LocalService2 = _LocalService;
-  return LocalService2;
 })();
 
 // node_modules/@angular/forms/fesm2022/forms.mjs
@@ -27669,7 +27751,7 @@ var AppComponent = /* @__PURE__ */ (() => {
     selectors: [["app-root"]],
     decls: 56,
     vars: 1,
-    consts: [["data-bs-theme", "dark", 1, "navbar", "fixed-top", "bg-body-tertiary", "navbar-expand-lg", "rounded-0"], [1, "container-fluid", "px-5"], ["href", "#", 1, "navbar-brand", "fs-4"], ["src", "../assets/img/city.png", "width", "auto", "height", "30", 1, "me-1"], ["type", "button", "data-bs-toggle", "collapse", "data-bs-target", "#navbarNav", "aria-controls", "navbarNav", "aria-expanded", "false", "aria-label", "Toggle navigation", 1, "navbar-toggler"], [1, "navbar-toggler-icon"], ["id", "navbarNav", 1, "collapse", "navbar-collapse", "justify-content-end"], [1, "navbar-nav"], [1, "nav-item"], ["aria-current", "page", "href", "/", 1, "nav-link", "active"], [1, "bi", "bi-house-fill", "me-1"], [1, "nav-item", "dropdown"], ["href", "#", "role", "button", "data-bs-toggle", "dropdown", "aria-expanded", "false", 1, "nav-link", "dropdown-toggle", "active"], ["src", "../assets/img/ai-logo.png", 1, "icon", "me-1", "mb-1"], [1, "dropdown-menu"], ["href", "/#/huggingface", 1, "dropdown-item"], ["src", "../assets/img/huggingface-logo.png", 1, "icon", "me-1"], [1, "dropdown-divider"], ["href", "/#/tongyi", 1, "dropdown-item"], ["src", "../assets/img/tongyi-logo.svg", 1, "icon", "me-1"], ["href", "/#/ai-concept", 1, "dropdown-item"], ["src", "../assets/img/ai-concept.png", 1, "icon", "me-1"], [1, "nav-item", "ms-2"], ["href", "/#/harmonyos", 1, "nav-link", "active"], ["src", "../assets/img/huawei-logo.png", 1, "icon", "me-1", "mb-1"], ["src", "../assets/img/tools.png", 1, "icon", "me-1", "mb-1"], ["href", "/#/md-screen-record", 1, "dropdown-item"], [1, "bi", "bi-markdown-fill", "me-1"], ["href", "/#/life-philosophy", 1, "nav-link", "active"], [1, "bi", "bi-book-fill", "me-1", "text-primary"], [1, "footer"], [1, "container-fluid", "px-5", "text-secondary", "py-3"], [1, "m-0", "text-center"]],
+    consts: [["data-bs-theme", "dark", 1, "navbar", "fixed-top", "bg-body-tertiary", "navbar-expand-lg", "rounded-0", "border-bottom"], [1, "container-fluid", "px-5"], ["href", "#", 1, "navbar-brand", "fs-4"], ["src", "../assets/img/startup.png", "width", "auto", "height", "30", 1, "me-1"], ["type", "button", "data-bs-toggle", "collapse", "data-bs-target", "#navbarNav", "aria-controls", "navbarNav", "aria-expanded", "false", "aria-label", "Toggle navigation", 1, "navbar-toggler"], [1, "navbar-toggler-icon"], ["id", "navbarNav", 1, "collapse", "navbar-collapse", "justify-content-end"], [1, "navbar-nav"], [1, "nav-item"], ["aria-current", "page", "href", "/", 1, "nav-link", "active"], [1, "bi", "bi-house-fill", "me-1"], [1, "nav-item", "dropdown"], ["href", "#", "role", "button", "data-bs-toggle", "dropdown", "aria-expanded", "false", 1, "nav-link", "dropdown-toggle", "active"], ["src", "../assets/img/ai-logo.png", 1, "icon", "me-1", "mb-1"], [1, "dropdown-menu"], ["href", "/#/huggingface", 1, "dropdown-item"], ["src", "../assets/img/huggingface-logo.png", 1, "icon", "me-1"], [1, "dropdown-divider"], ["href", "/#/tongyi", 1, "dropdown-item"], ["src", "../assets/img/tongyi-logo.svg", 1, "icon", "me-1"], ["href", "/#/ai-concept", 1, "dropdown-item"], ["src", "../assets/img/ai-concept.png", 1, "icon", "me-1"], [1, "nav-item", "ms-2"], ["href", "/#/harmonyos", 1, "nav-link", "active"], ["src", "../assets/img/huawei-logo.png", 1, "icon", "me-1", "mb-1"], ["src", "../assets/img/tools.png", 1, "icon", "me-1", "mb-1"], ["href", "/#/md-screen-record", 1, "dropdown-item"], [1, "bi", "bi-markdown-fill", "me-1"], ["href", "/#/life-philosophy", 1, "nav-link", "active"], [1, "bi", "bi-book-fill", "me-1", "text-primary"], [1, "footer"], [1, "container-fluid", "px-5", "text-secondary", "py-3"], [1, "m-0", "text-center"]],
     template: function AppComponent_Template(rf, ctx) {
       if (rf & 1) {
         \u0275\u0275elementStart(0, "nav", 0)(1, "div", 1)(2, "a", 2);
