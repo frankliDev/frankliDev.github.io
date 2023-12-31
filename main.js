@@ -22355,9 +22355,9 @@ function provideRouterInitializer() {
 }
 
 // src/app/home/home.component.ts
-function HomeComponent_div_11_p_4_Template(rf, ctx) {
+function HomeComponent_div_27_p_4_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "p", 16);
+    \u0275\u0275elementStart(0, "p", 17);
     \u0275\u0275text(1);
     \u0275\u0275elementEnd();
   }
@@ -22368,14 +22368,14 @@ function HomeComponent_div_11_p_4_Template(rf, ctx) {
   }
 }
 var _c0 = (a0) => [a0];
-function HomeComponent_div_11_Template(rf, ctx) {
+function HomeComponent_div_27_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 10)(1, "h1", 11);
-    \u0275\u0275element(2, "img", 12);
+    \u0275\u0275elementStart(0, "div", 11)(1, "h1", 12);
+    \u0275\u0275element(2, "img", 13);
     \u0275\u0275text(3);
     \u0275\u0275elementEnd();
-    \u0275\u0275template(4, HomeComponent_div_11_p_4_Template, 2, 1, "p", 13);
-    \u0275\u0275elementStart(5, "div", 14)(6, "a", 15);
+    \u0275\u0275template(4, HomeComponent_div_27_p_4_Template, 2, 1, "p", 14);
+    \u0275\u0275elementStart(5, "div", 15)(6, "a", 16);
     \u0275\u0275text(7);
     \u0275\u0275elementEnd()()();
   }
@@ -22425,25 +22425,45 @@ var HomeComponent = /* @__PURE__ */ (() => {
   _HomeComponent.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({
     type: _HomeComponent,
     selectors: [["app-home"]],
-    decls: 12,
+    decls: 28,
     vars: 1,
-    consts: [[1, "box", "pt-5"], [1, "container-fluid", "p-5", "slogan-box"], [1, "row"], [1, "col-4"], [1, "col", "text-center", "text-white", "fw-bold"], [1, "pt-5", "pb-4", "slogan"], [1, "pt-4", "pb-5", "slogan"], [1, "container-fluid", "mt-5", "p-5", "sections"], [1, "row", "mb-4", "justify-content-evenly"], ["class", "col-5 text-light section", 4, "ngFor", "ngForOf"], [1, "col-5", "text-light", "section"], [1, "text-center", "mb-5", "fs-1", "fw-bold"], [1, "logo", "me-3"], ["class", "text-secondary", 4, "ngFor", "ngForOf"], [1, "text-center", "mt-5"], ["type", "button", 1, "btn", "px-5", "py-2", "fs-5", "rounded-5", 3, "ngClass"], [1, "text-secondary"]],
+    consts: [[1, "box", "pt-5"], [1, "container-fluid", "p-5", "slogan-box"], [1, "row"], [1, "col-4"], [1, "col", "text-center", "text-white", "fw-bold"], [1, "pt-5", "pb-4", "slogan"], [1, "text-warning"], [1, "pt-4", "pb-5", "slogan"], [1, "container-fluid", "mt-5", "p-5", "sections"], [1, "row", "mb-4", "justify-content-evenly"], ["class", "col-5 text-light section", 4, "ngFor", "ngForOf"], [1, "col-5", "text-light", "section"], [1, "text-center", "mb-5", "fs-1", "fw-bold"], [1, "logo", "me-3"], ["class", "text-secondary", 4, "ngFor", "ngForOf"], [1, "text-center", "mt-5"], ["type", "button", 1, "btn", "px-5", "py-2", "fs-5", "rounded-5", 3, "ngClass"], [1, "text-secondary"]],
     template: function HomeComponent_Template(rf, ctx) {
       if (rf & 1) {
         \u0275\u0275elementStart(0, "div", 0)(1, "div", 1)(2, "div", 2);
         \u0275\u0275element(3, "div", 3);
         \u0275\u0275elementStart(4, "div", 4)(5, "h1", 5);
-        \u0275\u0275text(6, "\u8FF7\u832B\u65F6\u8BFB\u4E66\xA0\xA0\xA0\u6E05\u9192\u65F6\u505A\u4E8B\xA0\xA0\xA0\u5FD9\u788C\u65F6\u4E13\u6CE8");
+        \u0275\u0275text(6, "\u8FF7\u832B\u65F6");
+        \u0275\u0275elementStart(7, "span", 6);
+        \u0275\u0275text(8, "\u8BFB\u4E66");
         \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(7, "h1", 6);
-        \u0275\u0275text(8, "\u95F2\u6687\u65F6\u84C4\u529B\xA0\xA0\xA0\u70E6\u607C\u65F6\u8FD0\u52A8\xA0\xA0\xA0\u7126\u8651\u65F6\u884C\u52A8");
-        \u0275\u0275elementEnd()()()();
-        \u0275\u0275elementStart(9, "div", 7)(10, "div", 8);
-        \u0275\u0275template(11, HomeComponent_div_11_Template, 8, 8, "div", 9);
+        \u0275\u0275text(9, "\xA0\xA0\xA0\u6E05\u9192\u65F6");
+        \u0275\u0275elementStart(10, "span", 6);
+        \u0275\u0275text(11, "\u505A\u4E8B");
+        \u0275\u0275elementEnd();
+        \u0275\u0275text(12, "\xA0\xA0\xA0\u5FD9\u788C\u65F6");
+        \u0275\u0275elementStart(13, "span", 6);
+        \u0275\u0275text(14, "\u4E13\u6CE8");
+        \u0275\u0275elementEnd()();
+        \u0275\u0275elementStart(15, "h1", 7);
+        \u0275\u0275text(16, "\u95F2\u6687\u65F6");
+        \u0275\u0275elementStart(17, "span", 6);
+        \u0275\u0275text(18, "\u84C4\u529B");
+        \u0275\u0275elementEnd();
+        \u0275\u0275text(19, "\xA0\xA0\xA0\u70E6\u607C\u65F6");
+        \u0275\u0275elementStart(20, "span", 6);
+        \u0275\u0275text(21, "\u8FD0\u52A8");
+        \u0275\u0275elementEnd();
+        \u0275\u0275text(22, "\xA0\xA0\xA0\u7126\u8651\u65F6");
+        \u0275\u0275elementStart(23, "span", 6);
+        \u0275\u0275text(24, "\u884C\u52A8");
+        \u0275\u0275elementEnd()()()()();
+        \u0275\u0275elementStart(25, "div", 8)(26, "div", 9);
+        \u0275\u0275template(27, HomeComponent_div_27_Template, 8, 8, "div", 10);
         \u0275\u0275elementEnd()()();
       }
       if (rf & 2) {
-        \u0275\u0275advance(11);
+        \u0275\u0275advance(27);
         \u0275\u0275property("ngForOf", ctx.sections);
       }
     },
@@ -22751,7 +22771,53 @@ var life_philosophy_list_default = [
     ]
   },
   {
-    lines: ["\u7406\u8BBA / \u5B9E\u8DF5 / \u51B7\u9177 / \u7406\u667A / \u5224\u65AD / \u575A\u5F3A / \u8FD0\u6C14"]
+    lines: [
+      "\u7406\u8BBA / \u5B9E\u8DF5 / \u51B7\u9177 / \u7406\u667A / \u5224\u65AD / \u575A\u5F3A / \u8FD0\u6C14"
+    ]
+  },
+  {
+    lines: [
+      "\u5F53\u6211\u4EEC\u4E00\u518D\u91CD\u590D\u7279\u5B9A\u7684\u52A8\u4F5C\u6216\u5FF5\u5934\u65F6\uFF0C\u4F1A\u4E0D\u65AD\u52A0\u5F3A\u5BF9\u5E94\u7684\u795E\u7ECF\u56DE\u8DEF\uFF0C\u5F53\u4E13\u6CE8\u5DE5\u4F5C\u7684\u795E\u7ECF\u56DE\u8DEF\u5F3A\u4E8E\u5176\u4ED6\u795E\u7ECF\u56DE\u8DEF\u65F6\uFF0C\u8FD9\u5C31\u662F\u6211\u4EEC\u719F\u77E5\u7684\u4E60\u60EF\u517B\u6210\u3002",
+      "\u9AD8\u624B\u53EF\u4EE5\u9488\u5BF9\u67D0\u4E2A\u9886\u57DF\u4E2D\u53EF\u4EE5\u9047\u5230\u7684\u5404\u79CD\u60C5\u51B5\uFF0C\u505A\u51FA\u7CBE\u51C6\u9884\u5224\u548C\u5E94\u5BF9\u63AA\u65BD\uFF0C\u8FD9\u662F\u56E0\u4E3A\u4ED6\u4EEC\u5728\u5FC3\u91CC\u5DF2\u7ECF\u5BF9\u5404\u79CD\u5C40\u9762\uFF0C\u521B\u5EFA\u4E86\u9AD8\u5EA6\u590D\u6742\u548C\u7CBE\u5BC6\u7684\u8868\u5F81\u3002",
+      "\u5FC3\u7406\u8868\u5F81\u7684\u4E00\u4E2A\u91CD\u8981\u597D\u5904\u5728\u4E8E\uFF0C\u53EF\u4EE5\u5E2E\u52A9\u6211\u4EEC\u5904\u7406\u4FE1\u606F\uFF1A\u7406\u89E3\u548C\u89E3\u8BFB\u5B83\uFF0C\u628A\u5B83\u4FDD\u5B58\u5728\u8BB0\u5FC6\u4E4B\u4E2D\uFF0C\u7EC4\u7EC7\u5B83\u3001\u5206\u6790\u5B83\uFF0C\u5E76\u7528\u5B83\u6765\u51B3\u7B56\u3002",
+      "\u4ECE\u65B0\u624B\u5230\u9AD8\u624B\u7684\u8FDB\u9636\u4E4B\u8DEF\uFF0C\u4E0D\u662F\u4F4E\u6C34\u5E73\u7684\u91CD\u590D\uFF0C\u800C\u662F\u6709\u76EE\u6807\u3001\u6709\u63D0\u5347\u7684\u523B\u610F\u7EC3\u4E60\uFF01"
+    ]
+  },
+  {
+    lines: [
+      "\u8212\u9002\u533A\uFF1A\u5DF2\u7ECF\u719F\u7EC3\u638C\u63E1\u7684\u5404\u79CD\u6280\u80FD\u3002",
+      "\u5B66\u4E60\u533A\uFF1A\u672A\u638C\u63E1\uFF0C\u4F46\u80FD\u901A\u8FC7\u5B66\u4E60\u5B66\u4F1A\u7684\u77E5\u8BC6\u6280\u80FD\u3002",
+      "\u6050\u614C\u533A\uFF1A\u662F\u6211\u4EEC\u6682\u65F6\u65E0\u6CD5\u5B66\u4F1A\u7684\u6280\u80FD\u3002",
+      "\u5728\u201C\u8212\u9002\u533A\u201D\u505A\u4E8B\uFF0C\u53EB\u751F\u6D3B\uFF1B\u5728\u201C\u5B66\u4E60\u533A\u201D\u505A\u4E8B\uFF0C\u624D\u53EB\u7EC3\u4E60\u3002",
+      "\u6709\u6548\u7684\u7EC3\u4E60\u4E00\u5B9A\u662F\u53D1\u751F\u5728\u201C\u5B66\u4E60\u533A\u201D\uFF0C\u4E00\u65E6\u4F60\u5B66\u4F1A\u4E86\u67D0\u4E2A\u4E1C\u897F\uFF0C\u5C31\u5E94\u8BE5\u8981\u6C42\u81EA\u5DF1\u7ACB\u5373\u8F6C\u5165\u4E0B\u4E00\u4E2A\u96BE\u5EA6\u3002\u51E1\u662F\u8FBE\u5230\u201C\u6211\u95ED\u7740\u773C\u775B\u90FD\u80FD\u2026\u2026\u201D\u8FD9\u79CD\u7A0B\u5EA6\u7684\u4EBA\u90FD\u5E9F\u4E86\uFF0C\u56E0\u4E3A\u9AD8\u624B\u4E0D\u4F1A\u95ED\u7740\u773C\u775B\u505A\u4E8B\u3002",
+      "\u53EA\u6709\u7ED3\u679C\u53EF\u63A7\u7684\u9886\u57DF\uFF0C\u523B\u610F\u7EC3\u4E60\u624D\u6709\u7528\u3002\u80A1\u5E02\u662F\u4E0D\u53EF\u63A7\u7684\uFF0C\u6240\u4EE5\u523B\u610F\u7EC3\u4E60\u9884\u6D4B\u80A1\u5E02\u5F88\u53EF\u80FD\u5C31\u6CA1\u7528\u3002"
+    ]
+  },
+  {
+    lines: [
+      "\u5B66\u4E60\u91D1\u5B57\u5854\u8BF4\u7684\u662F\u4E0D\u540C\u7684\u5B66\u4E60\u65B9\u5F0F\u4F1A\u5E26\u6765\u5B8C\u5168\u4E0D\u540C\u7684\u6548\u679C\uFF1A",
+      "\u5B66\u5B8C\u4E4B\u540E\u7ACB\u523B\u6559\u6388\u4ED6\u4EBA\u6216\u4F7F\u7528\u6280\u80FD\uFF0C\u53EF\u4EE5\u4FDD\u7559 90% \u7684\u6240\u5B66\u5185\u5BB9",
+      "\u5B66\u5B8C\u4E4B\u540E\u7ACB\u5373\u7EC3\u4E60\uFF0C\u53EF\u4EE5\u4FDD\u7559 75% \u7684\u6240\u5B66\u5185\u5BB9",
+      "\u53C2\u4E0E\u5C0F\u7EC4\u8BA8\u8BBA\uFF0C\u53EF\u4EE5\u4FDD\u7559 50% \u7684\u6240\u5B66\u5185\u5BB9",
+      "\u89C2\u770B\u4ED6\u4EBA\u7684\u5C55\u793A\uFF0C\u53EF\u4EE5\u4FDD\u7559 30% \u7684\u6240\u5B66\u5185\u5BB9",
+      "\u4EC5\u901A\u8FC7\u9605\u8BFB\u5B66\u4E60\uFF0C\u53EF\u4EE5\u4FDD\u7559 10% \u7684\u6240\u5B66\u5185\u5BB9",
+      "\u4EC5\u542C\u8BB2\u5EA7\u5B66\u4E60\uFF0C\u53EF\u4EE5\u4FDD\u7559\u7EA6 5% \u7684\u6240\u5B66\u5185\u5BB9",
+      "\u8FD9\u610F\u5473\u7740\uFF1A\u5B66\u4E60\u7684\u53C2\u4E0E\u5EA6\u8D8A\u9AD8\uFF0C\u5B66\u4E60\u7684\u6548\u679C\u5C31\u8D8A\u597D\u3002",
+      "\u96C6\u4E2D\u5F0F\u91CD\u590D\uFF0C\u53EA\u5BF9\u77ED\u65F6\u8BB0\u5FC6\u6709\u5E2E\u52A9\uFF0C\u4E34\u65F6\u62B1\u4F5B\u811A\u5C31\u662F\u5F88\u597D\u7684\u4F8B\u5B50\uFF1B\u800C\u95F4\u9694\u5F0F\u91CD\u590D\uFF0C\u8BA9\u77E5\u8BC6\u53D8\u6210\u957F\u65F6\u8BB0\u5FC6\u3002",
+      "\u884C\u52A8\u662F\u6210\u529F\u7684\u9636\u68AF\uFF0C\u884C\u52A8\u8D8A\u591A\uFF0C\u722C\u7684\u8D8A\u9AD8\u3002"
+    ]
+  },
+  {
+    lines: [
+      "\u4EBA\u751F\u7B97\u6CD5\u5C31\u662F\u4F60\u9762\u5BF9\u4E16\u754C\uFF0C\u4E0D\u65AD\u91CD\u590D\u7684\u6700\u57FA\u672C\u7684\u5957\u8DEF\uFF0C\u627E\u5230\u5B83\uFF0C\u91CD\u590D\u5B83\uFF0C\u5F3A\u5316\u5B83\uFF0C\u7136\u540E\u4E0D\u65AD\u53BB\u4F18\u5316\u5B83\uFF0C\u76F4\u5230\u5927\u8111\u53EF\u4EE5\u968F\u65F6\u8C03\u7528\u3002",
+      "\u4F60\u5F53\u4E0B\u7684\u7ED3\u679C\uFF0C\u7531\u8FC7\u53BB\u51B3\u5B9A\uFF1B\u4F60\u73B0\u5728\u7684\u52AA\u529B\uFF0C\u5728\u672A\u6765\u89C1\u6548\u3002\u73B0\u5728\u662F\u4EC0\u4E48\u4E0D\u91CD\u8981\uFF0C\u73B0\u5728\u52AA\u529B\u624D\u91CD\u8981\u3002",
+      "\u4E00\u4E2A\u4EBA\u5982\u679C\u4E60\u60EF\u4E86\u8D5A\u8F9B\u82E6\u94B1\uFF0C\u90A3\u4E48\u7E41\u5FD9\u7684\u4F4E\u4EF7\u503C\u5DE5\u4F5C\u5C31\u4F1A\u5360\u636E\u4ED6\u5927\u90E8\u5206\u7684\u65F6\u95F4\u3002",
+      "\u4ED6\u5C31\u4F1A\u5728\u8FD9\u6837\u7684\u751F\u6D3B\u4E2D\uFF0C\u5FD9\u5230\u65E0\u6687\u5206\u8EAB\uFF0C\u6700\u7EC8\u9677\u5165\u8D2B\u7A77\u7684\u5FAA\u73AF\u3002",
+      "\u6240\u4EE5\u4EE5\u4E0B3\u79CD\u8F9B\u82E6\u94B1\uFF0C\u6211\u529D\u4F60\u4E0D\u8981\u6323\u3002",
+      "1\u3001\u900F\u652F\u8EAB\u4F53\u6362\u6765\u7684\u94B1",
+      "2\u3001\u727A\u7272\u65F6\u95F4\u6362\u6765\u7684\u94B1",
+      "3\u3001\u9EBB\u75F9\u7CBE\u795E\u6362\u6765\u7684\u94B1"
+    ]
   }
 ];
 
@@ -23492,7 +23558,7 @@ var _c02 = (a0) => ({
 function HuggingfaceComponent_li_30_li_5_li_5_Template(rf, ctx) {
   if (rf & 1) {
     const _r13 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "li", 37);
+    \u0275\u0275elementStart(0, "li", 38);
     \u0275\u0275listener("click", function HuggingfaceComponent_li_30_li_5_li_5_Template_li_click_0_listener() {
       const restoredCtx = \u0275\u0275restoreView(_r13);
       const article_r9 = restoredCtx.$implicit;
@@ -23501,7 +23567,7 @@ function HuggingfaceComponent_li_30_li_5_li_5_Template(rf, ctx) {
       const ctx_r11 = \u0275\u0275nextContext();
       return \u0275\u0275resetView(ctx_r11.clickArticle(course_r3, chapter_r6, article_r9));
     });
-    \u0275\u0275elementStart(1, "span", 38);
+    \u0275\u0275elementStart(1, "span", 39);
     \u0275\u0275text(2);
     \u0275\u0275elementEnd();
     \u0275\u0275text(3);
@@ -23520,12 +23586,12 @@ function HuggingfaceComponent_li_30_li_5_li_5_Template(rf, ctx) {
 }
 function HuggingfaceComponent_li_30_li_5_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "li", 34)(1, "span", 35);
+    \u0275\u0275elementStart(0, "li", 35)(1, "span", 36);
     \u0275\u0275text(2);
     \u0275\u0275elementEnd();
     \u0275\u0275text(3);
-    \u0275\u0275elementStart(4, "ul", 32);
-    \u0275\u0275template(5, HuggingfaceComponent_li_30_li_5_li_5_Template, 4, 5, "li", 36);
+    \u0275\u0275elementStart(4, "ul", 33);
+    \u0275\u0275template(5, HuggingfaceComponent_li_30_li_5_li_5_Template, 4, 5, "li", 37);
     \u0275\u0275elementEnd()();
   }
   if (rf & 2) {
@@ -23541,12 +23607,12 @@ function HuggingfaceComponent_li_30_li_5_Template(rf, ctx) {
 }
 function HuggingfaceComponent_li_30_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "li", 30)(1, "span", 31);
+    \u0275\u0275elementStart(0, "li", 31)(1, "span", 32);
     \u0275\u0275text(2);
     \u0275\u0275elementEnd();
     \u0275\u0275text(3);
-    \u0275\u0275elementStart(4, "ul", 32);
-    \u0275\u0275template(5, HuggingfaceComponent_li_30_li_5_Template, 6, 3, "li", 33);
+    \u0275\u0275elementStart(4, "ul", 33);
+    \u0275\u0275template(5, HuggingfaceComponent_li_30_li_5_Template, 6, 3, "li", 34);
     \u0275\u0275elementEnd()();
   }
   if (rf & 2) {
@@ -23562,12 +23628,12 @@ function HuggingfaceComponent_li_30_Template(rf, ctx) {
 }
 function HuggingfaceComponent_i_35_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275element(0, "i", 39);
+    \u0275\u0275element(0, "i", 40);
   }
 }
 function HuggingfaceComponent_i_37_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275element(0, "i", 39);
+    \u0275\u0275element(0, "i", 40);
   }
 }
 var HuggingfaceComponent = /* @__PURE__ */ (() => {
@@ -23584,9 +23650,9 @@ var HuggingfaceComponent = /* @__PURE__ */ (() => {
       this.localService.scrollToTop();
     }
     clickArticle(course, chapter, article) {
-      this.currentCourseTitle = "\uFF08\u8BFE\uFF09" + course.title;
-      this.currentChapterTitle = "\uFF08\u7AE0\uFF09" + chapter.title;
-      this.currentArticleTitle = "\uFF08\u6587\uFF09" + article.title;
+      this.currentCourseTitle = "( \u8BFE ) " + course.title;
+      this.currentChapterTitle = "( \u7AE0 ) " + chapter.title;
+      this.currentArticleTitle = "( \u6587 ) " + article.title;
       this.currentArticleUrl = article.url;
       this.localService.scrollToTop();
     }
@@ -23604,7 +23670,7 @@ var HuggingfaceComponent = /* @__PURE__ */ (() => {
     selectors: [["app-huggingface"]],
     decls: 45,
     vars: 7,
-    consts: [[1, "box", "bg-dark", "pt-5", "mt-4"], [1, "container-fluid", "px-3", "py-4"], [1, "row", "mb-4"], [1, "col-12", "text-center", "text-light", "fs-1", "fw-bold"], ["src", "../../assets/img/huggingface-logo.png", 1, "logo", "me-2"], [1, "col-12", "text-center", "my-3"], ["type", "button", "data-bs-toggle", "offcanvas", "data-bs-target", "#offcanvasExample", "aria-controls", "offcanvasExample", "accesskey", "x", 1, "btn", "btn-warning"], [1, "bi", "bi-list-columns-reverse", "me-2"], [1, "text-secondary", "mt-2"], [1, "mx-2"], [1, "bi", "bi-windows", "me-1"], [1, "bi", "bi-apple", "me-1"], [1, "col-12", "text-secondary", "text-center", "mt-2"], [1, "row"], ["tabindex", "-1", "id", "offcanvasExample", "aria-labelledby", "offcanvasExampleLabel", 1, "offcanvas", "offcanvas-start", "bg-dark"], [1, "offcanvas-header"], ["id", "offcanvasExampleLabel", 1, "offcanvas-title", "text-warning"], ["type", "button", "data-bs-dismiss", "offcanvas", "aria-label", "Close", 1, "btn", "btn-outline-secondary", "btn-sm"], [1, "bi", "bi-x-lg"], [1, "offcanvas-body"], [1, "list-group", "list-group-flush", "title-list"], ["class", "list-group-item text-light fs-4 fw-normal course", 4, "ngFor", "ngForOf"], [1, "col-12"], [1, "col-12", "text-light", "mb-2"], ["class", "bi bi-chevron-right", 4, "ngIf"], [1, "article-detail"], ["type", "button", 1, "btn", "btn-warning", "py-1", "px-2", "goTopBtn", 3, "click"], [1, "bi", "bi-chevron-up", "lead"], ["type", "button", "data-bs-toggle", "offcanvas", "data-bs-target", "#offcanvasExample", "aria-controls", "offcanvasExample", "accesskey", "x", 1, "btn", "btn-secondary", "py-1", "px-2", "showMenuBtn"], [1, "bi", "bi-list", "lead"], [1, "list-group-item", "text-light", "fs-4", "fw-normal", "course"], [1, "badge", "text-bg-primary", "me-2"], [1, "list-group", "list-group-flush", "title-list", "my-2"], ["class", "list-group-item text-light fs-5 fw-normal border-0 chapter", 4, "ngFor", "ngForOf"], [1, "list-group-item", "text-light", "fs-5", "fw-normal", "border-0", "chapter"], [1, "badge", "text-bg-danger", "me-2"], ["class", "list-group-item text-light fw-normal border-0 fs-6 article", 3, "ngClass", "click", 4, "ngFor", "ngForOf"], [1, "list-group-item", "text-light", "fw-normal", "border-0", "fs-6", "article", 3, "ngClass", "click"], [1, "badge", "text-bg-warning", "me-2"], [1, "bi", "bi-chevron-right"]],
+    consts: [[1, "box", "bg-dark", "pt-5", "mt-4"], [1, "container-fluid", "px-3", "py-4"], [1, "row", "mb-4"], [1, "col-12", "text-center", "text-light", "fs-1", "fw-bold"], ["src", "../../assets/img/huggingface-logo.png", 1, "logo", "me-2"], [1, "col-12", "text-center", "my-3"], ["type", "button", "data-bs-toggle", "offcanvas", "data-bs-target", "#offcanvasExample", "aria-controls", "offcanvasExample", "accesskey", "x", 1, "btn", "btn-warning"], [1, "bi", "bi-list-columns-reverse", "me-2"], [1, "text-secondary", "mt-2"], [1, "mx-2"], [1, "bi", "bi-windows", "me-1"], [1, "bi", "bi-apple", "me-1"], [1, "col-12", "text-secondary", "text-center", "mt-2"], [1, "row"], ["tabindex", "-1", "id", "offcanvasExample", "aria-labelledby", "offcanvasExampleLabel", 1, "offcanvas", "offcanvas-start", "bg-dark"], [1, "offcanvas-header"], ["id", "offcanvasExampleLabel", 1, "offcanvas-title", "text-warning"], ["type", "button", "data-bs-dismiss", "offcanvas", "aria-label", "Close", 1, "btn", "btn-outline-secondary", "btn-sm"], [1, "bi", "bi-x-lg"], [1, "offcanvas-body"], [1, "list-group", "list-group-flush", "title-list"], ["class", "list-group-item text-light fs-4 fw-normal course", 4, "ngFor", "ngForOf"], [1, "col-12", "mb-5"], [1, "col-12", "text-warning", "mb-4", "fs-5"], ["class", "bi bi-chevron-right text-light", 4, "ngIf"], [1, "col-12"], [1, "article-detail"], ["type", "button", 1, "btn", "btn-warning", "py-1", "px-2", "goTopBtn", 3, "click"], [1, "bi", "bi-chevron-up", "lead"], ["type", "button", "data-bs-toggle", "offcanvas", "data-bs-target", "#offcanvasExample", "aria-controls", "offcanvasExample", "accesskey", "x", 1, "btn", "btn-secondary", "py-1", "px-2", "showMenuBtn"], [1, "bi", "bi-list", "lead"], [1, "list-group-item", "text-light", "fs-4", "fw-normal", "course"], [1, "badge", "text-bg-primary", "me-2"], [1, "list-group", "list-group-flush", "title-list", "my-2"], ["class", "list-group-item text-light fs-5 fw-normal border-0 chapter", 4, "ngFor", "ngForOf"], [1, "list-group-item", "text-light", "fs-5", "fw-normal", "border-0", "chapter"], [1, "badge", "text-bg-danger", "me-2"], ["class", "list-group-item text-light fw-normal border-0 fs-6 article", 3, "ngClass", "click", 4, "ngFor", "ngForOf"], [1, "list-group-item", "text-light", "fw-normal", "border-0", "fs-6", "article", 3, "ngClass", "click"], [1, "badge", "text-bg-warning", "me-2"], [1, "bi", "bi-chevron-right", "text-light"]],
     template: function HuggingfaceComponent_Template(rf, ctx) {
       if (rf & 1) {
         \u0275\u0275elementStart(0, "div", 0)(1, "div", 1)(2, "div", 2)(3, "div", 3);
@@ -23643,17 +23709,17 @@ var HuggingfaceComponent = /* @__PURE__ */ (() => {
         \u0275\u0275template(37, HuggingfaceComponent_i_37_Template, 1, 0, "i", 24);
         \u0275\u0275text(38);
         \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(39, "div", 22);
-        \u0275\u0275element(40, "img", 25);
+        \u0275\u0275elementStart(39, "div", 25);
+        \u0275\u0275element(40, "img", 26);
         \u0275\u0275elementEnd()()()()();
-        \u0275\u0275elementStart(41, "button", 26);
+        \u0275\u0275elementStart(41, "button", 27);
         \u0275\u0275listener("click", function HuggingfaceComponent_Template_button_click_41_listener() {
           return ctx.goToTop();
         });
-        \u0275\u0275element(42, "i", 27);
+        \u0275\u0275element(42, "i", 28);
         \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(43, "button", 28);
-        \u0275\u0275element(44, "i", 29);
+        \u0275\u0275elementStart(43, "button", 29);
+        \u0275\u0275element(44, "i", 30);
         \u0275\u0275elementEnd()();
       }
       if (rf & 2) {
@@ -27804,12 +27870,12 @@ var AppComponent = /* @__PURE__ */ (() => {
     selectors: [["app-root"]],
     decls: 56,
     vars: 1,
-    consts: [["data-bs-theme", "dark", 1, "navbar", "fixed-top", "bg-body-tertiary", "navbar-expand-lg", "rounded-0", "border-bottom"], [1, "container-fluid", "px-5"], ["href", "#", 1, "navbar-brand", "fs-4"], ["src", "../assets/img/startup.png", "width", "auto", "height", "30", 1, "me-1"], ["type", "button", "data-bs-toggle", "collapse", "data-bs-target", "#navbarNav", "aria-controls", "navbarNav", "aria-expanded", "false", "aria-label", "Toggle navigation", 1, "navbar-toggler"], [1, "navbar-toggler-icon"], ["id", "navbarNav", 1, "collapse", "navbar-collapse", "justify-content-end"], [1, "navbar-nav"], [1, "nav-item"], ["aria-current", "page", "href", "/", 1, "nav-link", "active"], [1, "bi", "bi-house-fill", "me-1"], [1, "nav-item", "dropdown"], ["href", "#", "role", "button", "data-bs-toggle", "dropdown", "aria-expanded", "false", 1, "nav-link", "dropdown-toggle", "active"], ["src", "../assets/img/ai-logo.png", 1, "icon", "me-1", "mb-1"], [1, "dropdown-menu"], ["href", "/#/huggingface", 1, "dropdown-item"], ["src", "../assets/img/huggingface-logo.png", 1, "icon", "me-1"], [1, "dropdown-divider"], ["href", "/#/tongyi", 1, "dropdown-item"], ["src", "../assets/img/tongyi-logo.svg", 1, "icon", "me-1"], ["href", "/#/ai-concept", 1, "dropdown-item"], ["src", "../assets/img/ai-concept.png", 1, "icon", "me-1"], [1, "nav-item", "ms-2"], ["href", "/#/harmonyos", 1, "nav-link", "active"], ["src", "../assets/img/huawei-logo.png", 1, "icon", "me-1", "mb-1"], [1, "nav-item", "dropdown", "ms-2"], ["src", "../assets/img/tools.png", 1, "icon", "me-1", "mb-1"], ["href", "/#/md-screen-record", 1, "dropdown-item"], ["src", "../assets/img/markdown-logo.png", 1, "icon", "me-1"], ["href", "/#/life-philosophy", 1, "nav-link", "active"], [1, "bi", "bi-book-fill", "me-1", "text-primary"], [1, "footer"], [1, "container-fluid", "px-5", "text-secondary", "py-3"], [1, "m-0", "text-center"]],
+    consts: [["data-bs-theme", "dark", 1, "navbar", "fixed-top", "bg-body-tertiary", "navbar-expand-lg", "rounded-0", "border-bottom"], [1, "container-fluid", "px-5"], ["href", "#", 1, "navbar-brand", "fs-4", "fw-bold"], ["src", "../assets/img/startup.png", "width", "auto", "height", "30", 1, "me-1"], ["type", "button", "data-bs-toggle", "collapse", "data-bs-target", "#navbarNav", "aria-controls", "navbarNav", "aria-expanded", "false", "aria-label", "Toggle navigation", 1, "navbar-toggler"], [1, "navbar-toggler-icon"], ["id", "navbarNav", 1, "collapse", "navbar-collapse", "justify-content-end"], [1, "navbar-nav"], [1, "nav-item"], ["aria-current", "page", "href", "/", 1, "nav-link", "active"], [1, "bi", "bi-house-fill", "me-1"], [1, "nav-item", "dropdown"], ["href", "#", "role", "button", "data-bs-toggle", "dropdown", "aria-expanded", "false", 1, "nav-link", "dropdown-toggle", "active"], ["src", "../assets/img/ai-logo.png", 1, "icon", "me-1", "mb-1"], [1, "dropdown-menu"], ["href", "/#/huggingface", 1, "dropdown-item"], ["src", "../assets/img/huggingface-logo.png", 1, "icon", "me-1"], [1, "dropdown-divider"], ["href", "/#/tongyi", 1, "dropdown-item"], ["src", "../assets/img/tongyi-logo.svg", 1, "icon", "me-1"], ["href", "/#/ai-concept", 1, "dropdown-item"], ["src", "../assets/img/ai-concept.png", 1, "icon", "me-1"], [1, "nav-item", "ms-2"], ["href", "/#/harmonyos", 1, "nav-link", "active"], ["src", "../assets/img/huawei-logo.png", 1, "icon", "me-1", "mb-1"], [1, "nav-item", "dropdown", "ms-2"], ["src", "../assets/img/tools.png", 1, "icon", "me-1", "mb-1"], ["href", "/#/md-screen-record", 1, "dropdown-item"], ["src", "../assets/img/markdown-logo.png", 1, "icon", "me-1"], ["href", "/#/life-philosophy", 1, "nav-link", "active"], [1, "bi", "bi-book-fill", "me-1", "text-primary"], [1, "footer"], [1, "container-fluid", "px-5", "text-secondary", "py-3"], [1, "m-0", "text-center"]],
     template: function AppComponent_Template(rf, ctx) {
       if (rf & 1) {
         \u0275\u0275elementStart(0, "nav", 0)(1, "div", 1)(2, "a", 2);
         \u0275\u0275element(3, "img", 3);
-        \u0275\u0275text(4, " Startup Center ");
+        \u0275\u0275text(4, " Startup Center for Frank ");
         \u0275\u0275elementEnd();
         \u0275\u0275elementStart(5, "button", 4);
         \u0275\u0275element(6, "span", 5);
@@ -27850,7 +27916,7 @@ var AppComponent = /* @__PURE__ */ (() => {
         \u0275\u0275elementEnd();
         \u0275\u0275elementStart(42, "ul", 14)(43, "li")(44, "a", 27);
         \u0275\u0275element(45, "img", 28);
-        \u0275\u0275text(46, " Markdown \u5F55\u5C4F ");
+        \u0275\u0275text(46, " MarkDown \u5F55\u5C4F ");
         \u0275\u0275elementEnd()()()();
         \u0275\u0275elementStart(47, "li", 22)(48, "a", 29);
         \u0275\u0275element(49, "i", 30);
