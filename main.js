@@ -22926,7 +22926,7 @@ var LifePhilosophyComponent = /* @__PURE__ */ (() => {
     selectors: [["app-life-philosophy"]],
     decls: 12,
     vars: 3,
-    consts: [[1, "box", "bg-dark", "pt-5", "mt-4"], [1, "container-fluid", "px-5", "py-4"], [1, "row"], [1, "col-12"], [1, "fs-1", "fw-bold", "text-primary"], [1, "col-12", "text-secondary", "mb-2", "fs-5"], [1, "col-12", "mb-5"], ["class", "card text-bg-dark mb-2 border-secondary border text-secondary", 4, "ngFor", "ngForOf"], ["type", "button", 1, "btn", "btn-primary", "py-1", "px-2", "goTopBtn", 3, "click"], [1, "bi", "bi-chevron-up", "lead", "text-light", "fw-bold"], [1, "card", "text-bg-dark", "mb-2", "border-secondary", "border", "text-secondary"], [1, "card-body"], ["class", "card-text lead", 4, "ngFor", "ngForOf"], [1, "card-text", "lead"]],
+    consts: [[1, "box", "bg-dark", "pt-5", "mt-4"], [1, "container-fluid", "px-5", "py-4"], [1, "row"], [1, "col-12"], [1, "fs-1", "fw-bold", "text-info"], [1, "col-12", "text-secondary", "mb-2", "fs-5"], [1, "col-12", "mb-5"], ["class", "card text-bg-dark mb-2 border-secondary border text-secondary", 4, "ngFor", "ngForOf"], ["type", "button", 1, "btn", "btn-info", "py-1", "px-2", "goTopBtn", 3, "click"], [1, "bi", "bi-chevron-up", "lead", "text-dark", "fw-bold"], [1, "card", "text-bg-dark", "mb-2", "border-secondary", "border", "text-secondary"], [1, "card-body"], ["class", "card-text lead", 4, "ngFor", "ngForOf"], [1, "card-text", "lead"]],
     template: function LifePhilosophyComponent_Template(rf, ctx) {
       if (rf & 1) {
         \u0275\u0275elementStart(0, "div", 0)(1, "div", 1)(2, "div", 2)(3, "div", 3)(4, "p", 4);
@@ -22955,7 +22955,7 @@ var LifePhilosophyComponent = /* @__PURE__ */ (() => {
       }
     },
     dependencies: [NgForOf],
-    styles: ["\n\n.box[_ngcontent-%COMP%]   .card[_ngcontent-%COMP%] {\n  transition: color 0.2s, border-color 0.2s;\n}\n.box[_ngcontent-%COMP%]   .card[_ngcontent-%COMP%]:hover {\n  color: gray !important;\n  border-color: rgb(13, 110, 253) !important;\n}\n.box[_ngcontent-%COMP%]   .goTopBtn[_ngcontent-%COMP%] {\n  position: fixed !important;\n  bottom: 1rem;\n  right: 1rem;\n}\n/*# sourceMappingURL=data:application/json;base64,ewogICJ2ZXJzaW9uIjogMywKICAic291cmNlcyI6IFsic3JjL2FwcC9saWZlLXBoaWxvc29waHkvbGlmZS1waGlsb3NvcGh5LmNvbXBvbmVudC5zY3NzIl0sCiAgInNvdXJjZXNDb250ZW50IjogWyIuYm94IHtcclxuICAgIC5jYXJkIHtcclxuICAgICAgICB0cmFuc2l0aW9uOiBjb2xvciAwLjJzLCBib3JkZXItY29sb3IgLjJzO1xyXG5cclxuICAgICAgICAmOmhvdmVyIHtcclxuICAgICAgICAgICAgY29sb3I6IGdyYXkgIWltcG9ydGFudDtcclxuICAgICAgICAgICAgYm9yZGVyLWNvbG9yOiByZ2IoMTMsIDExMCwgMjUzKSAhaW1wb3J0YW50O1xyXG4gICAgICAgIH1cclxuXHJcbiAgICB9XHJcblxyXG4gICAgLmdvVG9wQnRuIHtcclxuICAgICAgICBwb3NpdGlvbjogZml4ZWQgIWltcG9ydGFudDtcclxuICAgICAgICBib3R0b206IDFyZW07XHJcbiAgICAgICAgcmlnaHQ6IDFyZW07XHJcbiAgICB9XHJcblxyXG5cclxufSJdLAogICJtYXBwaW5ncyI6ICI7QUFDSSxDQUFBLElBQUEsQ0FBQTtBQUNJLGNBQUEsTUFBQSxJQUFBLEVBQUEsYUFBQTs7QUFFQSxDQUhKLElBR0ksQ0FISixJQUdJO0FBQ0ksU0FBQTtBQUNBLGdCQUFBLElBQUEsRUFBQSxFQUFBLEdBQUEsRUFBQTs7QUFLUixDQVZBLElBVUEsQ0FBQTtBQUNJLFlBQUE7QUFDQSxVQUFBO0FBQ0EsU0FBQTs7IiwKICAibmFtZXMiOiBbXQp9Cg== */"]
+    styles: ["\n\n.box[_ngcontent-%COMP%]   .card[_ngcontent-%COMP%] {\n  transition: color 0.2s, border-color 0.2s;\n}\n.box[_ngcontent-%COMP%]   .card[_ngcontent-%COMP%]:hover {\n  color: gray !important;\n  border-color: gray !important;\n}\n.box[_ngcontent-%COMP%]   .goTopBtn[_ngcontent-%COMP%] {\n  position: fixed !important;\n  bottom: 1rem;\n  right: 1rem;\n}\n/*# sourceMappingURL=data:application/json;base64,ewogICJ2ZXJzaW9uIjogMywKICAic291cmNlcyI6IFsic3JjL2FwcC9saWZlLXBoaWxvc29waHkvbGlmZS1waGlsb3NvcGh5LmNvbXBvbmVudC5zY3NzIl0sCiAgInNvdXJjZXNDb250ZW50IjogWyIuYm94IHtcclxuICAgIC5jYXJkIHtcclxuICAgICAgICB0cmFuc2l0aW9uOiBjb2xvciAwLjJzLCBib3JkZXItY29sb3IgLjJzO1xyXG5cclxuICAgICAgICAmOmhvdmVyIHtcclxuICAgICAgICAgICAgY29sb3I6IGdyYXkgIWltcG9ydGFudDtcclxuICAgICAgICAgICAgYm9yZGVyLWNvbG9yOiBncmF5ICFpbXBvcnRhbnQ7XHJcbiAgICAgICAgfVxyXG5cclxuICAgIH1cclxuXHJcbiAgICAuZ29Ub3BCdG4ge1xyXG4gICAgICAgIHBvc2l0aW9uOiBmaXhlZCAhaW1wb3J0YW50O1xyXG4gICAgICAgIGJvdHRvbTogMXJlbTtcclxuICAgICAgICByaWdodDogMXJlbTtcclxuICAgIH1cclxuXHJcblxyXG59Il0sCiAgIm1hcHBpbmdzIjogIjtBQUNJLENBQUEsSUFBQSxDQUFBO0FBQ0ksY0FBQSxNQUFBLElBQUEsRUFBQSxhQUFBOztBQUVBLENBSEosSUFHSSxDQUhKLElBR0k7QUFDSSxTQUFBO0FBQ0EsZ0JBQUE7O0FBS1IsQ0FWQSxJQVVBLENBQUE7QUFDSSxZQUFBO0FBQ0EsVUFBQTtBQUNBLFNBQUE7OyIsCiAgIm5hbWVzIjogW10KfQo= */"]
   });
   let LifePhilosophyComponent2 = _LifePhilosophyComponent;
   return LifePhilosophyComponent2;
@@ -27834,82 +27834,147 @@ var MdScreenRecordComponent = /* @__PURE__ */ (() => {
   return MdScreenRecordComponent2;
 })();
 
-// src/app/coding-battlefield/huggingface-coding/huggingface-coding.component.ts
-var HuggingfaceCodingComponent = /* @__PURE__ */ (() => {
-  const _HuggingfaceCodingComponent = class _HuggingfaceCodingComponent {
+// src/app/code-battlefield/code-battlefield.component.ts
+function CodeBattlefieldComponent_p_6_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementStart(0, "p", 18);
+    \u0275\u0275text(1);
+    \u0275\u0275elementEnd();
+  }
+  if (rf & 2) {
+    const item_r1 = ctx.$implicit;
+    \u0275\u0275advance(1);
+    \u0275\u0275textInterpolate(item_r1);
+  }
+}
+var CodeBattlefieldComponent = /* @__PURE__ */ (() => {
+  const _CodeBattlefieldComponent = class _CodeBattlefieldComponent {
+    constructor() {
+      this.slogans = ["\u8FD9\u91CC\u4E3B\u8981\u8BB0\u5F55\u4E86\u6211\u81EA\u5DF1\u5173\u4E8E HuggingFace\u3001\u901A\u4E49\u5343\u95EE\u3001Harmony OS \u7684\u5B66\u4E60\u7B14\u8BB0\u548C\u7F16\u7A0B\u4EE3\u7801\u3002\u7528\u4E8E\u65E5\u540E\u7ECF\u5E38\u8FDB\u884C\u67E5\u8BE2\u7FFB\u9605\uFF0C\u76EE\u7684\u5728\u4E8E\u63D0\u9AD8\u81EA\u5DF1\u5BF9\u4E8E AI \u548C\u9E3F\u8499\u7A0B\u5E8F\u5F00\u53D1\u7684\u6280\u672F\u3002", "\u9488\u5BF9\u81EA\u8EAB\u7684\u60C5\u51B5\u548C\u76EE\u524D\u7684\u6761\u4EF6\uFF0C\u6DF1\u5165\u7814\u7A76\u548C\u638C\u63E1\u5173\u4E8E AI \u7684\u7B97\u6CD5\u8FD8\u4E0D\u592A\u73B0\u5B9E\u3002\u4F46\u662F\u5B66\u4E60\u548C\u638C\u63E1\u4E3B\u6D41\u7684\u4EBA\u5DE5\u667A\u80FD\u6846\u67B6\uFF08HuggingFace\u3001\u901A\u4E49\u5343\u95EE\u4EE5\u53CA\u5176\u4ED6\u7684\u4EBA\u5DE5\u667A\u80FD\u5E73\u53F0\uFF09\u7684\u7A0B\u5E8F\u5F00\u53D1\u548C\u5E94\u7528\uFF0C\u5C06\u4EBA\u5DE5\u667A\u80FD\u6280\u672F\u5E94\u7528\u5230\u81EA\u5DF1\u7684\u7A0B\u5E8F\u5F00\u53D1\u548C\u4F4E\u6210\u672C\u521B\u4E1A\u8FD8\u662F\u6709\u975E\u5E38\u9AD8\u7684\u6210\u529F\u6982\u7387\u3002\u76EE\u7684\u5728\u4E8E\u8BA9\u81EA\u5DF1\u5E73\u6ED1\u7684\u8F6C\u578B\u4E3A AI \u7A0B\u5E8F\u5F00\u53D1\u8005\u751A\u81F3\u662F\u4EBA\u5DE5\u667A\u80FD\u5E94\u7528\u7684\u8D21\u732E\u8005\uFF0C\u6700\u7EC8\u6210\u4E3A\u57FA\u4E8E\u4EBA\u5DE5\u667A\u80FD\u6280\u672F\u7684\u521B\u4E1A\u8005\u3002", "\u57FA\u4E8E\u6211\u81EA\u8EAB\u7684\u60C5\u51B5\uFF0C\u80FD\u591F\u7528\u597D\u4EBA\u5DE5\u667A\u80FD\u6280\u672F\u5BF9\u6211\u6765\u8BF4\u66F4\u91CD\u8981\uFF0C\u66F4\u73B0\u5B9E \uFF01"];
+    }
   };
-  _HuggingfaceCodingComponent.\u0275fac = function HuggingfaceCodingComponent_Factory(t) {
-    return new (t || _HuggingfaceCodingComponent)();
+  _CodeBattlefieldComponent.\u0275fac = function CodeBattlefieldComponent_Factory(t) {
+    return new (t || _CodeBattlefieldComponent)();
   };
-  _HuggingfaceCodingComponent.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({
-    type: _HuggingfaceCodingComponent,
-    selectors: [["app-huggingface-coding"]],
-    decls: 6,
-    vars: 0,
-    consts: [[1, "box", "bg-dark", "pt-5", "mt-4"], [1, "container-fluid", "px-5", "py-4"], [1, "row"], [1, "col-12"], [1, "text-light"]],
-    template: function HuggingfaceCodingComponent_Template(rf, ctx) {
+  _CodeBattlefieldComponent.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({
+    type: _CodeBattlefieldComponent,
+    selectors: [["app-code-battlefield"]],
+    decls: 25,
+    vars: 1,
+    consts: [[1, "box", "bg-dark", "pt-5", "mt-4"], [1, "container-fluid", "px-5", "py-4"], [1, "row", "mb-5", "align-items-center"], [1, "col-8"], [1, "text-primary", "mb-4", "fw-bold", "fs-1"], ["class", "text-secondary fs-5", 4, "ngFor", "ngForOf"], [1, "row", "mt-5"], [1, "col"], ["href", "/#/code-battlefield/code-huggingface", 1, "btn", "btn-outline-warning", "px-3", "py-2"], ["src", "../../assets/img/huggingface-logo.png", 1, "icon", "me-2"], ["href", "/#/code-battlefield/code-tongyi", 1, "btn", "btn-outline-primary", "px-4", "py-2"], ["src", "../../assets/img/tongyi-logo.svg", 1, "icon", "me-2"], ["href", "/#/code-battlefield/code-harmonyos", 1, "btn", "btn-outline-danger", "px-3", "py-2"], ["src", "../../assets/img/huawei-logo.png", 1, "icon", "me-2"], [1, "col", "text-center"], ["src", "../../assets/img/ai-bgm.png", 1, "shadow", "rounded"], [1, "row"], [1, "col-12"], [1, "text-secondary", "fs-5"]],
+    template: function CodeBattlefieldComponent_Template(rf, ctx) {
       if (rf & 1) {
         \u0275\u0275elementStart(0, "div", 0)(1, "div", 1)(2, "div", 2)(3, "div", 3)(4, "h1", 4);
-        \u0275\u0275text(5, "HuggingFace Coding");
-        \u0275\u0275elementEnd()()()()();
+        \u0275\u0275text(5, "\u7F16\u7801\u9635\u5730 Code BattleField");
+        \u0275\u0275elementEnd();
+        \u0275\u0275template(6, CodeBattlefieldComponent_p_6_Template, 2, 1, "p", 5);
+        \u0275\u0275elementStart(7, "div", 6)(8, "div", 7)(9, "a", 8);
+        \u0275\u0275element(10, "img", 9);
+        \u0275\u0275text(11, " Hugging Face ");
+        \u0275\u0275elementEnd()();
+        \u0275\u0275elementStart(12, "div", 7)(13, "a", 10);
+        \u0275\u0275element(14, "img", 11);
+        \u0275\u0275text(15, " \u901A\u4E49\u5343\u95EE ");
+        \u0275\u0275elementEnd()();
+        \u0275\u0275elementStart(16, "div", 7)(17, "a", 12);
+        \u0275\u0275element(18, "img", 13);
+        \u0275\u0275text(19, " Harmony OS ");
+        \u0275\u0275elementEnd()()()();
+        \u0275\u0275elementStart(20, "div", 14);
+        \u0275\u0275element(21, "img", 15);
+        \u0275\u0275elementEnd()();
+        \u0275\u0275elementStart(22, "div", 16)(23, "div", 17);
+        \u0275\u0275element(24, "router-outlet");
+        \u0275\u0275elementEnd()()()();
+      }
+      if (rf & 2) {
+        \u0275\u0275advance(6);
+        \u0275\u0275property("ngForOf", ctx.slogans);
       }
     },
-    styles: ["\n\n/*# sourceMappingURL=data:application/json;base64,ewogICJ2ZXJzaW9uIjogMywKICAic291cmNlcyI6IFtdLAogICJzb3VyY2VzQ29udGVudCI6IFtdLAogICJtYXBwaW5ncyI6ICIiLAogICJuYW1lcyI6IFtdCn0K */"]
+    dependencies: [NgForOf, RouterOutlet],
+    styles: ["\n\n.box[_ngcontent-%COMP%]   .icon[_ngcontent-%COMP%] {\n  height: 1.5rem;\n  width: auto;\n}\n/*# sourceMappingURL=data:application/json;base64,ewogICJ2ZXJzaW9uIjogMywKICAic291cmNlcyI6IFsic3JjL2FwcC9jb2RlLWJhdHRsZWZpZWxkL2NvZGUtYmF0dGxlZmllbGQuY29tcG9uZW50LnNjc3MiXSwKICAic291cmNlc0NvbnRlbnQiOiBbIi5ib3gge1xyXG4gICAgLmljb24ge1xyXG4gICAgICAgIGhlaWdodDogMS41cmVtO1xyXG4gICAgICAgIHdpZHRoOiBhdXRvO1xyXG4gICAgfVxyXG5cclxufSJdLAogICJtYXBwaW5ncyI6ICI7QUFDSSxDQUFBLElBQUEsQ0FBQTtBQUNJLFVBQUE7QUFDQSxTQUFBOzsiLAogICJuYW1lcyI6IFtdCn0K */"]
   });
-  let HuggingfaceCodingComponent2 = _HuggingfaceCodingComponent;
-  return HuggingfaceCodingComponent2;
+  let CodeBattlefieldComponent2 = _CodeBattlefieldComponent;
+  return CodeBattlefieldComponent2;
 })();
 
-// src/app/coding-battlefield/tongyi-coding/tongyi-coding.component.ts
-var TongyiCodingComponent = /* @__PURE__ */ (() => {
-  const _TongyiCodingComponent = class _TongyiCodingComponent {
+// src/app/code-huggingface/code-huggingface.component.ts
+var CodeHuggingfaceComponent = /* @__PURE__ */ (() => {
+  const _CodeHuggingfaceComponent = class _CodeHuggingfaceComponent {
   };
-  _TongyiCodingComponent.\u0275fac = function TongyiCodingComponent_Factory(t) {
-    return new (t || _TongyiCodingComponent)();
+  _CodeHuggingfaceComponent.\u0275fac = function CodeHuggingfaceComponent_Factory(t) {
+    return new (t || _CodeHuggingfaceComponent)();
   };
-  _TongyiCodingComponent.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({
-    type: _TongyiCodingComponent,
-    selectors: [["app-tongyi-coding"]],
-    decls: 6,
+  _CodeHuggingfaceComponent.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({
+    type: _CodeHuggingfaceComponent,
+    selectors: [["app-code-huggingface"]],
+    decls: 5,
     vars: 0,
-    consts: [[1, "box", "bg-dark", "pt-5", "mt-4"], [1, "container-fluid", "px-5", "py-4"], [1, "row"], [1, "col-12"], [1, "text-light"]],
-    template: function TongyiCodingComponent_Template(rf, ctx) {
+    consts: [[1, "container-fluid", "mt-4"], [1, "row"], [1, "col-12"], [1, "text-light"]],
+    template: function CodeHuggingfaceComponent_Template(rf, ctx) {
       if (rf & 1) {
-        \u0275\u0275elementStart(0, "div", 0)(1, "div", 1)(2, "div", 2)(3, "div", 3)(4, "h1", 4);
-        \u0275\u0275text(5, "\u901A\u4E49\u5343\u95EE Coding");
-        \u0275\u0275elementEnd()()()()();
+        \u0275\u0275elementStart(0, "div", 0)(1, "div", 1)(2, "div", 2)(3, "h1", 3);
+        \u0275\u0275text(4, "Code HuggingFace");
+        \u0275\u0275elementEnd()()()();
       }
     },
     styles: ["\n\n/*# sourceMappingURL=data:application/json;base64,ewogICJ2ZXJzaW9uIjogMywKICAic291cmNlcyI6IFtdLAogICJzb3VyY2VzQ29udGVudCI6IFtdLAogICJtYXBwaW5ncyI6ICIiLAogICJuYW1lcyI6IFtdCn0K */"]
   });
-  let TongyiCodingComponent2 = _TongyiCodingComponent;
-  return TongyiCodingComponent2;
+  let CodeHuggingfaceComponent2 = _CodeHuggingfaceComponent;
+  return CodeHuggingfaceComponent2;
 })();
 
-// src/app/coding-battlefield/harmonyos-coding/harmonyos-coding.component.ts
-var HarmonyosCodingComponent = /* @__PURE__ */ (() => {
-  const _HarmonyosCodingComponent = class _HarmonyosCodingComponent {
+// src/app/code-tongyi/code-tongyi.component.ts
+var CodeTongyiComponent = /* @__PURE__ */ (() => {
+  const _CodeTongyiComponent = class _CodeTongyiComponent {
   };
-  _HarmonyosCodingComponent.\u0275fac = function HarmonyosCodingComponent_Factory(t) {
-    return new (t || _HarmonyosCodingComponent)();
+  _CodeTongyiComponent.\u0275fac = function CodeTongyiComponent_Factory(t) {
+    return new (t || _CodeTongyiComponent)();
   };
-  _HarmonyosCodingComponent.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({
-    type: _HarmonyosCodingComponent,
-    selectors: [["app-harmonyos-coding"]],
-    decls: 6,
+  _CodeTongyiComponent.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({
+    type: _CodeTongyiComponent,
+    selectors: [["app-code-tongyi"]],
+    decls: 5,
     vars: 0,
-    consts: [[1, "box", "bg-dark", "pt-5", "mt-4"], [1, "container-fluid", "px-5", "py-4"], [1, "row"], [1, "col-12"], [1, "text-light"]],
-    template: function HarmonyosCodingComponent_Template(rf, ctx) {
+    consts: [[1, "container-fluid", "mt-4"], [1, "row"], [1, "col-12"], [1, "text-light"]],
+    template: function CodeTongyiComponent_Template(rf, ctx) {
       if (rf & 1) {
-        \u0275\u0275elementStart(0, "div", 0)(1, "div", 1)(2, "div", 2)(3, "div", 3)(4, "h1", 4);
-        \u0275\u0275text(5, "Harmony OS Coding");
-        \u0275\u0275elementEnd()()()()();
+        \u0275\u0275elementStart(0, "div", 0)(1, "div", 1)(2, "div", 2)(3, "h1", 3);
+        \u0275\u0275text(4, "Code \u901A\u4E49\u5343\u95EE");
+        \u0275\u0275elementEnd()()()();
       }
     },
     styles: ["\n\n/*# sourceMappingURL=data:application/json;base64,ewogICJ2ZXJzaW9uIjogMywKICAic291cmNlcyI6IFtdLAogICJzb3VyY2VzQ29udGVudCI6IFtdLAogICJtYXBwaW5ncyI6ICIiLAogICJuYW1lcyI6IFtdCn0K */"]
   });
-  let HarmonyosCodingComponent2 = _HarmonyosCodingComponent;
-  return HarmonyosCodingComponent2;
+  let CodeTongyiComponent2 = _CodeTongyiComponent;
+  return CodeTongyiComponent2;
+})();
+
+// src/app/code-harmonyos/code-harmonyos.component.ts
+var CodeHarmonyosComponent = /* @__PURE__ */ (() => {
+  const _CodeHarmonyosComponent = class _CodeHarmonyosComponent {
+  };
+  _CodeHarmonyosComponent.\u0275fac = function CodeHarmonyosComponent_Factory(t) {
+    return new (t || _CodeHarmonyosComponent)();
+  };
+  _CodeHarmonyosComponent.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({
+    type: _CodeHarmonyosComponent,
+    selectors: [["app-code-harmonyos"]],
+    decls: 5,
+    vars: 0,
+    consts: [[1, "container-fluid", "mt-4"], [1, "row"], [1, "col-12"], [1, "text-light"]],
+    template: function CodeHarmonyosComponent_Template(rf, ctx) {
+      if (rf & 1) {
+        \u0275\u0275elementStart(0, "div", 0)(1, "div", 1)(2, "div", 2)(3, "h1", 3);
+        \u0275\u0275text(4, "Code Harmony OS");
+        \u0275\u0275elementEnd()()()();
+      }
+    },
+    styles: ["\n\n/*# sourceMappingURL=data:application/json;base64,ewogICJ2ZXJzaW9uIjogMywKICAic291cmNlcyI6IFtdLAogICJzb3VyY2VzQ29udGVudCI6IFtdLAogICJtYXBwaW5ncyI6ICIiLAogICJuYW1lcyI6IFtdCn0K */"]
+  });
+  let CodeHarmonyosComponent2 = _CodeHarmonyosComponent;
+  return CodeHarmonyosComponent2;
 })();
 
 // src/app/app-routing.module.ts
@@ -27934,14 +27999,19 @@ var routes = [{
   title: "Harmony OS",
   component: HarmonyosComponent
 }, {
-  path: "coding-battlefield/huggingface",
-  component: HuggingfaceCodingComponent
-}, {
-  path: "coding-battlefield/tongyi",
-  component: TongyiCodingComponent
-}, {
-  path: "coding-battlefield/harmonyos",
-  component: HarmonyosCodingComponent
+  path: "code-battlefield",
+  title: "Code Battlefield",
+  component: CodeBattlefieldComponent,
+  children: [{
+    path: "code-huggingface",
+    component: CodeHuggingfaceComponent
+  }, {
+    path: "code-tongyi",
+    component: CodeTongyiComponent
+  }, {
+    path: "code-harmonyos",
+    component: CodeHarmonyosComponent
+  }]
 }, {
   path: "error",
   title: "Error",
@@ -28003,9 +28073,9 @@ var AppComponent = /* @__PURE__ */ (() => {
   _AppComponent.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({
     type: _AppComponent,
     selectors: [["app-root"]],
-    decls: 77,
+    decls: 60,
     vars: 1,
-    consts: [["data-bs-theme", "dark", 1, "navbar", "fixed-top", "bg-body-tertiary", "navbar-expand-lg", "rounded-0", "border-bottom"], [1, "container-fluid", "px-5"], ["href", "#", 1, "navbar-brand", "fs-4", "fw-bold"], ["src", "../assets/img/startup.png", "width", "auto", "height", "30", 1, "me-1"], ["type", "button", "data-bs-toggle", "collapse", "data-bs-target", "#navbarNav", "aria-controls", "navbarNav", "aria-expanded", "false", "aria-label", "Toggle navigation", 1, "navbar-toggler"], [1, "navbar-toggler-icon"], ["id", "navbarNav", 1, "collapse", "navbar-collapse", "justify-content-end"], [1, "navbar-nav"], [1, "nav-item"], ["aria-current", "page", "href", "/", 1, "nav-link", "active"], [1, "bi", "bi-house-fill", "me-1"], [1, "nav-item", "dropdown"], ["href", "#", "role", "button", "data-bs-toggle", "dropdown", "aria-expanded", "false", 1, "nav-link", "dropdown-toggle", "active"], ["src", "../assets/img/ai-logo.png", 1, "icon", "me-1", "mb-1"], [1, "dropdown-menu"], ["href", "/#/huggingface", 1, "dropdown-item"], ["src", "../assets/img/huggingface-logo.png", 1, "icon", "me-1"], [1, "dropdown-divider"], ["href", "/#/tongyi", 1, "dropdown-item"], ["src", "../assets/img/tongyi-logo.svg", 1, "icon", "me-1"], ["href", "/#/ai-concept", 1, "dropdown-item"], ["src", "../assets/img/ai-concept.png", 1, "icon", "me-1"], [1, "nav-item", "ms-2"], ["href", "/#/harmonyos", 1, "nav-link", "active"], ["src", "../assets/img/huawei-logo.png", 1, "icon", "me-1", "mb-1"], [1, "nav-item", "dropdown", "ms-2"], ["src", "../assets/img/code.png", 1, "icon", "me-1", "mb-1"], ["href", "/#/coding-battlefield/huggingface", 1, "dropdown-item"], ["href", "/#/coding-battlefield/tongyi", 1, "dropdown-item"], ["href", "/#/coding-battlefield/harmonyos", 1, "dropdown-item"], ["src", "../assets/img/huawei-logo.png", 1, "icon", "me-1"], ["src", "../assets/img/tools.png", 1, "icon", "me-1", "mb-1"], ["href", "/#/md-screen-record", 1, "dropdown-item"], ["src", "../assets/img/markdown-logo.png", 1, "icon", "me-1"], ["href", "/#/life-philosophy", 1, "nav-link", "active"], [1, "bi", "bi-book-fill", "me-1", "text-primary"], [1, "footer"], [1, "container-fluid", "px-5", "text-secondary", "py-3"], [1, "m-0", "text-center"]],
+    consts: [["data-bs-theme", "dark", 1, "navbar", "fixed-top", "bg-body-tertiary", "navbar-expand-lg", "rounded-0", "border-bottom"], [1, "container-fluid", "px-5"], ["href", "#", 1, "navbar-brand", "fs-4", "fw-bold"], ["src", "../assets/img/startup.png", "width", "auto", "height", "30", 1, "me-1"], ["type", "button", "data-bs-toggle", "collapse", "data-bs-target", "#navbarNav", "aria-controls", "navbarNav", "aria-expanded", "false", "aria-label", "Toggle navigation", 1, "navbar-toggler"], [1, "navbar-toggler-icon"], ["id", "navbarNav", 1, "collapse", "navbar-collapse", "justify-content-end"], [1, "navbar-nav"], [1, "nav-item"], ["aria-current", "page", "href", "/", 1, "nav-link", "active"], [1, "bi", "bi-house-fill", "me-1"], [1, "nav-item", "dropdown"], ["href", "#", "role", "button", "data-bs-toggle", "dropdown", "aria-expanded", "false", 1, "nav-link", "dropdown-toggle", "active"], ["src", "../assets/img/ai-logo.png", 1, "icon", "me-1", "mb-1"], [1, "dropdown-menu"], ["href", "/#/huggingface", 1, "dropdown-item"], ["src", "../assets/img/huggingface-logo.png", 1, "icon", "me-1"], [1, "dropdown-divider"], ["href", "/#/tongyi", 1, "dropdown-item"], ["src", "../assets/img/tongyi-logo.svg", 1, "icon", "me-1"], ["href", "/#/ai-concept", 1, "dropdown-item"], ["src", "../assets/img/ai-concept.png", 1, "icon", "me-1"], [1, "nav-item", "ms-2"], ["href", "/#/harmonyos", 1, "nav-link", "active"], ["src", "../assets/img/huawei-logo.png", 1, "icon", "me-1", "mb-1"], ["href", "/#/code-battlefield", 1, "nav-link", "active"], ["src", "../assets/img/code.png", 1, "icon", "me-1", "mb-1"], [1, "nav-item", "dropdown", "ms-2"], ["src", "../assets/img/tools.png", 1, "icon", "me-1", "mb-1"], ["href", "/#/md-screen-record", 1, "dropdown-item"], ["src", "../assets/img/markdown-logo.png", 1, "icon", "me-1"], ["href", "/#/life-philosophy", 1, "nav-link", "active"], [1, "bi", "bi-book-fill", "me-1", "text-info"], [1, "footer"], [1, "container-fluid", "px-5", "text-secondary", "py-4"], [1, "m-0", "text-center"]],
     template: function AppComponent_Template(rf, ctx) {
       if (rf & 1) {
         \u0275\u0275elementStart(0, "nav", 0)(1, "div", 1)(2, "a", 2);
@@ -28045,48 +28115,30 @@ var AppComponent = /* @__PURE__ */ (() => {
         \u0275\u0275element(36, "img", 24);
         \u0275\u0275text(37, " \u9E3F\u8499\u7CFB\u7EDF ");
         \u0275\u0275elementEnd()();
-        \u0275\u0275elementStart(38, "li", 25)(39, "a", 12);
+        \u0275\u0275elementStart(38, "li", 22)(39, "a", 25);
         \u0275\u0275element(40, "img", 26);
         \u0275\u0275text(41, " \u7F16\u7801\u9635\u5730 ");
-        \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(42, "ul", 14)(43, "li")(44, "a", 27);
-        \u0275\u0275element(45, "img", 16);
-        \u0275\u0275text(46, " HuggingFace \u7F16\u7A0B ");
         \u0275\u0275elementEnd()();
-        \u0275\u0275elementStart(47, "li");
-        \u0275\u0275element(48, "hr", 17);
+        \u0275\u0275elementStart(42, "li", 27)(43, "a", 12);
+        \u0275\u0275element(44, "img", 28);
+        \u0275\u0275text(45, " \u5DE5\u5177\u7BB1 ");
         \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(49, "li")(50, "a", 28);
-        \u0275\u0275element(51, "img", 19);
-        \u0275\u0275text(52, " \u901A\u4E49\u5343\u95EE \u7F16\u7A0B ");
-        \u0275\u0275elementEnd()();
-        \u0275\u0275elementStart(53, "li");
-        \u0275\u0275element(54, "hr", 17);
-        \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(55, "li")(56, "a", 29);
-        \u0275\u0275element(57, "img", 30);
-        \u0275\u0275text(58, " Harmony OS \u7F16\u7A0B ");
+        \u0275\u0275elementStart(46, "ul", 14)(47, "li")(48, "a", 29);
+        \u0275\u0275element(49, "img", 30);
+        \u0275\u0275text(50, " MarkDown \u5F55\u5C4F ");
         \u0275\u0275elementEnd()()()();
-        \u0275\u0275elementStart(59, "li", 25)(60, "a", 12);
-        \u0275\u0275element(61, "img", 31);
-        \u0275\u0275text(62, " \u5DE5\u5177\u7BB1 ");
-        \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(63, "ul", 14)(64, "li")(65, "a", 32);
-        \u0275\u0275element(66, "img", 33);
-        \u0275\u0275text(67, " MarkDown \u5F55\u5C4F ");
-        \u0275\u0275elementEnd()()()();
-        \u0275\u0275elementStart(68, "li", 22)(69, "a", 34);
-        \u0275\u0275element(70, "i", 35);
-        \u0275\u0275text(71, " \u751F\u6D3B\u54F2\u7406 ");
+        \u0275\u0275elementStart(51, "li", 22)(52, "a", 31);
+        \u0275\u0275element(53, "i", 32);
+        \u0275\u0275text(54, " \u751F\u6D3B\u54F2\u7406 ");
         \u0275\u0275elementEnd()()()()()();
-        \u0275\u0275element(72, "router-outlet");
-        \u0275\u0275elementStart(73, "div", 36)(74, "div", 37)(75, "p", 38);
-        \u0275\u0275text(76);
+        \u0275\u0275element(55, "router-outlet");
+        \u0275\u0275elementStart(56, "div", 33)(57, "div", 34)(58, "p", 35);
+        \u0275\u0275text(59);
         \u0275\u0275elementEnd()()();
       }
       if (rf & 2) {
-        \u0275\u0275advance(76);
-        \u0275\u0275textInterpolate1("Copyright 2012-", ctx.currentYear, " \u674E\u9E4F\uFF08Frank Li\uFF09\u7248\u6743\u6240\u6709");
+        \u0275\u0275advance(59);
+        \u0275\u0275textInterpolate1("Copyright ", ctx.currentYear, " \u674E\u9E4F\uFF08Frank Li\uFF09\u7248\u6743\u6240\u6709");
       }
     },
     dependencies: [RouterOutlet],
