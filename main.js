@@ -23231,6 +23231,22 @@ var LocalService = /* @__PURE__ */ (() => {
       let reg = new RegExp("(?<=\\().+?(?=\\))", "g");
       return str.match(reg);
     }
+    // ==== 按照列表里的 datetime 属性对列表排序，默认按照时间的升序排序 =====
+    sortListByItemDatetime(list, order = "asc") {
+      list.forEach((element) => {
+        element["timestamp"] = new Date(element["datetime"]).getTime();
+      });
+      if (order == "asc") {
+        list = list.sort((a, b) => {
+          return 1;
+        });
+      } else {
+        list = list.sort((a, b) => {
+          return -1;
+        });
+      }
+      return list;
+    }
   };
   _LocalService.\u0275fac = function LocalService_Factory(t) {
     return new (t || _LocalService)();
@@ -27850,7 +27866,7 @@ function CodeBattlefieldComponent_p_6_Template(rf, ctx) {
 var CodeBattlefieldComponent = /* @__PURE__ */ (() => {
   const _CodeBattlefieldComponent = class _CodeBattlefieldComponent {
     constructor() {
-      this.slogans = ["\u8FD9\u91CC\u4E3B\u8981\u8BB0\u5F55\u4E86\u6211\u81EA\u5DF1\u5173\u4E8E HuggingFace\u3001\u901A\u4E49\u5343\u95EE\u3001Harmony OS \u7684\u5B66\u4E60\u7B14\u8BB0\u548C\u7F16\u7A0B\u4EE3\u7801\u3002\u7528\u4E8E\u65E5\u540E\u7ECF\u5E38\u8FDB\u884C\u67E5\u8BE2\u7FFB\u9605\uFF0C\u76EE\u7684\u5728\u4E8E\u63D0\u9AD8\u81EA\u5DF1\u5BF9\u4E8E AI \u548C\u9E3F\u8499\u7A0B\u5E8F\u5F00\u53D1\u7684\u6280\u672F\u3002", "\u9488\u5BF9\u81EA\u8EAB\u7684\u60C5\u51B5\u548C\u76EE\u524D\u7684\u6761\u4EF6\uFF0C\u6DF1\u5165\u7814\u7A76\u548C\u638C\u63E1\u5173\u4E8E AI \u7684\u7B97\u6CD5\u8FD8\u4E0D\u592A\u73B0\u5B9E\u3002\u4F46\u662F\u5B66\u4E60\u548C\u638C\u63E1\u4E3B\u6D41\u7684\u4EBA\u5DE5\u667A\u80FD\u6846\u67B6\uFF08HuggingFace\u3001\u901A\u4E49\u5343\u95EE\u4EE5\u53CA\u5176\u4ED6\u7684\u4EBA\u5DE5\u667A\u80FD\u5E73\u53F0\uFF09\u7684\u7A0B\u5E8F\u5F00\u53D1\u548C\u5E94\u7528\uFF0C\u5C06\u4EBA\u5DE5\u667A\u80FD\u6280\u672F\u5E94\u7528\u5230\u81EA\u5DF1\u7684\u7A0B\u5E8F\u5F00\u53D1\u548C\u4F4E\u6210\u672C\u521B\u4E1A\u8FD8\u662F\u6709\u975E\u5E38\u9AD8\u7684\u6210\u529F\u6982\u7387\u3002\u76EE\u7684\u5728\u4E8E\u8BA9\u81EA\u5DF1\u5E73\u6ED1\u7684\u8F6C\u578B\u4E3A AI \u7A0B\u5E8F\u5F00\u53D1\u8005\u751A\u81F3\u662F\u4EBA\u5DE5\u667A\u80FD\u5E94\u7528\u7684\u8D21\u732E\u8005\uFF0C\u6700\u7EC8\u6210\u4E3A\u57FA\u4E8E\u4EBA\u5DE5\u667A\u80FD\u6280\u672F\u7684\u521B\u4E1A\u8005\u3002", "\u57FA\u4E8E\u6211\u81EA\u8EAB\u7684\u60C5\u51B5\uFF0C\u80FD\u591F\u7528\u597D\u4EBA\u5DE5\u667A\u80FD\u6280\u672F\u5BF9\u6211\u6765\u8BF4\u66F4\u91CD\u8981\uFF0C\u66F4\u73B0\u5B9E \uFF01"];
+      this.slogans = ["\u8FD9\u91CC\u4E3B\u8981\u8BB0\u5F55\u4E86\u5173\u4E8E HuggingFace\u3001\u901A\u4E49\u5343\u95EE\u3001Harmony OS \u7684\u5B66\u4E60\u7B14\u8BB0\u548C\u7F16\u7A0B\u4EE3\u7801\u3002\u7528\u4E8E\u65E5\u540E\u7ECF\u5E38\u8FDB\u884C\u67E5\u8BE2\u7FFB\u9605\uFF0C\u76EE\u7684\u5728\u4E8E\u63D0\u9AD8\u81EA\u5DF1\u5BF9\u4E8E AI \u548C\u9E3F\u8499\u7A0B\u5E8F\u5F00\u53D1\u7684\u6280\u672F", "\u9488\u5BF9\u81EA\u8EAB\u7684\u60C5\u51B5\u548C\u76EE\u524D\u7684\u6761\u4EF6\uFF0C\u6DF1\u5165\u7814\u7A76\u548C\u638C\u63E1\u5173\u4E8E AI \u7684\u7B97\u6CD5\u8FD8\u4E0D\u592A\u73B0\u5B9E\u3002\u4F46\u662F\u5B66\u4E60\u548C\u638C\u63E1\u4E3B\u6D41\u7684\u4EBA\u5DE5\u667A\u80FD\u6846\u67B6\uFF08HuggingFace\u3001\u901A\u4E49\u5343\u95EE\u4EE5\u53CA\u5176\u4ED6\u7684\u4EBA\u5DE5\u667A\u80FD\u5E73\u53F0\uFF09\u7684\u7A0B\u5E8F\u5F00\u53D1\u548C\u5E94\u7528\uFF0C\u5C06\u4EBA\u5DE5\u667A\u80FD\u6280\u672F\u5E94\u7528\u5230\u81EA\u5DF1\u7684\u7A0B\u5E8F\u5F00\u53D1\u548C\u4F4E\u6210\u672C\u521B\u4E1A\u8FD8\u662F\u6709\u975E\u5E38\u9AD8\u7684\u6210\u529F\u6982\u7387\u3002\u76EE\u7684\u5728\u4E8E\u8BA9\u81EA\u5DF1\u5E73\u6ED1\u7684\u8F6C\u578B\u4E3A AI \u7A0B\u5E8F\u5F00\u53D1\u8005\u751A\u81F3\u662F\u4EBA\u5DE5\u667A\u80FD\u5E94\u7528\u7684\u8D21\u732E\u8005\uFF0C\u6700\u7EC8\u6210\u4E3A\u57FA\u4E8E\u4EBA\u5DE5\u667A\u80FD\u6280\u672F\u7684\u521B\u4E1A\u8005", "\u57FA\u4E8E\u6211\u81EA\u8EAB\u7684\u60C5\u51B5\uFF0C\u80FD\u591F\u7528\u597D\u4EBA\u5DE5\u667A\u80FD\u6280\u672F\u5BF9\u6211\u6765\u8BF4\u66F4\u91CD\u8981\uFF0C\u66F4\u73B0\u5B9E"];
     }
   };
   _CodeBattlefieldComponent.\u0275fac = function CodeBattlefieldComponent_Factory(t) {
@@ -27861,7 +27877,7 @@ var CodeBattlefieldComponent = /* @__PURE__ */ (() => {
     selectors: [["app-code-battlefield"]],
     decls: 25,
     vars: 1,
-    consts: [[1, "box", "bg-dark", "pt-5", "mt-4"], [1, "container-fluid", "px-5", "py-4"], [1, "row", "mb-5", "align-items-center"], [1, "col-8"], [1, "text-primary", "mb-4", "fw-bold", "fs-1"], ["class", "text-secondary fs-5", 4, "ngFor", "ngForOf"], [1, "row", "mt-5"], [1, "col"], ["href", "/#/code-battlefield/code-huggingface", 1, "btn", "btn-outline-warning", "px-3", "py-2"], ["src", "../../assets/img/huggingface-logo.png", 1, "icon", "me-2"], ["href", "/#/code-battlefield/code-tongyi", 1, "btn", "btn-outline-primary", "px-4", "py-2"], ["src", "../../assets/img/tongyi-logo.svg", 1, "icon", "me-2"], ["href", "/#/code-battlefield/code-harmonyos", 1, "btn", "btn-outline-danger", "px-3", "py-2"], ["src", "../../assets/img/huawei-logo.png", 1, "icon", "me-2"], [1, "col", "text-center"], ["src", "../../assets/img/ai-bgm2.png", 1, "slogan-img"], [1, "row"], [1, "col-12"], [1, "text-secondary", "fs-5"]],
+    consts: [[1, "box", "bg-dark", "pt-5", "mt-4"], [1, "container-fluid", "px-5", "py-4"], [1, "row", "mb-5", "align-items-center"], [1, "col-8"], [1, "text-primary", "mb-4", "fw-bold", "fs-1"], ["class", "text-secondary", 4, "ngFor", "ngForOf"], [1, "row", "mt-2"], [1, "col"], ["href", "/#/code-battlefield/code-huggingface", 1, "btn", "btn-sm", "btn-outline-warning", "px-3", "py-1"], ["src", "../../assets/img/huggingface-logo.png", 1, "icon", "me-2"], ["href", "/#/code-battlefield/code-tongyi", 1, "btn", "btn-sm", "btn-outline-primary", "px-4", "py-1"], ["src", "../../assets/img/tongyi-logo.svg", 1, "icon", "me-2"], ["href", "/#/code-battlefield/code-harmonyos", 1, "btn", "btn-sm", "btn-outline-danger", "px-3", "py-1"], ["src", "../../assets/img/huawei-logo.png", 1, "icon", "me-2"], [1, "col", "text-center"], ["src", "../../assets/img/ai-bgm2.png", 1, "slogan-img"], [1, "row"], [1, "col-12"], [1, "text-secondary"]],
     template: function CodeBattlefieldComponent_Template(rf, ctx) {
       if (rf & 1) {
         \u0275\u0275elementStart(0, "div", 0)(1, "div", 1)(2, "div", 2)(3, "div", 3)(4, "h1", 4);
@@ -27893,33 +27909,135 @@ var CodeBattlefieldComponent = /* @__PURE__ */ (() => {
       }
     },
     dependencies: [NgForOf, RouterOutlet],
-    styles: ["\n\n.box[_ngcontent-%COMP%]   .icon[_ngcontent-%COMP%] {\n  height: 1.5rem;\n  width: auto;\n}\n/*# sourceMappingURL=data:application/json;base64,ewogICJ2ZXJzaW9uIjogMywKICAic291cmNlcyI6IFsic3JjL2FwcC9jb2RlLWJhdHRsZWZpZWxkL2NvZGUtYmF0dGxlZmllbGQuY29tcG9uZW50LnNjc3MiXSwKICAic291cmNlc0NvbnRlbnQiOiBbIi5ib3gge1xyXG4gICAgLmljb24ge1xyXG4gICAgICAgIGhlaWdodDogMS41cmVtO1xyXG4gICAgICAgIHdpZHRoOiBhdXRvO1xyXG4gICAgfVxyXG5cclxufSJdLAogICJtYXBwaW5ncyI6ICI7QUFDSSxDQUFBLElBQUEsQ0FBQTtBQUNJLFVBQUE7QUFDQSxTQUFBOzsiLAogICJuYW1lcyI6IFtdCn0K */"]
+    styles: ["\n\n.box[_ngcontent-%COMP%]   .icon[_ngcontent-%COMP%] {\n  height: 1rem;\n  width: auto;\n}\n/*# sourceMappingURL=data:application/json;base64,ewogICJ2ZXJzaW9uIjogMywKICAic291cmNlcyI6IFsic3JjL2FwcC9jb2RlLWJhdHRsZWZpZWxkL2NvZGUtYmF0dGxlZmllbGQuY29tcG9uZW50LnNjc3MiXSwKICAic291cmNlc0NvbnRlbnQiOiBbIi5ib3gge1xyXG4gICAgLmljb24ge1xyXG4gICAgICAgIGhlaWdodDogMXJlbTtcclxuICAgICAgICB3aWR0aDogYXV0bztcclxuICAgIH1cclxuXHJcbn0iXSwKICAibWFwcGluZ3MiOiAiO0FBQ0ksQ0FBQSxJQUFBLENBQUE7QUFDSSxVQUFBO0FBQ0EsU0FBQTs7IiwKICAibmFtZXMiOiBbXQp9Cg== */"]
   });
   let CodeBattlefieldComponent2 = _CodeBattlefieldComponent;
   return CodeBattlefieldComponent2;
 })();
 
+// src/assets/huggingface_code_list.json
+var huggingface_code_list_default = [
+  {
+    title: "\u901A\u4E49\u5343\u95EE\u7684\u5B89\u88C5",
+    url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/harmonyos/harmony1.pdf",
+    datetime: "2024-01-01 10:20"
+  },
+  {
+    title: "Quick Start",
+    url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/harmonyos/harmony2.pdf",
+    datetime: "2024-01-02 10:20"
+  },
+  {
+    title: "\u6A21\u578B\u7684\u57FA\u672C\u7ED3\u6784",
+    url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/harmonyos/harmony3.pdf",
+    datetime: "2024-01-03 10:20"
+  },
+  {
+    title: "\u4F7F\u7528\u901A\u4E49\u5343\u95EE API \u8FDB\u884C\u60C5\u611F\u5206\u7C7B\u548C\u6587\u672C\u751F\u6210",
+    url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/harmonyos/harmony4.pdf",
+    datetime: "2024-01-03 12:20"
+  },
+  {
+    title: "\u6587\u672C\u60C5\u611F\u5206\u7C7B",
+    url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/harmonyos/harmony1.pdf",
+    datetime: "2024-01-04 01:20"
+  },
+  {
+    title: "\u6587\u672C\u751F\u6210",
+    url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/harmonyos/harmony2.pdf",
+    datetime: "2024-01-04 02:02"
+  }
+];
+
 // src/app/code-huggingface/code-huggingface.component.ts
+function CodeHuggingfaceComponent_li_8_Template(rf, ctx) {
+  if (rf & 1) {
+    const _r5 = \u0275\u0275getCurrentView();
+    \u0275\u0275elementStart(0, "li", 10);
+    \u0275\u0275listener("click", function CodeHuggingfaceComponent_li_8_Template_li_click_0_listener() {
+      const restoredCtx = \u0275\u0275restoreView(_r5);
+      const item_r2 = restoredCtx.$implicit;
+      const ctx_r4 = \u0275\u0275nextContext();
+      return \u0275\u0275resetView(ctx_r4.clickTitle(item_r2));
+    });
+    \u0275\u0275elementStart(1, "div", 11)(2, "div", 12)(3, "span", 13);
+    \u0275\u0275text(4);
+    \u0275\u0275elementEnd()();
+    \u0275\u0275elementStart(5, "div", 14);
+    \u0275\u0275text(6);
+    \u0275\u0275elementEnd()()();
+  }
+  if (rf & 2) {
+    const item_r2 = ctx.$implicit;
+    const i_r3 = ctx.index;
+    \u0275\u0275advance(4);
+    \u0275\u0275textInterpolate(i_r3 + 1);
+    \u0275\u0275advance(2);
+    \u0275\u0275textInterpolate1(" ", item_r2.title, " ");
+  }
+}
+function CodeHuggingfaceComponent_object_10_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275element(0, "object", 15);
+  }
+  if (rf & 2) {
+    const ctx_r1 = \u0275\u0275nextContext();
+    \u0275\u0275attribute("data", ctx_r1.currentUrl, \u0275\u0275sanitizeResourceUrl);
+  }
+}
 var CodeHuggingfaceComponent = /* @__PURE__ */ (() => {
   const _CodeHuggingfaceComponent = class _CodeHuggingfaceComponent {
+    constructor(sanitizer) {
+      this.sanitizer = sanitizer;
+      this.service = new LocalService();
+      this.codeList = huggingface_code_list_default;
+      this.currentUrl = "";
+    }
+    ngOnInit() {
+      window.scrollTo({
+        top: 0
+      });
+      this.handleCodeList();
+    }
+    handleCodeList(order = "asc") {
+      this.codeList = this.service.sortListByItemDatetime(this.codeList, order);
+    }
+    clickTitle(item) {
+      this.currentUrl = this.sanitizer.bypassSecurityTrustResourceUrl(item["url"]);
+    }
   };
   _CodeHuggingfaceComponent.\u0275fac = function CodeHuggingfaceComponent_Factory(t) {
-    return new (t || _CodeHuggingfaceComponent)();
+    return new (t || _CodeHuggingfaceComponent)(\u0275\u0275directiveInject(DomSanitizer));
   };
   _CodeHuggingfaceComponent.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({
     type: _CodeHuggingfaceComponent,
     selectors: [["app-code-huggingface"]],
-    decls: 5,
-    vars: 0,
-    consts: [[1, "container-fluid", "mt-4"], [1, "row"], [1, "col-12"], [1, "text-light"]],
+    decls: 11,
+    vars: 3,
+    consts: [[1, "box"], [1, "row"], [1, "col-12"], [1, "text-warning", "fs-3", "fw-bold"], [1, "row", "text-light", "justify-content-between"], [1, "col-2"], [1, "list-group", "list-group-flush", "title-list"], ["class", "list-group-item list-group-item-action bg-dark text-light title", 3, "click", 4, "ngFor", "ngForOf"], [1, "col-9", "content-box"], ["type", "application/pdf", "width", "100%", 4, "ngIf"], [1, "list-group-item", "list-group-item-action", "bg-dark", "text-light", "title", 3, "click"], [1, "row", "justify-content-between", "align-items-center"], [1, "col-1"], [1, "badge", "bg-warning", "text-dark", "me-3"], [1, "col-10"], ["type", "application/pdf", "width", "100%"]],
     template: function CodeHuggingfaceComponent_Template(rf, ctx) {
       if (rf & 1) {
         \u0275\u0275elementStart(0, "div", 0)(1, "div", 1)(2, "div", 2)(3, "h1", 3);
-        \u0275\u0275text(4, "Code HuggingFace");
-        \u0275\u0275elementEnd()()()();
+        \u0275\u0275text(4);
+        \u0275\u0275elementEnd()()();
+        \u0275\u0275elementStart(5, "div", 4)(6, "div", 5)(7, "ul", 6);
+        \u0275\u0275template(8, CodeHuggingfaceComponent_li_8_Template, 7, 2, "li", 7);
+        \u0275\u0275elementEnd()();
+        \u0275\u0275elementStart(9, "div", 8);
+        \u0275\u0275template(10, CodeHuggingfaceComponent_object_10_Template, 1, 1, "object", 9);
+        \u0275\u0275elementEnd()()();
+      }
+      if (rf & 2) {
+        \u0275\u0275advance(4);
+        \u0275\u0275textInterpolate1(" Hugging Face \u7F16\u7A0B\uFF08", ctx.codeList.length, "\uFF09 ");
+        \u0275\u0275advance(4);
+        \u0275\u0275property("ngForOf", ctx.codeList);
+        \u0275\u0275advance(2);
+        \u0275\u0275property("ngIf", ctx.currentUrl != "");
       }
     },
-    styles: ["\n\n/*# sourceMappingURL=data:application/json;base64,ewogICJ2ZXJzaW9uIjogMywKICAic291cmNlcyI6IFtdLAogICJzb3VyY2VzQ29udGVudCI6IFtdLAogICJtYXBwaW5ncyI6ICIiLAogICJuYW1lcyI6IFtdCn0K */"]
+    dependencies: [NgForOf, NgIf],
+    styles: ["\n\n.box[_ngcontent-%COMP%]   .title-list[_ngcontent-%COMP%]   .title[_ngcontent-%COMP%] {\n  transition: color 0.2s;\n}\n.box[_ngcontent-%COMP%]   .title-list[_ngcontent-%COMP%]   .title[_ngcontent-%COMP%]:hover {\n  color: rgb(255, 193, 7) !important;\n  cursor: pointer;\n}\n.box[_ngcontent-%COMP%]   .content-box[_ngcontent-%COMP%]   object[_ngcontent-%COMP%] {\n  height: 70rem;\n}\n/*# sourceMappingURL=data:application/json;base64,ewogICJ2ZXJzaW9uIjogMywKICAic291cmNlcyI6IFsic3JjL2FwcC9jb2RlLWh1Z2dpbmdmYWNlL2NvZGUtaHVnZ2luZ2ZhY2UuY29tcG9uZW50LnNjc3MiXSwKICAic291cmNlc0NvbnRlbnQiOiBbIi5ib3gge1xyXG4gICAgLnRpdGxlLWxpc3Qge1xyXG4gICAgICAgIC50aXRsZSB7XHJcbiAgICAgICAgICAgIHRyYW5zaXRpb246IGNvbG9yIDAuMnM7XHJcblxyXG4gICAgICAgICAgICAmOmhvdmVyIHtcclxuICAgICAgICAgICAgICAgIGNvbG9yOiByZ2IoMjU1LCAxOTMsIDcpICFpbXBvcnRhbnQ7XHJcbiAgICAgICAgICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XHJcbiAgICAgICAgICAgIH1cclxuICAgICAgICB9XHJcbiAgICB9XHJcblxyXG4gICAgLmNvbnRlbnQtYm94IHtcclxuICAgICAgICBvYmplY3Qge1xyXG4gICAgICAgICAgICBoZWlnaHQ6IDcwcmVtO1xyXG4gICAgICAgIH1cclxuICAgIH1cclxufSJdLAogICJtYXBwaW5ncyI6ICI7QUFFUSxDQUFBLElBQUEsQ0FBQSxXQUFBLENBQUE7QUFDSSxjQUFBLE1BQUE7O0FBRUEsQ0FISixJQUdJLENBSEosV0FHSSxDQUhKLEtBR0k7QUFDSSxTQUFBLElBQUEsR0FBQSxFQUFBLEdBQUEsRUFBQTtBQUNBLFVBQUE7O0FBTVIsQ0FYQSxJQVdBLENBQUEsWUFBQTtBQUNJLFVBQUE7OyIsCiAgIm5hbWVzIjogW10KfQo= */"]
   });
   let CodeHuggingfaceComponent2 = _CodeHuggingfaceComponent;
   return CodeHuggingfaceComponent2;
@@ -27935,13 +28053,19 @@ var CodeTongyiComponent = /* @__PURE__ */ (() => {
   _CodeTongyiComponent.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({
     type: _CodeTongyiComponent,
     selectors: [["app-code-tongyi"]],
-    decls: 5,
+    decls: 11,
     vars: 0,
-    consts: [[1, "container-fluid", "mt-4"], [1, "row"], [1, "col-12"], [1, "text-light"]],
+    consts: [[1, "box"], [1, "container-fluid"], [1, "row"], [1, "col-12"], [1, "text-primary", "fw-bold"], [1, "row", "text-light"], [1, "col-3"], [1, "col"]],
     template: function CodeTongyiComponent_Template(rf, ctx) {
       if (rf & 1) {
-        \u0275\u0275elementStart(0, "div", 0)(1, "div", 1)(2, "div", 2)(3, "h1", 3);
-        \u0275\u0275text(4, "Code \u901A\u4E49\u5343\u95EE");
+        \u0275\u0275elementStart(0, "div", 0)(1, "div", 1)(2, "div", 2)(3, "div", 3)(4, "h1", 4);
+        \u0275\u0275text(5, " \u901A\u4E49\u5343\u95EE ");
+        \u0275\u0275elementEnd()()();
+        \u0275\u0275elementStart(6, "div", 5)(7, "div", 6);
+        \u0275\u0275text(8, " list ");
+        \u0275\u0275elementEnd();
+        \u0275\u0275elementStart(9, "div", 7);
+        \u0275\u0275text(10, " content ");
         \u0275\u0275elementEnd()()()();
       }
     },
