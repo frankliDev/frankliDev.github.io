@@ -23607,6 +23607,37 @@ var huggingface_list_default = [
         ]
       }
     ]
+  },
+  {
+    title: "TITLE",
+    chapters: [
+      {
+        title: "chapter 1 title",
+        articles: [
+          {
+            title: "article 1 title",
+            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/73.png"
+          },
+          {
+            title: "article 2 title",
+            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/74.png"
+          }
+        ]
+      },
+      {
+        title: "chapter 2 title",
+        articles: [
+          {
+            title: "article 1 title",
+            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/68.png"
+          },
+          {
+            title: "article 2 title",
+            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/61.png"
+          }
+        ]
+      }
+    ]
   }
 ];
 
@@ -23614,11 +23645,11 @@ var huggingface_list_default = [
 var _c02 = (a0) => ({
   selectedArticle: a0
 });
-function HuggingfaceComponent_li_30_li_5_li_5_Template(rf, ctx) {
+function HuggingfaceComponent_div_30_li_8_li_5_Template(rf, ctx) {
   if (rf & 1) {
     const _r13 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "li", 38);
-    \u0275\u0275listener("click", function HuggingfaceComponent_li_30_li_5_li_5_Template_li_click_0_listener() {
+    \u0275\u0275elementStart(0, "li", 44);
+    \u0275\u0275listener("click", function HuggingfaceComponent_div_30_li_8_li_5_Template_li_click_0_listener() {
       const restoredCtx = \u0275\u0275restoreView(_r13);
       const article_r9 = restoredCtx.$implicit;
       const chapter_r6 = \u0275\u0275nextContext().$implicit;
@@ -23626,7 +23657,7 @@ function HuggingfaceComponent_li_30_li_5_li_5_Template(rf, ctx) {
       const ctx_r11 = \u0275\u0275nextContext();
       return \u0275\u0275resetView(ctx_r11.clickArticle(course_r3, chapter_r6, article_r9));
     });
-    \u0275\u0275elementStart(1, "span", 39);
+    \u0275\u0275elementStart(1, "span", 45);
     \u0275\u0275text(2);
     \u0275\u0275elementEnd();
     \u0275\u0275text(3);
@@ -23643,14 +23674,14 @@ function HuggingfaceComponent_li_30_li_5_li_5_Template(rf, ctx) {
     \u0275\u0275textInterpolate1(" ", article_r9.title, " ");
   }
 }
-function HuggingfaceComponent_li_30_li_5_Template(rf, ctx) {
+function HuggingfaceComponent_div_30_li_8_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "li", 35)(1, "span", 36);
+    \u0275\u0275elementStart(0, "li", 40)(1, "span", 41);
     \u0275\u0275text(2);
     \u0275\u0275elementEnd();
     \u0275\u0275text(3);
-    \u0275\u0275elementStart(4, "ul", 33);
-    \u0275\u0275template(5, HuggingfaceComponent_li_30_li_5_li_5_Template, 4, 5, "li", 37);
+    \u0275\u0275elementStart(4, "ul", 42);
+    \u0275\u0275template(5, HuggingfaceComponent_div_30_li_8_li_5_Template, 4, 5, "li", 43);
     \u0275\u0275elementEnd()();
   }
   if (rf & 2) {
@@ -23664,35 +23695,41 @@ function HuggingfaceComponent_li_30_li_5_Template(rf, ctx) {
     \u0275\u0275property("ngForOf", chapter_r6.articles);
   }
 }
-function HuggingfaceComponent_li_30_Template(rf, ctx) {
+var _c1 = (a0) => ({
+  show: a0
+});
+function HuggingfaceComponent_div_30_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "li", 31)(1, "span", 32);
-    \u0275\u0275text(2);
-    \u0275\u0275elementEnd();
-    \u0275\u0275text(3);
-    \u0275\u0275elementStart(4, "ul", 33);
-    \u0275\u0275template(5, HuggingfaceComponent_li_30_li_5_Template, 6, 3, "li", 34);
-    \u0275\u0275elementEnd()();
+    \u0275\u0275elementStart(0, "div", 32)(1, "h2", 33)(2, "button", 34)(3, "span", 35);
+    \u0275\u0275text(4);
+    \u0275\u0275elementEnd()()();
+    \u0275\u0275elementStart(5, "div", 36)(6, "div", 37)(7, "ul", 38);
+    \u0275\u0275template(8, HuggingfaceComponent_div_30_li_8_Template, 6, 3, "li", 39);
+    \u0275\u0275elementEnd()()()();
   }
   if (rf & 2) {
     const course_r3 = ctx.$implicit;
     const i_r4 = ctx.index;
+    const ctx_r0 = \u0275\u0275nextContext();
     \u0275\u0275advance(2);
-    \u0275\u0275textInterpolate1("Course ", i_r4 + 1, "");
+    \u0275\u0275attribute("data-bs-target", "#collapse" + i_r4)("aria-controls", "collapse" + i_r4);
+    \u0275\u0275advance(2);
+    \u0275\u0275textInterpolate(course_r3.title);
     \u0275\u0275advance(1);
-    \u0275\u0275textInterpolate1(" ", course_r3.title, " ");
-    \u0275\u0275advance(2);
+    \u0275\u0275property("ngClass", \u0275\u0275pureFunction1(6, _c1, ctx_r0.currentCourseId == i_r4));
+    \u0275\u0275attribute("id", "collapse" + i_r4);
+    \u0275\u0275advance(3);
     \u0275\u0275property("ngForOf", course_r3.chapters);
-  }
-}
-function HuggingfaceComponent_i_35_Template(rf, ctx) {
-  if (rf & 1) {
-    \u0275\u0275element(0, "i", 40);
   }
 }
 function HuggingfaceComponent_i_37_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275element(0, "i", 40);
+    \u0275\u0275element(0, "i", 46);
+  }
+}
+function HuggingfaceComponent_i_39_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275element(0, "i", 46);
   }
 }
 var HuggingfaceComponent = /* @__PURE__ */ (() => {
@@ -23700,6 +23737,7 @@ var HuggingfaceComponent = /* @__PURE__ */ (() => {
     constructor() {
       this.localService = new LocalService();
       this.courses = huggingface_list_default;
+      this.currentCourseId = 0;
       this.currentCourseTitle = "";
       this.currentChapterTitle = "";
       this.currentArticleTitle = "";
@@ -23727,9 +23765,9 @@ var HuggingfaceComponent = /* @__PURE__ */ (() => {
   _HuggingfaceComponent.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({
     type: _HuggingfaceComponent,
     selectors: [["app-huggingface"]],
-    decls: 45,
+    decls: 47,
     vars: 7,
-    consts: [[1, "box", "bg-dark", "pt-5", "mt-4"], [1, "container-fluid", "px-3", "py-4"], [1, "row", "mb-4"], [1, "col-12", "text-center", "text-light", "fs-1", "fw-bold"], ["src", "../../assets/img/huggingface-logo.png", 1, "logo", "me-2"], [1, "col-12", "text-center", "my-3"], ["type", "button", "data-bs-toggle", "offcanvas", "data-bs-target", "#offcanvasExample", "aria-controls", "offcanvasExample", "accesskey", "x", 1, "btn", "btn-warning"], [1, "bi", "bi-list-columns-reverse", "me-2"], [1, "text-secondary", "mt-2"], [1, "mx-2"], [1, "bi", "bi-windows", "me-1"], [1, "bi", "bi-apple", "me-1"], [1, "col-12", "text-secondary", "text-center", "mt-2"], [1, "row"], ["tabindex", "-1", "id", "offcanvasExample", "aria-labelledby", "offcanvasExampleLabel", 1, "offcanvas", "offcanvas-start", "bg-dark"], [1, "offcanvas-header"], ["id", "offcanvasExampleLabel", 1, "offcanvas-title", "text-warning"], ["type", "button", "data-bs-dismiss", "offcanvas", "aria-label", "Close", 1, "btn", "btn-outline-secondary", "btn-sm"], [1, "bi", "bi-x-lg"], [1, "offcanvas-body"], [1, "list-group", "list-group-flush", "title-list"], ["class", "list-group-item text-light fs-4 fw-normal course", 4, "ngFor", "ngForOf"], [1, "col-12", "mb-5"], [1, "col-12", "text-warning", "mb-4", "fs-5"], ["class", "bi bi-chevron-right text-light", 4, "ngIf"], [1, "col-12"], [1, "article-detail"], ["type", "button", 1, "btn", "btn-warning", "py-1", "px-2", "goTopBtn", 3, "click"], [1, "bi", "bi-chevron-up", "lead"], ["type", "button", "data-bs-toggle", "offcanvas", "data-bs-target", "#offcanvasExample", "aria-controls", "offcanvasExample", "accesskey", "x", 1, "btn", "btn-secondary", "py-1", "px-2", "showMenuBtn"], [1, "bi", "bi-list", "lead"], [1, "list-group-item", "text-light", "fs-4", "fw-normal", "course"], [1, "badge", "text-bg-primary", "me-2"], [1, "list-group", "list-group-flush", "title-list", "my-2"], ["class", "list-group-item text-light fs-5 fw-normal border-0 chapter", 4, "ngFor", "ngForOf"], [1, "list-group-item", "text-light", "fs-5", "fw-normal", "border-0", "chapter"], [1, "badge", "text-bg-danger", "me-2"], ["class", "list-group-item text-light fw-normal border-0 fs-6 article", 3, "ngClass", "click", 4, "ngFor", "ngForOf"], [1, "list-group-item", "text-light", "fw-normal", "border-0", "fs-6", "article", 3, "ngClass", "click"], [1, "badge", "text-bg-warning", "me-2"], [1, "bi", "bi-chevron-right", "text-light"]],
+    consts: [[1, "box", "bg-dark", "pt-5", "mt-4"], [1, "container-fluid", "px-3", "py-4"], [1, "row", "mb-4"], [1, "col-12", "text-center", "text-light", "fs-1", "fw-bold"], ["src", "../../assets/img/huggingface-logo.png", 1, "logo", "me-2"], [1, "col-12", "text-center", "my-3"], ["type", "button", "data-bs-toggle", "offcanvas", "data-bs-target", "#offcanvasExample", "aria-controls", "offcanvasExample", "accesskey", "x", 1, "btn", "btn-warning"], [1, "bi", "bi-list-columns-reverse", "me-2"], [1, "text-secondary", "mt-2"], [1, "mx-2"], [1, "bi", "bi-windows", "me-1"], [1, "bi", "bi-apple", "me-1"], [1, "col-12", "text-secondary", "text-center", "mt-2"], [1, "row"], ["tabindex", "-1", "id", "offcanvasExample", "aria-labelledby", "offcanvasExampleLabel", 1, "offcanvas", "offcanvas-start", "bg-dark"], [1, "offcanvas-header"], ["id", "offcanvasExampleLabel", 1, "offcanvas-title", "text-warning"], ["type", "button", "data-bs-dismiss", "offcanvas", "aria-label", "Close", 1, "btn", "btn-outline-secondary", "btn-sm"], [1, "bi", "bi-x-lg"], [1, "offcanvas-body", "mb-3"], ["id", "accordionExample", 1, "accordion"], ["class", "accordion-item bg-dark border-0", 4, "ngFor", "ngForOf"], [1, "text-secondary", "text-end", "my-3"], [1, "col-12", "mb-5"], [1, "col-12", "text-warning", "mb-4", "fs-5"], ["class", "bi bi-chevron-right text-light", 4, "ngIf"], [1, "col-12"], [1, "article-detail"], ["type", "button", 1, "btn", "btn-warning", "py-1", "px-2", "goTopBtn", 3, "click"], [1, "bi", "bi-chevron-up", "lead"], ["type", "button", "data-bs-toggle", "offcanvas", "data-bs-target", "#offcanvasExample", "aria-controls", "offcanvasExample", "accesskey", "x", 1, "btn", "btn-secondary", "py-1", "px-2", "showMenuBtn"], [1, "bi", "bi-list", "lead"], [1, "accordion-item", "bg-dark", "border-0"], [1, "accordion-header"], ["type", "button", "data-bs-toggle", "collapse", "aria-expanded", "true", 1, "accordion-button", "text-bg-warning"], [1, "fs-5", "fw-bold"], ["data-bs-parent", "#accordionExample", 1, "accordion-collapse", "collapse", 3, "ngClass"], [1, "accordion-body", "p-0"], [1, "list-group", "list-group-flush", "title-list", "mt-3"], ["class", "list-group-item text-light fs-5 fw-normal border-0 chapter", 4, "ngFor", "ngForOf"], [1, "list-group-item", "text-light", "fs-5", "fw-normal", "border-0", "chapter"], [1, "badge", "text-bg-danger", "me-2"], [1, "list-group", "list-group-flush", "title-list", "my-2"], ["class", "list-group-item text-light fw-normal border-0 fs-6 article", 3, "ngClass", "click", 4, "ngFor", "ngForOf"], [1, "list-group-item", "text-light", "fw-normal", "border-0", "fs-6", "article", 3, "ngClass", "click"], [1, "badge", "text-bg-warning", "me-2"], [1, "bi", "bi-chevron-right", "text-light"]],
     template: function HuggingfaceComponent_Template(rf, ctx) {
       if (rf & 1) {
         \u0275\u0275elementStart(0, "div", 0)(1, "div", 1)(2, "div", 2)(3, "div", 3);
@@ -23758,33 +23796,36 @@ var HuggingfaceComponent = /* @__PURE__ */ (() => {
         \u0275\u0275elementStart(26, "button", 17);
         \u0275\u0275element(27, "i", 18);
         \u0275\u0275elementEnd()();
-        \u0275\u0275elementStart(28, "div", 19)(29, "ul", 20);
-        \u0275\u0275template(30, HuggingfaceComponent_li_30_Template, 6, 3, "li", 21);
-        \u0275\u0275elementEnd()()();
-        \u0275\u0275elementStart(31, "div", 22)(32, "div", 13)(33, "div", 23);
-        \u0275\u0275text(34);
-        \u0275\u0275template(35, HuggingfaceComponent_i_35_Template, 1, 0, "i", 24);
-        \u0275\u0275text(36);
-        \u0275\u0275template(37, HuggingfaceComponent_i_37_Template, 1, 0, "i", 24);
-        \u0275\u0275text(38);
+        \u0275\u0275elementStart(28, "div", 19)(29, "div", 20);
+        \u0275\u0275template(30, HuggingfaceComponent_div_30_Template, 9, 8, "div", 21);
         \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(39, "div", 25);
-        \u0275\u0275element(40, "img", 26);
+        \u0275\u0275elementStart(31, "div", 22);
+        \u0275\u0275text(32, "List End");
+        \u0275\u0275elementEnd()()();
+        \u0275\u0275elementStart(33, "div", 23)(34, "div", 13)(35, "div", 24);
+        \u0275\u0275text(36);
+        \u0275\u0275template(37, HuggingfaceComponent_i_37_Template, 1, 0, "i", 25);
+        \u0275\u0275text(38);
+        \u0275\u0275template(39, HuggingfaceComponent_i_39_Template, 1, 0, "i", 25);
+        \u0275\u0275text(40);
+        \u0275\u0275elementEnd();
+        \u0275\u0275elementStart(41, "div", 26);
+        \u0275\u0275element(42, "img", 27);
         \u0275\u0275elementEnd()()()()();
-        \u0275\u0275elementStart(41, "button", 27);
-        \u0275\u0275listener("click", function HuggingfaceComponent_Template_button_click_41_listener() {
+        \u0275\u0275elementStart(43, "button", 28);
+        \u0275\u0275listener("click", function HuggingfaceComponent_Template_button_click_43_listener() {
           return ctx.goToTop();
         });
-        \u0275\u0275element(42, "i", 28);
+        \u0275\u0275element(44, "i", 29);
         \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(43, "button", 29);
-        \u0275\u0275element(44, "i", 30);
+        \u0275\u0275elementStart(45, "button", 30);
+        \u0275\u0275element(46, "i", 31);
         \u0275\u0275elementEnd()();
       }
       if (rf & 2) {
         \u0275\u0275advance(30);
         \u0275\u0275property("ngForOf", ctx.courses);
-        \u0275\u0275advance(4);
+        \u0275\u0275advance(6);
         \u0275\u0275textInterpolate1(" ", ctx.currentCourseTitle, " ");
         \u0275\u0275advance(1);
         \u0275\u0275property("ngIf", ctx.currentCourseTitle != "");
@@ -23799,7 +23840,7 @@ var HuggingfaceComponent = /* @__PURE__ */ (() => {
       }
     },
     dependencies: [NgClass, NgForOf, NgIf],
-    styles: ["\n\n.box[_ngcontent-%COMP%]   .logo[_ngcontent-%COMP%] {\n  height: 3rem;\n  width: auto;\n}\n.box[_ngcontent-%COMP%]   .title-list[_ngcontent-%COMP%] {\n  overflow-y: scroll;\n}\n.box[_ngcontent-%COMP%]   .title-list[_ngcontent-%COMP%]   li[_ngcontent-%COMP%] {\n  background: none;\n}\n.box[_ngcontent-%COMP%]   .article[_ngcontent-%COMP%]:hover {\n  color: black !important;\n  background-color: #ffc107 !important;\n  cursor: pointer;\n}\n.box[_ngcontent-%COMP%]   img.article-detail[_ngcontent-%COMP%] {\n  width: 100%;\n  max-width: 100%;\n  overflow: scroll;\n}\n.box[_ngcontent-%COMP%]   .offcanvas[_ngcontent-%COMP%] {\n  width: 40% !important;\n}\n.box[_ngcontent-%COMP%]   object[_ngcontent-%COMP%] {\n  height: 80vh;\n}\n.box[_ngcontent-%COMP%]   .selectedArticle[_ngcontent-%COMP%] {\n  color: black !important;\n  background-color: #ffc107 !important;\n}\n.box[_ngcontent-%COMP%]   .goTopBtn[_ngcontent-%COMP%] {\n  position: fixed !important;\n  bottom: 1rem;\n  right: 1rem;\n}\n.box[_ngcontent-%COMP%]   .showMenuBtn[_ngcontent-%COMP%] {\n  position: fixed !important;\n  bottom: 4rem;\n  right: 1rem;\n}\n/*# sourceMappingURL=data:application/json;base64,ewogICJ2ZXJzaW9uIjogMywKICAic291cmNlcyI6IFsic3JjL2FwcC9odWdnaW5nZmFjZS9odWdnaW5nZmFjZS5jb21wb25lbnQuc2NzcyJdLAogICJzb3VyY2VzQ29udGVudCI6IFsiJG15SGVpZ2h0OiA4MHZoO1xyXG4kb2ZmY2FudmFzLXdpZHRoOiA0MCU7XHJcbiR5ZWxsb3c6ICNmZmMxMDc7XHJcbiRhcnRpY2xlLWRldGFpbC13aWR0aDogMTAwJTtcclxuXHJcbi5ib3gge1xyXG5cclxuICAgIC5sb2dvIHtcclxuICAgICAgICBoZWlnaHQ6IDNyZW07XHJcbiAgICAgICAgd2lkdGg6IGF1dG87XHJcbiAgICB9XHJcblxyXG4gICAgLnRpdGxlLWxpc3Qge1xyXG4gICAgICAgIC8vIG1heC1oZWlnaHQ6ICRteUhlaWdodDtcclxuICAgICAgICAvLyBoZWlnaHQ6ICRteUhlaWdodDtcclxuICAgICAgICBvdmVyZmxvdy15OiBzY3JvbGw7XHJcblxyXG4gICAgICAgIGxpIHtcclxuICAgICAgICAgICAgYmFja2dyb3VuZDogbm9uZTtcclxuICAgICAgICAgICAgLy8gdHJhbnNpdGlvbjogYmFja2dyb3VuZC1jb2xvciAuMXM7XHJcblxyXG4gICAgICAgICAgICAvLyAmOmhvdmVyIHtcclxuICAgICAgICAgICAgLy8gICAgIGJhY2tncm91bmQtY29sb3I6ICMwMDY2Q0M7XHJcbiAgICAgICAgICAgIC8vICAgICBjdXJzb3I6IHBvaW50ZXI7XHJcbiAgICAgICAgICAgIC8vIH1cclxuICAgICAgICB9XHJcblxyXG4gICAgfVxyXG5cclxuICAgIC5hcnRpY2xlIHtcclxuICAgICAgICAmOmhvdmVyIHtcclxuICAgICAgICAgICAgY29sb3I6IGJsYWNrICFpbXBvcnRhbnQ7XHJcbiAgICAgICAgICAgIGJhY2tncm91bmQtY29sb3I6ICR5ZWxsb3cgIWltcG9ydGFudDtcclxuICAgICAgICAgICAgY3Vyc29yOiBwb2ludGVyO1xyXG4gICAgICAgIH1cclxuICAgIH1cclxuXHJcbiAgICBpbWcuYXJ0aWNsZS1kZXRhaWwge1xyXG4gICAgICAgIHdpZHRoOiAkYXJ0aWNsZS1kZXRhaWwtd2lkdGg7XHJcbiAgICAgICAgbWF4LXdpZHRoOiAkYXJ0aWNsZS1kZXRhaWwtd2lkdGg7XHJcbiAgICAgICAgb3ZlcmZsb3c6IHNjcm9sbDtcclxuICAgIH1cclxuXHJcbiAgICAub2ZmY2FudmFzIHtcclxuICAgICAgICB3aWR0aDogJG9mZmNhbnZhcy13aWR0aCAhaW1wb3J0YW50O1xyXG4gICAgfVxyXG5cclxuICAgIG9iamVjdCB7XHJcbiAgICAgICAgaGVpZ2h0OiAkbXlIZWlnaHQ7XHJcbiAgICB9XHJcblxyXG4gICAgLnNlbGVjdGVkQXJ0aWNsZSB7XHJcbiAgICAgICAgY29sb3I6IGJsYWNrICFpbXBvcnRhbnQ7XHJcbiAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogJHllbGxvdyAhaW1wb3J0YW50O1xyXG4gICAgfVxyXG5cclxuICAgIC5nb1RvcEJ0biB7XHJcbiAgICAgICAgcG9zaXRpb246IGZpeGVkICFpbXBvcnRhbnQ7XHJcbiAgICAgICAgYm90dG9tOiAxcmVtO1xyXG4gICAgICAgIHJpZ2h0OiAxcmVtO1xyXG4gICAgfVxyXG5cclxuICAgIC5zaG93TWVudUJ0biB7XHJcbiAgICAgICAgcG9zaXRpb246IGZpeGVkICFpbXBvcnRhbnQ7XHJcbiAgICAgICAgYm90dG9tOiA0cmVtO1xyXG4gICAgICAgIHJpZ2h0OiAxcmVtO1xyXG4gICAgfVxyXG5cclxufSJdLAogICJtYXBwaW5ncyI6ICI7QUFPSSxDQUFBLElBQUEsQ0FBQTtBQUNJLFVBQUE7QUFDQSxTQUFBOztBQUdKLENBTEEsSUFLQSxDQUFBO0FBR0ksY0FBQTs7QUFFQSxDQVZKLElBVUksQ0FMSixXQUtJO0FBQ0ksY0FBQTs7QUFZSixDQXZCSixJQXVCSSxDQUFBLE9BQUE7QUFDSSxTQUFBO0FBQ0Esb0JBQUE7QUFDQSxVQUFBOztBQUlSLENBOUJBLElBOEJBLEdBQUEsQ0FBQTtBQUNJLFNBbkNlO0FBb0NmLGFBcENlO0FBcUNmLFlBQUE7O0FBR0osQ0FwQ0EsSUFvQ0EsQ0FBQTtBQUNJLFNBQUE7O0FBR0osQ0F4Q0EsSUF3Q0E7QUFDSSxVQWhERzs7QUFtRFAsQ0E1Q0EsSUE0Q0EsQ0FBQTtBQUNJLFNBQUE7QUFDQSxvQkFBQTs7QUFHSixDQWpEQSxJQWlEQSxDQUFBO0FBQ0ksWUFBQTtBQUNBLFVBQUE7QUFDQSxTQUFBOztBQUdKLENBdkRBLElBdURBLENBQUE7QUFDSSxZQUFBO0FBQ0EsVUFBQTtBQUNBLFNBQUE7OyIsCiAgIm5hbWVzIjogW10KfQo= */"]
+    styles: ["\n\n.box[_ngcontent-%COMP%]   .logo[_ngcontent-%COMP%] {\n  height: 3rem;\n  width: auto;\n}\n.box[_ngcontent-%COMP%]   .title-list[_ngcontent-%COMP%] {\n  overflow-y: scroll;\n}\n.box[_ngcontent-%COMP%]   .title-list[_ngcontent-%COMP%]   li[_ngcontent-%COMP%] {\n  background: none;\n}\n.box[_ngcontent-%COMP%]   .article[_ngcontent-%COMP%]:hover {\n  color: black !important;\n  background-color: #ffc107 !important;\n  cursor: pointer;\n}\n.box[_ngcontent-%COMP%]   img.article-detail[_ngcontent-%COMP%] {\n  width: 100%;\n  max-width: 100%;\n  overflow: scroll;\n}\n.box[_ngcontent-%COMP%]   .offcanvas[_ngcontent-%COMP%] {\n  width: 30% !important;\n}\n.box[_ngcontent-%COMP%]   object[_ngcontent-%COMP%] {\n  height: 80vh;\n}\n.box[_ngcontent-%COMP%]   .selectedArticle[_ngcontent-%COMP%] {\n  color: black !important;\n  background-color: #ffc107 !important;\n}\n.box[_ngcontent-%COMP%]   .goTopBtn[_ngcontent-%COMP%] {\n  position: fixed !important;\n  bottom: 1rem;\n  right: 1rem;\n}\n.box[_ngcontent-%COMP%]   .showMenuBtn[_ngcontent-%COMP%] {\n  position: fixed !important;\n  bottom: 4rem;\n  right: 1rem;\n}\n/*# sourceMappingURL=data:application/json;base64,ewogICJ2ZXJzaW9uIjogMywKICAic291cmNlcyI6IFsic3JjL2FwcC9odWdnaW5nZmFjZS9odWdnaW5nZmFjZS5jb21wb25lbnQuc2NzcyJdLAogICJzb3VyY2VzQ29udGVudCI6IFsiJG15SGVpZ2h0OiA4MHZoO1xyXG4kb2ZmY2FudmFzLXdpZHRoOiAzMCU7XHJcbiR5ZWxsb3c6ICNmZmMxMDc7XHJcbiRhcnRpY2xlLWRldGFpbC13aWR0aDogMTAwJTtcclxuXHJcbi5ib3gge1xyXG5cclxuICAgIC5sb2dvIHtcclxuICAgICAgICBoZWlnaHQ6IDNyZW07XHJcbiAgICAgICAgd2lkdGg6IGF1dG87XHJcbiAgICB9XHJcblxyXG4gICAgLnRpdGxlLWxpc3Qge1xyXG4gICAgICAgIC8vIG1heC1oZWlnaHQ6ICRteUhlaWdodDtcclxuICAgICAgICAvLyBoZWlnaHQ6ICRteUhlaWdodDtcclxuICAgICAgICBvdmVyZmxvdy15OiBzY3JvbGw7XHJcblxyXG4gICAgICAgIGxpIHtcclxuICAgICAgICAgICAgYmFja2dyb3VuZDogbm9uZTtcclxuICAgICAgICAgICAgLy8gdHJhbnNpdGlvbjogYmFja2dyb3VuZC1jb2xvciAuMXM7XHJcblxyXG4gICAgICAgICAgICAvLyAmOmhvdmVyIHtcclxuICAgICAgICAgICAgLy8gICAgIGJhY2tncm91bmQtY29sb3I6ICMwMDY2Q0M7XHJcbiAgICAgICAgICAgIC8vICAgICBjdXJzb3I6IHBvaW50ZXI7XHJcbiAgICAgICAgICAgIC8vIH1cclxuICAgICAgICB9XHJcblxyXG4gICAgfVxyXG5cclxuICAgIC5hcnRpY2xlIHtcclxuICAgICAgICAmOmhvdmVyIHtcclxuICAgICAgICAgICAgY29sb3I6IGJsYWNrICFpbXBvcnRhbnQ7XHJcbiAgICAgICAgICAgIGJhY2tncm91bmQtY29sb3I6ICR5ZWxsb3cgIWltcG9ydGFudDtcclxuICAgICAgICAgICAgY3Vyc29yOiBwb2ludGVyO1xyXG4gICAgICAgIH1cclxuICAgIH1cclxuXHJcbiAgICBpbWcuYXJ0aWNsZS1kZXRhaWwge1xyXG4gICAgICAgIHdpZHRoOiAkYXJ0aWNsZS1kZXRhaWwtd2lkdGg7XHJcbiAgICAgICAgbWF4LXdpZHRoOiAkYXJ0aWNsZS1kZXRhaWwtd2lkdGg7XHJcbiAgICAgICAgb3ZlcmZsb3c6IHNjcm9sbDtcclxuICAgIH1cclxuXHJcbiAgICAub2ZmY2FudmFzIHtcclxuICAgICAgICB3aWR0aDogJG9mZmNhbnZhcy13aWR0aCAhaW1wb3J0YW50O1xyXG4gICAgfVxyXG5cclxuICAgIG9iamVjdCB7XHJcbiAgICAgICAgaGVpZ2h0OiAkbXlIZWlnaHQ7XHJcbiAgICB9XHJcblxyXG4gICAgLnNlbGVjdGVkQXJ0aWNsZSB7XHJcbiAgICAgICAgY29sb3I6IGJsYWNrICFpbXBvcnRhbnQ7XHJcbiAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogJHllbGxvdyAhaW1wb3J0YW50O1xyXG4gICAgfVxyXG5cclxuICAgIC5nb1RvcEJ0biB7XHJcbiAgICAgICAgcG9zaXRpb246IGZpeGVkICFpbXBvcnRhbnQ7XHJcbiAgICAgICAgYm90dG9tOiAxcmVtO1xyXG4gICAgICAgIHJpZ2h0OiAxcmVtO1xyXG4gICAgfVxyXG5cclxuICAgIC5zaG93TWVudUJ0biB7XHJcbiAgICAgICAgcG9zaXRpb246IGZpeGVkICFpbXBvcnRhbnQ7XHJcbiAgICAgICAgYm90dG9tOiA0cmVtO1xyXG4gICAgICAgIHJpZ2h0OiAxcmVtO1xyXG4gICAgfVxyXG5cclxufSJdLAogICJtYXBwaW5ncyI6ICI7QUFPSSxDQUFBLElBQUEsQ0FBQTtBQUNJLFVBQUE7QUFDQSxTQUFBOztBQUdKLENBTEEsSUFLQSxDQUFBO0FBR0ksY0FBQTs7QUFFQSxDQVZKLElBVUksQ0FMSixXQUtJO0FBQ0ksY0FBQTs7QUFZSixDQXZCSixJQXVCSSxDQUFBLE9BQUE7QUFDSSxTQUFBO0FBQ0Esb0JBQUE7QUFDQSxVQUFBOztBQUlSLENBOUJBLElBOEJBLEdBQUEsQ0FBQTtBQUNJLFNBbkNlO0FBb0NmLGFBcENlO0FBcUNmLFlBQUE7O0FBR0osQ0FwQ0EsSUFvQ0EsQ0FBQTtBQUNJLFNBQUE7O0FBR0osQ0F4Q0EsSUF3Q0E7QUFDSSxVQWhERzs7QUFtRFAsQ0E1Q0EsSUE0Q0EsQ0FBQTtBQUNJLFNBQUE7QUFDQSxvQkFBQTs7QUFHSixDQWpEQSxJQWlEQSxDQUFBO0FBQ0ksWUFBQTtBQUNBLFVBQUE7QUFDQSxTQUFBOztBQUdKLENBdkRBLElBdURBLENBQUE7QUFDSSxZQUFBO0FBQ0EsVUFBQTtBQUNBLFNBQUE7OyIsCiAgIm5hbWVzIjogW10KfQo= */"]
   });
   let HuggingfaceComponent2 = _HuggingfaceComponent;
   return HuggingfaceComponent2;
@@ -27176,7 +27217,7 @@ function MdScreenRecordComponent_nav_15_Template(rf, ctx) {
     \u0275\u0275property("disabled", ctx_r2.readyGetStarted == false);
   }
 }
-var _c1 = (a0, a1) => ({
+var _c12 = (a0, a1) => ({
   "text-warning": a0,
   "text-danger": a1
 });
@@ -27274,7 +27315,7 @@ function MdScreenRecordComponent_div_18_div_1_Template(rf, ctx) {
   if (rf & 2) {
     const ctx_r14 = \u0275\u0275nextContext(2);
     \u0275\u0275advance(2);
-    \u0275\u0275property("ngClass", \u0275\u0275pureFunction2(7, _c1, ctx_r14.isGetStarted == false, ctx_r14.isGetStarted == true));
+    \u0275\u0275property("ngClass", \u0275\u0275pureFunction2(7, _c12, ctx_r14.isGetStarted == false, ctx_r14.isGetStarted == true));
     \u0275\u0275advance(1);
     \u0275\u0275textInterpolate1(" ", ctx_r14.readySecond, " \u79D2\u540E\u6B63\u5F0F\u5F00\u59CB");
     \u0275\u0275advance(22);

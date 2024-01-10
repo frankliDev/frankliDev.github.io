@@ -344,5 +344,36 @@
                 ]
             }
         ]
+    },
+    {
+        "title": "TITLE",
+        "chapters": [
+            {
+                "title": "chapter 1 title",
+                "articles": [
+                    {
+                        "title": "article 1 title",
+                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/73.png"
+                    },
+                    {
+                        "title": "article 2 title",
+                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/74.png"
+                    }
+                ]
+            },
+            {
+                "title": "chapter 2 title",
+                "articles": [
+                    {
+                        "title": "article 1 title",
+                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/68.png"
+                    },
+                    {
+                        "title": "article 2 title",
+                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/61.png"
+                    }
+                ]
+            }
+        ]
     }
 ]
