@@ -22434,7 +22434,7 @@ var HomeComponent = /* @__PURE__ */ (() => {
     selectors: [["app-home"]],
     decls: 28,
     vars: 1,
-    consts: [[1, "box", "pt-5"], [1, "container-fluid", "p-5", "slogan-box"], [1, "row"], [1, "col-4"], [1, "col", "text-center", "text-white", "fw-bold"], [1, "pt-5", "pb-4", "slogan"], [1, "text-warning"], [1, "pt-4", "pb-5", "slogan"], [1, "container-fluid", "mt-5", "p-5", "sections"], [1, "row", "mb-4", "justify-content-evenly"], ["class", "col text-light section px-5", 4, "ngFor", "ngForOf"], [1, "col", "text-light", "section", "px-5"], [1, "text-center", "mb-5", "fs-1", "fw-bold"], [1, "logo", "me-3"], ["class", "text-secondary", 4, "ngFor", "ngForOf"], [1, "text-center", "mt-5"], ["type", "button", 1, "btn", "px-5", "py-2", "fs-5", "rounded-5", 3, "ngClass"], [1, "text-secondary"]],
+    consts: [[1, "box"], [1, "container-fluid", "p-5", "slogan-box"], [1, "row"], [1, "col-4"], [1, "col", "text-center", "text-white", "fw-bold"], [1, "pt-5", "pb-4", "slogan"], [1, "text-warning"], [1, "pt-4", "pb-5", "slogan"], [1, "container-fluid", "mt-5", "p-5", "sections"], [1, "row", "mb-4", "justify-content-evenly"], ["class", "col text-light section px-5", 4, "ngFor", "ngForOf"], [1, "col", "text-light", "section", "px-5"], [1, "text-center", "mb-5", "fs-1", "fw-bold"], [1, "logo", "me-3"], ["class", "text-secondary", 4, "ngFor", "ngForOf"], [1, "text-center", "mt-5"], ["type", "button", 1, "btn", "px-5", "py-2", "fs-5", "rounded-5", 3, "ngClass"], [1, "text-secondary"]],
     template: function HomeComponent_Template(rf, ctx) {
       if (rf & 1) {
         \u0275\u0275elementStart(0, "div", 0)(1, "div", 1)(2, "div", 2);
@@ -22599,7 +22599,7 @@ var HarmonyosComponent = /* @__PURE__ */ (() => {
     selectors: [["app-harmonyos"]],
     decls: 47,
     vars: 5,
-    consts: [[1, "box", "bg-dark", "pt-5", "mt-4"], [1, "container-fluid", "px-5", "py-4"], [1, "row", "mb-4"], [1, "col-12", "text-center", "text-light", "fs-1", "fw-bold"], ["src", "../../assets/img/huawei-logo.png", 1, "logo", "me-2"], [1, "col-12", "text-center", "my-3"], ["type", "button", "data-bs-toggle", "offcanvas", "data-bs-target", "#offcanvasExample", "aria-controls", "offcanvasExample", "accesskey", "x", 1, "btn", "btn-danger"], [1, "bi", "bi-list-columns-reverse", "me-2"], [1, "text-secondary", "mt-2"], [1, "mx-2"], [1, "bi", "bi-windows", "me-1"], [1, "bi", "bi-apple", "me-1"], [1, "col-12", "text-secondary", "text-center", "mt-3"], [1, "bi", "bi-markdown-fill"], [1, "bi", "bi-file-earmark-pdf-fill"], [1, "row"], ["tabindex", "-1", "id", "offcanvasExample", "aria-labelledby", "offcanvasExampleLabel", 1, "offcanvas", "offcanvas-start", "bg-dark"], [1, "offcanvas-header"], ["id", "offcanvasExampleLabel", 1, "offcanvas-title", "text-danger"], ["type", "button", "data-bs-dismiss", "offcanvas", "aria-label", "Close", 1, "btn", "btn-outline-secondary", "btn-sm"], [1, "bi", "bi-x-lg"], [1, "offcanvas-body"], [1, "list-group", "title-list"], ["class", "list-group-item text-light border-secondary fw-normal", 3, "click", 4, "ngFor", "ngForOf"], [1, "mt-2"], [1, "text-warning"], [1, "ms-2", "text-light", "small"], [1, "col-12", "detail", "mb-5"], [1, "mb-2", "lead", "text-warning"], ["class", "btn btn-danger btn-sm ms-2", "type", "button", "data-bs-toggle", "offcanvas", "data-bs-target", "#offcanvasExample", "aria-controls", "offcanvasExample", 4, "ngIf"], ["type", "application/pdf", "width", "100%", 4, "ngIf"], ["type", "button", 1, "btn", "btn-danger", "py-1", "px-2", "goTopBtn", 3, "click"], [1, "bi", "bi-chevron-up", "lead", "text-light", "fw-bold"], [1, "list-group-item", "text-light", "border-secondary", "fw-normal", 3, "click"], [1, "row", "align-items-center"], [1, "col-12"], [1, "badge", "rounded-pill", "text-bg-danger", "me-2"], [1, "col-12", "text-end", "text-secondary", "small"], ["type", "button", "data-bs-toggle", "offcanvas", "data-bs-target", "#offcanvasExample", "aria-controls", "offcanvasExample", 1, "btn", "btn-danger", "btn-sm", "ms-2"], [1, "bi", "bi-list-columns-reverse"], ["type", "application/pdf", "width", "100%"]],
+    consts: [[1, "box", "bg-dark", "pt-3"], [1, "container-fluid", "px-5", "py-4"], [1, "row", "mb-4"], [1, "col-12", "text-center", "text-light", "fs-1", "fw-bold"], ["src", "../../assets/img/huawei-logo.png", 1, "logo", "me-2"], [1, "col-12", "text-center", "my-3"], ["type", "button", "data-bs-toggle", "offcanvas", "data-bs-target", "#offcanvasExample", "aria-controls", "offcanvasExample", "accesskey", "x", 1, "btn", "btn-danger"], [1, "bi", "bi-list-columns-reverse", "me-2"], [1, "text-secondary", "mt-2"], [1, "mx-2"], [1, "bi", "bi-windows", "me-1"], [1, "bi", "bi-apple", "me-1"], [1, "col-12", "text-secondary", "text-center", "mt-3"], [1, "bi", "bi-markdown-fill"], [1, "bi", "bi-file-earmark-pdf-fill"], [1, "row"], ["tabindex", "-1", "id", "offcanvasExample", "aria-labelledby", "offcanvasExampleLabel", 1, "offcanvas", "offcanvas-start", "bg-dark"], [1, "offcanvas-header"], ["id", "offcanvasExampleLabel", 1, "offcanvas-title", "text-danger"], ["type", "button", "data-bs-dismiss", "offcanvas", "aria-label", "Close", 1, "btn", "btn-outline-secondary", "btn-sm"], [1, "bi", "bi-x-lg"], [1, "offcanvas-body"], [1, "list-group", "title-list"], ["class", "list-group-item text-light border-secondary fw-normal", 3, "click", 4, "ngFor", "ngForOf"], [1, "mt-2"], [1, "text-warning"], [1, "ms-2", "text-light", "small"], [1, "col-12", "detail", "mb-5"], [1, "mb-2", "lead", "text-warning"], ["class", "btn btn-danger btn-sm ms-2", "type", "button", "data-bs-toggle", "offcanvas", "data-bs-target", "#offcanvasExample", "aria-controls", "offcanvasExample", 4, "ngIf"], ["type", "application/pdf", "width", "100%", 4, "ngIf"], ["type", "button", 1, "btn", "btn-danger", "py-1", "px-2", "goTopBtn", 3, "click"], [1, "bi", "bi-chevron-up", "lead", "text-light", "fw-bold"], [1, "list-group-item", "text-light", "border-secondary", "fw-normal", 3, "click"], [1, "row", "align-items-center"], [1, "col-12"], [1, "badge", "rounded-pill", "text-bg-danger", "me-2"], [1, "col-12", "text-end", "text-secondary", "small"], ["type", "button", "data-bs-toggle", "offcanvas", "data-bs-target", "#offcanvasExample", "aria-controls", "offcanvasExample", 1, "btn", "btn-danger", "btn-sm", "ms-2"], [1, "bi", "bi-list-columns-reverse"], ["type", "application/pdf", "width", "100%"]],
     template: function HarmonyosComponent_Template(rf, ctx) {
       if (rf & 1) {
         \u0275\u0275elementStart(0, "div", 0)(1, "div", 1)(2, "div", 2)(3, "div", 3);
@@ -22926,7 +22926,7 @@ var LifePhilosophyComponent = /* @__PURE__ */ (() => {
     selectors: [["app-life-philosophy"]],
     decls: 12,
     vars: 3,
-    consts: [[1, "box", "bg-dark", "pt-5", "mt-4"], [1, "container-fluid", "px-5", "py-4"], [1, "row"], [1, "col-12"], [1, "fs-1", "fw-bold", "text-info"], [1, "col-12", "text-secondary", "mb-2", "fs-5"], [1, "col-12", "mb-5"], ["class", "card text-bg-dark mb-2 border-secondary border text-secondary", 4, "ngFor", "ngForOf"], ["type", "button", 1, "btn", "btn-info", "py-1", "px-2", "goTopBtn", 3, "click"], [1, "bi", "bi-chevron-up", "lead", "text-dark", "fw-bold"], [1, "card", "text-bg-dark", "mb-2", "border-secondary", "border", "text-secondary"], [1, "card-body"], ["class", "card-text lead", 4, "ngFor", "ngForOf"], [1, "card-text", "lead"]],
+    consts: [[1, "box", "bg-dark"], [1, "container-fluid", "px-5", "py-4"], [1, "row"], [1, "col-12"], [1, "fs-1", "fw-bold", "text-info"], [1, "col-12", "text-secondary", "mb-2", "fs-5"], [1, "col-12", "mb-5"], ["class", "card text-bg-dark mb-2 border-secondary border text-secondary", 4, "ngFor", "ngForOf"], ["type", "button", 1, "btn", "btn-info", "py-1", "px-2", "goTopBtn", 3, "click"], [1, "bi", "bi-chevron-up", "lead", "text-dark", "fw-bold"], [1, "card", "text-bg-dark", "mb-2", "border-secondary", "border", "text-secondary"], [1, "card-body"], ["class", "card-text lead", 4, "ngFor", "ngForOf"], [1, "card-text", "lead"]],
     template: function LifePhilosophyComponent_Template(rf, ctx) {
       if (rf & 1) {
         \u0275\u0275elementStart(0, "div", 0)(1, "div", 1)(2, "div", 2)(3, "div", 3)(4, "p", 4);
@@ -22993,7 +22993,7 @@ var AboutComponent = /* @__PURE__ */ (() => {
 })();
 
 // src/app/tongyi/tongyi.component.ts
-function TongyiComponent_p_8_Template(rf, ctx) {
+function TongyiComponent_p_12_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementStart(0, "p", 14);
     \u0275\u0275text(1);
@@ -23005,7 +23005,7 @@ function TongyiComponent_p_8_Template(rf, ctx) {
     \u0275\u0275textInterpolate(item_r2);
   }
 }
-function TongyiComponent_span_10_Template(rf, ctx) {
+function TongyiComponent_span_14_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementStart(0, "span", 15)(1, "span", 16);
     \u0275\u0275text(2);
@@ -23058,22 +23058,22 @@ var TongyiComponent = /* @__PURE__ */ (() => {
     selectors: [["app-tongyi"]],
     decls: 17,
     vars: 2,
-    consts: [[1, "box", "bg-dark", "p-5", "mt-5"], [1, "container-fluid", "p-0"], [1, "row", "slogan", "align-items-center"], [1, "col-7", "text-center"], [1, "fs-1", "text-light"], ["src", "../../assets/img/tongyi-logo.svg", 1, "logo", "me-3"], [1, "mt-5"], ["class", "text-light lead text-start", 4, "ngFor", "ngForOf"], ["class", "lead text-light mx-5", 4, "ngFor", "ngForOf"], [1, "col", "text-center"], ["loop", "", "autoplay", "", "muted", "", 1, "slogan-video", "mt-4"], ["src", "https://acd-assets.alicdn.com/acd_work/tongyi/assets/hero/tongyi_branding.mp4", "type", "video/mp4"], ["type", "button", 1, "btn", "py-1", "px-2", "goTopBtn", 3, "click"], [1, "bi", "bi-chevron-up", "lead", "text-light"], [1, "text-light", "lead", "text-start"], [1, "lead", "text-light", "mx-5"], [1, "text-secondary"], ["target", "_blank", 1, "url"]],
+    consts: [[1, "box", "bg-dark", "p-5"], [1, "container-fluid", "p-0"], [1, "row", "slogan", "align-items-center"], [1, "col", "text-center"], ["loop", "", "autoplay", "", "muted", "", 1, "slogan-video", "mt-4"], ["src", "https://acd-assets.alicdn.com/acd_work/tongyi/assets/hero/tongyi_branding.mp4", "type", "video/mp4"], [1, "col-7", "text-center"], [1, "fs-1", "text-light"], ["src", "../../assets/img/tongyi-logo.svg", 1, "logo", "me-3"], [1, "mt-5"], ["class", "text-light lead text-start", 4, "ngFor", "ngForOf"], ["class", "lead text-light mx-5", 4, "ngFor", "ngForOf"], ["type", "button", 1, "btn", "py-1", "px-2", "goTopBtn", 3, "click"], [1, "bi", "bi-chevron-up", "lead", "text-light"], [1, "text-light", "lead", "text-start"], [1, "lead", "text-light", "mx-5"], [1, "text-secondary"], ["target", "_blank", 1, "url"]],
     template: function TongyiComponent_Template(rf, ctx) {
       if (rf & 1) {
-        \u0275\u0275elementStart(0, "div", 0)(1, "div", 1)(2, "div", 2)(3, "div", 3)(4, "h1", 4);
-        \u0275\u0275element(5, "img", 5);
-        \u0275\u0275text(6, " \u901A\u4E49\u5343\u95EE ");
-        \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(7, "div", 6);
-        \u0275\u0275template(8, TongyiComponent_p_8_Template, 2, 1, "p", 7);
-        \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(9, "div", 6);
-        \u0275\u0275template(10, TongyiComponent_span_10_Template, 5, 3, "span", 8);
+        \u0275\u0275elementStart(0, "div", 0)(1, "div", 1)(2, "div", 2)(3, "div", 3)(4, "video", 4);
+        \u0275\u0275element(5, "source", 5);
+        \u0275\u0275text(6, " \u60A8\u7684\u6D4F\u89C8\u5668\u4E0D\u652F\u6301Video\u6807\u7B7E\u3002 ");
         \u0275\u0275elementEnd()();
-        \u0275\u0275elementStart(11, "div", 9)(12, "video", 10);
-        \u0275\u0275element(13, "source", 11);
-        \u0275\u0275text(14, " \u60A8\u7684\u6D4F\u89C8\u5668\u4E0D\u652F\u6301Video\u6807\u7B7E\u3002 ");
+        \u0275\u0275elementStart(7, "div", 6)(8, "h1", 7);
+        \u0275\u0275element(9, "img", 8);
+        \u0275\u0275text(10, " \u901A\u4E49\u5343\u95EE ");
+        \u0275\u0275elementEnd();
+        \u0275\u0275elementStart(11, "div", 9);
+        \u0275\u0275template(12, TongyiComponent_p_12_Template, 2, 1, "p", 10);
+        \u0275\u0275elementEnd();
+        \u0275\u0275elementStart(13, "div", 9);
+        \u0275\u0275template(14, TongyiComponent_span_14_Template, 5, 3, "span", 11);
         \u0275\u0275elementEnd()()()();
         \u0275\u0275elementStart(15, "button", 12);
         \u0275\u0275listener("click", function TongyiComponent_Template_button_click_15_listener() {
@@ -23083,7 +23083,7 @@ var TongyiComponent = /* @__PURE__ */ (() => {
         \u0275\u0275elementEnd()();
       }
       if (rf & 2) {
-        \u0275\u0275advance(8);
+        \u0275\u0275advance(12);
         \u0275\u0275property("ngForOf", ctx.introductions);
         \u0275\u0275advance(2);
         \u0275\u0275property("ngForOf", ctx.pages);
@@ -23094,170 +23094,6 @@ var TongyiComponent = /* @__PURE__ */ (() => {
   });
   let TongyiComponent2 = _TongyiComponent;
   return TongyiComponent2;
-})();
-
-// src/app/local.service.ts
-var LocalService = /* @__PURE__ */ (() => {
-  const _LocalService = class _LocalService {
-    constructor() {
-      this.fileReader = new FileReader();
-    }
-    hello() {
-      console.log("Local Service function: hello");
-    }
-    scrollToTop() {
-      window.scrollTo({
-        top: 0
-      });
-    }
-    // 检查是否为 markdown 格式的文件
-    checkFileType(filename, filetype) {
-      if (filename.split(".")[1] == filetype) {
-        return true;
-      } else {
-        return false;
-      }
-    }
-    decodeMarkdownText(markdownText) {
-      let result = [];
-      let tempList = markdownText.split("\n");
-      for (let i = 0; i < tempList.length; i++) {
-        let item = tempList[i];
-        if (item != "" && item != "\r") {
-          result.push(item);
-        }
-      }
-      console.log("result");
-      console.log(result);
-      let allTitleIndexs = [];
-      for (let i = 0; i < result.length; i++) {
-        let element = result[i];
-        if (element.startsWith("#")) {
-          allTitleIndexs.push(i);
-        }
-      }
-      allTitleIndexs.push(result.length);
-      let sectionsList = [];
-      let isCode = false;
-      for (let i = 0; i < allTitleIndexs.length; i++) {
-        let startIndex = allTitleIndexs[i];
-        let endIndex = allTitleIndexs[i + 1];
-        if (endIndex == void 0) {
-          continue;
-        }
-        let contents = [];
-        for (let j = startIndex; j < endIndex; j++) {
-          if (result[j].startsWith("#") == true && isCode == false) {
-            contents.push({
-              key: "title",
-              value: this.getMarkdownTitle(result[j])
-            });
-          } else if (result[j].startsWith(">") == true) {
-            contents.push({
-              key: "desc",
-              value: this.getMarkdownDesc(result[j])
-            });
-          } else if (result[j].startsWith("![") == true) {
-            contents.push({
-              key: "graph",
-              value: this.getMarkdownGraphUrl(result[j])
-            });
-          } else if (result[j].startsWith("    ") == true && isCode == false) {
-            contents.push({
-              key: "output",
-              // 输出结果的前4个位置是空格，过滤掉前面4个空格，拿到后面的所有内容（包括剩余空格）
-              value: result[j].substring(4)
-            });
-          } else if (result[j].startsWith("```python") == true) {
-            isCode = true;
-            contents.push({
-              key: "option",
-              value: "codeStart"
-            });
-          } else if (result[j].startsWith("```") == true) {
-            isCode = false;
-            contents.push({
-              key: "option",
-              value: "codeEnd"
-            });
-          } else if (result[j].indexOf("#") != -1 && isCode == true) {
-            let annotation = result[j].replace(/ /g, " ");
-            contents.push({
-              key: "annotation",
-              value: annotation
-            });
-          } else if (isCode == true) {
-            let code = result[j].replace(/ /g, " ");
-            contents.push({
-              key: "code",
-              // value: result[j]
-              value: code
-            });
-          }
-        }
-        sectionsList.push(contents);
-      }
-      return sectionsList;
-    }
-    splitStringAsType(obj) {
-      let result = [];
-      switch (obj["key"]) {
-        case "title":
-          result = obj["value"].split("");
-          break;
-        default:
-          break;
-      }
-      return result;
-    }
-    // 从markdown的标题字符串（# ...）中提取内容
-    getMarkdownTitle(str) {
-      let title = "";
-      if (str.split("")[0] == "#") {
-        title = str.split("# ")[1];
-      }
-      return title;
-    }
-    // 从markdown的注释字符串（> ...）中提取内容
-    getMarkdownDesc(str) {
-      let desc = "";
-      if (str.split("")[0] == ">") {
-        desc = str.substring(2);
-      }
-      return desc;
-    }
-    // 从 markdown 的图像字符串里提取图片的 URL
-    getMarkdownGraphUrl(str) {
-      let reg = new RegExp("(?<=\\().+?(?=\\))", "g");
-      return str.match(reg);
-    }
-    // ==== 按照列表里的 datetime 属性对列表排序，默认按照时间的升序排序 =====
-    sortListByItemDatetime(list, order = "asc") {
-      list.forEach((element) => {
-        element["timestamp"] = new Date(element["datetime"]).getTime();
-      });
-      if (order == "asc") {
-        list = list.sort((a, b) => {
-          return 1;
-        });
-      } else {
-        list = list.sort((a, b) => {
-          return -1;
-        });
-      }
-      return list;
-    }
-  };
-  _LocalService.\u0275fac = function LocalService_Factory(t) {
-    return new (t || _LocalService)();
-  };
-  _LocalService.\u0275prov = /* @__PURE__ */ \u0275\u0275defineInjectable({
-    token: _LocalService,
-    factory: _LocalService.\u0275fac,
-    providedIn: "root"
-  });
-  let LocalService2 = _LocalService;
-  return LocalService2;
 })();
 
 // src/assets/huggingface_list.json
@@ -23641,6 +23477,238 @@ var huggingface_list_default = [
   }
 ];
 
+// src/app/local.service.ts
+var LocalService = /* @__PURE__ */ (() => {
+  const _LocalService = class _LocalService {
+    constructor(http) {
+      this.http = http;
+      this.fileReader = new FileReader();
+      this.serverBaseUrl = "http://localhost:5000";
+      this.httpOptions = {
+        headers: new HttpHeaders({
+          "Content-Type": "application/x-www-form-urlencoded"
+        })
+      };
+    }
+    // 访问服务器 API
+    getTtsVoice(text) {
+      const url = "/api/tts";
+      let encodedBody = new URLSearchParams();
+      encodedBody.set("text", text);
+      return this.http.post(this.serverBaseUrl + url, encodedBody, this.httpOptions);
+    }
+    // 页面滚动到顶部
+    scrollToTop() {
+      window.scrollTo({
+        top: 0
+      });
+    }
+    // 检查是否为 markdown 格式的文件
+    checkFileType(filename, filetype) {
+      if (filename.split(".")[1] == filetype) {
+        return true;
+      } else {
+        return false;
+      }
+    }
+    // 从 markdown 的图像字符串里提取图片的 URL
+    getMarkdownGraphUrl(str) {
+      let reg = new RegExp("(?<=\\().+?(?=\\))", "g");
+      let result = str.match(reg);
+      if (result != null) {
+        let url = result[0];
+        return url;
+      } else {
+        return "";
+      }
+    }
+    // 从markdown的标题字符串（# ...）中提取内容
+    getMarkdownTitle(str) {
+      let title = "";
+      if (str.split("")[0] == "#") {
+        title = str.split("# ")[1];
+      }
+      return title;
+    }
+    // 从markdown的注释字符串（> ...）中提取内容
+    getMarkdownDesc(str) {
+      let desc = "";
+      if (str.split("")[0] == ">") {
+        desc = str.substring(2);
+      }
+      return desc;
+    }
+    // 从 MarkDown 中提取 TTS 的文本
+    getTtsText(str) {
+      let result = "";
+      if (str.startsWith("V: ")) {
+        result = str.substring(3);
+      }
+      return result;
+    }
+    /**
+     * 将列表里连续的内容合并。将字符列表里连续的空格合并为一个元素，例如 ['&nbsp;', '&nbsp;', '...'] 合并为 ['&nbsp;&nbsp;', '...']
+     */
+    mergeSuccessiveItem(arr, item) {
+      for (let index = 0; index < arr.length; index++) {
+        if (arr[index] == arr[index + 1]) {
+          let startIndex = -1;
+          let endIndex = -1;
+          for (let i = 0; i < arr.length; i++) {
+            if (arr[i] == item && startIndex == -1) {
+              startIndex = i;
+              continue;
+            } else if (arr[i] == item && startIndex != -1) {
+              continue;
+            } else if (arr[i] != item && startIndex != -1) {
+              endIndex = i - 1;
+              break;
+            }
+          }
+          let mergedItems = "";
+          for (let index2 = 0; index2 < endIndex - startIndex + 1; index2++) {
+            mergedItems += item;
+          }
+          let removeItemNumber = endIndex - startIndex;
+          arr[startIndex] = mergedItems;
+          arr.splice(startIndex + 1, removeItemNumber);
+        }
+      }
+      return arr;
+    }
+    /**
+     * ********************************
+     * Running Functions 程序运行时函数
+     * ********************************
+     */
+    decodeMarkdownText(markdownText) {
+      let result = [];
+      let tempList = markdownText.split("\n");
+      for (let i = 0; i < tempList.length; i++) {
+        let item = tempList[i];
+        if (item != "" && item != "\r") {
+          result.push(item);
+        }
+      }
+      let allTitleIndexs = [];
+      for (let i = 0; i < result.length; i++) {
+        let element = result[i];
+        if (element.startsWith("#")) {
+          allTitleIndexs.push(i);
+        }
+      }
+      allTitleIndexs.push(result.length);
+      let sectionsList = [];
+      let isCode = false;
+      for (let i = 0; i < allTitleIndexs.length; i++) {
+        let startIndex = allTitleIndexs[i];
+        let endIndex = allTitleIndexs[i + 1];
+        if (endIndex == void 0) {
+          continue;
+        }
+        let contents = [];
+        for (let j = startIndex; j < endIndex; j++) {
+          if (result[j].startsWith("#") == true && isCode == false) {
+            contents.push({
+              key: "title",
+              value: this.getMarkdownTitle(result[j])
+            });
+          } else if (result[j].startsWith(">") == true) {
+            contents.push({
+              key: "desc",
+              value: this.getMarkdownDesc(result[j])
+            });
+          } else if (result[j].startsWith("![") == true) {
+            contents.push({
+              key: "graph",
+              value: this.getMarkdownGraphUrl(result[j])
+            });
+          } else if (result[j].startsWith("V: ") == true && isCode == false) {
+            contents.push({
+              key: "voice",
+              value: this.getTtsText(result[j])
+            });
+            contents.push({
+              key: "voiceLettersLength",
+              value: this.getTtsText(result[j]).length
+            });
+          } else if (result[j].startsWith("    ") == true && isCode == false) {
+            contents.push({
+              key: "output",
+              // 输出结果的前4个位置是空格，过滤掉前面4个空格，拿到后面的所有内容（包括剩余空格）
+              value: result[j].substring(4)
+            });
+          } else if (result[j].startsWith("```python") == true) {
+            isCode = true;
+            contents.push({
+              key: "option",
+              value: "codeStart"
+            });
+          } else if (result[j].startsWith("```") == true) {
+            isCode = false;
+            contents.push({
+              key: "option",
+              value: "codeEnd"
+            });
+          } else if (result[j].indexOf("#") != -1 && isCode == true) {
+            let annotation = result[j].replace(/ /g, " ");
+            contents.push({
+              key: "annotation",
+              value: annotation
+            });
+          } else if (isCode == true) {
+            let code = result[j].replace(/ /g, " ");
+            contents.push({
+              key: "code",
+              // value: result[j]
+              value: code
+            });
+          }
+        }
+        sectionsList.push(contents);
+      }
+      return sectionsList;
+    }
+    // splitStringAsType(obj: any) {
+    //   let result = []
+    //   switch (obj['key']) {
+    //     case 'title':
+    //       result = obj['value'].split('')
+    //       break;
+    //     default:
+    //       break;
+    //   }
+    //   return result
+    // }
+    // ==== 按照列表里的 datetime 属性对列表排序，默认按照时间的升序排序 =====
+    sortListByItemDatetime(list, order = "asc") {
+      list.forEach((element) => {
+        element["timestamp"] = new Date(element["datetime"]).getTime();
+      });
+      if (order == "asc") {
+        list = list.sort((a, b) => {
+          return 1;
+        });
+      } else {
+        list = list.sort((a, b) => {
+          return -1;
+        });
+      }
+      return list;
+    }
+  };
+  _LocalService.\u0275fac = function LocalService_Factory(t) {
+    return new (t || _LocalService)(\u0275\u0275inject(HttpClient));
+  };
+  _LocalService.\u0275prov = /* @__PURE__ */ \u0275\u0275defineInjectable({
+    token: _LocalService,
+    factory: _LocalService.\u0275fac,
+    providedIn: "root"
+  });
+  let LocalService2 = _LocalService;
+  return LocalService2;
+})();
+
 // src/app/huggingface/huggingface.component.ts
 var _c02 = (a0) => ({
   selectedArticle: a0
@@ -23734,8 +23802,8 @@ function HuggingfaceComponent_i_39_Template(rf, ctx) {
 }
 var HuggingfaceComponent = /* @__PURE__ */ (() => {
   const _HuggingfaceComponent = class _HuggingfaceComponent {
-    constructor() {
-      this.localService = new LocalService();
+    constructor(localService) {
+      this.localService = localService;
       this.courses = huggingface_list_default;
       this.currentCourseId = 0;
       this.currentCourseTitle = "";
@@ -23760,14 +23828,14 @@ var HuggingfaceComponent = /* @__PURE__ */ (() => {
     }
   };
   _HuggingfaceComponent.\u0275fac = function HuggingfaceComponent_Factory(t) {
-    return new (t || _HuggingfaceComponent)();
+    return new (t || _HuggingfaceComponent)(\u0275\u0275directiveInject(LocalService));
   };
   _HuggingfaceComponent.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({
     type: _HuggingfaceComponent,
     selectors: [["app-huggingface"]],
     decls: 47,
     vars: 7,
-    consts: [[1, "box", "bg-dark", "pt-5", "mt-4"], [1, "container-fluid", "px-3", "py-4"], [1, "row", "mb-4"], [1, "col-12", "text-center", "text-light", "fs-1", "fw-bold"], ["src", "../../assets/img/huggingface-logo.png", 1, "logo", "me-2"], [1, "col-12", "text-center", "my-3"], ["type", "button", "data-bs-toggle", "offcanvas", "data-bs-target", "#offcanvasExample", "aria-controls", "offcanvasExample", "accesskey", "x", 1, "btn", "btn-warning"], [1, "bi", "bi-list-columns-reverse", "me-2"], [1, "text-secondary", "mt-2"], [1, "mx-2"], [1, "bi", "bi-windows", "me-1"], [1, "bi", "bi-apple", "me-1"], [1, "col-12", "text-secondary", "text-center", "mt-2"], [1, "row"], ["tabindex", "-1", "id", "offcanvasExample", "aria-labelledby", "offcanvasExampleLabel", 1, "offcanvas", "offcanvas-start", "bg-dark"], [1, "offcanvas-header"], ["id", "offcanvasExampleLabel", 1, "offcanvas-title", "text-warning"], ["type", "button", "data-bs-dismiss", "offcanvas", "aria-label", "Close", 1, "btn", "btn-outline-secondary", "btn-sm"], [1, "bi", "bi-x-lg"], [1, "offcanvas-body", "mb-3"], ["id", "accordionExample", 1, "accordion"], ["class", "accordion-item bg-dark border-0", 4, "ngFor", "ngForOf"], [1, "text-secondary", "text-end", "my-3"], [1, "col-12", "mb-5"], [1, "col-12", "text-warning", "mb-4", "fs-5"], ["class", "bi bi-chevron-right text-light", 4, "ngIf"], [1, "col-12"], [1, "article-detail"], ["type", "button", 1, "btn", "btn-warning", "py-1", "px-2", "goTopBtn", 3, "click"], [1, "bi", "bi-chevron-up", "lead"], ["type", "button", "data-bs-toggle", "offcanvas", "data-bs-target", "#offcanvasExample", "aria-controls", "offcanvasExample", "accesskey", "x", 1, "btn", "btn-secondary", "py-1", "px-2", "showMenuBtn"], [1, "bi", "bi-list", "lead"], [1, "accordion-item", "bg-dark", "border-0"], [1, "accordion-header"], ["type", "button", "data-bs-toggle", "collapse", "aria-expanded", "true", 1, "accordion-button", "text-bg-warning"], [1, "fs-5", "fw-bold"], ["data-bs-parent", "#accordionExample", 1, "accordion-collapse", "collapse", 3, "ngClass"], [1, "accordion-body", "p-0"], [1, "list-group", "list-group-flush", "title-list", "mt-3"], ["class", "list-group-item text-light fs-5 fw-normal border-0 chapter", 4, "ngFor", "ngForOf"], [1, "list-group-item", "text-light", "fs-5", "fw-normal", "border-0", "chapter"], [1, "badge", "text-bg-danger", "me-2"], [1, "list-group", "list-group-flush", "title-list", "my-2"], ["class", "list-group-item text-light fw-normal border-0 fs-6 article", 3, "ngClass", "click", 4, "ngFor", "ngForOf"], [1, "list-group-item", "text-light", "fw-normal", "border-0", "fs-6", "article", 3, "ngClass", "click"], [1, "badge", "text-bg-warning", "me-2"], [1, "bi", "bi-chevron-right", "text-light"]],
+    consts: [[1, "box", "bg-dark", "py-2"], [1, "container-fluid", "px-3", "py-4"], [1, "row", "mb-4"], [1, "col-12", "text-center", "text-light", "fs-1", "fw-bold"], ["src", "../../assets/img/huggingface-logo.png", 1, "logo", "me-2"], [1, "col-12", "text-center", "my-3"], ["type", "button", "data-bs-toggle", "offcanvas", "data-bs-target", "#offcanvasExample", "aria-controls", "offcanvasExample", "accesskey", "x", 1, "btn", "btn-warning"], [1, "bi", "bi-list-columns-reverse", "me-2"], [1, "text-secondary", "mt-2"], [1, "mx-2"], [1, "bi", "bi-windows", "me-1"], [1, "bi", "bi-apple", "me-1"], [1, "col-12", "text-secondary", "text-center", "mt-2"], [1, "row"], ["tabindex", "-1", "id", "offcanvasExample", "aria-labelledby", "offcanvasExampleLabel", 1, "offcanvas", "offcanvas-start", "bg-dark"], [1, "offcanvas-header"], ["id", "offcanvasExampleLabel", 1, "offcanvas-title", "text-warning"], ["type", "button", "data-bs-dismiss", "offcanvas", "aria-label", "Close", 1, "btn", "btn-outline-secondary", "btn-sm"], [1, "bi", "bi-x-lg"], [1, "offcanvas-body", "mb-3"], ["id", "accordionExample", 1, "accordion"], ["class", "accordion-item bg-dark border-0", 4, "ngFor", "ngForOf"], [1, "text-secondary", "text-end", "my-3"], [1, "col-12", "mb-5"], [1, "col-12", "text-warning", "mb-4", "fs-5"], ["class", "bi bi-chevron-right text-light", 4, "ngIf"], [1, "col-12"], [1, "article-detail"], ["type", "button", 1, "btn", "btn-warning", "py-1", "px-2", "goTopBtn", 3, "click"], [1, "bi", "bi-chevron-up", "lead"], ["type", "button", "data-bs-toggle", "offcanvas", "data-bs-target", "#offcanvasExample", "aria-controls", "offcanvasExample", "accesskey", "x", 1, "btn", "btn-secondary", "py-1", "px-2", "showMenuBtn"], [1, "bi", "bi-list", "lead"], [1, "accordion-item", "bg-dark", "border-0"], [1, "accordion-header"], ["type", "button", "data-bs-toggle", "collapse", "aria-expanded", "true", 1, "accordion-button", "text-bg-warning"], [1, "fs-5", "fw-bold"], ["data-bs-parent", "#accordionExample", 1, "accordion-collapse", "collapse", 3, "ngClass"], [1, "accordion-body", "p-0"], [1, "list-group", "list-group-flush", "title-list", "mt-3"], ["class", "list-group-item text-light fs-5 fw-normal border-0 chapter", 4, "ngFor", "ngForOf"], [1, "list-group-item", "text-light", "fs-5", "fw-normal", "border-0", "chapter"], [1, "badge", "text-bg-danger", "me-2"], [1, "list-group", "list-group-flush", "title-list", "my-2"], ["class", "list-group-item text-light fw-normal border-0 fs-6 article", 3, "ngClass", "click", 4, "ngFor", "ngForOf"], [1, "list-group-item", "text-light", "fw-normal", "border-0", "fs-6", "article", 3, "ngClass", "click"], [1, "badge", "text-bg-warning", "me-2"], [1, "bi", "bi-chevron-right", "text-light"]],
     template: function HuggingfaceComponent_Template(rf, ctx) {
       if (rf & 1) {
         \u0275\u0275elementStart(0, "div", 0)(1, "div", 1)(2, "div", 2)(3, "div", 3);
@@ -24295,7 +24363,7 @@ var AiConceptComponent = /* @__PURE__ */ (() => {
     selectors: [["app-ai-concept"]],
     decls: 37,
     vars: 6,
-    consts: [[1, "box", "bg-dark", "pt-5", "mt-4"], [1, "container-fluid", "px-5", "py-4"], [1, "row", "mb-5"], [1, "col", "text-center"], [1, "text-light", "fs-1"], ["src", "../../assets/img/ai-concept.png", 1, "logo", "me-2"], [1, "text-secondary", "mt-5"], [1, "text-secondary", "mb-5", "lead"], ["role", "alert", 1, "alert", "bg-dark", "border-0"], ["type", "button", 1, "btn", "btn-info", "py-1", "px-2", "ms-0", 3, "click"], ["src", "../../assets/img/copy.png", 1, "copy-icon"], [1, "row"], [1, "col"], [1, "row", "mb-4"], [1, "text-light", "fs-3"], [1, "badge", "bg-info", "text-dark"], ["id", "ai-accordionList", 1, "bg-dark"], ["class", "px-3 ", 4, "ngFor", "ngForOf"], ["id", "data-accordionList", 1, "bg-dark"], ["type", "button", 1, "btn", "btn-info", "py-1", "px-2", "goTopBtn", 3, "click"], [1, "bi", "bi-chevron-up", "lead", "text-dark", "fw-bold"], [1, "px-3"], [1, "text-light", "header"], ["type", "button", "data-bs-toggle", "collapse", "aria-expanded", "true", 1, "accordion-button", "fs-4", "text-info", "p-3", 3, "click"], ["data-bs-parent", "#ai-accordionList", 1, "accordion-collapse", "collapse", "px-3"], [1, "accordion-body"], ["class", "text-secondary lead fw-normal", 3, "innerHTML", 4, "ngFor", "ngForOf"], [1, "text-secondary", "lead", "fw-normal", 3, "innerHTML"], ["data-bs-parent", "#data-accordionList", 1, "accordion-collapse", "collapse", "px-3"]],
+    consts: [[1, "box", "bg-dark", "pt-3"], [1, "container-fluid", "px-5", "py-4"], [1, "row", "mb-5"], [1, "col", "text-center"], [1, "text-light", "fs-1"], ["src", "../../assets/img/ai-concept.png", 1, "logo", "me-2"], [1, "text-secondary", "mt-5"], [1, "text-secondary", "mb-5", "lead"], ["role", "alert", 1, "alert", "bg-dark", "border-0"], ["type", "button", 1, "btn", "btn-info", "py-1", "px-2", "ms-0", 3, "click"], ["src", "../../assets/img/copy.png", 1, "copy-icon"], [1, "row"], [1, "col"], [1, "row", "mb-4"], [1, "text-light", "fs-3"], [1, "badge", "bg-info", "text-dark"], ["id", "ai-accordionList", 1, "bg-dark"], ["class", "px-3 ", 4, "ngFor", "ngForOf"], ["id", "data-accordionList", 1, "bg-dark"], ["type", "button", 1, "btn", "btn-info", "py-1", "px-2", "goTopBtn", 3, "click"], [1, "bi", "bi-chevron-up", "lead", "text-dark", "fw-bold"], [1, "px-3"], [1, "text-light", "header"], ["type", "button", "data-bs-toggle", "collapse", "aria-expanded", "true", 1, "accordion-button", "fs-4", "text-info", "p-3", 3, "click"], ["data-bs-parent", "#ai-accordionList", 1, "accordion-collapse", "collapse", "px-3"], [1, "accordion-body"], ["class", "text-secondary lead fw-normal", 3, "innerHTML", 4, "ngFor", "ngForOf"], [1, "text-secondary", "lead", "fw-normal", 3, "innerHTML"], ["data-bs-parent", "#data-accordionList", 1, "accordion-collapse", "collapse", "px-3"]],
     template: function AiConceptComponent_Template(rf, ctx) {
       if (rf & 1) {
         \u0275\u0275elementStart(0, "div", 0)(1, "div", 1)(2, "div", 2)(3, "div", 3)(4, "h1", 4);
@@ -27130,546 +27198,681 @@ var FormsModule = /* @__PURE__ */ (() => {
 var _c03 = ["fileInput"];
 function MdScreenRecordComponent_li_10_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "li", 22);
-    \u0275\u0275element(1, "i", 23);
+    \u0275\u0275elementStart(0, "li", 23);
+    \u0275\u0275element(1, "i", 24);
     \u0275\u0275text(2);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
-    const rule_r5 = ctx.$implicit;
+    const rule_r6 = ctx.$implicit;
     \u0275\u0275advance(2);
-    \u0275\u0275textInterpolate1("", rule_r5, " ");
+    \u0275\u0275textInterpolate1("", rule_r6, " ");
   }
 }
 function MdScreenRecordComponent_button_14_Template(rf, ctx) {
   if (rf & 1) {
-    const _r7 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "button", 24);
+    const _r8 = \u0275\u0275getCurrentView();
+    \u0275\u0275elementStart(0, "button", 25);
     \u0275\u0275listener("click", function MdScreenRecordComponent_button_14_Template_button_click_0_listener() {
-      \u0275\u0275restoreView(_r7);
-      const ctx_r6 = \u0275\u0275nextContext();
-      return \u0275\u0275resetView(ctx_r6.goToTop());
+      \u0275\u0275restoreView(_r8);
+      const ctx_r7 = \u0275\u0275nextContext();
+      return \u0275\u0275resetView(ctx_r7.goToTop());
     });
-    \u0275\u0275element(1, "i", 25);
+    \u0275\u0275element(1, "i", 26);
     \u0275\u0275elementEnd();
   }
 }
-function MdScreenRecordComponent_nav_15_Template(rf, ctx) {
+function MdScreenRecordComponent_button_15_Template(rf, ctx) {
   if (rf & 1) {
     const _r10 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "nav", 26)(1, "div", 27)(2, "a", 28);
-    \u0275\u0275text(3, " MarkDown Screen Recording ");
-    \u0275\u0275elementEnd();
-    \u0275\u0275element(4, "img", 29)(5, "i", 30)(6, "img", 31)(7, "i", 30)(8, "img", 32);
-    \u0275\u0275elementStart(9, "button", 33);
-    \u0275\u0275element(10, "span", 34);
-    \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(11, "div", 35)(12, "ul", 36)(13, "li", 37)(14, "div", 38)(15, "button", 39);
-    \u0275\u0275element(16, "i", 40);
-    \u0275\u0275text(17, "Markdown ");
-    \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(18, "input", 41, 42);
-    \u0275\u0275listener("change", function MdScreenRecordComponent_nav_15_Template_input_change_18_listener($event) {
+    \u0275\u0275elementStart(0, "button", 27);
+    \u0275\u0275listener("click", function MdScreenRecordComponent_button_15_Template_button_click_0_listener() {
       \u0275\u0275restoreView(_r10);
       const ctx_r9 = \u0275\u0275nextContext();
-      return \u0275\u0275resetView(ctx_r9.fileInputChanged($event));
+      return \u0275\u0275resetView(ctx_r9.refreshPage());
     });
+    \u0275\u0275element(1, "i", 28);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(20, "label", 43);
-    \u0275\u0275element(21, "i", 44);
-    \u0275\u0275text(22, " Select a MarkDown File ");
+  }
+}
+function MdScreenRecordComponent_nav_16_Template(rf, ctx) {
+  if (rf & 1) {
+    const _r13 = \u0275\u0275getCurrentView();
+    \u0275\u0275elementStart(0, "nav", 29)(1, "div", 30)(2, "span", 31);
+    \u0275\u0275text(3, "MarkDown Screen Recording with Voice");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(23, "button", 45);
-    \u0275\u0275listener("click", function MdScreenRecordComponent_nav_15_Template_button_click_23_listener() {
-      \u0275\u0275restoreView(_r10);
-      const ctx_r11 = \u0275\u0275nextContext();
-      return \u0275\u0275resetView(ctx_r11.analysis());
-    });
-    \u0275\u0275element(24, "i", 46);
-    \u0275\u0275text(25, " Analysis ");
+    \u0275\u0275element(4, "img", 32)(5, "img", 33)(6, "img", 34)(7, "img", 33)(8, "img", 35);
+    \u0275\u0275elementStart(9, "span", 36);
+    \u0275\u0275text(10, "+");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(26, "button", 47);
-    \u0275\u0275listener("click", function MdScreenRecordComponent_nav_15_Template_button_click_26_listener() {
-      \u0275\u0275restoreView(_r10);
+    \u0275\u0275element(11, "img", 37);
+    \u0275\u0275elementStart(12, "button", 38);
+    \u0275\u0275element(13, "span", 39);
+    \u0275\u0275elementEnd();
+    \u0275\u0275elementStart(14, "div", 40)(15, "ul", 41)(16, "li", 42)(17, "div", 43)(18, "a", 44);
+    \u0275\u0275element(19, "i", 45);
+    \u0275\u0275text(20, " Home ");
+    \u0275\u0275elementEnd();
+    \u0275\u0275elementStart(21, "button", 46);
+    \u0275\u0275element(22, "i", 47);
+    \u0275\u0275text(23, "Markdown ");
+    \u0275\u0275elementEnd();
+    \u0275\u0275elementStart(24, "input", 48, 49);
+    \u0275\u0275listener("change", function MdScreenRecordComponent_nav_16_Template_input_change_24_listener($event) {
+      \u0275\u0275restoreView(_r13);
       const ctx_r12 = \u0275\u0275nextContext();
-      return \u0275\u0275resetView(ctx_r12.resetFileInput());
+      return \u0275\u0275resetView(ctx_r12.fileInputChanged($event));
     });
-    \u0275\u0275element(27, "i", 48);
-    \u0275\u0275text(28, "Clean ");
+    \u0275\u0275elementEnd();
+    \u0275\u0275elementStart(26, "label", 50);
+    \u0275\u0275element(27, "i", 51);
+    \u0275\u0275text(28, " Select a MarkDown File ");
+    \u0275\u0275elementEnd();
+    \u0275\u0275elementStart(29, "button", 52);
+    \u0275\u0275listener("click", function MdScreenRecordComponent_nav_16_Template_button_click_29_listener() {
+      \u0275\u0275restoreView(_r13);
+      const ctx_r14 = \u0275\u0275nextContext();
+      return \u0275\u0275resetView(ctx_r14.analysis());
+    });
+    \u0275\u0275element(30, "i", 53);
+    \u0275\u0275text(31, " Analysis ");
+    \u0275\u0275elementEnd();
+    \u0275\u0275elementStart(32, "button", 54);
+    \u0275\u0275listener("click", function MdScreenRecordComponent_nav_16_Template_button_click_32_listener() {
+      \u0275\u0275restoreView(_r13);
+      const ctx_r15 = \u0275\u0275nextContext();
+      return \u0275\u0275resetView(ctx_r15.resetFileInput());
+    });
+    \u0275\u0275element(33, "i", 55);
+    \u0275\u0275text(34, "Clean ");
     \u0275\u0275elementEnd()()();
-    \u0275\u0275elementStart(29, "li", 49)(30, "button", 50);
-    \u0275\u0275listener("click", function MdScreenRecordComponent_nav_15_Template_button_click_30_listener() {
-      \u0275\u0275restoreView(_r10);
-      const ctx_r13 = \u0275\u0275nextContext();
-      return \u0275\u0275resetView(ctx_r13.getStarted());
+    \u0275\u0275elementStart(35, "li", 56)(36, "button", 57);
+    \u0275\u0275listener("click", function MdScreenRecordComponent_nav_16_Template_button_click_36_listener() {
+      \u0275\u0275restoreView(_r13);
+      const ctx_r16 = \u0275\u0275nextContext();
+      return \u0275\u0275resetView(ctx_r16.getStarted());
     });
-    \u0275\u0275element(31, "i", 51);
-    \u0275\u0275text(32, " Get started ");
+    \u0275\u0275element(37, "i", 58);
+    \u0275\u0275text(38, " Get started ");
     \u0275\u0275elementEnd()()()()()();
   }
   if (rf & 2) {
-    const ctx_r2 = \u0275\u0275nextContext();
-    \u0275\u0275advance(23);
-    \u0275\u0275property("disabled", !ctx_r2.readyAnalysis);
+    const ctx_r3 = \u0275\u0275nextContext();
+    \u0275\u0275advance(29);
+    \u0275\u0275property("disabled", !ctx_r3.readyAnalysis);
     \u0275\u0275advance(3);
-    \u0275\u0275property("disabled", !ctx_r2.readyAnalysis);
+    \u0275\u0275property("disabled", !ctx_r3.readyAnalysis);
     \u0275\u0275advance(4);
-    \u0275\u0275property("disabled", ctx_r2.readyGetStarted == false);
+    \u0275\u0275property("disabled", ctx_r3.readyGetStarted == false);
   }
 }
 var _c12 = (a0, a1) => ({
   "text-warning": a0,
   "text-danger": a1
 });
-function MdScreenRecordComponent_div_18_div_1_Template(rf, ctx) {
+function MdScreenRecordComponent_div_19_div_1_Template(rf, ctx) {
   if (rf & 1) {
-    const _r18 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "div", 54)(1, "div", 55)(2, "h1", 56);
+    const _r21 = \u0275\u0275getCurrentView();
+    \u0275\u0275elementStart(0, "div", 61)(1, "div", 62)(2, "h1", 63);
     \u0275\u0275text(3);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(4, "h3", 57);
-    \u0275\u0275element(5, "i", 58);
-    \u0275\u0275text(6, " \u5237\u65B0\u9875\u9762\u540E\u6062\u590D\u5230\u521D\u59CB\u72B6\u6001 ");
+    \u0275\u0275elementStart(4, "h3", 64);
+    \u0275\u0275element(5, "i", 65);
+    \u0275\u0275text(6, " \u4E3A\u4E86\u63D0\u9AD8\u6548\u7387\uFF0C\u53EF\u4EE5\u5C06 TTS \u7684\u6587\u672C\u5185\u5BB9\u4FEE\u6539\u4E3A\u9002\u5408\u8BED\u97F3\u8F93\u51FA\u7684\u5F62\u5F0F\u3002\u6BD4\u5982\u62C6\u89E3\u62FC\u63A5\u7684\u5355\u8BCD\u3001\u5220\u9664\u7A0B\u5E8F\u8F93\u51FA\u91CC\u591A\u4F59\u7684\u5185\u5BB9\u7B49 ");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(7, "h3", 57);
-    \u0275\u0275element(8, "i", 58);
-    \u0275\u0275text(9, " \u63D0\u524D\u6253\u5F00\u5F55\u5C4F\u8F6F\u4EF6\uFF0C\u5728\u5F55\u5C4F\u5012\u8BA1\u65F6\u8BFB\u79D2\u7ED3\u675F\u524D\uFF0C\u5F00\u59CB\u5F55\u5236\u5C4F\u5E55 ");
+    \u0275\u0275elementStart(7, "h3", 66);
+    \u0275\u0275element(8, "i", 67);
+    \u0275\u0275text(9, " \u63D0\u524D\u542F\u52A8\u672C\u5730 TTS \u670D\u52A1\u5668\u7A0B\u5E8F\uFF0C\u63A5\u53D7\u5F53\u524D\u9875\u9762\u8BBF\u95EE TTS API ");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(10, "h3", 59);
-    \u0275\u0275element(11, "i", 58);
-    \u0275\u0275text(12, " \u5F55\u5C4F\u7ED3\u675F\u540E\uFF0C\u5237\u65B0\u6D4F\u89C8\u5668\u7684\u5F53\u524D\u9875\u9762");
-    \u0275\u0275element(13, "i", 60);
-    \u0275\u0275text(14, "\u5373\u53EF\u56DE\u5230\u521D\u59CB\u72B6\u6001 ");
+    \u0275\u0275elementStart(10, "h3", 66);
+    \u0275\u0275element(11, "i", 68);
+    \u0275\u0275text(12, " \u63D0\u524D\u6253\u5F00\u5F55\u5C4F\u8F6F\u4EF6\uFF0C\u5728\u5F55\u5C4F\u5012\u8BA1\u65F6\u8BFB\u79D2\u7ED3\u675F\u524D\uFF0C\u5F00\u59CB\u5F55\u5236\u5C4F\u5E55 ");
+    \u0275\u0275elementEnd();
+    \u0275\u0275element(13, "img", 69);
+    \u0275\u0275elementEnd();
+    \u0275\u0275elementStart(14, "div", 70)(15, "form", 71)(16, "div", 72)(17, "label", 73)(18, "p", 74);
+    \u0275\u0275element(19, "i", 75);
+    \u0275\u0275text(20, "Ready Seconds \u5F55\u5C4F\u5012\u8BA1\u65F6 ");
+    \u0275\u0275elementEnd();
+    \u0275\u0275elementStart(21, "p", 76);
+    \u0275\u0275text(22, "\u6B63\u5F0F\u5F00\u59CB\u524D\u7684\u5012\u8BA1\u65F6\u79D2\u6570 ( \u70B9\u70DF\u65F6\u95F4 )");
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(15, "div", 61)(16, "form")(17, "div", 62)(18, "label", 63)(19, "p", 64);
-    \u0275\u0275element(20, "i", 65);
-    \u0275\u0275text(21, "Ready Seconds \u5F55\u5C4F\u5012\u8BA1\u65F6 ");
-    \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(22, "p", 66);
-    \u0275\u0275text(23, "\u6B63\u5F0F\u5F00\u59CB\u524D\u7684\u5012\u8BA1\u65F6\u79D2\u6570(\u70B9\u70DF\u65F6\u95F4)\uFF1B\u7ECF\u9A8C\u503C\uFF1A\u6839\u636E\u9700\u8981\u8BBE\u7F6E");
-    \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(24, "div", 67)(25, "input", 68);
-    \u0275\u0275listener("ngModelChange", function MdScreenRecordComponent_div_18_div_1_Template_input_ngModelChange_25_listener($event) {
-      \u0275\u0275restoreView(_r18);
-      const ctx_r17 = \u0275\u0275nextContext(2);
-      return \u0275\u0275resetView(ctx_r17.readySecond = $event);
-    });
-    \u0275\u0275elementEnd()()();
-    \u0275\u0275elementStart(26, "div", 62)(27, "label", 69)(28, "p", 64);
-    \u0275\u0275element(29, "i", 70);
-    \u0275\u0275text(30, "Wait for Big Title \u7B49\u5F85\u663E\u793A\u5927\u6807\u9898 ");
-    \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(31, "p", 66);
-    \u0275\u0275text(32, "\u5F55\u5C4F\u8F6F\u4EF6\u8FD0\u884C\u540E\u7B49\u5F85\u663E\u793A\u5927\u6807\u9898\u7684\u79D2\u6570\uFF1B\u7ECF\u9A8C\u503C\uFF1A\u6839\u636E\u9700\u8981\u8BBE\u7F6E");
-    \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(33, "div", 67)(34, "input", 71);
-    \u0275\u0275listener("ngModelChange", function MdScreenRecordComponent_div_18_div_1_Template_input_ngModelChange_34_listener($event) {
-      \u0275\u0275restoreView(_r18);
-      const ctx_r19 = \u0275\u0275nextContext(2);
-      return \u0275\u0275resetView(ctx_r19.waitForBigTitleSecond = $event);
-    });
-    \u0275\u0275elementEnd()()();
-    \u0275\u0275elementStart(35, "div", 62)(36, "label", 72)(37, "p", 64);
-    \u0275\u0275element(38, "i", 73);
-    \u0275\u0275text(39, "Content Delay Seconds \u663E\u793A\u5927\u6807\u9898(\u6587\u4EF6\u540D)\u540E\u7B49\u5F85\u65F6\u95F4 ");
-    \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(40, "p", 66);
-    \u0275\u0275text(41, "\u663E\u793A\u6587\u4EF6\u540D\u540E\uFF0C\u904D\u5386\u6587\u4EF6\u5185\u5BB9\u524D\u7684\u5EF6\u8FDF\u79D2\u6570\uFF1B\u7ECF\u9A8C\u503C\uFF1A4");
-    \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(42, "div", 67)(43, "input", 74);
-    \u0275\u0275listener("ngModelChange", function MdScreenRecordComponent_div_18_div_1_Template_input_ngModelChange_43_listener($event) {
-      \u0275\u0275restoreView(_r18);
+    \u0275\u0275elementStart(23, "div", 77)(24, "input", 78);
+    \u0275\u0275listener("ngModelChange", function MdScreenRecordComponent_div_19_div_1_Template_input_ngModelChange_24_listener($event) {
+      \u0275\u0275restoreView(_r21);
       const ctx_r20 = \u0275\u0275nextContext(2);
-      return \u0275\u0275resetView(ctx_r20.contentDelaySecond = $event);
+      return \u0275\u0275resetView(ctx_r20.readySecond = $event);
     });
-    \u0275\u0275elementEnd()()();
-    \u0275\u0275elementStart(44, "div", 62)(45, "label", 75)(46, "p", 64);
-    \u0275\u0275element(47, "i", 76);
-    \u0275\u0275text(48, "Row Delay Seconds \u904D\u5386\u5230\u5F53\u524D\u884C\u540E\u7B49\u5F85\u65F6\u95F4 ");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(49, "p", 66);
-    \u0275\u0275text(50, "\u904D\u5386\u5230\u6BCF\u4E00\u884C\u540E\uFF0C\u663E\u793A\u5B57\u6BCD(\u6587\u5B57)\u524D\u7684\u5EF6\u8FDF\u79D2\u6570\uFF1B\u7ECF\u9A8C\u503C\uFF1A0.2");
-    \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(51, "div", 67)(52, "input", 77);
-    \u0275\u0275listener("ngModelChange", function MdScreenRecordComponent_div_18_div_1_Template_input_ngModelChange_52_listener($event) {
-      \u0275\u0275restoreView(_r18);
-      const ctx_r21 = \u0275\u0275nextContext(2);
-      return \u0275\u0275resetView(ctx_r21.rowDelaySecond = $event);
-    });
+    \u0275\u0275elementStart(25, "span", 79);
+    \u0275\u0275text(26, "\u79D2");
     \u0275\u0275elementEnd()()();
-    \u0275\u0275elementStart(53, "div", 62)(54, "label", 78)(55, "p", 64);
-    \u0275\u0275element(56, "i", 79);
-    \u0275\u0275text(57, "Letter Delay Seconds \u904D\u5386\u6BCF\u4E2A\u5B57\u6BCD(\u6587\u5B57)\u540E\u7B49\u5F85\u65F6\u95F4 ");
+    \u0275\u0275elementStart(27, "div", 72)(28, "label", 80)(29, "p", 74);
+    \u0275\u0275element(30, "i", 81);
+    \u0275\u0275text(31, "Wait for Big Title \u7B49\u5F85\u663E\u793A\u5927\u6807\u9898 ");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(58, "p", 66);
-    \u0275\u0275text(59, "\u663E\u5F0F\u5F53\u524D\u884C\u7684\u6BCF\u4E2A\u5B57\u6BCD\u7684\u5EF6\u8FDF\u79D2\u6570\uFF1B\u7ECF\u9A8C\u503C\uFF1A0.1");
+    \u0275\u0275elementStart(32, "p", 76);
+    \u0275\u0275text(33, "\u5F55\u5C4F\u8F6F\u4EF6\u8FD0\u884C\u540E\u7B49\u5F85\u663E\u793A\u5927\u6807\u9898\u7684\u79D2\u6570");
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(60, "div", 67)(61, "input", 80);
-    \u0275\u0275listener("ngModelChange", function MdScreenRecordComponent_div_18_div_1_Template_input_ngModelChange_61_listener($event) {
-      \u0275\u0275restoreView(_r18);
+    \u0275\u0275elementStart(34, "div", 77)(35, "input", 82);
+    \u0275\u0275listener("ngModelChange", function MdScreenRecordComponent_div_19_div_1_Template_input_ngModelChange_35_listener($event) {
+      \u0275\u0275restoreView(_r21);
       const ctx_r22 = \u0275\u0275nextContext(2);
-      return \u0275\u0275resetView(ctx_r22.letterDelaySecond = $event);
+      return \u0275\u0275resetView(ctx_r22.waitForBigTitleSecond = $event);
     });
+    \u0275\u0275elementEnd();
+    \u0275\u0275elementStart(36, "span", 79);
+    \u0275\u0275text(37, "\u79D2");
+    \u0275\u0275elementEnd()()();
+    \u0275\u0275elementStart(38, "div", 72)(39, "label", 83)(40, "p", 74);
+    \u0275\u0275element(41, "i", 84);
+    \u0275\u0275text(42, "Content Delay Seconds \u663E\u793A\u5927\u6807\u9898 ( \u6587\u4EF6\u540D ) \u540E\u7B49\u5F85\u65F6\u95F4 ");
+    \u0275\u0275elementEnd();
+    \u0275\u0275elementStart(43, "p", 76);
+    \u0275\u0275text(44, "\u663E\u793A\u6587\u4EF6\u540D\u540E\uFF0C\u904D\u5386\u6587\u4EF6\u5185\u5BB9\u524D\u7684\u5EF6\u8FDF\u79D2\u6570");
+    \u0275\u0275elementEnd()();
+    \u0275\u0275elementStart(45, "div", 77)(46, "input", 85);
+    \u0275\u0275listener("ngModelChange", function MdScreenRecordComponent_div_19_div_1_Template_input_ngModelChange_46_listener($event) {
+      \u0275\u0275restoreView(_r21);
+      const ctx_r23 = \u0275\u0275nextContext(2);
+      return \u0275\u0275resetView(ctx_r23.contentDelaySecond = $event);
+    });
+    \u0275\u0275elementEnd();
+    \u0275\u0275elementStart(47, "span", 79);
+    \u0275\u0275text(48, "\u79D2");
+    \u0275\u0275elementEnd()()();
+    \u0275\u0275elementStart(49, "div", 72)(50, "label", 86)(51, "p", 74);
+    \u0275\u0275element(52, "i", 87);
+    \u0275\u0275text(53, "Title Before Delay Second \u663E\u793A\u4E8C\u7EA7\u6807\u9898\u524D\u5EF6\u8FDF\u7684\u79D2\u6570 ");
+    \u0275\u0275elementEnd();
+    \u0275\u0275elementStart(54, "p", 76);
+    \u0275\u0275text(55, "\u4E0A\u4E00\u4E2A\u90E8\u5206\u663E\u793A\u5B8C\u540E\u7B49\u5F85\u4E0B\u4E00\u90E8\u5206\u51FA\u73B0\u7684\u5EF6\u8FDF\u79D2\u6570");
+    \u0275\u0275elementEnd()();
+    \u0275\u0275elementStart(56, "div", 77)(57, "input", 88);
+    \u0275\u0275listener("ngModelChange", function MdScreenRecordComponent_div_19_div_1_Template_input_ngModelChange_57_listener($event) {
+      \u0275\u0275restoreView(_r21);
+      const ctx_r24 = \u0275\u0275nextContext(2);
+      return \u0275\u0275resetView(ctx_r24.titleBeforeDelaySecond = $event);
+    });
+    \u0275\u0275elementEnd();
+    \u0275\u0275elementStart(58, "span", 79);
+    \u0275\u0275text(59, "\u79D2");
+    \u0275\u0275elementEnd()()();
+    \u0275\u0275elementStart(60, "div", 72)(61, "label", 89)(62, "p", 74);
+    \u0275\u0275element(63, "i", 90);
+    \u0275\u0275text(64, "Row Delay Seconds \u904D\u5386\u5230\u5F53\u524D\u884C\u540E\u7B49\u5F85\u65F6\u95F4 ");
+    \u0275\u0275elementEnd();
+    \u0275\u0275elementStart(65, "p", 76);
+    \u0275\u0275text(66, "\u904D\u5386\u5230\u6BCF\u4E00\u884C\u540E\uFF0C\u663E\u793A\u5B57\u6BCD ( \u6587\u5B57 ) \u524D\u7684\u5EF6\u8FDF\u79D2\u6570");
+    \u0275\u0275elementEnd()();
+    \u0275\u0275elementStart(67, "div", 77)(68, "input", 91);
+    \u0275\u0275listener("ngModelChange", function MdScreenRecordComponent_div_19_div_1_Template_input_ngModelChange_68_listener($event) {
+      \u0275\u0275restoreView(_r21);
+      const ctx_r25 = \u0275\u0275nextContext(2);
+      return \u0275\u0275resetView(ctx_r25.rowDelaySecond = $event);
+    });
+    \u0275\u0275elementEnd();
+    \u0275\u0275elementStart(69, "span", 79);
+    \u0275\u0275text(70, "\u79D2");
+    \u0275\u0275elementEnd()()();
+    \u0275\u0275elementStart(71, "div", 72)(72, "label", 92)(73, "p", 74);
+    \u0275\u0275element(74, "i", 93);
+    \u0275\u0275text(75, "Letter Delay Seconds \u904D\u5386\u6BCF\u4E2A\u5B57\u6BCD ( \u6587\u5B57 ) \u540E\u7B49\u5F85\u65F6\u95F4 ");
+    \u0275\u0275elementEnd();
+    \u0275\u0275elementStart(76, "p", 76);
+    \u0275\u0275text(77, "\u6807\u9898\u3001\u89E3\u91CA\u6BCF\u4E2A\u5B57\u7B26\u7684\u5EF6\u8FDF\u79D2\u6570\u3010AI \u7A0B\u5E8F\u4EE3\u7801\u4E0D\u591A\uFF0C\u4F46\u7406\u8BBA\u903B\u8F91\u66F4\u91CD\u8981\uFF0C\u53EF\u4EE5\u663E\u793A\u6162\u4E00\u4E9B\u3011");
+    \u0275\u0275elementEnd()();
+    \u0275\u0275elementStart(78, "div", 77)(79, "input", 94);
+    \u0275\u0275listener("ngModelChange", function MdScreenRecordComponent_div_19_div_1_Template_input_ngModelChange_79_listener($event) {
+      \u0275\u0275restoreView(_r21);
+      const ctx_r26 = \u0275\u0275nextContext(2);
+      return \u0275\u0275resetView(ctx_r26.letterDelaySecond = $event);
+    });
+    \u0275\u0275elementEnd();
+    \u0275\u0275elementStart(80, "span", 79);
+    \u0275\u0275text(81, "\u79D2");
+    \u0275\u0275elementEnd()()();
+    \u0275\u0275elementStart(82, "div", 72)(83, "label", 95)(84, "p", 74);
+    \u0275\u0275element(85, "i", 96);
+    \u0275\u0275text(86, "Program Delay Seconds \u904D\u5386\u7A0B\u5E8F\u4EE3\u7801\u6216\u8F93\u51FA\u7ED3\u679C\u7684\u6BCF\u4E2A\u5B57\u7B26\u540E\u7684\u7B49\u5F85\u65F6\u95F4 ");
+    \u0275\u0275elementEnd();
+    \u0275\u0275elementStart(87, "p", 76);
+    \u0275\u0275text(88, "\u7A0B\u5E8F\u4EE3\u7801\u4EE5\u53CA\u8F93\u51FA\u7ED3\u679C\u53EF\u4EE5\u52A0\u5FEB\u663E\u793A\u3010\u7A0B\u5E8F\u4EE3\u7801\u4EE5\u53CA\u8F93\u51FA\u7ED3\u679C\u53EF\u4EE5\u663E\u793A\u7684\u5FEB\u4E00\u4E9B\u3011");
+    \u0275\u0275elementEnd()();
+    \u0275\u0275elementStart(89, "div", 77)(90, "input", 97);
+    \u0275\u0275listener("ngModelChange", function MdScreenRecordComponent_div_19_div_1_Template_input_ngModelChange_90_listener($event) {
+      \u0275\u0275restoreView(_r21);
+      const ctx_r27 = \u0275\u0275nextContext(2);
+      return \u0275\u0275resetView(ctx_r27.programDelaySecond = $event);
+    });
+    \u0275\u0275elementEnd();
+    \u0275\u0275elementStart(91, "span", 79);
+    \u0275\u0275text(92, "\u79D2");
+    \u0275\u0275elementEnd()()();
+    \u0275\u0275elementStart(93, "div", 72)(94, "label", 98)(95, "p", 74);
+    \u0275\u0275element(96, "i", 99);
+    \u0275\u0275text(97, "TTS Text Seconds Multiple \u751F\u6210 TTS \u6587\u5B57\u7684\u6570\u5B57\u5B57\u7B26\u4E32\u7684\u500D\u7387 ");
+    \u0275\u0275elementEnd();
+    \u0275\u0275elementStart(98, "p", 76);
+    \u0275\u0275text(99, "\u7A0B\u5E8F\u540E\u53F0\u904D\u5386\u8FD9\u4E2A\u6570\u5B57\u6570\u7EC4\uFF0C\u7B49\u5F85 TTS \u8BED\u97F3\u64AD\u653E\u5B8C\u6210");
+    \u0275\u0275elementEnd()();
+    \u0275\u0275elementStart(100, "div", 77)(101, "input", 100);
+    \u0275\u0275listener("ngModelChange", function MdScreenRecordComponent_div_19_div_1_Template_input_ngModelChange_101_listener($event) {
+      \u0275\u0275restoreView(_r21);
+      const ctx_r28 = \u0275\u0275nextContext(2);
+      return \u0275\u0275resetView(ctx_r28.ttsTextSecondsMultiple = $event);
+    });
+    \u0275\u0275elementEnd();
+    \u0275\u0275elementStart(102, "span", 79);
+    \u0275\u0275text(103, "\u79D2");
     \u0275\u0275elementEnd()()()()()();
   }
   if (rf & 2) {
-    const ctx_r14 = \u0275\u0275nextContext(2);
+    const ctx_r17 = \u0275\u0275nextContext(2);
     \u0275\u0275advance(2);
-    \u0275\u0275property("ngClass", \u0275\u0275pureFunction2(7, _c12, ctx_r14.isGetStarted == false, ctx_r14.isGetStarted == true));
+    \u0275\u0275property("ngClass", \u0275\u0275pureFunction2(10, _c12, ctx_r17.isGetStarted == false, ctx_r17.isGetStarted == true));
     \u0275\u0275advance(1);
-    \u0275\u0275textInterpolate1(" ", ctx_r14.readySecond, " \u79D2\u540E\u6B63\u5F0F\u5F00\u59CB");
-    \u0275\u0275advance(22);
-    \u0275\u0275property("ngModel", ctx_r14.readySecond);
-    \u0275\u0275advance(9);
-    \u0275\u0275property("ngModel", ctx_r14.waitForBigTitleSecond);
-    \u0275\u0275advance(9);
-    \u0275\u0275property("ngModel", ctx_r14.contentDelaySecond);
-    \u0275\u0275advance(9);
-    \u0275\u0275property("ngModel", ctx_r14.rowDelaySecond);
-    \u0275\u0275advance(9);
-    \u0275\u0275property("ngModel", ctx_r14.letterDelaySecond);
+    \u0275\u0275textInterpolate1(" ", ctx_r17.readySecond, " \u79D2\u540E\u6B63\u5F0F\u5F00\u59CB");
+    \u0275\u0275advance(21);
+    \u0275\u0275property("ngModel", ctx_r17.readySecond);
+    \u0275\u0275advance(11);
+    \u0275\u0275property("ngModel", ctx_r17.waitForBigTitleSecond);
+    \u0275\u0275advance(11);
+    \u0275\u0275property("ngModel", ctx_r17.contentDelaySecond);
+    \u0275\u0275advance(11);
+    \u0275\u0275property("ngModel", ctx_r17.titleBeforeDelaySecond);
+    \u0275\u0275advance(11);
+    \u0275\u0275property("ngModel", ctx_r17.rowDelaySecond);
+    \u0275\u0275advance(11);
+    \u0275\u0275property("ngModel", ctx_r17.letterDelaySecond);
+    \u0275\u0275advance(11);
+    \u0275\u0275property("ngModel", ctx_r17.programDelaySecond);
+    \u0275\u0275advance(11);
+    \u0275\u0275property("ngModel", ctx_r17.ttsTextSecondsMultiple);
   }
 }
-function MdScreenRecordComponent_div_18_div_2_Template(rf, ctx) {
+function MdScreenRecordComponent_div_19_div_2_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 81)(1, "div", 82)(2, "span", 83);
+    \u0275\u0275elementStart(0, "div", 101)(1, "div", 102)(2, "span", 103);
     \u0275\u0275text(3);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(4, "span", 84);
+    \u0275\u0275elementStart(4, "span", 104);
     \u0275\u0275text(5, ".md");
     \u0275\u0275elementEnd()()();
   }
   if (rf & 2) {
-    const ctx_r15 = \u0275\u0275nextContext(2);
+    const ctx_r18 = \u0275\u0275nextContext(2);
     \u0275\u0275advance(3);
-    \u0275\u0275textInterpolate(ctx_r15.mdFilename);
+    \u0275\u0275textInterpolate(ctx_r18.mdFilename);
   }
 }
-function MdScreenRecordComponent_div_18_div_3_pre_2_Template(rf, ctx) {
+function MdScreenRecordComponent_div_19_div_3_pre_2_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "pre", 89);
+    \u0275\u0275elementStart(0, "pre", 109);
     \u0275\u0275text(1);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
-    const ctx_r23 = \u0275\u0275nextContext(3);
+    const ctx_r29 = \u0275\u0275nextContext(3);
     \u0275\u0275advance(1);
-    \u0275\u0275textInterpolate(ctx_r23.fileContent);
+    \u0275\u0275textInterpolate(ctx_r29.fileContent);
   }
 }
-function MdScreenRecordComponent_div_18_div_3_div_4_ul_1_div_3_div_1_Template(rf, ctx) {
+function MdScreenRecordComponent_div_19_div_3_div_4_ul_1_div_3_div_1_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div")(1, "span", 98);
+    \u0275\u0275elementStart(0, "div")(1, "span", 118);
     \u0275\u0275text(2);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(3, "span", 99);
+    \u0275\u0275elementStart(3, "span", 119);
     \u0275\u0275text(4);
     \u0275\u0275elementEnd()();
   }
   if (rf & 2) {
-    const item_r30 = \u0275\u0275nextContext().$implicit;
-    const i_r27 = \u0275\u0275nextContext().index;
+    const item_r36 = \u0275\u0275nextContext().$implicit;
+    const i_r33 = \u0275\u0275nextContext().index;
     \u0275\u0275advance(2);
-    \u0275\u0275textInterpolate1("Section ", i_r27 + 1, " :");
+    \u0275\u0275textInterpolate1("Section ", i_r33 + 1, " :");
     \u0275\u0275advance(2);
-    \u0275\u0275textInterpolate(item_r30.value);
+    \u0275\u0275textInterpolate(item_r36.value);
   }
 }
-function MdScreenRecordComponent_div_18_div_3_div_4_ul_1_div_3_Template(rf, ctx) {
+function MdScreenRecordComponent_div_19_div_3_div_4_ul_1_div_3_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementStart(0, "div");
-    \u0275\u0275template(1, MdScreenRecordComponent_div_18_div_3_div_4_ul_1_div_3_div_1_Template, 5, 2, "div", 97);
+    \u0275\u0275template(1, MdScreenRecordComponent_div_19_div_3_div_4_ul_1_div_3_div_1_Template, 5, 2, "div", 117);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
-    const item_r30 = ctx.$implicit;
+    const item_r36 = ctx.$implicit;
     \u0275\u0275advance(1);
-    \u0275\u0275property("ngIf", item_r30.key == "title");
+    \u0275\u0275property("ngIf", item_r36.key == "title");
   }
 }
-function MdScreenRecordComponent_div_18_div_3_div_4_ul_1_li_4_i_5_Template(rf, ctx) {
+function MdScreenRecordComponent_div_19_div_3_div_4_ul_1_li_4_i_5_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275element(0, "i", 111);
+    \u0275\u0275element(0, "i", 132);
   }
 }
-function MdScreenRecordComponent_div_18_div_3_div_4_ul_1_li_4_i_6_Template(rf, ctx) {
+function MdScreenRecordComponent_div_19_div_3_div_4_ul_1_li_4_i_6_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275element(0, "i", 112);
+    \u0275\u0275element(0, "i", 133);
   }
 }
-function MdScreenRecordComponent_div_18_div_3_div_4_ul_1_li_4_i_7_Template(rf, ctx) {
+function MdScreenRecordComponent_div_19_div_3_div_4_ul_1_li_4_i_7_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275element(0, "i", 113);
+    \u0275\u0275element(0, "i", 134);
   }
 }
-function MdScreenRecordComponent_div_18_div_3_div_4_ul_1_li_4_i_8_Template(rf, ctx) {
+function MdScreenRecordComponent_div_19_div_3_div_4_ul_1_li_4_i_8_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275element(0, "i", 114);
+    \u0275\u0275element(0, "i", 135);
   }
 }
-function MdScreenRecordComponent_div_18_div_3_div_4_ul_1_li_4_i_9_Template(rf, ctx) {
+function MdScreenRecordComponent_div_19_div_3_div_4_ul_1_li_4_i_9_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275element(0, "i", 115);
+    \u0275\u0275element(0, "i", 136);
   }
 }
-function MdScreenRecordComponent_div_18_div_3_div_4_ul_1_li_4_i_10_Template(rf, ctx) {
+function MdScreenRecordComponent_div_19_div_3_div_4_ul_1_li_4_i_10_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275element(0, "i", 116);
+    \u0275\u0275element(0, "i", 137);
   }
 }
-function MdScreenRecordComponent_div_18_div_3_div_4_ul_1_li_4_i_11_Template(rf, ctx) {
+function MdScreenRecordComponent_div_19_div_3_div_4_ul_1_li_4_i_11_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275element(0, "i", 117);
+    \u0275\u0275element(0, "i", 138);
   }
 }
-function MdScreenRecordComponent_div_18_div_3_div_4_ul_1_li_4_Template(rf, ctx) {
+function MdScreenRecordComponent_div_19_div_3_div_4_ul_1_li_4_i_12_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "li", 100)(1, "div", 81)(2, "div", 101);
+    \u0275\u0275element(0, "i", 139);
+  }
+}
+function MdScreenRecordComponent_div_19_div_3_div_4_ul_1_li_4_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementStart(0, "li", 120)(1, "div", 101)(2, "div", 121);
     \u0275\u0275text(3, "key");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(4, "div", 102);
-    \u0275\u0275template(5, MdScreenRecordComponent_div_18_div_3_div_4_ul_1_li_4_i_5_Template, 1, 0, "i", 103)(6, MdScreenRecordComponent_div_18_div_3_div_4_ul_1_li_4_i_6_Template, 1, 0, "i", 104)(7, MdScreenRecordComponent_div_18_div_3_div_4_ul_1_li_4_i_7_Template, 1, 0, "i", 105)(8, MdScreenRecordComponent_div_18_div_3_div_4_ul_1_li_4_i_8_Template, 1, 0, "i", 106)(9, MdScreenRecordComponent_div_18_div_3_div_4_ul_1_li_4_i_9_Template, 1, 0, "i", 107)(10, MdScreenRecordComponent_div_18_div_3_div_4_ul_1_li_4_i_10_Template, 1, 0, "i", 108)(11, MdScreenRecordComponent_div_18_div_3_div_4_ul_1_li_4_i_11_Template, 1, 0, "i", 109);
-    \u0275\u0275text(12);
+    \u0275\u0275elementStart(4, "div", 122);
+    \u0275\u0275template(5, MdScreenRecordComponent_div_19_div_3_div_4_ul_1_li_4_i_5_Template, 1, 0, "i", 123)(6, MdScreenRecordComponent_div_19_div_3_div_4_ul_1_li_4_i_6_Template, 1, 0, "i", 124)(7, MdScreenRecordComponent_div_19_div_3_div_4_ul_1_li_4_i_7_Template, 1, 0, "i", 125)(8, MdScreenRecordComponent_div_19_div_3_div_4_ul_1_li_4_i_8_Template, 1, 0, "i", 126)(9, MdScreenRecordComponent_div_19_div_3_div_4_ul_1_li_4_i_9_Template, 1, 0, "i", 127)(10, MdScreenRecordComponent_div_19_div_3_div_4_ul_1_li_4_i_10_Template, 1, 0, "i", 128)(11, MdScreenRecordComponent_div_19_div_3_div_4_ul_1_li_4_i_11_Template, 1, 0, "i", 129)(12, MdScreenRecordComponent_div_19_div_3_div_4_ul_1_li_4_i_12_Template, 1, 0, "i", 130);
+    \u0275\u0275text(13);
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(13, "div", 81)(14, "div", 101);
-    \u0275\u0275text(15, "val");
+    \u0275\u0275elementStart(14, "div", 101)(15, "div", 121);
+    \u0275\u0275text(16, "val");
     \u0275\u0275elementEnd();
-    \u0275\u0275element(16, "div", 110);
+    \u0275\u0275element(17, "div", 131);
     \u0275\u0275elementEnd()();
   }
   if (rf & 2) {
-    const item_r34 = ctx.$implicit;
+    const item_r40 = ctx.$implicit;
     \u0275\u0275advance(5);
-    \u0275\u0275property("ngIf", item_r34.key == "title");
+    \u0275\u0275property("ngIf", item_r40.key == "title");
     \u0275\u0275advance(1);
-    \u0275\u0275property("ngIf", item_r34.key == "desc");
+    \u0275\u0275property("ngIf", item_r40.key == "desc");
     \u0275\u0275advance(1);
-    \u0275\u0275property("ngIf", item_r34.key == "code");
+    \u0275\u0275property("ngIf", item_r40.key == "code");
     \u0275\u0275advance(1);
-    \u0275\u0275property("ngIf", item_r34.key == "graph");
+    \u0275\u0275property("ngIf", item_r40.key == "graph");
     \u0275\u0275advance(1);
-    \u0275\u0275property("ngIf", item_r34.key == "output");
+    \u0275\u0275property("ngIf", item_r40.key == "voice");
     \u0275\u0275advance(1);
-    \u0275\u0275property("ngIf", item_r34.key == "option" && item_r34.value == "codeStart");
+    \u0275\u0275property("ngIf", item_r40.key == "output");
     \u0275\u0275advance(1);
-    \u0275\u0275property("ngIf", item_r34.key == "option" && item_r34.value == "codeEnd");
+    \u0275\u0275property("ngIf", item_r40.key == "option" && item_r40.value == "codeStart");
     \u0275\u0275advance(1);
-    \u0275\u0275textInterpolate1(" ", item_r34.key, " ");
+    \u0275\u0275property("ngIf", item_r40.key == "option" && item_r40.value == "codeEnd");
+    \u0275\u0275advance(1);
+    \u0275\u0275textInterpolate1(" ", item_r40.key, " ");
     \u0275\u0275advance(4);
-    \u0275\u0275property("innerHTML", item_r34.value, \u0275\u0275sanitizeHtml);
+    \u0275\u0275property("innerHTML", item_r40.value, \u0275\u0275sanitizeHtml);
   }
 }
-function MdScreenRecordComponent_div_18_div_3_div_4_ul_1_Template(rf, ctx) {
+function MdScreenRecordComponent_div_19_div_3_div_4_ul_1_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "ul", 92)(1, "div", 93)(2, "div", 94);
-    \u0275\u0275template(3, MdScreenRecordComponent_div_18_div_3_div_4_ul_1_div_3_Template, 2, 1, "div", 95);
+    \u0275\u0275elementStart(0, "ul", 112)(1, "div", 113)(2, "div", 114);
+    \u0275\u0275template(3, MdScreenRecordComponent_div_19_div_3_div_4_ul_1_div_3_Template, 2, 1, "div", 115);
     \u0275\u0275elementEnd()();
-    \u0275\u0275template(4, MdScreenRecordComponent_div_18_div_3_div_4_ul_1_li_4_Template, 17, 9, "li", 96);
+    \u0275\u0275template(4, MdScreenRecordComponent_div_19_div_3_div_4_ul_1_li_4_Template, 18, 10, "li", 116);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
-    const list_r26 = ctx.$implicit;
+    const list_r32 = ctx.$implicit;
     \u0275\u0275advance(3);
-    \u0275\u0275property("ngForOf", list_r26);
+    \u0275\u0275property("ngForOf", list_r32);
     \u0275\u0275advance(1);
-    \u0275\u0275property("ngForOf", list_r26);
+    \u0275\u0275property("ngForOf", list_r32);
   }
 }
-function MdScreenRecordComponent_div_18_div_3_div_4_Template(rf, ctx) {
+function MdScreenRecordComponent_div_19_div_3_div_4_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 90);
-    \u0275\u0275template(1, MdScreenRecordComponent_div_18_div_3_div_4_ul_1_Template, 5, 2, "ul", 91);
+    \u0275\u0275elementStart(0, "div", 110);
+    \u0275\u0275template(1, MdScreenRecordComponent_div_19_div_3_div_4_ul_1_Template, 5, 2, "ul", 111);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
-    const ctx_r24 = \u0275\u0275nextContext(3);
+    const ctx_r30 = \u0275\u0275nextContext(3);
     \u0275\u0275advance(1);
-    \u0275\u0275property("ngForOf", ctx_r24.decodeContent);
+    \u0275\u0275property("ngForOf", ctx_r30.decodeContent);
   }
 }
-function MdScreenRecordComponent_div_18_div_3_Template(rf, ctx) {
+function MdScreenRecordComponent_div_19_div_3_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 81)(1, "div", 85);
-    \u0275\u0275template(2, MdScreenRecordComponent_div_18_div_3_pre_2_Template, 2, 1, "pre", 86);
+    \u0275\u0275elementStart(0, "div", 101)(1, "div", 105);
+    \u0275\u0275template(2, MdScreenRecordComponent_div_19_div_3_pre_2_Template, 2, 1, "pre", 106);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(3, "div", 87);
-    \u0275\u0275template(4, MdScreenRecordComponent_div_18_div_3_div_4_Template, 2, 1, "div", 88);
+    \u0275\u0275elementStart(3, "div", 107);
+    \u0275\u0275template(4, MdScreenRecordComponent_div_19_div_3_div_4_Template, 2, 1, "div", 108);
     \u0275\u0275elementEnd()();
   }
   if (rf & 2) {
-    const ctx_r16 = \u0275\u0275nextContext(2);
+    const ctx_r19 = \u0275\u0275nextContext(2);
     \u0275\u0275advance(2);
-    \u0275\u0275property("ngIf", ctx_r16.fileContent != "");
+    \u0275\u0275property("ngIf", ctx_r19.fileContent != "");
     \u0275\u0275advance(2);
-    \u0275\u0275property("ngIf", ctx_r16.decodeContent.length != 0);
+    \u0275\u0275property("ngIf", ctx_r19.decodeContent.length != 0);
   }
 }
-function MdScreenRecordComponent_div_18_Template(rf, ctx) {
+function MdScreenRecordComponent_div_19_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 27);
-    \u0275\u0275template(1, MdScreenRecordComponent_div_18_div_1_Template, 62, 10, "div", 52)(2, MdScreenRecordComponent_div_18_div_2_Template, 6, 1, "div", 53)(3, MdScreenRecordComponent_div_18_div_3_Template, 5, 2, "div", 53);
+    \u0275\u0275elementStart(0, "div", 30);
+    \u0275\u0275template(1, MdScreenRecordComponent_div_19_div_1_Template, 104, 13, "div", 59)(2, MdScreenRecordComponent_div_19_div_2_Template, 6, 1, "div", 60)(3, MdScreenRecordComponent_div_19_div_3_Template, 5, 2, "div", 60);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
-    const ctx_r3 = \u0275\u0275nextContext();
+    const ctx_r4 = \u0275\u0275nextContext();
     \u0275\u0275advance(1);
-    \u0275\u0275property("ngIf", ctx_r3.readySecond != 0);
+    \u0275\u0275property("ngIf", ctx_r4.readySecond != 0);
     \u0275\u0275advance(1);
-    \u0275\u0275property("ngIf", ctx_r3.mdFilename != "" && ctx_r3.readySecond != 0);
+    \u0275\u0275property("ngIf", ctx_r4.mdFilename != "" && ctx_r4.readySecond != 0);
     \u0275\u0275advance(1);
-    \u0275\u0275property("ngIf", ctx_r3.readySecond != 0);
+    \u0275\u0275property("ngIf", ctx_r4.readySecond != 0);
   }
 }
-function MdScreenRecordComponent_div_25_div_1_span_1_Template(rf, ctx) {
+function MdScreenRecordComponent_div_26_div_1_span_1_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275element(0, "span", 128);
+    \u0275\u0275element(0, "span", 151);
   }
   if (rf & 2) {
-    const letter_r52 = ctx.$implicit;
-    \u0275\u0275property("innerHTML", letter_r52, \u0275\u0275sanitizeHtml);
+    const letter_r60 = ctx.$implicit;
+    \u0275\u0275property("innerHTML", letter_r60, \u0275\u0275sanitizeHtml);
   }
 }
-function MdScreenRecordComponent_div_25_div_1_Template(rf, ctx) {
+function MdScreenRecordComponent_div_26_div_1_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 126);
-    \u0275\u0275template(1, MdScreenRecordComponent_div_25_div_1_span_1_Template, 1, 1, "span", 127);
+    \u0275\u0275elementStart(0, "div", 149);
+    \u0275\u0275template(1, MdScreenRecordComponent_div_26_div_1_span_1_Template, 1, 1, "span", 150);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
-    const item_r43 = \u0275\u0275nextContext().$implicit;
+    const item_r50 = \u0275\u0275nextContext().$implicit;
     \u0275\u0275advance(1);
-    \u0275\u0275property("ngForOf", item_r43.letters);
+    \u0275\u0275property("ngForOf", item_r50.letters);
   }
 }
-function MdScreenRecordComponent_div_25_p_2_span_1_Template(rf, ctx) {
+function MdScreenRecordComponent_div_26_p_2_span_1_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275element(0, "span", 131);
+    \u0275\u0275element(0, "span", 154);
   }
   if (rf & 2) {
-    const letter_r55 = ctx.$implicit;
-    \u0275\u0275property("innerHTML", letter_r55, \u0275\u0275sanitizeHtml);
+    const letter_r63 = ctx.$implicit;
+    \u0275\u0275property("innerHTML", letter_r63, \u0275\u0275sanitizeHtml);
   }
 }
-function MdScreenRecordComponent_div_25_p_2_Template(rf, ctx) {
+function MdScreenRecordComponent_div_26_p_2_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "p", 129);
-    \u0275\u0275template(1, MdScreenRecordComponent_div_25_p_2_span_1_Template, 1, 1, "span", 130);
+    \u0275\u0275elementStart(0, "p", 152);
+    \u0275\u0275template(1, MdScreenRecordComponent_div_26_p_2_span_1_Template, 1, 1, "span", 153);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
-    const item_r43 = \u0275\u0275nextContext().$implicit;
+    const item_r50 = \u0275\u0275nextContext().$implicit;
     \u0275\u0275advance(1);
-    \u0275\u0275property("ngForOf", item_r43.letters);
+    \u0275\u0275property("ngForOf", item_r50.letters);
   }
 }
-function MdScreenRecordComponent_div_25_div_3_Template(rf, ctx) {
+function MdScreenRecordComponent_div_26_div_3_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 132);
-    \u0275\u0275element(1, "img", 133);
+    \u0275\u0275elementStart(0, "div", 155);
+    \u0275\u0275element(1, "img", 156);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
-    const item_r43 = \u0275\u0275nextContext().$implicit;
+    const item_r50 = \u0275\u0275nextContext().$implicit;
     \u0275\u0275advance(1);
-    \u0275\u0275property("src", item_r43.letters[0], \u0275\u0275sanitizeUrl);
+    \u0275\u0275property("src", item_r50.letters[0], \u0275\u0275sanitizeUrl);
   }
 }
-function MdScreenRecordComponent_div_25_div_4_span_1_Template(rf, ctx) {
+function MdScreenRecordComponent_div_26_div_4_span_5_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275element(0, "span", 136);
+    \u0275\u0275element(0, "span", 162);
   }
   if (rf & 2) {
-    const letter_r59 = ctx.$implicit;
-    \u0275\u0275property("innerHTML", letter_r59, \u0275\u0275sanitizeHtml);
+    const letter_r67 = ctx.$implicit;
+    \u0275\u0275property("innerHTML", letter_r67, \u0275\u0275sanitizeHtml);
   }
 }
-function MdScreenRecordComponent_div_25_div_4_Template(rf, ctx) {
+function MdScreenRecordComponent_div_26_div_4_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 134);
-    \u0275\u0275template(1, MdScreenRecordComponent_div_25_div_4_span_1_Template, 1, 1, "span", 135);
+    \u0275\u0275elementStart(0, "div", 157)(1, "div", 158);
+    \u0275\u0275element(2, "i", 159);
+    \u0275\u0275elementStart(3, "span", 160);
+    \u0275\u0275text(4, "\u8BED\u97F3\u8BB2\u89E3");
+    \u0275\u0275elementEnd()();
+    \u0275\u0275template(5, MdScreenRecordComponent_div_26_div_4_span_5_Template, 1, 1, "span", 161);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
-    const item_r43 = \u0275\u0275nextContext().$implicit;
-    \u0275\u0275advance(1);
-    \u0275\u0275property("ngForOf", item_r43.letters);
+    const item_r50 = \u0275\u0275nextContext().$implicit;
+    \u0275\u0275advance(5);
+    \u0275\u0275property("ngForOf", item_r50.letters);
   }
 }
-function MdScreenRecordComponent_div_25_div_5_Template(rf, ctx) {
+function MdScreenRecordComponent_div_26_div_5_span_1_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275element(0, "div", 137);
-  }
-}
-function MdScreenRecordComponent_div_25_div_6_span_1_Template(rf, ctx) {
-  if (rf & 1) {
-    \u0275\u0275element(0, "span", 140);
+    \u0275\u0275element(0, "span", 165);
   }
   if (rf & 2) {
-    const letter_r62 = ctx.$implicit;
-    \u0275\u0275property("innerHTML", letter_r62, \u0275\u0275sanitizeHtml);
+    const letter_r70 = ctx.$implicit;
+    \u0275\u0275property("innerHTML", letter_r70, \u0275\u0275sanitizeHtml);
   }
 }
-function MdScreenRecordComponent_div_25_div_6_Template(rf, ctx) {
+function MdScreenRecordComponent_div_26_div_5_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 138);
-    \u0275\u0275template(1, MdScreenRecordComponent_div_25_div_6_span_1_Template, 1, 1, "span", 139);
+    \u0275\u0275elementStart(0, "div", 163);
+    \u0275\u0275template(1, MdScreenRecordComponent_div_26_div_5_span_1_Template, 1, 1, "span", 164);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
-    const item_r43 = \u0275\u0275nextContext().$implicit;
+    const item_r50 = \u0275\u0275nextContext().$implicit;
     \u0275\u0275advance(1);
-    \u0275\u0275property("ngForOf", item_r43.letters);
+    \u0275\u0275property("ngForOf", item_r50.letters);
   }
 }
-function MdScreenRecordComponent_div_25_div_7_span_1_Template(rf, ctx) {
+function MdScreenRecordComponent_div_26_div_6_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275element(0, "span", 143);
+    \u0275\u0275element(0, "div", 166);
+  }
+}
+function MdScreenRecordComponent_div_26_div_7_span_1_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275element(0, "span", 169);
   }
   if (rf & 2) {
-    const letter_r65 = ctx.$implicit;
-    \u0275\u0275property("innerHTML", letter_r65, \u0275\u0275sanitizeHtml);
+    const letter_r73 = ctx.$implicit;
+    \u0275\u0275property("innerHTML", letter_r73, \u0275\u0275sanitizeHtml);
   }
 }
-function MdScreenRecordComponent_div_25_div_7_Template(rf, ctx) {
+function MdScreenRecordComponent_div_26_div_7_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 141);
-    \u0275\u0275template(1, MdScreenRecordComponent_div_25_div_7_span_1_Template, 1, 1, "span", 142);
+    \u0275\u0275elementStart(0, "div", 167);
+    \u0275\u0275template(1, MdScreenRecordComponent_div_26_div_7_span_1_Template, 1, 1, "span", 168);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
-    const item_r43 = \u0275\u0275nextContext().$implicit;
+    const item_r50 = \u0275\u0275nextContext().$implicit;
     \u0275\u0275advance(1);
-    \u0275\u0275property("ngForOf", item_r43.letters);
+    \u0275\u0275property("ngForOf", item_r50.letters);
   }
 }
-function MdScreenRecordComponent_div_25_Template(rf, ctx) {
+function MdScreenRecordComponent_div_26_div_8_span_1_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 118);
-    \u0275\u0275template(1, MdScreenRecordComponent_div_25_div_1_Template, 2, 1, "div", 119)(2, MdScreenRecordComponent_div_25_p_2_Template, 2, 1, "p", 120)(3, MdScreenRecordComponent_div_25_div_3_Template, 2, 1, "div", 121)(4, MdScreenRecordComponent_div_25_div_4_Template, 2, 1, "div", 122)(5, MdScreenRecordComponent_div_25_div_5_Template, 1, 0, "div", 123)(6, MdScreenRecordComponent_div_25_div_6_Template, 2, 1, "div", 124)(7, MdScreenRecordComponent_div_25_div_7_Template, 2, 1, "div", 125);
+    \u0275\u0275element(0, "span", 172);
+  }
+  if (rf & 2) {
+    const letter_r76 = ctx.$implicit;
+    \u0275\u0275property("innerHTML", letter_r76, \u0275\u0275sanitizeHtml);
+  }
+}
+function MdScreenRecordComponent_div_26_div_8_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementStart(0, "div", 170);
+    \u0275\u0275template(1, MdScreenRecordComponent_div_26_div_8_span_1_Template, 1, 1, "span", 171);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
-    const item_r43 = ctx.$implicit;
+    const item_r50 = \u0275\u0275nextContext().$implicit;
     \u0275\u0275advance(1);
-    \u0275\u0275property("ngIf", item_r43.key == "title");
+    \u0275\u0275property("ngForOf", item_r50.letters);
+  }
+}
+function MdScreenRecordComponent_div_26_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementStart(0, "div", 140);
+    \u0275\u0275template(1, MdScreenRecordComponent_div_26_div_1_Template, 2, 1, "div", 141)(2, MdScreenRecordComponent_div_26_p_2_Template, 2, 1, "p", 142)(3, MdScreenRecordComponent_div_26_div_3_Template, 2, 1, "div", 143)(4, MdScreenRecordComponent_div_26_div_4_Template, 6, 1, "div", 144)(5, MdScreenRecordComponent_div_26_div_5_Template, 2, 1, "div", 145)(6, MdScreenRecordComponent_div_26_div_6_Template, 1, 0, "div", 146)(7, MdScreenRecordComponent_div_26_div_7_Template, 2, 1, "div", 147)(8, MdScreenRecordComponent_div_26_div_8_Template, 2, 1, "div", 148);
+    \u0275\u0275elementEnd();
+  }
+  if (rf & 2) {
+    const item_r50 = ctx.$implicit;
     \u0275\u0275advance(1);
-    \u0275\u0275property("ngIf", item_r43.key == "desc");
+    \u0275\u0275property("ngIf", item_r50.key == "title");
     \u0275\u0275advance(1);
-    \u0275\u0275property("ngIf", item_r43.key == "graph");
+    \u0275\u0275property("ngIf", item_r50.key == "desc");
     \u0275\u0275advance(1);
-    \u0275\u0275property("ngIf", item_r43.key == "annotation");
+    \u0275\u0275property("ngIf", item_r50.key == "graph");
     \u0275\u0275advance(1);
-    \u0275\u0275property("ngIf", item_r43.key == "option");
+    \u0275\u0275property("ngIf", item_r50.key == "voiceLettersLength");
     \u0275\u0275advance(1);
-    \u0275\u0275property("ngIf", item_r43.key == "code");
+    \u0275\u0275property("ngIf", item_r50.key == "annotation");
     \u0275\u0275advance(1);
-    \u0275\u0275property("ngIf", item_r43.key == "output");
+    \u0275\u0275property("ngIf", item_r50.key == "option");
+    \u0275\u0275advance(1);
+    \u0275\u0275property("ngIf", item_r50.key == "code");
+    \u0275\u0275advance(1);
+    \u0275\u0275property("ngIf", item_r50.key == "output");
   }
 }
 var MdScreenRecordComponent = /* @__PURE__ */ (() => {
   const _MdScreenRecordComponent = class _MdScreenRecordComponent {
-    constructor() {
+    constructor(localService) {
+      this.localService = localService;
       this.markdownRules = [
+        "\u63D0\u524D\u6253\u5F00\u672C\u5730\u5F55\u5C4F\u8F6F\u4EF6\uFF08\u4F8B\u5982\uFF1A\u526A\u6620\u3001\u5FC5\u526A\u7B49\uFF09\u5F55\u5236\u9875\u9762\u7684\u89C6\u9891\uFF0C\u7528\u7F51\u9875\u7A0B\u5E8F\u52A8\u6001\u7684\u64AD\u653E\u5E8F\u5217\u5316\u5B57\u7B26\u4E32\u5185\u5BB9",
+        "\u63D0\u524D\u6253\u5F00\u672C\u5730\u7684 pyttsx3-server \u670D\u52A1\u5668\u7A0B\u5E8F\uFF0C\u7B49\u5F85\u5B57\u7B26\u4E32\u7684\u8F93\u5165",
+        "\u64AD\u653E\u7684\u8FC7\u7A0B\u4E2D\uFF0C\u5982\u679C\u9047\u5230\u5B57\u7B26\u4E32\u4E2D\u6807\u6CE8\u6709\u8BED\u97F3\u8F93\u51FA\u7684\u6807\u8BC6\uFF0C\u5219\u901A\u8FC7\u524D\u7AEF\u7A0B\u5E8F\u5C06\u9700\u8981\u8FDB\u884C TTS \u5904\u7406\u7684\u5B57\u7B26\u4E32\u53D1\u9001\u5230\u672C\u5730\u7684 pyttsx3-server \u670D\u52A1\u5668\uFF0C\u670D\u52A1\u5668\u4F1A\u81EA\u52A8\u8F93\u51FA\u8BED\u97F3\uFF0C\u6B64\u65F6\u5F55\u5C4F\u8F6F\u4EF6\u4E5F\u4F1A\u81EA\u52A8\u6536\u5F55\u8BED\u97F3\u5185\u5BB9",
+        "(\u53EF\u9009) \u53EF\u4EE5\u4F7F\u7528\u9875\u9762\u7A0B\u5E8F\u4ECE MarkDown \u4EE3\u7801\uFF0C\u4E5F\u53EF\u4EE5\u4F7F\u7528\u672C\u5730\u89C6\u9891\u7F16\u8F91\u8F6F\u4EF6\u4ECE\u8BED\u97F3\u5185\u5BB9\u4E2D\u751F\u6210\u5B57\u5E55",
+        "\u5C06\u8C03\u6574\u5408\u9002\u7684\u89C6\u9891\u6587\u4EF6 (*.mp4) \u4E0A\u4F20\u5230 YouTube \u5E73\u53F0",
+        "\u575A\u6301\u66F4\u65B0\u5185\u5BB9\uFF0C\u63D0\u9AD8 YouTube \u6570\u636E\uFF0C\u52AA\u529B\u8FBE\u5230\u521B\u6536\u7684\u6C34\u5E73",
+        "\u8F7D\u5165\u672C\u5730 MarkDown \u6587\u6863\u5B57\u7B26\u5185\u5BB9\uFF08\u5305\u542B\u6587\u5B57\u3001\u56FE\u7247\u3001\u4EE3\u7801\u3002\u6587\u6863\u6700\u540E\u6700\u597D\u6709\u4E00\u4E2A finish \u7684\u5B57\u6837\uFF0C\u8868\u793A\u6587\u6863\u7684\u7ED3\u675F\uFF09",
         "\u6240\u6709\u6807\u9898\u90FD\u4F7F\u7528\u4E00\u7EA7\u6807\u9898\uFF0C\u5373\u6807\u9898\u540D\u79F0\u524D\u9762\u53EA\u6DFB\u52A0 \u201C# \u201D(\u4E24\u4E2A\u4E95\u53F7 + \u7A7A\u683C)",
         "\u6240\u6709\u4EE3\u7801\u90FD\u5199\u5165\u4E09\u4E2A\u7531\u82F1\u6587\u53CD\u5F15\u53F7\u5305\u56F4\u7684\u8303\u56F4\u5185 (```)\uFF0C\u6709\u65F6\u4EE3\u7801\u5F00\u59CB\u7684\u8303\u56F4\u4F1A\u662F ```python\uFF0C\u8FD9\u79CD\u60C5\u51B5\u7531\u7A0B\u5E8F\u81EA\u52A8\u5904\u7406",
         "\u6240\u6709\u89E3\u91CA\u8BF4\u660E\u7684\u6587\u5B57\uFF0C\u90FD\u7531 \u201C> \u201D\uFF08\u53F3\u5C16\u62EC\u53F7 + \u7A7A\u683C\uFF09\u5F15\u51FA",
@@ -27692,19 +27895,21 @@ var MdScreenRecordComponent = /* @__PURE__ */ (() => {
       this.readyAnalysis = false;
       this.readyGetStarted = false;
       this.isGetStarted = false;
+      this.isPausePlay = false;
+      this.isPlayingContent = false;
+      this.isTtsFinish = false;
+      this.tutorial_box = null;
       this.readySecond = 3;
       this.waitForBigTitleSecond = 3;
-      this.contentDelaySecond = 1;
-      this.titleBeforeDelaySecond = 2;
-      this.titleAfterDelaySecond = 2;
+      this.contentDelaySecond = 0;
+      this.titleBeforeDelaySecond = 0.5;
       this.rowDelaySecond = 0.2;
-      this.letterDelaySecond = 0.12;
-      this.localService = new LocalService();
-      this.tutorial_box = null;
+      this.letterDelaySecond = 0.1;
+      this.programDelaySecond = 0.04;
+      this.ttsTextSecondsMultiple = 4;
       this.allkvList = [];
       this.allkvList2 = [];
       this.itemList = [];
-      this.isPlayingContent = false;
       this.delay = (ms = 1e3) => __async(this, null, function* () {
         return new Promise((resolve) => setTimeout(resolve, ms));
       });
@@ -27716,6 +27921,9 @@ var MdScreenRecordComponent = /* @__PURE__ */ (() => {
     }
     goToTop() {
       window.scrollTo(0, 0);
+    }
+    refreshPage() {
+      location.reload();
     }
     fileInputChanged(event) {
       this.selectedfile = event.target.files[0];
@@ -27753,30 +27961,45 @@ var MdScreenRecordComponent = /* @__PURE__ */ (() => {
           }
         }
       }
-      console.log("allkvList");
-      console.log(this.allkvList);
       for (let i = 0; i < this.allkvList.length; i++) {
         let key = this.allkvList[i].key;
         let values = [];
         if (key == "graph") {
           values = [this.allkvList[i].value.toString()];
+        } else if (key == "voice") {
+          values = [this.allkvList[i].value.toString()];
+        } else if (key == "voiceLettersLength") {
+          let arr = [];
+          for (let word = 0; word < parseInt(this.allkvList[i].value) * this.ttsTextSecondsMultiple; word++) {
+            arr.push(word + "");
+          }
+          values = arr;
         } else {
           values = this.allkvList[i].value.toString().split("");
-        }
-        if (key == "code" || key == "annotation" || key == "output") {
-          for (let i2 = 0; i2 < values.length; i2++) {
-            if (values[i2] == " ") {
-              values[i2] = "&nbsp;";
-            }
-          }
         }
         this.allkvList2.push({
           key,
           values
         });
+        for (let j = 0; j < this.allkvList2.length; j++) {
+          let key2 = this.allkvList2[j].key;
+          let values2 = this.allkvList2[j].values;
+          if (key2 == "code" || key2 == "annotation" || key2 == "output" || key2 == "desc" || key2 == "title") {
+            for (let p = 0; p < values2.length; p++) {
+              if (values2[p] == " ") {
+                values2[p] = "&nbsp;";
+              }
+            }
+          }
+        }
+        for (let i2 = 0; i2 < this.allkvList2.length; i2++) {
+          let key2 = this.allkvList2[i2].key;
+          let values2 = this.allkvList2[i2].values;
+          if (key2 == "code" || key2 == "annotation" || key2 == "output" || key2 == "desc" || key2 == "title") {
+            this.allkvList2[i2].values = this.localService.mergeSuccessiveItem(values2, "&nbsp;");
+          }
+        }
       }
-      console.log("allkvList2");
-      console.log(this.allkvList2);
       this.readyGetStarted = true;
     }
     // 点击顶部的 getstarted 按钮
@@ -27790,6 +28013,11 @@ var MdScreenRecordComponent = /* @__PURE__ */ (() => {
         }
       }, 1e3);
     }
+    /**
+     * ********************
+     * 真正实现逐个字符输出
+     * ********************
+     */
     loopContentWithDelay() {
       return __async(this, null, function* () {
         yield this.delay(this.contentDelaySecond * 1e3);
@@ -27797,27 +28025,37 @@ var MdScreenRecordComponent = /* @__PURE__ */ (() => {
           if (this.allkvList2[row].key == "title") {
             yield this.delay(this.titleBeforeDelaySecond * 1e3);
           }
+          if (this.allkvList2[row].key == "voice") {
+            let textForVoice = this.allkvList2[row].values[0];
+            this.localService.getTtsVoice(textForVoice).subscribe((res) => {
+              if (res["value"] == "ttsFinish") {
+                this.isTtsFinish = true;
+              }
+            });
+          }
           let item = {
             key: this.allkvList2[row].key,
             letters: []
           };
           this.itemList.push(item);
-          console.log(this.itemList[row].key);
           yield this.delay(this.rowDelaySecond * 1e3);
           for (let i = 0; i < this.allkvList2[row].values.length; i++) {
+            if (this.allkvList2[row].key == "voice" || this.isTtsFinish == true) {
+              this.isTtsFinish = false;
+              break;
+            }
             this.itemList[row].letters.push(this.allkvList2[row].values[i]);
-            console.log(this.itemList[row].letters);
             this.tutorial_box?.scrollIntoView(false);
-            yield this.delay(this.letterDelaySecond * 1e3);
+            if (this.allkvList2[row].key == "code" || this.allkvList2[row].key == "output") {
+              yield this.delay(this.programDelaySecond * 1e3);
+            } else {
+              yield this.delay(this.letterDelaySecond * 1e3);
+            }
           }
           this.tutorial_box?.scrollIntoView(false);
-          if (this.allkvList2[row].key == "title") {
-            yield this.delay(this.titleAfterDelaySecond * 1e3);
-          }
         }
       });
     }
-    // ----------
     // 展示解析后的内容
     playContent() {
       this.isPlayingContent = true;
@@ -27829,7 +28067,7 @@ var MdScreenRecordComponent = /* @__PURE__ */ (() => {
     }
   };
   _MdScreenRecordComponent.\u0275fac = function MdScreenRecordComponent_Factory(t) {
-    return new (t || _MdScreenRecordComponent)();
+    return new (t || _MdScreenRecordComponent)(\u0275\u0275directiveInject(LocalService));
   };
   _MdScreenRecordComponent.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({
     type: _MdScreenRecordComponent,
@@ -27843,9 +28081,9 @@ var MdScreenRecordComponent = /* @__PURE__ */ (() => {
         \u0275\u0275queryRefresh(_t = \u0275\u0275loadQuery()) && (ctx.InputVar = _t.first);
       }
     },
-    decls: 26,
-    vars: 6,
-    consts: [["id", "markdownModal", "tabindex", "-1", "aria-labelledby", "exampleModalLabel", "aria-hidden", "true", 1, "modal", "fade"], [1, "modal-dialog", "modal-xl"], [1, "modal-content", "bg-dark", "text-light"], [1, "modal-header"], ["id", "markdownModalLabel", 1, "modal-title", "fs-5", "text-warning", "fs-3"], ["type", "button", "data-bs-dismiss", "modal", "aria-label", "Close", 1, "btn", "btn-outline-warning"], [1, "modal-body"], [1, "list-group"], ["class", "list-group-item text-light", 4, "ngFor", "ngForOf"], [1, "modal-footer"], ["type", "button", "data-bs-dismiss", "modal", 1, "btn", "btn-outline-warning"], ["class", "btn btn-success px-2 py-0 shadow", "id", "goTopBtn", 3, "click", 4, "ngIf"], ["id", "navbar", "class", "navbar navbar-expand-lg bg-dark", "style", "background-color: #fff;", 4, "ngIf"], [1, "content-box", "bg-dark", 2, "padding-bottom", "50rem"], [1, "bg-box"], ["class", "container-fluid", 4, "ngIf"], ["id", "tutorial-box", 1, "mb-5", "pb-4"], [1, "container", "bg-dark", "text-light", "py-5", "mb-5"], [1, "row", "justify-content-center", "py-5", "mb-5"], [1, "col-11", "pb-5", "mb-5", "align-self-center"], [1, "text-center", "fs-1", "text-danger", "mb-3", "fw-bold"], ["class", "content-area", 4, "ngFor", "ngForOf"], [1, "list-group-item", "text-light"], [1, "bi", "bi-caret-right-fill", "me-1", "text-warning"], ["id", "goTopBtn", 1, "btn", "btn-success", "px-2", "py-0", "shadow", 3, "click"], [1, "bi", "bi-chevron-up", "fs-4"], ["id", "navbar", 1, "navbar", "navbar-expand-lg", "bg-dark", 2, "background-color", "#fff"], [1, "container-fluid"], ["href", "javascript:void(0)", 1, "navbar-brand", "text-light", "fs-2"], ["src", "../../assets/img/jupyter-logo.png", 1, "jupyter-logo"], [1, "bi", "bi-arrow-bar-right", "text-secondary"], ["src", "../../assets/img/markdown-logo.png", 1, "markdown-logo"], ["src", "../../assets/img/video-logo.png", 1, "video-logo"], ["type", "button", "data-bs-toggle", "collapse", "data-bs-target", "#navbarSupportedContent", "aria-controls", "navbarSupportedContent", "aria-expanded", "false", "aria-label", "Toggle navigation", 1, "navbar-toggler"], [1, "navbar-toggler-icon"], ["id", "navbarSupportedContent", 1, "collapse", "navbar-collapse"], [1, "navbar-nav", "ms-auto", "mb-2", "mb-lg-0"], [1, "nav-item"], [1, "input-group", "my-1"], ["type", "button", "id", "button-addon1", "data-bs-toggle", "modal", "data-bs-target", "#markdownModal", 1, "btn", "btn-outline-secondary"], [1, "bi", "bi-markdown", "me-2"], ["id", "file-input", "type", "file", "name", "file-input", 1, "form-control", 2, "display", "none", 3, "change"], ["fileInput", ""], ["for", "file-input", "id", "file-input-label", 1, "text-light", "px-3", "py-2", "bg-success"], [1, "bi", "bi-1-circle", "me-2"], ["type", "button", "id", "analysis-btn", 1, "btn", "btn-primary", 3, "disabled", "click"], [1, "bi", "bi-2-circle", "me-2"], ["type", "button", "id", "clean-input-file", 1, "btn", "btn-outline-secondary", 3, "disabled", "click"], [1, "bi", "bi-trash3", "pe-1"], [1, "nav-item", "ps-5", "my-1"], [1, "btn", "btn-warning", 3, "disabled", "click"], [1, "bi", "bi-3-circle", "me-2"], ["class", "row my-4 justify-content-around", 4, "ngIf"], ["class", "row", 4, "ngIf"], [1, "row", "my-4", "justify-content-around"], [1, "col", "text-center"], [3, "ngClass"], [1, "text-warning", "lead", "mt-4"], [1, "bi", "bi-bookmark-fill"], [1, "text-danger", "lead", "mt-4"], [1, "bi", "bi-arrow-clockwise", "mx-2"], [1, "col-6"], [1, "mb-3", "row", "align-items-center"], ["for", "readySecond", 1, "col-sm-8", "col-form-label", "text-light"], [1, "fw-bolder", "text-warning", "my-0"], [1, "bi", "bi-play-circle", "me-2", "fs-5"], [1, "my-0", "text-success"], [1, "col-sm"], ["name", "readySecond", "type", "number", "id", "readySecond", 1, "form-control", 3, "ngModel", "ngModelChange"], ["for", "waitForBigTitleSecond", 1, "col-sm-8", "col-form-label", "text-light"], [1, "bi", "bi-filetype-md", "me-2", "fs-5"], ["name", "waitForBigTitleSecond", "type", "number", "id", "waitForBigTitleSecond", 1, "form-control", 3, "ngModel", "ngModelChange"], ["for", "contentDelaySecond", 1, "col-sm-8", "col-form-label", "text-light"], [1, "bi", "bi-markdown", "fs-5", "me-2"], ["name", "contentDelaySecond", "type", "number", "id", "contentDelaySecond", 1, "form-control", 3, "ngModel", "ngModelChange"], ["for", "rowDelaySecond", 1, "col-sm-8", "col-form-label", "text-light"], [1, "bi", "bi-list-ul", "me-2", "fs-5"], ["type", "number", "id", "rowDelaySecond", "name", "rowDelaySecond", 1, "form-control", 3, "ngModel", "ngModelChange"], ["for", "letterDelaySecond", 1, "col-sm-8", "col-form-label", "text-light"], [1, "bi", "bi-columns-gap", "me-2", "fs-5"], ["type", "number", "id", "letterDelaySecond", "name", "letterDelaySecond", 1, "form-control", 3, "ngModel", "ngModelChange"], [1, "row"], [1, "col", "mt-4", "text-center"], [1, "text-warning", "fs-4"], [1, "text-secondary", "fs-5", "ms-2"], [1, "col", "original-markdown-box"], ["class", "file-content-box p-4 my-4 shadow text-light border border-1 border-secondary", 4, "ngIf"], [1, "col", "decode-box"], ["class", "p-4 my-4 shadow border border-1 border-success", 4, "ngIf"], [1, "file-content-box", "p-4", "my-4", "shadow", "text-light", "border", "border-1", "border-secondary"], [1, "p-4", "my-4", "shadow", "border", "border-1", "border-success"], ["class", "list-group mb-5", 4, "ngFor", "ngForOf"], [1, "list-group", "mb-5"], [1, "row", "mb-3"], [1, "col", "text-light", "lead"], [4, "ngFor", "ngForOf"], ["class", "list-group-item", 4, "ngFor", "ngForOf"], [4, "ngIf"], [1, "me-3"], [1, "fw-bold"], [1, "list-group-item"], [1, "col-1", "text-secondary", "border-end", "border-secondary"], [1, "col", "text-warning"], ["class", "bi bi-award me-1", 4, "ngIf"], ["class", "bi bi-chat-left me-1", 4, "ngIf"], ["class", "bi bi-code-slash me-1", 4, "ngIf"], ["class", "bi bi-bar-chart-line-fill me-1", 4, "ngIf"], ["class", "bi bi-check2-square me-1", 4, "ngIf"], ["class", "bi bi-chevron-compact-down me-1", 4, "ngIf"], ["class", "bi bi-chevron-compact-up me-1", 4, "ngIf"], [1, "col", "text-success", 3, "innerHTML"], [1, "bi", "bi-award", "me-1"], [1, "bi", "bi-chat-left", "me-1"], [1, "bi", "bi-code-slash", "me-1"], [1, "bi", "bi-bar-chart-line-fill", "me-1"], [1, "bi", "bi-check2-square", "me-1"], [1, "bi", "bi-chevron-compact-down", "me-1"], [1, "bi", "bi-chevron-compact-up", "me-1"], [1, "content-area"], ["class", "mt-5 mb-4 pb-2 fs-2 text-info fw-bold border-bottom border-info border-3", 4, "ngIf"], ["class", "my-3 text-info fs-3 lh-lg ps-3 border-start border-info border-5", 4, "ngIf"], ["class", "my-3 graph-box", 4, "ngIf"], ["class", "bg-warning fs-3 px-3 py-1 annotation-box", 4, "ngIf"], ["class", "my-3", 4, "ngIf"], ["class", "bg-warning text-dark fs-3 px-3 py-1 code-box", 4, "ngIf"], ["class", "text-light fs-3 px-3 pt-2 pb-1", 4, "ngIf"], [1, "mt-5", "mb-4", "pb-2", "fs-2", "text-info", "fw-bold", "border-bottom", "border-info", "border-3"], ["class", "title-letter", 3, "innerHTML", 4, "ngFor", "ngForOf"], [1, "title-letter", 3, "innerHTML"], [1, "my-3", "text-info", "fs-3", "lh-lg", "ps-3", "border-start", "border-info", "border-5"], ["class", "desc-letter", 3, "innerHTML", 4, "ngFor", "ngForOf"], [1, "desc-letter", 3, "innerHTML"], [1, "my-3", "graph-box"], [1, "graph", "rounded", 3, "src"], [1, "bg-warning", "fs-3", "px-3", "py-1", "annotation-box"], ["class", "text-danger annotation-letter", 3, "innerHTML", 4, "ngFor", "ngForOf"], [1, "text-danger", "annotation-letter", 3, "innerHTML"], [1, "my-3"], [1, "bg-warning", "text-dark", "fs-3", "px-3", "py-1", "code-box"], ["class", "code-letter", 3, "innerHTML", 4, "ngFor", "ngForOf"], [1, "code-letter", 3, "innerHTML"], [1, "text-light", "fs-3", "px-3", "pt-2", "pb-1"], ["class", "output-letter", 3, "innerHTML", 4, "ngFor", "ngForOf"], [1, "output-letter", 3, "innerHTML"]],
+    decls: 27,
+    vars: 7,
+    consts: [["id", "markdownModal", "tabindex", "-1", "aria-labelledby", "exampleModalLabel", "aria-hidden", "true", 1, "modal", "fade"], [1, "modal-dialog", "modal-xl"], [1, "modal-content", "bg-dark", "text-light"], [1, "modal-header"], ["id", "markdownModalLabel", 1, "modal-title", "fs-5", "text-warning", "fs-3"], ["type", "button", "data-bs-dismiss", "modal", "aria-label", "Close", 1, "btn", "btn-outline-warning"], [1, "modal-body"], [1, "list-group"], ["class", "list-group-item text-light", 4, "ngFor", "ngForOf"], [1, "modal-footer"], ["type", "button", "data-bs-dismiss", "modal", 1, "btn", "btn-outline-warning"], ["class", "btn btn-secondary px-2 py-0 shadow", "id", "goTopBtn", 3, "click", 4, "ngIf"], ["class", "btn btn-danger px-2 py-0 shadow", "id", "refreshBtn", 3, "click", 4, "ngIf"], ["id", "navbar", "class", "navbar navbar-expand-lg bg-dark", "style", "background-color: #fff;", 4, "ngIf"], [1, "content-box", "bg-dark", 2, "padding-bottom", "50rem"], [1, "bg-box"], ["class", "container-fluid", 4, "ngIf"], ["id", "tutorial-box", 1, "mb-5", "pb-4", "px-5"], [1, "container-fluid", "bg-dark", "text-light", "pt-0", "pb-5", "mb-5", "tutorial-container"], [1, "row", "justify-content-center", "py-5", "mb-5"], [1, "col-11", "pb-5", "mb-5", "align-self-center"], [1, "text-center", "fs-1", "text-danger", "mb-3", "fw-bold"], ["class", "content-area", 4, "ngFor", "ngForOf"], [1, "list-group-item", "text-light"], [1, "bi", "bi-caret-right-fill", "me-1", "text-warning"], ["id", "goTopBtn", 1, "btn", "btn-secondary", "px-2", "py-0", "shadow", 3, "click"], [1, "bi", "bi-chevron-up", "fs-4"], ["id", "refreshBtn", 1, "btn", "btn-danger", "px-2", "py-0", "shadow", 3, "click"], [1, "bi", "bi-arrow-clockwise", "fs-4"], ["id", "navbar", 1, "navbar", "navbar-expand-lg", "bg-dark", 2, "background-color", "#fff"], [1, "container-fluid"], [1, "text-light", "fs-2", "fw-bold", "me-4"], ["src", "../../assets/img/jupyter-logo.png", 1, "jupyter-logo"], ["src", "../../assets/img/right-arrow.png", 1, "right-arrow"], ["src", "../../assets/img/markdown-logo.png", 1, "markdown-logo"], ["src", "../../assets/img/video-logo.png", 1, "video-logo", "mx-2"], [1, "text-primary", "fs-2", "fw-bolder", "mx-1"], ["src", "../../assets/img/audio.png", 1, "video-logo", "ms-2"], ["type", "button", "data-bs-toggle", "collapse", "data-bs-target", "#navbarSupportedContent", "aria-controls", "navbarSupportedContent", "aria-expanded", "false", "aria-label", "Toggle navigation", 1, "navbar-toggler"], [1, "navbar-toggler-icon"], ["id", "navbarSupportedContent", 1, "collapse", "navbar-collapse"], [1, "navbar-nav", "ms-auto", "mb-2", "mb-lg-0"], [1, "nav-item"], [1, "input-group", "my-1"], ["type", "button", "href", "/#/", 1, "btn", "btn-outline-danger"], [1, "bi", "bi-house-fill", "pe-1"], ["type", "button", "id", "button-addon1", "data-bs-toggle", "modal", "data-bs-target", "#markdownModal", 1, "btn", "btn-outline-secondary"], [1, "bi", "bi-markdown", "me-2"], ["id", "file-input", "type", "file", "name", "file-input", 1, "form-control", 2, "display", "none", 3, "change"], ["fileInput", ""], ["for", "file-input", "id", "file-input-label", 1, "text-light", "px-3", "py-2", "bg-success"], [1, "bi", "bi-1-circle", "me-2"], ["type", "button", "id", "analysis-btn", 1, "btn", "btn-primary", 3, "disabled", "click"], [1, "bi", "bi-2-circle", "me-2"], ["type", "button", "id", "clean-input-file", 1, "btn", "btn-outline-secondary", 3, "disabled", "click"], [1, "bi", "bi-trash3", "pe-1"], [1, "nav-item", "ps-5", "my-1"], [1, "btn", "btn-danger", 3, "disabled", "click"], [1, "bi", "bi-3-circle", "me-2"], ["class", "row my-4 justify-content-between", 4, "ngIf"], ["class", "row", 4, "ngIf"], [1, "row", "my-4", "justify-content-between"], [1, "col", "text-center", "mt-4"], [3, "ngClass"], [1, "text-info", "text-start", "fs-4", "mt-4"], [1, "bi", "bi-1-circle"], [1, "text-danger", "text-start", "fs-4", "mt-4"], [1, "bi", "bi-2-circle"], [1, "bi", "bi-3-circle"], ["src", "../../assets/img/wolf.png", "height", "200rem", "width", "auto", 1, "mt-4"], [1, "col-7"], [1, "hyperparameter-form", "border", "border-secondary", "rounded", "p-4"], [1, "mb-3", "row", "align-items-center"], ["for", "readySecond", 1, "col-sm-8", "col-form-label", "hyperparameter"], [1, "fs-5", "text-success", "my-0"], [1, "bi", "bi-play-circle", "me-2", "fs-5"], [1, "my-0", "text-secondary"], [1, "col-sm"], ["name", "readySecond", "type", "number", "id", "readySecond", 1, "form-control", 3, "ngModel", "ngModelChange"], [1, "text-light", "ms-3", "lead"], ["for", "waitForBigTitleSecond", 1, "col-sm-8", "col-form-label", "text-light", "hyperparameter"], [1, "bi", "bi-filetype-md", "me-2", "fs-5"], ["name", "waitForBigTitleSecond", "type", "number", "id", "waitForBigTitleSecond", 1, "form-control", 3, "ngModel", "ngModelChange"], ["for", "contentDelaySecond", 1, "col-sm-8", "col-form-label", "text-light", "hyperparameter"], [1, "bi", "bi-markdown", "fs-5", "me-2"], ["name", "contentDelaySecond", "type", "number", "id", "contentDelaySecond", 1, "form-control", 3, "ngModel", "ngModelChange"], ["for", "titleBeforeDelaySecond", 1, "col-sm-8", "col-form-label", "text-light", "hyperparameter"], [1, "bi", "bi-arrow-bar-up", "fs-5", "me-2"], ["name", "titleBeforeDelaySecond", "type", "number", "id", "titleBeforeDelaySecond", 1, "form-control", 3, "ngModel", "ngModelChange"], ["for", "rowDelaySecond", 1, "col-sm-8", "col-form-label", "text-light", "hyperparameter"], [1, "bi", "bi-arrow-return-left", "me-2", "fs-5"], ["type", "number", "id", "rowDelaySecond", "name", "rowDelaySecond", 1, "form-control", 3, "ngModel", "ngModelChange"], ["for", "letterDelaySecond", 1, "col-sm-8", "col-form-label", "text-light", "hyperparameter"], [1, "bi", "bi-alphabet-uppercase", "me-2", "fs-5"], ["type", "number", "id", "letterDelaySecond", "name", "letterDelaySecond", 1, "form-control", 3, "ngModel", "ngModelChange"], ["for", "programDelaySecond", 1, "col-sm-8", "col-form-label", "text-light", "hyperparameter"], [1, "bi", "bi-code-slash", "me-2", "fs-5"], ["type", "number", "id", "programDelaySecond", "name", "programDelaySecond", 1, "form-control", 3, "ngModel", "ngModelChange"], ["for", "ttsTextSecondsMultiple", 1, "col-sm-8", "col-form-label", "text-light", "hyperparameter"], [1, "bi", "bi-alarm", "me-2", "fs-5"], ["type", "number", "id", "ttsTextSecondsMultiple", "name", "ttsTextSecondsMultiple", 1, "form-control", 3, "ngModel", "ngModelChange"], [1, "row"], [1, "col", "mt-4", "text-center"], [1, "text-warning", "fs-4"], [1, "text-secondary", "fs-5", "ms-2"], [1, "col", "original-markdown-box"], ["class", "file-content-box p-4 my-4 shadow text-light border border-1 border-secondary", 4, "ngIf"], [1, "col", "decode-box"], ["class", "p-4 my-4 shadow border border-1 border-success", 4, "ngIf"], [1, "file-content-box", "p-4", "my-4", "shadow", "text-light", "border", "border-1", "border-secondary"], [1, "p-4", "my-4", "shadow", "border", "border-1", "border-success"], ["class", "list-group mb-5", 4, "ngFor", "ngForOf"], [1, "list-group", "mb-5"], [1, "row", "mb-3"], [1, "col", "text-light", "lead"], [4, "ngFor", "ngForOf"], ["class", "list-group-item", 4, "ngFor", "ngForOf"], [4, "ngIf"], [1, "me-3"], [1, "fw-bold"], [1, "list-group-item"], [1, "col-1", "text-secondary", "border-end", "border-secondary"], [1, "col", "text-warning"], ["class", "bi bi-award me-1", 4, "ngIf"], ["class", "bi bi-chat-left me-1", 4, "ngIf"], ["class", "bi bi-code-slash me-1", 4, "ngIf"], ["class", "bi bi-bar-chart-line-fill me-1", 4, "ngIf"], ["class", "bi bi-mic-fill me-1", 4, "ngIf"], ["class", "bi bi-check2-square me-1", 4, "ngIf"], ["class", "bi bi-chevron-compact-down me-1", 4, "ngIf"], ["class", "bi bi-chevron-compact-up me-1", 4, "ngIf"], [1, "col", "text-success", 3, "innerHTML"], [1, "bi", "bi-award", "me-1"], [1, "bi", "bi-chat-left", "me-1"], [1, "bi", "bi-code-slash", "me-1"], [1, "bi", "bi-bar-chart-line-fill", "me-1"], [1, "bi", "bi-mic-fill", "me-1"], [1, "bi", "bi-check2-square", "me-1"], [1, "bi", "bi-chevron-compact-down", "me-1"], [1, "bi", "bi-chevron-compact-up", "me-1"], [1, "content-area"], ["class", "mt-5 mb-4 pb-2 fs-2 text-info fw-bold border-bottom border-info border-3", 4, "ngIf"], ["class", "my-3 text-info fs-3 lh-lg ps-3 border-start border-info border-5", 4, "ngIf"], ["class", "mt-3 mb-5 graph-box", 4, "ngIf"], ["class", "mt-3 mb-5 fs-3 voice-box", 4, "ngIf"], ["class", "bg-warning fs-3 px-3 py-1 annotation-box", 4, "ngIf"], ["class", "my-3", 4, "ngIf"], ["class", "bg-warning text-dark fs-3 px-3 py-1 code-box", 4, "ngIf"], ["class", "text-light fs-3 py-2 ms-2 output-box px-4", 4, "ngIf"], [1, "mt-5", "mb-4", "pb-2", "fs-2", "text-info", "fw-bold", "border-bottom", "border-info", "border-3"], ["class", "title-letter", 3, "innerHTML", 4, "ngFor", "ngForOf"], [1, "title-letter", 3, "innerHTML"], [1, "my-3", "text-info", "fs-3", "lh-lg", "ps-3", "border-start", "border-info", "border-5"], ["class", "desc-letter", 3, "innerHTML", 4, "ngFor", "ngForOf"], [1, "desc-letter", 3, "innerHTML"], [1, "mt-3", "mb-5", "graph-box"], [1, "graph", "rounded", 3, "src"], [1, "mt-3", "mb-5", "fs-3", "voice-box"], [1, "text-light"], [1, "bi", "bi-volume-up-fill", "fs-4"], [1, "py-0", "ps-2", "fs-4"], ["class", "voice-second me-2", 3, "innerHTML", 4, "ngFor", "ngForOf"], [1, "voice-second", "me-2", 3, "innerHTML"], [1, "bg-warning", "fs-3", "px-3", "py-1", "annotation-box"], ["class", "text-danger annotation-letter", 3, "innerHTML", 4, "ngFor", "ngForOf"], [1, "text-danger", "annotation-letter", 3, "innerHTML"], [1, "my-3"], [1, "bg-warning", "text-dark", "fs-3", "px-3", "py-1", "code-box"], ["class", "code-letter", 3, "innerHTML", 4, "ngFor", "ngForOf"], [1, "code-letter", 3, "innerHTML"], [1, "text-light", "fs-3", "py-2", "ms-2", "output-box", "px-4"], ["class", "output-letter", 3, "innerHTML", 4, "ngFor", "ngForOf"], [1, "output-letter", 3, "innerHTML"]],
     template: function MdScreenRecordComponent_Template(rf, ctx) {
       if (rf & 1) {
         \u0275\u0275elementStart(0, "div", 0)(1, "div", 1)(2, "div", 2)(3, "div", 3)(4, "h1", 4);
@@ -27860,19 +28098,21 @@ var MdScreenRecordComponent = /* @__PURE__ */ (() => {
         \u0275\u0275elementStart(11, "div", 9)(12, "button", 10);
         \u0275\u0275text(13, "Close");
         \u0275\u0275elementEnd()()()()();
-        \u0275\u0275template(14, MdScreenRecordComponent_button_14_Template, 2, 0, "button", 11)(15, MdScreenRecordComponent_nav_15_Template, 33, 3, "nav", 12);
-        \u0275\u0275elementStart(16, "div", 13)(17, "div", 14);
-        \u0275\u0275template(18, MdScreenRecordComponent_div_18_Template, 4, 3, "div", 15);
-        \u0275\u0275elementStart(19, "div", 16)(20, "div", 17)(21, "div", 18)(22, "div", 19)(23, "h1", 20);
-        \u0275\u0275text(24);
+        \u0275\u0275template(14, MdScreenRecordComponent_button_14_Template, 2, 0, "button", 11)(15, MdScreenRecordComponent_button_15_Template, 2, 0, "button", 12)(16, MdScreenRecordComponent_nav_16_Template, 39, 3, "nav", 13);
+        \u0275\u0275elementStart(17, "div", 14)(18, "div", 15);
+        \u0275\u0275template(19, MdScreenRecordComponent_div_19_Template, 4, 3, "div", 16);
+        \u0275\u0275elementStart(20, "div", 17)(21, "div", 18)(22, "div", 19)(23, "div", 20)(24, "h1", 21);
+        \u0275\u0275text(25);
         \u0275\u0275elementEnd();
-        \u0275\u0275template(25, MdScreenRecordComponent_div_25_Template, 8, 7, "div", 21);
+        \u0275\u0275template(26, MdScreenRecordComponent_div_26_Template, 9, 8, "div", 22);
         \u0275\u0275elementEnd()()()()()();
       }
       if (rf & 2) {
         \u0275\u0275advance(10);
         \u0275\u0275property("ngForOf", ctx.markdownRules);
         \u0275\u0275advance(4);
+        \u0275\u0275property("ngIf", ctx.readyGetStarted == false);
+        \u0275\u0275advance(1);
         \u0275\u0275property("ngIf", ctx.readyGetStarted == false);
         \u0275\u0275advance(1);
         \u0275\u0275property("ngIf", ctx.isPlayingContent == false);
@@ -27885,7 +28125,7 @@ var MdScreenRecordComponent = /* @__PURE__ */ (() => {
       }
     },
     dependencies: [NgClass, NgForOf, NgIf, \u0275NgNoValidate, DefaultValueAccessor, NumberValueAccessor, NgControlStatus, NgControlStatusGroup, NgModel, NgForm],
-    styles: ["\n\n.navbar[_ngcontent-%COMP%] {\n  padding-top: 5rem;\n}\n.input-group[_ngcontent-%COMP%] {\n  width: 40rem;\n}\n.jupyter-logo[_ngcontent-%COMP%], .markdown-logo[_ngcontent-%COMP%], .video-logo[_ngcontent-%COMP%] {\n  height: 2rem;\n  width: auto;\n  margin-left: 1rem;\n  margin-right: 1rem;\n}\n.content-box[_ngcontent-%COMP%] {\n  overflow: hidden !important;\n}\n.content-box[_ngcontent-%COMP%]   .original-markdown-box[_ngcontent-%COMP%] {\n  overflow-x: scroll !important;\n}\n.content-box[_ngcontent-%COMP%]   .original-markdown-box[_ngcontent-%COMP%]   .file-content-box[_ngcontent-%COMP%] {\n  width: 100%;\n  height: 50%;\n  flex-wrap: wrap !important;\n  overflow: scroll !important;\n}\n.content-box[_ngcontent-%COMP%]   .decode-box[_ngcontent-%COMP%]   .list-group[_ngcontent-%COMP%] {\n  background: none !important;\n  border: none;\n}\n.content-box[_ngcontent-%COMP%]   .decode-box[_ngcontent-%COMP%]   .list-group[_ngcontent-%COMP%]   .list-group-item[_ngcontent-%COMP%] {\n  background: none !important;\n  border: none;\n}\n.modal[_ngcontent-%COMP%]   .list-group[_ngcontent-%COMP%] {\n  background: none !important;\n}\n.modal[_ngcontent-%COMP%]   .list-group[_ngcontent-%COMP%]   .list-group-item[_ngcontent-%COMP%] {\n  border: none;\n  background: none !important;\n}\n#goTopBtn[_ngcontent-%COMP%] {\n  position: fixed;\n  bottom: 1rem;\n  right: 1rem;\n}\n.content-box[_ngcontent-%COMP%] {\n  background-color: #000;\n  height: 100rem;\n  width: 100%;\n}\n.content-area[_ngcontent-%COMP%]   .graph-box[_ngcontent-%COMP%]   .graph[_ngcontent-%COMP%] {\n  height: 17rem;\n  width: auto;\n}\n.content-area[_ngcontent-%COMP%]   .title-letter[_ngcontent-%COMP%] {\n  margin-right: 0.6px;\n}\n.content-area[_ngcontent-%COMP%]   .desc-letter[_ngcontent-%COMP%] {\n  margin-right: 0.6px;\n}\n.content-area[_ngcontent-%COMP%]   .code-box[_ngcontent-%COMP%]   .code-letter[_ngcontent-%COMP%] {\n  margin-right: 0.6px;\n}\n.content-area[_ngcontent-%COMP%]   .output-letter[_ngcontent-%COMP%] {\n  margin-right: 0.6px;\n}\n#file-input-label[_ngcontent-%COMP%]:hover {\n  background-color: rgb(8, 116, 67) !important;\n  cursor: pointer;\n}\n/*# sourceMappingURL=data:application/json;base64,ewogICJ2ZXJzaW9uIjogMywKICAic291cmNlcyI6IFsic3JjL2FwcC9tZC1zY3JlZW4tcmVjb3JkL21kLXNjcmVlbi1yZWNvcmQuY29tcG9uZW50LnNjc3MiXSwKICAic291cmNlc0NvbnRlbnQiOiBbIi5uYXZiYXIge1xyXG4gICAgcGFkZGluZy10b3A6IDVyZW07XHJcbn1cclxuXHJcbi5pbnB1dC1ncm91cCB7XHJcbiAgICB3aWR0aDogNDByZW07XHJcbn1cclxuXHJcbi5qdXB5dGVyLWxvZ28sXHJcbi5tYXJrZG93bi1sb2dvLFxyXG4udmlkZW8tbG9nbyB7XHJcbiAgICBoZWlnaHQ6IDJyZW07XHJcbiAgICB3aWR0aDogYXV0bztcclxuICAgIG1hcmdpbi1sZWZ0OiAxcmVtO1xyXG4gICAgbWFyZ2luLXJpZ2h0OiAxcmVtO1xyXG59XHJcblxyXG4uY29udGVudC1ib3gge1xyXG4gICAgb3ZlcmZsb3c6IGhpZGRlbiAhaW1wb3J0YW50O1xyXG5cclxuICAgIC5vcmlnaW5hbC1tYXJrZG93bi1ib3gge1xyXG4gICAgICAgIG92ZXJmbG93LXg6IHNjcm9sbCAhaW1wb3J0YW50O1xyXG5cclxuICAgICAgICAuZmlsZS1jb250ZW50LWJveCB7XHJcbiAgICAgICAgICAgIHdpZHRoOiAxMDAlO1xyXG4gICAgICAgICAgICBoZWlnaHQ6IDUwJTtcclxuICAgICAgICAgICAgZmxleC13cmFwOiB3cmFwICFpbXBvcnRhbnQ7XHJcbiAgICAgICAgICAgIG92ZXJmbG93OiBzY3JvbGwgIWltcG9ydGFudDtcclxuICAgICAgICB9XHJcbiAgICB9XHJcblxyXG4gICAgLmRlY29kZS1ib3gge1xyXG4gICAgICAgIC5saXN0LWdyb3VwIHtcclxuICAgICAgICAgICAgYmFja2dyb3VuZDogbm9uZSAhaW1wb3J0YW50O1xyXG4gICAgICAgICAgICBib3JkZXI6IG5vbmU7XHJcblxyXG4gICAgICAgICAgICAubGlzdC1ncm91cC1pdGVtIHtcclxuICAgICAgICAgICAgICAgIGJhY2tncm91bmQ6IG5vbmUgIWltcG9ydGFudDtcclxuICAgICAgICAgICAgICAgIGJvcmRlcjogbm9uZTtcclxuICAgICAgICAgICAgfVxyXG4gICAgICAgIH1cclxuICAgIH1cclxuXHJcbn1cclxuXHJcbi5tb2RhbCB7XHJcbiAgICAubGlzdC1ncm91cCB7XHJcbiAgICAgICAgYmFja2dyb3VuZDogbm9uZSAhaW1wb3J0YW50O1xyXG5cclxuICAgICAgICAubGlzdC1ncm91cC1pdGVtIHtcclxuICAgICAgICAgICAgYm9yZGVyOiBub25lO1xyXG4gICAgICAgICAgICBiYWNrZ3JvdW5kOiBub25lICFpbXBvcnRhbnQ7XHJcbiAgICAgICAgfVxyXG4gICAgfVxyXG59XHJcblxyXG4jZ29Ub3BCdG4ge1xyXG4gICAgcG9zaXRpb246IGZpeGVkO1xyXG4gICAgYm90dG9tOiAxcmVtO1xyXG4gICAgcmlnaHQ6IDFyZW07XHJcbn1cclxuXHJcbi8vIOihrOW6le+8jOWwhuWGheWuueWMuuWfn+mDveihrOW6leS4uum7keiJslxyXG4uY29udGVudC1ib3gge1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogIzAwMDtcclxuICAgIGhlaWdodDogMTAwcmVtO1xyXG4gICAgd2lkdGg6IDEwMCU7XHJcbn1cclxuXHJcbi5jb250ZW50LWFyZWEge1xyXG4gICAgLmdyYXBoLWJveCB7XHJcbiAgICAgICAgLmdyYXBoIHtcclxuICAgICAgICAgICAgaGVpZ2h0OiAxN3JlbTtcclxuICAgICAgICAgICAgd2lkdGg6IGF1dG87XHJcbiAgICAgICAgfVxyXG4gICAgfVxyXG5cclxuICAgIC50aXRsZS1sZXR0ZXIge1xyXG4gICAgICAgIG1hcmdpbi1yaWdodDogMC42cHg7XHJcbiAgICB9XHJcblxyXG4gICAgLmRlc2MtbGV0dGVyIHtcclxuICAgICAgICBtYXJnaW4tcmlnaHQ6IDAuNnB4O1xyXG4gICAgfVxyXG5cclxuICAgIC5jb2RlLWJveCB7XHJcbiAgICAgICAgLmNvZGUtbGV0dGVyIHtcclxuICAgICAgICAgICAgbWFyZ2luLXJpZ2h0OiAwLjZweDtcclxuICAgICAgICB9XHJcbiAgICB9XHJcblxyXG4gICAgLm91dHB1dC1sZXR0ZXIge1xyXG4gICAgICAgIG1hcmdpbi1yaWdodDogMC42cHg7XHJcbiAgICB9XHJcblxyXG59XHJcblxyXG4jZmlsZS1pbnB1dC1sYWJlbCB7XHJcbiAgICAvLyBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMjUsIDEzNSwgODQpICFpbXBvcnRhbnQ7XHJcblxyXG4gICAgJjpob3ZlciB7XHJcbiAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogcmdiKDgsIDExNiwgNjcpICFpbXBvcnRhbnQ7XHJcbiAgICAgICAgY3Vyc29yOiBwb2ludGVyO1xyXG4gICAgfVxyXG59Il0sCiAgIm1hcHBpbmdzIjogIjtBQUFBLENBQUE7QUFDSSxlQUFBOztBQUdKLENBQUE7QUFDSSxTQUFBOztBQUdKLENBQUE7QUFBQSxDQUFBO0FBQUEsQ0FBQTtBQUdJLFVBQUE7QUFDQSxTQUFBO0FBQ0EsZUFBQTtBQUNBLGdCQUFBOztBQUdKLENBQUE7QUFDSSxZQUFBOztBQUVBLENBSEosWUFHSSxDQUFBO0FBQ0ksY0FBQTs7QUFFQSxDQU5SLFlBTVEsQ0FISixzQkFHSSxDQUFBO0FBQ0ksU0FBQTtBQUNBLFVBQUE7QUFDQSxhQUFBO0FBQ0EsWUFBQTs7QUFLSixDQWZSLFlBZVEsQ0FBQSxXQUFBLENBQUE7QUFDSSxjQUFBO0FBQ0EsVUFBQTs7QUFFQSxDQW5CWixZQW1CWSxDQUpKLFdBSUksQ0FKSixXQUlJLENBQUE7QUFDSSxjQUFBO0FBQ0EsVUFBQTs7QUFRWixDQUFBLE1BQUEsQ0FkSTtBQWVBLGNBQUE7O0FBRUEsQ0FISixNQUdJLENBakJBLFdBaUJBLENBYkk7QUFjQSxVQUFBO0FBQ0EsY0FBQTs7QUFLWixDQUFBO0FBQ0ksWUFBQTtBQUNBLFVBQUE7QUFDQSxTQUFBOztBQUlKLENBOUNBO0FBK0NJLG9CQUFBO0FBQ0EsVUFBQTtBQUNBLFNBQUE7O0FBS0ksQ0FBQSxhQUFBLENBQUEsVUFBQSxDQUFBO0FBQ0ksVUFBQTtBQUNBLFNBQUE7O0FBSVIsQ0FOSSxhQU1KLENBQUE7QUFDSSxnQkFBQTs7QUFHSixDQVZJLGFBVUosQ0FBQTtBQUNJLGdCQUFBOztBQUlBLENBZkEsYUFlQSxDQUFBLFNBQUEsQ0FBQTtBQUNJLGdCQUFBOztBQUlSLENBcEJJLGFBb0JKLENBQUE7QUFDSSxnQkFBQTs7QUFRSixDQUFBLGdCQUFBO0FBQ0ksb0JBQUEsSUFBQSxDQUFBLEVBQUEsR0FBQSxFQUFBO0FBQ0EsVUFBQTs7IiwKICAibmFtZXMiOiBbXQp9Cg== */"]
+    styles: ["\n\n.navbar[_ngcontent-%COMP%] {\n  padding-top: 1.5rem;\n}\n.input-group[_ngcontent-%COMP%] {\n  width: 40rem;\n}\n.jupyter-logo[_ngcontent-%COMP%], .markdown-logo[_ngcontent-%COMP%] {\n  height: 2rem;\n  width: auto;\n  margin-left: 0.5rem;\n  margin-right: 0.5rem;\n}\n.right-arrow[_ngcontent-%COMP%] {\n  margin-left: 0.5rem;\n  margin-right: 0.5rem;\n  height: 1.5rem;\n  width: auto;\n}\n.video-logo[_ngcontent-%COMP%] {\n  height: 2.7rem;\n  width: auto;\n}\n.hyperparameter-form[_ngcontent-%COMP%]   input[_ngcontent-%COMP%] {\n  background-color: black;\n  color: white;\n  border-color: gray;\n  display: inline-block;\n  width: 15rem;\n}\n.hyperparameter-form[_ngcontent-%COMP%]   .hyperparameter[_ngcontent-%COMP%]   p[_ngcontent-%COMP%]:hover {\n  cursor: pointer;\n}\n.content-box[_ngcontent-%COMP%] {\n  overflow: hidden !important;\n}\n.content-box[_ngcontent-%COMP%]   .original-markdown-box[_ngcontent-%COMP%] {\n  overflow-x: scroll !important;\n}\n.content-box[_ngcontent-%COMP%]   .original-markdown-box[_ngcontent-%COMP%]   .file-content-box[_ngcontent-%COMP%] {\n  width: 100%;\n  height: 50%;\n  flex-wrap: wrap !important;\n  overflow: scroll !important;\n}\n.content-box[_ngcontent-%COMP%]   .decode-box[_ngcontent-%COMP%]   .list-group[_ngcontent-%COMP%] {\n  background: none !important;\n  border: none;\n}\n.content-box[_ngcontent-%COMP%]   .decode-box[_ngcontent-%COMP%]   .list-group[_ngcontent-%COMP%]   .list-group-item[_ngcontent-%COMP%] {\n  background: none !important;\n  border: none;\n}\n.modal[_ngcontent-%COMP%]   .list-group[_ngcontent-%COMP%] {\n  background: none !important;\n}\n.modal[_ngcontent-%COMP%]   .list-group[_ngcontent-%COMP%]   .list-group-item[_ngcontent-%COMP%] {\n  border: none;\n  background: none !important;\n}\n#goTopBtn[_ngcontent-%COMP%] {\n  position: fixed;\n  bottom: 1rem;\n  right: 1rem;\n}\n#refreshBtn[_ngcontent-%COMP%] {\n  position: fixed;\n  bottom: 4rem;\n  right: 1rem;\n}\n.content-box[_ngcontent-%COMP%] {\n  background-color: #000;\n  height: 100rem;\n  width: 100%;\n}\n#tutorial-box[_ngcontent-%COMP%]   .content-area[_ngcontent-%COMP%]   .graph-box[_ngcontent-%COMP%]   .graph[_ngcontent-%COMP%] {\n  height: 20rem;\n  width: auto;\n}\n#tutorial-box[_ngcontent-%COMP%]   .content-area[_ngcontent-%COMP%]   .voice-box[_ngcontent-%COMP%] {\n  inline-size: 100% !important;\n  overflow-wrap: break-word !important;\n}\n#tutorial-box[_ngcontent-%COMP%]   .content-area[_ngcontent-%COMP%]   .voice-box[_ngcontent-%COMP%]   .voice-second[_ngcontent-%COMP%] {\n  display: none;\n  margin-right: 0.6px;\n}\n#tutorial-box[_ngcontent-%COMP%]   .content-area[_ngcontent-%COMP%]   .title-letter[_ngcontent-%COMP%] {\n  margin-right: 0.6px;\n}\n#tutorial-box[_ngcontent-%COMP%]   .content-area[_ngcontent-%COMP%]   .desc-letter[_ngcontent-%COMP%] {\n  margin-right: 0.6px;\n}\n#tutorial-box[_ngcontent-%COMP%]   .content-area[_ngcontent-%COMP%]   .code-box[_ngcontent-%COMP%]   .code-letter[_ngcontent-%COMP%] {\n  margin-right: 0.6px;\n}\n#tutorial-box[_ngcontent-%COMP%]   .content-area[_ngcontent-%COMP%]   .output-box[_ngcontent-%COMP%] {\n  inline-size: 100% !important;\n  overflow-wrap: break-word !important;\n}\n#tutorial-box[_ngcontent-%COMP%]   .content-area[_ngcontent-%COMP%]   .output-box[_ngcontent-%COMP%]   .output-letter[_ngcontent-%COMP%] {\n  margin-right: 0.6px;\n}\n#file-input-label[_ngcontent-%COMP%]:hover {\n  background-color: rgb(8, 116, 67) !important;\n  cursor: pointer;\n}\n/*# sourceMappingURL=data:application/json;base64,ewogICJ2ZXJzaW9uIjogMywKICAic291cmNlcyI6IFsic3JjL2FwcC9tZC1zY3JlZW4tcmVjb3JkL21kLXNjcmVlbi1yZWNvcmQuY29tcG9uZW50LnNjc3MiXSwKICAic291cmNlc0NvbnRlbnQiOiBbIi5uYXZiYXIge1xyXG4gICAgcGFkZGluZy10b3A6IDEuNXJlbTtcclxufVxyXG5cclxuLmlucHV0LWdyb3VwIHtcclxuICAgIHdpZHRoOiA0MHJlbTtcclxufVxyXG5cclxuLmp1cHl0ZXItbG9nbyxcclxuLm1hcmtkb3duLWxvZ28ge1xyXG4gICAgaGVpZ2h0OiAycmVtO1xyXG4gICAgd2lkdGg6IGF1dG87XHJcbiAgICBtYXJnaW4tbGVmdDogLjVyZW07XHJcbiAgICBtYXJnaW4tcmlnaHQ6IC41cmVtO1xyXG59XHJcblxyXG4ucmlnaHQtYXJyb3cge1xyXG4gICAgbWFyZ2luLWxlZnQ6IC41cmVtO1xyXG4gICAgbWFyZ2luLXJpZ2h0OiAuNXJlbTtcclxuICAgIGhlaWdodDogMS41cmVtO1xyXG4gICAgd2lkdGg6IGF1dG87XHJcbn1cclxuXHJcbi52aWRlby1sb2dvIHtcclxuICAgIGhlaWdodDogMi43cmVtO1xyXG4gICAgd2lkdGg6IGF1dG87XHJcbn1cclxuXHJcbi5oeXBlcnBhcmFtZXRlci1mb3JtIHtcclxuICAgIGlucHV0IHtcclxuICAgICAgICBiYWNrZ3JvdW5kLWNvbG9yOiBibGFjaztcclxuICAgICAgICBjb2xvcjogd2hpdGU7XHJcbiAgICAgICAgYm9yZGVyLWNvbG9yOiBncmF5O1xyXG4gICAgICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcclxuICAgICAgICB3aWR0aDogMTVyZW07XHJcbiAgICB9XHJcblxyXG4gICAgLmh5cGVycGFyYW1ldGVyIHAge1xyXG4gICAgICAgICY6aG92ZXIge1xyXG4gICAgICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XHJcbiAgICAgICAgfVxyXG4gICAgfVxyXG59XHJcblxyXG4uY29udGVudC1ib3gge1xyXG4gICAgb3ZlcmZsb3c6IGhpZGRlbiAhaW1wb3J0YW50O1xyXG5cclxuICAgIC5vcmlnaW5hbC1tYXJrZG93bi1ib3gge1xyXG4gICAgICAgIG92ZXJmbG93LXg6IHNjcm9sbCAhaW1wb3J0YW50O1xyXG5cclxuICAgICAgICAuZmlsZS1jb250ZW50LWJveCB7XHJcbiAgICAgICAgICAgIHdpZHRoOiAxMDAlO1xyXG4gICAgICAgICAgICBoZWlnaHQ6IDUwJTtcclxuICAgICAgICAgICAgZmxleC13cmFwOiB3cmFwICFpbXBvcnRhbnQ7XHJcbiAgICAgICAgICAgIG92ZXJmbG93OiBzY3JvbGwgIWltcG9ydGFudDtcclxuICAgICAgICB9XHJcbiAgICB9XHJcblxyXG4gICAgLmRlY29kZS1ib3gge1xyXG4gICAgICAgIC5saXN0LWdyb3VwIHtcclxuICAgICAgICAgICAgYmFja2dyb3VuZDogbm9uZSAhaW1wb3J0YW50O1xyXG4gICAgICAgICAgICBib3JkZXI6IG5vbmU7XHJcblxyXG4gICAgICAgICAgICAubGlzdC1ncm91cC1pdGVtIHtcclxuICAgICAgICAgICAgICAgIGJhY2tncm91bmQ6IG5vbmUgIWltcG9ydGFudDtcclxuICAgICAgICAgICAgICAgIGJvcmRlcjogbm9uZTtcclxuICAgICAgICAgICAgfVxyXG4gICAgICAgIH1cclxuICAgIH1cclxuXHJcbn1cclxuXHJcbi5tb2RhbCB7XHJcbiAgICAubGlzdC1ncm91cCB7XHJcbiAgICAgICAgYmFja2dyb3VuZDogbm9uZSAhaW1wb3J0YW50O1xyXG5cclxuICAgICAgICAubGlzdC1ncm91cC1pdGVtIHtcclxuICAgICAgICAgICAgYm9yZGVyOiBub25lO1xyXG4gICAgICAgICAgICBiYWNrZ3JvdW5kOiBub25lICFpbXBvcnRhbnQ7XHJcbiAgICAgICAgfVxyXG4gICAgfVxyXG59XHJcblxyXG4jZ29Ub3BCdG4ge1xyXG4gICAgcG9zaXRpb246IGZpeGVkO1xyXG4gICAgYm90dG9tOiAxcmVtO1xyXG4gICAgcmlnaHQ6IDFyZW07XHJcbn1cclxuXHJcbiNyZWZyZXNoQnRuIHtcclxuICAgIHBvc2l0aW9uOiBmaXhlZDtcclxuICAgIGJvdHRvbTogNHJlbTtcclxuICAgIHJpZ2h0OiAxcmVtO1xyXG59XHJcblxyXG4vLyDooazlupXvvIzlsIblhoXlrrnljLrln5/pg73ooazlupXkuLrpu5HoibJcclxuLmNvbnRlbnQtYm94IHtcclxuICAgIGJhY2tncm91bmQtY29sb3I6ICMwMDA7XHJcbiAgICBoZWlnaHQ6IDEwMHJlbTtcclxuICAgIHdpZHRoOiAxMDAlO1xyXG59XHJcblxyXG4jdHV0b3JpYWwtYm94IHtcclxuICAgIC50dXRvcmlhbC1jb250YWluZXIge31cclxuXHJcblxyXG4gICAgLmNvbnRlbnQtYXJlYSB7XHJcblxyXG4gICAgICAgIC5ncmFwaC1ib3gge1xyXG4gICAgICAgICAgICAuZ3JhcGgge1xyXG4gICAgICAgICAgICAgICAgaGVpZ2h0OiAyMHJlbTtcclxuICAgICAgICAgICAgICAgIHdpZHRoOiBhdXRvO1xyXG4gICAgICAgICAgICB9XHJcbiAgICAgICAgfVxyXG5cclxuICAgICAgICAudm9pY2UtYm94IHtcclxuICAgICAgICAgICAgaW5saW5lLXNpemU6IDEwMCUgIWltcG9ydGFudDtcclxuICAgICAgICAgICAgb3ZlcmZsb3ctd3JhcDogYnJlYWstd29yZCAhaW1wb3J0YW50O1xyXG5cclxuICAgICAgICAgICAgLnZvaWNlLXNlY29uZCB7XHJcbiAgICAgICAgICAgICAgICBkaXNwbGF5OiBub25lOyAvL+S4jeaYvuekuuivremfs+i+k+WHuueahOenkuaVsOeahOaVsOWtl1xyXG4gICAgICAgICAgICAgICAgbWFyZ2luLXJpZ2h0OiAwLjZweDtcclxuICAgICAgICAgICAgfVxyXG4gICAgICAgIH1cclxuXHJcbiAgICAgICAgLnRpdGxlLWxldHRlciB7XHJcbiAgICAgICAgICAgIG1hcmdpbi1yaWdodDogMC42cHg7XHJcbiAgICAgICAgfVxyXG5cclxuICAgICAgICAuZGVzYy1sZXR0ZXIge1xyXG4gICAgICAgICAgICBtYXJnaW4tcmlnaHQ6IDAuNnB4O1xyXG4gICAgICAgIH1cclxuXHJcbiAgICAgICAgLmNvZGUtYm94IHtcclxuICAgICAgICAgICAgLmNvZGUtbGV0dGVyIHtcclxuICAgICAgICAgICAgICAgIG1hcmdpbi1yaWdodDogMC42cHg7XHJcbiAgICAgICAgICAgIH1cclxuICAgICAgICB9XHJcblxyXG4gICAgICAgIC5vdXRwdXQtYm94IHtcclxuICAgICAgICAgICAgaW5saW5lLXNpemU6IDEwMCUgIWltcG9ydGFudDtcclxuICAgICAgICAgICAgb3ZlcmZsb3ctd3JhcDogYnJlYWstd29yZCAhaW1wb3J0YW50O1xyXG5cclxuICAgICAgICAgICAgLm91dHB1dC1sZXR0ZXIge1xyXG4gICAgICAgICAgICAgICAgbWFyZ2luLXJpZ2h0OiAwLjZweDtcclxuICAgICAgICAgICAgfVxyXG5cclxuICAgICAgICB9XHJcbiAgICB9XHJcbn1cclxuXHJcblxyXG5cclxuI2ZpbGUtaW5wdXQtbGFiZWwge1xyXG4gICAgJjpob3ZlciB7XHJcbiAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogcmdiKDgsIDExNiwgNjcpICFpbXBvcnRhbnQ7XHJcbiAgICAgICAgY3Vyc29yOiBwb2ludGVyO1xyXG4gICAgfVxyXG59Il0sCiAgIm1hcHBpbmdzIjogIjtBQUFBLENBQUE7QUFDSSxlQUFBOztBQUdKLENBQUE7QUFDSSxTQUFBOztBQUdKLENBQUE7QUFBQSxDQUFBO0FBRUksVUFBQTtBQUNBLFNBQUE7QUFDQSxlQUFBO0FBQ0EsZ0JBQUE7O0FBR0osQ0FBQTtBQUNJLGVBQUE7QUFDQSxnQkFBQTtBQUNBLFVBQUE7QUFDQSxTQUFBOztBQUdKLENBQUE7QUFDSSxVQUFBO0FBQ0EsU0FBQTs7QUFJQSxDQUFBLG9CQUFBO0FBQ0ksb0JBQUE7QUFDQSxTQUFBO0FBQ0EsZ0JBQUE7QUFDQSxXQUFBO0FBQ0EsU0FBQTs7QUFJQSxDQVRKLG9CQVNJLENBQUEsZUFBQSxDQUFBO0FBQ0ksVUFBQTs7QUFLWixDQUFBO0FBQ0ksWUFBQTs7QUFFQSxDQUhKLFlBR0ksQ0FBQTtBQUNJLGNBQUE7O0FBRUEsQ0FOUixZQU1RLENBSEosc0JBR0ksQ0FBQTtBQUNJLFNBQUE7QUFDQSxVQUFBO0FBQ0EsYUFBQTtBQUNBLFlBQUE7O0FBS0osQ0FmUixZQWVRLENBQUEsV0FBQSxDQUFBO0FBQ0ksY0FBQTtBQUNBLFVBQUE7O0FBRUEsQ0FuQlosWUFtQlksQ0FKSixXQUlJLENBSkosV0FJSSxDQUFBO0FBQ0ksY0FBQTtBQUNBLFVBQUE7O0FBUVosQ0FBQSxNQUFBLENBZEk7QUFlQSxjQUFBOztBQUVBLENBSEosTUFHSSxDQWpCQSxXQWlCQSxDQWJJO0FBY0EsVUFBQTtBQUNBLGNBQUE7O0FBS1osQ0FBQTtBQUNJLFlBQUE7QUFDQSxVQUFBO0FBQ0EsU0FBQTs7QUFHSixDQUFBO0FBQ0ksWUFBQTtBQUNBLFVBQUE7QUFDQSxTQUFBOztBQUlKLENBcERBO0FBcURJLG9CQUFBO0FBQ0EsVUFBQTtBQUNBLFNBQUE7O0FBVVEsQ0FBQSxhQUFBLENBQUEsYUFBQSxDQUFBLFVBQUEsQ0FBQTtBQUNJLFVBQUE7QUFDQSxTQUFBOztBQUlSLENBTkksYUFNSixDQU5JLGFBTUosQ0FBQTtBQUNJLGVBQUE7QUFDQSxpQkFBQTs7QUFFQSxDQVZBLGFBVUEsQ0FWQSxhQVVBLENBSkosVUFJSSxDQUFBO0FBQ0ksV0FBQTtBQUNBLGdCQUFBOztBQUlSLENBaEJJLGFBZ0JKLENBaEJJLGFBZ0JKLENBQUE7QUFDSSxnQkFBQTs7QUFHSixDQXBCSSxhQW9CSixDQXBCSSxhQW9CSixDQUFBO0FBQ0ksZ0JBQUE7O0FBSUEsQ0F6QkEsYUF5QkEsQ0F6QkEsYUF5QkEsQ0FBQSxTQUFBLENBQUE7QUFDSSxnQkFBQTs7QUFJUixDQTlCSSxhQThCSixDQTlCSSxhQThCSixDQUFBO0FBQ0ksZUFBQTtBQUNBLGlCQUFBOztBQUVBLENBbENBLGFBa0NBLENBbENBLGFBa0NBLENBSkosV0FJSSxDQUFBO0FBQ0ksZ0JBQUE7O0FBVVosQ0FBQSxnQkFBQTtBQUNJLG9CQUFBLElBQUEsQ0FBQSxFQUFBLEdBQUEsRUFBQTtBQUNBLFVBQUE7OyIsCiAgIm5hbWVzIjogW10KfQo= */"]
   });
   let MdScreenRecordComponent2 = _MdScreenRecordComponent;
   return MdScreenRecordComponent2;
@@ -27918,7 +28158,7 @@ var CodeBattlefieldComponent = /* @__PURE__ */ (() => {
     selectors: [["app-code-battlefield"]],
     decls: 25,
     vars: 1,
-    consts: [[1, "box", "bg-dark", "pt-5", "mt-4"], [1, "container-fluid", "px-5", "py-4"], [1, "row", "mb-5", "align-items-center"], [1, "col-8"], [1, "text-primary", "mb-4", "fw-bold", "fs-1"], ["class", "text-secondary", 4, "ngFor", "ngForOf"], [1, "row", "mt-2"], [1, "col"], ["href", "/#/code-battlefield/code-huggingface", 1, "btn", "btn-sm", "btn-outline-warning", "px-3", "py-1"], ["src", "../../assets/img/huggingface-logo.png", 1, "icon", "me-2"], ["href", "/#/code-battlefield/code-tongyi", 1, "btn", "btn-sm", "btn-outline-primary", "px-4", "py-1"], ["src", "../../assets/img/tongyi-logo.svg", 1, "icon", "me-2"], ["href", "/#/code-battlefield/code-harmonyos", 1, "btn", "btn-sm", "btn-outline-danger", "px-3", "py-1"], ["src", "../../assets/img/huawei-logo.png", 1, "icon", "me-2"], [1, "col", "text-center"], ["src", "../../assets/img/ai-bgm2.png", 1, "slogan-img"], [1, "row"], [1, "col-12"], [1, "text-secondary"]],
+    consts: [[1, "box", "bg-dark", "pt-3"], [1, "container-fluid", "px-5", "py-4"], [1, "row", "mb-5", "align-items-center"], [1, "col-8"], [1, "text-primary", "mb-4", "fw-bold", "fs-1"], ["class", "text-secondary", 4, "ngFor", "ngForOf"], [1, "row", "mt-2"], [1, "col"], ["href", "/#/code-battlefield/code-huggingface", 1, "btn", "btn-sm", "btn-outline-warning", "px-3", "py-1"], ["src", "../../assets/img/huggingface-logo.png", 1, "icon", "me-2"], ["href", "/#/code-battlefield/code-tongyi", 1, "btn", "btn-sm", "btn-outline-primary", "px-4", "py-1"], ["src", "../../assets/img/tongyi-logo.svg", 1, "icon", "me-2"], ["href", "/#/code-battlefield/code-harmonyos", 1, "btn", "btn-sm", "btn-outline-danger", "px-3", "py-1"], ["src", "../../assets/img/huawei-logo.png", 1, "icon", "me-2"], [1, "col", "text-center"], ["src", "../../assets/img/ai-bgm2.png", 1, "slogan-img"], [1, "row"], [1, "col-12"], [1, "text-secondary"]],
     template: function CodeBattlefieldComponent_Template(rf, ctx) {
       if (rf & 1) {
         \u0275\u0275elementStart(0, "div", 0)(1, "div", 1)(2, "div", 2)(3, "div", 3)(4, "h1", 4);
@@ -28028,9 +28268,9 @@ function CodeHuggingfaceComponent_object_10_Template(rf, ctx) {
 }
 var CodeHuggingfaceComponent = /* @__PURE__ */ (() => {
   const _CodeHuggingfaceComponent = class _CodeHuggingfaceComponent {
-    constructor(sanitizer) {
+    constructor(sanitizer, service) {
       this.sanitizer = sanitizer;
-      this.service = new LocalService();
+      this.service = service;
       this.codeList = huggingface_code_list_default;
       this.currentUrl = "";
     }
@@ -28048,7 +28288,7 @@ var CodeHuggingfaceComponent = /* @__PURE__ */ (() => {
     }
   };
   _CodeHuggingfaceComponent.\u0275fac = function CodeHuggingfaceComponent_Factory(t) {
-    return new (t || _CodeHuggingfaceComponent)(\u0275\u0275directiveInject(DomSanitizer));
+    return new (t || _CodeHuggingfaceComponent)(\u0275\u0275directiveInject(DomSanitizer), \u0275\u0275directiveInject(LocalService));
   };
   _CodeHuggingfaceComponent.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({
     type: _CodeHuggingfaceComponent,
@@ -28187,7 +28427,7 @@ var routes = [{
   component: LifePhilosophyComponent
 }, {
   path: "md-screen-record",
-  title: "MarkDown Screen Record",
+  title: "MarkDown Screen Record with Voice",
   component: MdScreenRecordComponent
 }, {
   path: "about",
@@ -28215,11 +28455,88 @@ var AppRoutingModule = /* @__PURE__ */ (() => {
 })();
 
 // src/app/app.component.ts
+function AppComponent_nav_0_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementStart(0, "nav", 11)(1, "div", 12)(2, "a", 13);
+    \u0275\u0275element(3, "img", 14);
+    \u0275\u0275text(4, " Startup Center by Frank ");
+    \u0275\u0275elementEnd();
+    \u0275\u0275elementStart(5, "button", 15);
+    \u0275\u0275element(6, "span", 16);
+    \u0275\u0275elementEnd();
+    \u0275\u0275elementStart(7, "div", 17)(8, "ul", 18)(9, "li", 19)(10, "a", 20);
+    \u0275\u0275element(11, "i", 21);
+    \u0275\u0275text(12, " \u9996\u9875 ");
+    \u0275\u0275elementEnd()();
+    \u0275\u0275elementStart(13, "li", 22)(14, "a", 23);
+    \u0275\u0275element(15, "img", 24);
+    \u0275\u0275text(16, " \u4EBA\u5DE5\u667A\u80FD ");
+    \u0275\u0275elementEnd();
+    \u0275\u0275elementStart(17, "ul", 25)(18, "li")(19, "a", 26);
+    \u0275\u0275element(20, "img", 27);
+    \u0275\u0275text(21, " HuggingFace ");
+    \u0275\u0275elementEnd()();
+    \u0275\u0275elementStart(22, "li");
+    \u0275\u0275element(23, "hr", 28);
+    \u0275\u0275elementEnd();
+    \u0275\u0275elementStart(24, "li")(25, "a", 29);
+    \u0275\u0275element(26, "img", 30);
+    \u0275\u0275text(27, " \u901A\u4E49\u5343\u95EE ");
+    \u0275\u0275elementEnd()();
+    \u0275\u0275elementStart(28, "li");
+    \u0275\u0275element(29, "hr", 28);
+    \u0275\u0275elementEnd();
+    \u0275\u0275elementStart(30, "li")(31, "a", 31);
+    \u0275\u0275element(32, "img", 32);
+    \u0275\u0275text(33, " \u6982\u5FF5\u626B\u76F2 ");
+    \u0275\u0275elementEnd()()()();
+    \u0275\u0275elementStart(34, "li", 33)(35, "a", 34);
+    \u0275\u0275element(36, "img", 35);
+    \u0275\u0275text(37, " \u9E3F\u8499\u7CFB\u7EDF ");
+    \u0275\u0275elementEnd()();
+    \u0275\u0275elementStart(38, "li", 33)(39, "a", 36);
+    \u0275\u0275element(40, "img", 37);
+    \u0275\u0275text(41, " \u7F16\u7801\u9635\u5730 ");
+    \u0275\u0275elementEnd()();
+    \u0275\u0275elementStart(42, "li", 38)(43, "a", 23);
+    \u0275\u0275element(44, "img", 39);
+    \u0275\u0275text(45, " \u5DE5\u5177\u7BB1 ");
+    \u0275\u0275elementEnd();
+    \u0275\u0275elementStart(46, "ul", 25)(47, "li")(48, "a", 40);
+    \u0275\u0275element(49, "img", 41)(50, "img", 42);
+    \u0275\u0275text(51, " MarkDown \u5F55\u5C4F \xB7 \u8BED\u97F3 ");
+    \u0275\u0275elementEnd()()()();
+    \u0275\u0275elementStart(52, "li", 33)(53, "a", 43);
+    \u0275\u0275element(54, "i", 44);
+    \u0275\u0275text(55, " \u751F\u6D3B\u54F2\u7406 ");
+    \u0275\u0275elementEnd()()()()()();
+  }
+}
+function AppComponent_img_8_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275element(0, "img", 45);
+  }
+  if (rf & 2) {
+    const img_r2 = ctx.$implicit;
+    \u0275\u0275property("src", "../assets/img/" + img_r2, \u0275\u0275sanitizeUrl);
+  }
+}
 var AppComponent = /* @__PURE__ */ (() => {
   const _AppComponent = class _AppComponent {
-    constructor() {
+    constructor(router, location2) {
+      this.router = router;
+      this.location = location2;
       this.title = "StudyCenter";
       this.currentYear = "";
+      this.footerImgs = ["chatGPT-logo.png", "huggingface-logo.png", "tongyi-logo.svg", "youtube.png", "huawei-logo.png", "dollar.png", "jupyter-logo.png", "logo.png", "markdown-logo.png", "flask-logo.png", "python-logo.png"];
+      this.showNavbar = true;
+      location2.onUrlChange((val) => {
+        if (val == "#/md-screen-record") {
+          this.showNavbar = false;
+        } else {
+          this.showNavbar = true;
+        }
+      });
     }
     ngOnInit() {
       window.scrollTo({
@@ -28233,83 +28550,37 @@ var AppComponent = /* @__PURE__ */ (() => {
     }
   };
   _AppComponent.\u0275fac = function AppComponent_Factory(t) {
-    return new (t || _AppComponent)();
+    return new (t || _AppComponent)(\u0275\u0275directiveInject(Router), \u0275\u0275directiveInject(Location));
   };
   _AppComponent.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({
     type: _AppComponent,
     selectors: [["app-root"]],
-    decls: 71,
-    vars: 1,
-    consts: [["data-bs-theme", "dark", 1, "navbar", "fixed-top", "bg-body-tertiary", "navbar-expand-lg", "rounded-0", "border-bottom"], [1, "container-fluid", "px-5"], ["href", "#", 1, "navbar-brand", "fs-4", "fw-bold"], ["src", "../assets/img/startup.png", "width", "auto", "height", "30", 1, "me-1"], ["type", "button", "data-bs-toggle", "collapse", "data-bs-target", "#navbarNav", "aria-controls", "navbarNav", "aria-expanded", "false", "aria-label", "Toggle navigation", 1, "navbar-toggler"], [1, "navbar-toggler-icon"], ["id", "navbarNav", 1, "collapse", "navbar-collapse", "justify-content-end"], [1, "navbar-nav"], [1, "nav-item"], ["aria-current", "page", "href", "/", 1, "nav-link", "active"], [1, "bi", "bi-house-fill", "me-1"], [1, "nav-item", "dropdown"], ["href", "#", "role", "button", "data-bs-toggle", "dropdown", "aria-expanded", "false", 1, "nav-link", "dropdown-toggle", "active"], ["src", "../assets/img/ai-logo.png", 1, "icon", "me-1", "mb-1"], [1, "dropdown-menu"], ["href", "/#/huggingface", 1, "dropdown-item"], ["src", "../assets/img/huggingface-logo.png", 1, "icon", "me-1"], [1, "dropdown-divider"], ["href", "/#/tongyi", 1, "dropdown-item"], ["src", "../assets/img/tongyi-logo.svg", 1, "icon", "me-1"], ["href", "/#/ai-concept", 1, "dropdown-item"], ["src", "../assets/img/ai-concept.png", 1, "icon", "me-1"], [1, "nav-item", "ms-2"], ["href", "/#/harmonyos", 1, "nav-link", "active"], ["src", "../assets/img/huawei-logo.png", 1, "icon", "me-1", "mb-1"], ["href", "/#/code-battlefield", 1, "nav-link", "active"], ["src", "../assets/img/code.png", 1, "icon", "me-1", "mb-1"], [1, "nav-item", "dropdown", "ms-2"], ["src", "../assets/img/tools.png", 1, "icon", "me-1", "mb-1"], ["href", "/#/md-screen-record", 1, "dropdown-item"], ["src", "../assets/img/markdown-logo.png", 1, "icon", "me-1"], ["href", "/#/life-philosophy", 1, "nav-link", "active"], [1, "bi", "bi-book-fill", "me-1", "text-info"], [1, "footer"], [1, "container-fluid", "px-5", "text-secondary", "py-4"], [1, "row", "mb-4", "mt-2"], [1, "col-12", "text-center"], ["src", "../assets/img/chatGPT-logo.png", 1, "footer-img"], ["src", "../assets/img/huggingface-logo.png", 1, "footer-img"], ["src", "../assets/img/huawei-logo.png", 1, "footer-img"], ["src", "../assets/img/tongyi-logo.svg", 1, "footer-img"], ["src", "../assets/img/jupyter-logo.png", 1, "footer-img"], ["src", "../assets/img/logo.png", 1, "footer-img"], ["src", "../assets/img/markdown-logo.png", 1, "footer-img"], [1, "row"], [1, "col-12"], [1, "m-0", "text-center"]],
+    decls: 13,
+    vars: 3,
+    consts: [["class", "navbar bg-body-tertiary navbar-expand-lg rounded-0 border-bottom", "data-bs-theme", "dark", 4, "ngIf"], [1, "footer"], [1, "container-fluid", "px-5", "text-secondary", "py-4"], [1, "row", "mb-4", "mt-2"], [1, "col-12", "text-center", "mb-4"], ["src", "../assets/img/wolf-hand.png", 2, "height", "4rem", "width", "auto"], [1, "col-12", "text-center"], ["class", "footer-img", 3, "src", 4, "ngFor", "ngForOf"], [1, "row"], [1, "col-12"], [1, "m-0", "text-center"], ["data-bs-theme", "dark", 1, "navbar", "bg-body-tertiary", "navbar-expand-lg", "rounded-0", "border-bottom"], [1, "container-fluid", "px-5"], ["href", "#", 1, "navbar-brand", "fs-4", "fw-bold"], ["src", "../assets/img/startup.png", "width", "auto", "height", "30", 1, "me-1"], ["type", "button", "data-bs-toggle", "collapse", "data-bs-target", "#navbarNav", "aria-controls", "navbarNav", "aria-expanded", "false", "aria-label", "Toggle navigation", 1, "navbar-toggler"], [1, "navbar-toggler-icon"], ["id", "navbarNav", 1, "collapse", "navbar-collapse", "justify-content-end"], [1, "navbar-nav"], [1, "nav-item"], ["aria-current", "page", "href", "/", 1, "nav-link", "active"], [1, "bi", "bi-house-fill", "me-1"], [1, "nav-item", "dropdown"], ["href", "#", "role", "button", "data-bs-toggle", "dropdown", "aria-expanded", "false", 1, "nav-link", "dropdown-toggle", "active"], ["src", "../assets/img/ai-logo.png", 1, "icon", "me-1", "mb-1"], [1, "dropdown-menu"], ["href", "/#/huggingface", 1, "dropdown-item"], ["src", "../assets/img/huggingface-logo.png", 1, "icon", "me-1"], [1, "dropdown-divider"], ["href", "/#/tongyi", 1, "dropdown-item"], ["src", "../assets/img/tongyi-logo.svg", 1, "icon", "me-1"], ["href", "/#/ai-concept", 1, "dropdown-item"], ["src", "../assets/img/ai-concept.png", 1, "icon", "me-1"], [1, "nav-item", "ms-2"], ["href", "/#/harmonyos", 1, "nav-link", "active"], ["src", "../assets/img/huawei-logo.png", 1, "icon", "me-1", "mb-1"], ["href", "/#/code-battlefield", 1, "nav-link", "active"], ["src", "../assets/img/code.png", 1, "icon", "me-1", "mb-1"], [1, "nav-item", "dropdown", "ms-2"], ["src", "../assets/img/tools.png", 1, "icon", "me-1", "mb-1"], ["href", "/#/md-screen-record", 1, "dropdown-item"], ["src", "../assets/img/markdown-logo.png", 1, "icon", "me-2"], ["src", "../assets/img/audio.png", 1, "icon", "me-2"], ["href", "/#/life-philosophy", 1, "nav-link", "active"], [1, "bi", "bi-book-fill", "me-1", "text-info"], [1, "footer-img", 3, "src"]],
     template: function AppComponent_Template(rf, ctx) {
       if (rf & 1) {
-        \u0275\u0275elementStart(0, "nav", 0)(1, "div", 1)(2, "a", 2);
-        \u0275\u0275element(3, "img", 3);
-        \u0275\u0275text(4, " Startup Center for Frank ");
+        \u0275\u0275template(0, AppComponent_nav_0_Template, 56, 0, "nav", 0);
+        \u0275\u0275element(1, "router-outlet");
+        \u0275\u0275elementStart(2, "div", 1)(3, "div", 2)(4, "div", 3)(5, "div", 4);
+        \u0275\u0275element(6, "img", 5);
         \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(5, "button", 4);
-        \u0275\u0275element(6, "span", 5);
-        \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(7, "div", 6)(8, "ul", 7)(9, "li", 8)(10, "a", 9);
-        \u0275\u0275element(11, "i", 10);
-        \u0275\u0275text(12, " \u9996\u9875 ");
+        \u0275\u0275elementStart(7, "div", 6);
+        \u0275\u0275template(8, AppComponent_img_8_Template, 1, 1, "img", 7);
         \u0275\u0275elementEnd()();
-        \u0275\u0275elementStart(13, "li", 11)(14, "a", 12);
-        \u0275\u0275element(15, "img", 13);
-        \u0275\u0275text(16, " \u4EBA\u5DE5\u667A\u80FD ");
-        \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(17, "ul", 14)(18, "li")(19, "a", 15);
-        \u0275\u0275element(20, "img", 16);
-        \u0275\u0275text(21, " HuggingFace ");
-        \u0275\u0275elementEnd()();
-        \u0275\u0275elementStart(22, "li");
-        \u0275\u0275element(23, "hr", 17);
-        \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(24, "li")(25, "a", 18);
-        \u0275\u0275element(26, "img", 19);
-        \u0275\u0275text(27, " \u901A\u4E49\u5343\u95EE ");
-        \u0275\u0275elementEnd()();
-        \u0275\u0275elementStart(28, "li");
-        \u0275\u0275element(29, "hr", 17);
-        \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(30, "li")(31, "a", 20);
-        \u0275\u0275element(32, "img", 21);
-        \u0275\u0275text(33, " \u6982\u5FF5\u626B\u76F2 ");
-        \u0275\u0275elementEnd()()()();
-        \u0275\u0275elementStart(34, "li", 22)(35, "a", 23);
-        \u0275\u0275element(36, "img", 24);
-        \u0275\u0275text(37, " \u9E3F\u8499\u7CFB\u7EDF ");
-        \u0275\u0275elementEnd()();
-        \u0275\u0275elementStart(38, "li", 22)(39, "a", 25);
-        \u0275\u0275element(40, "img", 26);
-        \u0275\u0275text(41, " \u7F16\u7801\u9635\u5730 ");
-        \u0275\u0275elementEnd()();
-        \u0275\u0275elementStart(42, "li", 27)(43, "a", 12);
-        \u0275\u0275element(44, "img", 28);
-        \u0275\u0275text(45, " \u5DE5\u5177\u7BB1 ");
-        \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(46, "ul", 14)(47, "li")(48, "a", 29);
-        \u0275\u0275element(49, "img", 30);
-        \u0275\u0275text(50, " MarkDown \u5F55\u5C4F ");
-        \u0275\u0275elementEnd()()()();
-        \u0275\u0275elementStart(51, "li", 22)(52, "a", 31);
-        \u0275\u0275element(53, "i", 32);
-        \u0275\u0275text(54, " \u751F\u6D3B\u54F2\u7406 ");
-        \u0275\u0275elementEnd()()()()()();
-        \u0275\u0275element(55, "router-outlet");
-        \u0275\u0275elementStart(56, "div", 33)(57, "div", 34)(58, "div", 35)(59, "div", 36);
-        \u0275\u0275element(60, "img", 37)(61, "img", 38)(62, "img", 39)(63, "img", 40)(64, "img", 41)(65, "img", 42)(66, "img", 43);
-        \u0275\u0275elementEnd()();
-        \u0275\u0275elementStart(67, "div", 44)(68, "div", 45)(69, "p", 46);
-        \u0275\u0275text(70);
+        \u0275\u0275elementStart(9, "div", 8)(10, "div", 9)(11, "p", 10);
+        \u0275\u0275text(12);
         \u0275\u0275elementEnd()()()()();
       }
       if (rf & 2) {
-        \u0275\u0275advance(70);
+        \u0275\u0275property("ngIf", ctx.showNavbar == true);
+        \u0275\u0275advance(8);
+        \u0275\u0275property("ngForOf", ctx.footerImgs);
+        \u0275\u0275advance(4);
         \u0275\u0275textInterpolate1("\xA9 ", ctx.currentYear, " \u674E\u9E4F\uFF08Frank Li\uFF09\u7248\u6743\u6240\u6709");
       }
     },
-    dependencies: [RouterOutlet],
+    dependencies: [NgForOf, NgIf, RouterOutlet],
     styles: ["\n\n.navbar[_ngcontent-%COMP%] {\n  background-color: #111 !important;\n}\n.navbar[_ngcontent-%COMP%]   .nav-item[_ngcontent-%COMP%]   .active[_ngcontent-%COMP%]:hover {\n  color: orange !important;\n}\n.navbar[_ngcontent-%COMP%]   .nav-item[_ngcontent-%COMP%]   .icon[_ngcontent-%COMP%] {\n  height: 1.1rem;\n  width: auto;\n}\n.footer[_ngcontent-%COMP%] {\n  background-color: rgb(13, 17, 23);\n}\n.footer[_ngcontent-%COMP%]   .footer-img[_ngcontent-%COMP%] {\n  height: 1.5rem;\n  width: auto;\n  margin-left: 1rem;\n  margin-right: 1rem;\n}\n/*# sourceMappingURL=data:application/json;base64,ewogICJ2ZXJzaW9uIjogMywKICAic291cmNlcyI6IFsic3JjL2FwcC9hcHAuY29tcG9uZW50LnNjc3MiXSwKICAic291cmNlc0NvbnRlbnQiOiBbIi5uYXZiYXIge1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogIzExMSAhaW1wb3J0YW50O1xyXG5cclxuICAgIC5uYXYtaXRlbSB7XHJcbiAgICAgICAgLmFjdGl2ZTpob3ZlciB7XHJcbiAgICAgICAgICAgIGNvbG9yOiBvcmFuZ2UgIWltcG9ydGFudDtcclxuICAgICAgICB9XHJcblxyXG4gICAgICAgIC5pY29uIHtcclxuICAgICAgICAgICAgaGVpZ2h0OiAxLjFyZW07XHJcbiAgICAgICAgICAgIHdpZHRoOiBhdXRvO1xyXG4gICAgICAgIH1cclxuICAgIH1cclxuXHJcbn1cclxuXHJcbiRpY29uSGVpZ2h0OiAxLjVyZW07XHJcbiRtYXJnaW5YOiAxcmVtO1xyXG5cclxuLmZvb3RlciB7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMTMsIDE3LCAyMyk7XHJcblxyXG4gICAgLmZvb3Rlci1pbWcge1xyXG4gICAgICAgIGhlaWdodDogJGljb25IZWlnaHQ7XHJcbiAgICAgICAgd2lkdGg6IGF1dG87XHJcbiAgICAgICAgbWFyZ2luLWxlZnQ6ICRtYXJnaW5YO1xyXG4gICAgICAgIG1hcmdpbi1yaWdodDogJG1hcmdpblg7XHJcbiAgICB9XHJcbn0iXSwKICAibWFwcGluZ3MiOiAiO0FBQUEsQ0FBQTtBQUNJLG9CQUFBOztBQUdJLENBSlIsT0FJUSxDQUFBLFNBQUEsQ0FBQSxNQUFBO0FBQ0ksU0FBQTs7QUFHSixDQVJSLE9BUVEsQ0FKQSxTQUlBLENBQUE7QUFDSSxVQUFBO0FBQ0EsU0FBQTs7QUFTWixDQUFBO0FBQ0ksb0JBQUEsSUFBQSxFQUFBLEVBQUEsRUFBQSxFQUFBOztBQUVBLENBSEosT0FHSSxDQUFBO0FBQ0ksVUFQSztBQVFMLFNBQUE7QUFDQSxlQVJFO0FBU0YsZ0JBVEU7OyIsCiAgIm5hbWVzIjogW10KfQo= */"]
   });
   let AppComponent2 = _AppComponent;
