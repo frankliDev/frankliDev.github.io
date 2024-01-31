@@ -27326,7 +27326,7 @@ function MdScreenRecordComponent_div_19_div_1_Template(rf, ctx) {
     \u0275\u0275elementEnd();
     \u0275\u0275elementStart(10, "h3", 66);
     \u0275\u0275element(11, "i", 68);
-    \u0275\u0275text(12, " \u63D0\u524D\u6253\u5F00\u5F55\u5C4F\u8F6F\u4EF6\uFF0C\u5728\u5F55\u5C4F\u5012\u8BA1\u65F6\u8BFB\u79D2\u7ED3\u675F\u524D\uFF0C\u5F00\u59CB\u5F55\u5236\u5C4F\u5E55 ");
+    \u0275\u0275text(12, " \u63D0\u524D\u6253\u5F00\u672C\u5730\u5B89\u88C5\u597D\u7684\u3010\u5FC5\u526A\u3011\uFF0C\u5F00\u542F\u5F55\u5C4F\u6A21\u5F0F\uFF1B\u7136\u540E\u5728\u7F51\u7AD9\u91CC\u64CD\u4F5C\uFF0C\u5F55\u5C4F\u5012\u8BA1\u65F6\u8BFB\u79D2\u7ED3\u675F\u540E\uFF0C\u7F51\u7AD9\u81EA\u52A8\u8FDB\u884C\u9010\u884C\u8F93\u51FA MarkDown \u5185\u5BB9\u3002 ");
     \u0275\u0275elementEnd();
     \u0275\u0275element(13, "img", 69);
     \u0275\u0275elementEnd();
@@ -28158,7 +28158,7 @@ var CodeBattlefieldComponent = /* @__PURE__ */ (() => {
     selectors: [["app-code-battlefield"]],
     decls: 25,
     vars: 1,
-    consts: [[1, "box", "bg-dark", "pt-3"], [1, "container-fluid", "px-5", "py-4"], [1, "row", "mb-5", "align-items-center"], [1, "col-8"], [1, "text-primary", "mb-4", "fw-bold", "fs-1"], ["class", "text-secondary", 4, "ngFor", "ngForOf"], [1, "row", "mt-2"], [1, "col"], ["href", "/#/code-battlefield/code-huggingface", 1, "btn", "btn-sm", "btn-outline-warning", "px-3", "py-1"], ["src", "../../assets/img/huggingface-logo.png", 1, "icon", "me-2"], ["href", "/#/code-battlefield/code-tongyi", 1, "btn", "btn-sm", "btn-outline-primary", "px-4", "py-1"], ["src", "../../assets/img/tongyi-logo.svg", 1, "icon", "me-2"], ["href", "/#/code-battlefield/code-harmonyos", 1, "btn", "btn-sm", "btn-outline-danger", "px-3", "py-1"], ["src", "../../assets/img/huawei-logo.png", 1, "icon", "me-2"], [1, "col", "text-center"], ["src", "../../assets/img/ai-bgm2.png", 1, "slogan-img"], [1, "row"], [1, "col-12"], [1, "text-secondary"]],
+    consts: [[1, "box", "bg-dark", "pt-3"], [1, "container-fluid", "px-5", "py-4"], [1, "row", "mb-5", "align-items-center"], [1, "col-8"], [1, "text-primary", "mb-4", "fw-bold", "fs-1"], ["class", "text-secondary", 4, "ngFor", "ngForOf"], [1, "row", "mt-2"], [1, "col"], ["href", "/#/code-battlefield/code-huggingface", 1, "btn", "btn-outline-warning"], ["src", "../../assets/img/huggingface-logo.png", 1, "icon", "me-2"], ["href", "/#/code-battlefield/code-tongyi", 1, "btn", "btn-outline-primary"], ["src", "../../assets/img/tongyi-logo.svg", 1, "icon", "me-2"], ["href", "/#/code-battlefield/code-harmonyos", 1, "btn", "btn-outline-danger"], ["src", "../../assets/img/huawei-logo.png", 1, "icon", "me-2"], [1, "col", "text-center"], ["src", "../../assets/img/ai-bgm2.png", 1, "slogan-img"], [1, "row"], [1, "col-12"], [1, "text-secondary"]],
     template: function CodeBattlefieldComponent_Template(rf, ctx) {
       if (rf & 1) {
         \u0275\u0275elementStart(0, "div", 0)(1, "div", 1)(2, "div", 2)(3, "div", 3)(4, "h1", 4);
@@ -28457,64 +28457,64 @@ var AppRoutingModule = /* @__PURE__ */ (() => {
 // src/app/app.component.ts
 function AppComponent_nav_0_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "nav", 11)(1, "div", 12)(2, "a", 13);
-    \u0275\u0275element(3, "img", 14);
+    \u0275\u0275elementStart(0, "nav", 10)(1, "div", 11)(2, "a", 12);
+    \u0275\u0275element(3, "img", 13);
     \u0275\u0275text(4, " Startup Center by Frank ");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(5, "button", 15);
-    \u0275\u0275element(6, "span", 16);
+    \u0275\u0275elementStart(5, "button", 14);
+    \u0275\u0275element(6, "span", 15);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(7, "div", 17)(8, "ul", 18)(9, "li", 19)(10, "a", 20);
-    \u0275\u0275element(11, "i", 21);
+    \u0275\u0275elementStart(7, "div", 16)(8, "ul", 17)(9, "li", 18)(10, "a", 19);
+    \u0275\u0275element(11, "i", 20);
     \u0275\u0275text(12, " \u9996\u9875 ");
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(13, "li", 22)(14, "a", 23);
-    \u0275\u0275element(15, "img", 24);
+    \u0275\u0275elementStart(13, "li", 21)(14, "a", 22);
+    \u0275\u0275element(15, "img", 23);
     \u0275\u0275text(16, " \u4EBA\u5DE5\u667A\u80FD ");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(17, "ul", 25)(18, "li")(19, "a", 26);
-    \u0275\u0275element(20, "img", 27);
+    \u0275\u0275elementStart(17, "ul", 24)(18, "li")(19, "a", 25);
+    \u0275\u0275element(20, "img", 26);
     \u0275\u0275text(21, " HuggingFace ");
     \u0275\u0275elementEnd()();
     \u0275\u0275elementStart(22, "li");
-    \u0275\u0275element(23, "hr", 28);
+    \u0275\u0275element(23, "hr", 27);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(24, "li")(25, "a", 29);
-    \u0275\u0275element(26, "img", 30);
+    \u0275\u0275elementStart(24, "li")(25, "a", 28);
+    \u0275\u0275element(26, "img", 29);
     \u0275\u0275text(27, " \u901A\u4E49\u5343\u95EE ");
     \u0275\u0275elementEnd()();
     \u0275\u0275elementStart(28, "li");
-    \u0275\u0275element(29, "hr", 28);
+    \u0275\u0275element(29, "hr", 27);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(30, "li")(31, "a", 31);
-    \u0275\u0275element(32, "img", 32);
+    \u0275\u0275elementStart(30, "li")(31, "a", 30);
+    \u0275\u0275element(32, "img", 31);
     \u0275\u0275text(33, " \u6982\u5FF5\u626B\u76F2 ");
     \u0275\u0275elementEnd()()()();
-    \u0275\u0275elementStart(34, "li", 33)(35, "a", 34);
-    \u0275\u0275element(36, "img", 35);
+    \u0275\u0275elementStart(34, "li", 32)(35, "a", 33);
+    \u0275\u0275element(36, "img", 34);
     \u0275\u0275text(37, " \u9E3F\u8499\u7CFB\u7EDF ");
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(38, "li", 33)(39, "a", 36);
-    \u0275\u0275element(40, "img", 37);
+    \u0275\u0275elementStart(38, "li", 32)(39, "a", 35);
+    \u0275\u0275element(40, "img", 36);
     \u0275\u0275text(41, " \u7F16\u7801\u9635\u5730 ");
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(42, "li", 38)(43, "a", 23);
-    \u0275\u0275element(44, "img", 39);
+    \u0275\u0275elementStart(42, "li", 37)(43, "a", 22);
+    \u0275\u0275element(44, "img", 38);
     \u0275\u0275text(45, " \u5DE5\u5177\u7BB1 ");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(46, "ul", 25)(47, "li")(48, "a", 40);
-    \u0275\u0275element(49, "img", 41)(50, "img", 42);
+    \u0275\u0275elementStart(46, "ul", 24)(47, "li")(48, "a", 39);
+    \u0275\u0275element(49, "img", 40)(50, "img", 41);
     \u0275\u0275text(51, " MarkDown \u5F55\u5C4F \xB7 \u8BED\u97F3 ");
     \u0275\u0275elementEnd()()()();
-    \u0275\u0275elementStart(52, "li", 33)(53, "a", 43);
-    \u0275\u0275element(54, "i", 44);
+    \u0275\u0275elementStart(52, "li", 32)(53, "a", 42);
+    \u0275\u0275element(54, "i", 43);
     \u0275\u0275text(55, " \u751F\u6D3B\u54F2\u7406 ");
     \u0275\u0275elementEnd()()()()()();
   }
 }
-function AppComponent_img_8_Template(rf, ctx) {
+function AppComponent_img_7_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275element(0, "img", 45);
+    \u0275\u0275element(0, "img", 44);
   }
   if (rf & 2) {
     const img_r2 = ctx.$implicit;
@@ -28555,33 +28555,32 @@ var AppComponent = /* @__PURE__ */ (() => {
   _AppComponent.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({
     type: _AppComponent,
     selectors: [["app-root"]],
-    decls: 13,
+    decls: 12,
     vars: 3,
-    consts: [["class", "navbar bg-body-tertiary navbar-expand-lg rounded-0 border-bottom", "data-bs-theme", "dark", 4, "ngIf"], [1, "footer"], [1, "container-fluid", "px-5", "text-secondary", "py-4"], [1, "row", "mb-4", "mt-2"], [1, "col-12", "text-center", "mb-4"], ["src", "../assets/img/wolf-hand.png", 2, "height", "4rem", "width", "auto"], [1, "col-12", "text-center"], ["class", "footer-img", 3, "src", 4, "ngFor", "ngForOf"], [1, "row"], [1, "col-12"], [1, "m-0", "text-center"], ["data-bs-theme", "dark", 1, "navbar", "bg-body-tertiary", "navbar-expand-lg", "rounded-0", "border-bottom"], [1, "container-fluid", "px-5"], ["href", "#", 1, "navbar-brand", "fs-4", "fw-bold"], ["src", "../assets/img/startup.png", "width", "auto", "height", "30", 1, "me-1"], ["type", "button", "data-bs-toggle", "collapse", "data-bs-target", "#navbarNav", "aria-controls", "navbarNav", "aria-expanded", "false", "aria-label", "Toggle navigation", 1, "navbar-toggler"], [1, "navbar-toggler-icon"], ["id", "navbarNav", 1, "collapse", "navbar-collapse", "justify-content-end"], [1, "navbar-nav"], [1, "nav-item"], ["aria-current", "page", "href", "/", 1, "nav-link", "active"], [1, "bi", "bi-house-fill", "me-1"], [1, "nav-item", "dropdown"], ["href", "#", "role", "button", "data-bs-toggle", "dropdown", "aria-expanded", "false", 1, "nav-link", "dropdown-toggle", "active"], ["src", "../assets/img/ai-logo.png", 1, "icon", "me-1", "mb-1"], [1, "dropdown-menu"], ["href", "/#/huggingface", 1, "dropdown-item"], ["src", "../assets/img/huggingface-logo.png", 1, "icon", "me-1"], [1, "dropdown-divider"], ["href", "/#/tongyi", 1, "dropdown-item"], ["src", "../assets/img/tongyi-logo.svg", 1, "icon", "me-1"], ["href", "/#/ai-concept", 1, "dropdown-item"], ["src", "../assets/img/ai-concept.png", 1, "icon", "me-1"], [1, "nav-item", "ms-2"], ["href", "/#/harmonyos", 1, "nav-link", "active"], ["src", "../assets/img/huawei-logo.png", 1, "icon", "me-1", "mb-1"], ["href", "/#/code-battlefield", 1, "nav-link", "active"], ["src", "../assets/img/code.png", 1, "icon", "me-1", "mb-1"], [1, "nav-item", "dropdown", "ms-2"], ["src", "../assets/img/tools.png", 1, "icon", "me-1", "mb-1"], ["href", "/#/md-screen-record", 1, "dropdown-item"], ["src", "../assets/img/markdown-logo.png", 1, "icon", "me-2"], ["src", "../assets/img/audio.png", 1, "icon", "me-2"], ["href", "/#/life-philosophy", 1, "nav-link", "active"], [1, "bi", "bi-book-fill", "me-1", "text-info"], [1, "footer-img", 3, "src"]],
+    consts: [["class", "navbar bg-body-tertiary navbar-expand-lg rounded-0 border-bottom", "data-bs-theme", "dark", 4, "ngIf"], [1, "footer"], [1, "container-fluid", "px-5", "text-secondary", "py-4"], ["src", "../assets/img/wolf-hand.png", 1, "wolf-hand"], [1, "row", "mb-4", "mt-2"], [1, "col-12", "text-center"], ["class", "footer-img", 3, "src", 4, "ngFor", "ngForOf"], [1, "row"], [1, "col-12"], [1, "m-0", "text-center"], ["data-bs-theme", "dark", 1, "navbar", "bg-body-tertiary", "navbar-expand-lg", "rounded-0", "border-bottom"], [1, "container-fluid", "px-5"], ["href", "#", 1, "navbar-brand", "fs-4", "fw-bold"], ["src", "../assets/img/startup.png", "width", "auto", "height", "30", 1, "me-1"], ["type", "button", "data-bs-toggle", "collapse", "data-bs-target", "#navbarNav", "aria-controls", "navbarNav", "aria-expanded", "false", "aria-label", "Toggle navigation", 1, "navbar-toggler"], [1, "navbar-toggler-icon"], ["id", "navbarNav", 1, "collapse", "navbar-collapse", "justify-content-end"], [1, "navbar-nav"], [1, "nav-item"], ["aria-current", "page", "href", "/", 1, "nav-link", "active"], [1, "bi", "bi-house-fill", "me-1"], [1, "nav-item", "dropdown"], ["href", "#", "role", "button", "data-bs-toggle", "dropdown", "aria-expanded", "false", 1, "nav-link", "dropdown-toggle", "active"], ["src", "../assets/img/ai-logo.png", 1, "icon", "me-1", "mb-1"], [1, "dropdown-menu"], ["href", "/#/huggingface", 1, "dropdown-item"], ["src", "../assets/img/huggingface-logo.png", 1, "icon", "me-1"], [1, "dropdown-divider"], ["href", "/#/tongyi", 1, "dropdown-item"], ["src", "../assets/img/tongyi-logo.svg", 1, "icon", "me-1"], ["href", "/#/ai-concept", 1, "dropdown-item"], ["src", "../assets/img/ai-concept.png", 1, "icon", "me-1"], [1, "nav-item", "ms-2"], ["href", "/#/harmonyos", 1, "nav-link", "active"], ["src", "../assets/img/huawei-logo.png", 1, "icon", "me-1", "mb-1"], ["href", "/#/code-battlefield", 1, "nav-link", "active"], ["src", "../assets/img/code.png", 1, "icon", "me-1", "mb-1"], [1, "nav-item", "dropdown", "ms-2"], ["src", "../assets/img/tools.png", 1, "icon", "me-1", "mb-1"], ["href", "/#/md-screen-record", 1, "dropdown-item"], ["src", "../assets/img/markdown-logo.png", 1, "icon", "me-2"], ["src", "../assets/img/audio.png", 1, "icon", "me-2"], ["href", "/#/life-philosophy", 1, "nav-link", "active"], [1, "bi", "bi-book-fill", "me-1", "text-info"], [1, "footer-img", 3, "src"]],
     template: function AppComponent_Template(rf, ctx) {
       if (rf & 1) {
         \u0275\u0275template(0, AppComponent_nav_0_Template, 56, 0, "nav", 0);
         \u0275\u0275element(1, "router-outlet");
-        \u0275\u0275elementStart(2, "div", 1)(3, "div", 2)(4, "div", 3)(5, "div", 4);
-        \u0275\u0275element(6, "img", 5);
-        \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(7, "div", 6);
-        \u0275\u0275template(8, AppComponent_img_8_Template, 1, 1, "img", 7);
+        \u0275\u0275elementStart(2, "div", 1)(3, "div", 2);
+        \u0275\u0275element(4, "img", 3);
+        \u0275\u0275elementStart(5, "div", 4)(6, "div", 5);
+        \u0275\u0275template(7, AppComponent_img_7_Template, 1, 1, "img", 6);
         \u0275\u0275elementEnd()();
-        \u0275\u0275elementStart(9, "div", 8)(10, "div", 9)(11, "p", 10);
-        \u0275\u0275text(12);
+        \u0275\u0275elementStart(8, "div", 7)(9, "div", 8)(10, "p", 9);
+        \u0275\u0275text(11);
         \u0275\u0275elementEnd()()()()();
       }
       if (rf & 2) {
         \u0275\u0275property("ngIf", ctx.showNavbar == true);
-        \u0275\u0275advance(8);
+        \u0275\u0275advance(7);
         \u0275\u0275property("ngForOf", ctx.footerImgs);
         \u0275\u0275advance(4);
         \u0275\u0275textInterpolate1("\xA9 ", ctx.currentYear, " \u674E\u9E4F\uFF08Frank Li\uFF09\u7248\u6743\u6240\u6709");
       }
     },
     dependencies: [NgForOf, NgIf, RouterOutlet],
-    styles: ["\n\n.navbar[_ngcontent-%COMP%] {\n  background-color: #111 !important;\n}\n.navbar[_ngcontent-%COMP%]   .nav-item[_ngcontent-%COMP%]   .active[_ngcontent-%COMP%]:hover {\n  color: orange !important;\n}\n.navbar[_ngcontent-%COMP%]   .nav-item[_ngcontent-%COMP%]   .icon[_ngcontent-%COMP%] {\n  height: 1.1rem;\n  width: auto;\n}\n.footer[_ngcontent-%COMP%] {\n  background-color: rgb(13, 17, 23);\n}\n.footer[_ngcontent-%COMP%]   .footer-img[_ngcontent-%COMP%] {\n  height: 1.5rem;\n  width: auto;\n  margin-left: 1rem;\n  margin-right: 1rem;\n}\n/*# sourceMappingURL=data:application/json;base64,ewogICJ2ZXJzaW9uIjogMywKICAic291cmNlcyI6IFsic3JjL2FwcC9hcHAuY29tcG9uZW50LnNjc3MiXSwKICAic291cmNlc0NvbnRlbnQiOiBbIi5uYXZiYXIge1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogIzExMSAhaW1wb3J0YW50O1xyXG5cclxuICAgIC5uYXYtaXRlbSB7XHJcbiAgICAgICAgLmFjdGl2ZTpob3ZlciB7XHJcbiAgICAgICAgICAgIGNvbG9yOiBvcmFuZ2UgIWltcG9ydGFudDtcclxuICAgICAgICB9XHJcblxyXG4gICAgICAgIC5pY29uIHtcclxuICAgICAgICAgICAgaGVpZ2h0OiAxLjFyZW07XHJcbiAgICAgICAgICAgIHdpZHRoOiBhdXRvO1xyXG4gICAgICAgIH1cclxuICAgIH1cclxuXHJcbn1cclxuXHJcbiRpY29uSGVpZ2h0OiAxLjVyZW07XHJcbiRtYXJnaW5YOiAxcmVtO1xyXG5cclxuLmZvb3RlciB7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMTMsIDE3LCAyMyk7XHJcblxyXG4gICAgLmZvb3Rlci1pbWcge1xyXG4gICAgICAgIGhlaWdodDogJGljb25IZWlnaHQ7XHJcbiAgICAgICAgd2lkdGg6IGF1dG87XHJcbiAgICAgICAgbWFyZ2luLWxlZnQ6ICRtYXJnaW5YO1xyXG4gICAgICAgIG1hcmdpbi1yaWdodDogJG1hcmdpblg7XHJcbiAgICB9XHJcbn0iXSwKICAibWFwcGluZ3MiOiAiO0FBQUEsQ0FBQTtBQUNJLG9CQUFBOztBQUdJLENBSlIsT0FJUSxDQUFBLFNBQUEsQ0FBQSxNQUFBO0FBQ0ksU0FBQTs7QUFHSixDQVJSLE9BUVEsQ0FKQSxTQUlBLENBQUE7QUFDSSxVQUFBO0FBQ0EsU0FBQTs7QUFTWixDQUFBO0FBQ0ksb0JBQUEsSUFBQSxFQUFBLEVBQUEsRUFBQSxFQUFBOztBQUVBLENBSEosT0FHSSxDQUFBO0FBQ0ksVUFQSztBQVFMLFNBQUE7QUFDQSxlQVJFO0FBU0YsZ0JBVEU7OyIsCiAgIm5hbWVzIjogW10KfQo= */"]
+    styles: ["\n\n.navbar[_ngcontent-%COMP%] {\n  background-color: #111 !important;\n}\n.navbar[_ngcontent-%COMP%]   .nav-item[_ngcontent-%COMP%]   .active[_ngcontent-%COMP%]:hover {\n  color: orange !important;\n}\n.navbar[_ngcontent-%COMP%]   .nav-item[_ngcontent-%COMP%]   .icon[_ngcontent-%COMP%] {\n  height: 1.1rem;\n  width: auto;\n}\n.footer[_ngcontent-%COMP%] {\n  background-color: rgb(13, 17, 23);\n}\n.footer[_ngcontent-%COMP%]   .wolf-hand[_ngcontent-%COMP%] {\n  position: absolute;\n  height: 5rem;\n  width: auto;\n  filter: drop-shadow(5px 5px 5px gray);\n}\n.footer[_ngcontent-%COMP%]   .footer-img[_ngcontent-%COMP%] {\n  height: 1.5rem;\n  width: auto;\n  margin-left: 1rem;\n  margin-right: 1rem;\n}\n/*# sourceMappingURL=data:application/json;base64,ewogICJ2ZXJzaW9uIjogMywKICAic291cmNlcyI6IFsic3JjL2FwcC9hcHAuY29tcG9uZW50LnNjc3MiXSwKICAic291cmNlc0NvbnRlbnQiOiBbIi5uYXZiYXIge1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogIzExMSAhaW1wb3J0YW50O1xyXG5cclxuICAgIC5uYXYtaXRlbSB7XHJcbiAgICAgICAgLmFjdGl2ZTpob3ZlciB7XHJcbiAgICAgICAgICAgIGNvbG9yOiBvcmFuZ2UgIWltcG9ydGFudDtcclxuICAgICAgICB9XHJcblxyXG4gICAgICAgIC5pY29uIHtcclxuICAgICAgICAgICAgaGVpZ2h0OiAxLjFyZW07XHJcbiAgICAgICAgICAgIHdpZHRoOiBhdXRvO1xyXG4gICAgICAgIH1cclxuICAgIH1cclxuXHJcbn1cclxuXHJcbiRpY29uSGVpZ2h0OiAxLjVyZW07XHJcbiRtYXJnaW5YOiAxcmVtO1xyXG5cclxuLmZvb3RlciB7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMTMsIDE3LCAyMyk7XHJcblxyXG4gICAgLndvbGYtaGFuZCB7XHJcbiAgICAgICAgcG9zaXRpb246IGFic29sdXRlO1xyXG4gICAgICAgIGhlaWdodDogNXJlbTtcclxuICAgICAgICB3aWR0aDogYXV0bztcclxuICAgICAgICBmaWx0ZXI6IGRyb3Atc2hhZG93KDVweCA1cHggNXB4IGdyYXkpO1xyXG4gICAgfVxyXG5cclxuICAgIC5mb290ZXItaW1nIHtcclxuICAgICAgICBoZWlnaHQ6ICRpY29uSGVpZ2h0O1xyXG4gICAgICAgIHdpZHRoOiBhdXRvO1xyXG4gICAgICAgIG1hcmdpbi1sZWZ0OiAkbWFyZ2luWDtcclxuICAgICAgICBtYXJnaW4tcmlnaHQ6ICRtYXJnaW5YO1xyXG4gICAgfVxyXG59Il0sCiAgIm1hcHBpbmdzIjogIjtBQUFBLENBQUE7QUFDSSxvQkFBQTs7QUFHSSxDQUpSLE9BSVEsQ0FBQSxTQUFBLENBQUEsTUFBQTtBQUNJLFNBQUE7O0FBR0osQ0FSUixPQVFRLENBSkEsU0FJQSxDQUFBO0FBQ0ksVUFBQTtBQUNBLFNBQUE7O0FBU1osQ0FBQTtBQUNJLG9CQUFBLElBQUEsRUFBQSxFQUFBLEVBQUEsRUFBQTs7QUFFQSxDQUhKLE9BR0ksQ0FBQTtBQUNJLFlBQUE7QUFDQSxVQUFBO0FBQ0EsU0FBQTtBQUNBLFVBQUEsWUFBQSxJQUFBLElBQUEsSUFBQTs7QUFHSixDQVZKLE9BVUksQ0FBQTtBQUNJLFVBZEs7QUFlTCxTQUFBO0FBQ0EsZUFmRTtBQWdCRixnQkFoQkU7OyIsCiAgIm5hbWVzIjogW10KfQo= */"]
   });
   let AppComponent2 = _AppComponent;
   return AppComponent2;
