@@ -22861,6 +22861,30 @@ var life_philosophy_list_default = [
       "\u6BCF\u5E74\u6709\u4E0A\u5343\u4E07\u7684\u5927\u5B66\u751F\u6BD5\u4E1A\uFF0C\u4ED6\u4EEC\u53EF\u4EE5\u4E3A\u5927\u6A21\u578B\u505A\u77E5\u8BC6\u6807\u6CE8\u3002",
       "\u53D1\u5C55\u5927\u6A21\u578B\u8981\u96C6\u4E2D\u529B\u91CF\u529E\u5927\u4E8B\u3002\u65B0\u65F6\u4EE3\u7684\u96C6\u4E2D\u529B\u91CF\u529E\u5927\u4E8B\uFF0C\u8981\u76F8\u4E92\u4EA4\u6D41\u6210\u679C\uFF0C\u800C\u4E0D\u662F\u5C01\u95ED\u8D77\u6765\uFF0C\u5212\u5730\u4E3A\u7262\uFF0C\u8FD9\u662F\u51FA\u4E0D\u4E86\u6210\u679C\u7684\u3002"
     ]
+  },
+  {
+    lines: [
+      "\u884C\u4E3A \u4E0D\u7B49\u4E8E \u7ED3\u679C",
+      "\u4E16\u754C\u7684\u771F\u76F8\u662F\uFF1A\u884C\u4E3A x \u6982\u7387 = \u7ED3\u679C"
+    ]
+  },
+  {
+    lines: [
+      "\u6574\u4F53\u6210\u529F\u7387 = 100% - (100% - \u57FA\u7840\u6210\u529F\u7387)^\u5C1D\u8BD5\u6B21\u6570"
+    ]
+  },
+  {
+    lines: [
+      "\u540E\u9A8C\u6982\u7387 = \u5148\u9A8C\u6982\u7387 * \u8C03\u6574\u56E0\u5B50",
+      "P(A|B) = P(A) * P(B|A) / P(B)",
+      "\u771F\u6B63\u7684\u9AD8\u624B\u6BCF\u5929\u90FD\u5728\u7528\u8D1D\u53F6\u65AF\u5B9A\u4E49\u4E0D\u65AD\u7684\u590D\u76D8\u3001\u6539\u8FDB\u81EA\u5DF1\u7684\u6D41\u7A0B\uFF0C\u4ECE\u800C\u603B\u7ED3\u6210\u90A3\u4E9B'\u5927\u6982\u7387\u4F1A\u5E26\u6765\u6210\u529F\u7684\u4E8B\u60C5'\u2014\u2014\u6B63\u786E\u7684\u4E8B\u60C5\u91CD\u590D\u505A"
+    ]
+  },
+  {
+    lines: [
+      "\u7EB3\u4EC0\u5747\u8861\u662F\u4E00\u79CD\u535A\u5F08\u7684'\u7A33\u5B9A\u7ED3\u679C'\uFF0C\u8C01\u5355\u65B9\u9762\u6539\u53D8\u7B56\u7565\uFF0C\u8C01\u5C31\u4F1A\u53D7\u5230\u635F\u5931\u3002",
+      "\u7EB3\u4EC0\u5747\u8861\u662F\u4E00\u4E2A\u6700\u7A33\u5B9A\u7684\u72B6\u6001\uFF0C\u4F46\u4E0D\u4E00\u5B9A\u662F\u597D\u7684\u72B6\u6001\u3002\u7A33\u5B9A\u5728\u597D\u7684\u72B6\u6001\u4E0A\u7684\u7EB3\u4EC0\u5747\u8861\u2014\u2014\u597D\u7684\u7EB3\u4EC0\u5747\u8861\uFF1B\u7A33\u5B9A\u5728\u574F\u7684\u72B6\u6001\u4E0A\u7684\u7EB3\u4EC0\u5747\u8861\u2014\u2014\u574F\u7684\u7EB3\u4EC0\u5747\u8861"
+    ]
   }
 ];
 
@@ -27922,7 +27946,7 @@ var MdScreenRecordComponent = /* @__PURE__ */ (() => {
         "\u6700\u7EC8\uFF0C\u5728 jupyter notebook \u73AF\u5883\u4E0B\uFF0C\u9009\u62E9\u83DC\u5355\u3010File\u3011--\u3010Download as\u3011--\u3010Markdown\uFF08.md)\u3011\uFF0C\u751F\u6210 markdown \u683C\u5F0F\u7684\u6587\u4EF6",
         "\u6700\u597D\u5728\u539F\u59CB\u7684 jupyter notebook \u6587\u4EF6\u672B\u5C3E\u7528\u4E00\u7EA7\u6807\u9898\uFF0C\u63D0\u793A\u3010\u6587\u7AE0\u7ED3\u675F\u3011\u3002\u5728\u5F55\u5C4F\u7684\u65F6\u5019\uFF0C\u5F53\u6587\u7AE0\u7ED3\u675F\u540E\uFF0C\u3010\u5237\u65B0\u9875\u9762\u3011\u5373\u53EF\u6062\u590D\u5230\u539F\u59CB\u7B49\u5F85\u72B6\u6001"
       ];
-      this.tips = ["\u4E3A\u4E86\u63D0\u9AD8\u6548\u7387\uFF0C\u53EF\u4EE5\u5C06 TTS \u7684\u6587\u672C\u5185\u5BB9\u4FEE\u6539\u4E3A\u9002\u5408\u8BED\u97F3\u8F93\u51FA\u7684\u5F62\u5F0F\u3002\u6BD4\u5982\u62C6\u89E3\u62FC\u63A5\u7684\u5355\u8BCD\u3001\u5220\u9664\u7A0B\u5E8F\u8F93\u51FA\u91CC\u591A\u4F59\u7684\u5185\u5BB9\u7B49", "\u6709\u4E9B\u7A0B\u5E8F\u4E0D\u5141\u8BB8 jupyter notebook \u6587\u4EF6\u540D\u548C\u8DEF\u5F84\u5E26\u6709\u4E2D\u6587\uFF0C\u90A3\u4E48\u7B14\u8BB0\u6587\u4EF6\u540D\u662F\u82F1\u6587\uFF0C\u751F\u6210\u7684 MarkDown \u6587\u4EF6\u4E5F\u662F\u82F1\u6587\u7684\u3002\u4E3A\u4E86\u66F4\u597D\u7684\u9605\u8BFB\u6548\u679C\uFF0C\u6700\u7EC8\u89C6\u9891\u7684\u4E2D\u6587\u5927\u6807\u9898\u5199\u5728\u7B14\u8BB0\u6587\u4EF6\u7684\u9876\u90E8\uFF0C\u7528\u3010# headline: \u3011\uFF08# + \u7A7A\u683C + headline: + \u7A7A\u683C\uFF09\u4F5C\u4E3A\u63D0\u793A\uFF0C\u4F9B\u524D\u7AEF\u7A0B\u5E8F\u8BC6\u522B\uFF0C\u5728\u89C6\u9891\u91CC\u663E\u793A\u5728\u9875\u9762\u9876\u90E8", "\u63D0\u524D\u542F\u52A8\u672C\u5730 TTS \u670D\u52A1\u5668\u7A0B\u5E8F\uFF0C\u63A5\u53D7\u5F53\u524D\u9875\u9762\u8BBF\u95EE TTS API", "\u63D0\u524D\u6253\u5F00\u672C\u5730\u5B89\u88C5\u597D\u7684\u3010\u5FC5\u526A\u3011\uFF0C\u5F00\u542F\u5F55\u5C4F\u6A21\u5F0F\uFF1B\u7136\u540E\u5728\u7F51\u7AD9\u91CC\u64CD\u4F5C\uFF0C\u5F55\u5C4F\u5012\u8BA1\u65F6\u8BFB\u79D2\u7ED3\u675F\u540E\uFF0C\u7F51\u7AD9\u81EA\u52A8\u8FDB\u884C\u9010\u884C\u8F93\u51FA MarkDown \u5185\u5BB9"];
+      this.tips = ["\u4E3A\u4E86\u63D0\u9AD8\u6548\u7387\uFF0C\u53EF\u4EE5\u5C06 TTS \u7684\u6587\u672C\u5185\u5BB9\u4FEE\u6539\u4E3A\u9002\u5408\u8BED\u97F3\u8F93\u51FA\u7684\u5F62\u5F0F\u3002\u6BD4\u5982\u62C6\u89E3\u62FC\u63A5\u7684\u5355\u8BCD\u3001\u5220\u9664\u7A0B\u5E8F\u8F93\u51FA\u91CC\u591A\u4F59\u7684\u5185\u5BB9\u7B49", "\u6709\u4E9B\u7A0B\u5E8F\u4E0D\u5141\u8BB8 jupyter notebook \u6587\u4EF6\u540D\u548C\u8DEF\u5F84\u5E26\u6709\u4E2D\u6587\uFF0C\u90A3\u4E48\u7B14\u8BB0\u6587\u4EF6\u540D\u662F\u82F1\u6587\uFF0C\u751F\u6210\u7684 MarkDown \u6587\u4EF6\u4E5F\u662F\u82F1\u6587\u7684\u3002\u4E3A\u4E86\u66F4\u597D\u7684\u9605\u8BFB\u6548\u679C\uFF0C\u6700\u7EC8\u89C6\u9891\u7684\u4E2D\u6587\u5927\u6807\u9898\u5199\u5728\u7B14\u8BB0\u6587\u4EF6\u7684\u9876\u90E8\uFF0C\u7528\u3010# headline: \u3011\uFF08# + \u7A7A\u683C + headline: + \u7A7A\u683C\uFF09\u4F5C\u4E3A\u63D0\u793A\uFF0C\u4F9B\u524D\u7AEF\u7A0B\u5E8F\u8BC6\u522B\uFF0C\u5728\u89C6\u9891\u91CC\u663E\u793A\u5728\u9875\u9762\u9876\u90E8", "\u63D0\u524D\u542F\u52A8\u672C\u5730 TTS \u670D\u52A1\u5668\u7A0B\u5E8F\uFF0C\u63A5\u53D7\u5F53\u524D\u9875\u9762\u8BBF\u95EE TTS API", "\u63D0\u524D\u6253\u5F00\u672C\u5730\u5B89\u88C5\u597D\u7684\u3010\u5FC5\u526A\u3011\uFF0C\u5F00\u542F\u5F55\u5C4F\u6A21\u5F0F\uFF1B\u7136\u540E\u5728\u7F51\u7AD9\u91CC\u64CD\u4F5C\uFF0C\u5F55\u5C4F\u5012\u8BA1\u65F6\u8BFB\u79D2\u7ED3\u675F\u540E\uFF0C\u7F51\u7AD9\u81EA\u52A8\u8FDB\u884C\u9010\u884C\u8F93\u51FA MarkDown \u5185\u5BB9", "\u8981\u4ECE MarkDown \u6587\u4EF6\u751F\u6210 PDF \u6587\u4EF6\uFF0C\u4F7F\u7528 VS Code\uFF08\u914D\u5408 MarkDown to PDF \u63D2\u4EF6\uFF09\u7684\u6548\u679C\u66F4\u597D \uFF01"];
       this.selectedfile = null;
       this.mdFilename = "";
       this.headline = "";
@@ -28177,7 +28201,7 @@ var MdScreenRecordComponent = /* @__PURE__ */ (() => {
 // src/app/code-battlefield/code-battlefield.component.ts
 function CodeBattlefieldComponent_p_6_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "p", 19);
+    \u0275\u0275elementStart(0, "p", 22);
     \u0275\u0275text(1);
     \u0275\u0275elementEnd();
   }
@@ -28187,9 +28211,9 @@ function CodeBattlefieldComponent_p_6_Template(rf, ctx) {
     \u0275\u0275textInterpolate(item_r2);
   }
 }
-function CodeBattlefieldComponent_p_7_Template(rf, ctx) {
+function CodeBattlefieldComponent_li_11_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "p", 20);
+    \u0275\u0275elementStart(0, "li", 23);
     \u0275\u0275text(1);
     \u0275\u0275elementEnd();
   }
@@ -28203,7 +28227,7 @@ var CodeBattlefieldComponent = /* @__PURE__ */ (() => {
   const _CodeBattlefieldComponent = class _CodeBattlefieldComponent {
     constructor() {
       this.slogans = ["\u8FD9\u91CC\u4E3B\u8981\u8BB0\u5F55\u4E86\u5173\u4E8E HuggingFace\u3001\u901A\u4E49\u5343\u95EE\u3001Harmony OS \u7684\u5B66\u4E60\u7B14\u8BB0\u548C\u7F16\u7A0B\u4EE3\u7801\u3002\u7528\u4E8E\u65E5\u540E\u7ECF\u5E38\u8FDB\u884C\u67E5\u8BE2\u7FFB\u9605\uFF0C\u76EE\u7684\u5728\u4E8E\u63D0\u9AD8\u81EA\u5DF1\u5BF9\u4E8E AI \u548C\u9E3F\u8499\u7A0B\u5E8F\u5F00\u53D1\u7684\u6280\u672F", "\u9488\u5BF9\u81EA\u8EAB\u7684\u60C5\u51B5\u548C\u76EE\u524D\u7684\u6761\u4EF6\uFF0C\u6DF1\u5165\u7814\u7A76\u548C\u638C\u63E1\u5173\u4E8E AI \u7684\u7B97\u6CD5\u8FD8\u4E0D\u592A\u73B0\u5B9E\u3002\u4F46\u662F\u5B66\u4E60\u548C\u638C\u63E1\u4E3B\u6D41\u7684\u4EBA\u5DE5\u667A\u80FD\u6846\u67B6\uFF08HuggingFace\u3001\u901A\u4E49\u5343\u95EE\u4EE5\u53CA\u5176\u4ED6\u7684\u4EBA\u5DE5\u667A\u80FD\u5E73\u53F0\uFF09\u7684\u7A0B\u5E8F\u5F00\u53D1\u548C\u5E94\u7528\uFF0C\u5C06\u4EBA\u5DE5\u667A\u80FD\u6280\u672F\u5E94\u7528\u5230\u81EA\u5DF1\u7684\u7A0B\u5E8F\u5F00\u53D1\u548C\u4F4E\u6210\u672C\u521B\u4E1A\u8FD8\u662F\u6709\u975E\u5E38\u9AD8\u7684\u6210\u529F\u6982\u7387\u3002\u76EE\u7684\u5728\u4E8E\u8BA9\u81EA\u5DF1\u5E73\u6ED1\u7684\u8F6C\u578B\u4E3A AI \u7A0B\u5E8F\u5F00\u53D1\u8005\u751A\u81F3\u662F\u4EBA\u5DE5\u667A\u80FD\u5E94\u7528\u7684\u8D21\u732E\u8005\uFF0C\u6700\u7EC8\u6210\u4E3A\u57FA\u4E8E\u4EBA\u5DE5\u667A\u80FD\u6280\u672F\u7684\u521B\u4E1A\u8005", "\u57FA\u4E8E\u6211\u81EA\u8EAB\u7684\u60C5\u51B5\uFF0C\u80FD\u591F\u7528\u597D\u4EBA\u5DE5\u667A\u80FD\u6280\u672F\u5BF9\u6211\u6765\u8BF4\u66F4\u91CD\u8981\uFF0C\u66F4\u73B0\u5B9E"];
-      this.notices = ["\u6CE8\u610F\uFF1A", "\u7F16\u7801\u9635\u5730\u91CC\u4E3B\u8981\u662F\u8BB0\u5F55\u6211\u5728\u5B66\u4E60\u673A\u5668\u5B66\u4E60\uFF08\u6DF1\u5EA6\u5B66\u4E60\uFF09\u8FC7\u7A0B\u4E2D\u7684\u4EE3\u7801\u5757\uFF0C\u4F5C\u4E3A\u6211\u4E2A\u4EBA\u7684\u4EE3\u7801\u6570\u636E\u5E93\u800C\u521B\u5EFA\u7684\u3002\u6240\u4EE5\u91CC\u9762\u7684\u5185\u5BB9\u4EE5\u8BB0\u5F55\u6A21\u5F0F\u5316\u7684\u4EE3\u7801\u4EE5\u53CA\u57FA\u672C\u7684\u8BF4\u660E\u4E3A\u4E3B\uFF0C\u5E76\u4E0D\u4F1A\u76F4\u63A5\u62FF\u6765\u751F\u6210\u6700\u7EC8\u7684\u6559\u7A0B\u3002\u91CC\u9762\u7684\u5185\u5BB9\u5C3D\u91CF\u7B80\u6D01\u3001\u76F4\u89C2\u3001\u5177\u6709\u8BF4\u670D\u529B\u5373\u53EF\u3002", "\u4F46\u662F\u8FD9\u91CC\u7684\u4EE3\u7801\u4EE5\u53CA\u76F8\u5E94\u7684\u89E3\u91CA\u8BF4\u660E\u6587\u5B57\u548C\u56FE\u7247\uFF0C\u90FD\u53EF\u4EE5\u62FF\u51FA\u6765\u5236\u4F5C\u6559\u7A0B\uFF0C\u4E3A\u751F\u6210\u6700\u7EC8\u7684\u4EA7\u54C1\u670D\u52A1\u3002", "\u9875\u9762\u4E0A\u663E\u793A\u7684\u5217\u8868\uFF0C\u5728\u5F53\u524D Angular \u9879\u76EE\u7684 \u3010 assets\\code-xxx \u3011\u5BF9\u5E94\u7684\u76EE\u5F55\u4E0B\u7684 menu-list.json \u6587\u4EF6\u4E2D\u3002", "\u5982\u679C\u8981\u91CD\u65B0\u751F\u6210 PDF \u6587\u4EF6\uFF0C\u5728\u76EE\u5F55 \u3010 AI_Center\\code-battlefield\\ \u3011\u4E0B\u7684\u5BF9\u5E94\u76EE\u5F55\u91CC\u627E\u5230 MarkDown \u6587\u4EF6\uFF0C\u7528\u8F6F\u4EF6 MarkText \u91CD\u65B0\u5BF9\u5176\u8FDB\u884C\u7F16\u8F91\uFF0C\u5E76\u751F\u6210\u65B0\u7684 PDF \u6587\u4EF6\uFF0C\u7136\u540E\u5C06\u6700\u7EC8\u7684 PDF \u6587\u4EF6\u62F7\u8D1D\u5230 Angular \u9879\u76EE\u7684\u3010 assets\\code-xxx \u3011\u76EE\u5F55\u4E0B\u8986\u76D6\u539F\u6765\u7684 PDF \u6587\u4EF6\u3002", "\u56E0\u4E3A\u5355\u4E2A PDF \u6587\u4EF6\u7684\u5185\u5BB9\u4E0D\u4F1A\u592A\u591A\uFF0C\u6240\u4EE5\u5C06\u6240\u6709\u7684 MarkDown \u548C PDF \u6587\u4EF6\u90FD\u4FDD\u5B58\u5728\u5F53\u524D Angular \u9879\u76EE\u7684 \u3010 assets\\code-xxx \u3011\u5BF9\u5E94\u7684\u76EE\u5F55\u4E0B\uFF0C\u65B9\u4FBF\u67E5\u627E\u548C\u518D\u7F16\u8F91\u3002"];
+      this.notices = ["\u7F16\u7801\u9635\u5730\u91CC\u4E3B\u8981\u662F\u8BB0\u5F55\u6211\u5728\u5B66\u4E60\u673A\u5668\u5B66\u4E60\uFF08\u6DF1\u5EA6\u5B66\u4E60\uFF09\u8FC7\u7A0B\u4E2D\u7684\u7B14\u8BB0\uFF0C\u4F5C\u4E3A\u6211\u4E2A\u4EBA\u7684\u4EE3\u7801\u5E93\u800C\u521B\u5EFA\u7684\u3002\u6240\u4EE5\u91CC\u9762\u7684\u5185\u5BB9\u4EE5\u8BB0\u5F55\u6A21\u5F0F\u5316\u7684\u4EE3\u7801\u4EE5\u53CA\u5BF9\u5E94\u7684\u8BF4\u660E\u6587\u5B57\u4E3A\u4E3B\uFF0C\u4E3A\u4E86\u65B9\u4FBF\u540E\u7EED\u5236\u4F5C\u6559\u7A0B\u89C6\u9891\uFF0C\u91CC\u9762\u7684\u4EE3\u7801\u5C3D\u91CF\u6807\u51C6\u5316\uFF0C\u89E3\u91CA\u8BF4\u660E\u5C3D\u91CF\u8BE6\u7EC6\u3002\u8FD9\u91CC\u7684\u4EE3\u7801\u4EE5\u53CA\u76F8\u5E94\u7684\u89E3\u91CA\u8BF4\u660E\u6587\u5B57\u548C\u56FE\u7247\uFF0C\u90FD\u53EF\u4EE5\u62FF\u6765\u5236\u4F5C\u6559\u7A0B\uFF0C\u4E3A\u751F\u6210\u6700\u7EC8\u7684\u4EA7\u54C1\u670D\u52A1\u3002", "\u4E09\u4E2A\u5B66\u4E60\u65B9\u5411\u7684\u5217\u8868\uFF0C\u4FDD\u5B58\u5728\u5F53\u524D Angular \u9879\u76EE\u7684 \u3010 assets\\code-xxx \u3011\u5BF9\u5E94\u7684\u76EE\u5F55\u4E0B\u7684 menu-list.json \u6587\u4EF6\u4E2D\u3002", "\u5982\u679C\u8981\u66F4\u65B0\u5F53\u524D\u6559\u7A0B\u7684 PDF \u6587\u4EF6\uFF0C\u5728\u76EE\u5F55 \u3010 AI_Center\\code-battlefield\\ \u3011\u4E0B\u7684\u5BF9\u5E94\u76EE\u5F55\u91CC\u627E\u5230 MarkDown \u6587\u4EF6\uFF0C\u7528 VS Code\uFF08\u914D\u5408 MarkDown to PDF \u63D2\u4EF6\uFF09\u91CD\u65B0\u5BF9\u5176\u8FDB\u884C\u7F16\u8F91\uFF0C\u5E76\u751F\u6210\u65B0\u7684 PDF \u6587\u4EF6\uFF0C\u7136\u540E\u5C06\u6700\u7EC8\u7684 PDF \u6587\u4EF6\u62F7\u8D1D\u5230 Angular \u9879\u76EE\u7684\u3010 assets\\code-xxx \u3011\u76EE\u5F55\u4E0B\u8986\u76D6\u539F\u6765\u7684 PDF \u6587\u4EF6\u3002", "\u56E0\u4E3A\u5355\u4E2A PDF \u6587\u4EF6\u7684\u5185\u5BB9\u4E0D\u4F1A\u592A\u591A\uFF0C\u6240\u4EE5\u5C06\u6240\u6709\u7684 MarkDown \u548C PDF \u6587\u4EF6\u90FD\u4FDD\u5B58\u5728\u5F53\u524D Angular \u9879\u76EE\u7684 \u3010 assets\\code-xxx \u3011\u5BF9\u5E94\u7684\u76EE\u5F55\u4E0B\uFF0C\u65B9\u4FBF\u67E5\u627E\u548C\u518D\u7F16\u8F91\u3002", "\u5982\u679C\u8981\u7528 MarkDown \u6587\u4EF6\u7684\u5185\u5BB9\u751F\u6210\u6559\u7A0B\u89C6\u9891\uFF0C\u5728 GitHub \u9879\u76EE\u7684\u76EE\u5F55\u4E0B\u627E\u5230\u3010 AI_Center\\code-battlefield\\ \u3011\u76EE\u5F55\u4E0B\u5BF9\u5E94\u7684\u5206\u7EC4\uFF08huggingface\u3001tongyi\u3001harmonyos\uFF09\u6587\u4EF6\u5939\u91CC\u627E\u5230\u5BF9\u5E94\u7684 MarkDown \u6587\u4EF6\uFF0C\u7136\u540E\u5728\u7F51\u7AD9\u7684\u3010 \u5DE5\u5177\u7BB1\\MarkDown \u5F55\u5C4F\xB7\u8BED\u97F3 \u3011\u9875\u9762\u91CC\u52A0\u8F7D\u8FD9\u4E2A xxx.md \u6587\u4EF6\u5373\u53EF\u5F00\u59CB\u5236\u4F5C\u6559\u7A0B\u89C6\u9891\u3002", "\u8981\u4ECE MarkDown \u6587\u4EF6\u751F\u6210 PDF \u6587\u4EF6\uFF0C\u4F7F\u7528 VS Code\uFF08\u914D\u5408 MarkDown to PDF \u63D2\u4EF6\uFF09\u7684\u6548\u679C\u66F4\u597D \uFF01"];
     }
   };
   _CodeBattlefieldComponent.\u0275fac = function CodeBattlefieldComponent_Factory(t) {
@@ -28212,38 +28236,45 @@ var CodeBattlefieldComponent = /* @__PURE__ */ (() => {
   _CodeBattlefieldComponent.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({
     type: _CodeBattlefieldComponent,
     selectors: [["app-code-battlefield"]],
-    decls: 26,
+    decls: 30,
     vars: 2,
-    consts: [[1, "box", "bg-dark", "pt-3"], [1, "container-fluid", "px-5", "py-4"], [1, "row", "mb-5", "align-items-center"], [1, "col-8"], [1, "text-primary", "mb-4", "fw-bold", "fs-1"], ["class", "text-secondary", 4, "ngFor", "ngForOf"], ["class", "text-info mb-2", 4, "ngFor", "ngForOf"], [1, "row", "mt-5"], [1, "col"], ["href", "/#/code-battlefield/code-huggingface", 1, "btn", "btn-outline-warning"], ["src", "../../assets/img/huggingface-logo.png", 1, "icon", "me-2"], ["href", "/#/code-battlefield/code-tongyi", 1, "btn", "btn-outline-primary"], ["src", "../../assets/img/tongyi-logo.svg", 1, "icon", "me-2"], ["href", "/#/code-battlefield/code-harmonyos", 1, "btn", "btn-outline-danger"], ["src", "../../assets/img/huawei-logo.png", 1, "icon", "me-2"], [1, "col", "text-center"], ["src", "../../assets/img/ai-bgm2.png", 1, "slogan-img"], [1, "row"], [1, "col-12"], [1, "text-secondary"], [1, "text-info", "mb-2"]],
+    consts: [[1, "box", "bg-dark", "pt-3"], [1, "container-fluid", "px-5", "py-4"], [1, "row", "mb-5", "align-items-center"], [1, "col-8"], [1, "text-primary", "mb-4", "fw-bold", "fs-1"], ["class", "text-secondary", 4, "ngFor", "ngForOf"], [1, "text-info", "fs-4"], [1, "bi", "bi-award", "me-2"], [1, "ps-3"], ["class", "text-info mb-2", 4, "ngFor", "ngForOf"], [1, "row", "mt-5"], [1, "col"], ["href", "/#/code-battlefield/code-huggingface", 1, "btn", "btn-outline-warning"], ["src", "../../assets/img/huggingface-logo.png", 1, "icon", "me-2"], ["href", "/#/code-battlefield/code-tongyi", 1, "btn", "btn-outline-primary"], ["src", "../../assets/img/tongyi-logo.svg", 1, "icon", "me-2"], ["href", "/#/code-battlefield/code-harmonyos", 1, "btn", "btn-outline-danger"], ["src", "../../assets/img/huawei-logo.png", 1, "icon", "me-2"], [1, "col", "text-center"], ["src", "../../assets/img/ai-bgm2.png", 1, "slogan-img"], [1, "row"], [1, "col-12"], [1, "text-secondary"], [1, "text-info", "mb-2"]],
     template: function CodeBattlefieldComponent_Template(rf, ctx) {
       if (rf & 1) {
         \u0275\u0275elementStart(0, "div", 0)(1, "div", 1)(2, "div", 2)(3, "div", 3)(4, "h1", 4);
         \u0275\u0275text(5, "\u7F16\u7801\u9635\u5730 Code BattleField");
         \u0275\u0275elementEnd();
-        \u0275\u0275template(6, CodeBattlefieldComponent_p_6_Template, 2, 1, "p", 5)(7, CodeBattlefieldComponent_p_7_Template, 2, 1, "p", 6);
-        \u0275\u0275elementStart(8, "div", 7)(9, "div", 8)(10, "a", 9);
-        \u0275\u0275element(11, "img", 10);
-        \u0275\u0275text(12, " Hugging Face ");
+        \u0275\u0275template(6, CodeBattlefieldComponent_p_6_Template, 2, 1, "p", 5);
+        \u0275\u0275elementStart(7, "p", 6);
+        \u0275\u0275element(8, "i", 7);
+        \u0275\u0275text(9, "\u6CE8\u610F\uFF1A ");
+        \u0275\u0275elementEnd();
+        \u0275\u0275elementStart(10, "ul", 8);
+        \u0275\u0275template(11, CodeBattlefieldComponent_li_11_Template, 2, 1, "li", 9);
+        \u0275\u0275elementEnd();
+        \u0275\u0275elementStart(12, "div", 10)(13, "div", 11)(14, "a", 12);
+        \u0275\u0275element(15, "img", 13);
+        \u0275\u0275text(16, " Hugging Face ");
         \u0275\u0275elementEnd()();
-        \u0275\u0275elementStart(13, "div", 8)(14, "a", 11);
-        \u0275\u0275element(15, "img", 12);
-        \u0275\u0275text(16, " \u901A\u4E49\u5343\u95EE ");
+        \u0275\u0275elementStart(17, "div", 11)(18, "a", 14);
+        \u0275\u0275element(19, "img", 15);
+        \u0275\u0275text(20, " \u901A\u4E49\u5343\u95EE ");
         \u0275\u0275elementEnd()();
-        \u0275\u0275elementStart(17, "div", 8)(18, "a", 13);
-        \u0275\u0275element(19, "img", 14);
-        \u0275\u0275text(20, " Harmony OS ");
+        \u0275\u0275elementStart(21, "div", 11)(22, "a", 16);
+        \u0275\u0275element(23, "img", 17);
+        \u0275\u0275text(24, " Harmony OS ");
         \u0275\u0275elementEnd()()()();
-        \u0275\u0275elementStart(21, "div", 15);
-        \u0275\u0275element(22, "img", 16);
+        \u0275\u0275elementStart(25, "div", 18);
+        \u0275\u0275element(26, "img", 19);
         \u0275\u0275elementEnd()();
-        \u0275\u0275elementStart(23, "div", 17)(24, "div", 18);
-        \u0275\u0275element(25, "router-outlet");
+        \u0275\u0275elementStart(27, "div", 20)(28, "div", 21);
+        \u0275\u0275element(29, "router-outlet");
         \u0275\u0275elementEnd()()()();
       }
       if (rf & 2) {
         \u0275\u0275advance(6);
         \u0275\u0275property("ngForOf", ctx.slogans);
-        \u0275\u0275advance(1);
+        \u0275\u0275advance(5);
         \u0275\u0275property("ngForOf", ctx.notices);
       }
     },
@@ -28257,18 +28288,21 @@ var CodeBattlefieldComponent = /* @__PURE__ */ (() => {
 // src/assets/code-huggingface/menu-list.json
 var menu_list_default = [
   {
-    title: "1-\u4FEE\u6539 HuggingFace \u9ED8\u8BA4\u4E0B\u8F7D\u5730\u5740",
-    url: "1.pdf",
+    title: "0-\u4FEE\u6539 HuggingFace \u9ED8\u8BA4\u4E0B\u8F7D\u5730\u5740",
+    url: "0-\u4FEE\u6539 HuggingFace \u9ED8\u8BA4\u4E0B\u8F7D\u5730\u5740.pdf",
     datetime: "2024-02-14 00:52"
   },
   {
-    title: "2-pipeline \u5DE5\u5177\u51FD\u6570",
-    url: "2.pdf",
+    title: "1-pipeline \u5DE5\u5177\u51FD\u6570",
+    url: "1-pipeline \u5DE5\u5177\u51FD\u6570.pdf",
     datetime: "2024-02-14 01:10"
   }
 ];
 
 // src/app/code-huggingface/code-huggingface.component.ts
+var _c04 = (a0) => ({
+  selectedTitle: a0
+});
 function CodeHuggingfaceComponent_li_8_Template(rf, ctx) {
   if (rf & 1) {
     const _r5 = \u0275\u0275getCurrentView();
@@ -28276,8 +28310,9 @@ function CodeHuggingfaceComponent_li_8_Template(rf, ctx) {
     \u0275\u0275listener("click", function CodeHuggingfaceComponent_li_8_Template_li_click_0_listener() {
       const restoredCtx = \u0275\u0275restoreView(_r5);
       const item_r2 = restoredCtx.$implicit;
+      const i_r3 = restoredCtx.index;
       const ctx_r4 = \u0275\u0275nextContext();
-      return \u0275\u0275resetView(ctx_r4.clickTitle(item_r2));
+      return \u0275\u0275resetView(ctx_r4.clickTitle(item_r2, i_r3));
     });
     \u0275\u0275elementStart(1, "div", 11)(2, "div", 12)(3, "span", 13);
     \u0275\u0275text(4);
@@ -28289,8 +28324,10 @@ function CodeHuggingfaceComponent_li_8_Template(rf, ctx) {
   if (rf & 2) {
     const item_r2 = ctx.$implicit;
     const i_r3 = ctx.index;
+    const ctx_r0 = \u0275\u0275nextContext();
+    \u0275\u0275property("ngClass", \u0275\u0275pureFunction1(3, _c04, ctx_r0.currentIndex == i_r3));
     \u0275\u0275advance(4);
-    \u0275\u0275textInterpolate(i_r3 + 1);
+    \u0275\u0275textInterpolate(i_r3);
     \u0275\u0275advance(2);
     \u0275\u0275textInterpolate1(" ", item_r2.title, " ");
   }
@@ -28311,6 +28348,7 @@ var CodeHuggingfaceComponent = /* @__PURE__ */ (() => {
       this.service = service;
       this.codeList = menu_list_default;
       this.currentUrl = "";
+      this.currentIndex = -1;
     }
     ngOnInit() {
       window.scrollTo({
@@ -28321,7 +28359,8 @@ var CodeHuggingfaceComponent = /* @__PURE__ */ (() => {
       this.codeList = this.service.sortListByItemDatetime(this.codeList, order);
     }
     // 点击左侧的title后，在本地路径下查找 PDF 文件
-    clickTitle(item) {
+    clickTitle(item, index) {
+      this.currentIndex = index;
       this.currentUrl = this.sanitizer.bypassSecurityTrustResourceUrl("../../assets/code-huggingface/" + item["url"]);
     }
   };
@@ -28333,14 +28372,14 @@ var CodeHuggingfaceComponent = /* @__PURE__ */ (() => {
     selectors: [["app-code-huggingface"]],
     decls: 11,
     vars: 3,
-    consts: [[1, "box"], [1, "row"], [1, "col-12"], [1, "text-warning", "fs-3", "fw-bold"], [1, "row", "text-light", "justify-content-between"], [1, "col-3"], [1, "list-group", "list-group-flush", "title-list"], ["class", "list-group-item list-group-item-action bg-dark text-light title", 3, "click", 4, "ngFor", "ngForOf"], [1, "col", "content-box"], ["type", "application/pdf", "width", "100%", 4, "ngIf"], [1, "list-group-item", "list-group-item-action", "bg-dark", "text-light", "title", 3, "click"], [1, "row", "justify-content-between", "align-items-center"], [1, "col-1"], [1, "badge", "bg-warning", "text-dark", "me-3"], [1, "col-10"], ["type", "application/pdf", "width", "100%"]],
+    consts: [[1, "box"], [1, "row"], [1, "col-12"], [1, "text-warning", "fs-3", "fw-bold"], [1, "row", "text-light", "justify-content-between"], [1, "col-3"], [1, "list-group", "list-group-flush", "title-list"], ["class", "list-group-item list-group-item-action bg-dark text-light title", 3, "ngClass", "click", 4, "ngFor", "ngForOf"], [1, "col", "content-box"], ["type", "application/pdf", "width", "100%", 4, "ngIf"], [1, "list-group-item", "list-group-item-action", "bg-dark", "text-light", "title", 3, "ngClass", "click"], [1, "row", "justify-content-between", "align-items-center", "px-0"], [1, "col-1", "px-0"], [1, "badge", "bg-warning", "text-dark", "me-3"], [1, "col", "px-0"], ["type", "application/pdf", "width", "100%"]],
     template: function CodeHuggingfaceComponent_Template(rf, ctx) {
       if (rf & 1) {
         \u0275\u0275elementStart(0, "div", 0)(1, "div", 1)(2, "div", 2)(3, "h1", 3);
         \u0275\u0275text(4);
         \u0275\u0275elementEnd()()();
         \u0275\u0275elementStart(5, "div", 4)(6, "div", 5)(7, "ul", 6);
-        \u0275\u0275template(8, CodeHuggingfaceComponent_li_8_Template, 7, 2, "li", 7);
+        \u0275\u0275template(8, CodeHuggingfaceComponent_li_8_Template, 7, 5, "li", 7);
         \u0275\u0275elementEnd()();
         \u0275\u0275elementStart(9, "div", 8);
         \u0275\u0275template(10, CodeHuggingfaceComponent_object_10_Template, 1, 1, "object", 9);
@@ -28355,8 +28394,8 @@ var CodeHuggingfaceComponent = /* @__PURE__ */ (() => {
         \u0275\u0275property("ngIf", ctx.currentUrl != "");
       }
     },
-    dependencies: [NgForOf, NgIf],
-    styles: ["\n\n.box[_ngcontent-%COMP%]   .title-list[_ngcontent-%COMP%]   .title[_ngcontent-%COMP%] {\n  transition: color 0.2s;\n}\n.box[_ngcontent-%COMP%]   .title-list[_ngcontent-%COMP%]   .title[_ngcontent-%COMP%]:hover {\n  color: rgb(255, 193, 7) !important;\n  cursor: pointer;\n}\n.box[_ngcontent-%COMP%]   .content-box[_ngcontent-%COMP%]   object[_ngcontent-%COMP%] {\n  height: 70rem;\n}\n/*# sourceMappingURL=data:application/json;base64,ewogICJ2ZXJzaW9uIjogMywKICAic291cmNlcyI6IFsic3JjL2FwcC9jb2RlLWh1Z2dpbmdmYWNlL2NvZGUtaHVnZ2luZ2ZhY2UuY29tcG9uZW50LnNjc3MiXSwKICAic291cmNlc0NvbnRlbnQiOiBbIi5ib3gge1xyXG4gICAgLnRpdGxlLWxpc3Qge1xyXG4gICAgICAgIC50aXRsZSB7XHJcbiAgICAgICAgICAgIHRyYW5zaXRpb246IGNvbG9yIDAuMnM7XHJcblxyXG4gICAgICAgICAgICAmOmhvdmVyIHtcclxuICAgICAgICAgICAgICAgIGNvbG9yOiByZ2IoMjU1LCAxOTMsIDcpICFpbXBvcnRhbnQ7XHJcbiAgICAgICAgICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XHJcbiAgICAgICAgICAgIH1cclxuICAgICAgICB9XHJcbiAgICB9XHJcblxyXG4gICAgLmNvbnRlbnQtYm94IHtcclxuICAgICAgICBvYmplY3Qge1xyXG4gICAgICAgICAgICBoZWlnaHQ6IDcwcmVtO1xyXG4gICAgICAgIH1cclxuICAgIH1cclxufSJdLAogICJtYXBwaW5ncyI6ICI7QUFFUSxDQUFBLElBQUEsQ0FBQSxXQUFBLENBQUE7QUFDSSxjQUFBLE1BQUE7O0FBRUEsQ0FISixJQUdJLENBSEosV0FHSSxDQUhKLEtBR0k7QUFDSSxTQUFBLElBQUEsR0FBQSxFQUFBLEdBQUEsRUFBQTtBQUNBLFVBQUE7O0FBTVIsQ0FYQSxJQVdBLENBQUEsWUFBQTtBQUNJLFVBQUE7OyIsCiAgIm5hbWVzIjogW10KfQo= */"]
+    dependencies: [NgClass, NgForOf, NgIf],
+    styles: ["\n\n.box[_ngcontent-%COMP%]   .title-list[_ngcontent-%COMP%]   .title[_ngcontent-%COMP%] {\n  transition: color 0.1s, background-color 0.1s;\n}\n.box[_ngcontent-%COMP%]   .title-list[_ngcontent-%COMP%]   .title[_ngcontent-%COMP%]:hover {\n  background-color: rgb(255, 193, 7) !important;\n  color: black !important;\n  cursor: pointer;\n}\n.box[_ngcontent-%COMP%]   .selectedTitle[_ngcontent-%COMP%] {\n  background-color: rgb(255, 193, 7) !important;\n  color: black !important;\n}\n.box[_ngcontent-%COMP%]   .content-box[_ngcontent-%COMP%]   object[_ngcontent-%COMP%] {\n  height: 70rem;\n}\n/*# sourceMappingURL=data:application/json;base64,ewogICJ2ZXJzaW9uIjogMywKICAic291cmNlcyI6IFsic3JjL2FwcC9jb2RlLWh1Z2dpbmdmYWNlL2NvZGUtaHVnZ2luZ2ZhY2UuY29tcG9uZW50LnNjc3MiXSwKICAic291cmNlc0NvbnRlbnQiOiBbIi5ib3gge1xyXG4gICAgLnRpdGxlLWxpc3Qge1xyXG4gICAgICAgIC50aXRsZSB7XHJcbiAgICAgICAgICAgIHRyYW5zaXRpb246IGNvbG9yIDAuMXMsIGJhY2tncm91bmQtY29sb3IgMC4xcztcclxuXHJcbiAgICAgICAgICAgICY6aG92ZXIge1xyXG4gICAgICAgICAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogcmdiKDI1NSwgMTkzLCA3KSAhaW1wb3J0YW50O1xyXG4gICAgICAgICAgICAgICAgY29sb3I6IGJsYWNrICFpbXBvcnRhbnQ7XHJcbiAgICAgICAgICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XHJcbiAgICAgICAgICAgIH1cclxuICAgICAgICB9XHJcbiAgICB9XHJcblxyXG4gICAgLnNlbGVjdGVkVGl0bGUge1xyXG4gICAgICAgIGJhY2tncm91bmQtY29sb3I6IHJnYigyNTUsIDE5MywgNykgIWltcG9ydGFudDtcclxuICAgICAgICBjb2xvcjogYmxhY2sgIWltcG9ydGFudDtcclxuICAgIH1cclxuXHJcbiAgICAuY29udGVudC1ib3gge1xyXG4gICAgICAgIG9iamVjdCB7XHJcbiAgICAgICAgICAgIGhlaWdodDogNzByZW07XHJcbiAgICAgICAgfVxyXG4gICAgfVxyXG59Il0sCiAgIm1hcHBpbmdzIjogIjtBQUVRLENBQUEsSUFBQSxDQUFBLFdBQUEsQ0FBQTtBQUNJLGNBQUEsTUFBQSxJQUFBLEVBQUEsaUJBQUE7O0FBRUEsQ0FISixJQUdJLENBSEosV0FHSSxDQUhKLEtBR0k7QUFDSSxvQkFBQSxJQUFBLEdBQUEsRUFBQSxHQUFBLEVBQUE7QUFDQSxTQUFBO0FBQ0EsVUFBQTs7QUFLWixDQVhJLElBV0osQ0FBQTtBQUNJLG9CQUFBLElBQUEsR0FBQSxFQUFBLEdBQUEsRUFBQTtBQUNBLFNBQUE7O0FBSUEsQ0FqQkEsSUFpQkEsQ0FBQSxZQUFBO0FBQ0ksVUFBQTs7IiwKICAibmFtZXMiOiBbXQp9Cg== */"]
   });
   let CodeHuggingfaceComponent2 = _CodeHuggingfaceComponent;
   return CodeHuggingfaceComponent2;
