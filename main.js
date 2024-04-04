@@ -22885,6 +22885,50 @@ var life_philosophy_list_default = [
       "\u7EB3\u4EC0\u5747\u8861\u662F\u4E00\u79CD\u535A\u5F08\u7684'\u7A33\u5B9A\u7ED3\u679C'\uFF0C\u8C01\u5355\u65B9\u9762\u6539\u53D8\u7B56\u7565\uFF0C\u8C01\u5C31\u4F1A\u53D7\u5230\u635F\u5931\u3002",
       "\u7EB3\u4EC0\u5747\u8861\u662F\u4E00\u4E2A\u6700\u7A33\u5B9A\u7684\u72B6\u6001\uFF0C\u4F46\u4E0D\u4E00\u5B9A\u662F\u597D\u7684\u72B6\u6001\u3002\u7A33\u5B9A\u5728\u597D\u7684\u72B6\u6001\u4E0A\u7684\u7EB3\u4EC0\u5747\u8861\u2014\u2014\u597D\u7684\u7EB3\u4EC0\u5747\u8861\uFF1B\u7A33\u5B9A\u5728\u574F\u7684\u72B6\u6001\u4E0A\u7684\u7EB3\u4EC0\u5747\u8861\u2014\u2014\u574F\u7684\u7EB3\u4EC0\u5747\u8861"
     ]
+  },
+  {
+    lines: [
+      "\u53CD\u8106\u5F31 \u8BFB\u4E66\u7B14\u8BB0",
+      "---------------------------",
+      "\u6740\u4E0D\u6B7B\u6211\u7684\uFF0C\u5E76\u672A\u4F7F\u6211\u53D8\u5F97\u575A\u5F3A\u4F46\u5B83\u8BA9\u6211\u5E78\u5B58\u4E0B\u6765\uFF0C\u56E0\u4E3A\u6211\u6BD4\u522B\u4EBA\u66F4\u5F3A\u58EE\uFF1B\u7531\u4E8E\u5B83\u6740\u6B7B\u4E86\u522B\u4EBA\uFF0C\u4E5F\u5C31\u662F\u6D88\u706D\u4E86\u5F31\u8005\uFF0C\u6211\u4EEC\u79CD\u7FA4\u7684\u5F53\u524D\u5E73\u5747\u7D20\u8D28\u53D8\u5F3A\u4E86\u3002",
+      "\u6709\u65F6\uFF0C\u4E3A\u4E86\u4E2A\u4F53\u7684\u751F\u5B58\uFF0C\u7CFB\u7EDF\u4E5F\u5FC5\u987B\u5B58\u5728\u3002\u56E0\u6B64\uFF0C\u5728\u8FD9\u4E2A\u76F8\u4E92\u4F9D\u5B58\u548C\u590D\u6742\u7684\u4E16\u754C\u91CC\uFF0C\u4EBA\u4EEC\u5728\u5BA3\u626C\u5176\u4E2D\u4E00\u65B9\u5229\u76CA\u7684\u5408\u7406\u6027\u800C\u8D2C\u4F4E\u53E6\u4E00\u65B9\u7684\u5229\u76CA\u65F6\u8FD8\u9700\u8981\u5C0F\u5FC3\u884C\u4E8B\u3002",
+      "\u4E8B\u5B9E\u4E0A\uFF0C\u8868\u9762\u770B\u4E0A\u53BB\u5F88\u7A33\u5B9A\u7684\u5176\u5B9E\u5F88\u8106\u5F31\uFF0C\u800C\u7ED9\u4EBA\u4EE5\u8106\u5F31\u5047\u8C61\u7684\u5176\u5B9E\u5374\u5F88\u5F3A\u5927\uFF0C\u751A\u81F3\u5177\u6709\u53CD\u8106\u5F31\u6027\u3002",
+      "\u4F60\u5728\u4E00\u4E2A\u7CFB\u7EDF\u4E2D\u770B\u5230\u7684\u6CE2\u52A8\u6027\u8D8A\u591A\uFF0C\u5176\u5B9E\u5B83\u8D8A\u4E0D\u5BB9\u6613\u906D\u9047\u9ED1\u5929\u9E45\u4E8B\u4EF6\u3002",
+      "\u6211\u4EEC\u9700\u8981\u907F\u514D\u5BF9\u7CFB\u7EDF\u7684\u81EA\u7136\u53CD\u8106\u5F31\u6027\uFF08\u5373\u5BF9\u5B83\u4EEC\u81EA\u5DF1\u7167\u987E\u81EA\u5DF1\u7684\u80FD\u529B\uFF09\u89C6\u800C\u4E0D\u89C1\uFF0C\u5E76\u514B\u5236\u81EA\u5DF1\u62D2\u7EDD\u7ED9\u5B83\u4EEC\u81EA\u7136\u53D1\u5C55\u7684\u673A\u4F1A\u7684\u51B2\u52A8\uFF0C\u4EE5\u514D\u4F24\u5BB3\u5230\u5B83\u4EEC\uFF0C\u8BA9\u5B83\u4EEC\u66F4\u8106\u5F31\u3002",
+      "\u6211\u4EEC\u503E\u5411\u4E8E\u5728\u4E00\u4E9B\u6536\u76CA\u5C0F\u800C\u98CE\u9669\u5927\u7684\u9886\u57DF\u5B9E\u65BD\u8FC7\u5EA6\u5E72\u9884\u3002\u800C\u5728\u6709\u5FC5\u8981\u5E72\u9884\u7684\u9886\u57DF\uFF08\u5982\u7D27\u6025\u60C5\u51B5\uFF09\u5374\u5E72\u9884\u4E0D\u8DB3\u3002"
+    ]
+  },
+  {
+    lines: [
+      "\u5F53\u6211\u4EEC\u4E00\u518D\u91CD\u590D\u7279\u5B9A\u7684\u52A8\u4F5C\u6216\u5FF5\u5934\u65F6\uFF0C\u4F1A\u4E0D\u65AD\u52A0\u5F3A\u5BF9\u5E94\u7684\u795E\u7ECF\u56DE\u8DEF\uFF0C\u5F53\u4E13\u6CE8\u5DE5\u4F5C\u7684\u795E\u7ECF\u56DE\u8DEF\u5F3A\u4E8E\u5176\u4ED6\u795E\u7ECF\u56DE\u8DEF\u65F6\uFF0C\u8FD9\u5C31\u662F\u6211\u4EEC\u719F\u77E5\u7684\u4E60\u60EF\u517B\u6210\u3002",
+      "\u9AD8\u624B\u53EF\u4EE5\u9488\u5BF9\u67D0\u4E2A\u9886\u57DF\u4E2D\u53EF\u4EE5\u9047\u5230\u7684\u5404\u79CD\u60C5\u51B5\uFF0C\u505A\u51FA\u7CBE\u51C6\u9884\u5224\u548C\u5E94\u5BF9\u63AA\u65BD\uFF0C\u8FD9\u662F\u56E0\u4E3A\u4ED6\u4EEC\u5728\u5FC3\u91CC\u5DF2\u7ECF\u5BF9\u5404\u79CD\u5C40\u9762\uFF0C\u521B\u5EFA\u4E86\u9AD8\u5EA6\u590D\u6742\u548C\u7CBE\u5BC6\u7684\u8868\u5F81\u3002",
+      "\u5FC3\u7406\u8868\u5F81\u7684\u4E00\u4E2A\u91CD\u8981\u597D\u5904\u5728\u4E8E\uFF0C\u53EF\u4EE5\u5E2E\u52A9\u6211\u4EEC\u5904\u7406\u4FE1\u606F\uFF1A\u7406\u89E3\u548C\u89E3\u8BFB\u5B83\uFF0C\u628A\u5B83\u4FDD\u5B58\u5728\u8BB0\u5FC6\u4E4B\u4E2D\uFF0C\u7EC4\u7EC7\u5B83\u3001\u5206\u6790\u5B83\uFF0C\u5E76\u7528\u5B83\u6765\u51B3\u7B56\u3002",
+      "\u4ECE\u65B0\u624B\u5230\u9AD8\u624B\u7684\u8FDB\u9636\u4E4B\u8DEF\uFF0C\u4E0D\u662F\u4F4E\u6C34\u5E73\u7684\u91CD\u590D\uFF0C\u800C\u662F\u6709\u76EE\u6807\u3001\u6709\u63D0\u5347\u7684\u523B\u610F\u7EC3\u4E60\uFF01",
+      "\u8212\u9002\u533A\uFF1A\u5DF2\u7ECF\u719F\u7EC3\u638C\u63E1\u7684\u5404\u79CD\u6280\u80FD\u3002",
+      "\u5B66\u4E60\u533A\uFF1A\u672A\u638C\u63E1\uFF0C\u4F46\u80FD\u901A\u8FC7\u5B66\u4E60\u5B66\u4F1A\u7684\u77E5\u8BC6\u6280\u80FD\u3002",
+      "\u6050\u614C\u533A\uFF1A\u662F\u6211\u4EEC\u6682\u65F6\u65E0\u6CD5\u5B66\u4F1A\u7684\u6280\u80FD\u3002",
+      "\u5728\u201C\u8212\u9002\u533A\u201D\u505A\u4E8B\uFF0C\u53EB\u751F\u6D3B\uFF1B\u5728\u201C\u5B66\u4E60\u533A\u201D\u505A\u4E8B\uFF0C\u624D\u53EB\u7EC3\u4E60\u3002",
+      "\u6709\u6548\u7684\u7EC3\u4E60\u4E00\u5B9A\u662F\u53D1\u751F\u5728\u201C\u5B66\u4E60\u533A\u201D\uFF0C\u4E00\u65E6\u4F60\u5B66\u4F1A\u4E86\u67D0\u4E2A\u4E1C\u897F\uFF0C\u5C31\u5E94\u8BE5\u8981\u6C42\u81EA\u5DF1\u7ACB\u5373\u8F6C\u5165\u4E0B\u4E00\u4E2A\u96BE\u5EA6\u3002\u51E1\u662F\u8FBE\u5230\u201C\u6211\u95ED\u7740\u773C\u775B\u90FD\u80FD\u2026\u2026\u201D\u8FD9\u79CD\u7A0B\u5EA6\u7684\u4EBA\u90FD\u5E9F\u4E86\uFF0C\u56E0\u4E3A\u9AD8\u624B\u4E0D\u4F1A\u95ED\u7740\u773C\u775B\u505A\u4E8B\u3002",
+      "\u53EA\u6709\u7ED3\u679C\u53EF\u63A7\u7684\u9886\u57DF\uFF0C\u523B\u610F\u7EC3\u4E60\u624D\u6709\u7528\u3002\u80A1\u5E02\u662F\u4E0D\u53EF\u63A7\u7684\uFF0C\u6240\u4EE5\u523B\u610F\u7EC3\u4E60\u9884\u6D4B\u80A1\u5E02\u5F88\u53EF\u80FD\u5C31\u6CA1\u7528\u3002",
+      "\u5B66\u4E60\u91D1\u5B57\u5854\u8BF4\u7684\u662F\u4E0D\u540C\u7684\u5B66\u4E60\u65B9\u5F0F\u4F1A\u5E26\u6765\u5B8C\u5168\u4E0D\u540C\u7684\u6548\u679C\uFF1A",
+      "\u5B66\u5B8C\u4E4B\u540E\u7ACB\u523B\u6559\u6388\u4ED6\u4EBA\u6216\u4F7F\u7528\u6280\u80FD\uFF0C\u53EF\u4EE5\u4FDD\u7559 90% \u7684\u6240\u5B66\u5185\u5BB9",
+      "\u5B66\u5B8C\u4E4B\u540E\u7ACB\u5373\u7EC3\u4E60\uFF0C\u53EF\u4EE5\u4FDD\u7559 75% \u7684\u6240\u5B66\u5185\u5BB9",
+      "\u53C2\u4E0E\u5C0F\u7EC4\u8BA8\u8BBA\uFF0C\u53EF\u4EE5\u4FDD\u7559 50% \u7684\u6240\u5B66\u5185\u5BB9",
+      "\u89C2\u770B\u4ED6\u4EBA\u7684\u5C55\u793A\uFF0C\u53EF\u4EE5\u4FDD\u7559 30% \u7684\u6240\u5B66\u5185\u5BB9",
+      "\u4EC5\u901A\u8FC7\u9605\u8BFB\u5B66\u4E60\uFF0C\u53EF\u4EE5\u4FDD\u7559 10% \u7684\u6240\u5B66\u5185\u5BB9",
+      "\u4EC5\u542C\u8BB2\u5EA7\u5B66\u4E60\uFF0C\u53EF\u4EE5\u4FDD\u7559\u7EA6 5% \u7684\u6240\u5B66\u5185\u5BB9",
+      "\u8FD9\u610F\u5473\u7740\uFF1A\u5B66\u4E60\u7684\u53C2\u4E0E\u5EA6\u8D8A\u9AD8\uFF0C\u5B66\u4E60\u7684\u6548\u679C\u5C31\u8D8A\u597D\u3002",
+      "\u96C6\u4E2D\u5F0F\u91CD\u590D\uFF0C\u53EA\u5BF9\u77ED\u65F6\u8BB0\u5FC6\u6709\u5E2E\u52A9\uFF0C\u4E34\u65F6\u62B1\u4F5B\u811A\u5C31\u662F\u5F88\u597D\u7684\u4F8B\u5B50\uFF1B\u800C\u95F4\u9694\u5F0F\u91CD\u590D\uFF0C\u8BA9\u77E5\u8BC6\u53D8\u6210\u957F\u65F6\u8BB0\u5FC6\u3002",
+      "\u884C\u52A8\u662F\u6210\u529F\u7684\u9636\u68AF\uFF0C\u884C\u52A8\u8D8A\u591A\uFF0C\u722C\u7684\u8D8A\u9AD8\u3002",
+      "\u4EBA\u751F\u7B97\u6CD5\u5C31\u662F\u4F60\u9762\u5BF9\u4E16\u754C\uFF0C\u4E0D\u65AD\u91CD\u590D\u7684\u6700\u57FA\u672C\u7684\u5957\u8DEF\uFF0C\u627E\u5230\u5B83\uFF0C\u91CD\u590D\u5B83\uFF0C\u5F3A\u5316\u5B83\uFF0C\u7136\u540E\u4E0D\u65AD\u53BB\u4F18\u5316\u5B83\uFF0C\u76F4\u5230\u5927\u8111\u53EF\u4EE5\u968F\u65F6\u8C03\u7528\u3002",
+      "\u4F60\u5F53\u4E0B\u7684\u7ED3\u679C\uFF0C\u7531\u8FC7\u53BB\u51B3\u5B9A\uFF1B\u4F60\u73B0\u5728\u7684\u52AA\u529B\uFF0C\u5728\u672A\u6765\u89C1\u6548\u3002\u73B0\u5728\u662F\u4EC0\u4E48\u4E0D\u91CD\u8981\uFF0C\u73B0\u5728\u52AA\u529B\u624D\u91CD\u8981\u3002",
+      "\u4E00\u4E2A\u4EBA\u5982\u679C\u4E60\u60EF\u4E86\u8D5A\u8F9B\u82E6\u94B1\uFF0C\u90A3\u4E48\u7E41\u5FD9\u7684\u4F4E\u4EF7\u503C\u5DE5\u4F5C\u5C31\u4F1A\u5360\u636E\u4ED6\u5927\u90E8\u5206\u7684\u65F6\u95F4\u3002",
+      "\u4ED6\u5C31\u4F1A\u5728\u8FD9\u6837\u7684\u751F\u6D3B\u4E2D\uFF0C\u5FD9\u5230\u65E0\u6687\u5206\u8EAB\uFF0C\u6700\u7EC8\u9677\u5165\u8D2B\u7A77\u7684\u5FAA\u73AF\u3002",
+      "\u6240\u4EE5\u4EE5\u4E0B3\u79CD\u8F9B\u82E6\u94B1\uFF0C\u6211\u529D\u4F60\u4E0D\u8981\u6323\u3002",
+      "1. \u900F\u652F\u8EAB\u4F53\u6362\u6765\u7684\u94B1\u3002",
+      "2. \u727A\u7272\u65F6\u95F4\u6362\u6765\u7684\u94B1\u3002",
+      "3. \u9EBB\u75F9\u7CBE\u795E\u6362\u6765\u7684\u94B1\u3002"
+    ]
   }
 ];
 
@@ -27272,67 +27316,68 @@ function MdScreenRecordComponent_button_15_Template(rf, ctx) {
 function MdScreenRecordComponent_nav_16_Template(rf, ctx) {
   if (rf & 1) {
     const _r13 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "nav", 29)(1, "div", 30)(2, "span", 31);
-    \u0275\u0275text(3, "MarkDown Screen Recording with Voice");
+    \u0275\u0275elementStart(0, "nav", 29)(1, "div", 30)(2, "span", 31)(3, "div", 32);
+    \u0275\u0275text(4, "MarkDown Screen Recording with Voice");
     \u0275\u0275elementEnd();
-    \u0275\u0275element(4, "img", 32)(5, "img", 33)(6, "img", 34)(7, "img", 33)(8, "img", 35);
-    \u0275\u0275elementStart(9, "span", 36);
-    \u0275\u0275text(10, "+");
+    \u0275\u0275element(5, "img", 33)(6, "img", 34)(7, "img", 35)(8, "img", 34)(9, "img", 36);
+    \u0275\u0275elementStart(10, "span", 37);
+    \u0275\u0275text(11, "+");
     \u0275\u0275elementEnd();
-    \u0275\u0275element(11, "img", 37);
-    \u0275\u0275elementStart(12, "button", 38);
-    \u0275\u0275element(13, "span", 39);
+    \u0275\u0275element(12, "img", 38);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(14, "div", 40)(15, "ul", 41)(16, "li", 42)(17, "div", 43)(18, "a", 44);
-    \u0275\u0275element(19, "i", 45);
-    \u0275\u0275text(20, " Home ");
+    \u0275\u0275elementStart(13, "button", 39);
+    \u0275\u0275element(14, "span", 40);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(21, "button", 46);
-    \u0275\u0275element(22, "i", 47);
-    \u0275\u0275text(23, "Markdown ");
+    \u0275\u0275elementStart(15, "div", 41)(16, "ul", 42)(17, "li", 43)(18, "div", 44)(19, "a", 45);
+    \u0275\u0275element(20, "i", 46);
+    \u0275\u0275text(21, " Go to Home ");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(24, "input", 48, 49);
-    \u0275\u0275listener("change", function MdScreenRecordComponent_nav_16_Template_input_change_24_listener($event) {
+    \u0275\u0275elementStart(22, "button", 47);
+    \u0275\u0275element(23, "i", 48);
+    \u0275\u0275text(24, "\u4E66\u5199\u89C4\u5219 ");
+    \u0275\u0275elementEnd();
+    \u0275\u0275elementStart(25, "input", 49, 50);
+    \u0275\u0275listener("change", function MdScreenRecordComponent_nav_16_Template_input_change_25_listener($event) {
       \u0275\u0275restoreView(_r13);
       const ctx_r12 = \u0275\u0275nextContext();
       return \u0275\u0275resetView(ctx_r12.fileInputChanged($event));
     });
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(26, "label", 50);
-    \u0275\u0275element(27, "i", 51);
-    \u0275\u0275text(28, " Select a MarkDown File ");
+    \u0275\u0275elementStart(27, "label", 51);
+    \u0275\u0275element(28, "i", 52);
+    \u0275\u0275text(29, " Select a MD File ");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(29, "button", 52);
-    \u0275\u0275listener("click", function MdScreenRecordComponent_nav_16_Template_button_click_29_listener() {
+    \u0275\u0275elementStart(30, "button", 53);
+    \u0275\u0275listener("click", function MdScreenRecordComponent_nav_16_Template_button_click_30_listener() {
       \u0275\u0275restoreView(_r13);
       const ctx_r14 = \u0275\u0275nextContext();
       return \u0275\u0275resetView(ctx_r14.analysis());
     });
-    \u0275\u0275element(30, "i", 53);
-    \u0275\u0275text(31, " Analysis ");
+    \u0275\u0275element(31, "i", 54);
+    \u0275\u0275text(32, " Analysis ");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(32, "button", 54);
-    \u0275\u0275listener("click", function MdScreenRecordComponent_nav_16_Template_button_click_32_listener() {
+    \u0275\u0275elementStart(33, "button", 55);
+    \u0275\u0275listener("click", function MdScreenRecordComponent_nav_16_Template_button_click_33_listener() {
       \u0275\u0275restoreView(_r13);
       const ctx_r15 = \u0275\u0275nextContext();
       return \u0275\u0275resetView(ctx_r15.resetFileInput());
     });
-    \u0275\u0275element(33, "i", 55);
-    \u0275\u0275text(34, "Clean ");
+    \u0275\u0275element(34, "i", 56);
+    \u0275\u0275text(35, "Clean ");
     \u0275\u0275elementEnd()()();
-    \u0275\u0275elementStart(35, "li", 56)(36, "button", 57);
-    \u0275\u0275listener("click", function MdScreenRecordComponent_nav_16_Template_button_click_36_listener() {
+    \u0275\u0275elementStart(36, "li", 57)(37, "button", 58);
+    \u0275\u0275listener("click", function MdScreenRecordComponent_nav_16_Template_button_click_37_listener() {
       \u0275\u0275restoreView(_r13);
       const ctx_r16 = \u0275\u0275nextContext();
       return \u0275\u0275resetView(ctx_r16.getStarted());
     });
-    \u0275\u0275element(37, "i", 58);
-    \u0275\u0275text(38, " Get started ");
+    \u0275\u0275element(38, "i", 59);
+    \u0275\u0275text(39, " Get started ");
     \u0275\u0275elementEnd()()()()()();
   }
   if (rf & 2) {
     const ctx_r3 = \u0275\u0275nextContext();
-    \u0275\u0275advance(29);
+    \u0275\u0275advance(30);
     \u0275\u0275property("disabled", !ctx_r3.readyAnalysis);
     \u0275\u0275advance(3);
     \u0275\u0275property("disabled", !ctx_r3.readyAnalysis);
@@ -27342,7 +27387,7 @@ function MdScreenRecordComponent_nav_16_Template(rf, ctx) {
 }
 function MdScreenRecordComponent_div_19_div_1_li_5_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "li", 98);
+    \u0275\u0275elementStart(0, "li", 99);
     \u0275\u0275text(1);
     \u0275\u0275elementEnd();
   }
@@ -27359,148 +27404,148 @@ var _c12 = (a0, a1) => ({
 function MdScreenRecordComponent_div_19_div_1_Template(rf, ctx) {
   if (rf & 1) {
     const _r22 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "div", 61)(1, "div", 62)(2, "h1", 63);
+    \u0275\u0275elementStart(0, "div", 62)(1, "div", 63)(2, "h1", 64);
     \u0275\u0275text(3);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(4, "ul", 64);
-    \u0275\u0275template(5, MdScreenRecordComponent_div_19_div_1_li_5_Template, 2, 1, "li", 65);
+    \u0275\u0275elementStart(4, "ul", 65);
+    \u0275\u0275template(5, MdScreenRecordComponent_div_19_div_1_li_5_Template, 2, 1, "li", 66);
     \u0275\u0275elementEnd();
-    \u0275\u0275element(6, "img", 66);
+    \u0275\u0275element(6, "img", 67);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(7, "div", 67)(8, "form", 68)(9, "div", 69)(10, "label", 70)(11, "p", 71);
-    \u0275\u0275element(12, "i", 72);
+    \u0275\u0275elementStart(7, "div", 68)(8, "form", 69)(9, "div", 70)(10, "div", 71)(11, "p", 72);
+    \u0275\u0275element(12, "i", 73);
     \u0275\u0275text(13, "Ready Seconds \u5F55\u5C4F\u5012\u8BA1\u65F6 ");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(14, "p", 73);
+    \u0275\u0275elementStart(14, "p", 74);
     \u0275\u0275text(15, "\u6B63\u5F0F\u5F00\u59CB\u524D\u7684\u5012\u8BA1\u65F6\u79D2\u6570 ( \u70B9\u70DF\u65F6\u95F4 )");
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(16, "div", 74)(17, "input", 75);
+    \u0275\u0275elementStart(16, "div", 75)(17, "input", 76);
     \u0275\u0275listener("ngModelChange", function MdScreenRecordComponent_div_19_div_1_Template_input_ngModelChange_17_listener($event) {
       \u0275\u0275restoreView(_r22);
       const ctx_r21 = \u0275\u0275nextContext(2);
       return \u0275\u0275resetView(ctx_r21.readySecond = $event);
     });
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(18, "span", 76);
+    \u0275\u0275elementStart(18, "span", 77);
     \u0275\u0275text(19, "\u79D2");
     \u0275\u0275elementEnd()()();
-    \u0275\u0275elementStart(20, "div", 69)(21, "label", 77)(22, "p", 71);
-    \u0275\u0275element(23, "i", 78);
+    \u0275\u0275elementStart(20, "div", 70)(21, "div", 78)(22, "p", 72);
+    \u0275\u0275element(23, "i", 79);
     \u0275\u0275text(24, "Wait for Big Title \u7B49\u5F85\u663E\u793A\u5927\u6807\u9898 ");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(25, "p", 73);
+    \u0275\u0275elementStart(25, "p", 74);
     \u0275\u0275text(26, "\u5F55\u5C4F\u8F6F\u4EF6\u8FD0\u884C\u540E\u7B49\u5F85\u663E\u793A\u5927\u6807\u9898\u7684\u79D2\u6570");
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(27, "div", 74)(28, "input", 79);
+    \u0275\u0275elementStart(27, "div", 75)(28, "input", 80);
     \u0275\u0275listener("ngModelChange", function MdScreenRecordComponent_div_19_div_1_Template_input_ngModelChange_28_listener($event) {
       \u0275\u0275restoreView(_r22);
       const ctx_r23 = \u0275\u0275nextContext(2);
       return \u0275\u0275resetView(ctx_r23.waitForBigTitleSecond = $event);
     });
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(29, "span", 76);
+    \u0275\u0275elementStart(29, "span", 77);
     \u0275\u0275text(30, "\u79D2");
     \u0275\u0275elementEnd()()();
-    \u0275\u0275elementStart(31, "div", 69)(32, "label", 80)(33, "p", 71);
-    \u0275\u0275element(34, "i", 81);
+    \u0275\u0275elementStart(31, "div", 70)(32, "div", 81)(33, "p", 72);
+    \u0275\u0275element(34, "i", 82);
     \u0275\u0275text(35, "Content Delay Seconds \u663E\u793A\u5927\u6807\u9898 ( \u6587\u4EF6\u540D ) \u540E\u7B49\u5F85\u65F6\u95F4 ");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(36, "p", 73);
+    \u0275\u0275elementStart(36, "p", 74);
     \u0275\u0275text(37, "\u663E\u793A\u6587\u4EF6\u540D\u540E\uFF0C\u904D\u5386\u6587\u4EF6\u5185\u5BB9\u524D\u7684\u5EF6\u8FDF\u79D2\u6570");
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(38, "div", 74)(39, "input", 82);
+    \u0275\u0275elementStart(38, "div", 75)(39, "input", 83);
     \u0275\u0275listener("ngModelChange", function MdScreenRecordComponent_div_19_div_1_Template_input_ngModelChange_39_listener($event) {
       \u0275\u0275restoreView(_r22);
       const ctx_r24 = \u0275\u0275nextContext(2);
       return \u0275\u0275resetView(ctx_r24.contentDelaySecond = $event);
     });
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(40, "span", 76);
+    \u0275\u0275elementStart(40, "span", 77);
     \u0275\u0275text(41, "\u79D2");
     \u0275\u0275elementEnd()()();
-    \u0275\u0275elementStart(42, "div", 69)(43, "label", 83)(44, "p", 71);
-    \u0275\u0275element(45, "i", 84);
+    \u0275\u0275elementStart(42, "div", 70)(43, "div", 84)(44, "p", 72);
+    \u0275\u0275element(45, "i", 85);
     \u0275\u0275text(46, "Title Before Delay Second \u663E\u793A\u4E8C\u7EA7\u6807\u9898\u524D\u5EF6\u8FDF\u7684\u79D2\u6570 ");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(47, "p", 73);
+    \u0275\u0275elementStart(47, "p", 74);
     \u0275\u0275text(48, "\u4E0A\u4E00\u4E2A\u90E8\u5206\u663E\u793A\u5B8C\u540E\u7B49\u5F85\u4E0B\u4E00\u90E8\u5206\u51FA\u73B0\u7684\u5EF6\u8FDF\u79D2\u6570");
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(49, "div", 74)(50, "input", 85);
+    \u0275\u0275elementStart(49, "div", 75)(50, "input", 86);
     \u0275\u0275listener("ngModelChange", function MdScreenRecordComponent_div_19_div_1_Template_input_ngModelChange_50_listener($event) {
       \u0275\u0275restoreView(_r22);
       const ctx_r25 = \u0275\u0275nextContext(2);
       return \u0275\u0275resetView(ctx_r25.titleBeforeDelaySecond = $event);
     });
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(51, "span", 76);
+    \u0275\u0275elementStart(51, "span", 77);
     \u0275\u0275text(52, "\u79D2");
     \u0275\u0275elementEnd()()();
-    \u0275\u0275elementStart(53, "div", 69)(54, "label", 86)(55, "p", 71);
-    \u0275\u0275element(56, "i", 87);
+    \u0275\u0275elementStart(53, "div", 70)(54, "div", 87)(55, "p", 72);
+    \u0275\u0275element(56, "i", 88);
     \u0275\u0275text(57, "Row Delay Seconds \u904D\u5386\u5230\u5F53\u524D\u884C\u540E\u7B49\u5F85\u65F6\u95F4 ");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(58, "p", 73);
+    \u0275\u0275elementStart(58, "p", 74);
     \u0275\u0275text(59, "\u904D\u5386\u5230\u6BCF\u4E00\u884C\u540E\uFF0C\u663E\u793A\u5B57\u6BCD ( \u6587\u5B57 ) \u524D\u7684\u5EF6\u8FDF\u79D2\u6570");
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(60, "div", 74)(61, "input", 88);
+    \u0275\u0275elementStart(60, "div", 75)(61, "input", 89);
     \u0275\u0275listener("ngModelChange", function MdScreenRecordComponent_div_19_div_1_Template_input_ngModelChange_61_listener($event) {
       \u0275\u0275restoreView(_r22);
       const ctx_r26 = \u0275\u0275nextContext(2);
       return \u0275\u0275resetView(ctx_r26.rowDelaySecond = $event);
     });
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(62, "span", 76);
+    \u0275\u0275elementStart(62, "span", 77);
     \u0275\u0275text(63, "\u79D2");
     \u0275\u0275elementEnd()()();
-    \u0275\u0275elementStart(64, "div", 69)(65, "label", 89)(66, "p", 71);
-    \u0275\u0275element(67, "i", 90);
+    \u0275\u0275elementStart(64, "div", 70)(65, "div", 90)(66, "p", 72);
+    \u0275\u0275element(67, "i", 91);
     \u0275\u0275text(68, "Letter Delay Seconds \u904D\u5386\u6BCF\u4E2A\u5B57\u6BCD ( \u6587\u5B57 ) \u540E\u7B49\u5F85\u65F6\u95F4 ");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(69, "p", 73);
+    \u0275\u0275elementStart(69, "p", 74);
     \u0275\u0275text(70, "\u6807\u9898\u3001\u89E3\u91CA\u6BCF\u4E2A\u5B57\u7B26\u7684\u5EF6\u8FDF\u79D2\u6570\u3010AI \u7A0B\u5E8F\u4EE3\u7801\u4E0D\u591A\uFF0C\u4F46\u7406\u8BBA\u903B\u8F91\u66F4\u91CD\u8981\uFF0C\u53EF\u4EE5\u663E\u793A\u6162\u4E00\u4E9B\u3011");
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(71, "div", 74)(72, "input", 91);
+    \u0275\u0275elementStart(71, "div", 75)(72, "input", 92);
     \u0275\u0275listener("ngModelChange", function MdScreenRecordComponent_div_19_div_1_Template_input_ngModelChange_72_listener($event) {
       \u0275\u0275restoreView(_r22);
       const ctx_r27 = \u0275\u0275nextContext(2);
       return \u0275\u0275resetView(ctx_r27.letterDelaySecond = $event);
     });
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(73, "span", 76);
+    \u0275\u0275elementStart(73, "span", 77);
     \u0275\u0275text(74, "\u79D2");
     \u0275\u0275elementEnd()()();
-    \u0275\u0275elementStart(75, "div", 69)(76, "label", 92)(77, "p", 71);
-    \u0275\u0275element(78, "i", 93);
+    \u0275\u0275elementStart(75, "div", 70)(76, "div", 93)(77, "p", 72);
+    \u0275\u0275element(78, "i", 94);
     \u0275\u0275text(79, "Program Delay Seconds \u904D\u5386\u7A0B\u5E8F\u4EE3\u7801\u6216\u8F93\u51FA\u7ED3\u679C\u7684\u6BCF\u4E2A\u5B57\u7B26\u540E\u7684\u7B49\u5F85\u65F6\u95F4 ");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(80, "p", 73);
+    \u0275\u0275elementStart(80, "p", 74);
     \u0275\u0275text(81, "\u7A0B\u5E8F\u4EE3\u7801\u4EE5\u53CA\u8F93\u51FA\u7ED3\u679C\u53EF\u4EE5\u52A0\u5FEB\u663E\u793A\u3010\u7A0B\u5E8F\u4EE3\u7801\u4EE5\u53CA\u8F93\u51FA\u7ED3\u679C\u53EF\u4EE5\u663E\u793A\u7684\u5FEB\u4E00\u4E9B\u3011");
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(82, "div", 74)(83, "input", 94);
+    \u0275\u0275elementStart(82, "div", 75)(83, "input", 95);
     \u0275\u0275listener("ngModelChange", function MdScreenRecordComponent_div_19_div_1_Template_input_ngModelChange_83_listener($event) {
       \u0275\u0275restoreView(_r22);
       const ctx_r28 = \u0275\u0275nextContext(2);
       return \u0275\u0275resetView(ctx_r28.programDelaySecond = $event);
     });
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(84, "span", 76);
+    \u0275\u0275elementStart(84, "span", 77);
     \u0275\u0275text(85, "\u79D2");
     \u0275\u0275elementEnd()()();
-    \u0275\u0275elementStart(86, "div", 69)(87, "label", 95)(88, "p", 71);
-    \u0275\u0275element(89, "i", 96);
+    \u0275\u0275elementStart(86, "div", 70)(87, "div", 96)(88, "p", 72);
+    \u0275\u0275element(89, "i", 97);
     \u0275\u0275text(90, "TTS Text Seconds Multiple \u751F\u6210 TTS \u6587\u5B57\u7684\u6570\u5B57\u5B57\u7B26\u4E32\u7684\u500D\u7387 ");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(91, "p", 73);
+    \u0275\u0275elementStart(91, "p", 74);
     \u0275\u0275text(92, "\u7A0B\u5E8F\u540E\u53F0\u904D\u5386\u8FD9\u4E2A\u6570\u5B57\u6570\u7EC4\uFF0C\u7B49\u5F85 TTS \u8BED\u97F3\u64AD\u653E\u5B8C\u6210");
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(93, "div", 74)(94, "input", 97);
+    \u0275\u0275elementStart(93, "div", 75)(94, "input", 98);
     \u0275\u0275listener("ngModelChange", function MdScreenRecordComponent_div_19_div_1_Template_input_ngModelChange_94_listener($event) {
       \u0275\u0275restoreView(_r22);
       const ctx_r29 = \u0275\u0275nextContext(2);
       return \u0275\u0275resetView(ctx_r29.ttsTextSecondsMultiple = $event);
     });
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(95, "span", 76);
+    \u0275\u0275elementStart(95, "span", 77);
     \u0275\u0275text(96, "\u79D2");
     \u0275\u0275elementEnd()()()()()();
   }
@@ -27532,8 +27577,8 @@ function MdScreenRecordComponent_div_19_div_1_Template(rf, ctx) {
 }
 function MdScreenRecordComponent_div_19_div_2_div_2_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 105);
-    \u0275\u0275element(1, "i", 106);
+    \u0275\u0275elementStart(0, "div", 106);
+    \u0275\u0275element(1, "i", 107);
     \u0275\u0275text(2);
     \u0275\u0275elementEnd();
   }
@@ -27545,7 +27590,7 @@ function MdScreenRecordComponent_div_19_div_2_div_2_Template(rf, ctx) {
 }
 function MdScreenRecordComponent_div_19_div_2_pre_3_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "pre", 107);
+    \u0275\u0275elementStart(0, "pre", 108);
     \u0275\u0275text(1);
     \u0275\u0275elementEnd();
   }
@@ -27557,8 +27602,8 @@ function MdScreenRecordComponent_div_19_div_2_pre_3_Template(rf, ctx) {
 }
 function MdScreenRecordComponent_div_19_div_2_div_5_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 105);
-    \u0275\u0275element(1, "i", 108);
+    \u0275\u0275elementStart(0, "div", 106);
+    \u0275\u0275element(1, "i", 109);
     \u0275\u0275text(2);
     \u0275\u0275elementEnd();
   }
@@ -27570,10 +27615,10 @@ function MdScreenRecordComponent_div_19_div_2_div_5_Template(rf, ctx) {
 }
 function MdScreenRecordComponent_div_19_div_2_div_6_ul_1_div_3_div_1_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div")(1, "span", 117);
+    \u0275\u0275elementStart(0, "div")(1, "span", 118);
     \u0275\u0275text(2);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(3, "span", 118);
+    \u0275\u0275elementStart(3, "span", 119);
     \u0275\u0275text(4);
     \u0275\u0275elementEnd()();
   }
@@ -27589,7 +27634,7 @@ function MdScreenRecordComponent_div_19_div_2_div_6_ul_1_div_3_div_1_Template(rf
 function MdScreenRecordComponent_div_19_div_2_div_6_ul_1_div_3_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementStart(0, "div");
-    \u0275\u0275template(1, MdScreenRecordComponent_div_19_div_2_div_6_ul_1_div_3_div_1_Template, 5, 2, "div", 116);
+    \u0275\u0275template(1, MdScreenRecordComponent_div_19_div_2_div_6_ul_1_div_3_div_1_Template, 5, 2, "div", 117);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
@@ -27600,62 +27645,62 @@ function MdScreenRecordComponent_div_19_div_2_div_6_ul_1_div_3_Template(rf, ctx)
 }
 function MdScreenRecordComponent_div_19_div_2_div_6_ul_1_li_4_i_5_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275element(0, "i", 132);
+    \u0275\u0275element(0, "i", 133);
   }
 }
 function MdScreenRecordComponent_div_19_div_2_div_6_ul_1_li_4_i_6_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275element(0, "i", 133);
+    \u0275\u0275element(0, "i", 134);
   }
 }
 function MdScreenRecordComponent_div_19_div_2_div_6_ul_1_li_4_i_7_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275element(0, "i", 134);
+    \u0275\u0275element(0, "i", 135);
   }
 }
 function MdScreenRecordComponent_div_19_div_2_div_6_ul_1_li_4_i_8_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275element(0, "i", 135);
+    \u0275\u0275element(0, "i", 136);
   }
 }
 function MdScreenRecordComponent_div_19_div_2_div_6_ul_1_li_4_i_9_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275element(0, "i", 136);
+    \u0275\u0275element(0, "i", 137);
   }
 }
 function MdScreenRecordComponent_div_19_div_2_div_6_ul_1_li_4_i_10_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275element(0, "i", 137);
+    \u0275\u0275element(0, "i", 138);
   }
 }
 function MdScreenRecordComponent_div_19_div_2_div_6_ul_1_li_4_i_11_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275element(0, "i", 138);
+    \u0275\u0275element(0, "i", 139);
   }
 }
 function MdScreenRecordComponent_div_19_div_2_div_6_ul_1_li_4_i_12_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275element(0, "i", 139);
+    \u0275\u0275element(0, "i", 140);
   }
 }
 function MdScreenRecordComponent_div_19_div_2_div_6_ul_1_li_4_i_13_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275element(0, "i", 140);
+    \u0275\u0275element(0, "i", 141);
   }
 }
 function MdScreenRecordComponent_div_19_div_2_div_6_ul_1_li_4_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "li", 119)(1, "div", 99)(2, "div", 120);
+    \u0275\u0275elementStart(0, "li", 120)(1, "div", 100)(2, "div", 121);
     \u0275\u0275text(3, "key");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(4, "div", 121);
-    \u0275\u0275template(5, MdScreenRecordComponent_div_19_div_2_div_6_ul_1_li_4_i_5_Template, 1, 0, "i", 122)(6, MdScreenRecordComponent_div_19_div_2_div_6_ul_1_li_4_i_6_Template, 1, 0, "i", 123)(7, MdScreenRecordComponent_div_19_div_2_div_6_ul_1_li_4_i_7_Template, 1, 0, "i", 124)(8, MdScreenRecordComponent_div_19_div_2_div_6_ul_1_li_4_i_8_Template, 1, 0, "i", 125)(9, MdScreenRecordComponent_div_19_div_2_div_6_ul_1_li_4_i_9_Template, 1, 0, "i", 126)(10, MdScreenRecordComponent_div_19_div_2_div_6_ul_1_li_4_i_10_Template, 1, 0, "i", 127)(11, MdScreenRecordComponent_div_19_div_2_div_6_ul_1_li_4_i_11_Template, 1, 0, "i", 128)(12, MdScreenRecordComponent_div_19_div_2_div_6_ul_1_li_4_i_12_Template, 1, 0, "i", 129)(13, MdScreenRecordComponent_div_19_div_2_div_6_ul_1_li_4_i_13_Template, 1, 0, "i", 130);
+    \u0275\u0275elementStart(4, "div", 122);
+    \u0275\u0275template(5, MdScreenRecordComponent_div_19_div_2_div_6_ul_1_li_4_i_5_Template, 1, 0, "i", 123)(6, MdScreenRecordComponent_div_19_div_2_div_6_ul_1_li_4_i_6_Template, 1, 0, "i", 124)(7, MdScreenRecordComponent_div_19_div_2_div_6_ul_1_li_4_i_7_Template, 1, 0, "i", 125)(8, MdScreenRecordComponent_div_19_div_2_div_6_ul_1_li_4_i_8_Template, 1, 0, "i", 126)(9, MdScreenRecordComponent_div_19_div_2_div_6_ul_1_li_4_i_9_Template, 1, 0, "i", 127)(10, MdScreenRecordComponent_div_19_div_2_div_6_ul_1_li_4_i_10_Template, 1, 0, "i", 128)(11, MdScreenRecordComponent_div_19_div_2_div_6_ul_1_li_4_i_11_Template, 1, 0, "i", 129)(12, MdScreenRecordComponent_div_19_div_2_div_6_ul_1_li_4_i_12_Template, 1, 0, "i", 130)(13, MdScreenRecordComponent_div_19_div_2_div_6_ul_1_li_4_i_13_Template, 1, 0, "i", 131);
     \u0275\u0275text(14);
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(15, "div", 99)(16, "div", 120);
+    \u0275\u0275elementStart(15, "div", 100)(16, "div", 121);
     \u0275\u0275text(17, "val");
     \u0275\u0275elementEnd();
-    \u0275\u0275element(18, "div", 131);
+    \u0275\u0275element(18, "div", 132);
     \u0275\u0275elementEnd()();
   }
   if (rf & 2) {
@@ -27686,10 +27731,10 @@ function MdScreenRecordComponent_div_19_div_2_div_6_ul_1_li_4_Template(rf, ctx) 
 }
 function MdScreenRecordComponent_div_19_div_2_div_6_ul_1_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "ul", 111)(1, "div", 112)(2, "div", 113);
-    \u0275\u0275template(3, MdScreenRecordComponent_div_19_div_2_div_6_ul_1_div_3_Template, 2, 1, "div", 114);
+    \u0275\u0275elementStart(0, "ul", 112)(1, "div", 113)(2, "div", 114);
+    \u0275\u0275template(3, MdScreenRecordComponent_div_19_div_2_div_6_ul_1_div_3_Template, 2, 1, "div", 115);
     \u0275\u0275elementEnd()();
-    \u0275\u0275template(4, MdScreenRecordComponent_div_19_div_2_div_6_ul_1_li_4_Template, 19, 11, "li", 115);
+    \u0275\u0275template(4, MdScreenRecordComponent_div_19_div_2_div_6_ul_1_li_4_Template, 19, 11, "li", 116);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
@@ -27702,8 +27747,8 @@ function MdScreenRecordComponent_div_19_div_2_div_6_ul_1_Template(rf, ctx) {
 }
 function MdScreenRecordComponent_div_19_div_2_div_6_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 109);
-    \u0275\u0275template(1, MdScreenRecordComponent_div_19_div_2_div_6_ul_1_Template, 5, 2, "ul", 110);
+    \u0275\u0275elementStart(0, "div", 110);
+    \u0275\u0275template(1, MdScreenRecordComponent_div_19_div_2_div_6_ul_1_Template, 5, 2, "ul", 111);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
@@ -27714,11 +27759,11 @@ function MdScreenRecordComponent_div_19_div_2_div_6_Template(rf, ctx) {
 }
 function MdScreenRecordComponent_div_19_div_2_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 99)(1, "div", 100);
-    \u0275\u0275template(2, MdScreenRecordComponent_div_19_div_2_div_2_Template, 3, 1, "div", 101)(3, MdScreenRecordComponent_div_19_div_2_pre_3_Template, 2, 1, "pre", 102);
+    \u0275\u0275elementStart(0, "div", 100)(1, "div", 101);
+    \u0275\u0275template(2, MdScreenRecordComponent_div_19_div_2_div_2_Template, 3, 1, "div", 102)(3, MdScreenRecordComponent_div_19_div_2_pre_3_Template, 2, 1, "pre", 103);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(4, "div", 103);
-    \u0275\u0275template(5, MdScreenRecordComponent_div_19_div_2_div_5_Template, 3, 1, "div", 101)(6, MdScreenRecordComponent_div_19_div_2_div_6_Template, 2, 1, "div", 104);
+    \u0275\u0275elementStart(4, "div", 104);
+    \u0275\u0275template(5, MdScreenRecordComponent_div_19_div_2_div_5_Template, 3, 1, "div", 102)(6, MdScreenRecordComponent_div_19_div_2_div_6_Template, 2, 1, "div", 105);
     \u0275\u0275elementEnd()();
   }
   if (rf & 2) {
@@ -27736,7 +27781,7 @@ function MdScreenRecordComponent_div_19_div_2_Template(rf, ctx) {
 function MdScreenRecordComponent_div_19_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementStart(0, "div", 30);
-    \u0275\u0275template(1, MdScreenRecordComponent_div_19_div_1_Template, 97, 14, "div", 59)(2, MdScreenRecordComponent_div_19_div_2_Template, 7, 4, "div", 60);
+    \u0275\u0275template(1, MdScreenRecordComponent_div_19_div_1_Template, 97, 14, "div", 60)(2, MdScreenRecordComponent_div_19_div_2_Template, 7, 4, "div", 61);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
@@ -27749,7 +27794,7 @@ function MdScreenRecordComponent_div_19_Template(rf, ctx) {
 }
 function MdScreenRecordComponent_div_26_div_1_span_1_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275element(0, "span", 152);
+    \u0275\u0275element(0, "span", 153);
   }
   if (rf & 2) {
     const letter_r64 = ctx.$implicit;
@@ -27758,8 +27803,8 @@ function MdScreenRecordComponent_div_26_div_1_span_1_Template(rf, ctx) {
 }
 function MdScreenRecordComponent_div_26_div_1_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 150);
-    \u0275\u0275template(1, MdScreenRecordComponent_div_26_div_1_span_1_Template, 1, 1, "span", 151);
+    \u0275\u0275elementStart(0, "div", 151);
+    \u0275\u0275template(1, MdScreenRecordComponent_div_26_div_1_span_1_Template, 1, 1, "span", 152);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
@@ -27770,7 +27815,7 @@ function MdScreenRecordComponent_div_26_div_1_Template(rf, ctx) {
 }
 function MdScreenRecordComponent_div_26_p_2_span_1_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275element(0, "span", 155);
+    \u0275\u0275element(0, "span", 156);
   }
   if (rf & 2) {
     const letter_r67 = ctx.$implicit;
@@ -27779,8 +27824,8 @@ function MdScreenRecordComponent_div_26_p_2_span_1_Template(rf, ctx) {
 }
 function MdScreenRecordComponent_div_26_p_2_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "p", 153);
-    \u0275\u0275template(1, MdScreenRecordComponent_div_26_p_2_span_1_Template, 1, 1, "span", 154);
+    \u0275\u0275elementStart(0, "p", 154);
+    \u0275\u0275template(1, MdScreenRecordComponent_div_26_p_2_span_1_Template, 1, 1, "span", 155);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
@@ -27791,8 +27836,8 @@ function MdScreenRecordComponent_div_26_p_2_Template(rf, ctx) {
 }
 function MdScreenRecordComponent_div_26_div_3_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 156);
-    \u0275\u0275element(1, "img", 157);
+    \u0275\u0275elementStart(0, "div", 157);
+    \u0275\u0275element(1, "img", 158);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
@@ -27803,7 +27848,7 @@ function MdScreenRecordComponent_div_26_div_3_Template(rf, ctx) {
 }
 function MdScreenRecordComponent_div_26_div_4_span_5_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275element(0, "span", 163);
+    \u0275\u0275element(0, "span", 164);
   }
   if (rf & 2) {
     const letter_r71 = ctx.$implicit;
@@ -27812,12 +27857,12 @@ function MdScreenRecordComponent_div_26_div_4_span_5_Template(rf, ctx) {
 }
 function MdScreenRecordComponent_div_26_div_4_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 158)(1, "div", 159);
-    \u0275\u0275element(2, "i", 160);
-    \u0275\u0275elementStart(3, "span", 161);
+    \u0275\u0275elementStart(0, "div", 159)(1, "div", 160);
+    \u0275\u0275element(2, "i", 161);
+    \u0275\u0275elementStart(3, "span", 162);
     \u0275\u0275text(4, "\u8BED\u97F3\u8BB2\u89E3");
     \u0275\u0275elementEnd()();
-    \u0275\u0275template(5, MdScreenRecordComponent_div_26_div_4_span_5_Template, 1, 1, "span", 162);
+    \u0275\u0275template(5, MdScreenRecordComponent_div_26_div_4_span_5_Template, 1, 1, "span", 163);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
@@ -27828,7 +27873,7 @@ function MdScreenRecordComponent_div_26_div_4_Template(rf, ctx) {
 }
 function MdScreenRecordComponent_div_26_div_5_span_1_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275element(0, "span", 166);
+    \u0275\u0275element(0, "span", 167);
   }
   if (rf & 2) {
     const letter_r74 = ctx.$implicit;
@@ -27837,8 +27882,8 @@ function MdScreenRecordComponent_div_26_div_5_span_1_Template(rf, ctx) {
 }
 function MdScreenRecordComponent_div_26_div_5_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 164);
-    \u0275\u0275template(1, MdScreenRecordComponent_div_26_div_5_span_1_Template, 1, 1, "span", 165);
+    \u0275\u0275elementStart(0, "div", 165);
+    \u0275\u0275template(1, MdScreenRecordComponent_div_26_div_5_span_1_Template, 1, 1, "span", 166);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
@@ -27849,12 +27894,12 @@ function MdScreenRecordComponent_div_26_div_5_Template(rf, ctx) {
 }
 function MdScreenRecordComponent_div_26_div_6_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275element(0, "div", 167);
+    \u0275\u0275element(0, "div", 168);
   }
 }
 function MdScreenRecordComponent_div_26_div_7_span_1_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275element(0, "span", 170);
+    \u0275\u0275element(0, "span", 171);
   }
   if (rf & 2) {
     const letter_r77 = ctx.$implicit;
@@ -27863,8 +27908,8 @@ function MdScreenRecordComponent_div_26_div_7_span_1_Template(rf, ctx) {
 }
 function MdScreenRecordComponent_div_26_div_7_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 168);
-    \u0275\u0275template(1, MdScreenRecordComponent_div_26_div_7_span_1_Template, 1, 1, "span", 169);
+    \u0275\u0275elementStart(0, "div", 169);
+    \u0275\u0275template(1, MdScreenRecordComponent_div_26_div_7_span_1_Template, 1, 1, "span", 170);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
@@ -27875,7 +27920,7 @@ function MdScreenRecordComponent_div_26_div_7_Template(rf, ctx) {
 }
 function MdScreenRecordComponent_div_26_div_8_span_1_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275element(0, "span", 173);
+    \u0275\u0275element(0, "span", 174);
   }
   if (rf & 2) {
     const letter_r80 = ctx.$implicit;
@@ -27884,8 +27929,8 @@ function MdScreenRecordComponent_div_26_div_8_span_1_Template(rf, ctx) {
 }
 function MdScreenRecordComponent_div_26_div_8_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 171);
-    \u0275\u0275template(1, MdScreenRecordComponent_div_26_div_8_span_1_Template, 1, 1, "span", 172);
+    \u0275\u0275elementStart(0, "div", 172);
+    \u0275\u0275template(1, MdScreenRecordComponent_div_26_div_8_span_1_Template, 1, 1, "span", 173);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
@@ -27896,8 +27941,8 @@ function MdScreenRecordComponent_div_26_div_8_Template(rf, ctx) {
 }
 function MdScreenRecordComponent_div_26_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 141);
-    \u0275\u0275template(1, MdScreenRecordComponent_div_26_div_1_Template, 2, 1, "div", 142)(2, MdScreenRecordComponent_div_26_p_2_Template, 2, 1, "p", 143)(3, MdScreenRecordComponent_div_26_div_3_Template, 2, 1, "div", 144)(4, MdScreenRecordComponent_div_26_div_4_Template, 6, 1, "div", 145)(5, MdScreenRecordComponent_div_26_div_5_Template, 2, 1, "div", 146)(6, MdScreenRecordComponent_div_26_div_6_Template, 1, 0, "div", 147)(7, MdScreenRecordComponent_div_26_div_7_Template, 2, 1, "div", 148)(8, MdScreenRecordComponent_div_26_div_8_Template, 2, 1, "div", 149);
+    \u0275\u0275elementStart(0, "div", 142);
+    \u0275\u0275template(1, MdScreenRecordComponent_div_26_div_1_Template, 2, 1, "div", 143)(2, MdScreenRecordComponent_div_26_p_2_Template, 2, 1, "p", 144)(3, MdScreenRecordComponent_div_26_div_3_Template, 2, 1, "div", 145)(4, MdScreenRecordComponent_div_26_div_4_Template, 6, 1, "div", 146)(5, MdScreenRecordComponent_div_26_div_5_Template, 2, 1, "div", 147)(6, MdScreenRecordComponent_div_26_div_6_Template, 1, 0, "div", 148)(7, MdScreenRecordComponent_div_26_div_7_Template, 2, 1, "div", 149)(8, MdScreenRecordComponent_div_26_div_8_Template, 2, 1, "div", 150);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
@@ -28150,7 +28195,7 @@ var MdScreenRecordComponent = /* @__PURE__ */ (() => {
     },
     decls: 27,
     vars: 7,
-    consts: [["id", "markdownModal", "tabindex", "-1", "aria-labelledby", "exampleModalLabel", "aria-hidden", "true", 1, "modal", "fade"], [1, "modal-dialog", "modal-xl"], [1, "modal-content", "bg-dark", "text-light"], [1, "modal-header"], ["id", "markdownModalLabel", 1, "modal-title", "fs-5", "text-warning", "fs-3"], ["type", "button", "data-bs-dismiss", "modal", "aria-label", "Close", 1, "btn", "btn-outline-warning"], [1, "modal-body"], [1, "list-group"], ["class", "list-group-item text-light", 4, "ngFor", "ngForOf"], [1, "modal-footer"], ["type", "button", "data-bs-dismiss", "modal", 1, "btn", "btn-outline-warning"], ["class", "btn btn-secondary px-2 py-0 shadow", "id", "goTopBtn", 3, "click", 4, "ngIf"], ["class", "btn btn-danger px-2 py-0 shadow", "id", "refreshBtn", 3, "click", 4, "ngIf"], ["id", "navbar", "class", "navbar navbar-expand-lg bg-dark", "style", "background-color: #fff;", 4, "ngIf"], [1, "content-box", "bg-dark", 2, "padding-bottom", "50rem"], [1, "bg-box"], ["class", "container-fluid", 4, "ngIf"], ["id", "tutorial-box", 1, "mb-5", "pb-4", "px-5"], [1, "container-fluid", "bg-dark", "text-light", "pt-0", "pb-5", "mb-5", "tutorial-container"], [1, "row", "justify-content-center", "py-5", "mb-5"], [1, "col-11", "pb-5", "mb-5", "align-self-center"], [1, "text-center", "fs-1", "text-danger", "mb-3", "fw-bold"], ["class", "content-area", 4, "ngFor", "ngForOf"], [1, "list-group-item", "text-light"], [1, "bi", "bi-caret-right-fill", "me-1", "text-warning"], ["id", "goTopBtn", 1, "btn", "btn-secondary", "px-2", "py-0", "shadow", 3, "click"], [1, "bi", "bi-chevron-up", "fs-4"], ["id", "refreshBtn", 1, "btn", "btn-danger", "px-2", "py-0", "shadow", 3, "click"], [1, "bi", "bi-arrow-clockwise", "fs-4"], ["id", "navbar", 1, "navbar", "navbar-expand-lg", "bg-dark", 2, "background-color", "#fff"], [1, "container-fluid"], [1, "text-light", "fs-2", "fw-bold", "me-4"], ["src", "../../assets/img/jupyter-logo.png", 1, "jupyter-logo"], ["src", "../../assets/img/right-arrow.png", 1, "right-arrow"], ["src", "../../assets/img/markdown-logo.png", 1, "markdown-logo"], ["src", "../../assets/img/video-logo.png", 1, "video-logo", "mx-2"], [1, "text-primary", "fs-2", "fw-bolder", "mx-1"], ["src", "../../assets/img/audio.png", 1, "video-logo", "ms-2"], ["type", "button", "data-bs-toggle", "collapse", "data-bs-target", "#navbarSupportedContent", "aria-controls", "navbarSupportedContent", "aria-expanded", "false", "aria-label", "Toggle navigation", 1, "navbar-toggler"], [1, "navbar-toggler-icon"], ["id", "navbarSupportedContent", 1, "collapse", "navbar-collapse"], [1, "navbar-nav", "ms-auto", "mb-2", "mb-lg-0"], [1, "nav-item"], [1, "input-group", "my-1"], ["type", "button", "href", "/#/", 1, "btn", "btn-danger"], [1, "bi", "bi-house-fill", "pe-1"], ["type", "button", "id", "button-addon1", "data-bs-toggle", "modal", "data-bs-target", "#markdownModal", 1, "btn", "btn-outline-secondary"], [1, "bi", "bi-markdown", "me-2"], ["id", "file-input", "type", "file", "name", "file-input", 1, "form-control", 2, "display", "none", 3, "change"], ["fileInput", ""], ["for", "file-input", "id", "file-input-label", 1, "text-light", "px-3", "py-2", "bg-success"], [1, "bi", "bi-1-circle", "me-2"], ["type", "button", "id", "analysis-btn", 1, "btn", "btn-primary", 3, "disabled", "click"], [1, "bi", "bi-2-circle", "me-2"], ["type", "button", "id", "clean-input-file", 1, "btn", "btn-outline-secondary", 3, "disabled", "click"], [1, "bi", "bi-trash3", "pe-1"], [1, "nav-item", "ps-5", "my-1"], [1, "btn", "btn-danger", 3, "disabled", "click"], [1, "bi", "bi-3-circle", "me-2"], ["class", "row my-4 justify-content-between", 4, "ngIf"], ["class", "row", 4, "ngIf"], [1, "row", "my-4", "justify-content-between"], [1, "col", "text-center", "mt-4"], [3, "ngClass"], [1, "mt-5"], ["class", "text-start text-secondary fs-5 mb-3", 4, "ngFor", "ngForOf"], ["src", "../../assets/img/wolf.png", "height", "200rem", "width", "auto", 1, "mt-4"], [1, "col-7"], [1, "hyperparameter-form", "border", "border-secondary", "rounded", "p-4"], [1, "mb-3", "row", "align-items-center"], ["for", "readySecond", 1, "col-sm-8", "col-form-label", "hyperparameter"], [1, "fs-5", "text-success", "my-0"], [1, "bi", "bi-play-circle", "me-2", "fs-5"], [1, "my-0", "text-secondary"], [1, "col-sm"], ["name", "readySecond", "type", "number", "id", "readySecond", 1, "form-control", 3, "ngModel", "ngModelChange"], [1, "text-light", "ms-3", "lead"], ["for", "waitForBigTitleSecond", 1, "col-sm-8", "col-form-label", "text-light", "hyperparameter"], [1, "bi", "bi-filetype-md", "me-2", "fs-5"], ["name", "waitForBigTitleSecond", "type", "number", "id", "waitForBigTitleSecond", 1, "form-control", 3, "ngModel", "ngModelChange"], ["for", "contentDelaySecond", 1, "col-sm-8", "col-form-label", "text-light", "hyperparameter"], [1, "bi", "bi-markdown", "fs-5", "me-2"], ["name", "contentDelaySecond", "type", "number", "id", "contentDelaySecond", 1, "form-control", 3, "ngModel", "ngModelChange"], ["for", "titleBeforeDelaySecond", 1, "col-sm-8", "col-form-label", "text-light", "hyperparameter"], [1, "bi", "bi-arrow-bar-up", "fs-5", "me-2"], ["name", "titleBeforeDelaySecond", "type", "number", "id", "titleBeforeDelaySecond", 1, "form-control", 3, "ngModel", "ngModelChange"], ["for", "rowDelaySecond", 1, "col-sm-8", "col-form-label", "text-light", "hyperparameter"], [1, "bi", "bi-arrow-return-left", "me-2", "fs-5"], ["type", "number", "id", "rowDelaySecond", "name", "rowDelaySecond", 1, "form-control", 3, "ngModel", "ngModelChange"], ["for", "letterDelaySecond", 1, "col-sm-8", "col-form-label", "text-light", "hyperparameter"], [1, "bi", "bi-alphabet-uppercase", "me-2", "fs-5"], ["type", "number", "id", "letterDelaySecond", "name", "letterDelaySecond", 1, "form-control", 3, "ngModel", "ngModelChange"], ["for", "programDelaySecond", 1, "col-sm-8", "col-form-label", "text-light", "hyperparameter"], [1, "bi", "bi-code-slash", "me-2", "fs-5"], ["type", "number", "id", "programDelaySecond", "name", "programDelaySecond", 1, "form-control", 3, "ngModel", "ngModelChange"], ["for", "ttsTextSecondsMultiple", 1, "col-sm-8", "col-form-label", "text-light", "hyperparameter"], [1, "bi", "bi-alarm", "me-2", "fs-5"], ["type", "number", "id", "ttsTextSecondsMultiple", "name", "ttsTextSecondsMultiple", 1, "form-control", 3, "ngModel", "ngModelChange"], [1, "text-start", "text-secondary", "fs-5", "mb-3"], [1, "row"], [1, "col", "original-markdown-box"], ["class", "text-warning fs-4", 4, "ngIf"], ["class", "file-content-box p-4 mb-4 mt-2 shadow text-light border border-1 border-secondary", 4, "ngIf"], [1, "col", "decode-box"], ["class", "p-4 mb-4 mt-2 shadow border border-1 border-success", 4, "ngIf"], [1, "text-warning", "fs-4"], [1, "bi", "bi-filetype-md", "me-2"], [1, "file-content-box", "p-4", "mb-4", "mt-2", "shadow", "text-light", "border", "border-1", "border-secondary"], [1, "bi", "bi-emoji-smile-fill", "me-2"], [1, "p-4", "mb-4", "mt-2", "shadow", "border", "border-1", "border-success"], ["class", "list-group mb-5", 4, "ngFor", "ngForOf"], [1, "list-group", "mb-5"], [1, "row", "mb-3"], [1, "col", "text-light", "lead"], [4, "ngFor", "ngForOf"], ["class", "list-group-item", 4, "ngFor", "ngForOf"], [4, "ngIf"], [1, "me-3"], [1, "fw-bold"], [1, "list-group-item"], [1, "col-1", "text-secondary", "border-end", "border-secondary"], [1, "col", "text-warning"], ["class", "bi bi-emoji-smile-fill me-1", 4, "ngIf"], ["class", "bi bi-award me-1", 4, "ngIf"], ["class", "bi bi-chat-left me-1", 4, "ngIf"], ["class", "bi bi-code-slash me-1", 4, "ngIf"], ["class", "bi bi-bar-chart-line-fill me-1", 4, "ngIf"], ["class", "bi bi-mic-fill me-1", 4, "ngIf"], ["class", "bi bi-check2-square me-1", 4, "ngIf"], ["class", "bi bi-chevron-compact-down me-1", 4, "ngIf"], ["class", "bi bi-chevron-compact-up me-1", 4, "ngIf"], [1, "col", "text-success", 3, "innerHTML"], [1, "bi", "bi-emoji-smile-fill", "me-1"], [1, "bi", "bi-award", "me-1"], [1, "bi", "bi-chat-left", "me-1"], [1, "bi", "bi-code-slash", "me-1"], [1, "bi", "bi-bar-chart-line-fill", "me-1"], [1, "bi", "bi-mic-fill", "me-1"], [1, "bi", "bi-check2-square", "me-1"], [1, "bi", "bi-chevron-compact-down", "me-1"], [1, "bi", "bi-chevron-compact-up", "me-1"], [1, "content-area"], ["class", "mt-5 mb-4 pb-2 fs-2 text-info fw-bold border-bottom border-info border-3", 4, "ngIf"], ["class", "my-3 text-info fs-3 lh-lg ps-3 border-start border-info border-5", 4, "ngIf"], ["class", "mt-3 mb-5 graph-box", 4, "ngIf"], ["class", "mt-3 mb-5 fs-3 voice-box", 4, "ngIf"], ["class", "bg-warning fs-3 px-3 py-1 annotation-box", 4, "ngIf"], ["class", "my-3", 4, "ngIf"], ["class", "bg-warning text-dark fs-3 px-3 py-1 code-box", 4, "ngIf"], ["class", "text-light fs-3 py-2 ms-2 output-box px-4", 4, "ngIf"], [1, "mt-5", "mb-4", "pb-2", "fs-2", "text-info", "fw-bold", "border-bottom", "border-info", "border-3"], ["class", "title-letter", 3, "innerHTML", 4, "ngFor", "ngForOf"], [1, "title-letter", 3, "innerHTML"], [1, "my-3", "text-info", "fs-3", "lh-lg", "ps-3", "border-start", "border-info", "border-5"], ["class", "desc-letter", 3, "innerHTML", 4, "ngFor", "ngForOf"], [1, "desc-letter", 3, "innerHTML"], [1, "mt-3", "mb-5", "graph-box"], [1, "graph", "rounded", 3, "src"], [1, "mt-3", "mb-5", "fs-3", "voice-box"], [1, "text-light"], [1, "bi", "bi-volume-up-fill", "fs-4"], [1, "py-0", "ps-2", "fs-4"], ["class", "voice-second me-2", 3, "innerHTML", 4, "ngFor", "ngForOf"], [1, "voice-second", "me-2", 3, "innerHTML"], [1, "bg-warning", "fs-3", "px-3", "py-1", "annotation-box"], ["class", "text-secondary annotation-letter", 3, "innerHTML", 4, "ngFor", "ngForOf"], [1, "text-secondary", "annotation-letter", 3, "innerHTML"], [1, "my-3"], [1, "bg-warning", "text-dark", "fs-3", "px-3", "py-1", "code-box"], ["class", "code-letter", 3, "innerHTML", 4, "ngFor", "ngForOf"], [1, "code-letter", 3, "innerHTML"], [1, "text-light", "fs-3", "py-2", "ms-2", "output-box", "px-4"], ["class", "output-letter", 3, "innerHTML", 4, "ngFor", "ngForOf"], [1, "output-letter", 3, "innerHTML"]],
+    consts: [["id", "markdownModal", "tabindex", "-1", "aria-labelledby", "exampleModalLabel", "aria-hidden", "true", 1, "modal", "fade"], [1, "modal-dialog", "modal-xl"], [1, "modal-content", "bg-dark", "text-light"], [1, "modal-header"], ["id", "markdownModalLabel", 1, "modal-title", "fs-5", "text-warning", "fs-3"], ["type", "button", "data-bs-dismiss", "modal", "aria-label", "Close", 1, "btn", "btn-outline-warning"], [1, "modal-body"], [1, "list-group"], ["class", "list-group-item text-light", 4, "ngFor", "ngForOf"], [1, "modal-footer"], ["type", "button", "data-bs-dismiss", "modal", 1, "btn", "btn-outline-warning"], ["class", "btn btn-secondary px-2 py-0 shadow", "id", "goTopBtn", 3, "click", 4, "ngIf"], ["class", "btn btn-danger px-2 py-0 shadow", "id", "refreshBtn", 3, "click", 4, "ngIf"], ["id", "navbar", "class", "navbar navbar-expand-lg bg-dark", "style", "background-color: #fff;", 4, "ngIf"], [1, "content-box", "bg-dark", 2, "padding-bottom", "50rem"], [1, "bg-box"], ["class", "container-fluid", 4, "ngIf"], ["id", "tutorial-box", 1, "mb-5", "pb-4", "px-5"], [1, "container-fluid", "bg-dark", "text-light", "pt-0", "pb-5", "mb-5", "tutorial-container"], [1, "row", "justify-content-center", "py-5", "mb-5"], [1, "col-11", "pb-5", "mb-5", "align-self-center"], [1, "text-center", "fs-1", "text-danger", "mb-3", "fw-bold"], ["class", "content-area", 4, "ngFor", "ngForOf"], [1, "list-group-item", "text-light"], [1, "bi", "bi-caret-right-fill", "me-1", "text-warning"], ["id", "goTopBtn", 1, "btn", "btn-secondary", "px-2", "py-0", "shadow", 3, "click"], [1, "bi", "bi-chevron-up", "fs-4"], ["id", "refreshBtn", 1, "btn", "btn-danger", "px-2", "py-0", "shadow", 3, "click"], [1, "bi", "bi-arrow-clockwise", "fs-4"], ["id", "navbar", 1, "navbar", "navbar-expand-lg", "bg-dark", 2, "background-color", "#fff"], [1, "container-fluid"], [1, "text-light", "fs-3", "fw-normal", "me-1", "text-center"], [1, "mb-3"], ["src", "../../assets/img/jupyter-logo.png", 1, "jupyter-logo"], ["src", "../../assets/img/right-arrow.png", 1, "right-arrow"], ["src", "../../assets/img/markdown-logo.png", 1, "markdown-logo"], ["src", "../../assets/img/video-logo.png", 1, "video-logo", "mx-2"], [1, "text-primary", "fs-2", "fw-bolder", "mx-1"], ["src", "../../assets/img/audio.png", 1, "video-logo", "ms-2"], ["type", "button", "data-bs-toggle", "collapse", "data-bs-target", "#navbarSupportedContent", "aria-controls", "navbarSupportedContent", "aria-expanded", "false", "aria-label", "Toggle navigation", 1, "navbar-toggler"], [1, "navbar-toggler-icon"], ["id", "navbarSupportedContent", 1, "collapse", "navbar-collapse"], [1, "navbar-nav", "ms-auto", "mb-2", "mb-lg-0"], [1, "nav-item"], [1, "input-group", "my-1"], ["type", "button", "href", "/#/", 1, "btn", "btn-info"], [1, "bi", "bi-house-fill", "pe-1"], ["type", "button", "id", "button-addon1", "data-bs-toggle", "modal", "data-bs-target", "#markdownModal", 1, "btn", "btn-outline-secondary"], [1, "bi", "bi-markdown", "me-2"], ["id", "file-input", "type", "file", "name", "file-input", 1, "form-control", 2, "display", "none", 3, "change"], ["fileInput", ""], ["for", "file-input", "id", "file-input-label", 1, "text-light", "px-3", "py-2", "bg-success"], [1, "bi", "bi-1-circle", "me-2"], ["type", "button", "id", "analysis-btn", 1, "btn", "btn-primary", 3, "disabled", "click"], [1, "bi", "bi-2-circle", "me-2"], ["type", "button", "id", "clean-input-file", 1, "btn", "btn-outline-secondary", 3, "disabled", "click"], [1, "bi", "bi-trash3", "pe-1"], [1, "nav-item", "ps-5", "my-1"], [1, "btn", "btn-danger", 3, "disabled", "click"], [1, "bi", "bi-3-circle", "me-2"], ["class", "row my-4 justify-content-between", 4, "ngIf"], ["class", "row", 4, "ngIf"], [1, "row", "my-4", "justify-content-between"], [1, "col", "text-center", "mt-4"], [3, "ngClass"], [1, "mt-5"], ["class", "text-start text-secondary fs-5 mb-3", 4, "ngFor", "ngForOf"], ["src", "../../assets/img/wolf.png", "height", "200rem", "width", "auto", 1, "mt-4"], [1, "col-7"], [1, "hyperparameter-form", "border", "border-secondary", "rounded", "p-4"], [1, "mb-3", "row", "align-items-center"], ["for", "readySecond", 1, "col-sm-7", "col-form-label", "hyperparameter"], [1, "fs-5", "text-success", "my-0"], [1, "bi", "bi-play-circle", "me-2", "fs-5"], [1, "my-0", "text-secondary"], [1, "col-sm"], ["name", "readySecond", "type", "number", "id", "readySecond", 1, "form-control", 3, "ngModel", "ngModelChange"], [1, "text-light", "ms-3", "lead"], ["for", "waitForBigTitleSecond", 1, "col-sm-7", "col-form-label", "text-light", "hyperparameter"], [1, "bi", "bi-filetype-md", "me-2", "fs-5"], ["name", "waitForBigTitleSecond", "type", "number", "id", "waitForBigTitleSecond", 1, "form-control", 3, "ngModel", "ngModelChange"], ["for", "contentDelaySecond", 1, "col-sm-7", "col-form-label", "text-light", "hyperparameter"], [1, "bi", "bi-markdown", "fs-5", "me-2"], ["name", "contentDelaySecond", "type", "number", "id", "contentDelaySecond", 1, "form-control", 3, "ngModel", "ngModelChange"], ["for", "titleBeforeDelaySecond", 1, "col-sm-7", "col-form-label", "text-light", "hyperparameter"], [1, "bi", "bi-arrow-bar-up", "fs-5", "me-2"], ["name", "titleBeforeDelaySecond", "type", "number", "id", "titleBeforeDelaySecond", 1, "form-control", 3, "ngModel", "ngModelChange"], ["for", "rowDelaySecond", 1, "col-sm-7", "col-form-label", "text-light", "hyperparameter"], [1, "bi", "bi-arrow-return-left", "me-2", "fs-5"], ["type", "number", "id", "rowDelaySecond", "name", "rowDelaySecond", 1, "form-control", 3, "ngModel", "ngModelChange"], ["for", "letterDelaySecond", 1, "col-sm-7", "col-form-label", "text-light", "hyperparameter"], [1, "bi", "bi-alphabet-uppercase", "me-2", "fs-5"], ["type", "number", "id", "letterDelaySecond", "name", "letterDelaySecond", 1, "form-control", 3, "ngModel", "ngModelChange"], ["for", "programDelaySecond", 1, "col-sm-7", "col-form-label", "text-light", "hyperparameter"], [1, "bi", "bi-code-slash", "me-2", "fs-5"], ["type", "number", "id", "programDelaySecond", "name", "programDelaySecond", 1, "form-control", 3, "ngModel", "ngModelChange"], ["for", "ttsTextSecondsMultiple", 1, "col-sm-7", "col-form-label", "text-light", "hyperparameter"], [1, "bi", "bi-alarm", "me-2", "fs-5"], ["type", "number", "id", "ttsTextSecondsMultiple", "name", "ttsTextSecondsMultiple", 1, "form-control", 3, "ngModel", "ngModelChange"], [1, "text-start", "text-secondary", "fs-5", "mb-3"], [1, "row"], [1, "col", "original-markdown-box"], ["class", "text-warning fs-4", 4, "ngIf"], ["class", "file-content-box p-4 mb-4 mt-2 shadow text-light border border-1 border-secondary", 4, "ngIf"], [1, "col", "decode-box"], ["class", "p-4 mb-4 mt-2 shadow border border-1 border-success", 4, "ngIf"], [1, "text-warning", "fs-4"], [1, "bi", "bi-filetype-md", "me-2"], [1, "file-content-box", "p-4", "mb-4", "mt-2", "shadow", "text-light", "border", "border-1", "border-secondary"], [1, "bi", "bi-emoji-smile-fill", "me-2"], [1, "p-4", "mb-4", "mt-2", "shadow", "border", "border-1", "border-success"], ["class", "list-group mb-5", 4, "ngFor", "ngForOf"], [1, "list-group", "mb-5"], [1, "row", "mb-3"], [1, "col", "text-light", "lead"], [4, "ngFor", "ngForOf"], ["class", "list-group-item", 4, "ngFor", "ngForOf"], [4, "ngIf"], [1, "me-3"], [1, "fw-bold"], [1, "list-group-item"], [1, "col-1", "text-secondary", "border-end", "border-secondary"], [1, "col", "text-warning"], ["class", "bi bi-emoji-smile-fill me-1", 4, "ngIf"], ["class", "bi bi-award me-1", 4, "ngIf"], ["class", "bi bi-chat-left me-1", 4, "ngIf"], ["class", "bi bi-code-slash me-1", 4, "ngIf"], ["class", "bi bi-bar-chart-line-fill me-1", 4, "ngIf"], ["class", "bi bi-mic-fill me-1", 4, "ngIf"], ["class", "bi bi-check2-square me-1", 4, "ngIf"], ["class", "bi bi-chevron-compact-down me-1", 4, "ngIf"], ["class", "bi bi-chevron-compact-up me-1", 4, "ngIf"], [1, "col", "text-success", 3, "innerHTML"], [1, "bi", "bi-emoji-smile-fill", "me-1"], [1, "bi", "bi-award", "me-1"], [1, "bi", "bi-chat-left", "me-1"], [1, "bi", "bi-code-slash", "me-1"], [1, "bi", "bi-bar-chart-line-fill", "me-1"], [1, "bi", "bi-mic-fill", "me-1"], [1, "bi", "bi-check2-square", "me-1"], [1, "bi", "bi-chevron-compact-down", "me-1"], [1, "bi", "bi-chevron-compact-up", "me-1"], [1, "content-area"], ["class", "mt-5 mb-4 pb-2 fs-2 text-info fw-bold border-bottom border-info border-3", 4, "ngIf"], ["class", "my-3 text-info fs-3 lh-lg ps-3 border-start border-info border-5", 4, "ngIf"], ["class", "mt-3 mb-5 graph-box", 4, "ngIf"], ["class", "mt-3 mb-5 fs-3 voice-box", 4, "ngIf"], ["class", "bg-warning fs-3 px-3 py-1 annotation-box", 4, "ngIf"], ["class", "my-3", 4, "ngIf"], ["class", "bg-warning text-dark fs-3 px-3 py-1 code-box", 4, "ngIf"], ["class", "text-light fs-3 py-2 ms-2 output-box px-4", 4, "ngIf"], [1, "mt-5", "mb-4", "pb-2", "fs-2", "text-info", "fw-bold", "border-bottom", "border-info", "border-3"], ["class", "title-letter", 3, "innerHTML", 4, "ngFor", "ngForOf"], [1, "title-letter", 3, "innerHTML"], [1, "my-3", "text-info", "fs-3", "lh-lg", "ps-3", "border-start", "border-info", "border-5"], ["class", "desc-letter", 3, "innerHTML", 4, "ngFor", "ngForOf"], [1, "desc-letter", 3, "innerHTML"], [1, "mt-3", "mb-5", "graph-box"], [1, "graph", "rounded", 3, "src"], [1, "mt-3", "mb-5", "fs-3", "voice-box"], [1, "text-light"], [1, "bi", "bi-volume-up-fill", "fs-4"], [1, "py-0", "ps-2", "fs-4"], ["class", "voice-second me-2", 3, "innerHTML", 4, "ngFor", "ngForOf"], [1, "voice-second", "me-2", 3, "innerHTML"], [1, "bg-warning", "fs-3", "px-3", "py-1", "annotation-box"], ["class", "text-secondary annotation-letter", 3, "innerHTML", 4, "ngFor", "ngForOf"], [1, "text-secondary", "annotation-letter", 3, "innerHTML"], [1, "my-3"], [1, "bg-warning", "text-dark", "fs-3", "px-3", "py-1", "code-box"], ["class", "code-letter", 3, "innerHTML", 4, "ngFor", "ngForOf"], [1, "code-letter", 3, "innerHTML"], [1, "text-light", "fs-3", "py-2", "ms-2", "output-box", "px-4"], ["class", "output-letter", 3, "innerHTML", 4, "ngFor", "ngForOf"], [1, "output-letter", 3, "innerHTML"]],
     template: function MdScreenRecordComponent_Template(rf, ctx) {
       if (rf & 1) {
         \u0275\u0275elementStart(0, "div", 0)(1, "div", 1)(2, "div", 2)(3, "div", 3)(4, "h1", 4);
@@ -28165,7 +28210,7 @@ var MdScreenRecordComponent = /* @__PURE__ */ (() => {
         \u0275\u0275elementStart(11, "div", 9)(12, "button", 10);
         \u0275\u0275text(13, "Close");
         \u0275\u0275elementEnd()()()()();
-        \u0275\u0275template(14, MdScreenRecordComponent_button_14_Template, 2, 0, "button", 11)(15, MdScreenRecordComponent_button_15_Template, 2, 0, "button", 12)(16, MdScreenRecordComponent_nav_16_Template, 39, 3, "nav", 13);
+        \u0275\u0275template(14, MdScreenRecordComponent_button_14_Template, 2, 0, "button", 11)(15, MdScreenRecordComponent_button_15_Template, 2, 0, "button", 12)(16, MdScreenRecordComponent_nav_16_Template, 40, 3, "nav", 13);
         \u0275\u0275elementStart(17, "div", 14)(18, "div", 15);
         \u0275\u0275template(19, MdScreenRecordComponent_div_19_Template, 3, 2, "div", 16);
         \u0275\u0275elementStart(20, "div", 17)(21, "div", 18)(22, "div", 19)(23, "div", 20)(24, "h1", 21);
@@ -28201,7 +28246,7 @@ var MdScreenRecordComponent = /* @__PURE__ */ (() => {
 // src/app/code-battlefield/code-battlefield.component.ts
 function CodeBattlefieldComponent_p_6_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "p", 22);
+    \u0275\u0275elementStart(0, "p", 25);
     \u0275\u0275text(1);
     \u0275\u0275elementEnd();
   }
@@ -28211,9 +28256,9 @@ function CodeBattlefieldComponent_p_6_Template(rf, ctx) {
     \u0275\u0275textInterpolate(item_r2);
   }
 }
-function CodeBattlefieldComponent_li_11_Template(rf, ctx) {
+function CodeBattlefieldComponent_li_14_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "li", 23);
+    \u0275\u0275elementStart(0, "li", 26);
     \u0275\u0275text(1);
     \u0275\u0275elementEnd();
   }
@@ -28236,45 +28281,45 @@ var CodeBattlefieldComponent = /* @__PURE__ */ (() => {
   _CodeBattlefieldComponent.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({
     type: _CodeBattlefieldComponent,
     selectors: [["app-code-battlefield"]],
-    decls: 30,
+    decls: 33,
     vars: 2,
-    consts: [[1, "box", "bg-dark", "pt-3"], [1, "container-fluid", "px-5", "py-4"], [1, "row", "mb-5", "align-items-center"], [1, "col-8"], [1, "text-primary", "mb-4", "fw-bold", "fs-1"], ["class", "text-secondary", 4, "ngFor", "ngForOf"], [1, "text-info", "fs-4"], [1, "bi", "bi-award", "me-2"], [1, "ps-3"], ["class", "text-info mb-2", 4, "ngFor", "ngForOf"], [1, "row", "mt-5"], [1, "col"], ["href", "/#/code-battlefield/code-huggingface", 1, "btn", "btn-outline-warning"], ["src", "../../assets/img/huggingface-logo.png", 1, "icon", "me-2"], ["href", "/#/code-battlefield/code-tongyi", 1, "btn", "btn-outline-primary"], ["src", "../../assets/img/tongyi-logo.svg", 1, "icon", "me-2"], ["href", "/#/code-battlefield/code-harmonyos", 1, "btn", "btn-outline-danger"], ["src", "../../assets/img/huawei-logo.png", 1, "icon", "me-2"], [1, "col", "text-center"], ["src", "../../assets/img/ai-bgm2.png", 1, "slogan-img"], [1, "row"], [1, "col-12"], [1, "text-secondary"], [1, "text-info", "mb-2"]],
+    consts: [[1, "box", "bg-dark", "pt-3"], [1, "container-fluid", "px-5", "py-4"], [1, "row", "mb-5", "align-items-center"], [1, "col-8"], [1, "text-primary", "mb-4", "fw-bold", "fs-1"], ["class", "text-secondary", 4, "ngFor", "ngForOf"], [1, "d-inline-flex", "gap-1"], ["type", "button", "data-bs-toggle", "collapse", "data-bs-target", "#collapseExample", "aria-expanded", "false", "aria-controls", "collapseExample", 1, "btn", "btn-outline-info", "border-0"], [1, "bi", "bi-caret-down-fill", "me-2"], ["id", "collapseExample", 1, "collapse"], [1, "card", "card-body", "bg-dark"], [1, "ps-3"], ["class", "mb-2 text-secondary", 4, "ngFor", "ngForOf"], [1, "row", "mt-5"], [1, "col"], ["href", "/#/code-battlefield/code-huggingface", 1, "btn", "btn-outline-warning"], ["src", "../../assets/img/huggingface-logo.png", 1, "icon", "me-2"], ["href", "/#/code-battlefield/code-tongyi", 1, "btn", "btn-outline-primary"], ["src", "../../assets/img/tongyi-logo.svg", 1, "icon", "me-2"], ["href", "/#/code-battlefield/code-harmonyos", 1, "btn", "btn-outline-danger"], ["src", "../../assets/img/huawei-logo.png", 1, "icon", "me-2"], [1, "col", "text-center"], ["src", "../../assets/img/ai-bgm2.png", 1, "slogan-img", "img-fluid"], [1, "row"], [1, "col-12"], [1, "text-secondary"], [1, "mb-2", "text-secondary"]],
     template: function CodeBattlefieldComponent_Template(rf, ctx) {
       if (rf & 1) {
         \u0275\u0275elementStart(0, "div", 0)(1, "div", 1)(2, "div", 2)(3, "div", 3)(4, "h1", 4);
         \u0275\u0275text(5, "\u7F16\u7801\u9635\u5730 Code BattleField");
         \u0275\u0275elementEnd();
         \u0275\u0275template(6, CodeBattlefieldComponent_p_6_Template, 2, 1, "p", 5);
-        \u0275\u0275elementStart(7, "p", 6);
-        \u0275\u0275element(8, "i", 7);
-        \u0275\u0275text(9, "\u6CE8\u610F\uFF1A ");
-        \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(10, "ul", 8);
-        \u0275\u0275template(11, CodeBattlefieldComponent_li_11_Template, 2, 1, "li", 9);
-        \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(12, "div", 10)(13, "div", 11)(14, "a", 12);
-        \u0275\u0275element(15, "img", 13);
-        \u0275\u0275text(16, " Hugging Face ");
+        \u0275\u0275elementStart(7, "p", 6)(8, "button", 7);
+        \u0275\u0275element(9, "i", 8);
+        \u0275\u0275text(10, "\u6CE8\u610F ");
         \u0275\u0275elementEnd()();
-        \u0275\u0275elementStart(17, "div", 11)(18, "a", 14);
-        \u0275\u0275element(19, "img", 15);
-        \u0275\u0275text(20, " \u901A\u4E49\u5343\u95EE ");
+        \u0275\u0275elementStart(11, "div", 9)(12, "div", 10)(13, "ul", 11);
+        \u0275\u0275template(14, CodeBattlefieldComponent_li_14_Template, 2, 1, "li", 12);
+        \u0275\u0275elementEnd()()();
+        \u0275\u0275elementStart(15, "div", 13)(16, "div", 14)(17, "a", 15);
+        \u0275\u0275element(18, "img", 16);
+        \u0275\u0275text(19, " Hugging Face ");
         \u0275\u0275elementEnd()();
-        \u0275\u0275elementStart(21, "div", 11)(22, "a", 16);
-        \u0275\u0275element(23, "img", 17);
-        \u0275\u0275text(24, " Harmony OS ");
+        \u0275\u0275elementStart(20, "div", 14)(21, "a", 17);
+        \u0275\u0275element(22, "img", 18);
+        \u0275\u0275text(23, " \u901A\u4E49\u5343\u95EE ");
+        \u0275\u0275elementEnd()();
+        \u0275\u0275elementStart(24, "div", 14)(25, "a", 19);
+        \u0275\u0275element(26, "img", 20);
+        \u0275\u0275text(27, " Harmony OS ");
         \u0275\u0275elementEnd()()()();
-        \u0275\u0275elementStart(25, "div", 18);
-        \u0275\u0275element(26, "img", 19);
+        \u0275\u0275elementStart(28, "div", 21);
+        \u0275\u0275element(29, "img", 22);
         \u0275\u0275elementEnd()();
-        \u0275\u0275elementStart(27, "div", 20)(28, "div", 21);
-        \u0275\u0275element(29, "router-outlet");
+        \u0275\u0275elementStart(30, "div", 23)(31, "div", 24);
+        \u0275\u0275element(32, "router-outlet");
         \u0275\u0275elementEnd()()()();
       }
       if (rf & 2) {
         \u0275\u0275advance(6);
         \u0275\u0275property("ngForOf", ctx.slogans);
-        \u0275\u0275advance(5);
+        \u0275\u0275advance(8);
         \u0275\u0275property("ngForOf", ctx.notices);
       }
     },
