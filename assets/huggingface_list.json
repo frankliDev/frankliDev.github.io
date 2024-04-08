@@ -1,5 +1,131 @@
 [
     {
+        "title": "Transformers",
+        "chapters": [
+            {
+                "title": "开始使用",
+                "articles": [
+                    {
+                        "title": "Transformers 简介",
+                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/transformers/1-1.png"
+                    },
+                    {
+                        "title": "快速上手",
+                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/transformers/1-2.png"
+                    },
+                    {
+                        "title": "安装",
+                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/transformers/1-3.png"
+                    }
+                ]
+            },
+            {
+                "title": "教程",
+                "articles": [
+                    {
+                        "title": "使用 pipeline 运行推理",
+                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/transformers/2-1.png"
+                    },
+                    {
+                        "title": "使用 AutoClass 编写可移植的代码",
+                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/transformers/2-2.png"
+                    },
+                    {
+                        "title": "预处理数据",
+                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/transformers/2-3.png"
+                    },
+                    {
+                        "title": "微调预训练模型",
+                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/transformers/2-4.png"
+                    },
+                    {
+                        "title": "通过脚本训练模型",
+                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/transformers/2-5.png"
+                    },
+                    {
+                        "title": "使用 Accelerate 进行分布式训练",
+                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/transformers/2-6.png"
+                    },
+                    {
+                        "title": "使用 PEFT 加载和训练 adapters",
+                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/transformers/2-7.png"
+                    },
+                    {
+                        "title": "分享你的模型",
+                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/transformers/2-8.png"
+                    },
+                    {
+                        "title": "agents 教程",
+                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/transformers/2-9.png"
+                    },
+                    {
+                        "title": "使用 LLMs 进行生成",
+                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/transformers/2-10.png"
+                    }
+                ]
+            },
+            {
+                "title": "语音识别",
+                "articles": [
+                    {
+                        "title": "自动语音识别",
+                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/transformers/3-1.png"
+                    }
+                ]
+            },
+            {
+                "title": "开发者指南",
+                "articles": [
+                    {
+                        "title": "使用 Tokenizer 中的分词器",
+                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/transformers/4-1.png"
+                    },
+                    {
+                        "title": "使用多语言模型进行推理",
+                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/transformers/4-2.png"
+                    },
+                    {
+                        "title": "使用特定与模型的 API",
+                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/transformers/4-3.png"
+                    },
+                    {
+                        "title": "共享自定义模型",
+                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/transformers/4-4.png"
+                    },
+                    {
+                        "title": "聊天模型的模版",
+                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/transformers/4-5.png"
+                    },
+                    {
+                        "title": "导出为 ONNX",
+                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/transformers/4-6.png"
+                    },
+                    {
+                        "title": "导出为 TFLite",
+                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/transformers/4-7.png"
+                    },
+                    {
+                        "title": "导出为 TorchScript",
+                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/transformers/4-8.png"
+                    }
+                ]
+            },
+            {
+                "title": "概念指南",
+                "articles": [
+                    {
+                        "title": "Transformers 能做什么",
+                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/transformers/5-1.png"
+                    },
+                    {
+                        "title": "分词器的摘要",
+                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/transformers/5-2.png"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "title": "NLP 自然语言处理",
         "chapters": [
             {
@@ -340,37 +466,6 @@
                     {
                         "title": "Part 2 发布活动",
                         "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/74.png"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "title": "TITLE",
-        "chapters": [
-            {
-                "title": "chapter 1 title",
-                "articles": [
-                    {
-                        "title": "article 1 title",
-                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/73.png"
-                    },
-                    {
-                        "title": "article 2 title",
-                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/74.png"
-                    }
-                ]
-            },
-            {
-                "title": "chapter 2 title",
-                "articles": [
-                    {
-                        "title": "article 1 title",
-                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/68.png"
-                    },
-                    {
-                        "title": "article 2 title",
-                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/61.png"
                     }
                 ]
             }

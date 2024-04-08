@@ -23167,6 +23167,132 @@ var TongyiComponent = /* @__PURE__ */ (() => {
 // src/assets/huggingface_list.json
 var huggingface_list_default = [
   {
+    title: "Transformers",
+    chapters: [
+      {
+        title: "\u5F00\u59CB\u4F7F\u7528",
+        articles: [
+          {
+            title: "Transformers \u7B80\u4ECB",
+            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/transformers/1-1.png"
+          },
+          {
+            title: "\u5FEB\u901F\u4E0A\u624B",
+            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/transformers/1-2.png"
+          },
+          {
+            title: "\u5B89\u88C5",
+            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/transformers/1-3.png"
+          }
+        ]
+      },
+      {
+        title: "\u6559\u7A0B",
+        articles: [
+          {
+            title: "\u4F7F\u7528 pipeline \u8FD0\u884C\u63A8\u7406",
+            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/transformers/2-1.png"
+          },
+          {
+            title: "\u4F7F\u7528 AutoClass \u7F16\u5199\u53EF\u79FB\u690D\u7684\u4EE3\u7801",
+            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/transformers/2-2.png"
+          },
+          {
+            title: "\u9884\u5904\u7406\u6570\u636E",
+            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/transformers/2-3.png"
+          },
+          {
+            title: "\u5FAE\u8C03\u9884\u8BAD\u7EC3\u6A21\u578B",
+            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/transformers/2-4.png"
+          },
+          {
+            title: "\u901A\u8FC7\u811A\u672C\u8BAD\u7EC3\u6A21\u578B",
+            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/transformers/2-5.png"
+          },
+          {
+            title: "\u4F7F\u7528 Accelerate \u8FDB\u884C\u5206\u5E03\u5F0F\u8BAD\u7EC3",
+            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/transformers/2-6.png"
+          },
+          {
+            title: "\u4F7F\u7528 PEFT \u52A0\u8F7D\u548C\u8BAD\u7EC3 adapters",
+            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/transformers/2-7.png"
+          },
+          {
+            title: "\u5206\u4EAB\u4F60\u7684\u6A21\u578B",
+            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/transformers/2-8.png"
+          },
+          {
+            title: "agents \u6559\u7A0B",
+            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/transformers/2-9.png"
+          },
+          {
+            title: "\u4F7F\u7528 LLMs \u8FDB\u884C\u751F\u6210",
+            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/transformers/2-10.png"
+          }
+        ]
+      },
+      {
+        title: "\u8BED\u97F3\u8BC6\u522B",
+        articles: [
+          {
+            title: "\u81EA\u52A8\u8BED\u97F3\u8BC6\u522B",
+            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/transformers/3-1.png"
+          }
+        ]
+      },
+      {
+        title: "\u5F00\u53D1\u8005\u6307\u5357",
+        articles: [
+          {
+            title: "\u4F7F\u7528 Tokenizer \u4E2D\u7684\u5206\u8BCD\u5668",
+            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/transformers/4-1.png"
+          },
+          {
+            title: "\u4F7F\u7528\u591A\u8BED\u8A00\u6A21\u578B\u8FDB\u884C\u63A8\u7406",
+            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/transformers/4-2.png"
+          },
+          {
+            title: "\u4F7F\u7528\u7279\u5B9A\u4E0E\u6A21\u578B\u7684 API",
+            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/transformers/4-3.png"
+          },
+          {
+            title: "\u5171\u4EAB\u81EA\u5B9A\u4E49\u6A21\u578B",
+            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/transformers/4-4.png"
+          },
+          {
+            title: "\u804A\u5929\u6A21\u578B\u7684\u6A21\u7248",
+            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/transformers/4-5.png"
+          },
+          {
+            title: "\u5BFC\u51FA\u4E3A ONNX",
+            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/transformers/4-6.png"
+          },
+          {
+            title: "\u5BFC\u51FA\u4E3A TFLite",
+            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/transformers/4-7.png"
+          },
+          {
+            title: "\u5BFC\u51FA\u4E3A TorchScript",
+            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/transformers/4-8.png"
+          }
+        ]
+      },
+      {
+        title: "\u6982\u5FF5\u6307\u5357",
+        articles: [
+          {
+            title: "Transformers \u80FD\u505A\u4EC0\u4E48",
+            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/transformers/5-1.png"
+          },
+          {
+            title: "\u5206\u8BCD\u5668\u7684\u6458\u8981",
+            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/transformers/5-2.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
     title: "NLP \u81EA\u7136\u8BED\u8A00\u5904\u7406",
     chapters: [
       {
@@ -23511,37 +23637,6 @@ var huggingface_list_default = [
         ]
       }
     ]
-  },
-  {
-    title: "TITLE",
-    chapters: [
-      {
-        title: "chapter 1 title",
-        articles: [
-          {
-            title: "article 1 title",
-            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/73.png"
-          },
-          {
-            title: "article 2 title",
-            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/74.png"
-          }
-        ]
-      },
-      {
-        title: "chapter 2 title",
-        articles: [
-          {
-            title: "article 1 title",
-            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/68.png"
-          },
-          {
-            title: "article 2 title",
-            url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/61.png"
-          }
-        ]
-      }
-    ]
   }
 ];
 
@@ -23791,11 +23886,11 @@ var LocalService = /* @__PURE__ */ (() => {
 var _c02 = (a0) => ({
   selectedArticle: a0
 });
-function HuggingfaceComponent_div_30_li_8_li_5_Template(rf, ctx) {
+function HuggingfaceComponent_div_34_li_8_li_5_Template(rf, ctx) {
   if (rf & 1) {
     const _r13 = \u0275\u0275getCurrentView();
     \u0275\u0275elementStart(0, "li", 44);
-    \u0275\u0275listener("click", function HuggingfaceComponent_div_30_li_8_li_5_Template_li_click_0_listener() {
+    \u0275\u0275listener("click", function HuggingfaceComponent_div_34_li_8_li_5_Template_li_click_0_listener() {
       const restoredCtx = \u0275\u0275restoreView(_r13);
       const article_r9 = restoredCtx.$implicit;
       const chapter_r6 = \u0275\u0275nextContext().$implicit;
@@ -23820,14 +23915,14 @@ function HuggingfaceComponent_div_30_li_8_li_5_Template(rf, ctx) {
     \u0275\u0275textInterpolate1(" ", article_r9.title, " ");
   }
 }
-function HuggingfaceComponent_div_30_li_8_Template(rf, ctx) {
+function HuggingfaceComponent_div_34_li_8_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementStart(0, "li", 40)(1, "span", 41);
     \u0275\u0275text(2);
     \u0275\u0275elementEnd();
     \u0275\u0275text(3);
     \u0275\u0275elementStart(4, "ul", 42);
-    \u0275\u0275template(5, HuggingfaceComponent_div_30_li_8_li_5_Template, 4, 5, "li", 43);
+    \u0275\u0275template(5, HuggingfaceComponent_div_34_li_8_li_5_Template, 4, 5, "li", 43);
     \u0275\u0275elementEnd()();
   }
   if (rf & 2) {
@@ -23844,13 +23939,13 @@ function HuggingfaceComponent_div_30_li_8_Template(rf, ctx) {
 var _c1 = (a0) => ({
   show: a0
 });
-function HuggingfaceComponent_div_30_Template(rf, ctx) {
+function HuggingfaceComponent_div_34_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementStart(0, "div", 32)(1, "h2", 33)(2, "button", 34)(3, "span", 35);
     \u0275\u0275text(4);
     \u0275\u0275elementEnd()()();
     \u0275\u0275elementStart(5, "div", 36)(6, "div", 37)(7, "ul", 38);
-    \u0275\u0275template(8, HuggingfaceComponent_div_30_li_8_Template, 6, 3, "li", 39);
+    \u0275\u0275template(8, HuggingfaceComponent_div_34_li_8_Template, 6, 3, "li", 39);
     \u0275\u0275elementEnd()()()();
   }
   if (rf & 2) {
@@ -23868,12 +23963,12 @@ function HuggingfaceComponent_div_30_Template(rf, ctx) {
     \u0275\u0275property("ngForOf", course_r3.chapters);
   }
 }
-function HuggingfaceComponent_i_37_Template(rf, ctx) {
+function HuggingfaceComponent_i_41_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275element(0, "i", 46);
   }
 }
-function HuggingfaceComponent_i_39_Template(rf, ctx) {
+function HuggingfaceComponent_i_43_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275element(0, "i", 46);
   }
@@ -23911,9 +24006,9 @@ var HuggingfaceComponent = /* @__PURE__ */ (() => {
   _HuggingfaceComponent.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({
     type: _HuggingfaceComponent,
     selectors: [["app-huggingface"]],
-    decls: 47,
+    decls: 51,
     vars: 7,
-    consts: [[1, "box", "bg-dark", "py-2"], [1, "container-fluid", "px-3", "py-4"], [1, "row", "mb-4"], [1, "col-12", "text-center", "text-light", "fs-1", "fw-bold"], ["src", "../../assets/img/huggingface-logo.png", 1, "logo", "me-2"], [1, "col-12", "text-center", "my-3"], ["type", "button", "data-bs-toggle", "offcanvas", "data-bs-target", "#offcanvasExample", "aria-controls", "offcanvasExample", "accesskey", "x", 1, "btn", "btn-warning"], [1, "bi", "bi-list-columns-reverse", "me-2"], [1, "text-secondary", "mt-2"], [1, "mx-2"], [1, "bi", "bi-windows", "me-1"], [1, "bi", "bi-apple", "me-1"], [1, "col-12", "text-secondary", "text-center", "mt-2"], [1, "row"], ["tabindex", "-1", "id", "offcanvasExample", "aria-labelledby", "offcanvasExampleLabel", 1, "offcanvas", "offcanvas-start", "bg-dark"], [1, "offcanvas-header"], ["id", "offcanvasExampleLabel", 1, "offcanvas-title", "text-warning"], ["type", "button", "data-bs-dismiss", "offcanvas", "aria-label", "Close", 1, "btn", "btn-outline-secondary", "btn-sm"], [1, "bi", "bi-x-lg"], [1, "offcanvas-body", "mb-3"], ["id", "accordionExample", 1, "accordion"], ["class", "accordion-item bg-dark border-0", 4, "ngFor", "ngForOf"], [1, "text-secondary", "text-end", "my-3"], [1, "col-12", "mb-5"], [1, "col-12", "text-warning", "mb-4", "fs-5"], ["class", "bi bi-chevron-right text-light", 4, "ngIf"], [1, "col-12"], [1, "article-detail"], ["type", "button", 1, "btn", "btn-warning", "py-1", "px-2", "goTopBtn", 3, "click"], [1, "bi", "bi-chevron-up", "lead"], ["type", "button", "data-bs-toggle", "offcanvas", "data-bs-target", "#offcanvasExample", "aria-controls", "offcanvasExample", "accesskey", "x", 1, "btn", "btn-secondary", "py-1", "px-2", "showMenuBtn"], [1, "bi", "bi-list", "lead"], [1, "accordion-item", "bg-dark", "border-0"], [1, "accordion-header"], ["type", "button", "data-bs-toggle", "collapse", "aria-expanded", "true", 1, "accordion-button", "text-bg-warning"], [1, "fs-5", "fw-bold"], ["data-bs-parent", "#accordionExample", 1, "accordion-collapse", "collapse", 3, "ngClass"], [1, "accordion-body", "p-0"], [1, "list-group", "list-group-flush", "title-list", "mt-3"], ["class", "list-group-item text-light fs-5 fw-normal border-0 chapter", 4, "ngFor", "ngForOf"], [1, "list-group-item", "text-light", "fs-5", "fw-normal", "border-0", "chapter"], [1, "badge", "text-bg-danger", "me-2"], [1, "list-group", "list-group-flush", "title-list", "my-2"], ["class", "list-group-item text-light fw-normal border-0 fs-6 article", 3, "ngClass", "click", 4, "ngFor", "ngForOf"], [1, "list-group-item", "text-light", "fw-normal", "border-0", "fs-6", "article", 3, "ngClass", "click"], [1, "badge", "text-bg-warning", "me-2"], [1, "bi", "bi-chevron-right", "text-light"]],
+    consts: [[1, "box", "bg-dark", "py-2"], [1, "container-fluid", "px-3", "py-4"], [1, "row", "mb-4"], [1, "col-12", "text-center", "text-light", "fs-1", "fw-bold"], ["src", "../../assets/img/huggingface-logo.png", 1, "logo", "me-2"], [1, "col-12", "text-center", "my-3"], ["type", "button", "data-bs-toggle", "offcanvas", "data-bs-target", "#offcanvasExample", "aria-controls", "offcanvasExample", "accesskey", "x", 1, "btn", "btn-warning", "mt-4"], [1, "bi", "bi-list-columns-reverse", "me-2"], [1, "text-secondary", "mt-3"], [1, "mx-2"], [1, "bi", "bi-windows", "me-1"], [1, "bi", "bi-apple", "me-1"], [1, "col-12", "text-secondary", "text-center", "mt-4", "fs-6"], [1, "row"], ["tabindex", "-1", "id", "offcanvasExample", "aria-labelledby", "offcanvasExampleLabel", 1, "offcanvas", "offcanvas-start", "bg-dark"], [1, "offcanvas-header"], ["id", "offcanvasExampleLabel", 1, "offcanvas-title", "text-warning"], ["type", "button", "data-bs-dismiss", "offcanvas", "aria-label", "Close", 1, "btn", "btn-outline-secondary", "btn-sm"], [1, "bi", "bi-x-lg"], [1, "offcanvas-body", "mb-3"], ["id", "accordionExample", 1, "accordion"], ["class", "accordion-item bg-dark border-0", 4, "ngFor", "ngForOf"], [1, "text-secondary", "text-end", "my-3"], [1, "col-12", "mb-5"], [1, "col-12", "text-warning", "mb-4", "fs-5"], ["class", "bi bi-chevron-right text-light", 4, "ngIf"], [1, "col-12"], [1, "article-detail"], ["type", "button", 1, "btn", "btn-warning", "py-1", "px-2", "goTopBtn", 3, "click"], [1, "bi", "bi-chevron-up", "lead"], ["type", "button", "data-bs-toggle", "offcanvas", "data-bs-target", "#offcanvasExample", "aria-controls", "offcanvasExample", "accesskey", "x", 1, "btn", "btn-secondary", "py-1", "px-2", "showMenuBtn"], [1, "bi", "bi-list", "lead"], [1, "accordion-item", "bg-dark", "border-0"], [1, "accordion-header"], ["type", "button", "data-bs-toggle", "collapse", "aria-expanded", "true", 1, "accordion-button", "text-bg-warning"], [1, "fs-5", "fw-bold"], ["data-bs-parent", "#accordionExample", 1, "accordion-collapse", "collapse", 3, "ngClass"], [1, "accordion-body", "p-0"], [1, "list-group", "list-group-flush", "title-list", "mt-3"], ["class", "list-group-item text-light fs-5 fw-normal border-0 chapter", 4, "ngFor", "ngForOf"], [1, "list-group-item", "text-light", "fs-5", "fw-normal", "border-0", "chapter"], [1, "badge", "text-bg-danger", "me-2"], [1, "list-group", "list-group-flush", "title-list", "my-2"], ["class", "list-group-item text-light fw-normal border-0 fs-6 article", 3, "ngClass", "click", 4, "ngFor", "ngForOf"], [1, "list-group-item", "text-light", "fw-normal", "border-0", "fs-6", "article", 3, "ngClass", "click"], [1, "badge", "text-bg-warning", "me-2"], [1, "bi", "bi-chevron-right", "text-light"]],
     template: function HuggingfaceComponent_Template(rf, ctx) {
       if (rf & 1) {
         \u0275\u0275elementStart(0, "div", 0)(1, "div", 1)(2, "div", 2)(3, "div", 3);
@@ -23924,52 +24019,58 @@ var HuggingfaceComponent = /* @__PURE__ */ (() => {
         \u0275\u0275element(8, "i", 7);
         \u0275\u0275text(9, " Show Articles List ");
         \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(10, "div", 8)(11, "small", 9);
-        \u0275\u0275element(12, "i", 10);
-        \u0275\u0275text(13, " Shift + Alt + X ");
+        \u0275\u0275elementStart(10, "div", 8)(11, "small");
+        \u0275\u0275text(12, "\u83B7\u53D6\u6309\u94AE\u7126\u70B9\uFF1A");
         \u0275\u0275elementEnd();
-        \u0275\u0275text(14, " | ");
-        \u0275\u0275elementStart(15, "small", 9);
-        \u0275\u0275element(16, "i", 11);
-        \u0275\u0275text(17, " Control + Alt + X ");
-        \u0275\u0275elementEnd()()();
-        \u0275\u0275elementStart(18, "div", 12)(19, "p");
-        \u0275\u0275text(20, " Notice : \u56E0\u4E3A\u7F51\u7EDC\u7684\u539F\u56E0\uFF0CHuggingface \u7684\u76F8\u5173\u6587\u6863\u901A\u8FC7\u622A\u56FE\u7684\u65B9\u5F0F\u83B7\u53D6\u7684\uFF0C\u5728\u8FD9\u91CC\u6682\u65F6\u4EE5\u56FE\u7247\u7684\u5F62\u5F0F\u5C55\u73B0\u3002");
-        \u0275\u0275elementEnd()()();
-        \u0275\u0275elementStart(21, "div", 13)(22, "div", 14)(23, "div", 15)(24, "h5", 16);
-        \u0275\u0275text(25, "Articles List");
+        \u0275\u0275elementStart(13, "small", 9);
+        \u0275\u0275element(14, "i", 10);
+        \u0275\u0275text(15, " Shift + Alt + X ");
         \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(26, "button", 17);
-        \u0275\u0275element(27, "i", 18);
+        \u0275\u0275text(16, " | ");
+        \u0275\u0275elementStart(17, "small", 9);
+        \u0275\u0275element(18, "i", 11);
+        \u0275\u0275text(19, " Control + Alt + X ");
+        \u0275\u0275elementEnd()()();
+        \u0275\u0275elementStart(20, "div", 12)(21, "p");
+        \u0275\u0275text(22, "\u76F8\u5173\u6587\u6863\u901A\u8FC7\u622A\u56FE\u7684\u65B9\u5F0F\u83B7\u53D6\u7684\uFF0C\u5728\u8FD9\u91CC\u6682\u65F6\u4EE5\u56FE\u7247\u7684\u5F62\u5F0F\u5C55\u73B0\u3002");
+        \u0275\u0275elementEnd();
+        \u0275\u0275elementStart(23, "p");
+        \u0275\u0275text(24, "\u56FE\u7247\u6587\u4EF6\u4FDD\u5B58\u5728\u56FD\u5185\u963F\u91CC\u4E91 OSS\uFF0C\u4E91\u670D\u52A1\u7684\u533A\u57DF\u4E3A\u534E\u5317 2\uFF08\u5317\u4EAC\uFF09\uFF0C\u767B\u5F55\u7528\u6237\u540D\u4E3A iCapEquity\u3002");
+        \u0275\u0275elementEnd()()();
+        \u0275\u0275elementStart(25, "div", 13)(26, "div", 14)(27, "div", 15)(28, "h5", 16);
+        \u0275\u0275text(29, "Articles List");
+        \u0275\u0275elementEnd();
+        \u0275\u0275elementStart(30, "button", 17);
+        \u0275\u0275element(31, "i", 18);
         \u0275\u0275elementEnd()();
-        \u0275\u0275elementStart(28, "div", 19)(29, "div", 20);
-        \u0275\u0275template(30, HuggingfaceComponent_div_30_Template, 9, 8, "div", 21);
+        \u0275\u0275elementStart(32, "div", 19)(33, "div", 20);
+        \u0275\u0275template(34, HuggingfaceComponent_div_34_Template, 9, 8, "div", 21);
         \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(31, "div", 22);
-        \u0275\u0275text(32, "List End");
+        \u0275\u0275elementStart(35, "div", 22);
+        \u0275\u0275text(36, "List End");
         \u0275\u0275elementEnd()()();
-        \u0275\u0275elementStart(33, "div", 23)(34, "div", 13)(35, "div", 24);
-        \u0275\u0275text(36);
-        \u0275\u0275template(37, HuggingfaceComponent_i_37_Template, 1, 0, "i", 25);
-        \u0275\u0275text(38);
-        \u0275\u0275template(39, HuggingfaceComponent_i_39_Template, 1, 0, "i", 25);
+        \u0275\u0275elementStart(37, "div", 23)(38, "div", 13)(39, "div", 24);
         \u0275\u0275text(40);
+        \u0275\u0275template(41, HuggingfaceComponent_i_41_Template, 1, 0, "i", 25);
+        \u0275\u0275text(42);
+        \u0275\u0275template(43, HuggingfaceComponent_i_43_Template, 1, 0, "i", 25);
+        \u0275\u0275text(44);
         \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(41, "div", 26);
-        \u0275\u0275element(42, "img", 27);
+        \u0275\u0275elementStart(45, "div", 26);
+        \u0275\u0275element(46, "img", 27);
         \u0275\u0275elementEnd()()()()();
-        \u0275\u0275elementStart(43, "button", 28);
-        \u0275\u0275listener("click", function HuggingfaceComponent_Template_button_click_43_listener() {
+        \u0275\u0275elementStart(47, "button", 28);
+        \u0275\u0275listener("click", function HuggingfaceComponent_Template_button_click_47_listener() {
           return ctx.goToTop();
         });
-        \u0275\u0275element(44, "i", 29);
+        \u0275\u0275element(48, "i", 29);
         \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(45, "button", 30);
-        \u0275\u0275element(46, "i", 31);
+        \u0275\u0275elementStart(49, "button", 30);
+        \u0275\u0275element(50, "i", 31);
         \u0275\u0275elementEnd()();
       }
       if (rf & 2) {
-        \u0275\u0275advance(30);
+        \u0275\u0275advance(34);
         \u0275\u0275property("ngForOf", ctx.courses);
         \u0275\u0275advance(6);
         \u0275\u0275textInterpolate1(" ", ctx.currentCourseTitle, " ");
