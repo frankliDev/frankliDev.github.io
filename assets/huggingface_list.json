@@ -133,39 +133,39 @@
                 "articles": [
                     {
                         "title": "本章简介",
-                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/1.png"
+                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/NLP/1.png"
                     },
                     {
                         "title": "Transformer 能做什么",
-                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/2.png"
+                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/NLP/2.png"
                     },
                     {
                         "title": "Transformer 是如何工作的",
-                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/3.png"
+                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/NLP/3.png"
                     },
                     {
                         "title": "编码器模型",
-                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/4.png"
+                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/NLP/4.png"
                     },
                     {
                         "title": "解码器模型",
-                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/5.png"
+                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/NLP/5.png"
                     },
                     {
                         "title": "序列到序列模型",
-                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/6.png"
+                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/NLP/6.png"
                     },
                     {
                         "title": "偏见和局限性",
-                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/7.png"
+                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/NLP/7.png"
                     },
                     {
                         "title": "总结",
-                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/8.png"
+                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/NLP/8.png"
                     },
                     {
                         "title": "章末小测试",
-                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/9.png"
+                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/NLP/9.png"
                     }
                 ]
             },
@@ -174,35 +174,35 @@
                 "articles": [
                     {
                         "title": "本章简介",
-                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/10.png"
+                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/NLP/10.png"
                     },
                     {
                         "title": "管道的内部",
-                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/11.png"
+                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/NLP/11.png"
                     },
                     {
                         "title": "模型",
-                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/12.png"
+                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/NLP/12.png"
                     },
                     {
                         "title": "标记器",
-                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/13.png"
+                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/NLP/13.png"
                     },
                     {
                         "title": "处理多个序列",
-                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/14.png"
+                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/NLP/14.png"
                     },
                     {
                         "title": "把它们放在一起",
-                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/15.png"
+                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/NLP/15.png"
                     },
                     {
                         "title": "基本用法完成",
-                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/16.png"
+                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/NLP/16.png"
                     },
                     {
                         "title": "章末小测试",
-                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/17.png"
+                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/NLP/17.png"
                     }
                 ]
             },
@@ -211,27 +211,27 @@
                 "articles": [
                     {
                         "title": "简介",
-                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/18.png"
+                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/NLP/18.png"
                     },
                     {
                         "title": "预处理数据",
-                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/19.png"
+                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/NLP/19.png"
                     },
                     {
                         "title": "使用 Trainer API 微调模型",
-                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/20.png"
+                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/NLP/20.png"
                     },
                     {
                         "title": "一个完整的训练过程",
-                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/21.png"
+                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/NLP/21.png"
                     },
                     {
                         "title": "微调章节回顾",
-                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/22.png"
+                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/NLP/22.png"
                     },
                     {
                         "title": "章末小测验",
-                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/23.png"
+                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/NLP/23.png"
                     }
                 ]
             },
@@ -240,27 +240,27 @@
                 "articles": [
                     {
                         "title": "HuggingfaceHub 介绍",
-                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/24.png"
+                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/NLP/24.png"
                     },
                     {
                         "title": "使用预训练模型",
-                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/25.png"
+                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/NLP/25.png"
                     },
                     {
                         "title": "共享预训练模型",
-                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/26.png"
+                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/NLP/26.png"
                     },
                     {
                         "title": "构建模型卡片",
-                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/27.png"
+                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/NLP/27.png"
                     },
                     {
                         "title": "Part 1 完结",
-                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/28.png"
+                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/NLP/28.png"
                     },
                     {
                         "title": "章末小测试",
-                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/29.png"
+                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/NLP/29.png"
                     }
                 ]
             },
@@ -269,35 +269,35 @@
                 "articles": [
                     {
                         "title": "Datasets 简介",
-                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/30.png"
+                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/NLP/30.png"
                     },
                     {
                         "title": "如果我的数据集不在 hub 上怎么办",
-                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/31.png"
+                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/NLP/31.png"
                     },
                     {
                         "title": "是时候学一下切片了",
-                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/32.png"
+                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/NLP/32.png"
                     },
                     {
                         "title": "大数据 datasets 来救援",
-                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/33.png"
+                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/NLP/33.png"
                     },
                     {
                         "title": "创建自己的数据集",
-                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/34.png"
+                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/NLP/34.png"
                     },
                     {
                         "title": "使用 FAISS 进行语义搜索",
-                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/35.png"
+                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/NLP/35.png"
                     },
                     {
                         "title": "Datasets 回顾",
-                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/36.png"
+                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/NLP/36.png"
                     },
                     {
                         "title": "章末小测试",
-                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/37.png"
+                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/NLP/37.png"
                     }
                 ]
             },
@@ -306,47 +306,47 @@
                 "articles": [
                     {
                         "title": "tokenizer 简介",
-                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/38.png"
+                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/NLP/38.png"
                     },
                     {
                         "title": "根据已有的 tokenizer 训练新的 tokenizer",
-                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/39.png"
+                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/NLP/39.png"
                     },
                     {
                         "title": "快速标记器的特殊能力",
-                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/40.png"
+                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/NLP/40.png"
                     },
                     {
                         "title": "QA 管道中的快速标记器",
-                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/41.png"
+                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/NLP/41.png"
                     },
                     {
                         "title": "标准化和预标准化",
-                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/42.png"
+                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/NLP/42.png"
                     },
                     {
                         "title": "字节对编码标准化",
-                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/43.png"
+                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/NLP/43.png"
                     },
                     {
                         "title": "WordPiece 标准化",
-                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/44.png"
+                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/NLP/44.png"
                     },
                     {
                         "title": "Unigram 标准化",
-                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/45.png"
+                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/NLP/45.png"
                     },
                     {
                         "title": "逐块的构建标记器",
-                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/46.png"
+                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/NLP/46.png"
                     },
                     {
                         "title": "标记器回顾",
-                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/47.png"
+                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/NLP/47.png"
                     },
                     {
                         "title": "章末小测验",
-                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/48.png"
+                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/NLP/48.png"
                     }
                 ]
             },
@@ -355,39 +355,39 @@
                 "articles": [
                     {
                         "title": "简介",
-                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/49.png"
+                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/NLP/49.png"
                     },
                     {
                         "title": "标记 token 分类",
-                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/50.png"
+                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/NLP/50.png"
                     },
                     {
                         "title": "微调掩码语言模型",
-                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/51.png"
+                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/NLP/51.png"
                     },
                     {
                         "title": "翻译",
-                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/52.png"
+                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/NLP/52.png"
                     },
                     {
                         "title": "提取文本摘要",
-                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/53.png"
+                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/NLP/53.png"
                     },
                     {
                         "title": "从头开始训练因果语言模型",
-                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/54.png"
+                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/NLP/54.png"
                     },
                     {
                         "title": "问答",
-                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/55.png"
+                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/NLP/55.png"
                     },
                     {
                         "title": "精通自然语言处理",
-                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/56.png"
+                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/NLP/56.png"
                     },
                     {
                         "title": "章末小测验",
-                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/57.png"
+                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/NLP/57.png"
                     }
                 ]
             },
@@ -396,31 +396,31 @@
                 "articles": [
                     {
                         "title": "简介",
-                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/58.png"
+                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/NLP/58.png"
                     },
                     {
                         "title": "出现错误时该怎么办",
-                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/59.png"
+                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/NLP/59.png"
                     },
                     {
                         "title": "在论坛上寻求帮助",
-                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/60.png"
+                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/NLP/60.png"
                     },
                     {
                         "title": "调试训练管道",
-                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/61.png"
+                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/NLP/61.png"
                     },
                     {
                         "title": "如何提出一个好问题",
-                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/62.png"
+                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/NLP/62.png"
                     },
                     {
                         "title": "Part 2 完结",
-                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/63.png"
+                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/NLP/63.png"
                     },
                     {
                         "title": "章末小测验",
-                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/64.png"
+                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/NLP/64.png"
                     }
                 ]
             },
@@ -429,43 +429,43 @@
                 "articles": [
                     {
                         "title": "Gradio 简介",
-                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/65.png"
+                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/NLP/65.png"
                     },
                     {
                         "title": "构建你的第一个演示",
-                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/66.png"
+                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/NLP/66.png"
                     },
                     {
                         "title": "了解接口类",
-                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/67.png"
+                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/NLP/67.png"
                     },
                     {
                         "title": "与他人分享演示",
-                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/68.png"
+                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/NLP/68.png"
                     },
                     {
                         "title": "与 HuggingfaceHub 整合",
-                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/69.png"
+                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/NLP/69.png"
                     },
                     {
                         "title": "高级接口功能",
-                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/70.png"
+                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/NLP/70.png"
                     },
                     {
                         "title": "Gradio 块简介",
-                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/71.png"
+                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/NLP/71.png"
                     },
                     {
                         "title": "Gradio 回顾",
-                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/72.png"
+                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/NLP/72.png"
                     },
                     {
                         "title": "章末小测验",
-                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/73.png"
+                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/NLP/73.png"
                     },
                     {
                         "title": "Part 2 发布活动",
-                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/ai/huggingface/NLP/74.png"
+                        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/NLP/74.png"
                     }
                 ]
             }
