@@ -1,0 +1,37 @@
+!!! 需要几天时间，测试这个平台的免费额度。比如 TTS 文本的长度、每天/周/月/年 可以进行 TTS 的限额。
+
+TTS 页面
+--------------
+https://www.narakeet.com/app/text-to-audio/?projectId=6e9564d6-956e-4c0d-aa97-a733890797ea
+
+
+官网首页
+-------------
+https://www.narakeet.com/
+
+
+注册信息：
+---------------
+Username: lipengFrankLi
+Name: lipengFrankLi
+Email: lp_frank@163.com
+Password: 复杂码
+
+
+可靠的 Mandarin：
+---------------------------
+Chao 厚重、语速快
+Kaige、Hai 两项都适中，感觉更靠谱
+
+
+最优设置：
+-----------------------------
+language: Chinese-Mandarin
+voice: Kaige
+volume: loud
+speed: normal
+format: mp3
+output: Single audio file
+
+
+

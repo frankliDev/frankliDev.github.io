@@ -22475,7 +22475,7 @@ var HomeComponent = /* @__PURE__ */ (() => {
       }
     },
     dependencies: [NgClass, NgForOf],
-    styles: ["\n\n.box[_ngcontent-%COMP%] {\n  background-color: rgb(1, 4, 9);\n}\n.box[_ngcontent-%COMP%]   .slogan-box[_ngcontent-%COMP%] {\n  background-image: url(https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/slogan_bg.jpg);\n  background-repeat: no-repeat;\n  background-position: center;\n  background-clip: border-box;\n  background-size: cover;\n}\n.box[_ngcontent-%COMP%]   .slogan-box[_ngcontent-%COMP%]   .slogan[_ngcontent-%COMP%] {\n  font-size: 3rem;\n  font-weight: 700;\n}\n.box[_ngcontent-%COMP%]   .slogan-box[_ngcontent-%COMP%]   .desc[_ngcontent-%COMP%] {\n  font-size: 1.5rem;\n  color: #ccc;\n}\n.box[_ngcontent-%COMP%]   .sections[_ngcontent-%COMP%]   .section[_ngcontent-%COMP%]   .logo[_ngcontent-%COMP%] {\n  height: 4rem;\n  width: auto;\n}\n/*# sourceMappingURL=data:application/json;base64,ewogICJ2ZXJzaW9uIjogMywKICAic291cmNlcyI6IFsic3JjL2FwcC9ob21lL2hvbWUuY29tcG9uZW50LnNjc3MiXSwKICAic291cmNlc0NvbnRlbnQiOiBbIi5ib3gge1xuICAgIGJhY2tncm91bmQtY29sb3I6IHJnYigxLCA0LCA5KTtcblxuICAgIC5zbG9nYW4tYm94IHtcbiAgICAgICAgYmFja2dyb3VuZC1pbWFnZTogdXJsKCdodHRwczovL2ZyYW5rLWxpLWZpbGVzLm9zcy1jbi1iZWlqaW5nLmFsaXl1bmNzLmNvbS9zdHVkeV9jZW50ZXIvc2xvZ2FuX2JnLmpwZycpO1xuICAgICAgICBiYWNrZ3JvdW5kLXJlcGVhdDogbm8tcmVwZWF0O1xuICAgICAgICBiYWNrZ3JvdW5kLXBvc2l0aW9uOiBjZW50ZXI7XG4gICAgICAgIGJhY2tncm91bmQtY2xpcDogYm9yZGVyLWJveDtcbiAgICAgICAgYmFja2dyb3VuZC1zaXplOiBjb3ZlcjtcblxuICAgICAgICAuc2xvZ2FuIHtcbiAgICAgICAgICAgIGZvbnQtc2l6ZTogM3JlbTtcbiAgICAgICAgICAgIGZvbnQtd2VpZ2h0OiA3MDA7XG4gICAgICAgIH1cblxuICAgICAgICAuZGVzYyB7XG4gICAgICAgICAgICBmb250LXNpemU6IDEuNXJlbTtcbiAgICAgICAgICAgIGNvbG9yOiAjY2NjO1xuICAgICAgICB9XG4gICAgfVxuXG4gICAgLnNlY3Rpb25zIHtcbiAgICAgICAgLnNlY3Rpb24ge1xuICAgICAgICAgICAgLmxvZ28ge1xuICAgICAgICAgICAgICAgIGhlaWdodDogNHJlbTtcbiAgICAgICAgICAgICAgICB3aWR0aDogYXV0bztcbiAgICAgICAgICAgIH1cbiAgICAgICAgfVxuICAgIH1cblxufSJdLAogICJtYXBwaW5ncyI6ICI7QUFBQSxDQUFBO0FBQ0ksb0JBQUEsSUFBQSxDQUFBLEVBQUEsQ0FBQSxFQUFBOztBQUVBLENBSEosSUFHSSxDQUFBO0FBQ0ksb0JBQUE7QUFDQSxxQkFBQTtBQUNBLHVCQUFBO0FBQ0EsbUJBQUE7QUFDQSxtQkFBQTs7QUFFQSxDQVZSLElBVVEsQ0FQSixXQU9JLENBQUE7QUFDSSxhQUFBO0FBQ0EsZUFBQTs7QUFHSixDQWZSLElBZVEsQ0FaSixXQVlJLENBQUE7QUFDSSxhQUFBO0FBQ0EsU0FBQTs7QUFNQSxDQXZCWixJQXVCWSxDQUFBLFNBQUEsQ0FBQSxRQUFBLENBQUE7QUFDSSxVQUFBO0FBQ0EsU0FBQTs7IiwKICAibmFtZXMiOiBbXQp9Cg== */"]
+    styles: ["\n\n.box[_ngcontent-%COMP%] {\n  background-color: rgb(1, 4, 9);\n}\n.box[_ngcontent-%COMP%]   .slogan-box[_ngcontent-%COMP%] {\n  background-image: url(https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/slogan_bg.jpg);\n  background-repeat: no-repeat;\n  background-position: center;\n  background-clip: border-box;\n  background-size: cover;\n}\n.box[_ngcontent-%COMP%]   .slogan-box[_ngcontent-%COMP%]   .slogan[_ngcontent-%COMP%] {\n  font-size: 3rem;\n  font-weight: 700;\n}\n.box[_ngcontent-%COMP%]   .slogan-box[_ngcontent-%COMP%]   .desc[_ngcontent-%COMP%] {\n  font-size: 1.5rem;\n  color: #ccc;\n}\n.box[_ngcontent-%COMP%]   .sections[_ngcontent-%COMP%]   .section[_ngcontent-%COMP%]   .logo[_ngcontent-%COMP%] {\n  height: 4rem;\n  width: auto;\n}\n/*# sourceMappingURL=data:application/json;base64,ewogICJ2ZXJzaW9uIjogMywKICAic291cmNlcyI6IFsic3JjL2FwcC9ob21lL2hvbWUuY29tcG9uZW50LnNjc3MiXSwKICAic291cmNlc0NvbnRlbnQiOiBbIi5ib3gge1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogcmdiKDEsIDQsIDkpO1xyXG5cclxuICAgIC5zbG9nYW4tYm94IHtcclxuICAgICAgICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoJ2h0dHBzOi8vZnJhbmstbGktZmlsZXMub3NzLWNuLWJlaWppbmcuYWxpeXVuY3MuY29tL3N0dWR5X2NlbnRlci9zbG9nYW5fYmcuanBnJyk7XHJcbiAgICAgICAgYmFja2dyb3VuZC1yZXBlYXQ6IG5vLXJlcGVhdDtcclxuICAgICAgICBiYWNrZ3JvdW5kLXBvc2l0aW9uOiBjZW50ZXI7XHJcbiAgICAgICAgYmFja2dyb3VuZC1jbGlwOiBib3JkZXItYm94O1xyXG4gICAgICAgIGJhY2tncm91bmQtc2l6ZTogY292ZXI7XHJcblxyXG4gICAgICAgIC5zbG9nYW4ge1xyXG4gICAgICAgICAgICBmb250LXNpemU6IDNyZW07XHJcbiAgICAgICAgICAgIGZvbnQtd2VpZ2h0OiA3MDA7XHJcbiAgICAgICAgfVxyXG5cclxuICAgICAgICAuZGVzYyB7XHJcbiAgICAgICAgICAgIGZvbnQtc2l6ZTogMS41cmVtO1xyXG4gICAgICAgICAgICBjb2xvcjogI2NjYztcclxuICAgICAgICB9XHJcbiAgICB9XHJcblxyXG4gICAgLnNlY3Rpb25zIHtcclxuICAgICAgICAuc2VjdGlvbiB7XHJcbiAgICAgICAgICAgIC5sb2dvIHtcclxuICAgICAgICAgICAgICAgIGhlaWdodDogNHJlbTtcclxuICAgICAgICAgICAgICAgIHdpZHRoOiBhdXRvO1xyXG4gICAgICAgICAgICB9XHJcbiAgICAgICAgfVxyXG4gICAgfVxyXG5cclxufSJdLAogICJtYXBwaW5ncyI6ICI7QUFBQSxDQUFBO0FBQ0ksb0JBQUEsSUFBQSxDQUFBLEVBQUEsQ0FBQSxFQUFBOztBQUVBLENBSEosSUFHSSxDQUFBO0FBQ0ksb0JBQUE7QUFDQSxxQkFBQTtBQUNBLHVCQUFBO0FBQ0EsbUJBQUE7QUFDQSxtQkFBQTs7QUFFQSxDQVZSLElBVVEsQ0FQSixXQU9JLENBQUE7QUFDSSxhQUFBO0FBQ0EsZUFBQTs7QUFHSixDQWZSLElBZVEsQ0FaSixXQVlJLENBQUE7QUFDSSxhQUFBO0FBQ0EsU0FBQTs7QUFNQSxDQXZCWixJQXVCWSxDQUFBLFNBQUEsQ0FBQSxRQUFBLENBQUE7QUFDSSxVQUFBO0FBQ0EsU0FBQTs7IiwKICAibmFtZXMiOiBbXQp9Cg== */"]
   });
   let HomeComponent2 = _HomeComponent;
   return HomeComponent2;
@@ -22668,7 +22668,7 @@ var HarmonyosComponent = /* @__PURE__ */ (() => {
       }
     },
     dependencies: [NgForOf, NgIf],
-    styles: ["\n\n.box[_ngcontent-%COMP%]   .logo[_ngcontent-%COMP%] {\n  height: 3rem;\n  width: auto;\n}\n.box[_ngcontent-%COMP%]   .title-list[_ngcontent-%COMP%] {\n  max-height: 80vh;\n  height: 80vh;\n  overflow-y: scroll;\n}\n.box[_ngcontent-%COMP%]   .title-list[_ngcontent-%COMP%]   li[_ngcontent-%COMP%] {\n  background: none;\n  transition: background-color 0.1s;\n}\n.box[_ngcontent-%COMP%]   .title-list[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]:hover {\n  background-color: #0066CC;\n  cursor: pointer;\n}\n.box[_ngcontent-%COMP%]   .offcanvas[_ngcontent-%COMP%] {\n  width: 40% !important;\n}\n.box[_ngcontent-%COMP%]   object[_ngcontent-%COMP%] {\n  height: 80vh;\n}\n.box[_ngcontent-%COMP%]   .goTopBtn[_ngcontent-%COMP%] {\n  position: fixed !important;\n  bottom: 1rem;\n  right: 1rem;\n}\n/*# sourceMappingURL=data:application/json;base64,ewogICJ2ZXJzaW9uIjogMywKICAic291cmNlcyI6IFsic3JjL2FwcC9oYXJtb255b3MvaGFybW9ueW9zLmNvbXBvbmVudC5zY3NzIl0sCiAgInNvdXJjZXNDb250ZW50IjogWyIkbXlIZWlnaHQ6IDgwdmg7XG4kb2ZmY2FudmFzLXdpZHRoOiA0MCU7XG5cbi5ib3gge1xuXG4gICAgLmxvZ28ge1xuICAgICAgICBoZWlnaHQ6IDNyZW07XG4gICAgICAgIHdpZHRoOiBhdXRvO1xuICAgIH1cblxuICAgIC50aXRsZS1saXN0IHtcbiAgICAgICAgbWF4LWhlaWdodDogJG15SGVpZ2h0O1xuICAgICAgICBoZWlnaHQ6ICRteUhlaWdodDtcbiAgICAgICAgb3ZlcmZsb3cteTogc2Nyb2xsO1xuXG4gICAgICAgIGxpIHtcbiAgICAgICAgICAgIGJhY2tncm91bmQ6IG5vbmU7XG4gICAgICAgICAgICB0cmFuc2l0aW9uOiBiYWNrZ3JvdW5kLWNvbG9yIC4xcztcblxuICAgICAgICAgICAgJjpob3ZlciB7XG4gICAgICAgICAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogIzAwNjZDQztcbiAgICAgICAgICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICAgICAgICB9XG4gICAgICAgIH1cblxuICAgIH1cblxuICAgIC5vZmZjYW52YXMge1xuICAgICAgICB3aWR0aDogJG9mZmNhbnZhcy13aWR0aCAhaW1wb3J0YW50O1xuICAgIH1cblxuICAgIG9iamVjdCB7XG4gICAgICAgIGhlaWdodDogJG15SGVpZ2h0O1xuICAgIH1cblxuICAgIC5nb1RvcEJ0biB7XG4gICAgICAgIHBvc2l0aW9uOiBmaXhlZCAhaW1wb3J0YW50O1xuICAgICAgICBib3R0b206IDFyZW07XG4gICAgICAgIHJpZ2h0OiAxcmVtO1xuICAgIH1cblxufSJdLAogICJtYXBwaW5ncyI6ICI7QUFLSSxDQUFBLElBQUEsQ0FBQTtBQUNJLFVBQUE7QUFDQSxTQUFBOztBQUdKLENBTEEsSUFLQSxDQUFBO0FBQ0ksY0FYRztBQVlILFVBWkc7QUFhSCxjQUFBOztBQUVBLENBVkosSUFVSSxDQUxKLFdBS0k7QUFDSSxjQUFBO0FBQ0EsY0FBQSxpQkFBQTs7QUFFQSxDQWRSLElBY1EsQ0FUUixXQVNRLEVBQUE7QUFDSSxvQkFBQTtBQUNBLFVBQUE7O0FBTVosQ0F0QkEsSUFzQkEsQ0FBQTtBQUNJLFNBQUE7O0FBR0osQ0ExQkEsSUEwQkE7QUFDSSxVQWhDRzs7QUFtQ1AsQ0E5QkEsSUE4QkEsQ0FBQTtBQUNJLFlBQUE7QUFDQSxVQUFBO0FBQ0EsU0FBQTs7IiwKICAibmFtZXMiOiBbXQp9Cg== */"]
+    styles: ["\n\n.box[_ngcontent-%COMP%]   .logo[_ngcontent-%COMP%] {\n  height: 3rem;\n  width: auto;\n}\n.box[_ngcontent-%COMP%]   .title-list[_ngcontent-%COMP%] {\n  max-height: 80vh;\n  height: 80vh;\n  overflow-y: scroll;\n}\n.box[_ngcontent-%COMP%]   .title-list[_ngcontent-%COMP%]   li[_ngcontent-%COMP%] {\n  background: none;\n  transition: background-color 0.1s;\n}\n.box[_ngcontent-%COMP%]   .title-list[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]:hover {\n  background-color: #0066CC;\n  cursor: pointer;\n}\n.box[_ngcontent-%COMP%]   .offcanvas[_ngcontent-%COMP%] {\n  width: 40% !important;\n}\n.box[_ngcontent-%COMP%]   object[_ngcontent-%COMP%] {\n  height: 80vh;\n}\n.box[_ngcontent-%COMP%]   .goTopBtn[_ngcontent-%COMP%] {\n  position: fixed !important;\n  bottom: 1rem;\n  right: 1rem;\n}\n/*# sourceMappingURL=data:application/json;base64,ewogICJ2ZXJzaW9uIjogMywKICAic291cmNlcyI6IFsic3JjL2FwcC9oYXJtb255b3MvaGFybW9ueW9zLmNvbXBvbmVudC5zY3NzIl0sCiAgInNvdXJjZXNDb250ZW50IjogWyIkbXlIZWlnaHQ6IDgwdmg7XHJcbiRvZmZjYW52YXMtd2lkdGg6IDQwJTtcclxuXHJcbi5ib3gge1xyXG5cclxuICAgIC5sb2dvIHtcclxuICAgICAgICBoZWlnaHQ6IDNyZW07XHJcbiAgICAgICAgd2lkdGg6IGF1dG87XHJcbiAgICB9XHJcblxyXG4gICAgLnRpdGxlLWxpc3Qge1xyXG4gICAgICAgIG1heC1oZWlnaHQ6ICRteUhlaWdodDtcclxuICAgICAgICBoZWlnaHQ6ICRteUhlaWdodDtcclxuICAgICAgICBvdmVyZmxvdy15OiBzY3JvbGw7XHJcblxyXG4gICAgICAgIGxpIHtcclxuICAgICAgICAgICAgYmFja2dyb3VuZDogbm9uZTtcclxuICAgICAgICAgICAgdHJhbnNpdGlvbjogYmFja2dyb3VuZC1jb2xvciAuMXM7XHJcblxyXG4gICAgICAgICAgICAmOmhvdmVyIHtcclxuICAgICAgICAgICAgICAgIGJhY2tncm91bmQtY29sb3I6ICMwMDY2Q0M7XHJcbiAgICAgICAgICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XHJcbiAgICAgICAgICAgIH1cclxuICAgICAgICB9XHJcblxyXG4gICAgfVxyXG5cclxuICAgIC5vZmZjYW52YXMge1xyXG4gICAgICAgIHdpZHRoOiAkb2ZmY2FudmFzLXdpZHRoICFpbXBvcnRhbnQ7XHJcbiAgICB9XHJcblxyXG4gICAgb2JqZWN0IHtcclxuICAgICAgICBoZWlnaHQ6ICRteUhlaWdodDtcclxuICAgIH1cclxuXHJcbiAgICAuZ29Ub3BCdG4ge1xyXG4gICAgICAgIHBvc2l0aW9uOiBmaXhlZCAhaW1wb3J0YW50O1xyXG4gICAgICAgIGJvdHRvbTogMXJlbTtcclxuICAgICAgICByaWdodDogMXJlbTtcclxuICAgIH1cclxuXHJcbn0iXSwKICAibWFwcGluZ3MiOiAiO0FBS0ksQ0FBQSxJQUFBLENBQUE7QUFDSSxVQUFBO0FBQ0EsU0FBQTs7QUFHSixDQUxBLElBS0EsQ0FBQTtBQUNJLGNBWEc7QUFZSCxVQVpHO0FBYUgsY0FBQTs7QUFFQSxDQVZKLElBVUksQ0FMSixXQUtJO0FBQ0ksY0FBQTtBQUNBLGNBQUEsaUJBQUE7O0FBRUEsQ0FkUixJQWNRLENBVFIsV0FTUSxFQUFBO0FBQ0ksb0JBQUE7QUFDQSxVQUFBOztBQU1aLENBdEJBLElBc0JBLENBQUE7QUFDSSxTQUFBOztBQUdKLENBMUJBLElBMEJBO0FBQ0ksVUFoQ0c7O0FBbUNQLENBOUJBLElBOEJBLENBQUE7QUFDSSxZQUFBO0FBQ0EsVUFBQTtBQUNBLFNBQUE7OyIsCiAgIm5hbWVzIjogW10KfQo= */"]
   });
   let HarmonyosComponent2 = _HarmonyosComponent;
   return HarmonyosComponent2;
@@ -23023,7 +23023,7 @@ var LifePhilosophyComponent = /* @__PURE__ */ (() => {
       }
     },
     dependencies: [NgForOf],
-    styles: ["\n\n.box[_ngcontent-%COMP%]   .card[_ngcontent-%COMP%] {\n  transition: background-color 0.2s;\n}\n.box[_ngcontent-%COMP%]   .card[_ngcontent-%COMP%]:hover {\n  background-color: rgba(0, 0, 0, 0.1) !important;\n}\n.box[_ngcontent-%COMP%]   .goTopBtn[_ngcontent-%COMP%] {\n  position: fixed !important;\n  bottom: 1rem;\n  right: 1rem;\n}\n/*# sourceMappingURL=data:application/json;base64,ewogICJ2ZXJzaW9uIjogMywKICAic291cmNlcyI6IFsic3JjL2FwcC9saWZlLXBoaWxvc29waHkvbGlmZS1waGlsb3NvcGh5LmNvbXBvbmVudC5zY3NzIl0sCiAgInNvdXJjZXNDb250ZW50IjogWyIuYm94IHtcbiAgICAuY2FyZCB7XG4gICAgICAgIHRyYW5zaXRpb246IGJhY2tncm91bmQtY29sb3IgMC4ycztcblxuICAgICAgICAmOmhvdmVyIHtcbiAgICAgICAgICAgIC8vIGNvbG9yOiBncmF5ICFpbXBvcnRhbnQ7XG4gICAgICAgICAgICAvLyBib3JkZXItY29sb3I6IGdyYXkgIWltcG9ydGFudDtcbiAgICAgICAgICAgIGJhY2tncm91bmQtY29sb3I6IHJnYmEoJGNvbG9yOiAjMDAwLCAkYWxwaGE6IC4xKSAhaW1wb3J0YW50O1xuICAgICAgICB9XG5cbiAgICB9XG5cbiAgICAuZ29Ub3BCdG4ge1xuICAgICAgICBwb3NpdGlvbjogZml4ZWQgIWltcG9ydGFudDtcbiAgICAgICAgYm90dG9tOiAxcmVtO1xuICAgICAgICByaWdodDogMXJlbTtcbiAgICB9XG5cblxufSJdLAogICJtYXBwaW5ncyI6ICI7QUFDSSxDQUFBLElBQUEsQ0FBQTtBQUNJLGNBQUEsaUJBQUE7O0FBRUEsQ0FISixJQUdJLENBSEosSUFHSTtBQUdJLG9CQUFBLEtBQUEsQ0FBQSxFQUFBLENBQUEsRUFBQSxDQUFBLEVBQUE7O0FBS1IsQ0FYQSxJQVdBLENBQUE7QUFDSSxZQUFBO0FBQ0EsVUFBQTtBQUNBLFNBQUE7OyIsCiAgIm5hbWVzIjogW10KfQo= */"]
+    styles: ["\n\n.box[_ngcontent-%COMP%]   .card[_ngcontent-%COMP%] {\n  transition: background-color 0.2s;\n}\n.box[_ngcontent-%COMP%]   .card[_ngcontent-%COMP%]:hover {\n  background-color: rgba(0, 0, 0, 0.1) !important;\n}\n.box[_ngcontent-%COMP%]   .goTopBtn[_ngcontent-%COMP%] {\n  position: fixed !important;\n  bottom: 1rem;\n  right: 1rem;\n}\n/*# sourceMappingURL=data:application/json;base64,ewogICJ2ZXJzaW9uIjogMywKICAic291cmNlcyI6IFsic3JjL2FwcC9saWZlLXBoaWxvc29waHkvbGlmZS1waGlsb3NvcGh5LmNvbXBvbmVudC5zY3NzIl0sCiAgInNvdXJjZXNDb250ZW50IjogWyIuYm94IHtcclxuICAgIC5jYXJkIHtcclxuICAgICAgICB0cmFuc2l0aW9uOiBiYWNrZ3JvdW5kLWNvbG9yIDAuMnM7XHJcblxyXG4gICAgICAgICY6aG92ZXIge1xyXG4gICAgICAgICAgICAvLyBjb2xvcjogZ3JheSAhaW1wb3J0YW50O1xyXG4gICAgICAgICAgICAvLyBib3JkZXItY29sb3I6IGdyYXkgIWltcG9ydGFudDtcclxuICAgICAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogcmdiYSgkY29sb3I6ICMwMDAsICRhbHBoYTogLjEpICFpbXBvcnRhbnQ7XHJcbiAgICAgICAgfVxyXG5cclxuICAgIH1cclxuXHJcbiAgICAuZ29Ub3BCdG4ge1xyXG4gICAgICAgIHBvc2l0aW9uOiBmaXhlZCAhaW1wb3J0YW50O1xyXG4gICAgICAgIGJvdHRvbTogMXJlbTtcclxuICAgICAgICByaWdodDogMXJlbTtcclxuICAgIH1cclxuXHJcblxyXG59Il0sCiAgIm1hcHBpbmdzIjogIjtBQUNJLENBQUEsSUFBQSxDQUFBO0FBQ0ksY0FBQSxpQkFBQTs7QUFFQSxDQUhKLElBR0ksQ0FISixJQUdJO0FBR0ksb0JBQUEsS0FBQSxDQUFBLEVBQUEsQ0FBQSxFQUFBLENBQUEsRUFBQTs7QUFLUixDQVhBLElBV0EsQ0FBQTtBQUNJLFlBQUE7QUFDQSxVQUFBO0FBQ0EsU0FBQTs7IiwKICAibmFtZXMiOiBbXQp9Cg== */"]
   });
   let LifePhilosophyComponent2 = _LifePhilosophyComponent;
   return LifePhilosophyComponent2;
@@ -23158,7 +23158,7 @@ var TongyiComponent = /* @__PURE__ */ (() => {
       }
     },
     dependencies: [NgForOf],
-    styles: ["\n\n.box[_ngcontent-%COMP%]   .slogan[_ngcontent-%COMP%]   .logo[_ngcontent-%COMP%] {\n  height: 2.5rem;\n  width: auto;\n}\n.box[_ngcontent-%COMP%]   .slogan[_ngcontent-%COMP%]   .slogan-video[_ngcontent-%COMP%] {\n  width: 60%;\n  height: auto;\n  border-radius: 10px;\n}\n.box[_ngcontent-%COMP%]   .slogan[_ngcontent-%COMP%]   .url[_ngcontent-%COMP%] {\n  text-decoration: none;\n  color: rgb(94, 88, 231);\n}\n.box[_ngcontent-%COMP%]   .slogan[_ngcontent-%COMP%]   .url[_ngcontent-%COMP%]:hover {\n  color: rgb(49, 41, 234);\n}\n.box[_ngcontent-%COMP%]   .goTopBtn[_ngcontent-%COMP%] {\n  position: fixed !important;\n  bottom: 1rem;\n  right: 1rem;\n  background-color: rgb(94, 88, 231);\n}\n.box[_ngcontent-%COMP%]   .goTopBtn[_ngcontent-%COMP%]:hover {\n  background-color: rgb(49, 41, 234);\n}\n/*# sourceMappingURL=data:application/json;base64,ewogICJ2ZXJzaW9uIjogMywKICAic291cmNlcyI6IFsic3JjL2FwcC90b25neWkvdG9uZ3lpLmNvbXBvbmVudC5zY3NzIl0sCiAgInNvdXJjZXNDb250ZW50IjogWyIuYm94IHtcbiAgICAuc2xvZ2FuIHtcbiAgICAgICAgLmxvZ28ge1xuICAgICAgICAgICAgaGVpZ2h0OiAyLjVyZW07XG4gICAgICAgICAgICB3aWR0aDogYXV0bztcbiAgICAgICAgfVxuXG4gICAgICAgIC5zbG9nYW4tdmlkZW8ge1xuICAgICAgICAgICAgd2lkdGg6IDYwJTtcbiAgICAgICAgICAgIGhlaWdodDogYXV0bztcbiAgICAgICAgICAgIGJvcmRlci1yYWRpdXM6IDEwcHg7XG4gICAgICAgIH1cblxuICAgICAgICAudXJsIHtcbiAgICAgICAgICAgIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcbiAgICAgICAgICAgIGNvbG9yOiByZ2IoOTQsIDg4LCAyMzEpO1xuXG4gICAgICAgICAgICAmOmhvdmVyIHtcbiAgICAgICAgICAgICAgICBjb2xvcjogcmdiKDQ5LCA0MSwgMjM0KTtcbiAgICAgICAgICAgIH1cbiAgICAgICAgfVxuICAgIH1cblxuICAgIC5nb1RvcEJ0biB7XG4gICAgICAgIHBvc2l0aW9uOiBmaXhlZCAhaW1wb3J0YW50O1xuICAgICAgICBib3R0b206IDFyZW07XG4gICAgICAgIHJpZ2h0OiAxcmVtO1xuICAgICAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoOTQsIDg4LCAyMzEpO1xuXG4gICAgICAgICY6aG92ZXIge1xuICAgICAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogcmdiKDQ5LCA0MSwgMjM0KTtcbiAgICAgICAgfVxuICAgIH1cbn0iXSwKICAibWFwcGluZ3MiOiAiO0FBRVEsQ0FBQSxJQUFBLENBQUEsT0FBQSxDQUFBO0FBQ0ksVUFBQTtBQUNBLFNBQUE7O0FBR0osQ0FMQSxJQUtBLENBTEEsT0FLQSxDQUFBO0FBQ0ksU0FBQTtBQUNBLFVBQUE7QUFDQSxpQkFBQTs7QUFHSixDQVhBLElBV0EsQ0FYQSxPQVdBLENBQUE7QUFDSSxtQkFBQTtBQUNBLFNBQUEsSUFBQSxFQUFBLEVBQUEsRUFBQSxFQUFBOztBQUVBLENBZkosSUFlSSxDQWZKLE9BZUksQ0FKSixHQUlJO0FBQ0ksU0FBQSxJQUFBLEVBQUEsRUFBQSxFQUFBLEVBQUE7O0FBS1osQ0FyQkksSUFxQkosQ0FBQTtBQUNJLFlBQUE7QUFDQSxVQUFBO0FBQ0EsU0FBQTtBQUNBLG9CQUFBLElBQUEsRUFBQSxFQUFBLEVBQUEsRUFBQTs7QUFFQSxDQTNCQSxJQTJCQSxDQU5KLFFBTUk7QUFDSSxvQkFBQSxJQUFBLEVBQUEsRUFBQSxFQUFBLEVBQUE7OyIsCiAgIm5hbWVzIjogW10KfQo= */"]
+    styles: ["\n\n.box[_ngcontent-%COMP%]   .slogan[_ngcontent-%COMP%]   .logo[_ngcontent-%COMP%] {\n  height: 2.5rem;\n  width: auto;\n}\n.box[_ngcontent-%COMP%]   .slogan[_ngcontent-%COMP%]   .slogan-video[_ngcontent-%COMP%] {\n  width: 60%;\n  height: auto;\n  border-radius: 10px;\n}\n.box[_ngcontent-%COMP%]   .slogan[_ngcontent-%COMP%]   .url[_ngcontent-%COMP%] {\n  text-decoration: none;\n  color: rgb(94, 88, 231);\n}\n.box[_ngcontent-%COMP%]   .slogan[_ngcontent-%COMP%]   .url[_ngcontent-%COMP%]:hover {\n  color: rgb(49, 41, 234);\n}\n.box[_ngcontent-%COMP%]   .goTopBtn[_ngcontent-%COMP%] {\n  position: fixed !important;\n  bottom: 1rem;\n  right: 1rem;\n  background-color: rgb(94, 88, 231);\n}\n.box[_ngcontent-%COMP%]   .goTopBtn[_ngcontent-%COMP%]:hover {\n  background-color: rgb(49, 41, 234);\n}\n/*# sourceMappingURL=data:application/json;base64,ewogICJ2ZXJzaW9uIjogMywKICAic291cmNlcyI6IFsic3JjL2FwcC90b25neWkvdG9uZ3lpLmNvbXBvbmVudC5zY3NzIl0sCiAgInNvdXJjZXNDb250ZW50IjogWyIuYm94IHtcclxuICAgIC5zbG9nYW4ge1xyXG4gICAgICAgIC5sb2dvIHtcclxuICAgICAgICAgICAgaGVpZ2h0OiAyLjVyZW07XHJcbiAgICAgICAgICAgIHdpZHRoOiBhdXRvO1xyXG4gICAgICAgIH1cclxuXHJcbiAgICAgICAgLnNsb2dhbi12aWRlbyB7XHJcbiAgICAgICAgICAgIHdpZHRoOiA2MCU7XHJcbiAgICAgICAgICAgIGhlaWdodDogYXV0bztcclxuICAgICAgICAgICAgYm9yZGVyLXJhZGl1czogMTBweDtcclxuICAgICAgICB9XHJcblxyXG4gICAgICAgIC51cmwge1xyXG4gICAgICAgICAgICB0ZXh0LWRlY29yYXRpb246IG5vbmU7XHJcbiAgICAgICAgICAgIGNvbG9yOiByZ2IoOTQsIDg4LCAyMzEpO1xyXG5cclxuICAgICAgICAgICAgJjpob3ZlciB7XHJcbiAgICAgICAgICAgICAgICBjb2xvcjogcmdiKDQ5LCA0MSwgMjM0KTtcclxuICAgICAgICAgICAgfVxyXG4gICAgICAgIH1cclxuICAgIH1cclxuXHJcbiAgICAuZ29Ub3BCdG4ge1xyXG4gICAgICAgIHBvc2l0aW9uOiBmaXhlZCAhaW1wb3J0YW50O1xyXG4gICAgICAgIGJvdHRvbTogMXJlbTtcclxuICAgICAgICByaWdodDogMXJlbTtcclxuICAgICAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoOTQsIDg4LCAyMzEpO1xyXG5cclxuICAgICAgICAmOmhvdmVyIHtcclxuICAgICAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogcmdiKDQ5LCA0MSwgMjM0KTtcclxuICAgICAgICB9XHJcbiAgICB9XHJcbn0iXSwKICAibWFwcGluZ3MiOiAiO0FBRVEsQ0FBQSxJQUFBLENBQUEsT0FBQSxDQUFBO0FBQ0ksVUFBQTtBQUNBLFNBQUE7O0FBR0osQ0FMQSxJQUtBLENBTEEsT0FLQSxDQUFBO0FBQ0ksU0FBQTtBQUNBLFVBQUE7QUFDQSxpQkFBQTs7QUFHSixDQVhBLElBV0EsQ0FYQSxPQVdBLENBQUE7QUFDSSxtQkFBQTtBQUNBLFNBQUEsSUFBQSxFQUFBLEVBQUEsRUFBQSxFQUFBOztBQUVBLENBZkosSUFlSSxDQWZKLE9BZUksQ0FKSixHQUlJO0FBQ0ksU0FBQSxJQUFBLEVBQUEsRUFBQSxFQUFBLEVBQUE7O0FBS1osQ0FyQkksSUFxQkosQ0FBQTtBQUNJLFlBQUE7QUFDQSxVQUFBO0FBQ0EsU0FBQTtBQUNBLG9CQUFBLElBQUEsRUFBQSxFQUFBLEVBQUEsRUFBQTs7QUFFQSxDQTNCQSxJQTJCQSxDQU5KLFFBTUk7QUFDSSxvQkFBQSxJQUFBLEVBQUEsRUFBQSxFQUFBLEVBQUE7OyIsCiAgIm5hbWVzIjogW10KfQo= */"]
   });
   let TongyiComponent2 = _TongyiComponent;
   return TongyiComponent2;
@@ -23697,7 +23697,7 @@ var LocalService = /* @__PURE__ */ (() => {
     getMarkdownHeadline(str) {
       return str.substring(12);
     }
-    // 从markdown的注释字符串（> ...）中提取内容
+    // 从 markdown 的注释字符串（> ...）中提取内容
     getMarkdownDesc(str) {
       let desc = "";
       if (str.split("")[0] == ">") {
@@ -23753,6 +23753,9 @@ var LocalService = /* @__PURE__ */ (() => {
       let tempList = markdownText.split("\n");
       for (let i = 0; i < tempList.length; i++) {
         let item = tempList[i];
+        if (item == "" || item == "\r") {
+          result.push("\n");
+        }
         if (item != "" && item != "\r") {
           result.push(item);
         }
@@ -24087,7 +24090,7 @@ var HuggingfaceComponent = /* @__PURE__ */ (() => {
       }
     },
     dependencies: [NgClass, NgForOf, NgIf],
-    styles: ["\n\n.box[_ngcontent-%COMP%]   .logo[_ngcontent-%COMP%] {\n  height: 3rem;\n  width: auto;\n}\n.box[_ngcontent-%COMP%]   .title-list[_ngcontent-%COMP%] {\n  overflow-y: scroll;\n}\n.box[_ngcontent-%COMP%]   .title-list[_ngcontent-%COMP%]   li[_ngcontent-%COMP%] {\n  background: none;\n}\n.box[_ngcontent-%COMP%]   .article[_ngcontent-%COMP%]:hover {\n  color: black !important;\n  background-color: #ffc107 !important;\n  cursor: pointer;\n}\n.box[_ngcontent-%COMP%]   img.article-detail[_ngcontent-%COMP%] {\n  width: 100%;\n  max-width: 100%;\n  overflow: scroll;\n}\n.box[_ngcontent-%COMP%]   .offcanvas[_ngcontent-%COMP%] {\n  width: 30% !important;\n}\n.box[_ngcontent-%COMP%]   object[_ngcontent-%COMP%] {\n  height: 80vh;\n}\n.box[_ngcontent-%COMP%]   .selectedArticle[_ngcontent-%COMP%] {\n  color: black !important;\n  background-color: #ffc107 !important;\n}\n.box[_ngcontent-%COMP%]   .goTopBtn[_ngcontent-%COMP%] {\n  position: fixed !important;\n  bottom: 1rem;\n  right: 1rem;\n}\n.box[_ngcontent-%COMP%]   .showMenuBtn[_ngcontent-%COMP%] {\n  position: fixed !important;\n  bottom: 4rem;\n  right: 1rem;\n}\n/*# sourceMappingURL=data:application/json;base64,ewogICJ2ZXJzaW9uIjogMywKICAic291cmNlcyI6IFsic3JjL2FwcC9odWdnaW5nZmFjZS9odWdnaW5nZmFjZS5jb21wb25lbnQuc2NzcyJdLAogICJzb3VyY2VzQ29udGVudCI6IFsiJG15SGVpZ2h0OiA4MHZoO1xuJG9mZmNhbnZhcy13aWR0aDogMzAlO1xuJHllbGxvdzogI2ZmYzEwNztcbiRhcnRpY2xlLWRldGFpbC13aWR0aDogMTAwJTtcblxuLmJveCB7XG5cbiAgICAubG9nbyB7XG4gICAgICAgIGhlaWdodDogM3JlbTtcbiAgICAgICAgd2lkdGg6IGF1dG87XG4gICAgfVxuXG4gICAgLnRpdGxlLWxpc3Qge1xuICAgICAgICAvLyBtYXgtaGVpZ2h0OiAkbXlIZWlnaHQ7XG4gICAgICAgIC8vIGhlaWdodDogJG15SGVpZ2h0O1xuICAgICAgICBvdmVyZmxvdy15OiBzY3JvbGw7XG5cbiAgICAgICAgbGkge1xuICAgICAgICAgICAgYmFja2dyb3VuZDogbm9uZTtcbiAgICAgICAgICAgIC8vIHRyYW5zaXRpb246IGJhY2tncm91bmQtY29sb3IgLjFzO1xuXG4gICAgICAgICAgICAvLyAmOmhvdmVyIHtcbiAgICAgICAgICAgIC8vICAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjMDA2NkNDO1xuICAgICAgICAgICAgLy8gICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICAgICAgICAgIC8vIH1cbiAgICAgICAgfVxuXG4gICAgfVxuXG4gICAgLmFydGljbGUge1xuICAgICAgICAmOmhvdmVyIHtcbiAgICAgICAgICAgIGNvbG9yOiBibGFjayAhaW1wb3J0YW50O1xuICAgICAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogJHllbGxvdyAhaW1wb3J0YW50O1xuICAgICAgICAgICAgY3Vyc29yOiBwb2ludGVyO1xuICAgICAgICB9XG4gICAgfVxuXG4gICAgaW1nLmFydGljbGUtZGV0YWlsIHtcbiAgICAgICAgd2lkdGg6ICRhcnRpY2xlLWRldGFpbC13aWR0aDtcbiAgICAgICAgbWF4LXdpZHRoOiAkYXJ0aWNsZS1kZXRhaWwtd2lkdGg7XG4gICAgICAgIG92ZXJmbG93OiBzY3JvbGw7XG4gICAgfVxuXG4gICAgLm9mZmNhbnZhcyB7XG4gICAgICAgIHdpZHRoOiAkb2ZmY2FudmFzLXdpZHRoICFpbXBvcnRhbnQ7XG4gICAgfVxuXG4gICAgb2JqZWN0IHtcbiAgICAgICAgaGVpZ2h0OiAkbXlIZWlnaHQ7XG4gICAgfVxuXG4gICAgLnNlbGVjdGVkQXJ0aWNsZSB7XG4gICAgICAgIGNvbG9yOiBibGFjayAhaW1wb3J0YW50O1xuICAgICAgICBiYWNrZ3JvdW5kLWNvbG9yOiAkeWVsbG93ICFpbXBvcnRhbnQ7XG4gICAgfVxuXG4gICAgLmdvVG9wQnRuIHtcbiAgICAgICAgcG9zaXRpb246IGZpeGVkICFpbXBvcnRhbnQ7XG4gICAgICAgIGJvdHRvbTogMXJlbTtcbiAgICAgICAgcmlnaHQ6IDFyZW07XG4gICAgfVxuXG4gICAgLnNob3dNZW51QnRuIHtcbiAgICAgICAgcG9zaXRpb246IGZpeGVkICFpbXBvcnRhbnQ7XG4gICAgICAgIGJvdHRvbTogNHJlbTtcbiAgICAgICAgcmlnaHQ6IDFyZW07XG4gICAgfVxuXG59Il0sCiAgIm1hcHBpbmdzIjogIjtBQU9JLENBQUEsSUFBQSxDQUFBO0FBQ0ksVUFBQTtBQUNBLFNBQUE7O0FBR0osQ0FMQSxJQUtBLENBQUE7QUFHSSxjQUFBOztBQUVBLENBVkosSUFVSSxDQUxKLFdBS0k7QUFDSSxjQUFBOztBQVlKLENBdkJKLElBdUJJLENBQUEsT0FBQTtBQUNJLFNBQUE7QUFDQSxvQkFBQTtBQUNBLFVBQUE7O0FBSVIsQ0E5QkEsSUE4QkEsR0FBQSxDQUFBO0FBQ0ksU0FuQ2U7QUFvQ2YsYUFwQ2U7QUFxQ2YsWUFBQTs7QUFHSixDQXBDQSxJQW9DQSxDQUFBO0FBQ0ksU0FBQTs7QUFHSixDQXhDQSxJQXdDQTtBQUNJLFVBaERHOztBQW1EUCxDQTVDQSxJQTRDQSxDQUFBO0FBQ0ksU0FBQTtBQUNBLG9CQUFBOztBQUdKLENBakRBLElBaURBLENBQUE7QUFDSSxZQUFBO0FBQ0EsVUFBQTtBQUNBLFNBQUE7O0FBR0osQ0F2REEsSUF1REEsQ0FBQTtBQUNJLFlBQUE7QUFDQSxVQUFBO0FBQ0EsU0FBQTs7IiwKICAibmFtZXMiOiBbXQp9Cg== */"]
+    styles: ["\n\n.box[_ngcontent-%COMP%]   .logo[_ngcontent-%COMP%] {\n  height: 3rem;\n  width: auto;\n}\n.box[_ngcontent-%COMP%]   .title-list[_ngcontent-%COMP%] {\n  overflow-y: scroll;\n}\n.box[_ngcontent-%COMP%]   .title-list[_ngcontent-%COMP%]   li[_ngcontent-%COMP%] {\n  background: none;\n}\n.box[_ngcontent-%COMP%]   .article[_ngcontent-%COMP%]:hover {\n  color: black !important;\n  background-color: #ffc107 !important;\n  cursor: pointer;\n}\n.box[_ngcontent-%COMP%]   img.article-detail[_ngcontent-%COMP%] {\n  width: 100%;\n  max-width: 100%;\n  overflow: scroll;\n}\n.box[_ngcontent-%COMP%]   .offcanvas[_ngcontent-%COMP%] {\n  width: 30% !important;\n}\n.box[_ngcontent-%COMP%]   object[_ngcontent-%COMP%] {\n  height: 80vh;\n}\n.box[_ngcontent-%COMP%]   .selectedArticle[_ngcontent-%COMP%] {\n  color: black !important;\n  background-color: #ffc107 !important;\n}\n.box[_ngcontent-%COMP%]   .goTopBtn[_ngcontent-%COMP%] {\n  position: fixed !important;\n  bottom: 1rem;\n  right: 1rem;\n}\n.box[_ngcontent-%COMP%]   .showMenuBtn[_ngcontent-%COMP%] {\n  position: fixed !important;\n  bottom: 4rem;\n  right: 1rem;\n}\n/*# sourceMappingURL=data:application/json;base64,ewogICJ2ZXJzaW9uIjogMywKICAic291cmNlcyI6IFsic3JjL2FwcC9odWdnaW5nZmFjZS9odWdnaW5nZmFjZS5jb21wb25lbnQuc2NzcyJdLAogICJzb3VyY2VzQ29udGVudCI6IFsiJG15SGVpZ2h0OiA4MHZoO1xyXG4kb2ZmY2FudmFzLXdpZHRoOiAzMCU7XHJcbiR5ZWxsb3c6ICNmZmMxMDc7XHJcbiRhcnRpY2xlLWRldGFpbC13aWR0aDogMTAwJTtcclxuXHJcbi5ib3gge1xyXG5cclxuICAgIC5sb2dvIHtcclxuICAgICAgICBoZWlnaHQ6IDNyZW07XHJcbiAgICAgICAgd2lkdGg6IGF1dG87XHJcbiAgICB9XHJcblxyXG4gICAgLnRpdGxlLWxpc3Qge1xyXG4gICAgICAgIC8vIG1heC1oZWlnaHQ6ICRteUhlaWdodDtcclxuICAgICAgICAvLyBoZWlnaHQ6ICRteUhlaWdodDtcclxuICAgICAgICBvdmVyZmxvdy15OiBzY3JvbGw7XHJcblxyXG4gICAgICAgIGxpIHtcclxuICAgICAgICAgICAgYmFja2dyb3VuZDogbm9uZTtcclxuICAgICAgICAgICAgLy8gdHJhbnNpdGlvbjogYmFja2dyb3VuZC1jb2xvciAuMXM7XHJcblxyXG4gICAgICAgICAgICAvLyAmOmhvdmVyIHtcclxuICAgICAgICAgICAgLy8gICAgIGJhY2tncm91bmQtY29sb3I6ICMwMDY2Q0M7XHJcbiAgICAgICAgICAgIC8vICAgICBjdXJzb3I6IHBvaW50ZXI7XHJcbiAgICAgICAgICAgIC8vIH1cclxuICAgICAgICB9XHJcblxyXG4gICAgfVxyXG5cclxuICAgIC5hcnRpY2xlIHtcclxuICAgICAgICAmOmhvdmVyIHtcclxuICAgICAgICAgICAgY29sb3I6IGJsYWNrICFpbXBvcnRhbnQ7XHJcbiAgICAgICAgICAgIGJhY2tncm91bmQtY29sb3I6ICR5ZWxsb3cgIWltcG9ydGFudDtcclxuICAgICAgICAgICAgY3Vyc29yOiBwb2ludGVyO1xyXG4gICAgICAgIH1cclxuICAgIH1cclxuXHJcbiAgICBpbWcuYXJ0aWNsZS1kZXRhaWwge1xyXG4gICAgICAgIHdpZHRoOiAkYXJ0aWNsZS1kZXRhaWwtd2lkdGg7XHJcbiAgICAgICAgbWF4LXdpZHRoOiAkYXJ0aWNsZS1kZXRhaWwtd2lkdGg7XHJcbiAgICAgICAgb3ZlcmZsb3c6IHNjcm9sbDtcclxuICAgIH1cclxuXHJcbiAgICAub2ZmY2FudmFzIHtcclxuICAgICAgICB3aWR0aDogJG9mZmNhbnZhcy13aWR0aCAhaW1wb3J0YW50O1xyXG4gICAgfVxyXG5cclxuICAgIG9iamVjdCB7XHJcbiAgICAgICAgaGVpZ2h0OiAkbXlIZWlnaHQ7XHJcbiAgICB9XHJcblxyXG4gICAgLnNlbGVjdGVkQXJ0aWNsZSB7XHJcbiAgICAgICAgY29sb3I6IGJsYWNrICFpbXBvcnRhbnQ7XHJcbiAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogJHllbGxvdyAhaW1wb3J0YW50O1xyXG4gICAgfVxyXG5cclxuICAgIC5nb1RvcEJ0biB7XHJcbiAgICAgICAgcG9zaXRpb246IGZpeGVkICFpbXBvcnRhbnQ7XHJcbiAgICAgICAgYm90dG9tOiAxcmVtO1xyXG4gICAgICAgIHJpZ2h0OiAxcmVtO1xyXG4gICAgfVxyXG5cclxuICAgIC5zaG93TWVudUJ0biB7XHJcbiAgICAgICAgcG9zaXRpb246IGZpeGVkICFpbXBvcnRhbnQ7XHJcbiAgICAgICAgYm90dG9tOiA0cmVtO1xyXG4gICAgICAgIHJpZ2h0OiAxcmVtO1xyXG4gICAgfVxyXG5cclxufSJdLAogICJtYXBwaW5ncyI6ICI7QUFPSSxDQUFBLElBQUEsQ0FBQTtBQUNJLFVBQUE7QUFDQSxTQUFBOztBQUdKLENBTEEsSUFLQSxDQUFBO0FBR0ksY0FBQTs7QUFFQSxDQVZKLElBVUksQ0FMSixXQUtJO0FBQ0ksY0FBQTs7QUFZSixDQXZCSixJQXVCSSxDQUFBLE9BQUE7QUFDSSxTQUFBO0FBQ0Esb0JBQUE7QUFDQSxVQUFBOztBQUlSLENBOUJBLElBOEJBLEdBQUEsQ0FBQTtBQUNJLFNBbkNlO0FBb0NmLGFBcENlO0FBcUNmLFlBQUE7O0FBR0osQ0FwQ0EsSUFvQ0EsQ0FBQTtBQUNJLFNBQUE7O0FBR0osQ0F4Q0EsSUF3Q0E7QUFDSSxVQWhERzs7QUFtRFAsQ0E1Q0EsSUE0Q0EsQ0FBQTtBQUNJLFNBQUE7QUFDQSxvQkFBQTs7QUFHSixDQWpEQSxJQWlEQSxDQUFBO0FBQ0ksWUFBQTtBQUNBLFVBQUE7QUFDQSxTQUFBOztBQUdKLENBdkRBLElBdURBLENBQUE7QUFDSSxZQUFBO0FBQ0EsVUFBQTtBQUNBLFNBQUE7OyIsCiAgIm5hbWVzIjogW10KfQo= */"]
   });
   let HuggingfaceComponent2 = _HuggingfaceComponent;
   return HuggingfaceComponent2;
@@ -24600,7 +24603,7 @@ var AiConceptComponent = /* @__PURE__ */ (() => {
       }
     },
     dependencies: [NgForOf],
-    styles: ["\n\n.box[_ngcontent-%COMP%]   .logo[_ngcontent-%COMP%] {\n  height: 3rem;\n  width: auto;\n}\n.box[_ngcontent-%COMP%]   .copy-icon[_ngcontent-%COMP%] {\n  height: 1.2rem;\n  width: auto;\n}\n.box[_ngcontent-%COMP%]   .goTopBtn[_ngcontent-%COMP%] {\n  position: fixed !important;\n  bottom: 1rem;\n  right: 1rem;\n}\n.box[_ngcontent-%COMP%]   #ai-accordionList[_ngcontent-%COMP%]   .header[_ngcontent-%COMP%]   .accordion-button[_ngcontent-%COMP%] {\n  transition: background-color 0.2s;\n}\n.box[_ngcontent-%COMP%]   #ai-accordionList[_ngcontent-%COMP%]   .header[_ngcontent-%COMP%]   .accordion-button[_ngcontent-%COMP%]:hover {\n  background-color: #444;\n}\n.box[_ngcontent-%COMP%]   #data-accordionList[_ngcontent-%COMP%]   .header[_ngcontent-%COMP%]   .accordion-button[_ngcontent-%COMP%] {\n  transition: background-color 0.2s;\n}\n.box[_ngcontent-%COMP%]   #data-accordionList[_ngcontent-%COMP%]   .header[_ngcontent-%COMP%]   .accordion-button[_ngcontent-%COMP%]:hover {\n  background-color: #444;\n}\n/*# sourceMappingURL=data:application/json;base64,ewogICJ2ZXJzaW9uIjogMywKICAic291cmNlcyI6IFsic3JjL2FwcC9haS1jb25jZXB0L2FpLWNvbmNlcHQuY29tcG9uZW50LnNjc3MiXSwKICAic291cmNlc0NvbnRlbnQiOiBbIi5ib3gge1xuICAgIC5sb2dvIHtcbiAgICAgICAgaGVpZ2h0OiAzcmVtO1xuICAgICAgICB3aWR0aDogYXV0bztcbiAgICB9XG5cbiAgICAuY29weS1pY29uIHtcbiAgICAgICAgaGVpZ2h0OiAxLjJyZW07XG4gICAgICAgIHdpZHRoOiBhdXRvO1xuICAgIH1cblxuICAgIC5nb1RvcEJ0biB7XG4gICAgICAgIHBvc2l0aW9uOiBmaXhlZCAhaW1wb3J0YW50O1xuICAgICAgICBib3R0b206IDFyZW07XG4gICAgICAgIHJpZ2h0OiAxcmVtO1xuICAgIH1cblxuICAgICNhaS1hY2NvcmRpb25MaXN0IHtcbiAgICAgICAgLmhlYWRlciB7XG4gICAgICAgICAgICAuYWNjb3JkaW9uLWJ1dHRvbiB7XG4gICAgICAgICAgICAgICAgdHJhbnNpdGlvbjogYmFja2dyb3VuZC1jb2xvciAuMnM7XG5cbiAgICAgICAgICAgICAgICAmOmhvdmVyIHtcbiAgICAgICAgICAgICAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogIzQ0NDtcbiAgICAgICAgICAgICAgICB9XG4gICAgICAgICAgICB9XG4gICAgICAgIH1cbiAgICB9XG5cbiAgICAjZGF0YS1hY2NvcmRpb25MaXN0IHtcbiAgICAgICAgLmhlYWRlciB7XG4gICAgICAgICAgICAuYWNjb3JkaW9uLWJ1dHRvbiB7XG4gICAgICAgICAgICAgICAgdHJhbnNpdGlvbjogYmFja2dyb3VuZC1jb2xvciAuMnM7XG5cbiAgICAgICAgICAgICAgICAmOmhvdmVyIHtcbiAgICAgICAgICAgICAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogIzQ0NDtcbiAgICAgICAgICAgICAgICB9XG4gICAgICAgICAgICB9XG4gICAgICAgIH1cbiAgICB9XG5cbn0iXSwKICAibWFwcGluZ3MiOiAiO0FBQ0ksQ0FBQSxJQUFBLENBQUE7QUFDSSxVQUFBO0FBQ0EsU0FBQTs7QUFHSixDQUxBLElBS0EsQ0FBQTtBQUNJLFVBQUE7QUFDQSxTQUFBOztBQUdKLENBVkEsSUFVQSxDQUFBO0FBQ0ksWUFBQTtBQUNBLFVBQUE7QUFDQSxTQUFBOztBQUtJLENBbEJSLElBa0JRLENBQUEsaUJBQUEsQ0FBQSxPQUFBLENBQUE7QUFDSSxjQUFBLGlCQUFBOztBQUVBLENBckJaLElBcUJZLENBSEosaUJBR0ksQ0FISixPQUdJLENBSEosZ0JBR0k7QUFDSSxvQkFBQTs7QUFRUixDQTlCUixJQThCUSxDQUFBLG1CQUFBLENBWkEsT0FZQSxDQVpBO0FBYUksY0FBQSxpQkFBQTs7QUFFQSxDQWpDWixJQWlDWSxDQUhKLG1CQUdJLENBZkosT0FlSSxDQWZKLGdCQWVJO0FBQ0ksb0JBQUE7OyIsCiAgIm5hbWVzIjogW10KfQo= */"]
+    styles: ["\n\n.box[_ngcontent-%COMP%]   .logo[_ngcontent-%COMP%] {\n  height: 3rem;\n  width: auto;\n}\n.box[_ngcontent-%COMP%]   .copy-icon[_ngcontent-%COMP%] {\n  height: 1.2rem;\n  width: auto;\n}\n.box[_ngcontent-%COMP%]   .goTopBtn[_ngcontent-%COMP%] {\n  position: fixed !important;\n  bottom: 1rem;\n  right: 1rem;\n}\n.box[_ngcontent-%COMP%]   #ai-accordionList[_ngcontent-%COMP%]   .header[_ngcontent-%COMP%]   .accordion-button[_ngcontent-%COMP%] {\n  transition: background-color 0.2s;\n}\n.box[_ngcontent-%COMP%]   #ai-accordionList[_ngcontent-%COMP%]   .header[_ngcontent-%COMP%]   .accordion-button[_ngcontent-%COMP%]:hover {\n  background-color: #444;\n}\n.box[_ngcontent-%COMP%]   #data-accordionList[_ngcontent-%COMP%]   .header[_ngcontent-%COMP%]   .accordion-button[_ngcontent-%COMP%] {\n  transition: background-color 0.2s;\n}\n.box[_ngcontent-%COMP%]   #data-accordionList[_ngcontent-%COMP%]   .header[_ngcontent-%COMP%]   .accordion-button[_ngcontent-%COMP%]:hover {\n  background-color: #444;\n}\n/*# sourceMappingURL=data:application/json;base64,ewogICJ2ZXJzaW9uIjogMywKICAic291cmNlcyI6IFsic3JjL2FwcC9haS1jb25jZXB0L2FpLWNvbmNlcHQuY29tcG9uZW50LnNjc3MiXSwKICAic291cmNlc0NvbnRlbnQiOiBbIi5ib3gge1xyXG4gICAgLmxvZ28ge1xyXG4gICAgICAgIGhlaWdodDogM3JlbTtcclxuICAgICAgICB3aWR0aDogYXV0bztcclxuICAgIH1cclxuXHJcbiAgICAuY29weS1pY29uIHtcclxuICAgICAgICBoZWlnaHQ6IDEuMnJlbTtcclxuICAgICAgICB3aWR0aDogYXV0bztcclxuICAgIH1cclxuXHJcbiAgICAuZ29Ub3BCdG4ge1xyXG4gICAgICAgIHBvc2l0aW9uOiBmaXhlZCAhaW1wb3J0YW50O1xyXG4gICAgICAgIGJvdHRvbTogMXJlbTtcclxuICAgICAgICByaWdodDogMXJlbTtcclxuICAgIH1cclxuXHJcbiAgICAjYWktYWNjb3JkaW9uTGlzdCB7XHJcbiAgICAgICAgLmhlYWRlciB7XHJcbiAgICAgICAgICAgIC5hY2NvcmRpb24tYnV0dG9uIHtcclxuICAgICAgICAgICAgICAgIHRyYW5zaXRpb246IGJhY2tncm91bmQtY29sb3IgLjJzO1xyXG5cclxuICAgICAgICAgICAgICAgICY6aG92ZXIge1xyXG4gICAgICAgICAgICAgICAgICAgIGJhY2tncm91bmQtY29sb3I6ICM0NDQ7XHJcbiAgICAgICAgICAgICAgICB9XHJcbiAgICAgICAgICAgIH1cclxuICAgICAgICB9XHJcbiAgICB9XHJcblxyXG4gICAgI2RhdGEtYWNjb3JkaW9uTGlzdCB7XHJcbiAgICAgICAgLmhlYWRlciB7XHJcbiAgICAgICAgICAgIC5hY2NvcmRpb24tYnV0dG9uIHtcclxuICAgICAgICAgICAgICAgIHRyYW5zaXRpb246IGJhY2tncm91bmQtY29sb3IgLjJzO1xyXG5cclxuICAgICAgICAgICAgICAgICY6aG92ZXIge1xyXG4gICAgICAgICAgICAgICAgICAgIGJhY2tncm91bmQtY29sb3I6ICM0NDQ7XHJcbiAgICAgICAgICAgICAgICB9XHJcbiAgICAgICAgICAgIH1cclxuICAgICAgICB9XHJcbiAgICB9XHJcblxyXG59Il0sCiAgIm1hcHBpbmdzIjogIjtBQUNJLENBQUEsSUFBQSxDQUFBO0FBQ0ksVUFBQTtBQUNBLFNBQUE7O0FBR0osQ0FMQSxJQUtBLENBQUE7QUFDSSxVQUFBO0FBQ0EsU0FBQTs7QUFHSixDQVZBLElBVUEsQ0FBQTtBQUNJLFlBQUE7QUFDQSxVQUFBO0FBQ0EsU0FBQTs7QUFLSSxDQWxCUixJQWtCUSxDQUFBLGlCQUFBLENBQUEsT0FBQSxDQUFBO0FBQ0ksY0FBQSxpQkFBQTs7QUFFQSxDQXJCWixJQXFCWSxDQUhKLGlCQUdJLENBSEosT0FHSSxDQUhKLGdCQUdJO0FBQ0ksb0JBQUE7O0FBUVIsQ0E5QlIsSUE4QlEsQ0FBQSxtQkFBQSxDQVpBLE9BWUEsQ0FaQTtBQWFJLGNBQUEsaUJBQUE7O0FBRUEsQ0FqQ1osSUFpQ1ksQ0FISixtQkFHSSxDQWZKLE9BZUksQ0FmSixnQkFlSTtBQUNJLG9CQUFBOzsiLAogICJuYW1lcyI6IFtdCn0K */"]
   });
   let AiConceptComponent2 = _AiConceptComponent;
   return AiConceptComponent2;
@@ -27377,708 +27380,758 @@ var FormsModule = /* @__PURE__ */ (() => {
 var _c03 = ["fileInput"];
 function MdScreenRecordComponent_li_10_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "li", 23);
-    \u0275\u0275element(1, "i", 24);
+    \u0275\u0275elementStart(0, "li", 29);
+    \u0275\u0275element(1, "i", 30);
     \u0275\u0275text(2);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
-    const rule_r6 = ctx.$implicit;
+    const rule_r7 = ctx.$implicit;
     \u0275\u0275advance(2);
-    \u0275\u0275textInterpolate1("", rule_r6, " ");
+    \u0275\u0275textInterpolate1("", rule_r7, " ");
   }
 }
-function MdScreenRecordComponent_button_14_Template(rf, ctx) {
+function MdScreenRecordComponent_table_22_tr_8_Template(rf, ctx) {
   if (rf & 1) {
-    const _r8 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "button", 25);
-    \u0275\u0275listener("click", function MdScreenRecordComponent_button_14_Template_button_click_0_listener() {
-      \u0275\u0275restoreView(_r8);
-      const ctx_r7 = \u0275\u0275nextContext();
-      return \u0275\u0275resetView(ctx_r7.goToTop());
+    const _r11 = \u0275\u0275getCurrentView();
+    \u0275\u0275elementStart(0, "tr", 34)(1, "th", 35)(2, "button", 36);
+    \u0275\u0275listener("click", function MdScreenRecordComponent_table_22_tr_8_Template_button_click_2_listener() {
+      const restoredCtx = \u0275\u0275restoreView(_r11);
+      const tts_r9 = restoredCtx.$implicit;
+      const ctx_r10 = \u0275\u0275nextContext(2);
+      return \u0275\u0275resetView(ctx_r10.copyTTS(tts_r9));
     });
-    \u0275\u0275element(1, "i", 26);
-    \u0275\u0275elementEnd();
+    \u0275\u0275element(3, "i", 37);
+    \u0275\u0275elementEnd()();
+    \u0275\u0275elementStart(4, "th", 38);
+    \u0275\u0275text(5);
+    \u0275\u0275elementEnd()();
+  }
+  if (rf & 2) {
+    const tts_r9 = ctx.$implicit;
+    \u0275\u0275advance(5);
+    \u0275\u0275textInterpolate(tts_r9);
   }
 }
-function MdScreenRecordComponent_button_15_Template(rf, ctx) {
+function MdScreenRecordComponent_table_22_Template(rf, ctx) {
   if (rf & 1) {
-    const _r10 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "button", 27);
-    \u0275\u0275listener("click", function MdScreenRecordComponent_button_15_Template_button_click_0_listener() {
-      \u0275\u0275restoreView(_r10);
-      const ctx_r9 = \u0275\u0275nextContext();
-      return \u0275\u0275resetView(ctx_r9.refreshPage());
-    });
-    \u0275\u0275element(1, "i", 28);
+    \u0275\u0275elementStart(0, "table", 31)(1, "thead")(2, "tr")(3, "th", 32);
+    \u0275\u0275text(4, "Copy");
     \u0275\u0275elementEnd();
+    \u0275\u0275elementStart(5, "th", 32);
+    \u0275\u0275text(6, "Text for Creating Speech");
+    \u0275\u0275elementEnd()()();
+    \u0275\u0275elementStart(7, "tbody");
+    \u0275\u0275template(8, MdScreenRecordComponent_table_22_tr_8_Template, 6, 1, "tr", 33);
+    \u0275\u0275elementEnd()();
+  }
+  if (rf & 2) {
+    const ctx_r1 = \u0275\u0275nextContext();
+    \u0275\u0275advance(8);
+    \u0275\u0275property("ngForOf", ctx_r1.ttsList);
   }
 }
-function MdScreenRecordComponent_div_16_Template(rf, ctx) {
+function MdScreenRecordComponent_button_26_Template(rf, ctx) {
   if (rf & 1) {
     const _r13 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "div", 29)(1, "div", 30)(2, "div", 31);
-    \u0275\u0275text(3, " MarkDown Screen Recording with Voice ");
-    \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(4, "div", 32)(5, "div", 33)(6, "a", 34);
-    \u0275\u0275element(7, "i", 35);
-    \u0275\u0275text(8, " Go Home ");
-    \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(9, "button", 36);
-    \u0275\u0275element(10, "i", 37);
-    \u0275\u0275text(11, "Write Rule ");
-    \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(12, "input", 38, 39);
-    \u0275\u0275listener("change", function MdScreenRecordComponent_div_16_Template_input_change_12_listener($event) {
+    \u0275\u0275elementStart(0, "button", 39);
+    \u0275\u0275listener("click", function MdScreenRecordComponent_button_26_Template_button_click_0_listener() {
       \u0275\u0275restoreView(_r13);
       const ctx_r12 = \u0275\u0275nextContext();
-      return \u0275\u0275resetView(ctx_r12.fileInputChanged($event));
+      return \u0275\u0275resetView(ctx_r12.goToTop());
+    });
+    \u0275\u0275element(1, "i", 40);
+    \u0275\u0275elementEnd();
+  }
+}
+function MdScreenRecordComponent_button_27_Template(rf, ctx) {
+  if (rf & 1) {
+    const _r15 = \u0275\u0275getCurrentView();
+    \u0275\u0275elementStart(0, "button", 41);
+    \u0275\u0275listener("click", function MdScreenRecordComponent_button_27_Template_button_click_0_listener() {
+      \u0275\u0275restoreView(_r15);
+      const ctx_r14 = \u0275\u0275nextContext();
+      return \u0275\u0275resetView(ctx_r14.refreshPage());
+    });
+    \u0275\u0275element(1, "i", 42);
+    \u0275\u0275elementEnd();
+  }
+}
+function MdScreenRecordComponent_div_28_Template(rf, ctx) {
+  if (rf & 1) {
+    const _r18 = \u0275\u0275getCurrentView();
+    \u0275\u0275elementStart(0, "div", 43)(1, "div", 44)(2, "div", 45);
+    \u0275\u0275text(3, " MarkDown Screen Recording with Voice ");
+    \u0275\u0275elementEnd();
+    \u0275\u0275elementStart(4, "div", 46)(5, "div", 47)(6, "a", 48);
+    \u0275\u0275element(7, "i", 49);
+    \u0275\u0275text(8, " Go Home ");
+    \u0275\u0275elementEnd();
+    \u0275\u0275elementStart(9, "button", 50);
+    \u0275\u0275element(10, "i", 51);
+    \u0275\u0275text(11, "Write Rule ");
+    \u0275\u0275elementEnd();
+    \u0275\u0275elementStart(12, "input", 52, 53);
+    \u0275\u0275listener("change", function MdScreenRecordComponent_div_28_Template_input_change_12_listener($event) {
+      \u0275\u0275restoreView(_r18);
+      const ctx_r17 = \u0275\u0275nextContext();
+      return \u0275\u0275resetView(ctx_r17.fileInputChanged($event));
     });
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(14, "label", 40);
-    \u0275\u0275element(15, "i", 41);
+    \u0275\u0275elementStart(14, "label", 54);
+    \u0275\u0275element(15, "i", 55);
     \u0275\u0275text(16, " Select a MD File ");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(17, "button", 42);
-    \u0275\u0275listener("click", function MdScreenRecordComponent_div_16_Template_button_click_17_listener() {
-      \u0275\u0275restoreView(_r13);
-      const ctx_r14 = \u0275\u0275nextContext();
-      return \u0275\u0275resetView(ctx_r14.analysis());
+    \u0275\u0275elementStart(17, "button", 56);
+    \u0275\u0275listener("click", function MdScreenRecordComponent_div_28_Template_button_click_17_listener() {
+      \u0275\u0275restoreView(_r18);
+      const ctx_r19 = \u0275\u0275nextContext();
+      return \u0275\u0275resetView(ctx_r19.analysis());
     });
-    \u0275\u0275element(18, "i", 43);
+    \u0275\u0275element(18, "i", 57);
     \u0275\u0275text(19, " Analysis MD ");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(20, "button", 44);
-    \u0275\u0275listener("click", function MdScreenRecordComponent_div_16_Template_button_click_20_listener() {
-      \u0275\u0275restoreView(_r13);
-      const ctx_r15 = \u0275\u0275nextContext();
-      return \u0275\u0275resetView(ctx_r15.getStarted());
-    });
-    \u0275\u0275element(21, "i", 45);
-    \u0275\u0275text(22, "Get started ");
+    \u0275\u0275elementStart(20, "button", 58);
+    \u0275\u0275element(21, "i", 59);
+    \u0275\u0275text(22, " Run TTS ");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(23, "button", 46);
-    \u0275\u0275listener("click", function MdScreenRecordComponent_div_16_Template_button_click_23_listener() {
-      \u0275\u0275restoreView(_r13);
-      const ctx_r16 = \u0275\u0275nextContext();
-      return \u0275\u0275resetView(ctx_r16.resetFileInput());
+    \u0275\u0275elementStart(23, "button", 60);
+    \u0275\u0275listener("click", function MdScreenRecordComponent_div_28_Template_button_click_23_listener() {
+      \u0275\u0275restoreView(_r18);
+      const ctx_r20 = \u0275\u0275nextContext();
+      return \u0275\u0275resetView(ctx_r20.getStarted());
     });
-    \u0275\u0275element(24, "i", 47);
-    \u0275\u0275text(25, "Clean ");
+    \u0275\u0275element(24, "i", 61);
+    \u0275\u0275text(25, "Get started ");
+    \u0275\u0275elementEnd();
+    \u0275\u0275elementStart(26, "button", 62);
+    \u0275\u0275listener("click", function MdScreenRecordComponent_div_28_Template_button_click_26_listener() {
+      \u0275\u0275restoreView(_r18);
+      const ctx_r21 = \u0275\u0275nextContext();
+      return \u0275\u0275resetView(ctx_r21.resetFileInput());
+    });
+    \u0275\u0275element(27, "i", 63);
+    \u0275\u0275text(28, "Clean ");
     \u0275\u0275elementEnd()()()()();
   }
   if (rf & 2) {
-    const ctx_r3 = \u0275\u0275nextContext();
+    const ctx_r4 = \u0275\u0275nextContext();
     \u0275\u0275advance(17);
-    \u0275\u0275property("disabled", !ctx_r3.readyAnalysis);
+    \u0275\u0275property("disabled", !ctx_r4.readyAnalysis);
     \u0275\u0275advance(3);
-    \u0275\u0275property("disabled", ctx_r3.readyGetStarted == false);
+    \u0275\u0275property("disabled", ctx_r4.ttsList.length == 0);
     \u0275\u0275advance(3);
-    \u0275\u0275property("disabled", !ctx_r3.readyAnalysis);
+    \u0275\u0275property("disabled", ctx_r4.readyGetStarted == false);
+    \u0275\u0275advance(3);
+    \u0275\u0275property("disabled", !ctx_r4.readyAnalysis);
   }
 }
-function MdScreenRecordComponent_div_19_div_1_li_5_Template(rf, ctx) {
+function MdScreenRecordComponent_div_31_div_1_li_5_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "li", 96);
+    \u0275\u0275elementStart(0, "li", 112);
     \u0275\u0275text(1);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
-    const tip_r20 = ctx.$implicit;
+    const tip_r25 = ctx.$implicit;
     \u0275\u0275advance(1);
-    \u0275\u0275textInterpolate(tip_r20);
+    \u0275\u0275textInterpolate(tip_r25);
   }
 }
 var _c12 = (a0, a1) => ({
   "text-warning": a0,
   "text-danger": a1
 });
-function MdScreenRecordComponent_div_19_div_1_Template(rf, ctx) {
+function MdScreenRecordComponent_div_31_div_1_Template(rf, ctx) {
   if (rf & 1) {
-    const _r22 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "div", 51)(1, "div", 52)(2, "h1", 53);
+    const _r27 = \u0275\u0275getCurrentView();
+    \u0275\u0275elementStart(0, "div", 67)(1, "div", 68)(2, "h1", 69);
     \u0275\u0275text(3);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(4, "ul", 54);
-    \u0275\u0275template(5, MdScreenRecordComponent_div_19_div_1_li_5_Template, 2, 1, "li", 55);
+    \u0275\u0275elementStart(4, "ul", 70);
+    \u0275\u0275template(5, MdScreenRecordComponent_div_31_div_1_li_5_Template, 2, 1, "li", 71);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(6, "div", 54);
-    \u0275\u0275element(7, "img", 56)(8, "img", 57)(9, "img", 58)(10, "img", 59)(11, "img", 58)(12, "img", 60);
-    \u0275\u0275elementStart(13, "span", 61);
+    \u0275\u0275elementStart(6, "div", 70);
+    \u0275\u0275element(7, "img", 72)(8, "img", 73)(9, "img", 74)(10, "img", 75)(11, "img", 74)(12, "img", 76);
+    \u0275\u0275elementStart(13, "span", 77);
     \u0275\u0275text(14, "+");
     \u0275\u0275elementEnd();
-    \u0275\u0275element(15, "img", 62);
+    \u0275\u0275element(15, "img", 78);
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(16, "div", 32)(17, "form", 63)(18, "div", 64)(19, "div", 65)(20, "p", 66);
-    \u0275\u0275element(21, "i", 67);
+    \u0275\u0275elementStart(16, "div", 46)(17, "form", 79)(18, "div", 80)(19, "div", 81)(20, "p", 82);
+    \u0275\u0275element(21, "i", 83);
     \u0275\u0275text(22, "Ready Seconds \u5F55\u5C4F\u5012\u8BA1\u65F6 ");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(23, "p", 68);
+    \u0275\u0275elementStart(23, "p", 84);
     \u0275\u0275text(24, "\u6B63\u5F0F\u5F00\u59CB\u524D\u7684\u5012\u8BA1\u65F6\u79D2\u6570 ( \u70B9\u70DF\u65F6\u95F4 )");
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(25, "div", 69)(26, "input", 70);
-    \u0275\u0275listener("ngModelChange", function MdScreenRecordComponent_div_19_div_1_Template_input_ngModelChange_26_listener($event) {
-      \u0275\u0275restoreView(_r22);
-      const ctx_r21 = \u0275\u0275nextContext(2);
-      return \u0275\u0275resetView(ctx_r21.readySecond = $event);
+    \u0275\u0275elementStart(25, "div", 85)(26, "input", 86);
+    \u0275\u0275listener("ngModelChange", function MdScreenRecordComponent_div_31_div_1_Template_input_ngModelChange_26_listener($event) {
+      \u0275\u0275restoreView(_r27);
+      const ctx_r26 = \u0275\u0275nextContext(2);
+      return \u0275\u0275resetView(ctx_r26.readySecond = $event);
     });
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(27, "span", 71);
+    \u0275\u0275elementStart(27, "span", 87);
     \u0275\u0275text(28, "\u79D2");
     \u0275\u0275elementEnd()()();
-    \u0275\u0275elementStart(29, "div", 64)(30, "div", 72)(31, "p", 66);
-    \u0275\u0275element(32, "i", 73);
+    \u0275\u0275elementStart(29, "div", 80)(30, "div", 88)(31, "p", 82);
+    \u0275\u0275element(32, "i", 89);
     \u0275\u0275text(33, "Wait for Big Title \u7B49\u5F85\u663E\u793A\u5927\u6807\u9898 ");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(34, "p", 68);
+    \u0275\u0275elementStart(34, "p", 84);
     \u0275\u0275text(35, "\u5F55\u5C4F\u8F6F\u4EF6\u8FD0\u884C\u540E\u7B49\u5F85\u663E\u793A\u5927\u6807\u9898\u7684\u79D2\u6570");
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(36, "div", 69)(37, "input", 74);
-    \u0275\u0275listener("ngModelChange", function MdScreenRecordComponent_div_19_div_1_Template_input_ngModelChange_37_listener($event) {
-      \u0275\u0275restoreView(_r22);
-      const ctx_r23 = \u0275\u0275nextContext(2);
-      return \u0275\u0275resetView(ctx_r23.waitForBigTitleSecond = $event);
+    \u0275\u0275elementStart(36, "div", 85)(37, "input", 90);
+    \u0275\u0275listener("ngModelChange", function MdScreenRecordComponent_div_31_div_1_Template_input_ngModelChange_37_listener($event) {
+      \u0275\u0275restoreView(_r27);
+      const ctx_r28 = \u0275\u0275nextContext(2);
+      return \u0275\u0275resetView(ctx_r28.waitForBigTitleSecond = $event);
     });
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(38, "span", 71);
+    \u0275\u0275elementStart(38, "span", 87);
     \u0275\u0275text(39, "\u79D2");
     \u0275\u0275elementEnd()()();
-    \u0275\u0275elementStart(40, "div", 64)(41, "div", 75)(42, "p", 66);
-    \u0275\u0275element(43, "i", 76);
+    \u0275\u0275elementStart(40, "div", 80)(41, "div", 91)(42, "p", 82);
+    \u0275\u0275element(43, "i", 92);
     \u0275\u0275text(44, "Content Delay Seconds \u663E\u793A\u5927\u6807\u9898 ( \u6587\u4EF6\u540D ) \u540E\u7B49\u5F85\u65F6\u95F4 ");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(45, "p", 68);
+    \u0275\u0275elementStart(45, "p", 84);
     \u0275\u0275text(46, "\u663E\u793A\u6587\u4EF6\u540D\u540E\uFF0C\u904D\u5386\u6587\u4EF6\u5185\u5BB9\u524D\u7684\u5EF6\u8FDF\u79D2\u6570");
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(47, "div", 69)(48, "input", 77);
-    \u0275\u0275listener("ngModelChange", function MdScreenRecordComponent_div_19_div_1_Template_input_ngModelChange_48_listener($event) {
-      \u0275\u0275restoreView(_r22);
-      const ctx_r24 = \u0275\u0275nextContext(2);
-      return \u0275\u0275resetView(ctx_r24.contentDelaySecond = $event);
+    \u0275\u0275elementStart(47, "div", 85)(48, "input", 93);
+    \u0275\u0275listener("ngModelChange", function MdScreenRecordComponent_div_31_div_1_Template_input_ngModelChange_48_listener($event) {
+      \u0275\u0275restoreView(_r27);
+      const ctx_r29 = \u0275\u0275nextContext(2);
+      return \u0275\u0275resetView(ctx_r29.contentDelaySecond = $event);
     });
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(49, "span", 71);
+    \u0275\u0275elementStart(49, "span", 87);
     \u0275\u0275text(50, "\u79D2");
     \u0275\u0275elementEnd()()();
-    \u0275\u0275elementStart(51, "div", 64)(52, "div", 78)(53, "p", 66);
-    \u0275\u0275element(54, "i", 79);
+    \u0275\u0275elementStart(51, "div", 80)(52, "div", 94)(53, "p", 82);
+    \u0275\u0275element(54, "i", 95);
     \u0275\u0275text(55, "Title Before Delay Second \u7B49\u5F85\u4E0B\u4E00\u90E8\u5206\u51FA\u73B0\u7684\u5EF6\u8FDF\u79D2\u6570 ");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(56, "p", 68);
+    \u0275\u0275elementStart(56, "p", 84);
     \u0275\u0275text(57, "\u4E0A\u4E00\u4E2A\u90E8\u5206\u663E\u793A\u5B8C\u540E\u7B49\u5F85\u4E0B\u4E00\u90E8\u5206\u51FA\u73B0\u7684\u5EF6\u8FDF\u79D2\u6570");
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(58, "div", 69)(59, "input", 80);
-    \u0275\u0275listener("ngModelChange", function MdScreenRecordComponent_div_19_div_1_Template_input_ngModelChange_59_listener($event) {
-      \u0275\u0275restoreView(_r22);
-      const ctx_r25 = \u0275\u0275nextContext(2);
-      return \u0275\u0275resetView(ctx_r25.titleBeforeDelaySecond = $event);
+    \u0275\u0275elementStart(58, "div", 85)(59, "input", 96);
+    \u0275\u0275listener("ngModelChange", function MdScreenRecordComponent_div_31_div_1_Template_input_ngModelChange_59_listener($event) {
+      \u0275\u0275restoreView(_r27);
+      const ctx_r30 = \u0275\u0275nextContext(2);
+      return \u0275\u0275resetView(ctx_r30.titleBeforeDelaySecond = $event);
     });
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(60, "span", 71);
+    \u0275\u0275elementStart(60, "span", 87);
     \u0275\u0275text(61, "\u79D2");
     \u0275\u0275elementEnd()()();
-    \u0275\u0275elementStart(62, "div", 64)(63, "div", 81)(64, "p", 66);
-    \u0275\u0275element(65, "i", 82);
+    \u0275\u0275elementStart(62, "div", 80)(63, "div", 97)(64, "p", 82);
+    \u0275\u0275element(65, "i", 98);
     \u0275\u0275text(66, "Row Delay Seconds \u904D\u5386\u5230\u5F53\u524D\u884C\u540E\u7B49\u5F85\u65F6\u95F4 ");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(67, "p", 68);
+    \u0275\u0275elementStart(67, "p", 84);
     \u0275\u0275text(68, "\u904D\u5386\u5230\u6BCF\u4E00\u884C\u540E\uFF0C\u663E\u793A\u5B57\u6BCD ( \u6587\u5B57 ) \u524D\u7684\u5EF6\u8FDF\u79D2\u6570");
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(69, "div", 69)(70, "input", 83);
-    \u0275\u0275listener("ngModelChange", function MdScreenRecordComponent_div_19_div_1_Template_input_ngModelChange_70_listener($event) {
-      \u0275\u0275restoreView(_r22);
-      const ctx_r26 = \u0275\u0275nextContext(2);
-      return \u0275\u0275resetView(ctx_r26.rowDelaySecond = $event);
+    \u0275\u0275elementStart(69, "div", 85)(70, "input", 99);
+    \u0275\u0275listener("ngModelChange", function MdScreenRecordComponent_div_31_div_1_Template_input_ngModelChange_70_listener($event) {
+      \u0275\u0275restoreView(_r27);
+      const ctx_r31 = \u0275\u0275nextContext(2);
+      return \u0275\u0275resetView(ctx_r31.rowDelaySecond = $event);
     });
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(71, "span", 71);
+    \u0275\u0275elementStart(71, "span", 87);
     \u0275\u0275text(72, "\u79D2");
     \u0275\u0275elementEnd()()();
-    \u0275\u0275elementStart(73, "div", 64)(74, "div", 84)(75, "p", 66);
-    \u0275\u0275element(76, "i", 85);
+    \u0275\u0275elementStart(73, "div", 80)(74, "div", 100)(75, "p", 82);
+    \u0275\u0275element(76, "i", 101);
     \u0275\u0275text(77, "Letter Delay Seconds \u904D\u5386\u6BCF\u4E2A\u5B57\u6BCD ( \u6587\u5B57 ) \u540E\u7B49\u5F85\u65F6\u95F4 ");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(78, "p", 68);
+    \u0275\u0275elementStart(78, "p", 84);
     \u0275\u0275text(79, "\u6807\u9898\u3001\u89E3\u91CA\u6BCF\u4E2A\u5B57\u7B26\u7684\u5EF6\u8FDF\u79D2\u6570\u3010AI \u7A0B\u5E8F\u4EE3\u7801\u4E0D\u591A\uFF0C\u4F46\u7406\u8BBA\u903B\u8F91\u66F4\u91CD\u8981\uFF0C\u53EF\u4EE5\u663E\u793A\u6162\u4E00\u4E9B\u3011");
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(80, "div", 69)(81, "input", 86);
-    \u0275\u0275listener("ngModelChange", function MdScreenRecordComponent_div_19_div_1_Template_input_ngModelChange_81_listener($event) {
-      \u0275\u0275restoreView(_r22);
-      const ctx_r27 = \u0275\u0275nextContext(2);
-      return \u0275\u0275resetView(ctx_r27.letterDelaySecond = $event);
+    \u0275\u0275elementStart(80, "div", 85)(81, "input", 102);
+    \u0275\u0275listener("ngModelChange", function MdScreenRecordComponent_div_31_div_1_Template_input_ngModelChange_81_listener($event) {
+      \u0275\u0275restoreView(_r27);
+      const ctx_r32 = \u0275\u0275nextContext(2);
+      return \u0275\u0275resetView(ctx_r32.letterDelaySecond = $event);
     });
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(82, "span", 71);
+    \u0275\u0275elementStart(82, "span", 87);
     \u0275\u0275text(83, "\u79D2");
     \u0275\u0275elementEnd()()();
-    \u0275\u0275elementStart(84, "div", 64)(85, "div", 87)(86, "p", 66);
-    \u0275\u0275element(87, "i", 88);
+    \u0275\u0275elementStart(84, "div", 80)(85, "div", 103)(86, "p", 82);
+    \u0275\u0275element(87, "i", 104);
     \u0275\u0275text(88, "Program Delay Seconds \u904D\u5386\u7A0B\u5E8F\u4EE3\u7801\u7684\u6BCF\u4E2A\u5B57\u7B26\u540E\u7684\u7B49\u5F85\u65F6\u95F4 ");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(89, "p", 68);
+    \u0275\u0275elementStart(89, "p", 84);
     \u0275\u0275text(90, "\u7A0B\u5E8F\u4EE3\u7801\u4EE5\u53CA\u8F93\u51FA\u7ED3\u679C\u53EF\u4EE5\u52A0\u5FEB\u663E\u793A\u3010\u7A0B\u5E8F\u4EE3\u7801\u4EE5\u53CA\u8F93\u51FA\u7ED3\u679C\u53EF\u4EE5\u663E\u793A\u7684\u5FEB\u4E00\u4E9B\u3011");
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(91, "div", 69)(92, "input", 89);
-    \u0275\u0275listener("ngModelChange", function MdScreenRecordComponent_div_19_div_1_Template_input_ngModelChange_92_listener($event) {
-      \u0275\u0275restoreView(_r22);
-      const ctx_r28 = \u0275\u0275nextContext(2);
-      return \u0275\u0275resetView(ctx_r28.programDelaySecond = $event);
+    \u0275\u0275elementStart(91, "div", 85)(92, "input", 105);
+    \u0275\u0275listener("ngModelChange", function MdScreenRecordComponent_div_31_div_1_Template_input_ngModelChange_92_listener($event) {
+      \u0275\u0275restoreView(_r27);
+      const ctx_r33 = \u0275\u0275nextContext(2);
+      return \u0275\u0275resetView(ctx_r33.programDelaySecond = $event);
     });
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(93, "span", 71);
+    \u0275\u0275elementStart(93, "span", 87);
     \u0275\u0275text(94, "\u79D2");
     \u0275\u0275elementEnd()()();
-    \u0275\u0275elementStart(95, "div", 64)(96, "div", 90)(97, "p", 66);
-    \u0275\u0275element(98, "i", 91);
+    \u0275\u0275elementStart(95, "div", 80)(96, "div", 106)(97, "p", 82);
+    \u0275\u0275element(98, "i", 107);
     \u0275\u0275text(99, "Output Delay Seconds \u904D\u5386\u8F93\u51FA\u7ED3\u679C\u7684\u6BCF\u884C\u5185\u5BB9\u540E\u7684\u7B49\u5F85\u65F6\u95F4 ");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(100, "p", 68);
+    \u0275\u0275elementStart(100, "p", 84);
     \u0275\u0275text(101, "\u6BCF\u4E00\u6BB5\u7A0B\u5E8F\u4EE3\u7801\u7684\u8F93\u51FA\u7ED3\u679C\u53EF\u4EE5\u52A0\u5FEB\u663E\u793A");
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(102, "div", 69)(103, "input", 92);
-    \u0275\u0275listener("ngModelChange", function MdScreenRecordComponent_div_19_div_1_Template_input_ngModelChange_103_listener($event) {
-      \u0275\u0275restoreView(_r22);
-      const ctx_r29 = \u0275\u0275nextContext(2);
-      return \u0275\u0275resetView(ctx_r29.outputLineDelaySecond = $event);
+    \u0275\u0275elementStart(102, "div", 85)(103, "input", 108);
+    \u0275\u0275listener("ngModelChange", function MdScreenRecordComponent_div_31_div_1_Template_input_ngModelChange_103_listener($event) {
+      \u0275\u0275restoreView(_r27);
+      const ctx_r34 = \u0275\u0275nextContext(2);
+      return \u0275\u0275resetView(ctx_r34.outputLineDelaySecond = $event);
     });
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(104, "span", 71);
+    \u0275\u0275elementStart(104, "span", 87);
     \u0275\u0275text(105, "\u79D2");
     \u0275\u0275elementEnd()()();
-    \u0275\u0275elementStart(106, "div", 64)(107, "div", 93)(108, "p", 66);
-    \u0275\u0275element(109, "i", 94);
+    \u0275\u0275elementStart(106, "div", 80)(107, "div", 109)(108, "p", 82);
+    \u0275\u0275element(109, "i", 110);
     \u0275\u0275text(110, "TTS Text Seconds Multiple \u751F\u6210 TTS \u6587\u5B57\u7684\u6570\u5B57\u5B57\u7B26\u4E32\u7684\u500D\u7387 ");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(111, "p", 68);
+    \u0275\u0275elementStart(111, "p", 84);
     \u0275\u0275text(112, "\u7A0B\u5E8F\u540E\u53F0\u904D\u5386\u8FD9\u4E2A\u6570\u5B57\u6570\u7EC4\uFF0C\u7B49\u5F85 TTS \u8BED\u97F3\u64AD\u653E\u5B8C\u6210");
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(113, "div", 69)(114, "input", 95);
-    \u0275\u0275listener("ngModelChange", function MdScreenRecordComponent_div_19_div_1_Template_input_ngModelChange_114_listener($event) {
-      \u0275\u0275restoreView(_r22);
-      const ctx_r30 = \u0275\u0275nextContext(2);
-      return \u0275\u0275resetView(ctx_r30.ttsTextSecondsMultiple = $event);
+    \u0275\u0275elementStart(113, "div", 85)(114, "input", 111);
+    \u0275\u0275listener("ngModelChange", function MdScreenRecordComponent_div_31_div_1_Template_input_ngModelChange_114_listener($event) {
+      \u0275\u0275restoreView(_r27);
+      const ctx_r35 = \u0275\u0275nextContext(2);
+      return \u0275\u0275resetView(ctx_r35.ttsTextSecondsMultiple = $event);
     });
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(115, "span", 71);
+    \u0275\u0275elementStart(115, "span", 87);
     \u0275\u0275text(116, "\u79D2");
     \u0275\u0275elementEnd()()()()()();
   }
   if (rf & 2) {
-    const ctx_r17 = \u0275\u0275nextContext(2);
+    const ctx_r22 = \u0275\u0275nextContext(2);
     \u0275\u0275advance(2);
-    \u0275\u0275property("ngClass", \u0275\u0275pureFunction2(12, _c12, ctx_r17.isGetStarted == false, ctx_r17.isGetStarted == true));
+    \u0275\u0275property("ngClass", \u0275\u0275pureFunction2(12, _c12, ctx_r22.isGetStarted == false, ctx_r22.isGetStarted == true));
     \u0275\u0275advance(1);
-    \u0275\u0275textInterpolate1(" ", ctx_r17.readySecond, " \u79D2\u540E\u6B63\u5F0F\u5F00\u59CB");
+    \u0275\u0275textInterpolate1(" ", ctx_r22.readySecond, " \u79D2\u540E\u6B63\u5F0F\u5F00\u59CB");
     \u0275\u0275advance(2);
-    \u0275\u0275property("ngForOf", ctx_r17.tips);
+    \u0275\u0275property("ngForOf", ctx_r22.tips);
     \u0275\u0275advance(21);
-    \u0275\u0275property("ngModel", ctx_r17.readySecond);
+    \u0275\u0275property("ngModel", ctx_r22.readySecond);
     \u0275\u0275advance(11);
-    \u0275\u0275property("ngModel", ctx_r17.waitForBigTitleSecond);
+    \u0275\u0275property("ngModel", ctx_r22.waitForBigTitleSecond);
     \u0275\u0275advance(11);
-    \u0275\u0275property("ngModel", ctx_r17.contentDelaySecond);
+    \u0275\u0275property("ngModel", ctx_r22.contentDelaySecond);
     \u0275\u0275advance(11);
-    \u0275\u0275property("ngModel", ctx_r17.titleBeforeDelaySecond);
+    \u0275\u0275property("ngModel", ctx_r22.titleBeforeDelaySecond);
     \u0275\u0275advance(11);
-    \u0275\u0275property("ngModel", ctx_r17.rowDelaySecond);
+    \u0275\u0275property("ngModel", ctx_r22.rowDelaySecond);
     \u0275\u0275advance(11);
-    \u0275\u0275property("ngModel", ctx_r17.letterDelaySecond);
+    \u0275\u0275property("ngModel", ctx_r22.letterDelaySecond);
     \u0275\u0275advance(11);
-    \u0275\u0275property("ngModel", ctx_r17.programDelaySecond);
+    \u0275\u0275property("ngModel", ctx_r22.programDelaySecond);
     \u0275\u0275advance(11);
-    \u0275\u0275property("ngModel", ctx_r17.outputLineDelaySecond);
+    \u0275\u0275property("ngModel", ctx_r22.outputLineDelaySecond);
     \u0275\u0275advance(11);
-    \u0275\u0275property("ngModel", ctx_r17.ttsTextSecondsMultiple);
+    \u0275\u0275property("ngModel", ctx_r22.ttsTextSecondsMultiple);
   }
 }
-function MdScreenRecordComponent_div_19_div_2_div_2_Template(rf, ctx) {
+function MdScreenRecordComponent_div_31_div_2_div_2_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 103);
-    \u0275\u0275element(1, "i", 104);
+    \u0275\u0275elementStart(0, "div", 119);
+    \u0275\u0275element(1, "i", 120);
     \u0275\u0275text(2);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
-    const ctx_r31 = \u0275\u0275nextContext(3);
+    const ctx_r36 = \u0275\u0275nextContext(3);
     \u0275\u0275advance(2);
-    \u0275\u0275textInterpolate1(" ", ctx_r31.mdFilename, " ");
+    \u0275\u0275textInterpolate1(" ", ctx_r36.mdFilename, " ");
   }
 }
-function MdScreenRecordComponent_div_19_div_2_pre_3_Template(rf, ctx) {
+function MdScreenRecordComponent_div_31_div_2_pre_3_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "pre", 105);
+    \u0275\u0275elementStart(0, "pre", 121);
     \u0275\u0275text(1);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
-    const ctx_r32 = \u0275\u0275nextContext(3);
+    const ctx_r37 = \u0275\u0275nextContext(3);
     \u0275\u0275advance(1);
-    \u0275\u0275textInterpolate(ctx_r32.fileContent);
+    \u0275\u0275textInterpolate(ctx_r37.fileContent);
   }
 }
-function MdScreenRecordComponent_div_19_div_2_div_5_Template(rf, ctx) {
+function MdScreenRecordComponent_div_31_div_2_div_5_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 103);
-    \u0275\u0275element(1, "i", 106);
+    \u0275\u0275elementStart(0, "div", 119);
+    \u0275\u0275element(1, "i", 122);
     \u0275\u0275text(2);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
-    const ctx_r33 = \u0275\u0275nextContext(3);
+    const ctx_r38 = \u0275\u0275nextContext(3);
     \u0275\u0275advance(2);
-    \u0275\u0275textInterpolate1(" ", ctx_r33.headline, " ");
+    \u0275\u0275textInterpolate1(" ", ctx_r38.headline, " ");
   }
 }
-function MdScreenRecordComponent_div_19_div_2_div_6_ul_1_div_3_div_1_Template(rf, ctx) {
+function MdScreenRecordComponent_div_31_div_2_div_6_ul_1_div_3_div_1_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div")(1, "span", 115);
+    \u0275\u0275elementStart(0, "div")(1, "span", 131);
     \u0275\u0275text(2);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(3, "span", 116);
+    \u0275\u0275elementStart(3, "span", 132);
     \u0275\u0275text(4);
     \u0275\u0275elementEnd()();
   }
   if (rf & 2) {
-    const item_r40 = \u0275\u0275nextContext().$implicit;
-    const i_r37 = \u0275\u0275nextContext().index;
+    const item_r45 = \u0275\u0275nextContext().$implicit;
+    const i_r42 = \u0275\u0275nextContext().index;
     \u0275\u0275advance(2);
-    \u0275\u0275textInterpolate1("Section ", i_r37 + 1, " :");
+    \u0275\u0275textInterpolate1("Section ", i_r42 + 1, " :");
     \u0275\u0275advance(2);
-    \u0275\u0275textInterpolate(item_r40.value);
+    \u0275\u0275textInterpolate(item_r45.value);
   }
 }
-function MdScreenRecordComponent_div_19_div_2_div_6_ul_1_div_3_Template(rf, ctx) {
+function MdScreenRecordComponent_div_31_div_2_div_6_ul_1_div_3_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementStart(0, "div");
-    \u0275\u0275template(1, MdScreenRecordComponent_div_19_div_2_div_6_ul_1_div_3_div_1_Template, 5, 2, "div", 114);
+    \u0275\u0275template(1, MdScreenRecordComponent_div_31_div_2_div_6_ul_1_div_3_div_1_Template, 5, 2, "div", 130);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
-    const item_r40 = ctx.$implicit;
+    const item_r45 = ctx.$implicit;
     \u0275\u0275advance(1);
-    \u0275\u0275property("ngIf", item_r40.key == "title" || item_r40.key == "headline");
+    \u0275\u0275property("ngIf", item_r45.key == "title" || item_r45.key == "headline");
   }
 }
-function MdScreenRecordComponent_div_19_div_2_div_6_ul_1_li_4_i_5_Template(rf, ctx) {
+function MdScreenRecordComponent_div_31_div_2_div_6_ul_1_li_4_i_5_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275element(0, "i", 130);
+    \u0275\u0275element(0, "i", 146);
   }
 }
-function MdScreenRecordComponent_div_19_div_2_div_6_ul_1_li_4_i_6_Template(rf, ctx) {
+function MdScreenRecordComponent_div_31_div_2_div_6_ul_1_li_4_i_6_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275element(0, "i", 131);
+    \u0275\u0275element(0, "i", 147);
   }
 }
-function MdScreenRecordComponent_div_19_div_2_div_6_ul_1_li_4_i_7_Template(rf, ctx) {
+function MdScreenRecordComponent_div_31_div_2_div_6_ul_1_li_4_i_7_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275element(0, "i", 132);
+    \u0275\u0275element(0, "i", 148);
   }
 }
-function MdScreenRecordComponent_div_19_div_2_div_6_ul_1_li_4_i_8_Template(rf, ctx) {
+function MdScreenRecordComponent_div_31_div_2_div_6_ul_1_li_4_i_8_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275element(0, "i", 133);
+    \u0275\u0275element(0, "i", 149);
   }
 }
-function MdScreenRecordComponent_div_19_div_2_div_6_ul_1_li_4_i_9_Template(rf, ctx) {
+function MdScreenRecordComponent_div_31_div_2_div_6_ul_1_li_4_i_9_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275element(0, "i", 134);
+    \u0275\u0275element(0, "i", 150);
   }
 }
-function MdScreenRecordComponent_div_19_div_2_div_6_ul_1_li_4_i_10_Template(rf, ctx) {
+function MdScreenRecordComponent_div_31_div_2_div_6_ul_1_li_4_i_10_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275element(0, "i", 135);
+    \u0275\u0275element(0, "i", 151);
   }
 }
-function MdScreenRecordComponent_div_19_div_2_div_6_ul_1_li_4_i_11_Template(rf, ctx) {
+function MdScreenRecordComponent_div_31_div_2_div_6_ul_1_li_4_i_11_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275element(0, "i", 136);
+    \u0275\u0275element(0, "i", 152);
   }
 }
-function MdScreenRecordComponent_div_19_div_2_div_6_ul_1_li_4_i_12_Template(rf, ctx) {
+function MdScreenRecordComponent_div_31_div_2_div_6_ul_1_li_4_i_12_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275element(0, "i", 137);
+    \u0275\u0275element(0, "i", 153);
   }
 }
-function MdScreenRecordComponent_div_19_div_2_div_6_ul_1_li_4_i_13_Template(rf, ctx) {
+function MdScreenRecordComponent_div_31_div_2_div_6_ul_1_li_4_i_13_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275element(0, "i", 138);
+    \u0275\u0275element(0, "i", 154);
   }
 }
-function MdScreenRecordComponent_div_19_div_2_div_6_ul_1_li_4_Template(rf, ctx) {
+function MdScreenRecordComponent_div_31_div_2_div_6_ul_1_li_4_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "li", 117)(1, "div", 97)(2, "div", 118);
+    \u0275\u0275elementStart(0, "li", 133)(1, "div", 113)(2, "div", 134);
     \u0275\u0275text(3, "key");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(4, "div", 119);
-    \u0275\u0275template(5, MdScreenRecordComponent_div_19_div_2_div_6_ul_1_li_4_i_5_Template, 1, 0, "i", 120)(6, MdScreenRecordComponent_div_19_div_2_div_6_ul_1_li_4_i_6_Template, 1, 0, "i", 121)(7, MdScreenRecordComponent_div_19_div_2_div_6_ul_1_li_4_i_7_Template, 1, 0, "i", 122)(8, MdScreenRecordComponent_div_19_div_2_div_6_ul_1_li_4_i_8_Template, 1, 0, "i", 123)(9, MdScreenRecordComponent_div_19_div_2_div_6_ul_1_li_4_i_9_Template, 1, 0, "i", 124)(10, MdScreenRecordComponent_div_19_div_2_div_6_ul_1_li_4_i_10_Template, 1, 0, "i", 125)(11, MdScreenRecordComponent_div_19_div_2_div_6_ul_1_li_4_i_11_Template, 1, 0, "i", 126)(12, MdScreenRecordComponent_div_19_div_2_div_6_ul_1_li_4_i_12_Template, 1, 0, "i", 127)(13, MdScreenRecordComponent_div_19_div_2_div_6_ul_1_li_4_i_13_Template, 1, 0, "i", 128);
+    \u0275\u0275elementStart(4, "div", 135);
+    \u0275\u0275template(5, MdScreenRecordComponent_div_31_div_2_div_6_ul_1_li_4_i_5_Template, 1, 0, "i", 136)(6, MdScreenRecordComponent_div_31_div_2_div_6_ul_1_li_4_i_6_Template, 1, 0, "i", 137)(7, MdScreenRecordComponent_div_31_div_2_div_6_ul_1_li_4_i_7_Template, 1, 0, "i", 138)(8, MdScreenRecordComponent_div_31_div_2_div_6_ul_1_li_4_i_8_Template, 1, 0, "i", 139)(9, MdScreenRecordComponent_div_31_div_2_div_6_ul_1_li_4_i_9_Template, 1, 0, "i", 140)(10, MdScreenRecordComponent_div_31_div_2_div_6_ul_1_li_4_i_10_Template, 1, 0, "i", 141)(11, MdScreenRecordComponent_div_31_div_2_div_6_ul_1_li_4_i_11_Template, 1, 0, "i", 142)(12, MdScreenRecordComponent_div_31_div_2_div_6_ul_1_li_4_i_12_Template, 1, 0, "i", 143)(13, MdScreenRecordComponent_div_31_div_2_div_6_ul_1_li_4_i_13_Template, 1, 0, "i", 144);
     \u0275\u0275text(14);
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(15, "div", 97)(16, "div", 118);
+    \u0275\u0275elementStart(15, "div", 113)(16, "div", 134);
     \u0275\u0275text(17, "val");
     \u0275\u0275elementEnd();
-    \u0275\u0275element(18, "div", 129);
+    \u0275\u0275element(18, "div", 145);
     \u0275\u0275elementEnd()();
   }
   if (rf & 2) {
-    const item_r44 = ctx.$implicit;
+    const item_r49 = ctx.$implicit;
     \u0275\u0275advance(5);
-    \u0275\u0275property("ngIf", item_r44.key == "headline");
+    \u0275\u0275property("ngIf", item_r49.key == "headline");
     \u0275\u0275advance(1);
-    \u0275\u0275property("ngIf", item_r44.key == "title");
+    \u0275\u0275property("ngIf", item_r49.key == "title");
     \u0275\u0275advance(1);
-    \u0275\u0275property("ngIf", item_r44.key == "desc");
+    \u0275\u0275property("ngIf", item_r49.key == "desc");
     \u0275\u0275advance(1);
-    \u0275\u0275property("ngIf", item_r44.key == "code");
+    \u0275\u0275property("ngIf", item_r49.key == "code");
     \u0275\u0275advance(1);
-    \u0275\u0275property("ngIf", item_r44.key == "graph");
+    \u0275\u0275property("ngIf", item_r49.key == "graph");
     \u0275\u0275advance(1);
-    \u0275\u0275property("ngIf", item_r44.key == "voice");
+    \u0275\u0275property("ngIf", item_r49.key == "voice");
     \u0275\u0275advance(1);
-    \u0275\u0275property("ngIf", item_r44.key == "output");
+    \u0275\u0275property("ngIf", item_r49.key == "output");
     \u0275\u0275advance(1);
-    \u0275\u0275property("ngIf", item_r44.key == "option" && item_r44.value == "codeStart");
+    \u0275\u0275property("ngIf", item_r49.key == "option" && item_r49.value == "codeStart");
     \u0275\u0275advance(1);
-    \u0275\u0275property("ngIf", item_r44.key == "option" && item_r44.value == "codeEnd");
+    \u0275\u0275property("ngIf", item_r49.key == "option" && item_r49.value == "codeEnd");
     \u0275\u0275advance(1);
-    \u0275\u0275textInterpolate1(" ", item_r44.key, " ");
+    \u0275\u0275textInterpolate1(" ", item_r49.key, " ");
     \u0275\u0275advance(4);
-    \u0275\u0275property("innerHTML", item_r44.value, \u0275\u0275sanitizeHtml);
+    \u0275\u0275property("innerHTML", item_r49.value, \u0275\u0275sanitizeHtml);
   }
 }
-function MdScreenRecordComponent_div_19_div_2_div_6_ul_1_Template(rf, ctx) {
+function MdScreenRecordComponent_div_31_div_2_div_6_ul_1_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "ul", 109)(1, "div", 110)(2, "div", 111);
-    \u0275\u0275template(3, MdScreenRecordComponent_div_19_div_2_div_6_ul_1_div_3_Template, 2, 1, "div", 112);
+    \u0275\u0275elementStart(0, "ul", 125)(1, "div", 126)(2, "div", 127);
+    \u0275\u0275template(3, MdScreenRecordComponent_div_31_div_2_div_6_ul_1_div_3_Template, 2, 1, "div", 128);
     \u0275\u0275elementEnd()();
-    \u0275\u0275template(4, MdScreenRecordComponent_div_19_div_2_div_6_ul_1_li_4_Template, 19, 11, "li", 113);
+    \u0275\u0275template(4, MdScreenRecordComponent_div_31_div_2_div_6_ul_1_li_4_Template, 19, 11, "li", 129);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
-    const list_r36 = ctx.$implicit;
+    const list_r41 = ctx.$implicit;
     \u0275\u0275advance(3);
-    \u0275\u0275property("ngForOf", list_r36);
+    \u0275\u0275property("ngForOf", list_r41);
     \u0275\u0275advance(1);
-    \u0275\u0275property("ngForOf", list_r36);
+    \u0275\u0275property("ngForOf", list_r41);
   }
 }
-function MdScreenRecordComponent_div_19_div_2_div_6_Template(rf, ctx) {
+function MdScreenRecordComponent_div_31_div_2_div_6_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 107);
-    \u0275\u0275template(1, MdScreenRecordComponent_div_19_div_2_div_6_ul_1_Template, 5, 2, "ul", 108);
+    \u0275\u0275elementStart(0, "div", 123);
+    \u0275\u0275template(1, MdScreenRecordComponent_div_31_div_2_div_6_ul_1_Template, 5, 2, "ul", 124);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
-    const ctx_r34 = \u0275\u0275nextContext(3);
+    const ctx_r39 = \u0275\u0275nextContext(3);
     \u0275\u0275advance(1);
-    \u0275\u0275property("ngForOf", ctx_r34.decodeContent);
+    \u0275\u0275property("ngForOf", ctx_r39.decodeContent);
   }
 }
-function MdScreenRecordComponent_div_19_div_2_Template(rf, ctx) {
+function MdScreenRecordComponent_div_31_div_2_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 97)(1, "div", 98);
-    \u0275\u0275template(2, MdScreenRecordComponent_div_19_div_2_div_2_Template, 3, 1, "div", 99)(3, MdScreenRecordComponent_div_19_div_2_pre_3_Template, 2, 1, "pre", 100);
+    \u0275\u0275elementStart(0, "div", 113)(1, "div", 114);
+    \u0275\u0275template(2, MdScreenRecordComponent_div_31_div_2_div_2_Template, 3, 1, "div", 115)(3, MdScreenRecordComponent_div_31_div_2_pre_3_Template, 2, 1, "pre", 116);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(4, "div", 101);
-    \u0275\u0275template(5, MdScreenRecordComponent_div_19_div_2_div_5_Template, 3, 1, "div", 99)(6, MdScreenRecordComponent_div_19_div_2_div_6_Template, 2, 1, "div", 102);
+    \u0275\u0275elementStart(4, "div", 117);
+    \u0275\u0275template(5, MdScreenRecordComponent_div_31_div_2_div_5_Template, 3, 1, "div", 115)(6, MdScreenRecordComponent_div_31_div_2_div_6_Template, 2, 1, "div", 118);
     \u0275\u0275elementEnd()();
   }
   if (rf & 2) {
-    const ctx_r18 = \u0275\u0275nextContext(2);
+    const ctx_r23 = \u0275\u0275nextContext(2);
     \u0275\u0275advance(2);
-    \u0275\u0275property("ngIf", ctx_r18.mdFilename != "");
+    \u0275\u0275property("ngIf", ctx_r23.mdFilename != "");
     \u0275\u0275advance(1);
-    \u0275\u0275property("ngIf", ctx_r18.fileContent != "");
+    \u0275\u0275property("ngIf", ctx_r23.fileContent != "");
     \u0275\u0275advance(2);
-    \u0275\u0275property("ngIf", ctx_r18.mdFilename != "" && ctx_r18.decodeContent.length != 0);
+    \u0275\u0275property("ngIf", ctx_r23.mdFilename != "" && ctx_r23.decodeContent.length != 0);
     \u0275\u0275advance(1);
-    \u0275\u0275property("ngIf", ctx_r18.decodeContent.length != 0);
+    \u0275\u0275property("ngIf", ctx_r23.decodeContent.length != 0);
   }
 }
-function MdScreenRecordComponent_div_19_Template(rf, ctx) {
+function MdScreenRecordComponent_div_31_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 48);
-    \u0275\u0275template(1, MdScreenRecordComponent_div_19_div_1_Template, 117, 15, "div", 49)(2, MdScreenRecordComponent_div_19_div_2_Template, 7, 4, "div", 50);
+    \u0275\u0275elementStart(0, "div", 64);
+    \u0275\u0275template(1, MdScreenRecordComponent_div_31_div_1_Template, 117, 15, "div", 65)(2, MdScreenRecordComponent_div_31_div_2_Template, 7, 4, "div", 66);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
-    const ctx_r4 = \u0275\u0275nextContext();
+    const ctx_r5 = \u0275\u0275nextContext();
     \u0275\u0275advance(1);
-    \u0275\u0275property("ngIf", ctx_r4.readySecond != 0);
+    \u0275\u0275property("ngIf", ctx_r5.readySecond != 0);
     \u0275\u0275advance(1);
-    \u0275\u0275property("ngIf", ctx_r4.readySecond != 0);
+    \u0275\u0275property("ngIf", ctx_r5.readySecond != 0);
   }
 }
-function MdScreenRecordComponent_div_26_div_1_span_1_Template(rf, ctx) {
+function MdScreenRecordComponent_div_38_div_1_span_1_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275element(0, "span", 150);
+    \u0275\u0275element(0, "span", 166);
   }
   if (rf & 2) {
-    const letter_r65 = ctx.$implicit;
-    \u0275\u0275property("innerHTML", letter_r65, \u0275\u0275sanitizeHtml);
+    const letter_r70 = ctx.$implicit;
+    \u0275\u0275property("innerHTML", letter_r70, \u0275\u0275sanitizeHtml);
   }
 }
-function MdScreenRecordComponent_div_26_div_1_Template(rf, ctx) {
+function MdScreenRecordComponent_div_38_div_1_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 148);
-    \u0275\u0275template(1, MdScreenRecordComponent_div_26_div_1_span_1_Template, 1, 1, "span", 149);
+    \u0275\u0275elementStart(0, "div", 164);
+    \u0275\u0275template(1, MdScreenRecordComponent_div_38_div_1_span_1_Template, 1, 1, "span", 165);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
-    const item_r55 = \u0275\u0275nextContext().$implicit;
+    const item_r60 = \u0275\u0275nextContext().$implicit;
     \u0275\u0275advance(1);
-    \u0275\u0275property("ngForOf", item_r55.letters);
+    \u0275\u0275property("ngForOf", item_r60.letters);
   }
 }
-function MdScreenRecordComponent_div_26_p_2_span_1_Template(rf, ctx) {
+function MdScreenRecordComponent_div_38_p_2_span_1_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275element(0, "span", 153);
+    \u0275\u0275element(0, "span", 169);
   }
   if (rf & 2) {
-    const letter_r68 = ctx.$implicit;
-    \u0275\u0275property("innerHTML", letter_r68, \u0275\u0275sanitizeHtml);
+    const letter_r73 = ctx.$implicit;
+    \u0275\u0275property("innerHTML", letter_r73, \u0275\u0275sanitizeHtml);
   }
 }
-function MdScreenRecordComponent_div_26_p_2_Template(rf, ctx) {
+function MdScreenRecordComponent_div_38_p_2_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "p", 151);
-    \u0275\u0275template(1, MdScreenRecordComponent_div_26_p_2_span_1_Template, 1, 1, "span", 152);
+    \u0275\u0275elementStart(0, "p", 167);
+    \u0275\u0275template(1, MdScreenRecordComponent_div_38_p_2_span_1_Template, 1, 1, "span", 168);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
-    const item_r55 = \u0275\u0275nextContext().$implicit;
+    const item_r60 = \u0275\u0275nextContext().$implicit;
     \u0275\u0275advance(1);
-    \u0275\u0275property("ngForOf", item_r55.letters);
+    \u0275\u0275property("ngForOf", item_r60.letters);
   }
 }
-function MdScreenRecordComponent_div_26_div_3_Template(rf, ctx) {
+function MdScreenRecordComponent_div_38_div_3_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 154);
-    \u0275\u0275element(1, "img", 155);
+    \u0275\u0275elementStart(0, "div", 170);
+    \u0275\u0275element(1, "img", 171);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
-    const item_r55 = \u0275\u0275nextContext().$implicit;
+    const item_r60 = \u0275\u0275nextContext().$implicit;
     \u0275\u0275advance(1);
-    \u0275\u0275property("src", item_r55.letters[0], \u0275\u0275sanitizeUrl);
+    \u0275\u0275property("src", item_r60.letters[0], \u0275\u0275sanitizeUrl);
   }
 }
-function MdScreenRecordComponent_div_26_div_4_span_5_Template(rf, ctx) {
+function MdScreenRecordComponent_div_38_div_4_span_5_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275element(0, "span", 161);
+    \u0275\u0275element(0, "span", 177);
   }
   if (rf & 2) {
-    const letter_r72 = ctx.$implicit;
-    \u0275\u0275property("innerHTML", letter_r72, \u0275\u0275sanitizeHtml);
+    const letter_r77 = ctx.$implicit;
+    \u0275\u0275property("innerHTML", letter_r77, \u0275\u0275sanitizeHtml);
   }
 }
-function MdScreenRecordComponent_div_26_div_4_Template(rf, ctx) {
+function MdScreenRecordComponent_div_38_div_4_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 156)(1, "div", 157);
-    \u0275\u0275element(2, "i", 158);
-    \u0275\u0275elementStart(3, "span", 159);
+    \u0275\u0275elementStart(0, "div", 172)(1, "div", 173);
+    \u0275\u0275element(2, "i", 174);
+    \u0275\u0275elementStart(3, "span", 175);
     \u0275\u0275text(4, "\u8BED\u97F3\u8BB2\u89E3");
     \u0275\u0275elementEnd()();
-    \u0275\u0275template(5, MdScreenRecordComponent_div_26_div_4_span_5_Template, 1, 1, "span", 160);
+    \u0275\u0275template(5, MdScreenRecordComponent_div_38_div_4_span_5_Template, 1, 1, "span", 176);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
-    const item_r55 = \u0275\u0275nextContext().$implicit;
+    const item_r60 = \u0275\u0275nextContext().$implicit;
     \u0275\u0275advance(5);
-    \u0275\u0275property("ngForOf", item_r55.letters);
+    \u0275\u0275property("ngForOf", item_r60.letters);
   }
 }
-function MdScreenRecordComponent_div_26_div_5_span_1_Template(rf, ctx) {
+function MdScreenRecordComponent_div_38_div_5_span_1_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275element(0, "span", 164);
+    \u0275\u0275element(0, "span", 180);
   }
   if (rf & 2) {
-    const letter_r75 = ctx.$implicit;
-    \u0275\u0275property("innerHTML", letter_r75, \u0275\u0275sanitizeHtml);
+    const letter_r80 = ctx.$implicit;
+    \u0275\u0275property("innerHTML", letter_r80, \u0275\u0275sanitizeHtml);
   }
 }
-function MdScreenRecordComponent_div_26_div_5_Template(rf, ctx) {
+function MdScreenRecordComponent_div_38_div_5_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 162);
-    \u0275\u0275template(1, MdScreenRecordComponent_div_26_div_5_span_1_Template, 1, 1, "span", 163);
+    \u0275\u0275elementStart(0, "div", 178);
+    \u0275\u0275template(1, MdScreenRecordComponent_div_38_div_5_span_1_Template, 1, 1, "span", 179);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
-    const item_r55 = \u0275\u0275nextContext().$implicit;
+    const item_r60 = \u0275\u0275nextContext().$implicit;
     \u0275\u0275advance(1);
-    \u0275\u0275property("ngForOf", item_r55.letters);
+    \u0275\u0275property("ngForOf", item_r60.letters);
   }
 }
-function MdScreenRecordComponent_div_26_div_6_Template(rf, ctx) {
+function MdScreenRecordComponent_div_38_div_6_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275element(0, "div", 165);
+    \u0275\u0275element(0, "div", 181);
   }
 }
-function MdScreenRecordComponent_div_26_div_7_span_1_Template(rf, ctx) {
+var _c2 = (a0, a1) => ({
+  "fs-3 py-5": a0,
+  "fs-6 py-1": a1
+});
+function MdScreenRecordComponent_div_38_div_7_span_1_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275element(0, "span", 168);
+    \u0275\u0275element(0, "span", 184);
   }
   if (rf & 2) {
-    const letter_r78 = ctx.$implicit;
-    \u0275\u0275property("innerHTML", letter_r78, \u0275\u0275sanitizeHtml);
+    const letter_r83 = ctx.$implicit;
+    \u0275\u0275property("innerHTML", letter_r83, \u0275\u0275sanitizeHtml)("ngClass", \u0275\u0275pureFunction2(2, _c2, letter_r83 != "\n", letter_r83 == "\n"));
   }
 }
-function MdScreenRecordComponent_div_26_div_7_Template(rf, ctx) {
+function MdScreenRecordComponent_div_38_div_7_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 166);
-    \u0275\u0275template(1, MdScreenRecordComponent_div_26_div_7_span_1_Template, 1, 1, "span", 167);
+    \u0275\u0275elementStart(0, "div", 182);
+    \u0275\u0275template(1, MdScreenRecordComponent_div_38_div_7_span_1_Template, 1, 5, "span", 183);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
-    const item_r55 = \u0275\u0275nextContext().$implicit;
+    const item_r60 = \u0275\u0275nextContext().$implicit;
     \u0275\u0275advance(1);
-    \u0275\u0275property("ngForOf", item_r55.letters);
+    \u0275\u0275property("ngForOf", item_r60.letters);
   }
 }
-function MdScreenRecordComponent_div_26_div_8_span_1_Template(rf, ctx) {
+function MdScreenRecordComponent_div_38_div_8_span_1_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275element(0, "span", 171);
+    \u0275\u0275element(0, "span", 187);
   }
   if (rf & 2) {
-    const letter_r81 = ctx.$implicit;
-    \u0275\u0275property("innerHTML", letter_r81, \u0275\u0275sanitizeHtml);
+    const letter_r86 = ctx.$implicit;
+    \u0275\u0275property("innerHTML", letter_r86, \u0275\u0275sanitizeHtml);
   }
 }
-function MdScreenRecordComponent_div_26_div_8_Template(rf, ctx) {
+function MdScreenRecordComponent_div_38_div_8_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 169);
-    \u0275\u0275template(1, MdScreenRecordComponent_div_26_div_8_span_1_Template, 1, 1, "span", 170);
+    \u0275\u0275elementStart(0, "div", 185);
+    \u0275\u0275template(1, MdScreenRecordComponent_div_38_div_8_span_1_Template, 1, 1, "span", 186);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
-    const item_r55 = \u0275\u0275nextContext().$implicit;
+    const item_r60 = \u0275\u0275nextContext().$implicit;
     \u0275\u0275advance(1);
-    \u0275\u0275property("ngForOf", item_r55.letters);
+    \u0275\u0275property("ngForOf", item_r60.letters);
   }
 }
-function MdScreenRecordComponent_div_26_Template(rf, ctx) {
+function MdScreenRecordComponent_div_38_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 139);
-    \u0275\u0275template(1, MdScreenRecordComponent_div_26_div_1_Template, 2, 1, "div", 140)(2, MdScreenRecordComponent_div_26_p_2_Template, 2, 1, "p", 141)(3, MdScreenRecordComponent_div_26_div_3_Template, 2, 1, "div", 142)(4, MdScreenRecordComponent_div_26_div_4_Template, 6, 1, "div", 143)(5, MdScreenRecordComponent_div_26_div_5_Template, 2, 1, "div", 144)(6, MdScreenRecordComponent_div_26_div_6_Template, 1, 0, "div", 145)(7, MdScreenRecordComponent_div_26_div_7_Template, 2, 1, "div", 146)(8, MdScreenRecordComponent_div_26_div_8_Template, 2, 1, "div", 147);
+    \u0275\u0275elementStart(0, "div", 155);
+    \u0275\u0275template(1, MdScreenRecordComponent_div_38_div_1_Template, 2, 1, "div", 156)(2, MdScreenRecordComponent_div_38_p_2_Template, 2, 1, "p", 157)(3, MdScreenRecordComponent_div_38_div_3_Template, 2, 1, "div", 158)(4, MdScreenRecordComponent_div_38_div_4_Template, 6, 1, "div", 159)(5, MdScreenRecordComponent_div_38_div_5_Template, 2, 1, "div", 160)(6, MdScreenRecordComponent_div_38_div_6_Template, 1, 0, "div", 161)(7, MdScreenRecordComponent_div_38_div_7_Template, 2, 1, "div", 162)(8, MdScreenRecordComponent_div_38_div_8_Template, 2, 1, "div", 163);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
-    const item_r55 = ctx.$implicit;
+    const item_r60 = ctx.$implicit;
     \u0275\u0275advance(1);
-    \u0275\u0275property("ngIf", item_r55.key == "title");
+    \u0275\u0275property("ngIf", item_r60.key == "title");
     \u0275\u0275advance(1);
-    \u0275\u0275property("ngIf", item_r55.key == "desc");
+    \u0275\u0275property("ngIf", item_r60.key == "desc");
     \u0275\u0275advance(1);
-    \u0275\u0275property("ngIf", item_r55.key == "graph");
+    \u0275\u0275property("ngIf", item_r60.key == "graph");
     \u0275\u0275advance(1);
-    \u0275\u0275property("ngIf", item_r55.key == "voiceLettersLength");
+    \u0275\u0275property("ngIf", item_r60.key == "voiceLettersLength");
     \u0275\u0275advance(1);
-    \u0275\u0275property("ngIf", item_r55.key == "annotation");
+    \u0275\u0275property("ngIf", item_r60.key == "annotation");
     \u0275\u0275advance(1);
-    \u0275\u0275property("ngIf", item_r55.key == "option");
+    \u0275\u0275property("ngIf", item_r60.key == "option");
     \u0275\u0275advance(1);
-    \u0275\u0275property("ngIf", item_r55.key == "code");
+    \u0275\u0275property("ngIf", item_r60.key == "code");
     \u0275\u0275advance(1);
-    \u0275\u0275property("ngIf", item_r55.key == "output");
+    \u0275\u0275property("ngIf", item_r60.key == "output");
   }
 }
 var MdScreenRecordComponent = /* @__PURE__ */ (() => {
@@ -28107,12 +28160,13 @@ var MdScreenRecordComponent = /* @__PURE__ */ (() => {
         "\u5728 jupyter notebook \u73AF\u5883\u4E0B\uFF0C\u9009\u62E9\u83DC\u5355\u3010File\u3011--\u3010Download as\u3011--\u3010Markdown\uFF08.md)\u3011\uFF0C\u751F\u6210 markdown \u683C\u5F0F\u7684\u6587\u4EF6",
         "\u6700\u597D\u5728\u539F\u59CB\u7684 jupyter notebook \u6587\u4EF6\u672B\u5C3E\u7528\u4E00\u7EA7\u6807\u9898 Finish \u6765\u63D0\u793A\u6587\u7AE0\u7ED3\u675F\u3002\u5728\u5F55\u5C4F\u7684\u65F6\u5019\uFF0C\u5F53\u6587\u7AE0\u7ED3\u675F\u540E\uFF0C\u5237\u65B0\u9875\u9762\u5373\u53EF\u6062\u590D\u5230\u539F\u59CB\u7B49\u5F85\u72B6\u6001"
       ];
-      this.tips = ["\u4E3A\u4E86\u63D0\u9AD8\u6548\u7387\uFF0C\u53EF\u4EE5\u5C06 TTS \u7684\u6587\u672C\u5185\u5BB9\u4FEE\u6539\u4E3A\u9002\u5408\u8BED\u97F3\u8F93\u51FA\u7684\u5F62\u5F0F\u3002\u6BD4\u5982\u62C6\u89E3\u62FC\u63A5\u7684\u5355\u8BCD\u3001\u5220\u9664\u7A0B\u5E8F\u8F93\u51FA\u91CC\u591A\u4F59\u7684\u5185\u5BB9\u7B49", "TTS \u7684\u5185\u5BB9\u5728\u5F55\u5236\u521D\u59CB\u89C6\u9891\u65F6\u88AB\u81EA\u52A8\u5FFD\u7565\u3002\u5728\u540E\u7EED\u89C6\u9891\u526A\u8F91\u7684\u65F6\u5019\uFF0C\u901A\u8FC7\u624B\u52A8\u7684\u65B9\u5F0F\u4E13\u95E8\u518D\u8FDB\u884C\u8BED\u97F3\u5F55\u5236", "\u4E66\u5199 TTS \u7684\u6587\u672C\u5185\u5BB9\u65F6\uFF0C\u5728\u7B14\u8BB0\u91CC\u5C06\u5F53\u524D\u5757\u4FEE\u6539\u4E3A markdown \u7C7B\u578B\uFF0C\u7136\u540E\u4EE5\u3010V: \u3011\uFF08\u5927\u5199\u5B57\u6BCD V + \u82F1\u6587\u5192\u53F7 + \u7A7A\u683C\uFF09\u5F00\u5934\uFF0C\u540E\u9762\u8DDF\u4E0A\u8981\u7528\u8BED\u97F3\u6717\u8BFB\u7684\u6587\u5B57\u5185\u5BB9", "\u5728\u5F55\u5C4F\u65F6\uFF0C\u5982\u679C\u8F93\u51FA\u3010\u8BED\u97F3\u8BB2\u89E3\u3011\u7684\u5B57\u6837\uFF0C\u8868\u793A\u5728\u8FD9\u90E8\u5206\u9700\u8981\u5728\u540E\u671F\u89C6\u9891\u7F16\u8F91\u7684\u65F6\u5019\uFF0C\u5728\u8FD9\u4E2A\u65F6\u95F4\u6BB5\u5185\u6DFB\u52A0\u5F55\u97F3\u5185\u5BB9", "\u6709\u4E9B\u7A0B\u5E8F\u4E0D\u5141\u8BB8 jupyter notebook \u6587\u4EF6\u540D\u548C\u8DEF\u5F84\u5E26\u6709\u4E2D\u6587\uFF0C\u90A3\u4E48\u7B14\u8BB0\u6587\u4EF6\u540D\u662F\u82F1\u6587\uFF0C\u751F\u6210\u7684 MarkDown \u6587\u4EF6\u4E5F\u662F\u82F1\u6587\u7684\u3002\u4E3A\u4E86\u66F4\u597D\u7684\u9605\u8BFB\u6548\u679C\uFF0C\u6700\u7EC8\u89C6\u9891\u7684\u4E2D\u6587\u5927\u6807\u9898\u5199\u5728\u7B14\u8BB0\u6587\u4EF6\u7684\u9876\u90E8\uFF0C\u7528\u3010# headline: \u3011\uFF08# + \u7A7A\u683C + headline: + \u7A7A\u683C\uFF09\u4F5C\u4E3A\u63D0\u793A\uFF0C\u4F9B\u524D\u7AEF\u7A0B\u5E8F\u8BC6\u522B\uFF0C\u5728\u89C6\u9891\u91CC\u663E\u793A\u5728\u9875\u9762\u9876\u90E8", "\u63D0\u524D\u6253\u5F00\u672C\u5730\u5B89\u88C5\u597D\u7684 EV \u5F55\u5C4F\uFF08Windows\uFF09\u6216\u8005 QuickTime Player\uFF08MacOS\uFF09\u5F55\u5C4F\u8F6F\u4EF6\uFF0C\u5F00\u542F\u5F55\u5C4F\u6A21\u5F0F\uFF1B\u7136\u540E\u5728\u7F51\u7AD9\u91CC\u64CD\u4F5C\uFF0C\u5F55\u5C4F\u5012\u8BA1\u65F6\u8BFB\u79D2\u7ED3\u675F\u540E\uFF0C\u7F51\u7AD9\u81EA\u52A8\u8FDB\u884C\u9010\u884C\u8F93\u51FA MarkDown \u5185\u5BB9", "\u5728 Windows \u5E73\u53F0\uFF0C\u4F7F\u7528\u3010EV \u5F55\u5C4F\u3011\uFF1B\u5728 MacOS \u5E73\u53F0\uFF0C\u8FD8\u5728\u5BFB\u627E\u53EF\u9760\u7684\u5F55\u5C4F\u8F6F\u4EF6", "\u8981\u4ECE MarkDown \u6587\u4EF6\u751F\u6210 PDF \u6587\u4EF6\uFF0C\u4F7F\u7528 VS Code\uFF08\u914D\u5408 MarkDown to PDF \u63D2\u4EF6\uFF09\u7684\u6548\u679C\u66F4\u597D \uFF01"];
+      this.tips = ["\u4E3A\u4E86\u63D0\u9AD8\u6548\u7387\uFF0C\u53EF\u4EE5\u5C06 TTS \u7684\u6587\u672C\u5185\u5BB9\u4FEE\u6539\u4E3A\u9002\u5408\u8BED\u97F3\u8F93\u51FA\u7684\u5F62\u5F0F\u3002\u6BD4\u5982\u62C6\u89E3\u62FC\u63A5\u7684\u5355\u8BCD\u3001\u5220\u9664\u7A0B\u5E8F\u8F93\u51FA\u91CC\u591A\u4F59\u7684\u5185\u5BB9\u7B49", "TTS \u7684\u5185\u5BB9\u5728\u5F55\u5236\u521D\u59CB\u89C6\u9891\u65F6\u88AB\u81EA\u52A8\u5FFD\u7565\u3002\u5728\u540E\u7EED\u89C6\u9891\u526A\u8F91\u7684\u65F6\u5019\uFF0C\u901A\u8FC7\u624B\u52A8\u7684\u65B9\u5F0F\u4E13\u95E8\u518D\u8FDB\u884C\u8BED\u97F3\u5F55\u5236", "\u4E66\u5199 TTS \u7684\u6587\u672C\u5185\u5BB9\u65F6\uFF0C\u5728\u7B14\u8BB0\u91CC\u5C06\u5F53\u524D\u5757\u4FEE\u6539\u4E3A markdown \u7C7B\u578B\uFF0C\u7136\u540E\u4EE5\u3010V: \u3011\uFF08\u5927\u5199\u5B57\u6BCD V + \u82F1\u6587\u5192\u53F7 + \u7A7A\u683C\uFF09\u5F00\u5934\uFF0C\u540E\u9762\u8DDF\u4E0A\u8981\u7528\u8BED\u97F3\u6717\u8BFB\u7684\u6587\u5B57\u5185\u5BB9", "\u5728\u5F55\u5C4F\u65F6\uFF0C\u5982\u679C\u8F93\u51FA\u3010\u8BED\u97F3\u8BB2\u89E3\u3011\u7684\u5B57\u6837\uFF0C\u8868\u793A\u5728\u8FD9\u90E8\u5206\u9700\u8981\u5728\u540E\u671F\u89C6\u9891\u7F16\u8F91\u7684\u65F6\u5019\uFF0C\u5728\u8FD9\u4E2A\u65F6\u95F4\u6BB5\u5185\u6DFB\u52A0\u5F55\u97F3\u5185\u5BB9", "\u6709\u4E9B\u7A0B\u5E8F\u4E0D\u5141\u8BB8 jupyter notebook \u6587\u4EF6\u540D\u548C\u8DEF\u5F84\u5E26\u6709\u4E2D\u6587\uFF0C\u90A3\u4E48\u7B14\u8BB0\u6587\u4EF6\u540D\u662F\u82F1\u6587\uFF0C\u751F\u6210\u7684 MarkDown \u6587\u4EF6\u4E5F\u662F\u82F1\u6587\u7684\u3002\u4E3A\u4E86\u66F4\u597D\u7684\u9605\u8BFB\u6548\u679C\uFF0C\u6700\u7EC8\u89C6\u9891\u7684\u4E2D\u6587\u5927\u6807\u9898\u5199\u5728\u7B14\u8BB0\u6587\u4EF6\u7684\u9876\u90E8\uFF0C\u7528\u3010# headline: \u3011\uFF08# + \u7A7A\u683C + headline: + \u7A7A\u683C\uFF09\u4F5C\u4E3A\u63D0\u793A\uFF0C\u4F9B\u524D\u7AEF\u7A0B\u5E8F\u8BC6\u522B\uFF0C\u5728\u89C6\u9891\u91CC\u663E\u793A\u5728\u9875\u9762\u9876\u90E8", "\u63D0\u524D\u6253\u5F00\u672C\u5730\u5B89\u88C5\u597D\u7684 EV \u5F55\u5C4F\uFF08Windows\uFF09\u6216\u8005 QuickTime Player\uFF08MacOS\uFF09\u5F55\u5C4F\u8F6F\u4EF6\uFF0C\u5F00\u542F\u5F55\u5C4F\u6A21\u5F0F\uFF1B\u7136\u540E\u5728\u7F51\u7AD9\u91CC\u64CD\u4F5C\uFF0C\u5F55\u5C4F\u5012\u8BA1\u65F6\u8BFB\u79D2\u7ED3\u675F\u540E\uFF0C\u7F51\u7AD9\u81EA\u52A8\u8FDB\u884C\u9010\u884C\u8F93\u51FA MarkDown \u5185\u5BB9", "\u8981\u4ECE MarkDown \u6587\u4EF6\u751F\u6210 PDF \u6587\u4EF6\uFF0C\u4F7F\u7528 VS Code\uFF08\u914D\u5408 MarkDown to PDF \u63D2\u4EF6\uFF09\u7684\u6548\u679C\u66F4\u597D \uFF01"];
       this.selectedfile = null;
       this.mdFilename = "";
       this.headline = "";
       this.fileReader = new FileReader();
       this.fileContent = "";
+      this.ttsList = [];
       this.decodeContent = [];
       this.readyAnalysis = false;
       this.readyGetStarted = false;
@@ -28171,6 +28225,11 @@ var MdScreenRecordComponent = /* @__PURE__ */ (() => {
       this.decodeContent = [];
       this.readyAnalysis = false;
       this.readyGetStarted = false;
+      this.ttsList = [];
+    }
+    // 拷贝 ttsList 列表中当前的字符串的内容
+    copyTTS(text) {
+      navigator.clipboard.writeText(text);
     }
     analysis() {
       this.decodeContent = this.localService.decodeMarkdownText(this.fileContent);
@@ -28198,6 +28257,7 @@ var MdScreenRecordComponent = /* @__PURE__ */ (() => {
           values = [this.allkvList[i].value.toString()];
         } else if (key == "voice") {
           values = [this.allkvList[i].value.toString()];
+          this.ttsList.push(this.allkvList[i].value.toString());
         } else if (key == "voiceLettersLength") {
           let arr = [];
           for (let word = 0; word < parseInt(this.allkvList[i].value) * this.ttsTextSecondsMultiple; word++) {
@@ -28309,9 +28369,9 @@ var MdScreenRecordComponent = /* @__PURE__ */ (() => {
         \u0275\u0275queryRefresh(_t = \u0275\u0275loadQuery()) && (ctx.InputVar = _t.first);
       }
     },
-    decls: 27,
-    vars: 7,
-    consts: [["id", "markdownModal", "tabindex", "-1", "aria-labelledby", "exampleModalLabel", "aria-hidden", "true", 1, "modal", "fade"], [1, "modal-dialog", "modal-xl"], [1, "modal-content", "bg-dark", "text-info"], [1, "modal-header"], ["id", "markdownModalLabel", 1, "modal-title", "fs-5", "text-info", "fs-3"], ["type", "button", "data-bs-dismiss", "modal", "aria-label", "Close", 1, "btn", "btn-outline-info"], [1, "modal-body"], [1, "list-group"], ["class", "list-group-item text-light", 4, "ngFor", "ngForOf"], [1, "modal-footer"], ["type", "button", "data-bs-dismiss", "modal", 1, "btn", "btn-outline-info"], ["class", "btn btn-secondary px-2 py-0 shadow", "id", "goTopBtn", 3, "click", 4, "ngIf"], ["class", "btn btn-danger px-2 py-0 shadow", "id", "refreshBtn", 3, "click", 4, "ngIf"], ["class", "container-fluid bg-dark", 4, "ngIf"], [1, "content-box", "bg-dark", 2, "padding-bottom", "50rem"], [1, "bg-box"], ["class", "container-fluid", 4, "ngIf"], ["id", "tutorial-box", 1, "mb-5", "pb-4", "px-5"], [1, "container-fluid", "bg-dark", "text-light", "pt-0", "pb-5", "mb-5", "tutorial-container"], [1, "row", "justify-content-center", "py-5", "mb-5"], [1, "col-11", "pb-5", "mb-5", "align-self-center"], [1, "text-center", "fs-1", "text-danger", "mb-3", "fw-bold"], ["class", "content-area", 4, "ngFor", "ngForOf"], [1, "list-group-item", "text-light"], [1, "bi", "bi-caret-right-fill", "me-1", "text-info"], ["id", "goTopBtn", 1, "btn", "btn-secondary", "px-2", "py-0", "shadow", 3, "click"], [1, "bi", "bi-chevron-up", "fs-4"], ["id", "refreshBtn", 1, "btn", "btn-danger", "px-2", "py-0", "shadow", 3, "click"], [1, "bi", "bi-arrow-clockwise", "fs-4"], [1, "container-fluid", "bg-dark"], [1, "row", "px-4", "py-3", "align-items-center"], [1, "col", "text-center", "text-light", "fw-bold", "fs-3"], [1, "col-7"], [1, "input-group", "w-100"], ["type", "button", "href", "/#/", 1, "btn", "btn-outline-warning"], [1, "bi", "bi-house-fill", "pe-1"], ["type", "button", "id", "button-addon1", "data-bs-toggle", "modal", "data-bs-target", "#markdownModal", 1, "btn", "btn-outline-info"], [1, "bi", "bi-markdown", "me-2"], ["id", "file-input", "type", "file", "name", "file-input", 1, "form-control", 2, "display", "none", 3, "change"], ["fileInput", ""], ["for", "file-input", "id", "file-input-label", 1, "text-light", "px-3", "py-2", "bg-success"], [1, "bi", "bi-1-circle", "me-2"], ["type", "button", "id", "analysis-btn", 1, "btn", "btn-primary", 3, "disabled", "click"], [1, "bi", "bi-2-circle", "me-2"], ["type", "button", "id", "get-started", 1, "btn", "btn-danger", 3, "disabled", "click"], [1, "bi", "bi-3-circle", "pe-2"], ["type", "button", "id", "clean-input-file", 1, "btn", "btn-outline-secondary", 3, "disabled", "click"], [1, "bi", "bi-trash3", "pe-1"], [1, "container-fluid"], ["class", "row my-4 justify-content-between", 4, "ngIf"], ["class", "row", 4, "ngIf"], [1, "row", "my-4", "justify-content-between"], [1, "col", "text-center"], [3, "ngClass"], [1, "mt-4"], ["class", "text-start text-secondary fs-5 mb-3", 4, "ngFor", "ngForOf"], ["src", "../../assets/img/wolf.png", "height", "auto", "width", "140rem"], ["src", "../../assets/img/jupyter-logo.png", 1, "jupyter-logo"], ["src", "../../assets/img/right-arrow.png", 1, "right-arrow"], ["src", "../../assets/img/markdown-logo.png", 1, "markdown-logo"], ["src", "../../assets/img/video-logo.png", 1, "video-logo", "mx-2"], [1, "text-primary", "fs-2", "fw-bolder", "mx-1"], ["src", "../../assets/img/audio.png", 1, "video-logo", "ms-2"], [1, "hyperparameter-form", "border", "border-secondary", "rounded", "p-4"], [1, "mb-3", "row", "align-items-center"], ["for", "readySecond", 1, "col-sm-7", "col-form-label", "hyperparameter"], [1, "fs-5", "text-success", "my-0"], [1, "bi", "bi-play-circle", "me-2", "fs-5"], [1, "my-0", "text-secondary"], [1, "col-sm"], ["name", "readySecond", "type", "number", "id", "readySecond", 1, "form-control", 3, "ngModel", "ngModelChange"], [1, "text-light", "ms-3", "lead"], ["for", "waitForBigTitleSecond", 1, "col-sm-7", "col-form-label", "text-light", "hyperparameter"], [1, "bi", "bi-filetype-md", "me-2", "fs-5"], ["name", "waitForBigTitleSecond", "type", "number", "id", "waitForBigTitleSecond", 1, "form-control", 3, "ngModel", "ngModelChange"], ["for", "contentDelaySecond", 1, "col-sm-7", "col-form-label", "text-light", "hyperparameter"], [1, "bi", "bi-markdown", "fs-5", "me-2"], ["name", "contentDelaySecond", "type", "number", "id", "contentDelaySecond", 1, "form-control", 3, "ngModel", "ngModelChange"], ["for", "titleBeforeDelaySecond", 1, "col-sm-7", "col-form-label", "text-light", "hyperparameter"], [1, "bi", "bi-arrow-bar-up", "fs-5", "me-2"], ["name", "titleBeforeDelaySecond", "type", "number", "id", "titleBeforeDelaySecond", 1, "form-control", 3, "ngModel", "ngModelChange"], ["for", "rowDelaySecond", 1, "col-sm-7", "col-form-label", "text-light", "hyperparameter"], [1, "bi", "bi-arrow-return-left", "me-2", "fs-5"], ["type", "number", "id", "rowDelaySecond", "name", "rowDelaySecond", 1, "form-control", 3, "ngModel", "ngModelChange"], ["for", "letterDelaySecond", 1, "col-sm-7", "col-form-label", "text-light", "hyperparameter"], [1, "bi", "bi-alphabet-uppercase", "me-2", "fs-5"], ["type", "number", "id", "letterDelaySecond", "name", "letterDelaySecond", 1, "form-control", 3, "ngModel", "ngModelChange"], ["for", "programDelaySecond", 1, "col-sm-7", "col-form-label", "text-light", "hyperparameter"], [1, "bi", "bi-code-slash", "me-2", "fs-5"], ["type", "number", "id", "programDelaySecond", "name", "programDelaySecond", 1, "form-control", 3, "ngModel", "ngModelChange"], ["for", "outputDelaySecond", 1, "col-sm-7", "col-form-label", "text-light", "hyperparameter"], [1, "bi", "bi-distribute-vertical", "me-2", "fs-5"], ["type", "number", "id", "outputDelaySecond", "name", "outputDelaySecond", 1, "form-control", 3, "ngModel", "ngModelChange"], ["for", "ttsTextSecondsMultiple", 1, "col-sm-7", "col-form-label", "text-light", "hyperparameter"], [1, "bi", "bi-alarm", "me-2", "fs-5"], ["type", "number", "id", "ttsTextSecondsMultiple", "name", "ttsTextSecondsMultiple", 1, "form-control", 3, "ngModel", "ngModelChange"], [1, "text-start", "text-secondary", "fs-5", "mb-3"], [1, "row"], [1, "col", "original-markdown-box"], ["class", "text-warning fs-4", 4, "ngIf"], ["class", "file-content-box p-4 mb-4 mt-2 shadow text-light border border-1 border-secondary", 4, "ngIf"], [1, "col", "decode-box"], ["class", "p-4 mb-4 mt-2 shadow border border-1 border-success", 4, "ngIf"], [1, "text-warning", "fs-4"], [1, "bi", "bi-filetype-md", "me-2"], [1, "file-content-box", "p-4", "mb-4", "mt-2", "shadow", "text-light", "border", "border-1", "border-secondary"], [1, "bi", "bi-emoji-smile-fill", "me-2"], [1, "p-4", "mb-4", "mt-2", "shadow", "border", "border-1", "border-success"], ["class", "list-group mb-5", 4, "ngFor", "ngForOf"], [1, "list-group", "mb-5"], [1, "row", "mb-3"], [1, "col", "text-light", "lead"], [4, "ngFor", "ngForOf"], ["class", "list-group-item", 4, "ngFor", "ngForOf"], [4, "ngIf"], [1, "me-3"], [1, "fw-bold"], [1, "list-group-item"], [1, "col-1", "text-secondary", "border-end", "border-secondary"], [1, "col", "text-warning"], ["class", "bi bi-emoji-smile-fill me-1", 4, "ngIf"], ["class", "bi bi-award me-1", 4, "ngIf"], ["class", "bi bi-chat-left me-1", 4, "ngIf"], ["class", "bi bi-code-slash me-1", 4, "ngIf"], ["class", "bi bi-bar-chart-line-fill me-1", 4, "ngIf"], ["class", "bi bi-mic-fill me-1", 4, "ngIf"], ["class", "bi bi-check2-square me-1", 4, "ngIf"], ["class", "bi bi-chevron-compact-down me-1", 4, "ngIf"], ["class", "bi bi-chevron-compact-up me-1", 4, "ngIf"], [1, "col", "text-success", 3, "innerHTML"], [1, "bi", "bi-emoji-smile-fill", "me-1"], [1, "bi", "bi-award", "me-1"], [1, "bi", "bi-chat-left", "me-1"], [1, "bi", "bi-code-slash", "me-1"], [1, "bi", "bi-bar-chart-line-fill", "me-1"], [1, "bi", "bi-mic-fill", "me-1"], [1, "bi", "bi-check2-square", "me-1"], [1, "bi", "bi-chevron-compact-down", "me-1"], [1, "bi", "bi-chevron-compact-up", "me-1"], [1, "content-area"], ["class", "mt-5 mb-4 pb-2 fs-2 text-info fw-bold border-bottom border-info border-3", 4, "ngIf"], ["class", "my-3 text-info fs-3 lh-lg ps-3 border-start border-info border-5", 4, "ngIf"], ["class", "mt-3 mb-5 graph-box", 4, "ngIf"], ["class", "mt-3 mb-5 fs-3 voice-box", 4, "ngIf"], ["class", "bg-warning fs-3 px-3 py-1 annotation-box", 4, "ngIf"], ["class", "my-3", 4, "ngIf"], ["class", "bg-warning text-dark fs-3 px-3 py-1 code-box", 4, "ngIf"], ["class", "text-light fs-3 py-2 ms-2 output-box px-4", 4, "ngIf"], [1, "mt-5", "mb-4", "pb-2", "fs-2", "text-info", "fw-bold", "border-bottom", "border-info", "border-3"], ["class", "title-letter", 3, "innerHTML", 4, "ngFor", "ngForOf"], [1, "title-letter", 3, "innerHTML"], [1, "my-3", "text-info", "fs-3", "lh-lg", "ps-3", "border-start", "border-info", "border-5"], ["class", "desc-letter", 3, "innerHTML", 4, "ngFor", "ngForOf"], [1, "desc-letter", 3, "innerHTML"], [1, "mt-3", "mb-5", "graph-box"], [1, "graph", "rounded", 3, "src"], [1, "mt-3", "mb-5", "fs-3", "voice-box"], [1, "text-light"], [1, "bi", "bi-volume-up-fill", "fs-4"], [1, "py-0", "ps-2", "fs-4"], ["class", "voice-second me-2", 3, "innerHTML", 4, "ngFor", "ngForOf"], [1, "voice-second", "me-2", 3, "innerHTML"], [1, "bg-warning", "fs-3", "px-3", "py-1", "annotation-box"], ["class", "text-secondary annotation-letter", 3, "innerHTML", 4, "ngFor", "ngForOf"], [1, "text-secondary", "annotation-letter", 3, "innerHTML"], [1, "my-3"], [1, "bg-warning", "text-dark", "fs-3", "px-3", "py-1", "code-box"], ["class", "code-letter", 3, "innerHTML", 4, "ngFor", "ngForOf"], [1, "code-letter", 3, "innerHTML"], [1, "text-light", "fs-3", "py-2", "ms-2", "output-box", "px-4"], ["class", "output-letter", 3, "innerHTML", 4, "ngFor", "ngForOf"], [1, "output-letter", 3, "innerHTML"]],
+    decls: 39,
+    vars: 9,
+    consts: [["id", "markdownModal", "tabindex", "-1", "aria-labelledby", "exampleModalLabel", "aria-hidden", "true", 1, "modal", "fade"], [1, "modal-dialog", "modal-xl"], [1, "modal-content", "bg-dark", "text-info"], [1, "modal-header"], ["id", "markdownModalLabel", 1, "modal-title", "fs-5", "text-info", "fs-3"], ["type", "button", "data-bs-dismiss", "modal", "aria-label", "Close", 1, "btn", "btn-outline-info"], [1, "modal-body"], [1, "list-group"], ["class", "list-group-item text-light", 4, "ngFor", "ngForOf"], [1, "modal-footer"], ["type", "button", "data-bs-dismiss", "modal", 1, "btn", "btn-outline-info"], ["id", "ttsModal", "tabindex", "-1", "aria-labelledby", "ttsModalLabel", "aria-hidden", "true", 1, "modal", "fade"], [1, "modal-content", "bg-warning"], ["id", "ttsModalLabel", 1, "modal-title", "fs-5"], ["type", "button", "data-bs-dismiss", "modal", "aria-label", "Close", 1, "btn-close"], ["class", "border border-1 border-secondary", 4, "ngIf"], ["type", "button", "data-bs-dismiss", "modal", 1, "btn", "btn-outline-dark"], ["class", "btn btn-secondary px-2 py-0 shadow", "id", "goTopBtn", 3, "click", 4, "ngIf"], ["class", "btn btn-danger px-2 py-0 shadow", "id", "refreshBtn", 3, "click", 4, "ngIf"], ["class", "container-fluid bg-dark", 4, "ngIf"], [1, "content-box", "bg-dark", 2, "padding-bottom", "50rem"], [1, "bg-box"], ["class", "container-fluid", 4, "ngIf"], ["id", "tutorial-box", 1, "mb-5", "pb-4", "px-5"], [1, "container-fluid", "bg-dark", "text-light", "pt-0", "pb-5", "mb-5", "tutorial-container"], [1, "row", "justify-content-center", "py-5", "mb-5"], [1, "col-11", "pb-5", "mb-5", "align-self-center"], [1, "text-center", "fs-1", "text-danger", "mb-3", "fw-bold"], ["class", "content-area", 4, "ngFor", "ngForOf"], [1, "list-group-item", "text-light"], [1, "bi", "bi-caret-right-fill", "me-1", "text-info"], [1, "border", "border-1", "border-secondary"], [1, "text-center", "text-secondary", "p-2", "border", "border-1", "border-secondary"], ["class", "tts-item", 4, "ngFor", "ngForOf"], [1, "tts-item"], [1, "text-center", "p-2", "border", "border-1", "border-secondary"], ["type", "button", 1, "btn", "btn-dark", "btn-sm", "shadow", 3, "click"], [1, "bi", "bi-copy"], [1, "p-2", "border", "border-1", "border-secondary"], ["id", "goTopBtn", 1, "btn", "btn-secondary", "px-2", "py-0", "shadow", 3, "click"], [1, "bi", "bi-chevron-up", "fs-4"], ["id", "refreshBtn", 1, "btn", "btn-danger", "px-2", "py-0", "shadow", 3, "click"], [1, "bi", "bi-arrow-clockwise", "fs-4"], [1, "container-fluid", "bg-dark"], [1, "row", "px-4", "py-3", "align-items-center"], [1, "col", "text-center", "text-light", "fw-bold", "fs-3"], [1, "col-7"], [1, "input-group", "w-100"], ["type", "button", "href", "/#/", 1, "btn", "btn-outline-warning"], [1, "bi", "bi-house-fill", "pe-1"], ["type", "button", "id", "button-addon1", "data-bs-toggle", "modal", "data-bs-target", "#markdownModal", 1, "btn", "btn-outline-info"], [1, "bi", "bi-markdown", "me-2"], ["id", "file-input", "type", "file", "name", "file-input", 1, "form-control", 2, "display", "none", 3, "change"], ["fileInput", ""], ["for", "file-input", "id", "file-input-label", 1, "text-light", "px-3", "py-2", "bg-success"], [1, "bi", "bi-1-circle", "me-2"], ["type", "button", "id", "analysis-btn", 1, "btn", "btn-primary", 3, "disabled", "click"], [1, "bi", "bi-2-circle", "me-2"], ["type", "button", "id", "tts-btn", "data-bs-toggle", "modal", "data-bs-target", "#ttsModal", 1, "btn", "btn-warning", 3, "disabled"], [1, "bi", "bi-3-circle", "me-2"], ["type", "button", "id", "get-started", 1, "btn", "btn-danger", 3, "disabled", "click"], [1, "bi", "bi-4-circle", "pe-2"], ["type", "button", "id", "clean-input-file", 1, "btn", "btn-outline-secondary", 3, "disabled", "click"], [1, "bi", "bi-trash3", "pe-1"], [1, "container-fluid"], ["class", "row my-4 justify-content-between", 4, "ngIf"], ["class", "row", 4, "ngIf"], [1, "row", "my-4", "justify-content-between"], [1, "col", "text-center"], [3, "ngClass"], [1, "mt-4"], ["class", "text-start text-secondary fs-5 mb-3", 4, "ngFor", "ngForOf"], ["src", "../../assets/img/wolf.png", "height", "80rem", "width", "auto", 1, "me-3"], ["src", "../../assets/img/jupyter-logo.png", 1, "jupyter-logo"], ["src", "../../assets/img/right-arrow.png", 1, "right-arrow"], ["src", "../../assets/img/markdown-logo.png", 1, "markdown-logo"], ["src", "../../assets/img/video-logo.png", 1, "video-logo", "mx-2"], [1, "text-primary", "fs-2", "fw-bolder", "mx-1"], ["src", "../../assets/img/audio.png", 1, "video-logo", "ms-2"], [1, "hyperparameter-form", "border", "border-secondary", "rounded", "p-4"], [1, "mb-3", "row", "align-items-center"], ["for", "readySecond", 1, "col-sm-7", "col-form-label", "hyperparameter"], [1, "fs-5", "text-success", "my-0"], [1, "bi", "bi-play-circle", "me-2", "fs-5"], [1, "my-0", "text-secondary"], [1, "col-sm"], ["name", "readySecond", "type", "number", "id", "readySecond", 1, "form-control", 3, "ngModel", "ngModelChange"], [1, "text-light", "ms-3", "lead"], ["for", "waitForBigTitleSecond", 1, "col-sm-7", "col-form-label", "text-light", "hyperparameter"], [1, "bi", "bi-filetype-md", "me-2", "fs-5"], ["name", "waitForBigTitleSecond", "type", "number", "id", "waitForBigTitleSecond", 1, "form-control", 3, "ngModel", "ngModelChange"], ["for", "contentDelaySecond", 1, "col-sm-7", "col-form-label", "text-light", "hyperparameter"], [1, "bi", "bi-markdown", "fs-5", "me-2"], ["name", "contentDelaySecond", "type", "number", "id", "contentDelaySecond", 1, "form-control", 3, "ngModel", "ngModelChange"], ["for", "titleBeforeDelaySecond", 1, "col-sm-7", "col-form-label", "text-light", "hyperparameter"], [1, "bi", "bi-arrow-bar-up", "fs-5", "me-2"], ["name", "titleBeforeDelaySecond", "type", "number", "id", "titleBeforeDelaySecond", 1, "form-control", 3, "ngModel", "ngModelChange"], ["for", "rowDelaySecond", 1, "col-sm-7", "col-form-label", "text-light", "hyperparameter"], [1, "bi", "bi-arrow-return-left", "me-2", "fs-5"], ["type", "number", "id", "rowDelaySecond", "name", "rowDelaySecond", 1, "form-control", 3, "ngModel", "ngModelChange"], ["for", "letterDelaySecond", 1, "col-sm-7", "col-form-label", "text-light", "hyperparameter"], [1, "bi", "bi-alphabet-uppercase", "me-2", "fs-5"], ["type", "number", "id", "letterDelaySecond", "name", "letterDelaySecond", 1, "form-control", 3, "ngModel", "ngModelChange"], ["for", "programDelaySecond", 1, "col-sm-7", "col-form-label", "text-light", "hyperparameter"], [1, "bi", "bi-code-slash", "me-2", "fs-5"], ["type", "number", "id", "programDelaySecond", "name", "programDelaySecond", 1, "form-control", 3, "ngModel", "ngModelChange"], ["for", "outputDelaySecond", 1, "col-sm-7", "col-form-label", "text-light", "hyperparameter"], [1, "bi", "bi-distribute-vertical", "me-2", "fs-5"], ["type", "number", "id", "outputDelaySecond", "name", "outputDelaySecond", 1, "form-control", 3, "ngModel", "ngModelChange"], ["for", "ttsTextSecondsMultiple", 1, "col-sm-7", "col-form-label", "text-light", "hyperparameter"], [1, "bi", "bi-alarm", "me-2", "fs-5"], ["type", "number", "id", "ttsTextSecondsMultiple", "name", "ttsTextSecondsMultiple", 1, "form-control", 3, "ngModel", "ngModelChange"], [1, "text-start", "text-secondary", "fs-5", "mb-3"], [1, "row"], [1, "col", "original-markdown-box"], ["class", "text-warning fs-4", 4, "ngIf"], ["class", "file-content-box p-4 mb-4 mt-2 shadow text-light border border-1 border-secondary", 4, "ngIf"], [1, "col", "decode-box"], ["class", "p-4 mb-4 mt-2 shadow border border-1 border-success", 4, "ngIf"], [1, "text-warning", "fs-4"], [1, "bi", "bi-filetype-md", "me-2"], [1, "file-content-box", "p-4", "mb-4", "mt-2", "shadow", "text-light", "border", "border-1", "border-secondary"], [1, "bi", "bi-emoji-smile-fill", "me-2"], [1, "p-4", "mb-4", "mt-2", "shadow", "border", "border-1", "border-success"], ["class", "list-group mb-5", 4, "ngFor", "ngForOf"], [1, "list-group", "mb-5"], [1, "row", "mb-3"], [1, "col", "text-light", "lead"], [4, "ngFor", "ngForOf"], ["class", "list-group-item", 4, "ngFor", "ngForOf"], [4, "ngIf"], [1, "me-3"], [1, "fw-bold"], [1, "list-group-item"], [1, "col-1", "text-secondary", "border-end", "border-secondary"], [1, "col", "text-warning"], ["class", "bi bi-emoji-smile-fill me-1", 4, "ngIf"], ["class", "bi bi-award me-1", 4, "ngIf"], ["class", "bi bi-chat-left me-1", 4, "ngIf"], ["class", "bi bi-code-slash me-1", 4, "ngIf"], ["class", "bi bi-bar-chart-line-fill me-1", 4, "ngIf"], ["class", "bi bi-mic-fill me-1", 4, "ngIf"], ["class", "bi bi-check2-square me-1", 4, "ngIf"], ["class", "bi bi-chevron-compact-down me-1", 4, "ngIf"], ["class", "bi bi-chevron-compact-up me-1", 4, "ngIf"], [1, "col", "text-success", 3, "innerHTML"], [1, "bi", "bi-emoji-smile-fill", "me-1"], [1, "bi", "bi-award", "me-1"], [1, "bi", "bi-chat-left", "me-1"], [1, "bi", "bi-code-slash", "me-1"], [1, "bi", "bi-bar-chart-line-fill", "me-1"], [1, "bi", "bi-mic-fill", "me-1"], [1, "bi", "bi-check2-square", "me-1"], [1, "bi", "bi-chevron-compact-down", "me-1"], [1, "bi", "bi-chevron-compact-up", "me-1"], [1, "content-area"], ["class", "mt-5 mb-4 pb-2 fs-2 text-info py-1 fw-bold border-bottom border-info border-3", 4, "ngIf"], ["class", "my-3 text-info fs-3 lh-lg ps-3 border-start border-info border-5", 4, "ngIf"], ["class", "mt-3 mb-5 graph-box", 4, "ngIf"], ["class", "mt-3 mb-5 fs-3 voice-box", 4, "ngIf"], ["class", "bg-warning fs-3 px-3 py-1 annotation-box", 4, "ngIf"], ["class", "my-3", 4, "ngIf"], ["class", "bg-warning text-dark px-3 code-box", 4, "ngIf"], ["class", "text-light fs-3 py-2 ms-2 output-box px-4", 4, "ngIf"], [1, "mt-5", "mb-4", "pb-2", "fs-2", "text-info", "py-1", "fw-bold", "border-bottom", "border-info", "border-3"], ["class", "title-letter", 3, "innerHTML", 4, "ngFor", "ngForOf"], [1, "title-letter", 3, "innerHTML"], [1, "my-3", "text-info", "fs-3", "lh-lg", "ps-3", "border-start", "border-info", "border-5"], ["class", "desc-letter", 3, "innerHTML", 4, "ngFor", "ngForOf"], [1, "desc-letter", 3, "innerHTML"], [1, "mt-3", "mb-5", "graph-box"], [1, "graph", "rounded", 3, "src"], [1, "mt-3", "mb-5", "fs-3", "voice-box"], ["role", "alert", 1, "alert", "alert-primary", "py-1"], [1, "bi", "bi-volume-up-fill", "fs-4"], [1, "py-0", "ps-2", "fs-4"], ["class", "voice-second me-2", 3, "innerHTML", 4, "ngFor", "ngForOf"], [1, "voice-second", "me-2", 3, "innerHTML"], [1, "bg-warning", "fs-3", "px-3", "py-1", "annotation-box"], ["class", "text-secondary annotation-letter", 3, "innerHTML", 4, "ngFor", "ngForOf"], [1, "text-secondary", "annotation-letter", 3, "innerHTML"], [1, "my-3"], [1, "bg-warning", "text-dark", "px-3", "code-box"], ["class", "code-letter", 3, "innerHTML", "ngClass", 4, "ngFor", "ngForOf"], [1, "code-letter", 3, "innerHTML", "ngClass"], [1, "text-light", "fs-3", "py-2", "ms-2", "output-box", "px-4"], ["class", "output-letter", 3, "innerHTML", 4, "ngFor", "ngForOf"], [1, "output-letter", 3, "innerHTML"]],
     template: function MdScreenRecordComponent_Template(rf, ctx) {
       if (rf & 1) {
         \u0275\u0275elementStart(0, "div", 0)(1, "div", 1)(2, "div", 2)(3, "div", 3)(4, "h1", 4);
@@ -28326,18 +28386,33 @@ var MdScreenRecordComponent = /* @__PURE__ */ (() => {
         \u0275\u0275elementStart(11, "div", 9)(12, "button", 10);
         \u0275\u0275text(13, "Close");
         \u0275\u0275elementEnd()()()()();
-        \u0275\u0275template(14, MdScreenRecordComponent_button_14_Template, 2, 0, "button", 11)(15, MdScreenRecordComponent_button_15_Template, 2, 0, "button", 12)(16, MdScreenRecordComponent_div_16_Template, 26, 3, "div", 13);
-        \u0275\u0275elementStart(17, "div", 14)(18, "div", 15);
-        \u0275\u0275template(19, MdScreenRecordComponent_div_19_Template, 3, 2, "div", 16);
-        \u0275\u0275elementStart(20, "div", 17)(21, "div", 18)(22, "div", 19)(23, "div", 20)(24, "h1", 21);
-        \u0275\u0275text(25);
+        \u0275\u0275elementStart(14, "div", 11)(15, "div", 1)(16, "div", 12)(17, "div", 3)(18, "h1", 13);
+        \u0275\u0275text(19);
         \u0275\u0275elementEnd();
-        \u0275\u0275template(26, MdScreenRecordComponent_div_26_Template, 9, 8, "div", 22);
+        \u0275\u0275element(20, "button", 14);
+        \u0275\u0275elementEnd();
+        \u0275\u0275elementStart(21, "div", 6);
+        \u0275\u0275template(22, MdScreenRecordComponent_table_22_Template, 9, 1, "table", 15);
+        \u0275\u0275elementEnd();
+        \u0275\u0275elementStart(23, "div", 9)(24, "button", 16);
+        \u0275\u0275text(25, "Close");
+        \u0275\u0275elementEnd()()()()();
+        \u0275\u0275template(26, MdScreenRecordComponent_button_26_Template, 2, 0, "button", 17)(27, MdScreenRecordComponent_button_27_Template, 2, 0, "button", 18)(28, MdScreenRecordComponent_div_28_Template, 29, 4, "div", 19);
+        \u0275\u0275elementStart(29, "div", 20)(30, "div", 21);
+        \u0275\u0275template(31, MdScreenRecordComponent_div_31_Template, 3, 2, "div", 22);
+        \u0275\u0275elementStart(32, "div", 23)(33, "div", 24)(34, "div", 25)(35, "div", 26)(36, "h1", 27);
+        \u0275\u0275text(37);
+        \u0275\u0275elementEnd();
+        \u0275\u0275template(38, MdScreenRecordComponent_div_38_Template, 9, 8, "div", 28);
         \u0275\u0275elementEnd()()()()()();
       }
       if (rf & 2) {
         \u0275\u0275advance(10);
         \u0275\u0275property("ngForOf", ctx.markdownRules);
+        \u0275\u0275advance(9);
+        \u0275\u0275textInterpolate1("Text List for TTS\xA0\xA0\xA0\xA0( ", ctx.ttsList.length, " )");
+        \u0275\u0275advance(3);
+        \u0275\u0275property("ngIf", ctx.ttsList.length > 0);
         \u0275\u0275advance(4);
         \u0275\u0275property("ngIf", ctx.readyGetStarted == false);
         \u0275\u0275advance(1);
@@ -28353,7 +28428,7 @@ var MdScreenRecordComponent = /* @__PURE__ */ (() => {
       }
     },
     dependencies: [NgClass, NgForOf, NgIf, \u0275NgNoValidate, DefaultValueAccessor, NumberValueAccessor, NgControlStatus, NgControlStatusGroup, NgModel, NgForm],
-    styles: ["\n\n.navbar[_ngcontent-%COMP%] {\n  padding-top: 1.5rem;\n}\n.input-group[_ngcontent-%COMP%] {\n  width: 40rem;\n}\n.jupyter-logo[_ngcontent-%COMP%], .markdown-logo[_ngcontent-%COMP%] {\n  height: 2rem;\n  width: auto;\n  margin-left: 0.5rem;\n  margin-right: 0.5rem;\n}\n.right-arrow[_ngcontent-%COMP%] {\n  margin-left: 0.5rem;\n  margin-right: 0.5rem;\n  height: 1.5rem;\n  width: auto;\n}\n.video-logo[_ngcontent-%COMP%] {\n  height: 2.7rem;\n  width: auto;\n}\n.hyperparameter-form[_ngcontent-%COMP%]   input[_ngcontent-%COMP%] {\n  background-color: black;\n  color: white;\n  border-color: gray;\n  display: inline-block;\n  width: 15rem;\n}\n.hyperparameter-form[_ngcontent-%COMP%]   .hyperparameter[_ngcontent-%COMP%]   p[_ngcontent-%COMP%]:hover {\n  cursor: pointer;\n}\n.content-box[_ngcontent-%COMP%] {\n  overflow: hidden !important;\n}\n.content-box[_ngcontent-%COMP%]   .original-markdown-box[_ngcontent-%COMP%] {\n  overflow-x: scroll !important;\n}\n.content-box[_ngcontent-%COMP%]   .original-markdown-box[_ngcontent-%COMP%]   .file-content-box[_ngcontent-%COMP%] {\n  width: 100%;\n  height: 50%;\n  flex-wrap: wrap !important;\n  overflow: scroll !important;\n}\n.content-box[_ngcontent-%COMP%]   .decode-box[_ngcontent-%COMP%]   .list-group[_ngcontent-%COMP%] {\n  background: none !important;\n  border: none;\n}\n.content-box[_ngcontent-%COMP%]   .decode-box[_ngcontent-%COMP%]   .list-group[_ngcontent-%COMP%]   .list-group-item[_ngcontent-%COMP%] {\n  background: none !important;\n  border: none;\n}\n.modal[_ngcontent-%COMP%]   .list-group[_ngcontent-%COMP%] {\n  background: none !important;\n}\n.modal[_ngcontent-%COMP%]   .list-group[_ngcontent-%COMP%]   .list-group-item[_ngcontent-%COMP%] {\n  border: none;\n  background: none !important;\n}\n#goTopBtn[_ngcontent-%COMP%] {\n  position: fixed;\n  bottom: 1rem;\n  right: 1rem;\n}\n#refreshBtn[_ngcontent-%COMP%] {\n  position: fixed;\n  bottom: 4rem;\n  right: 1rem;\n}\n.content-box[_ngcontent-%COMP%] {\n  background-color: #000;\n  height: 100rem;\n  width: 100%;\n}\n#tutorial-box[_ngcontent-%COMP%]   .content-area[_ngcontent-%COMP%]   .graph-box[_ngcontent-%COMP%]   .graph[_ngcontent-%COMP%] {\n  height: 20rem;\n  width: auto;\n}\n#tutorial-box[_ngcontent-%COMP%]   .content-area[_ngcontent-%COMP%]   .voice-box[_ngcontent-%COMP%] {\n  inline-size: 100% !important;\n  overflow-wrap: break-word !important;\n}\n#tutorial-box[_ngcontent-%COMP%]   .content-area[_ngcontent-%COMP%]   .voice-box[_ngcontent-%COMP%]   .voice-second[_ngcontent-%COMP%] {\n  display: none;\n  margin-right: 0.6px;\n}\n#tutorial-box[_ngcontent-%COMP%]   .content-area[_ngcontent-%COMP%]   .title-letter[_ngcontent-%COMP%] {\n  margin-right: 0.6px;\n}\n#tutorial-box[_ngcontent-%COMP%]   .content-area[_ngcontent-%COMP%]   .desc-letter[_ngcontent-%COMP%] {\n  margin-right: 0.6px;\n}\n#tutorial-box[_ngcontent-%COMP%]   .content-area[_ngcontent-%COMP%]   .code-box[_ngcontent-%COMP%]   .code-letter[_ngcontent-%COMP%] {\n  margin-right: 0.6px;\n}\n#tutorial-box[_ngcontent-%COMP%]   .content-area[_ngcontent-%COMP%]   .output-box[_ngcontent-%COMP%] {\n  inline-size: 100% !important;\n  overflow-wrap: break-word !important;\n}\n#tutorial-box[_ngcontent-%COMP%]   .content-area[_ngcontent-%COMP%]   .output-box[_ngcontent-%COMP%]   .output-letter[_ngcontent-%COMP%] {\n  margin-right: 0.6px;\n}\n#file-input-label[_ngcontent-%COMP%]:hover {\n  background-color: rgb(8, 116, 67) !important;\n  cursor: pointer;\n}\n/*# sourceMappingURL=data:application/json;base64,ewogICJ2ZXJzaW9uIjogMywKICAic291cmNlcyI6IFsic3JjL2FwcC9tZC1zY3JlZW4tcmVjb3JkL21kLXNjcmVlbi1yZWNvcmQuY29tcG9uZW50LnNjc3MiXSwKICAic291cmNlc0NvbnRlbnQiOiBbIi5uYXZiYXIge1xuICAgIHBhZGRpbmctdG9wOiAxLjVyZW07XG59XG5cbi5pbnB1dC1ncm91cCB7XG4gICAgd2lkdGg6IDQwcmVtO1xufVxuXG4uanVweXRlci1sb2dvLFxuLm1hcmtkb3duLWxvZ28ge1xuICAgIGhlaWdodDogMnJlbTtcbiAgICB3aWR0aDogYXV0bztcbiAgICBtYXJnaW4tbGVmdDogLjVyZW07XG4gICAgbWFyZ2luLXJpZ2h0OiAuNXJlbTtcbn1cblxuLnJpZ2h0LWFycm93IHtcbiAgICBtYXJnaW4tbGVmdDogLjVyZW07XG4gICAgbWFyZ2luLXJpZ2h0OiAuNXJlbTtcbiAgICBoZWlnaHQ6IDEuNXJlbTtcbiAgICB3aWR0aDogYXV0bztcbn1cblxuLnZpZGVvLWxvZ28ge1xuICAgIGhlaWdodDogMi43cmVtO1xuICAgIHdpZHRoOiBhdXRvO1xufVxuXG4uaHlwZXJwYXJhbWV0ZXItZm9ybSB7XG4gICAgaW5wdXQge1xuICAgICAgICBiYWNrZ3JvdW5kLWNvbG9yOiBibGFjaztcbiAgICAgICAgY29sb3I6IHdoaXRlO1xuICAgICAgICBib3JkZXItY29sb3I6IGdyYXk7XG4gICAgICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgICAgICAgd2lkdGg6IDE1cmVtO1xuICAgIH1cblxuICAgIC5oeXBlcnBhcmFtZXRlciBwIHtcbiAgICAgICAgJjpob3ZlciB7XG4gICAgICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICAgIH1cbiAgICB9XG59XG5cbi5jb250ZW50LWJveCB7XG4gICAgb3ZlcmZsb3c6IGhpZGRlbiAhaW1wb3J0YW50O1xuXG4gICAgLm9yaWdpbmFsLW1hcmtkb3duLWJveCB7XG4gICAgICAgIG92ZXJmbG93LXg6IHNjcm9sbCAhaW1wb3J0YW50O1xuXG4gICAgICAgIC5maWxlLWNvbnRlbnQtYm94IHtcbiAgICAgICAgICAgIHdpZHRoOiAxMDAlO1xuICAgICAgICAgICAgaGVpZ2h0OiA1MCU7XG4gICAgICAgICAgICBmbGV4LXdyYXA6IHdyYXAgIWltcG9ydGFudDtcbiAgICAgICAgICAgIG92ZXJmbG93OiBzY3JvbGwgIWltcG9ydGFudDtcbiAgICAgICAgfVxuICAgIH1cblxuICAgIC5kZWNvZGUtYm94IHtcbiAgICAgICAgLmxpc3QtZ3JvdXAge1xuICAgICAgICAgICAgYmFja2dyb3VuZDogbm9uZSAhaW1wb3J0YW50O1xuICAgICAgICAgICAgYm9yZGVyOiBub25lO1xuXG4gICAgICAgICAgICAubGlzdC1ncm91cC1pdGVtIHtcbiAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kOiBub25lICFpbXBvcnRhbnQ7XG4gICAgICAgICAgICAgICAgYm9yZGVyOiBub25lO1xuICAgICAgICAgICAgfVxuICAgICAgICB9XG4gICAgfVxuXG59XG5cbi5tb2RhbCB7XG4gICAgLmxpc3QtZ3JvdXAge1xuICAgICAgICBiYWNrZ3JvdW5kOiBub25lICFpbXBvcnRhbnQ7XG5cbiAgICAgICAgLmxpc3QtZ3JvdXAtaXRlbSB7XG4gICAgICAgICAgICBib3JkZXI6IG5vbmU7XG4gICAgICAgICAgICBiYWNrZ3JvdW5kOiBub25lICFpbXBvcnRhbnQ7XG4gICAgICAgIH1cbiAgICB9XG59XG5cbiNnb1RvcEJ0biB7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIGJvdHRvbTogMXJlbTtcbiAgICByaWdodDogMXJlbTtcbn1cblxuI3JlZnJlc2hCdG4ge1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICBib3R0b206IDRyZW07XG4gICAgcmlnaHQ6IDFyZW07XG59XG5cbi8vIOihrOW6le+8jOWwhuWGheWuueWMuuWfn+mDveihrOW6leS4uum7keiJslxuLmNvbnRlbnQtYm94IHtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjMDAwO1xuICAgIGhlaWdodDogMTAwcmVtO1xuICAgIHdpZHRoOiAxMDAlO1xufVxuXG4jdHV0b3JpYWwtYm94IHtcbiAgICAudHV0b3JpYWwtY29udGFpbmVyIHt9XG5cblxuICAgIC5jb250ZW50LWFyZWEge1xuXG4gICAgICAgIC5ncmFwaC1ib3gge1xuICAgICAgICAgICAgLmdyYXBoIHtcbiAgICAgICAgICAgICAgICBoZWlnaHQ6IDIwcmVtO1xuICAgICAgICAgICAgICAgIHdpZHRoOiBhdXRvO1xuICAgICAgICAgICAgfVxuICAgICAgICB9XG5cbiAgICAgICAgLnZvaWNlLWJveCB7XG4gICAgICAgICAgICBpbmxpbmUtc2l6ZTogMTAwJSAhaW1wb3J0YW50O1xuICAgICAgICAgICAgb3ZlcmZsb3ctd3JhcDogYnJlYWstd29yZCAhaW1wb3J0YW50O1xuXG4gICAgICAgICAgICAudm9pY2Utc2Vjb25kIHtcbiAgICAgICAgICAgICAgICBkaXNwbGF5OiBub25lOyAvL+S4jeaYvuekuuivremfs+i+k+WHuueahOenkuaVsOeahOaVsOWtl1xuICAgICAgICAgICAgICAgIG1hcmdpbi1yaWdodDogMC42cHg7XG4gICAgICAgICAgICB9XG4gICAgICAgIH1cblxuICAgICAgICAudGl0bGUtbGV0dGVyIHtcbiAgICAgICAgICAgIG1hcmdpbi1yaWdodDogMC42cHg7XG4gICAgICAgIH1cblxuICAgICAgICAuZGVzYy1sZXR0ZXIge1xuICAgICAgICAgICAgbWFyZ2luLXJpZ2h0OiAwLjZweDtcbiAgICAgICAgfVxuXG4gICAgICAgIC5jb2RlLWJveCB7XG4gICAgICAgICAgICAuY29kZS1sZXR0ZXIge1xuICAgICAgICAgICAgICAgIG1hcmdpbi1yaWdodDogMC42cHg7XG4gICAgICAgICAgICB9XG4gICAgICAgIH1cblxuICAgICAgICAub3V0cHV0LWJveCB7XG4gICAgICAgICAgICBpbmxpbmUtc2l6ZTogMTAwJSAhaW1wb3J0YW50O1xuICAgICAgICAgICAgb3ZlcmZsb3ctd3JhcDogYnJlYWstd29yZCAhaW1wb3J0YW50O1xuXG4gICAgICAgICAgICAub3V0cHV0LWxldHRlciB7XG4gICAgICAgICAgICAgICAgbWFyZ2luLXJpZ2h0OiAwLjZweDtcbiAgICAgICAgICAgIH1cblxuICAgICAgICB9XG4gICAgfVxufVxuXG5cblxuI2ZpbGUtaW5wdXQtbGFiZWwge1xuICAgICY6aG92ZXIge1xuICAgICAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoOCwgMTE2LCA2NykgIWltcG9ydGFudDtcbiAgICAgICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIH1cbn0iXSwKICAibWFwcGluZ3MiOiAiO0FBQUEsQ0FBQTtBQUNJLGVBQUE7O0FBR0osQ0FBQTtBQUNJLFNBQUE7O0FBR0osQ0FBQTtBQUFBLENBQUE7QUFFSSxVQUFBO0FBQ0EsU0FBQTtBQUNBLGVBQUE7QUFDQSxnQkFBQTs7QUFHSixDQUFBO0FBQ0ksZUFBQTtBQUNBLGdCQUFBO0FBQ0EsVUFBQTtBQUNBLFNBQUE7O0FBR0osQ0FBQTtBQUNJLFVBQUE7QUFDQSxTQUFBOztBQUlBLENBQUEsb0JBQUE7QUFDSSxvQkFBQTtBQUNBLFNBQUE7QUFDQSxnQkFBQTtBQUNBLFdBQUE7QUFDQSxTQUFBOztBQUlBLENBVEosb0JBU0ksQ0FBQSxlQUFBLENBQUE7QUFDSSxVQUFBOztBQUtaLENBQUE7QUFDSSxZQUFBOztBQUVBLENBSEosWUFHSSxDQUFBO0FBQ0ksY0FBQTs7QUFFQSxDQU5SLFlBTVEsQ0FISixzQkFHSSxDQUFBO0FBQ0ksU0FBQTtBQUNBLFVBQUE7QUFDQSxhQUFBO0FBQ0EsWUFBQTs7QUFLSixDQWZSLFlBZVEsQ0FBQSxXQUFBLENBQUE7QUFDSSxjQUFBO0FBQ0EsVUFBQTs7QUFFQSxDQW5CWixZQW1CWSxDQUpKLFdBSUksQ0FKSixXQUlJLENBQUE7QUFDSSxjQUFBO0FBQ0EsVUFBQTs7QUFRWixDQUFBLE1BQUEsQ0FkSTtBQWVBLGNBQUE7O0FBRUEsQ0FISixNQUdJLENBakJBLFdBaUJBLENBYkk7QUFjQSxVQUFBO0FBQ0EsY0FBQTs7QUFLWixDQUFBO0FBQ0ksWUFBQTtBQUNBLFVBQUE7QUFDQSxTQUFBOztBQUdKLENBQUE7QUFDSSxZQUFBO0FBQ0EsVUFBQTtBQUNBLFNBQUE7O0FBSUosQ0FwREE7QUFxREksb0JBQUE7QUFDQSxVQUFBO0FBQ0EsU0FBQTs7QUFVUSxDQUFBLGFBQUEsQ0FBQSxhQUFBLENBQUEsVUFBQSxDQUFBO0FBQ0ksVUFBQTtBQUNBLFNBQUE7O0FBSVIsQ0FOSSxhQU1KLENBTkksYUFNSixDQUFBO0FBQ0ksZUFBQTtBQUNBLGlCQUFBOztBQUVBLENBVkEsYUFVQSxDQVZBLGFBVUEsQ0FKSixVQUlJLENBQUE7QUFDSSxXQUFBO0FBQ0EsZ0JBQUE7O0FBSVIsQ0FoQkksYUFnQkosQ0FoQkksYUFnQkosQ0FBQTtBQUNJLGdCQUFBOztBQUdKLENBcEJJLGFBb0JKLENBcEJJLGFBb0JKLENBQUE7QUFDSSxnQkFBQTs7QUFJQSxDQXpCQSxhQXlCQSxDQXpCQSxhQXlCQSxDQUFBLFNBQUEsQ0FBQTtBQUNJLGdCQUFBOztBQUlSLENBOUJJLGFBOEJKLENBOUJJLGFBOEJKLENBQUE7QUFDSSxlQUFBO0FBQ0EsaUJBQUE7O0FBRUEsQ0FsQ0EsYUFrQ0EsQ0FsQ0EsYUFrQ0EsQ0FKSixXQUlJLENBQUE7QUFDSSxnQkFBQTs7QUFVWixDQUFBLGdCQUFBO0FBQ0ksb0JBQUEsSUFBQSxDQUFBLEVBQUEsR0FBQSxFQUFBO0FBQ0EsVUFBQTs7IiwKICAibmFtZXMiOiBbXQp9Cg== */"]
+    styles: ["\n\n.navbar[_ngcontent-%COMP%] {\n  padding-top: 1.5rem;\n}\n.input-group[_ngcontent-%COMP%] {\n  width: 40rem;\n}\n.jupyter-logo[_ngcontent-%COMP%], .markdown-logo[_ngcontent-%COMP%] {\n  height: 2rem;\n  width: auto;\n  margin-left: 0.5rem;\n  margin-right: 0.5rem;\n}\n.right-arrow[_ngcontent-%COMP%] {\n  margin-left: 0.5rem;\n  margin-right: 0.5rem;\n  height: 1.5rem;\n  width: auto;\n}\n.video-logo[_ngcontent-%COMP%] {\n  height: 2.7rem;\n  width: auto;\n}\n.hyperparameter-form[_ngcontent-%COMP%]   input[_ngcontent-%COMP%] {\n  background-color: black;\n  color: white;\n  border-color: gray;\n  display: inline-block;\n  width: 15rem;\n}\n.hyperparameter-form[_ngcontent-%COMP%]   .hyperparameter[_ngcontent-%COMP%]   p[_ngcontent-%COMP%]:hover {\n  cursor: pointer;\n}\n.content-box[_ngcontent-%COMP%] {\n  overflow: hidden !important;\n}\n.content-box[_ngcontent-%COMP%]   .original-markdown-box[_ngcontent-%COMP%] {\n  overflow-x: scroll !important;\n}\n.content-box[_ngcontent-%COMP%]   .original-markdown-box[_ngcontent-%COMP%]   .file-content-box[_ngcontent-%COMP%] {\n  width: 100%;\n  height: 50%;\n  flex-wrap: wrap !important;\n  overflow: scroll !important;\n}\n.content-box[_ngcontent-%COMP%]   .decode-box[_ngcontent-%COMP%]   .list-group[_ngcontent-%COMP%] {\n  background: none !important;\n  border: none;\n}\n.content-box[_ngcontent-%COMP%]   .decode-box[_ngcontent-%COMP%]   .list-group[_ngcontent-%COMP%]   .list-group-item[_ngcontent-%COMP%] {\n  background: none !important;\n  border: none;\n}\n.modal[_ngcontent-%COMP%]   .list-group[_ngcontent-%COMP%] {\n  background: none !important;\n}\n.modal[_ngcontent-%COMP%]   .list-group[_ngcontent-%COMP%]   .list-group-item[_ngcontent-%COMP%] {\n  border: none;\n  background: none !important;\n}\n#goTopBtn[_ngcontent-%COMP%] {\n  position: fixed;\n  bottom: 1rem;\n  right: 1rem;\n}\n#refreshBtn[_ngcontent-%COMP%] {\n  position: fixed;\n  bottom: 4rem;\n  right: 1rem;\n}\n.content-box[_ngcontent-%COMP%] {\n  background-color: #000;\n  height: 100rem;\n  width: 100%;\n}\n#tutorial-box[_ngcontent-%COMP%]   .content-area[_ngcontent-%COMP%]   .graph-box[_ngcontent-%COMP%]   .graph[_ngcontent-%COMP%] {\n  height: 20rem;\n  width: auto;\n}\n#tutorial-box[_ngcontent-%COMP%]   .content-area[_ngcontent-%COMP%]   .voice-box[_ngcontent-%COMP%] {\n  inline-size: 100% !important;\n  overflow-wrap: break-word !important;\n}\n#tutorial-box[_ngcontent-%COMP%]   .content-area[_ngcontent-%COMP%]   .voice-box[_ngcontent-%COMP%]   .voice-second[_ngcontent-%COMP%] {\n  display: none;\n  margin-right: 0.6px;\n}\n#tutorial-box[_ngcontent-%COMP%]   .content-area[_ngcontent-%COMP%]   .title-letter[_ngcontent-%COMP%] {\n  margin-right: 0.6px;\n}\n#tutorial-box[_ngcontent-%COMP%]   .content-area[_ngcontent-%COMP%]   .desc-letter[_ngcontent-%COMP%] {\n  margin-right: 0.6px;\n}\n#tutorial-box[_ngcontent-%COMP%]   .content-area[_ngcontent-%COMP%]   .code-box[_ngcontent-%COMP%]   .code-letter[_ngcontent-%COMP%] {\n  margin-right: 0.7px;\n}\n#tutorial-box[_ngcontent-%COMP%]   .content-area[_ngcontent-%COMP%]   .output-box[_ngcontent-%COMP%] {\n  inline-size: 100% !important;\n  overflow-wrap: break-word !important;\n}\n#tutorial-box[_ngcontent-%COMP%]   .content-area[_ngcontent-%COMP%]   .output-box[_ngcontent-%COMP%]   .output-letter[_ngcontent-%COMP%] {\n  margin-right: 0.6px;\n}\n#file-input-label[_ngcontent-%COMP%]:hover {\n  background-color: rgb(8, 116, 67) !important;\n  cursor: pointer;\n}\n/*# sourceMappingURL=data:application/json;base64,ewogICJ2ZXJzaW9uIjogMywKICAic291cmNlcyI6IFsic3JjL2FwcC9tZC1zY3JlZW4tcmVjb3JkL21kLXNjcmVlbi1yZWNvcmQuY29tcG9uZW50LnNjc3MiXSwKICAic291cmNlc0NvbnRlbnQiOiBbIi5uYXZiYXIge1xyXG4gICAgcGFkZGluZy10b3A6IDEuNXJlbTtcclxufVxyXG5cclxuLmlucHV0LWdyb3VwIHtcclxuICAgIHdpZHRoOiA0MHJlbTtcclxufVxyXG5cclxuLmp1cHl0ZXItbG9nbyxcclxuLm1hcmtkb3duLWxvZ28ge1xyXG4gICAgaGVpZ2h0OiAycmVtO1xyXG4gICAgd2lkdGg6IGF1dG87XHJcbiAgICBtYXJnaW4tbGVmdDogLjVyZW07XHJcbiAgICBtYXJnaW4tcmlnaHQ6IC41cmVtO1xyXG59XHJcblxyXG4ucmlnaHQtYXJyb3cge1xyXG4gICAgbWFyZ2luLWxlZnQ6IC41cmVtO1xyXG4gICAgbWFyZ2luLXJpZ2h0OiAuNXJlbTtcclxuICAgIGhlaWdodDogMS41cmVtO1xyXG4gICAgd2lkdGg6IGF1dG87XHJcbn1cclxuXHJcbi52aWRlby1sb2dvIHtcclxuICAgIGhlaWdodDogMi43cmVtO1xyXG4gICAgd2lkdGg6IGF1dG87XHJcbn1cclxuXHJcblxyXG4uaHlwZXJwYXJhbWV0ZXItZm9ybSB7XHJcbiAgICBpbnB1dCB7XHJcbiAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogYmxhY2s7XHJcbiAgICAgICAgY29sb3I6IHdoaXRlO1xyXG4gICAgICAgIGJvcmRlci1jb2xvcjogZ3JheTtcclxuICAgICAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XHJcbiAgICAgICAgd2lkdGg6IDE1cmVtO1xyXG4gICAgfVxyXG5cclxuICAgIC5oeXBlcnBhcmFtZXRlciBwIHtcclxuICAgICAgICAmOmhvdmVyIHtcclxuICAgICAgICAgICAgY3Vyc29yOiBwb2ludGVyO1xyXG4gICAgICAgIH1cclxuICAgIH1cclxufVxyXG5cclxuLmNvbnRlbnQtYm94IHtcclxuICAgIG92ZXJmbG93OiBoaWRkZW4gIWltcG9ydGFudDtcclxuXHJcbiAgICAub3JpZ2luYWwtbWFya2Rvd24tYm94IHtcclxuICAgICAgICBvdmVyZmxvdy14OiBzY3JvbGwgIWltcG9ydGFudDtcclxuXHJcbiAgICAgICAgLmZpbGUtY29udGVudC1ib3gge1xyXG4gICAgICAgICAgICB3aWR0aDogMTAwJTtcclxuICAgICAgICAgICAgaGVpZ2h0OiA1MCU7XHJcbiAgICAgICAgICAgIGZsZXgtd3JhcDogd3JhcCAhaW1wb3J0YW50O1xyXG4gICAgICAgICAgICBvdmVyZmxvdzogc2Nyb2xsICFpbXBvcnRhbnQ7XHJcbiAgICAgICAgfVxyXG4gICAgfVxyXG5cclxuICAgIC5kZWNvZGUtYm94IHtcclxuICAgICAgICAubGlzdC1ncm91cCB7XHJcbiAgICAgICAgICAgIGJhY2tncm91bmQ6IG5vbmUgIWltcG9ydGFudDtcclxuICAgICAgICAgICAgYm9yZGVyOiBub25lO1xyXG5cclxuICAgICAgICAgICAgLmxpc3QtZ3JvdXAtaXRlbSB7XHJcbiAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kOiBub25lICFpbXBvcnRhbnQ7XHJcbiAgICAgICAgICAgICAgICBib3JkZXI6IG5vbmU7XHJcbiAgICAgICAgICAgIH1cclxuICAgICAgICB9XHJcbiAgICB9XHJcblxyXG59XHJcblxyXG4ubW9kYWwge1xyXG4gICAgLmxpc3QtZ3JvdXAge1xyXG4gICAgICAgIGJhY2tncm91bmQ6IG5vbmUgIWltcG9ydGFudDtcclxuXHJcbiAgICAgICAgLmxpc3QtZ3JvdXAtaXRlbSB7XHJcbiAgICAgICAgICAgIGJvcmRlcjogbm9uZTtcclxuICAgICAgICAgICAgYmFja2dyb3VuZDogbm9uZSAhaW1wb3J0YW50O1xyXG4gICAgICAgIH1cclxuICAgIH1cclxufVxyXG5cclxuI2dvVG9wQnRuIHtcclxuICAgIHBvc2l0aW9uOiBmaXhlZDtcclxuICAgIGJvdHRvbTogMXJlbTtcclxuICAgIHJpZ2h0OiAxcmVtO1xyXG59XHJcblxyXG4jcmVmcmVzaEJ0biB7XHJcbiAgICBwb3NpdGlvbjogZml4ZWQ7XHJcbiAgICBib3R0b206IDRyZW07XHJcbiAgICByaWdodDogMXJlbTtcclxufVxyXG5cclxuLy8g6KGs5bqV77yM5bCG5YaF5a655Yy65Z+f6YO96KGs5bqV5Li66buR6ImyXHJcbi5jb250ZW50LWJveCB7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjMDAwO1xyXG4gICAgaGVpZ2h0OiAxMDByZW07XHJcbiAgICB3aWR0aDogMTAwJTtcclxufVxyXG5cclxuI3R1dG9yaWFsLWJveCB7XHJcbiAgICAudHV0b3JpYWwtY29udGFpbmVyIHt9XHJcblxyXG5cclxuICAgIC5jb250ZW50LWFyZWEge1xyXG5cclxuICAgICAgICAuZ3JhcGgtYm94IHtcclxuICAgICAgICAgICAgLmdyYXBoIHtcclxuICAgICAgICAgICAgICAgIGhlaWdodDogMjByZW07XHJcbiAgICAgICAgICAgICAgICB3aWR0aDogYXV0bztcclxuICAgICAgICAgICAgfVxyXG4gICAgICAgIH1cclxuXHJcbiAgICAgICAgLnZvaWNlLWJveCB7XHJcbiAgICAgICAgICAgIGlubGluZS1zaXplOiAxMDAlICFpbXBvcnRhbnQ7XHJcbiAgICAgICAgICAgIG92ZXJmbG93LXdyYXA6IGJyZWFrLXdvcmQgIWltcG9ydGFudDtcclxuXHJcbiAgICAgICAgICAgIC52b2ljZS1zZWNvbmQge1xyXG4gICAgICAgICAgICAgICAgZGlzcGxheTogbm9uZTsgLy/kuI3mmL7npLror63pn7PovpPlh7rnmoTnp5LmlbDnmoTmlbDlrZdcclxuICAgICAgICAgICAgICAgIG1hcmdpbi1yaWdodDogMC42cHg7XHJcbiAgICAgICAgICAgIH1cclxuICAgICAgICB9XHJcblxyXG4gICAgICAgIC50aXRsZS1sZXR0ZXIge1xyXG4gICAgICAgICAgICBtYXJnaW4tcmlnaHQ6IDAuNnB4O1xyXG4gICAgICAgIH1cclxuXHJcbiAgICAgICAgLmRlc2MtbGV0dGVyIHtcclxuICAgICAgICAgICAgbWFyZ2luLXJpZ2h0OiAwLjZweDtcclxuICAgICAgICB9XHJcblxyXG4gICAgICAgIC5jb2RlLWJveCB7XHJcbiAgICAgICAgICAgIC5jb2RlLWxldHRlciB7XHJcbiAgICAgICAgICAgICAgICBtYXJnaW4tcmlnaHQ6IC43cHg7XHJcbiAgICAgICAgICAgIH1cclxuICAgICAgICB9XHJcblxyXG4gICAgICAgIC5vdXRwdXQtYm94IHtcclxuICAgICAgICAgICAgaW5saW5lLXNpemU6IDEwMCUgIWltcG9ydGFudDtcclxuICAgICAgICAgICAgb3ZlcmZsb3ctd3JhcDogYnJlYWstd29yZCAhaW1wb3J0YW50O1xyXG5cclxuICAgICAgICAgICAgLm91dHB1dC1sZXR0ZXIge1xyXG4gICAgICAgICAgICAgICAgbWFyZ2luLXJpZ2h0OiAwLjZweDtcclxuICAgICAgICAgICAgfVxyXG5cclxuICAgICAgICB9XHJcbiAgICB9XHJcbn1cclxuXHJcbiNmaWxlLWlucHV0LWxhYmVsIHtcclxuICAgICY6aG92ZXIge1xyXG4gICAgICAgIGJhY2tncm91bmQtY29sb3I6IHJnYig4LCAxMTYsIDY3KSAhaW1wb3J0YW50O1xyXG4gICAgICAgIGN1cnNvcjogcG9pbnRlcjtcclxuICAgIH1cclxufVxyXG4iXSwKICAibWFwcGluZ3MiOiAiO0FBQUEsQ0FBQTtBQUNJLGVBQUE7O0FBR0osQ0FBQTtBQUNJLFNBQUE7O0FBR0osQ0FBQTtBQUFBLENBQUE7QUFFSSxVQUFBO0FBQ0EsU0FBQTtBQUNBLGVBQUE7QUFDQSxnQkFBQTs7QUFHSixDQUFBO0FBQ0ksZUFBQTtBQUNBLGdCQUFBO0FBQ0EsVUFBQTtBQUNBLFNBQUE7O0FBR0osQ0FBQTtBQUNJLFVBQUE7QUFDQSxTQUFBOztBQUtBLENBQUEsb0JBQUE7QUFDSSxvQkFBQTtBQUNBLFNBQUE7QUFDQSxnQkFBQTtBQUNBLFdBQUE7QUFDQSxTQUFBOztBQUlBLENBVEosb0JBU0ksQ0FBQSxlQUFBLENBQUE7QUFDSSxVQUFBOztBQUtaLENBQUE7QUFDSSxZQUFBOztBQUVBLENBSEosWUFHSSxDQUFBO0FBQ0ksY0FBQTs7QUFFQSxDQU5SLFlBTVEsQ0FISixzQkFHSSxDQUFBO0FBQ0ksU0FBQTtBQUNBLFVBQUE7QUFDQSxhQUFBO0FBQ0EsWUFBQTs7QUFLSixDQWZSLFlBZVEsQ0FBQSxXQUFBLENBQUE7QUFDSSxjQUFBO0FBQ0EsVUFBQTs7QUFFQSxDQW5CWixZQW1CWSxDQUpKLFdBSUksQ0FKSixXQUlJLENBQUE7QUFDSSxjQUFBO0FBQ0EsVUFBQTs7QUFRWixDQUFBLE1BQUEsQ0FkSTtBQWVBLGNBQUE7O0FBRUEsQ0FISixNQUdJLENBakJBLFdBaUJBLENBYkk7QUFjQSxVQUFBO0FBQ0EsY0FBQTs7QUFLWixDQUFBO0FBQ0ksWUFBQTtBQUNBLFVBQUE7QUFDQSxTQUFBOztBQUdKLENBQUE7QUFDSSxZQUFBO0FBQ0EsVUFBQTtBQUNBLFNBQUE7O0FBSUosQ0FwREE7QUFxREksb0JBQUE7QUFDQSxVQUFBO0FBQ0EsU0FBQTs7QUFVUSxDQUFBLGFBQUEsQ0FBQSxhQUFBLENBQUEsVUFBQSxDQUFBO0FBQ0ksVUFBQTtBQUNBLFNBQUE7O0FBSVIsQ0FOSSxhQU1KLENBTkksYUFNSixDQUFBO0FBQ0ksZUFBQTtBQUNBLGlCQUFBOztBQUVBLENBVkEsYUFVQSxDQVZBLGFBVUEsQ0FKSixVQUlJLENBQUE7QUFDSSxXQUFBO0FBQ0EsZ0JBQUE7O0FBSVIsQ0FoQkksYUFnQkosQ0FoQkksYUFnQkosQ0FBQTtBQUNJLGdCQUFBOztBQUdKLENBcEJJLGFBb0JKLENBcEJJLGFBb0JKLENBQUE7QUFDSSxnQkFBQTs7QUFJQSxDQXpCQSxhQXlCQSxDQXpCQSxhQXlCQSxDQUFBLFNBQUEsQ0FBQTtBQUNJLGdCQUFBOztBQUlSLENBOUJJLGFBOEJKLENBOUJJLGFBOEJKLENBQUE7QUFDSSxlQUFBO0FBQ0EsaUJBQUE7O0FBRUEsQ0FsQ0EsYUFrQ0EsQ0FsQ0EsYUFrQ0EsQ0FKSixXQUlJLENBQUE7QUFDSSxnQkFBQTs7QUFRWixDQUFBLGdCQUFBO0FBQ0ksb0JBQUEsSUFBQSxDQUFBLEVBQUEsR0FBQSxFQUFBO0FBQ0EsVUFBQTs7IiwKICAibmFtZXMiOiBbXQp9Cg== */"]
   });
   let MdScreenRecordComponent2 = _MdScreenRecordComponent;
   return MdScreenRecordComponent2;
@@ -28440,7 +28515,7 @@ var CodeBattlefieldComponent = /* @__PURE__ */ (() => {
       }
     },
     dependencies: [NgForOf, RouterOutlet],
-    styles: ["\n\n.box[_ngcontent-%COMP%]   .icon[_ngcontent-%COMP%] {\n  height: 1rem;\n  width: auto;\n}\n/*# sourceMappingURL=data:application/json;base64,ewogICJ2ZXJzaW9uIjogMywKICAic291cmNlcyI6IFsic3JjL2FwcC9jb2RlLWJhdHRsZWZpZWxkL2NvZGUtYmF0dGxlZmllbGQuY29tcG9uZW50LnNjc3MiXSwKICAic291cmNlc0NvbnRlbnQiOiBbIi5ib3gge1xuICAgIC5pY29uIHtcbiAgICAgICAgaGVpZ2h0OiAxcmVtO1xuICAgICAgICB3aWR0aDogYXV0bztcbiAgICB9XG5cbn0iXSwKICAibWFwcGluZ3MiOiAiO0FBQ0ksQ0FBQSxJQUFBLENBQUE7QUFDSSxVQUFBO0FBQ0EsU0FBQTs7IiwKICAibmFtZXMiOiBbXQp9Cg== */"]
+    styles: ["\n\n.box[_ngcontent-%COMP%]   .icon[_ngcontent-%COMP%] {\n  height: 1rem;\n  width: auto;\n}\n/*# sourceMappingURL=data:application/json;base64,ewogICJ2ZXJzaW9uIjogMywKICAic291cmNlcyI6IFsic3JjL2FwcC9jb2RlLWJhdHRsZWZpZWxkL2NvZGUtYmF0dGxlZmllbGQuY29tcG9uZW50LnNjc3MiXSwKICAic291cmNlc0NvbnRlbnQiOiBbIi5ib3gge1xyXG4gICAgLmljb24ge1xyXG4gICAgICAgIGhlaWdodDogMXJlbTtcclxuICAgICAgICB3aWR0aDogYXV0bztcclxuICAgIH1cclxuXHJcbn0iXSwKICAibWFwcGluZ3MiOiAiO0FBQ0ksQ0FBQSxJQUFBLENBQUE7QUFDSSxVQUFBO0FBQ0EsU0FBQTs7IiwKICAibmFtZXMiOiBbXQp9Cg== */"]
   });
   let CodeBattlefieldComponent2 = _CodeBattlefieldComponent;
   return CodeBattlefieldComponent2;
@@ -28556,7 +28631,7 @@ var CodeHuggingfaceComponent = /* @__PURE__ */ (() => {
       }
     },
     dependencies: [NgClass, NgForOf, NgIf],
-    styles: ["\n\n.box[_ngcontent-%COMP%]   .title-list[_ngcontent-%COMP%]   .title[_ngcontent-%COMP%] {\n  transition: color 0.1s, background-color 0.1s;\n}\n.box[_ngcontent-%COMP%]   .title-list[_ngcontent-%COMP%]   .title[_ngcontent-%COMP%]:hover {\n  background-color: rgb(255, 193, 7) !important;\n  color: black !important;\n  cursor: pointer;\n}\n.box[_ngcontent-%COMP%]   .selectedTitle[_ngcontent-%COMP%] {\n  background-color: rgb(255, 193, 7) !important;\n  color: black !important;\n}\n.box[_ngcontent-%COMP%]   .content-box[_ngcontent-%COMP%]   object[_ngcontent-%COMP%] {\n  height: 70rem;\n}\n/*# sourceMappingURL=data:application/json;base64,ewogICJ2ZXJzaW9uIjogMywKICAic291cmNlcyI6IFsic3JjL2FwcC9jb2RlLWh1Z2dpbmdmYWNlL2NvZGUtaHVnZ2luZ2ZhY2UuY29tcG9uZW50LnNjc3MiXSwKICAic291cmNlc0NvbnRlbnQiOiBbIi5ib3gge1xuICAgIC50aXRsZS1saXN0IHtcbiAgICAgICAgLnRpdGxlIHtcbiAgICAgICAgICAgIHRyYW5zaXRpb246IGNvbG9yIDAuMXMsIGJhY2tncm91bmQtY29sb3IgMC4xcztcblxuICAgICAgICAgICAgJjpob3ZlciB7XG4gICAgICAgICAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogcmdiKDI1NSwgMTkzLCA3KSAhaW1wb3J0YW50O1xuICAgICAgICAgICAgICAgIGNvbG9yOiBibGFjayAhaW1wb3J0YW50O1xuICAgICAgICAgICAgICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICAgICAgICAgIH1cbiAgICAgICAgfVxuICAgIH1cblxuICAgIC5zZWxlY3RlZFRpdGxlIHtcbiAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogcmdiKDI1NSwgMTkzLCA3KSAhaW1wb3J0YW50O1xuICAgICAgICBjb2xvcjogYmxhY2sgIWltcG9ydGFudDtcbiAgICB9XG5cbiAgICAuY29udGVudC1ib3gge1xuICAgICAgICBvYmplY3Qge1xuICAgICAgICAgICAgaGVpZ2h0OiA3MHJlbTtcbiAgICAgICAgfVxuICAgIH1cbn0iXSwKICAibWFwcGluZ3MiOiAiO0FBRVEsQ0FBQSxJQUFBLENBQUEsV0FBQSxDQUFBO0FBQ0ksY0FBQSxNQUFBLElBQUEsRUFBQSxpQkFBQTs7QUFFQSxDQUhKLElBR0ksQ0FISixXQUdJLENBSEosS0FHSTtBQUNJLG9CQUFBLElBQUEsR0FBQSxFQUFBLEdBQUEsRUFBQTtBQUNBLFNBQUE7QUFDQSxVQUFBOztBQUtaLENBWEksSUFXSixDQUFBO0FBQ0ksb0JBQUEsSUFBQSxHQUFBLEVBQUEsR0FBQSxFQUFBO0FBQ0EsU0FBQTs7QUFJQSxDQWpCQSxJQWlCQSxDQUFBLFlBQUE7QUFDSSxVQUFBOzsiLAogICJuYW1lcyI6IFtdCn0K */"]
+    styles: ["\n\n.box[_ngcontent-%COMP%]   .title-list[_ngcontent-%COMP%]   .title[_ngcontent-%COMP%] {\n  transition: color 0.1s, background-color 0.1s;\n}\n.box[_ngcontent-%COMP%]   .title-list[_ngcontent-%COMP%]   .title[_ngcontent-%COMP%]:hover {\n  background-color: rgb(255, 193, 7) !important;\n  color: black !important;\n  cursor: pointer;\n}\n.box[_ngcontent-%COMP%]   .selectedTitle[_ngcontent-%COMP%] {\n  background-color: rgb(255, 193, 7) !important;\n  color: black !important;\n}\n.box[_ngcontent-%COMP%]   .content-box[_ngcontent-%COMP%]   object[_ngcontent-%COMP%] {\n  height: 70rem;\n}\n/*# sourceMappingURL=data:application/json;base64,ewogICJ2ZXJzaW9uIjogMywKICAic291cmNlcyI6IFsic3JjL2FwcC9jb2RlLWh1Z2dpbmdmYWNlL2NvZGUtaHVnZ2luZ2ZhY2UuY29tcG9uZW50LnNjc3MiXSwKICAic291cmNlc0NvbnRlbnQiOiBbIi5ib3gge1xyXG4gICAgLnRpdGxlLWxpc3Qge1xyXG4gICAgICAgIC50aXRsZSB7XHJcbiAgICAgICAgICAgIHRyYW5zaXRpb246IGNvbG9yIDAuMXMsIGJhY2tncm91bmQtY29sb3IgMC4xcztcclxuXHJcbiAgICAgICAgICAgICY6aG92ZXIge1xyXG4gICAgICAgICAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogcmdiKDI1NSwgMTkzLCA3KSAhaW1wb3J0YW50O1xyXG4gICAgICAgICAgICAgICAgY29sb3I6IGJsYWNrICFpbXBvcnRhbnQ7XHJcbiAgICAgICAgICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XHJcbiAgICAgICAgICAgIH1cclxuICAgICAgICB9XHJcbiAgICB9XHJcblxyXG4gICAgLnNlbGVjdGVkVGl0bGUge1xyXG4gICAgICAgIGJhY2tncm91bmQtY29sb3I6IHJnYigyNTUsIDE5MywgNykgIWltcG9ydGFudDtcclxuICAgICAgICBjb2xvcjogYmxhY2sgIWltcG9ydGFudDtcclxuICAgIH1cclxuXHJcbiAgICAuY29udGVudC1ib3gge1xyXG4gICAgICAgIG9iamVjdCB7XHJcbiAgICAgICAgICAgIGhlaWdodDogNzByZW07XHJcbiAgICAgICAgfVxyXG4gICAgfVxyXG59Il0sCiAgIm1hcHBpbmdzIjogIjtBQUVRLENBQUEsSUFBQSxDQUFBLFdBQUEsQ0FBQTtBQUNJLGNBQUEsTUFBQSxJQUFBLEVBQUEsaUJBQUE7O0FBRUEsQ0FISixJQUdJLENBSEosV0FHSSxDQUhKLEtBR0k7QUFDSSxvQkFBQSxJQUFBLEdBQUEsRUFBQSxHQUFBLEVBQUE7QUFDQSxTQUFBO0FBQ0EsVUFBQTs7QUFLWixDQVhJLElBV0osQ0FBQTtBQUNJLG9CQUFBLElBQUEsR0FBQSxFQUFBLEdBQUEsRUFBQTtBQUNBLFNBQUE7O0FBSUEsQ0FqQkEsSUFpQkEsQ0FBQSxZQUFBO0FBQ0ksVUFBQTs7IiwKICAibmFtZXMiOiBbXQp9Cg== */"]
   });
   let CodeHuggingfaceComponent2 = _CodeHuggingfaceComponent;
   return CodeHuggingfaceComponent2;
@@ -28820,7 +28895,7 @@ var AppComponent = /* @__PURE__ */ (() => {
       }
     },
     dependencies: [NgForOf, NgIf, RouterOutlet],
-    styles: ["\n\n.navbar[_ngcontent-%COMP%] {\n  background-color: #111 !important;\n}\n.navbar[_ngcontent-%COMP%]   .nav-item[_ngcontent-%COMP%]   .active[_ngcontent-%COMP%]:hover {\n  color: orange !important;\n}\n.navbar[_ngcontent-%COMP%]   .nav-item[_ngcontent-%COMP%]   .icon[_ngcontent-%COMP%] {\n  height: 1.1rem;\n  width: auto;\n}\n.footer[_ngcontent-%COMP%] {\n  background-color: rgb(13, 17, 23);\n}\n.footer[_ngcontent-%COMP%]   .wolf-hand[_ngcontent-%COMP%] {\n  position: absolute;\n  height: 5rem;\n  width: auto;\n  filter: drop-shadow(5px 5px 5px gray);\n}\n.footer[_ngcontent-%COMP%]   .footer-img[_ngcontent-%COMP%] {\n  height: 1.5rem;\n  width: auto;\n  margin-left: 1rem;\n  margin-right: 1rem;\n}\n/*# sourceMappingURL=data:application/json;base64,ewogICJ2ZXJzaW9uIjogMywKICAic291cmNlcyI6IFsic3JjL2FwcC9hcHAuY29tcG9uZW50LnNjc3MiXSwKICAic291cmNlc0NvbnRlbnQiOiBbIi5uYXZiYXIge1xuICAgIGJhY2tncm91bmQtY29sb3I6ICMxMTEgIWltcG9ydGFudDtcblxuICAgIC5uYXYtaXRlbSB7XG4gICAgICAgIC5hY3RpdmU6aG92ZXIge1xuICAgICAgICAgICAgY29sb3I6IG9yYW5nZSAhaW1wb3J0YW50O1xuICAgICAgICB9XG5cbiAgICAgICAgLmljb24ge1xuICAgICAgICAgICAgaGVpZ2h0OiAxLjFyZW07XG4gICAgICAgICAgICB3aWR0aDogYXV0bztcbiAgICAgICAgfVxuICAgIH1cblxufVxuXG4kaWNvbkhlaWdodDogMS41cmVtO1xuJG1hcmdpblg6IDFyZW07XG5cbi5mb290ZXIge1xuICAgIGJhY2tncm91bmQtY29sb3I6IHJnYigxMywgMTcsIDIzKTtcblxuICAgIC53b2xmLWhhbmQge1xuICAgICAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgICAgIGhlaWdodDogNXJlbTtcbiAgICAgICAgd2lkdGg6IGF1dG87XG4gICAgICAgIGZpbHRlcjogZHJvcC1zaGFkb3coNXB4IDVweCA1cHggZ3JheSk7XG4gICAgfVxuXG4gICAgLmZvb3Rlci1pbWcge1xuICAgICAgICBoZWlnaHQ6ICRpY29uSGVpZ2h0O1xuICAgICAgICB3aWR0aDogYXV0bztcbiAgICAgICAgbWFyZ2luLWxlZnQ6ICRtYXJnaW5YO1xuICAgICAgICBtYXJnaW4tcmlnaHQ6ICRtYXJnaW5YO1xuICAgIH1cbn0iXSwKICAibWFwcGluZ3MiOiAiO0FBQUEsQ0FBQTtBQUNJLG9CQUFBOztBQUdJLENBSlIsT0FJUSxDQUFBLFNBQUEsQ0FBQSxNQUFBO0FBQ0ksU0FBQTs7QUFHSixDQVJSLE9BUVEsQ0FKQSxTQUlBLENBQUE7QUFDSSxVQUFBO0FBQ0EsU0FBQTs7QUFTWixDQUFBO0FBQ0ksb0JBQUEsSUFBQSxFQUFBLEVBQUEsRUFBQSxFQUFBOztBQUVBLENBSEosT0FHSSxDQUFBO0FBQ0ksWUFBQTtBQUNBLFVBQUE7QUFDQSxTQUFBO0FBQ0EsVUFBQSxZQUFBLElBQUEsSUFBQSxJQUFBOztBQUdKLENBVkosT0FVSSxDQUFBO0FBQ0ksVUFkSztBQWVMLFNBQUE7QUFDQSxlQWZFO0FBZ0JGLGdCQWhCRTs7IiwKICAibmFtZXMiOiBbXQp9Cg== */"]
+    styles: ["\n\n.navbar[_ngcontent-%COMP%] {\n  background-color: #111 !important;\n}\n.navbar[_ngcontent-%COMP%]   .nav-item[_ngcontent-%COMP%]   .active[_ngcontent-%COMP%]:hover {\n  color: orange !important;\n}\n.navbar[_ngcontent-%COMP%]   .nav-item[_ngcontent-%COMP%]   .icon[_ngcontent-%COMP%] {\n  height: 1.1rem;\n  width: auto;\n}\n.footer[_ngcontent-%COMP%] {\n  background-color: rgb(13, 17, 23);\n}\n.footer[_ngcontent-%COMP%]   .wolf-hand[_ngcontent-%COMP%] {\n  position: absolute;\n  height: 5rem;\n  width: auto;\n  filter: drop-shadow(5px 5px 5px gray);\n}\n.footer[_ngcontent-%COMP%]   .footer-img[_ngcontent-%COMP%] {\n  height: 1.5rem;\n  width: auto;\n  margin-left: 1rem;\n  margin-right: 1rem;\n}\n/*# sourceMappingURL=data:application/json;base64,ewogICJ2ZXJzaW9uIjogMywKICAic291cmNlcyI6IFsic3JjL2FwcC9hcHAuY29tcG9uZW50LnNjc3MiXSwKICAic291cmNlc0NvbnRlbnQiOiBbIi5uYXZiYXIge1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogIzExMSAhaW1wb3J0YW50O1xyXG5cclxuICAgIC5uYXYtaXRlbSB7XHJcbiAgICAgICAgLmFjdGl2ZTpob3ZlciB7XHJcbiAgICAgICAgICAgIGNvbG9yOiBvcmFuZ2UgIWltcG9ydGFudDtcclxuICAgICAgICB9XHJcblxyXG4gICAgICAgIC5pY29uIHtcclxuICAgICAgICAgICAgaGVpZ2h0OiAxLjFyZW07XHJcbiAgICAgICAgICAgIHdpZHRoOiBhdXRvO1xyXG4gICAgICAgIH1cclxuICAgIH1cclxuXHJcbn1cclxuXHJcbiRpY29uSGVpZ2h0OiAxLjVyZW07XHJcbiRtYXJnaW5YOiAxcmVtO1xyXG5cclxuLmZvb3RlciB7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMTMsIDE3LCAyMyk7XHJcblxyXG4gICAgLndvbGYtaGFuZCB7XHJcbiAgICAgICAgcG9zaXRpb246IGFic29sdXRlO1xyXG4gICAgICAgIGhlaWdodDogNXJlbTtcclxuICAgICAgICB3aWR0aDogYXV0bztcclxuICAgICAgICBmaWx0ZXI6IGRyb3Atc2hhZG93KDVweCA1cHggNXB4IGdyYXkpO1xyXG4gICAgfVxyXG5cclxuICAgIC5mb290ZXItaW1nIHtcclxuICAgICAgICBoZWlnaHQ6ICRpY29uSGVpZ2h0O1xyXG4gICAgICAgIHdpZHRoOiBhdXRvO1xyXG4gICAgICAgIG1hcmdpbi1sZWZ0OiAkbWFyZ2luWDtcclxuICAgICAgICBtYXJnaW4tcmlnaHQ6ICRtYXJnaW5YO1xyXG4gICAgfVxyXG59Il0sCiAgIm1hcHBpbmdzIjogIjtBQUFBLENBQUE7QUFDSSxvQkFBQTs7QUFHSSxDQUpSLE9BSVEsQ0FBQSxTQUFBLENBQUEsTUFBQTtBQUNJLFNBQUE7O0FBR0osQ0FSUixPQVFRLENBSkEsU0FJQSxDQUFBO0FBQ0ksVUFBQTtBQUNBLFNBQUE7O0FBU1osQ0FBQTtBQUNJLG9CQUFBLElBQUEsRUFBQSxFQUFBLEVBQUEsRUFBQTs7QUFFQSxDQUhKLE9BR0ksQ0FBQTtBQUNJLFlBQUE7QUFDQSxVQUFBO0FBQ0EsU0FBQTtBQUNBLFVBQUEsWUFBQSxJQUFBLElBQUEsSUFBQTs7QUFHSixDQVZKLE9BVUksQ0FBQTtBQUNJLFVBZEs7QUFlTCxTQUFBO0FBQ0EsZUFmRTtBQWdCRixnQkFoQkU7OyIsCiAgIm5hbWVzIjogW10KfQo= */"]
   });
   let AppComponent2 = _AppComponent;
   return AppComponent2;
