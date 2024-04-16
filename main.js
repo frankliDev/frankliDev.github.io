@@ -28695,6 +28695,121 @@ var CodeHarmonyosComponent = /* @__PURE__ */ (() => {
   return CodeHarmonyosComponent2;
 })();
 
+// src/assets/reading.json
+var reading_default = [
+  {
+    title: "Designing Large Language Model Applications",
+    url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/reading/Designing%20Large%20Language%20Model%20Applications.pdf"
+  },
+  {
+    title: "Developing Apps with GPT-4 and ChatGPT",
+    url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/reading/Developing%20Apps%20with%20GPT-4%20and%20ChatGPT.pdf"
+  },
+  {
+    title: "Hands-On Generative AI with Transformers and Diffusion Models",
+    url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/reading/Hands-On%20Generative%20AI%20with%20Transformers%20and%20Diffusion%20Models.pdf"
+  },
+  {
+    title: "Mastering Transformers",
+    url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/reading/Mastering%20Transformers.pdf"
+  },
+  {
+    title: "Natural Language Processing with Transformers early release",
+    url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/reading/Natural%20Language%20Processing%20with%20Transformers%20early%20release.pdf"
+  },
+  {
+    title: "Natural Language Processing with Transformers",
+    url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/reading/Natural%20Language%20Processing%20with%20Transformers.pdf"
+  },
+  {
+    title: "\u7CBE\u901A Transformer",
+    url: "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/reading/%E7%B2%BE%E9%80%9ATransformer.pdf"
+  }
+];
+
+// src/app/reading/reading.component.ts
+function ReadingComponent_li_4_Template(rf, ctx) {
+  if (rf & 1) {
+    const _r5 = \u0275\u0275getCurrentView();
+    \u0275\u0275elementStart(0, "li", 7);
+    \u0275\u0275listener("click", function ReadingComponent_li_4_Template_li_click_0_listener() {
+      const restoredCtx = \u0275\u0275restoreView(_r5);
+      const book_r2 = restoredCtx.$implicit;
+      const i_r3 = restoredCtx.index;
+      const ctx_r4 = \u0275\u0275nextContext();
+      return \u0275\u0275resetView(ctx_r4.selectBook(book_r2.url, i_r3));
+    });
+    \u0275\u0275text(1);
+    \u0275\u0275elementEnd();
+  }
+  if (rf & 2) {
+    const book_r2 = ctx.$implicit;
+    \u0275\u0275advance(1);
+    \u0275\u0275textInterpolate(book_r2.title);
+  }
+}
+function ReadingComponent_object_6_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275element(0, "object", 8);
+  }
+  if (rf & 2) {
+    const ctx_r1 = \u0275\u0275nextContext();
+    \u0275\u0275attribute("data", ctx_r1.currentUrl, \u0275\u0275sanitizeResourceUrl);
+  }
+}
+var ReadingComponent = /* @__PURE__ */ (() => {
+  const _ReadingComponent = class _ReadingComponent {
+    constructor(sanitizer) {
+      this.sanitizer = sanitizer;
+      this.booksList = [];
+      this.currentUrl = "";
+      this.currentIndex = -1;
+    }
+    ngOnInit() {
+      window.scrollTo({
+        top: 0
+      });
+      reading_default.forEach((element) => {
+        this.booksList.push(element);
+      });
+    }
+    selectBook(url, i) {
+      this.currentIndex = i;
+      this.currentUrl = this.sanitizer.bypassSecurityTrustResourceUrl(url);
+    }
+  };
+  _ReadingComponent.\u0275fac = function ReadingComponent_Factory(t) {
+    return new (t || _ReadingComponent)(\u0275\u0275directiveInject(DomSanitizer));
+  };
+  _ReadingComponent.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({
+    type: _ReadingComponent,
+    selectors: [["app-reading"]],
+    decls: 7,
+    vars: 2,
+    consts: [[1, "container-fluid", "bg-dark", "pt-3", "pb-5", "px-5"], [1, "row"], [1, "col-2"], [1, "list-group", "mt-4", "border", "border-secondary"], ["class", "list-group-item bg-dark text-light book-title border-dark", 3, "click", 4, "ngFor", "ngForOf"], [1, "col"], ["class", "mt-4 book-file", "type", "application/pdf", "width", "100%", 4, "ngIf"], [1, "list-group-item", "bg-dark", "text-light", "book-title", "border-dark", 3, "click"], ["type", "application/pdf", "width", "100%", 1, "mt-4", "book-file"]],
+    template: function ReadingComponent_Template(rf, ctx) {
+      if (rf & 1) {
+        \u0275\u0275elementStart(0, "div", 0)(1, "div", 1)(2, "div", 2)(3, "ul", 3);
+        \u0275\u0275template(4, ReadingComponent_li_4_Template, 2, 1, "li", 4);
+        \u0275\u0275elementEnd()();
+        \u0275\u0275elementStart(5, "div", 5);
+        \u0275\u0275template(6, ReadingComponent_object_6_Template, 1, 1, "object", 6);
+        \u0275\u0275elementEnd()()();
+      }
+      if (rf & 2) {
+        \u0275\u0275advance(4);
+        \u0275\u0275property("ngForOf", ctx.booksList);
+        \u0275\u0275advance(2);
+        \u0275\u0275property("ngIf", ctx.currentUrl != "");
+      }
+    },
+    dependencies: [NgForOf, NgIf],
+    styles: ["\n\nobject[_ngcontent-%COMP%] {\n  height: 50rem;\n}\n.book-title[_ngcontent-%COMP%] {\n  transition: background-color 0.05s, color 0.05s;\n}\n.book-title[_ngcontent-%COMP%]:hover {\n  cursor: pointer;\n  background-color: #ffc107 !important;\n  color: black !important;\n}\n/*# sourceMappingURL=data:application/json;base64,ewogICJ2ZXJzaW9uIjogMywKICAic291cmNlcyI6IFsic3JjL2FwcC9yZWFkaW5nL3JlYWRpbmcuY29tcG9uZW50LnNjc3MiXSwKICAic291cmNlc0NvbnRlbnQiOiBbIm9iamVjdCB7XHJcbiAgICBoZWlnaHQ6IDUwcmVtO1xyXG59XHJcblxyXG4uYm9vay10aXRsZXtcclxuICAgIHRyYW5zaXRpb246IGJhY2tncm91bmQtY29sb3IgLjA1cywgY29sb3IgLjA1cztcclxuICAgICY6aG92ZXJ7XHJcbiAgICAgICAgY3Vyc29yOiBwb2ludGVyO1xyXG4gICAgICAgIGJhY2tncm91bmQtY29sb3I6ICNmZmMxMDcgIWltcG9ydGFudDtcclxuICAgICAgICBjb2xvcjogYmxhY2sgIWltcG9ydGFudDtcclxuICAgIH1cclxufSJdLAogICJtYXBwaW5ncyI6ICI7QUFBQTtBQUNJLFVBQUE7O0FBR0osQ0FBQTtBQUNJLGNBQUEsaUJBQUEsS0FBQSxFQUFBLE1BQUE7O0FBQ0EsQ0FGSixVQUVJO0FBQ0ksVUFBQTtBQUNBLG9CQUFBO0FBQ0EsU0FBQTs7IiwKICAibmFtZXMiOiBbXQp9Cg== */"]
+  });
+  let ReadingComponent2 = _ReadingComponent;
+  return ReadingComponent2;
+})();
+
 // src/app/app-routing.module.ts
 var routes = [{
   path: "",
@@ -28746,6 +28861,10 @@ var routes = [{
   path: "about",
   title: "About",
   component: AboutComponent
+}, {
+  path: "reading",
+  title: "Reading",
+  component: ReadingComponent
 }, {
   path: "**",
   title: "Error",
@@ -28822,12 +28941,16 @@ function AppComponent_nav_0_Template(rf, ctx) {
     \u0275\u0275elementStart(52, "li", 32)(53, "a", 42);
     \u0275\u0275element(54, "i", 43);
     \u0275\u0275text(55, " \u751F\u6D3B\u54F2\u7406 ");
+    \u0275\u0275elementEnd()();
+    \u0275\u0275elementStart(56, "li", 32)(57, "a", 44);
+    \u0275\u0275element(58, "i", 45);
+    \u0275\u0275text(59, " \u9605\u8BFB ");
     \u0275\u0275elementEnd()()()()()();
   }
 }
 function AppComponent_img_7_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275element(0, "img", 44);
+    \u0275\u0275element(0, "img", 46);
   }
   if (rf & 2) {
     const img_r2 = ctx.$implicit;
@@ -28872,10 +28995,10 @@ var AppComponent = /* @__PURE__ */ (() => {
     selectors: [["app-root"]],
     decls: 12,
     vars: 3,
-    consts: [["class", "navbar bg-body-tertiary navbar-expand-lg rounded-0 border-bottom", "data-bs-theme", "dark", 4, "ngIf"], [1, "footer"], [1, "container-fluid", "px-5", "text-secondary", "py-4"], ["src", "../assets/img/wolf-hand.png", 1, "wolf-hand"], [1, "row", "mb-4", "mt-2"], [1, "col-12", "text-center"], ["class", "footer-img", 3, "src", 4, "ngFor", "ngForOf"], [1, "row"], [1, "col-12"], [1, "m-0", "text-center"], ["data-bs-theme", "dark", 1, "navbar", "bg-body-tertiary", "navbar-expand-lg", "rounded-0", "border-bottom"], [1, "container-fluid", "px-5"], ["href", "#", 1, "navbar-brand", "fs-4", "fw-bold"], ["src", "../assets/img/startup.png", "width", "auto", "height", "30", 1, "me-1"], ["type", "button", "data-bs-toggle", "collapse", "data-bs-target", "#navbarNav", "aria-controls", "navbarNav", "aria-expanded", "false", "aria-label", "Toggle navigation", 1, "navbar-toggler"], [1, "navbar-toggler-icon"], ["id", "navbarNav", 1, "collapse", "navbar-collapse", "justify-content-end"], [1, "navbar-nav"], [1, "nav-item"], ["aria-current", "page", "href", "/", 1, "nav-link", "active"], [1, "bi", "bi-house-fill", "me-1"], [1, "nav-item", "dropdown"], ["href", "#", "role", "button", "data-bs-toggle", "dropdown", "aria-expanded", "false", 1, "nav-link", "dropdown-toggle", "active"], ["src", "../assets/img/ai-logo.png", 1, "icon", "me-1", "mb-1"], [1, "dropdown-menu"], ["href", "/#/huggingface", 1, "dropdown-item"], ["src", "../assets/img/huggingface-logo.png", 1, "icon", "me-1"], [1, "dropdown-divider"], ["href", "/#/tongyi", 1, "dropdown-item"], ["src", "../assets/img/tongyi-logo.svg", 1, "icon", "me-1"], ["href", "/#/ai-concept", 1, "dropdown-item"], ["src", "../assets/img/ai-concept.png", 1, "icon", "me-1"], [1, "nav-item", "ms-2"], ["href", "/#/harmonyos", 1, "nav-link", "active"], ["src", "../assets/img/huawei-logo.png", 1, "icon", "me-1", "mb-1"], ["href", "/#/code-battlefield", 1, "nav-link", "active"], ["src", "../assets/img/code.png", 1, "icon", "me-1", "mb-1"], [1, "nav-item", "dropdown", "ms-2"], ["src", "../assets/img/tools.png", 1, "icon", "me-1", "mb-1"], ["href", "/#/md-screen-record", 1, "dropdown-item"], ["src", "../assets/img/markdown-logo.png", 1, "icon", "me-2"], ["src", "../assets/img/audio.png", 1, "icon", "me-2"], ["href", "/#/life-philosophy", 1, "nav-link", "active"], [1, "bi", "bi-book-fill", "me-1", "text-info"], [1, "footer-img", 3, "src"]],
+    consts: [["class", "navbar bg-body-tertiary navbar-expand-lg rounded-0 border-bottom", "data-bs-theme", "dark", 4, "ngIf"], [1, "footer"], [1, "container-fluid", "px-5", "text-secondary", "py-4"], ["src", "../assets/img/wolf-hand.png", 1, "wolf-hand"], [1, "row", "mb-4", "mt-2"], [1, "col-12", "text-center"], ["class", "footer-img", 3, "src", 4, "ngFor", "ngForOf"], [1, "row"], [1, "col-12"], [1, "m-0", "text-center"], ["data-bs-theme", "dark", 1, "navbar", "bg-body-tertiary", "navbar-expand-lg", "rounded-0", "border-bottom"], [1, "container-fluid", "px-5"], ["href", "#", 1, "navbar-brand", "fs-4", "fw-bold"], ["src", "../assets/img/startup.png", "width", "auto", "height", "30", 1, "me-1"], ["type", "button", "data-bs-toggle", "collapse", "data-bs-target", "#navbarNav", "aria-controls", "navbarNav", "aria-expanded", "false", "aria-label", "Toggle navigation", 1, "navbar-toggler"], [1, "navbar-toggler-icon"], ["id", "navbarNav", 1, "collapse", "navbar-collapse", "justify-content-end"], [1, "navbar-nav"], [1, "nav-item"], ["aria-current", "page", "href", "/", 1, "nav-link", "active"], [1, "bi", "bi-house-fill", "me-1"], [1, "nav-item", "dropdown"], ["href", "#", "role", "button", "data-bs-toggle", "dropdown", "aria-expanded", "false", 1, "nav-link", "dropdown-toggle", "active"], ["src", "../assets/img/ai-logo.png", 1, "icon", "me-1", "mb-1"], [1, "dropdown-menu"], ["href", "/#/huggingface", 1, "dropdown-item"], ["src", "../assets/img/huggingface-logo.png", 1, "icon", "me-1"], [1, "dropdown-divider"], ["href", "/#/tongyi", 1, "dropdown-item"], ["src", "../assets/img/tongyi-logo.svg", 1, "icon", "me-1"], ["href", "/#/ai-concept", 1, "dropdown-item"], ["src", "../assets/img/ai-concept.png", 1, "icon", "me-1"], [1, "nav-item", "ms-2"], ["href", "/#/harmonyos", 1, "nav-link", "active"], ["src", "../assets/img/huawei-logo.png", 1, "icon", "me-1", "mb-1"], ["href", "/#/code-battlefield", 1, "nav-link", "active"], ["src", "../assets/img/code.png", 1, "icon", "me-1", "mb-1"], [1, "nav-item", "dropdown", "ms-2"], ["src", "../assets/img/tools.png", 1, "icon", "me-1", "mb-1"], ["href", "/#/md-screen-record", 1, "dropdown-item"], ["src", "../assets/img/markdown-logo.png", 1, "icon", "me-2"], ["src", "../assets/img/audio.png", 1, "icon", "me-2"], ["href", "/#/life-philosophy", 1, "nav-link", "active"], [1, "bi", "bi-book-fill", "me-1", "text-info"], ["href", "/#/reading", 1, "nav-link", "active"], [1, "bi", "bi-bookmark-star-fill", "text-warning"], [1, "footer-img", 3, "src"]],
     template: function AppComponent_Template(rf, ctx) {
       if (rf & 1) {
-        \u0275\u0275template(0, AppComponent_nav_0_Template, 56, 0, "nav", 0);
+        \u0275\u0275template(0, AppComponent_nav_0_Template, 60, 0, "nav", 0);
         \u0275\u0275element(1, "router-outlet");
         \u0275\u0275elementStart(2, "div", 1)(3, "div", 2);
         \u0275\u0275element(4, "img", 3);
