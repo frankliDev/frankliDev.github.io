@@ -28745,19 +28745,19 @@ var reading_default = [
 ];
 
 // src/app/reading/reading.component.ts
-function ReadingComponent_li_11_Template(rf, ctx) {
+function ReadingComponent_li_14_Template(rf, ctx) {
   if (rf & 1) {
     const _r5 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "li")(1, "a", 14);
-    \u0275\u0275listener("click", function ReadingComponent_li_11_Template_a_click_1_listener() {
+    \u0275\u0275elementStart(0, "li")(1, "a", 17);
+    \u0275\u0275listener("click", function ReadingComponent_li_14_Template_a_click_1_listener() {
       const restoredCtx = \u0275\u0275restoreView(_r5);
       const book_r2 = restoredCtx.$implicit;
       const i_r3 = restoredCtx.index;
       const ctx_r4 = \u0275\u0275nextContext();
-      return \u0275\u0275resetView(ctx_r4.selectBook(book_r2.url, i_r3));
+      return \u0275\u0275resetView(ctx_r4.selectBook(book_r2.url, book_r2.title, i_r3));
     });
     \u0275\u0275text(2);
-    \u0275\u0275elementStart(3, "span", 15);
+    \u0275\u0275elementStart(3, "span", 18);
     \u0275\u0275text(4);
     \u0275\u0275elementEnd()()();
   }
@@ -28769,9 +28769,9 @@ function ReadingComponent_li_11_Template(rf, ctx) {
     \u0275\u0275textInterpolate(book_r2.pages);
   }
 }
-function ReadingComponent_object_16_Template(rf, ctx) {
+function ReadingComponent_object_19_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275element(0, "object", 16);
+    \u0275\u0275element(0, "object", 19);
   }
   if (rf & 2) {
     const ctx_r1 = \u0275\u0275nextContext();
@@ -28785,6 +28785,7 @@ var ReadingComponent = /* @__PURE__ */ (() => {
       this.booksList = [];
       this.currentUrl = "";
       this.currentIndex = -1;
+      this.currentBookTitle = "";
     }
     ngOnInit() {
       window.scrollTo({
@@ -28794,9 +28795,14 @@ var ReadingComponent = /* @__PURE__ */ (() => {
         this.booksList.push(element);
       });
     }
-    selectBook(url, i) {
+    selectBook(url, title, i) {
       this.currentIndex = i;
+      this.currentBookTitle = "\u300A " + title + " \u300B";
       this.currentUrl = this.sanitizer.bypassSecurityTrustResourceUrl(url);
+    }
+    goToTop() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
     }
   };
   _ReadingComponent.\u0275fac = function ReadingComponent_Factory(t) {
@@ -28805,30 +28811,41 @@ var ReadingComponent = /* @__PURE__ */ (() => {
   _ReadingComponent.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({
     type: _ReadingComponent,
     selectors: [["app-reading"]],
-    decls: 17,
-    vars: 3,
-    consts: [[1, "container-fluid", "bg-dark", "pt-3", "pb-5", "px-5"], [1, "row", "align-items-center"], [1, "col-2"], [1, "text-warning"], [1, "bi", "bi-bookmark-star-fill", "text-warning"], [1, "col", "text-end"], [1, "dropdown"], ["type", "button", "data-bs-toggle", "dropdown", "aria-expanded", "false", 1, "btn", "btn-sm", "btn-warning", "dropdown-toggle"], [1, "dropdown-menu", "bg-warning", "shadow-lg"], [4, "ngFor", "ngForOf"], [1, "ms-3", "text-secondary"], [1, "row"], [1, "col"], ["class", "mt-4 book-file", "type", "application/pdf", "width", "100%", 4, "ngIf"], ["href", "javascript:void(0)", 1, "dropdown-item", "book-title", 3, "click"], [1, "badge", "text-bg-danger", "ms-3"], ["type", "application/pdf", "width", "100%", 1, "mt-4", "book-file"]],
+    decls: 22,
+    vars: 4,
+    consts: [[1, "container-fluid", "bg-dark", "pt-3", "pb-5", "px-5"], [1, "row", "align-items-center"], [1, "col"], [1, "text-warning"], [1, "bi", "bi-bookmark-star-fill", "text-warning"], [1, "col-7", "text-center"], [1, "text-light"], [1, "col", "text-end"], [1, "dropdown"], ["type", "button", "data-bs-toggle", "dropdown", "aria-expanded", "false", 1, "btn", "btn-sm", "btn-warning", "dropdown-toggle"], [1, "dropdown-menu", "bg-warning", "shadow-lg"], [4, "ngFor", "ngForOf"], [1, "ms-3", "text-secondary"], [1, "row"], ["class", "mt-4 book-file", "type", "application/pdf", "width", "100%", 4, "ngIf"], ["type", "button", 1, "btn", "btn-warning", "py-1", "px-2", "goTopBtn", 3, "click"], [1, "bi", "bi-chevron-up", "text-dark", "fw-bolder", 2, "font-size", ".8rem"], ["href", "javascript:void(0)", 1, "dropdown-item", "book-title", 3, "click"], [1, "badge", "text-bg-danger", "ms-3"], ["type", "application/pdf", "width", "100%", 1, "mt-4", "book-file"]],
     template: function ReadingComponent_Template(rf, ctx) {
       if (rf & 1) {
         \u0275\u0275elementStart(0, "div", 0)(1, "div", 1)(2, "div", 2)(3, "h1", 3);
         \u0275\u0275element(4, "i", 4);
         \u0275\u0275text(5, " Reading ");
         \u0275\u0275elementEnd()();
-        \u0275\u0275elementStart(6, "div", 5)(7, "div", 6)(8, "button", 7);
-        \u0275\u0275text(9, " Books List ");
+        \u0275\u0275elementStart(6, "div", 5)(7, "h4", 6);
+        \u0275\u0275text(8);
+        \u0275\u0275elementEnd()();
+        \u0275\u0275elementStart(9, "div", 7)(10, "div", 8)(11, "button", 9);
+        \u0275\u0275text(12, " Books List ");
         \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(10, "ul", 8);
-        \u0275\u0275template(11, ReadingComponent_li_11_Template, 5, 2, "li", 9);
+        \u0275\u0275elementStart(13, "ul", 10);
+        \u0275\u0275template(14, ReadingComponent_li_14_Template, 5, 2, "li", 11);
         \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(12, "span", 10);
-        \u0275\u0275text(13);
+        \u0275\u0275elementStart(15, "span", 12);
+        \u0275\u0275text(16);
         \u0275\u0275elementEnd()()()();
-        \u0275\u0275elementStart(14, "div", 11)(15, "div", 12);
-        \u0275\u0275template(16, ReadingComponent_object_16_Template, 1, 1, "object", 13);
-        \u0275\u0275elementEnd()()();
+        \u0275\u0275elementStart(17, "div", 13)(18, "div", 2);
+        \u0275\u0275template(19, ReadingComponent_object_19_Template, 1, 1, "object", 14);
+        \u0275\u0275elementEnd()();
+        \u0275\u0275elementStart(20, "button", 15);
+        \u0275\u0275listener("click", function ReadingComponent_Template_button_click_20_listener() {
+          return ctx.goToTop();
+        });
+        \u0275\u0275element(21, "i", 16);
+        \u0275\u0275elementEnd()();
       }
       if (rf & 2) {
-        \u0275\u0275advance(11);
+        \u0275\u0275advance(8);
+        \u0275\u0275textInterpolate(ctx.currentBookTitle);
+        \u0275\u0275advance(6);
         \u0275\u0275property("ngForOf", ctx.booksList);
         \u0275\u0275advance(2);
         \u0275\u0275textInterpolate1("Total: ", ctx.booksList.length, " books");
@@ -28837,7 +28854,7 @@ var ReadingComponent = /* @__PURE__ */ (() => {
       }
     },
     dependencies: [NgForOf, NgIf],
-    styles: ["\n\nobject[_ngcontent-%COMP%] {\n  height: 50rem;\n}\n.book-title[_ngcontent-%COMP%] {\n  transition: background-color 0.05s, color 0.05s;\n}\n.book-title[_ngcontent-%COMP%]:hover {\n  cursor: pointer;\n  background-color: #d9a406 !important;\n  color: black !important;\n}\n/*# sourceMappingURL=data:application/json;base64,ewogICJ2ZXJzaW9uIjogMywKICAic291cmNlcyI6IFsic3JjL2FwcC9yZWFkaW5nL3JlYWRpbmcuY29tcG9uZW50LnNjc3MiXSwKICAic291cmNlc0NvbnRlbnQiOiBbIm9iamVjdCB7XHJcbiAgICBoZWlnaHQ6IDUwcmVtO1xyXG59XHJcblxyXG4uYm9vay10aXRsZSB7XHJcbiAgICB0cmFuc2l0aW9uOiBiYWNrZ3JvdW5kLWNvbG9yIC4wNXMsIGNvbG9yIC4wNXM7XHJcblxyXG4gICAgJjpob3ZlciB7XHJcbiAgICAgICAgY3Vyc29yOiBwb2ludGVyO1xyXG4gICAgICAgIGJhY2tncm91bmQtY29sb3I6ICNkOWE0MDYgIWltcG9ydGFudDtcclxuICAgICAgICBjb2xvcjogYmxhY2sgIWltcG9ydGFudDtcclxuICAgIH1cclxufSJdLAogICJtYXBwaW5ncyI6ICI7QUFBQTtBQUNJLFVBQUE7O0FBR0osQ0FBQTtBQUNJLGNBQUEsaUJBQUEsS0FBQSxFQUFBLE1BQUE7O0FBRUEsQ0FISixVQUdJO0FBQ0ksVUFBQTtBQUNBLG9CQUFBO0FBQ0EsU0FBQTs7IiwKICAibmFtZXMiOiBbXQp9Cg== */"]
+    styles: ["\n\nobject[_ngcontent-%COMP%] {\n  height: 50rem;\n}\n.book-title[_ngcontent-%COMP%] {\n  transition: background-color 0.05s, color 0.05s;\n}\n.book-title[_ngcontent-%COMP%]:hover {\n  cursor: pointer;\n  background-color: #d9a406 !important;\n  color: black !important;\n}\n.goTopBtn[_ngcontent-%COMP%] {\n  position: fixed !important;\n  bottom: 1rem;\n  right: 0.7rem;\n}\n/*# sourceMappingURL=data:application/json;base64,ewogICJ2ZXJzaW9uIjogMywKICAic291cmNlcyI6IFsic3JjL2FwcC9yZWFkaW5nL3JlYWRpbmcuY29tcG9uZW50LnNjc3MiXSwKICAic291cmNlc0NvbnRlbnQiOiBbIm9iamVjdCB7XHJcbiAgICBoZWlnaHQ6IDUwcmVtO1xyXG59XHJcblxyXG4uYm9vay10aXRsZSB7XHJcbiAgICB0cmFuc2l0aW9uOiBiYWNrZ3JvdW5kLWNvbG9yIC4wNXMsIGNvbG9yIC4wNXM7XHJcblxyXG4gICAgJjpob3ZlciB7XHJcbiAgICAgICAgY3Vyc29yOiBwb2ludGVyO1xyXG4gICAgICAgIGJhY2tncm91bmQtY29sb3I6ICNkOWE0MDYgIWltcG9ydGFudDtcclxuICAgICAgICBjb2xvcjogYmxhY2sgIWltcG9ydGFudDtcclxuICAgIH1cclxufVxyXG5cclxuLmdvVG9wQnRuIHtcclxuICAgIHBvc2l0aW9uOiBmaXhlZCAhaW1wb3J0YW50O1xyXG4gICAgYm90dG9tOiAxcmVtO1xyXG4gICAgcmlnaHQ6IC43cmVtO1xyXG59Il0sCiAgIm1hcHBpbmdzIjogIjtBQUFBO0FBQ0ksVUFBQTs7QUFHSixDQUFBO0FBQ0ksY0FBQSxpQkFBQSxLQUFBLEVBQUEsTUFBQTs7QUFFQSxDQUhKLFVBR0k7QUFDSSxVQUFBO0FBQ0Esb0JBQUE7QUFDQSxTQUFBOztBQUlSLENBQUE7QUFDSSxZQUFBO0FBQ0EsVUFBQTtBQUNBLFNBQUE7OyIsCiAgIm5hbWVzIjogW10KfQo= */"]
   });
   let ReadingComponent2 = _ReadingComponent;
   return ReadingComponent2;
