@@ -1,30 +1,37 @@
 [
     {
-        "title":"Designing Large Language Model Applications",
-        "url":"https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/reading/Designing%20Large%20Language%20Model%20Applications.pdf"
+        "title": "Designing Large Language Model Applications",
+        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/reading/Designing%20Large%20Language%20Model%20Applications.pdf",
+        "pages": 92
     },
     {
-        "title":"Developing Apps with GPT-4 and ChatGPT",
-        "url":"https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/reading/Developing%20Apps%20with%20GPT-4%20and%20ChatGPT.pdf"
+        "title": "Developing Apps with GPT-4 and ChatGPT",
+        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/reading/Developing%20Apps%20with%20GPT-4%20and%20ChatGPT.pdf",
+        "pages": 123
     },
     {
-        "title":"Hands-On Generative AI with Transformers and Diffusion Models",
-        "url":"https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/reading/Hands-On%20Generative%20AI%20with%20Transformers%20and%20Diffusion%20Models.pdf"
+        "title": "Hands-On Generative AI with Transformers and Diffusion Models",
+        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/reading/Hands-On%20Generative%20AI%20with%20Transformers%20and%20Diffusion%20Models.pdf",
+        "pages": 66
     },
     {
-        "title":"Mastering Transformers",
-        "url":"https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/reading/Mastering%20Transformers.pdf"
+        "title": "Mastering Transformers",
+        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/reading/Mastering%20Transformers.pdf",
+        "pages": 374
     },
     {
-        "title":"Natural Language Processing with Transformers early release",
-        "url":"https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/reading/Natural%20Language%20Processing%20with%20Transformers%20early%20release.pdf"
+        "title": "Natural Language Processing with Transformers early release",
+        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/reading/Natural%20Language%20Processing%20with%20Transformers%20early%20release.pdf",
+        "pages": 417
     },
     {
-        "title":"Natural Language Processing with Transformers",
-        "url":"https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/reading/Natural%20Language%20Processing%20with%20Transformers.pdf"
+        "title": "Natural Language Processing with Transformers",
+        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/reading/Natural%20Language%20Processing%20with%20Transformers.pdf",
+        "pages": 409
     },
     {
-        "title":"精通 Transformer",
-        "url":"https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/reading/%E7%B2%BE%E9%80%9ATransformer.pdf"
+        "title": "精通 Transformer",
+        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/reading/%E7%B2%BE%E9%80%9ATransformer.pdf",
+        "pages": 419
     }
 ]
