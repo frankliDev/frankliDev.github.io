@@ -1,8 +1,8 @@
 [
     {
-        "title": "Designing Large Language Model Applications",
-        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/reading/Designing%20Large%20Language%20Model%20Applications.pdf",
-        "pages": 92
+        "title": "Natural Language Processing with Transformers",
+        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/reading/Natural%20Language%20Processing%20with%20Transformers.pdf",
+        "pages": 409
     },
     {
         "title": "Developing Apps with GPT-4 and ChatGPT",
@@ -15,23 +15,13 @@
         "pages": 66
     },
     {
-        "title": "Mastering Transformers",
-        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/reading/Mastering%20Transformers.pdf",
-        "pages": 374
+        "title": "Designing Large Language Model Applications",
+        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/reading/Designing%20Large%20Language%20Model%20Applications.pdf",
+        "pages": 92
     },
     {
         "title": "Natural Language Processing with Transformers early release",
         "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/reading/Natural%20Language%20Processing%20with%20Transformers%20early%20release.pdf",
         "pages": 417
-    },
-    {
-        "title": "Natural Language Processing with Transformers",
-        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/reading/Natural%20Language%20Processing%20with%20Transformers.pdf",
-        "pages": 409
-    },
-    {
-        "title": "精通 Transformer",
-        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/reading/%E7%B2%BE%E9%80%9ATransformer.pdf",
-        "pages": 419
     }
 ]
