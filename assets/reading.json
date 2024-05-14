@@ -1,5 +1,10 @@
 [
     {
+        "title": "Transformers 自然语言处理实战",
+        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/reading/Transformer%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E5%AE%9E%E6%88%98.pdf",
+        "pages": 547
+    },
+    {
         "title": "Natural Language Processing with Transformers",
         "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/reading/Natural%20Language%20Processing%20with%20Transformers.pdf",
         "pages": 409
@@ -23,5 +28,10 @@
         "title": "Natural Language Processing with Transformers early release",
         "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/reading/Natural%20Language%20Processing%20with%20Transformers%20early%20release.pdf",
         "pages": 417
+    },
+    {
+        "title": "李宏毅深度学习教程",
+        "url": "https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/reading/LeeDL_Tutorial.pdf",
+        "pages": 327
     }
 ]
