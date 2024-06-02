@@ -30079,79 +30079,127 @@ var AppRoutingModule = /* @__PURE__ */ (() => {
 // src/app/app.component.ts
 function AppComponent_nav_0_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "nav", 10)(1, "div", 11)(2, "a", 12);
-    \u0275\u0275element(3, "img", 13);
+    \u0275\u0275elementStart(0, "nav", 11)(1, "div", 12)(2, "a", 13);
+    \u0275\u0275element(3, "img", 14);
     \u0275\u0275text(4, " Startup Center by Frank ");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(5, "button", 14);
-    \u0275\u0275element(6, "span", 15);
+    \u0275\u0275elementStart(5, "button", 15);
+    \u0275\u0275element(6, "span", 16);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(7, "div", 16)(8, "ul", 17)(9, "li", 18)(10, "a", 19);
-    \u0275\u0275element(11, "i", 20);
+    \u0275\u0275elementStart(7, "div", 17)(8, "ul", 18)(9, "li", 19)(10, "a", 20);
+    \u0275\u0275element(11, "i", 21);
     \u0275\u0275text(12, " \u9996\u9875 ");
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(13, "li", 21)(14, "a", 22);
-    \u0275\u0275element(15, "img", 23);
+    \u0275\u0275elementStart(13, "li", 22)(14, "a", 23);
+    \u0275\u0275element(15, "img", 24);
     \u0275\u0275text(16, " \u4EBA\u5DE5\u667A\u80FD ");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(17, "ul", 24)(18, "li")(19, "a", 25);
-    \u0275\u0275element(20, "img", 26);
+    \u0275\u0275elementStart(17, "ul", 25)(18, "li")(19, "a", 26);
+    \u0275\u0275element(20, "img", 27);
     \u0275\u0275text(21, " HuggingFace ");
     \u0275\u0275elementEnd()();
     \u0275\u0275elementStart(22, "li");
-    \u0275\u0275element(23, "hr", 27);
+    \u0275\u0275element(23, "hr", 28);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(24, "li")(25, "a", 28);
-    \u0275\u0275element(26, "img", 29);
+    \u0275\u0275elementStart(24, "li")(25, "a", 29);
+    \u0275\u0275element(26, "img", 30);
     \u0275\u0275text(27, " \u901A\u4E49\u5343\u95EE ");
     \u0275\u0275elementEnd()();
     \u0275\u0275elementStart(28, "li");
-    \u0275\u0275element(29, "hr", 27);
+    \u0275\u0275element(29, "hr", 28);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(30, "li")(31, "a", 30);
-    \u0275\u0275element(32, "img", 31);
+    \u0275\u0275elementStart(30, "li")(31, "a", 31);
+    \u0275\u0275element(32, "img", 32);
     \u0275\u0275text(33, " \u6982\u5FF5\u626B\u76F2 ");
     \u0275\u0275elementEnd()()()();
-    \u0275\u0275elementStart(34, "li", 32)(35, "a", 33);
-    \u0275\u0275element(36, "img", 34);
+    \u0275\u0275elementStart(34, "li", 33)(35, "a", 34);
+    \u0275\u0275element(36, "img", 35);
     \u0275\u0275text(37, " \u9E3F\u8499\u7CFB\u7EDF ");
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(38, "li", 32)(39, "a", 35);
-    \u0275\u0275element(40, "img", 36);
+    \u0275\u0275elementStart(38, "li", 33)(39, "a", 36);
+    \u0275\u0275element(40, "img", 37);
     \u0275\u0275text(41, " \u7F16\u7801\u9635\u5730 ");
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(42, "li", 37)(43, "a", 22);
-    \u0275\u0275element(44, "img", 38);
+    \u0275\u0275elementStart(42, "li", 38)(43, "a", 23);
+    \u0275\u0275element(44, "img", 39);
     \u0275\u0275text(45, " \u5DE5\u5177\u7BB1 ");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(46, "ul", 24)(47, "li")(48, "a", 39);
-    \u0275\u0275element(49, "i", 40);
+    \u0275\u0275elementStart(46, "ul", 25)(47, "li")(48, "a", 40);
+    \u0275\u0275element(49, "i", 41);
     \u0275\u0275text(50, " MarkDown \u5F55\u5C4F \xB7 \u8BED\u97F3\uFF08 1.0 \u7AD6\u7248 \uFF09 ");
     \u0275\u0275elementEnd()();
     \u0275\u0275elementStart(51, "li");
-    \u0275\u0275element(52, "hr", 27);
+    \u0275\u0275element(52, "hr", 28);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(53, "li")(54, "a", 41);
-    \u0275\u0275element(55, "i", 42);
+    \u0275\u0275elementStart(53, "li")(54, "a", 42);
+    \u0275\u0275element(55, "i", 43);
     \u0275\u0275text(56, " MarkDown \u5F55\u5C4F \xB7 \u8BED\u97F3\uFF08 2.0 \u6A2A\u7248 \uFF09 ");
     \u0275\u0275elementEnd()()()();
-    \u0275\u0275elementStart(57, "li", 32)(58, "a", 43);
-    \u0275\u0275element(59, "i", 44);
+    \u0275\u0275elementStart(57, "li", 33)(58, "a", 44);
+    \u0275\u0275element(59, "i", 45);
     \u0275\u0275text(60, " \u751F\u6D3B\u54F2\u7406 ");
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(61, "li", 32)(62, "a", 45);
-    \u0275\u0275element(63, "i", 46);
+    \u0275\u0275elementStart(61, "li", 33)(62, "a", 46);
+    \u0275\u0275element(63, "i", 47);
     \u0275\u0275text(64, " \u9605\u8BFB ");
     \u0275\u0275elementEnd()()()()()();
   }
 }
 function AppComponent_img_7_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275element(0, "img", 47);
+    \u0275\u0275element(0, "img", 48);
   }
   if (rf & 2) {
-    const img_r2 = ctx.$implicit;
-    \u0275\u0275property("src", "../assets/img/" + img_r2, \u0275\u0275sanitizeUrl);
+    const img_r3 = ctx.$implicit;
+    \u0275\u0275property("src", "../assets/img/" + img_r3, \u0275\u0275sanitizeUrl);
+  }
+}
+function AppComponent_div_12_Template(rf, ctx) {
+  if (rf & 1) {
+    const _r5 = \u0275\u0275getCurrentView();
+    \u0275\u0275elementStart(0, "div", 49)(1, "div", 50)(2, "div", 51)(3, "div", 52)(4, "form", 53)(5, "div", 54)(6, "h3", 55);
+    \u0275\u0275text(7, "User Login");
+    \u0275\u0275elementEnd()();
+    \u0275\u0275elementStart(8, "div", 56)(9, "label", 57);
+    \u0275\u0275element(10, "i", 58);
+    \u0275\u0275text(11, " Email ");
+    \u0275\u0275elementEnd();
+    \u0275\u0275elementStart(12, "input", 59);
+    \u0275\u0275listener("ngModelChange", function AppComponent_div_12_Template_input_ngModelChange_12_listener($event) {
+      \u0275\u0275restoreView(_r5);
+      const ctx_r4 = \u0275\u0275nextContext();
+      return \u0275\u0275resetView(ctx_r4.email = $event);
+    });
+    \u0275\u0275elementEnd()();
+    \u0275\u0275elementStart(13, "div", 56)(14, "label", 60);
+    \u0275\u0275element(15, "i", 61);
+    \u0275\u0275text(16, " Password ");
+    \u0275\u0275elementEnd();
+    \u0275\u0275elementStart(17, "input", 62);
+    \u0275\u0275listener("ngModelChange", function AppComponent_div_12_Template_input_ngModelChange_17_listener($event) {
+      \u0275\u0275restoreView(_r5);
+      const ctx_r6 = \u0275\u0275nextContext();
+      return \u0275\u0275resetView(ctx_r6.password = $event);
+    });
+    \u0275\u0275elementEnd()();
+    \u0275\u0275elementStart(18, "div", 63)(19, "button", 64);
+    \u0275\u0275text(20, "Reset");
+    \u0275\u0275elementEnd();
+    \u0275\u0275elementStart(21, "button", 65);
+    \u0275\u0275listener("click", function AppComponent_div_12_Template_button_click_21_listener() {
+      \u0275\u0275restoreView(_r5);
+      const ctx_r7 = \u0275\u0275nextContext();
+      return \u0275\u0275resetView(ctx_r7.login());
+    });
+    \u0275\u0275text(22, "Login");
+    \u0275\u0275elementEnd()()()()()()();
+  }
+  if (rf & 2) {
+    const ctx_r2 = \u0275\u0275nextContext();
+    \u0275\u0275advance(12);
+    \u0275\u0275property("ngModel", ctx_r2.email);
+    \u0275\u0275advance(5);
+    \u0275\u0275property("ngModel", ctx_r2.password);
   }
 }
 var AppComponent = /* @__PURE__ */ (() => {
@@ -30163,6 +30211,9 @@ var AppComponent = /* @__PURE__ */ (() => {
       this.currentYear = "";
       this.footerImgs = ["chatGPT-logo.png", "huggingface-logo.png", "tongyi-logo.svg", "youtube.png", "huawei-logo.png", "dollar.png", "jupyter-logo.png", "logo.png", "markdown-logo.png", "flask-logo.png", "python-logo.png"];
       this.showNavbar = true;
+      this.isUserLogin = false;
+      this.email = "";
+      this.password = "";
       this.initLog = "\u8FD0\u884C\u547D\u4EE4 [ ng build --configuration development ] \u751F\u6210\u6700\u7EC8\u7684\u4EA7\u54C1\uFF0C\u6587\u4EF6\u540D\u4E0D\u53D8\uFF0C\u4E0D\u4F1A\u51FA\u73B0\u957F\u6570\u5B57\u7684\u5197\u4F59";
       location2.onUrlChange((val) => {
         if (val == "#/md-screen-record-1" || val == "#/md-screen-record-2") {
@@ -30183,6 +30234,13 @@ var AppComponent = /* @__PURE__ */ (() => {
       var date = /* @__PURE__ */ new Date();
       return date.getFullYear().toString();
     }
+    login() {
+      console.log(this.email);
+      console.log(this.password);
+      if (this.email == "lp_frank@163.com" && this.password == "lp3317695") {
+        this.isUserLogin = true;
+      }
+    }
   };
   _AppComponent.\u0275fac = function AppComponent_Factory(t) {
     return new (t || _AppComponent)(\u0275\u0275directiveInject(Router), \u0275\u0275directiveInject(Location));
@@ -30190,9 +30248,9 @@ var AppComponent = /* @__PURE__ */ (() => {
   _AppComponent.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({
     type: _AppComponent,
     selectors: [["app-root"]],
-    decls: 12,
-    vars: 3,
-    consts: [["class", "navbar bg-body-tertiary navbar-expand-lg rounded-0 border-bottom", "data-bs-theme", "dark", 4, "ngIf"], [1, "footer"], [1, "container-fluid", "px-5", "text-secondary", "py-4"], ["src", "../assets/img/wolf-hand.png", 1, "wolf-hand"], [1, "row", "mb-4", "mt-2"], [1, "col-12", "text-center"], ["class", "footer-img", 3, "src", 4, "ngFor", "ngForOf"], [1, "row"], [1, "col-12"], [1, "m-0", "text-center"], ["data-bs-theme", "dark", 1, "navbar", "bg-body-tertiary", "navbar-expand-lg", "rounded-0", "border-bottom"], [1, "container-fluid", "px-5"], ["href", "#", 1, "navbar-brand", "fs-4", "fw-bold"], ["src", "../assets/img/startup.png", "width", "auto", "height", "30", 1, "me-1"], ["type", "button", "data-bs-toggle", "collapse", "data-bs-target", "#navbarNav", "aria-controls", "navbarNav", "aria-expanded", "false", "aria-label", "Toggle navigation", 1, "navbar-toggler"], [1, "navbar-toggler-icon"], ["id", "navbarNav", 1, "collapse", "navbar-collapse", "justify-content-end"], [1, "navbar-nav"], [1, "nav-item"], ["aria-current", "page", "href", "/", 1, "nav-link", "active"], [1, "bi", "bi-house-fill", "me-1"], [1, "nav-item", "dropdown"], ["href", "#", "role", "button", "data-bs-toggle", "dropdown", "aria-expanded", "false", 1, "nav-link", "dropdown-toggle", "active"], ["src", "../assets/img/ai-logo.png", 1, "icon", "me-1", "mb-1"], [1, "dropdown-menu"], ["href", "/#/huggingface", 1, "dropdown-item"], ["src", "../assets/img/huggingface-logo.png", 1, "icon", "me-1"], [1, "dropdown-divider"], ["href", "/#/tongyi", 1, "dropdown-item"], ["src", "../assets/img/tongyi-logo.svg", 1, "icon", "me-1"], ["href", "/#/ai-concept", 1, "dropdown-item"], ["src", "../assets/img/ai-concept.png", 1, "icon", "me-1"], [1, "nav-item", "ms-2"], ["href", "/#/harmonyos", 1, "nav-link", "active"], ["src", "../assets/img/huawei-logo.png", 1, "icon", "me-1", "mb-1"], ["href", "/#/code-battlefield", 1, "nav-link", "active"], ["src", "../assets/img/code.png", 1, "icon", "me-1", "mb-1"], [1, "nav-item", "dropdown", "ms-2"], ["src", "../assets/img/tools.png", 1, "icon", "me-1", "mb-1"], ["href", "/#/md-screen-record-1", 1, "dropdown-item"], [1, "bi", "bi-distribute-horizontal", "text-danger", "me-2"], ["href", "/#/md-screen-record-2", 1, "dropdown-item"], [1, "bi", "bi-distribute-vertical", "text-danger", "me-2"], ["href", "/#/life-philosophy", 1, "nav-link", "active"], [1, "bi", "bi-book-fill", "me-1", "text-info"], ["href", "/#/reading", 1, "nav-link", "active"], [1, "bi", "bi-bookmark-star-fill", "text-warning"], [1, "footer-img", 3, "src"]],
+    decls: 13,
+    vars: 4,
+    consts: [["class", "navbar bg-body-tertiary navbar-expand-lg rounded-0 border-bottom", "data-bs-theme", "dark", 4, "ngIf"], [1, "footer"], [1, "container-fluid", "px-5", "text-secondary", "py-4"], ["src", "../assets/img/wolf-hand.png", 1, "wolf-hand"], [1, "row", "mb-4", "mt-2"], [1, "col-12", "text-center"], ["class", "footer-img", 3, "src", 4, "ngFor", "ngForOf"], [1, "row"], [1, "col-12"], [1, "m-0", "text-center"], ["class", "login-page", 4, "ngIf"], ["data-bs-theme", "dark", 1, "navbar", "bg-body-tertiary", "navbar-expand-lg", "rounded-0", "border-bottom"], [1, "container-fluid", "px-5"], ["href", "#", 1, "navbar-brand", "fs-4", "fw-bold"], ["src", "../assets/img/startup.png", "width", "auto", "height", "30", 1, "me-1"], ["type", "button", "data-bs-toggle", "collapse", "data-bs-target", "#navbarNav", "aria-controls", "navbarNav", "aria-expanded", "false", "aria-label", "Toggle navigation", 1, "navbar-toggler"], [1, "navbar-toggler-icon"], ["id", "navbarNav", 1, "collapse", "navbar-collapse", "justify-content-end"], [1, "navbar-nav"], [1, "nav-item"], ["aria-current", "page", "href", "/#/", 1, "nav-link", "active"], [1, "bi", "bi-house-fill", "me-1"], [1, "nav-item", "dropdown"], ["href", "#", "role", "button", "data-bs-toggle", "dropdown", "aria-expanded", "false", 1, "nav-link", "dropdown-toggle", "active"], ["src", "../assets/img/ai-logo.png", 1, "icon", "me-1", "mb-1"], [1, "dropdown-menu"], ["href", "/#/huggingface", 1, "dropdown-item"], ["src", "../assets/img/huggingface-logo.png", 1, "icon", "me-1"], [1, "dropdown-divider"], ["href", "/#/tongyi", 1, "dropdown-item"], ["src", "../assets/img/tongyi-logo.svg", 1, "icon", "me-1"], ["href", "/#/ai-concept", 1, "dropdown-item"], ["src", "../assets/img/ai-concept.png", 1, "icon", "me-1"], [1, "nav-item", "ms-2"], ["href", "/#/harmonyos", 1, "nav-link", "active"], ["src", "../assets/img/huawei-logo.png", 1, "icon", "me-1", "mb-1"], ["href", "/#/code-battlefield", 1, "nav-link", "active"], ["src", "../assets/img/code.png", 1, "icon", "me-1", "mb-1"], [1, "nav-item", "dropdown", "ms-2"], ["src", "../assets/img/tools.png", 1, "icon", "me-1", "mb-1"], ["href", "/#/md-screen-record-1", 1, "dropdown-item"], [1, "bi", "bi-distribute-horizontal", "text-danger", "me-2"], ["href", "/#/md-screen-record-2", 1, "dropdown-item"], [1, "bi", "bi-distribute-vertical", "text-danger", "me-2"], ["href", "/#/life-philosophy", 1, "nav-link", "active"], [1, "bi", "bi-book-fill", "me-1", "text-info"], ["href", "/#/reading", 1, "nav-link", "active"], [1, "bi", "bi-bookmark-star-fill", "text-warning"], [1, "footer-img", 3, "src"], [1, "login-page"], [1, "container"], [1, "row", "justify-content-center"], [1, "box", "col-4", "align-self-center"], [1, "mt-5", "border", "border-secondary", "p-4", "bg-dark", "text-light", "rounded"], [1, "mb-4"], [1, "text-center"], [1, "mb-3"], ["for", "exampleInputEmail1", 1, "form-label", "text-warning"], [1, "bi", "bi-envelope", "me-1"], ["type", "email", "id", "inputEmail1", "aria-describedby", "emailHelp", "name", "email", "placeholder", "my normal 163 email", 1, "form-control", 3, "ngModel", "ngModelChange"], ["for", "exampleInputPassword1", 1, "form-label", "text-warning"], [1, "bi", "bi-emoji-smile-fill", "me-1"], ["type", "password", "id", "inputPassword", "name", "password", "placeholder", "simple password", 1, "form-control", 3, "ngModel", "ngModelChange"], [1, "text-end", "mt-4"], ["type", "reset", 1, "btn", "btn-sm", "btn-secondary", "me-3"], ["type", "button", 1, "btn", "btn-sm", "btn-primary", 3, "click"]],
     template: function AppComponent_Template(rf, ctx) {
       if (rf & 1) {
         \u0275\u0275template(0, AppComponent_nav_0_Template, 65, 0, "nav", 0);
@@ -30205,6 +30263,7 @@ var AppComponent = /* @__PURE__ */ (() => {
         \u0275\u0275elementStart(8, "div", 7)(9, "div", 8)(10, "p", 9);
         \u0275\u0275text(11);
         \u0275\u0275elementEnd()()()()();
+        \u0275\u0275template(12, AppComponent_div_12_Template, 23, 2, "div", 10);
       }
       if (rf & 2) {
         \u0275\u0275property("ngIf", ctx.showNavbar == true);
@@ -30212,10 +30271,12 @@ var AppComponent = /* @__PURE__ */ (() => {
         \u0275\u0275property("ngForOf", ctx.footerImgs);
         \u0275\u0275advance(4);
         \u0275\u0275textInterpolate1("\xA9 ", ctx.currentYear, " \u674E\u9E4F\uFF08Frank Li\uFF09\u7248\u6743\u6240\u6709");
+        \u0275\u0275advance(1);
+        \u0275\u0275property("ngIf", ctx.isUserLogin == false);
       }
     },
-    dependencies: [NgForOf, NgIf, RouterOutlet],
-    styles: ["\n\n.navbar[_ngcontent-%COMP%] {\n  background-color: #111 !important;\n}\n.navbar[_ngcontent-%COMP%]   .nav-item[_ngcontent-%COMP%]   .active[_ngcontent-%COMP%]:hover {\n  color: orange !important;\n}\n.navbar[_ngcontent-%COMP%]   .nav-item[_ngcontent-%COMP%]   .icon[_ngcontent-%COMP%] {\n  height: 1.1rem;\n  width: auto;\n}\n.footer[_ngcontent-%COMP%] {\n  background-color: rgb(13, 17, 23);\n}\n.footer[_ngcontent-%COMP%]   .wolf-hand[_ngcontent-%COMP%] {\n  position: absolute;\n  height: 5rem;\n  width: auto;\n  filter: drop-shadow(5px 5px 5px gray);\n}\n.footer[_ngcontent-%COMP%]   .footer-img[_ngcontent-%COMP%] {\n  height: 1.5rem;\n  width: auto;\n  margin-left: 1rem;\n  margin-right: 1rem;\n}\n/*# sourceMappingURL=data:application/json;base64,ewogICJ2ZXJzaW9uIjogMywKICAic291cmNlcyI6IFsic3JjL2FwcC9hcHAuY29tcG9uZW50LnNjc3MiXSwKICAic291cmNlc0NvbnRlbnQiOiBbIi5uYXZiYXIge1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogIzExMSAhaW1wb3J0YW50O1xyXG5cclxuICAgIC5uYXYtaXRlbSB7XHJcbiAgICAgICAgLmFjdGl2ZTpob3ZlciB7XHJcbiAgICAgICAgICAgIGNvbG9yOiBvcmFuZ2UgIWltcG9ydGFudDtcclxuICAgICAgICB9XHJcblxyXG4gICAgICAgIC5pY29uIHtcclxuICAgICAgICAgICAgaGVpZ2h0OiAxLjFyZW07XHJcbiAgICAgICAgICAgIHdpZHRoOiBhdXRvO1xyXG4gICAgICAgIH1cclxuICAgIH1cclxuXHJcbn1cclxuXHJcbiRpY29uSGVpZ2h0OiAxLjVyZW07XHJcbiRtYXJnaW5YOiAxcmVtO1xyXG5cclxuLmZvb3RlciB7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMTMsIDE3LCAyMyk7XHJcblxyXG4gICAgLndvbGYtaGFuZCB7XHJcbiAgICAgICAgcG9zaXRpb246IGFic29sdXRlO1xyXG4gICAgICAgIGhlaWdodDogNXJlbTtcclxuICAgICAgICB3aWR0aDogYXV0bztcclxuICAgICAgICBmaWx0ZXI6IGRyb3Atc2hhZG93KDVweCA1cHggNXB4IGdyYXkpO1xyXG4gICAgfVxyXG5cclxuICAgIC5mb290ZXItaW1nIHtcclxuICAgICAgICBoZWlnaHQ6ICRpY29uSGVpZ2h0O1xyXG4gICAgICAgIHdpZHRoOiBhdXRvO1xyXG4gICAgICAgIG1hcmdpbi1sZWZ0OiAkbWFyZ2luWDtcclxuICAgICAgICBtYXJnaW4tcmlnaHQ6ICRtYXJnaW5YO1xyXG4gICAgfVxyXG59Il0sCiAgIm1hcHBpbmdzIjogIjtBQUFBLENBQUE7QUFDSSxvQkFBQTs7QUFHSSxDQUpSLE9BSVEsQ0FBQSxTQUFBLENBQUEsTUFBQTtBQUNJLFNBQUE7O0FBR0osQ0FSUixPQVFRLENBSkEsU0FJQSxDQUFBO0FBQ0ksVUFBQTtBQUNBLFNBQUE7O0FBU1osQ0FBQTtBQUNJLG9CQUFBLElBQUEsRUFBQSxFQUFBLEVBQUEsRUFBQTs7QUFFQSxDQUhKLE9BR0ksQ0FBQTtBQUNJLFlBQUE7QUFDQSxVQUFBO0FBQ0EsU0FBQTtBQUNBLFVBQUEsWUFBQSxJQUFBLElBQUEsSUFBQTs7QUFHSixDQVZKLE9BVUksQ0FBQTtBQUNJLFVBZEs7QUFlTCxTQUFBO0FBQ0EsZUFmRTtBQWdCRixnQkFoQkU7OyIsCiAgIm5hbWVzIjogW10KfQo= */"]
+    dependencies: [NgForOf, NgIf, \u0275NgNoValidate, DefaultValueAccessor, NgControlStatus, NgControlStatusGroup, NgModel, NgForm, RouterOutlet],
+    styles: ["\n\n.navbar[_ngcontent-%COMP%] {\n  background-color: #111 !important;\n}\n.navbar[_ngcontent-%COMP%]   .nav-item[_ngcontent-%COMP%]   .active[_ngcontent-%COMP%]:hover {\n  color: orange !important;\n}\n.navbar[_ngcontent-%COMP%]   .nav-item[_ngcontent-%COMP%]   .icon[_ngcontent-%COMP%] {\n  height: 1.1rem;\n  width: auto;\n}\n.footer[_ngcontent-%COMP%] {\n  background-color: rgb(13, 17, 23);\n}\n.footer[_ngcontent-%COMP%]   .wolf-hand[_ngcontent-%COMP%] {\n  position: absolute;\n  height: 5rem;\n  width: auto;\n  filter: drop-shadow(5px 5px 5px gray);\n}\n.footer[_ngcontent-%COMP%]   .footer-img[_ngcontent-%COMP%] {\n  height: 1.5rem;\n  width: auto;\n  margin-left: 1rem;\n  margin-right: 1rem;\n}\n.login-page[_ngcontent-%COMP%] {\n  height: 100vw !important;\n  width: 100vw !important;\n  position: fixed;\n  z-index: 999999;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  background-color: #444;\n}\n/*# sourceMappingURL=data:application/json;base64,ewogICJ2ZXJzaW9uIjogMywKICAic291cmNlcyI6IFsic3JjL2FwcC9hcHAuY29tcG9uZW50LnNjc3MiXSwKICAic291cmNlc0NvbnRlbnQiOiBbIi5uYXZiYXIge1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogIzExMSAhaW1wb3J0YW50O1xyXG5cclxuICAgIC5uYXYtaXRlbSB7XHJcbiAgICAgICAgLmFjdGl2ZTpob3ZlciB7XHJcbiAgICAgICAgICAgIGNvbG9yOiBvcmFuZ2UgIWltcG9ydGFudDtcclxuICAgICAgICB9XHJcblxyXG4gICAgICAgIC5pY29uIHtcclxuICAgICAgICAgICAgaGVpZ2h0OiAxLjFyZW07XHJcbiAgICAgICAgICAgIHdpZHRoOiBhdXRvO1xyXG4gICAgICAgIH1cclxuICAgIH1cclxuXHJcbn1cclxuXHJcbiRpY29uSGVpZ2h0OiAxLjVyZW07XHJcbiRtYXJnaW5YOiAxcmVtO1xyXG5cclxuLmZvb3RlciB7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMTMsIDE3LCAyMyk7XHJcblxyXG4gICAgLndvbGYtaGFuZCB7XHJcbiAgICAgICAgcG9zaXRpb246IGFic29sdXRlO1xyXG4gICAgICAgIGhlaWdodDogNXJlbTtcclxuICAgICAgICB3aWR0aDogYXV0bztcclxuICAgICAgICBmaWx0ZXI6IGRyb3Atc2hhZG93KDVweCA1cHggNXB4IGdyYXkpO1xyXG4gICAgfVxyXG5cclxuICAgIC5mb290ZXItaW1nIHtcclxuICAgICAgICBoZWlnaHQ6ICRpY29uSGVpZ2h0O1xyXG4gICAgICAgIHdpZHRoOiBhdXRvO1xyXG4gICAgICAgIG1hcmdpbi1sZWZ0OiAkbWFyZ2luWDtcclxuICAgICAgICBtYXJnaW4tcmlnaHQ6ICRtYXJnaW5YO1xyXG4gICAgfVxyXG59XHJcblxyXG4ubG9naW4tcGFnZSB7XHJcbiAgICBoZWlnaHQ6IDEwMHZ3ICFpbXBvcnRhbnQ7XHJcbiAgICB3aWR0aDogMTAwdncgIWltcG9ydGFudDtcclxuICAgIHBvc2l0aW9uOiBmaXhlZDtcclxuICAgIHotaW5kZXg6IDk5OTk5OTtcclxuICAgIHRvcDogMDtcclxuICAgIGxlZnQ6IDA7XHJcbiAgICByaWdodDogMDtcclxuICAgIGJvdHRvbTogMDtcclxuICAgIGJhY2tncm91bmQtY29sb3I6ICM0NDQ7XHJcbiAgfSJdLAogICJtYXBwaW5ncyI6ICI7QUFBQSxDQUFBO0FBQ0ksb0JBQUE7O0FBR0ksQ0FKUixPQUlRLENBQUEsU0FBQSxDQUFBLE1BQUE7QUFDSSxTQUFBOztBQUdKLENBUlIsT0FRUSxDQUpBLFNBSUEsQ0FBQTtBQUNJLFVBQUE7QUFDQSxTQUFBOztBQVNaLENBQUE7QUFDSSxvQkFBQSxJQUFBLEVBQUEsRUFBQSxFQUFBLEVBQUE7O0FBRUEsQ0FISixPQUdJLENBQUE7QUFDSSxZQUFBO0FBQ0EsVUFBQTtBQUNBLFNBQUE7QUFDQSxVQUFBLFlBQUEsSUFBQSxJQUFBLElBQUE7O0FBR0osQ0FWSixPQVVJLENBQUE7QUFDSSxVQWRLO0FBZUwsU0FBQTtBQUNBLGVBZkU7QUFnQkYsZ0JBaEJFOztBQW9CVixDQUFBO0FBQ0ksVUFBQTtBQUNBLFNBQUE7QUFDQSxZQUFBO0FBQ0EsV0FBQTtBQUNBLE9BQUE7QUFDQSxRQUFBO0FBQ0EsU0FBQTtBQUNBLFVBQUE7QUFDQSxvQkFBQTs7IiwKICAibmFtZXMiOiBbXQp9Cg== */"]
   });
   let AppComponent2 = _AppComponent;
   return AppComponent2;
