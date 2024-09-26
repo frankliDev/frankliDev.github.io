@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/reading/reading.component.scss"],
+  "sourcesContent": ["object {\n    height: 50rem;\n}\n\n.book-title {\n    transition: background-color .05s, color .05s;\n\n    &:hover {\n        cursor: pointer;\n        background-color: #d9a406 !important;\n        color: black !important;\n    }\n}\n\n.goTopBtn {\n    position: fixed !important;\n    bottom: 1rem;\n    right: .7rem;\n}"],
+  "mappings": ";AAAA;AACI,UAAA;;AAGJ,CAAA;AACI,cAAA,iBAAA,KAAA,EAAA,MAAA;;AAEA,CAHJ,UAGI;AACI,UAAA;AACA,oBAAA;AACA,SAAA;;AAIR,CAAA;AACI,YAAA;AACA,UAAA;AACA,SAAA;;",
+  "names": []
+}

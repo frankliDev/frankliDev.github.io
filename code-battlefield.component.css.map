@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/code-battlefield/code-battlefield.component.scss"],
+  "sourcesContent": [".box {\n    .icon {\n        height: 1rem;\n        width: auto;\n    }\n\n}"],
+  "mappings": ";AACI,CAAA,IAAA,CAAA;AACI,UAAA;AACA,SAAA;;",
+  "names": []
+}

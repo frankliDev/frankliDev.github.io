@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/home/home.component.scss"],
+  "sourcesContent": [".box {\n    background-color: rgb(1, 4, 9);\n\n    .slogan-box {\n        background-image: url('https://frank-li-files.oss-cn-beijing.aliyuncs.com/study_center/slogan_bg.jpg');\n        background-repeat: no-repeat;\n        background-position: center;\n        background-clip: border-box;\n        background-size: cover;\n\n        .slogan {\n            font-size: 3rem;\n            font-weight: 700;\n        }\n\n        .desc {\n            font-size: 1.5rem;\n            color: #ccc;\n        }\n    }\n\n    .sections {\n        .section {\n            .logo {\n                height: 4rem;\n                width: auto;\n            }\n        }\n    }\n\n}"],
+  "mappings": ";AAAA,CAAA;AACI,oBAAA,IAAA,CAAA,EAAA,CAAA,EAAA;;AAEA,CAHJ,IAGI,CAAA;AACI,oBAAA;AACA,qBAAA;AACA,uBAAA;AACA,mBAAA;AACA,mBAAA;;AAEA,CAVR,IAUQ,CAPJ,WAOI,CAAA;AACI,aAAA;AACA,eAAA;;AAGJ,CAfR,IAeQ,CAZJ,WAYI,CAAA;AACI,aAAA;AACA,SAAA;;AAMA,CAvBZ,IAuBY,CAAA,SAAA,CAAA,QAAA,CAAA;AACI,UAAA;AACA,SAAA;;",
+  "names": []
+}

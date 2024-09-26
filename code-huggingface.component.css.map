@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/code-huggingface/code-huggingface.component.scss"],
+  "sourcesContent": [".box {\n    .title-list {\n        .title {\n            transition: color 0.1s, background-color 0.1s;\n\n            &:hover {\n                background-color: rgb(255, 193, 7) !important;\n                color: black !important;\n                cursor: pointer;\n            }\n        }\n    }\n\n    .selectedTitle {\n        background-color: rgb(255, 193, 7) !important;\n        color: black !important;\n    }\n\n    .content-box {\n        object {\n            height: 70rem;\n        }\n    }\n}"],
+  "mappings": ";AAEQ,CAAA,IAAA,CAAA,WAAA,CAAA;AACI,cAAA,MAAA,IAAA,EAAA,iBAAA;;AAEA,CAHJ,IAGI,CAHJ,WAGI,CAHJ,KAGI;AACI,oBAAA,IAAA,GAAA,EAAA,GAAA,EAAA;AACA,SAAA;AACA,UAAA;;AAKZ,CAXI,IAWJ,CAAA;AACI,oBAAA,IAAA,GAAA,EAAA,GAAA,EAAA;AACA,SAAA;;AAIA,CAjBA,IAiBA,CAAA,YAAA;AACI,UAAA;;",
+  "names": []
+}

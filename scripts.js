@@ -491,8 +491,8 @@
   e.applyStyles = ie, e.arrow = me, e.computeStyles = oe, e.createPopper = we, e.createPopperLite = be, e.defaultModifiers = xe, e.detectOverflow = J, e.eventListeners = ee, e.flip = le, e.hide = ge, e.offset = ae, e.popperGenerator = Z, e.popperOffsets = te, e.preventOverflow = he, Object.defineProperty(e, "__esModule", { value: true });
 });
 /*!
-  * Bootstrap v5.3.2 (https://getbootstrap.com/)
-  * Copyright 2011-2023 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
+  * Bootstrap v5.3.3 (https://getbootstrap.com/)
+  * Copyright 2011-2024 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
   */
 !function(t, e) {
@@ -611,7 +611,7 @@
     const l2 = O(t2), c2 = l2[a2] || (l2[a2] = {}), h2 = I(c2, r2, o2 ? i2 : null);
     if (h2)
       return void (h2.oneOff = h2.oneOff && n2);
-    const d2 = L(r2, e2.replace(A, "")), u2 = o2 ? function(t3, e3, i3) {
+    const d2 = L(r2, e2.replace(A, "")), u2 = o2 ? /* @__PURE__ */ function(t3, e3, i3) {
       return function s3(n3) {
         const o3 = t3.querySelectorAll(e3);
         for (let { target: r3 } = n3; r3 && r3 !== this; r3 = r3.parentNode)
@@ -619,7 +619,7 @@
             if (a3 === r3)
               return F(n3, { delegateTarget: r3 }), s3.oneOff && j.off(t3, n3.type, e3, i3), i3.apply(r3, [n3]);
       };
-    }(t2, i2, r2) : function(t3, e3) {
+    }(t2, i2, r2) : /* @__PURE__ */ function(t3, e3) {
       return function i3(s3) {
         return F(s3, { delegateTarget: t3 }), i3.oneOff && j.off(t3, s3.type, e3), e3.apply(t3, [s3]);
       };
@@ -762,7 +762,7 @@
       return this.getInstance(t2) || new this(t2, "object" == typeof e2 ? e2 : null);
     }
     static get VERSION() {
-      return "5.3.2";
+      return "5.3.3";
     }
     static get DATA_KEY() {
       return `bs.${this.NAME}`;
@@ -780,9 +780,9 @@
       let i2 = t2.getAttribute("href");
       if (!i2 || !i2.includes("#") && !i2.startsWith("."))
         return null;
-      i2.includes("#") && !i2.startsWith("#") && (i2 = `#${i2.split("#")[1]}`), e2 = i2 && "#" !== i2 ? r(i2.trim()) : null;
+      i2.includes("#") && !i2.startsWith("#") && (i2 = `#${i2.split("#")[1]}`), e2 = i2 && "#" !== i2 ? i2.trim() : null;
     }
-    return e2;
+    return e2 ? e2.split(",").map((t3) => r(t3)).join(",") : null;
   }, K = { find: (t2, e2 = document.documentElement) => [].concat(...Element.prototype.querySelectorAll.call(e2, t2)), findOne: (t2, e2 = document.documentElement) => Element.prototype.querySelector.call(e2, t2), children: (t2, e2) => [].concat(...t2.children).filter((t3) => t3.matches(e2)), parents(t2, e2) {
     const i2 = [];
     let s2 = t2.parentNode.closest(e2);
@@ -1607,7 +1607,7 @@
     for (const t2 of K.find("[aria-modal][class*=show][class*=offcanvas-]"))
       "fixed" !== getComputedStyle(t2).position && gi.getOrCreateInstance(t2).hide();
   }), V(gi), b(gi);
-  const fi = { "*": ["class", "dir", "id", "lang", "role", /^aria-[\w-]*$/i], a: ["target", "href", "title", "rel"], area: [], b: [], br: [], col: [], code: [], div: [], em: [], hr: [], h1: [], h2: [], h3: [], h4: [], h5: [], h6: [], i: [], img: ["src", "srcset", "alt", "title", "width", "height"], li: [], ol: [], p: [], pre: [], s: [], small: [], span: [], sub: [], sup: [], strong: [], u: [], ul: [] }, mi = /* @__PURE__ */ new Set(["background", "cite", "href", "itemtype", "longdesc", "poster", "src", "xlink:href"]), pi = /^(?!javascript:)(?:[a-z0-9+.-]+:|[^&:/?#]*(?:[/?#]|$))/i, bi = (t2, e2) => {
+  const fi = { "*": ["class", "dir", "id", "lang", "role", /^aria-[\w-]*$/i], a: ["target", "href", "title", "rel"], area: [], b: [], br: [], col: [], code: [], dd: [], div: [], dl: [], dt: [], em: [], hr: [], h1: [], h2: [], h3: [], h4: [], h5: [], h6: [], i: [], img: ["src", "srcset", "alt", "title", "width", "height"], li: [], ol: [], p: [], pre: [], s: [], small: [], span: [], sub: [], sup: [], strong: [], u: [], ul: [] }, mi = /* @__PURE__ */ new Set(["background", "cite", "href", "itemtype", "longdesc", "poster", "src", "xlink:href"]), pi = /^(?!javascript:)(?:[a-z0-9+.-]+:|[^&:/?#]*(?:[/?#]|$))/i, bi = (t2, e2) => {
     const i2 = t2.nodeName.toLowerCase();
     return e2.includes(i2) ? !mi.has(i2) || Boolean(pi.test(t2.nodeValue)) : e2.filter((t3) => t3 instanceof RegExp).some((t3) => t3.test(i2));
   }, vi = { allowList: fi, content: {}, extraClass: "", html: false, sanitize: true, sanitizeFn: null, template: "<div></div>" }, yi = { allowList: "object", content: "object", extraClass: "(string|function)", html: "boolean", sanitize: "boolean", sanitizeFn: "(null|function)", template: "string" }, wi = { entry: "(string|element|function|null)", selector: "(string|element)" };

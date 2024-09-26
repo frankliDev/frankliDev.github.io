@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/ai-concept/ai-concept.component.scss"],
+  "sourcesContent": [".box {\n    .logo {\n        height: 3rem;\n        width: auto;\n    }\n\n    .copy-icon {\n        height: 1.2rem;\n        width: auto;\n    }\n\n    .goTopBtn {\n        position: fixed !important;\n        bottom: 1rem;\n        right: 1rem;\n    }\n\n    #ai-accordionList {\n        .header {\n            .accordion-button {\n                transition: background-color .2s;\n\n                &:hover {\n                    background-color: #444;\n                }\n            }\n        }\n    }\n\n    #data-accordionList {\n        .header {\n            .accordion-button {\n                transition: background-color .2s;\n\n                &:hover {\n                    background-color: #444;\n                }\n            }\n        }\n    }\n\n}"],
+  "mappings": ";AACI,CAAA,IAAA,CAAA;AACI,UAAA;AACA,SAAA;;AAGJ,CALA,IAKA,CAAA;AACI,UAAA;AACA,SAAA;;AAGJ,CAVA,IAUA,CAAA;AACI,YAAA;AACA,UAAA;AACA,SAAA;;AAKI,CAlBR,IAkBQ,CAAA,iBAAA,CAAA,OAAA,CAAA;AACI,cAAA,iBAAA;;AAEA,CArBZ,IAqBY,CAHJ,iBAGI,CAHJ,OAGI,CAHJ,gBAGI;AACI,oBAAA;;AAQR,CA9BR,IA8BQ,CAAA,mBAAA,CAZA,OAYA,CAZA;AAaI,cAAA,iBAAA;;AAEA,CAjCZ,IAiCY,CAHJ,mBAGI,CAfJ,OAeI,CAfJ,gBAeI;AACI,oBAAA;;",
+  "names": []
+}

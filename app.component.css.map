@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/app.component.scss"],
+  "sourcesContent": [".navbar {\n    background-color: #111 !important;\n\n    .nav-item {\n        .active:hover {\n            color: orange !important;\n        }\n\n        .icon {\n            height: 1.1rem;\n            width: auto;\n        }\n    }\n\n}\n\n$iconHeight: 1.5rem;\n$marginX: 1rem;\n\n.footer {\n    background-color: rgb(13, 17, 23);\n\n    .wolf-hand {\n        position: absolute;\n        height: 5rem;\n        width: auto;\n        filter: drop-shadow(5px 5px 5px gray);\n    }\n\n    .footer-img {\n        height: $iconHeight;\n        width: auto;\n        margin-left: $marginX;\n        margin-right: $marginX;\n    }\n}\n\n.login-page {\n    height: 100vw !important;\n    width: 100vw !important;\n    position: fixed;\n    z-index: 999999;\n    top: 0;\n    left: 0;\n    right: 0;\n    bottom: 0;\n    background-color: #444;\n  }"],
+  "mappings": ";AAAA,CAAA;AACI,oBAAA;;AAGI,CAJR,OAIQ,CAAA,SAAA,CAAA,MAAA;AACI,SAAA;;AAGJ,CARR,OAQQ,CAJA,SAIA,CAAA;AACI,UAAA;AACA,SAAA;;AASZ,CAAA;AACI,oBAAA,IAAA,EAAA,EAAA,EAAA,EAAA;;AAEA,CAHJ,OAGI,CAAA;AACI,YAAA;AACA,UAAA;AACA,SAAA;AACA,UAAA,YAAA,IAAA,IAAA,IAAA;;AAGJ,CAVJ,OAUI,CAAA;AACI,UAdK;AAeL,SAAA;AACA,eAfE;AAgBF,gBAhBE;;AAoBV,CAAA;AACI,UAAA;AACA,SAAA;AACA,YAAA;AACA,WAAA;AACA,OAAA;AACA,QAAA;AACA,SAAA;AACA,UAAA;AACA,oBAAA;;",
+  "names": []
+}

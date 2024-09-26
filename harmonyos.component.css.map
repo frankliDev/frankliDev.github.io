@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/harmonyos/harmonyos.component.scss"],
+  "sourcesContent": ["$myHeight: 80vh;\n$offcanvas-width: 40%;\n\n.box {\n\n    .logo {\n        height: 3rem;\n        width: auto;\n    }\n\n    .title-list {\n        max-height: $myHeight;\n        height: $myHeight;\n        overflow-y: scroll;\n\n        li {\n            background: none;\n            transition: background-color .1s;\n\n            &:hover {\n                background-color: #0066CC;\n                cursor: pointer;\n            }\n        }\n\n    }\n\n    .offcanvas {\n        width: $offcanvas-width !important;\n    }\n\n    object {\n        height: $myHeight;\n    }\n\n    .goTopBtn {\n        position: fixed !important;\n        bottom: 1rem;\n        right: 1rem;\n    }\n\n}"],
+  "mappings": ";AAKI,CAAA,IAAA,CAAA;AACI,UAAA;AACA,SAAA;;AAGJ,CALA,IAKA,CAAA;AACI,cAXG;AAYH,UAZG;AAaH,cAAA;;AAEA,CAVJ,IAUI,CALJ,WAKI;AACI,cAAA;AACA,cAAA,iBAAA;;AAEA,CAdR,IAcQ,CATR,WASQ,EAAA;AACI,oBAAA;AACA,UAAA;;AAMZ,CAtBA,IAsBA,CAAA;AACI,SAAA;;AAGJ,CA1BA,IA0BA;AACI,UAhCG;;AAmCP,CA9BA,IA8BA,CAAA;AACI,YAAA;AACA,UAAA;AACA,SAAA;;",
+  "names": []
+}

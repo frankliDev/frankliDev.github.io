@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/life-philosophy/life-philosophy.component.scss"],
+  "sourcesContent": [".box {\n    .card {\n        transition: background-color 0.2s;\n\n        &:hover {\n            // color: gray !important;\n            // border-color: gray !important;\n            background-color: rgba($color: #000, $alpha: .1) !important;\n        }\n\n    }\n\n    .goTopBtn {\n        position: fixed !important;\n        bottom: 1rem;\n        right: 1rem;\n    }\n\n\n}"],
+  "mappings": ";AACI,CAAA,IAAA,CAAA;AACI,cAAA,iBAAA;;AAEA,CAHJ,IAGI,CAHJ,IAGI;AAGI,oBAAA,KAAA,CAAA,EAAA,CAAA,EAAA,CAAA,EAAA;;AAKR,CAXA,IAWA,CAAA;AACI,YAAA;AACA,UAAA;AACA,SAAA;;",
+  "names": []
+}

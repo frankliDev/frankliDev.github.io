@@ -1,5 +1,10 @@
-// node_modules/zone.js/fesm2015/zone.js
-(function(global) {
+// node_modules/.store/zone.js@0.14.10/node_modules/zone.js/fesm2015/zone.js
+var global = globalThis;
+function __symbol__(name) {
+  const symbolPrefix = global["__Zone_symbol_prefix"] || "__zone_symbol__";
+  return symbolPrefix + name;
+}
+function initZone() {
   const performance = global["performance"];
   function mark(name) {
     performance && performance["mark"] && performance["mark"](name);
@@ -8,26 +13,14 @@
     performance && performance["measure"] && performance["measure"](name, label);
   }
   mark("Zone");
-  const symbolPrefix = global["__Zone_symbol_prefix"] || "__zone_symbol__";
-  function __symbol__(name) {
-    return symbolPrefix + name;
-  }
-  const checkDuplicate = global[__symbol__("forceDuplicateZoneCheck")] === true;
-  if (global["Zone"]) {
-    if (checkDuplicate || typeof global["Zone"].__symbol__ !== "function") {
-      throw new Error("Zone already loaded.");
-    } else {
-      return global["Zone"];
-    }
-  }
-  const _Zone = class _Zone {
+  const _ZoneImpl = class _ZoneImpl {
     static assertZonePatched() {
       if (global["Promise"] !== patches["ZoneAwarePromise"]) {
         throw new Error("Zone.js has detected that ZoneAwarePromise `(window|global).Promise` has been overwritten.\nMost likely cause is that a Promise polyfill has been loaded after Zone.js (Polyfilling Promise api is not necessary when zone.js is loaded. If you must load one, do so before loading zone.js.)");
       }
     }
     static get root() {
-      let zone = _Zone.current;
+      let zone = _ZoneImpl.current;
       while (zone.parent) {
         zone = zone.parent;
       }
@@ -42,13 +35,14 @@
     // tslint:disable-next-line:require-internal-with-underscore
     static __load_patch(name, fn, ignoreDuplicate = false) {
       if (patches.hasOwnProperty(name)) {
+        const checkDuplicate = global[__symbol__("forceDuplicateZoneCheck")] === true;
         if (!ignoreDuplicate && checkDuplicate) {
           throw Error("Already loaded patch: " + name);
         }
       } else if (!global["__Zone_disable_" + name]) {
         const perfName = "Zone:" + name;
         mark(perfName);
-        patches[name] = fn(global, _Zone, _api);
+        patches[name] = fn(global, _ZoneImpl, _api);
         performanceMeasure(perfName, perfName);
       }
     }
@@ -120,34 +114,39 @@
       if (task.zone != this) {
         throw new Error("A task can only be run in the zone of creation! (Creation: " + (task.zone || NO_ZONE).name + "; Execution: " + this.name + ")");
       }
-      if (task.state === notScheduled && (task.type === eventTask || task.type === macroTask)) {
+      const zoneTask = task;
+      const { type, data: { isPeriodic = false, isRefreshable = false } = {} } = task;
+      if (task.state === notScheduled && (type === eventTask || type === macroTask)) {
         return;
       }
       const reEntryGuard = task.state != running;
-      reEntryGuard && task._transitionTo(running, scheduled);
-      task.runCount++;
+      reEntryGuard && zoneTask._transitionTo(running, scheduled);
       const previousTask = _currentTask;
-      _currentTask = task;
+      _currentTask = zoneTask;
       _currentZoneFrame = { parent: _currentZoneFrame, zone: this };
       try {
-        if (task.type == macroTask && task.data && !task.data.isPeriodic) {
+        if (type == macroTask && task.data && !isPeriodic && !isRefreshable) {
           task.cancelFn = void 0;
         }
         try {
-          return this._zoneDelegate.invokeTask(this, task, applyThis, applyArgs);
+          return this._zoneDelegate.invokeTask(this, zoneTask, applyThis, applyArgs);
         } catch (error) {
           if (this._zoneDelegate.handleError(this, error)) {
             throw error;
           }
         }
       } finally {
-        if (task.state !== notScheduled && task.state !== unknown) {
-          if (task.type == eventTask || task.data && task.data.isPeriodic) {
-            reEntryGuard && task._transitionTo(scheduled, running);
+        const state = task.state;
+        if (state !== notScheduled && state !== unknown) {
+          if (type == eventTask || isPeriodic || isRefreshable && state === scheduling) {
+            reEntryGuard && zoneTask._transitionTo(scheduled, running, scheduling);
           } else {
-            task.runCount = 0;
-            this._updateTaskCount(task, -1);
-            reEntryGuard && task._transitionTo(notScheduled, running, notScheduled);
+            const zoneDelegates = zoneTask._zoneDelegates;
+            this._updateTaskCount(zoneTask, -1);
+            reEntryGuard && zoneTask._transitionTo(notScheduled, running, notScheduled);
+            if (isRefreshable) {
+              zoneTask._zoneDelegates = zoneDelegates;
+            }
           }
         }
         _currentZoneFrame = _currentZoneFrame.parent;
@@ -208,7 +207,7 @@
       }
       this._updateTaskCount(task, -1);
       task._transitionTo(notScheduled, canceling);
-      task.runCount = 0;
+      task.runCount = -1;
       return task;
     }
     _updateTaskCount(task, count) {
@@ -221,8 +220,8 @@
       }
     }
   };
-  _Zone.__symbol__ = __symbol__;
-  let Zone2 = _Zone;
+  _ZoneImpl.__symbol__ = __symbol__;
+  let ZoneImpl = _ZoneImpl;
   const DELEGATE_ZS = {
     name: "",
     onHasTask: (delegate, _, target, hasTaskState) => delegate.hasTask(target, hasTaskState),
@@ -231,31 +230,38 @@
     onCancelTask: (delegate, _, target, task) => delegate.cancelTask(target, task)
   };
   class _ZoneDelegate {
+    get zone() {
+      return this._zone;
+    }
     constructor(zone, parentDelegate, zoneSpec) {
-      this._taskCounts = { "microTask": 0, "macroTask": 0, "eventTask": 0 };
-      this.zone = zone;
+      this._taskCounts = {
+        "microTask": 0,
+        "macroTask": 0,
+        "eventTask": 0
+      };
+      this._zone = zone;
       this._parentDelegate = parentDelegate;
       this._forkZS = zoneSpec && (zoneSpec && zoneSpec.onFork ? zoneSpec : parentDelegate._forkZS);
       this._forkDlgt = zoneSpec && (zoneSpec.onFork ? parentDelegate : parentDelegate._forkDlgt);
-      this._forkCurrZone = zoneSpec && (zoneSpec.onFork ? this.zone : parentDelegate._forkCurrZone);
+      this._forkCurrZone = zoneSpec && (zoneSpec.onFork ? this._zone : parentDelegate._forkCurrZone);
       this._interceptZS = zoneSpec && (zoneSpec.onIntercept ? zoneSpec : parentDelegate._interceptZS);
       this._interceptDlgt = zoneSpec && (zoneSpec.onIntercept ? parentDelegate : parentDelegate._interceptDlgt);
-      this._interceptCurrZone = zoneSpec && (zoneSpec.onIntercept ? this.zone : parentDelegate._interceptCurrZone);
+      this._interceptCurrZone = zoneSpec && (zoneSpec.onIntercept ? this._zone : parentDelegate._interceptCurrZone);
       this._invokeZS = zoneSpec && (zoneSpec.onInvoke ? zoneSpec : parentDelegate._invokeZS);
       this._invokeDlgt = zoneSpec && (zoneSpec.onInvoke ? parentDelegate : parentDelegate._invokeDlgt);
-      this._invokeCurrZone = zoneSpec && (zoneSpec.onInvoke ? this.zone : parentDelegate._invokeCurrZone);
+      this._invokeCurrZone = zoneSpec && (zoneSpec.onInvoke ? this._zone : parentDelegate._invokeCurrZone);
       this._handleErrorZS = zoneSpec && (zoneSpec.onHandleError ? zoneSpec : parentDelegate._handleErrorZS);
       this._handleErrorDlgt = zoneSpec && (zoneSpec.onHandleError ? parentDelegate : parentDelegate._handleErrorDlgt);
-      this._handleErrorCurrZone = zoneSpec && (zoneSpec.onHandleError ? this.zone : parentDelegate._handleErrorCurrZone);
+      this._handleErrorCurrZone = zoneSpec && (zoneSpec.onHandleError ? this._zone : parentDelegate._handleErrorCurrZone);
       this._scheduleTaskZS = zoneSpec && (zoneSpec.onScheduleTask ? zoneSpec : parentDelegate._scheduleTaskZS);
       this._scheduleTaskDlgt = zoneSpec && (zoneSpec.onScheduleTask ? parentDelegate : parentDelegate._scheduleTaskDlgt);
-      this._scheduleTaskCurrZone = zoneSpec && (zoneSpec.onScheduleTask ? this.zone : parentDelegate._scheduleTaskCurrZone);
+      this._scheduleTaskCurrZone = zoneSpec && (zoneSpec.onScheduleTask ? this._zone : parentDelegate._scheduleTaskCurrZone);
       this._invokeTaskZS = zoneSpec && (zoneSpec.onInvokeTask ? zoneSpec : parentDelegate._invokeTaskZS);
       this._invokeTaskDlgt = zoneSpec && (zoneSpec.onInvokeTask ? parentDelegate : parentDelegate._invokeTaskDlgt);
-      this._invokeTaskCurrZone = zoneSpec && (zoneSpec.onInvokeTask ? this.zone : parentDelegate._invokeTaskCurrZone);
+      this._invokeTaskCurrZone = zoneSpec && (zoneSpec.onInvokeTask ? this._zone : parentDelegate._invokeTaskCurrZone);
       this._cancelTaskZS = zoneSpec && (zoneSpec.onCancelTask ? zoneSpec : parentDelegate._cancelTaskZS);
       this._cancelTaskDlgt = zoneSpec && (zoneSpec.onCancelTask ? parentDelegate : parentDelegate._cancelTaskDlgt);
-      this._cancelTaskCurrZone = zoneSpec && (zoneSpec.onCancelTask ? this.zone : parentDelegate._cancelTaskCurrZone);
+      this._cancelTaskCurrZone = zoneSpec && (zoneSpec.onCancelTask ? this._zone : parentDelegate._cancelTaskCurrZone);
       this._hasTaskZS = null;
       this._hasTaskDlgt = null;
       this._hasTaskDlgtOwner = null;
@@ -266,26 +272,26 @@
         this._hasTaskZS = zoneSpecHasTask ? zoneSpec : DELEGATE_ZS;
         this._hasTaskDlgt = parentDelegate;
         this._hasTaskDlgtOwner = this;
-        this._hasTaskCurrZone = zone;
+        this._hasTaskCurrZone = this._zone;
         if (!zoneSpec.onScheduleTask) {
           this._scheduleTaskZS = DELEGATE_ZS;
           this._scheduleTaskDlgt = parentDelegate;
-          this._scheduleTaskCurrZone = this.zone;
+          this._scheduleTaskCurrZone = this._zone;
         }
         if (!zoneSpec.onInvokeTask) {
           this._invokeTaskZS = DELEGATE_ZS;
           this._invokeTaskDlgt = parentDelegate;
-          this._invokeTaskCurrZone = this.zone;
+          this._invokeTaskCurrZone = this._zone;
         }
         if (!zoneSpec.onCancelTask) {
           this._cancelTaskZS = DELEGATE_ZS;
           this._cancelTaskDlgt = parentDelegate;
-          this._cancelTaskCurrZone = this.zone;
+          this._cancelTaskCurrZone = this._zone;
         }
       }
     }
     fork(targetZone, zoneSpec) {
-      return this._forkZS ? this._forkZS.onFork(this._forkDlgt, this.zone, targetZone, zoneSpec) : new Zone2(targetZone, zoneSpec);
+      return this._forkZS ? this._forkZS.onFork(this._forkDlgt, this.zone, targetZone, zoneSpec) : new ZoneImpl(targetZone, zoneSpec);
     }
     intercept(targetZone, callback, source) {
       return this._interceptZS ? this._interceptZS.onIntercept(this._interceptDlgt, this._interceptCurrZone, targetZone, callback, source) : callback;
@@ -353,7 +359,7 @@
           eventTask: counts["eventTask"] > 0,
           change: type
         };
-        this.hasTask(this.zone, isEmpty);
+        this.hasTask(this._zone, isEmpty);
       }
     }
   }
@@ -492,7 +498,7 @@
     onUnhandledError: noop,
     microtaskDrainDone: noop,
     scheduleMicroTask,
-    showUncaughtError: () => !Zone2[__symbol__("ignoreConsoleErrorUncaughtError")],
+    showUncaughtError: () => !ZoneImpl[__symbol__("ignoreConsoleErrorUncaughtError")],
     patchEventTarget: () => [],
     patchOnProperties: noop,
     patchMethod: () => noop,
@@ -514,14 +520,23 @@
     patchCallbacks: () => noop,
     nativeScheduleMicroTask
   };
-  let _currentZoneFrame = { parent: null, zone: new Zone2(null, null) };
+  let _currentZoneFrame = { parent: null, zone: new ZoneImpl(null, null) };
   let _currentTask = null;
   let _numberOfNestedTaskFrames = 0;
   function noop() {
   }
   performanceMeasure("Zone", "Zone");
-  return global["Zone"] = Zone2;
-})(globalThis);
+  return ZoneImpl;
+}
+function loadZone() {
+  const global2 = globalThis;
+  const checkDuplicate = global2[__symbol__("forceDuplicateZoneCheck")] === true;
+  if (global2["Zone"] && (checkDuplicate || typeof global2["Zone"].__symbol__ !== "function")) {
+    throw new Error("Zone already loaded.");
+  }
+  global2["Zone"] ??= initZone();
+  return global2["Zone"];
+}
 var ObjectGetOwnPropertyDescriptor = Object.getOwnPropertyDescriptor;
 var ObjectDefineProperty = Object.defineProperty;
 var ObjectGetPrototypeOf = Object.getPrototypeOf;
@@ -529,18 +544,18 @@ var ObjectCreate = Object.create;
 var ArraySlice = Array.prototype.slice;
 var ADD_EVENT_LISTENER_STR = "addEventListener";
 var REMOVE_EVENT_LISTENER_STR = "removeEventListener";
-var ZONE_SYMBOL_ADD_EVENT_LISTENER = Zone.__symbol__(ADD_EVENT_LISTENER_STR);
-var ZONE_SYMBOL_REMOVE_EVENT_LISTENER = Zone.__symbol__(REMOVE_EVENT_LISTENER_STR);
+var ZONE_SYMBOL_ADD_EVENT_LISTENER = __symbol__(ADD_EVENT_LISTENER_STR);
+var ZONE_SYMBOL_REMOVE_EVENT_LISTENER = __symbol__(REMOVE_EVENT_LISTENER_STR);
 var TRUE_STR = "true";
 var FALSE_STR = "false";
-var ZONE_SYMBOL_PREFIX = Zone.__symbol__("");
+var ZONE_SYMBOL_PREFIX = __symbol__("");
 function wrapWithCurrentZone(callback, source) {
   return Zone.current.wrap(callback, source);
 }
 function scheduleMacroTaskWithCurrentZone(source, callback, data, customSchedule, customCancel) {
   return Zone.current.scheduleMacroTask(source, callback, data, customSchedule, customCancel);
 }
-var zoneSymbol = Zone.__symbol__;
+var zoneSymbol = __symbol__;
 var isWindowExists = typeof window !== "undefined";
 var internalWindow = isWindowExists ? window : void 0;
 var _global = isWindowExists && internalWindow || globalThis;
@@ -583,10 +598,11 @@ function isPropertyWritable(propertyDesc) {
   return !(typeof propertyDesc.get === "function" && typeof propertyDesc.set === "undefined");
 }
 var isWebWorker = typeof WorkerGlobalScope !== "undefined" && self instanceof WorkerGlobalScope;
-var isNode = !("nw" in _global) && typeof _global.process !== "undefined" && {}.toString.call(_global.process) === "[object process]";
+var isNode = !("nw" in _global) && typeof _global.process !== "undefined" && _global.process.toString() === "[object process]";
 var isBrowser = !isNode && !isWebWorker && !!(isWindowExists && internalWindow["HTMLElement"]);
-var isMix = typeof _global.process !== "undefined" && {}.toString.call(_global.process) === "[object process]" && !isWebWorker && !!(isWindowExists && internalWindow["HTMLElement"]);
+var isMix = typeof _global.process !== "undefined" && _global.process.toString() === "[object process]" && !isWebWorker && !!(isWindowExists && internalWindow["HTMLElement"]);
 var zoneSymbolEventNames$1 = {};
+var enableBeforeunloadSymbol = zoneSymbol("enable_beforeunload");
 var wrapFn = function(event) {
   event = event || _global.event;
   if (!event) {
@@ -607,7 +623,23 @@ var wrapFn = function(event) {
     }
   } else {
     result = listener && listener.apply(this, arguments);
-    if (result != void 0 && !result) {
+    if (
+      // https://github.com/angular/angular/issues/47579
+      // https://www.w3.org/TR/2011/WD-html5-20110525/history.html#beforeunloadevent
+      // This is the only specific case we should check for. The spec defines that the
+      // `returnValue` attribute represents the message to show the user. When the event
+      // is created, this attribute must be set to the empty string.
+      event.type === "beforeunload" && // To prevent any breaking changes resulting from this change, given that
+      // it was already causing a significant number of failures in G3, we have hidden
+      // that behavior behind a global configuration flag. Consumers can enable this
+      // flag explicitly if they want the `beforeunload` event to be handled as defined
+      // in the specification.
+      _global[enableBeforeunloadSymbol] && // The IDL event definition is `attribute DOMString returnValue`, so we check whether
+      // `typeof result` is a string.
+      typeof result === "string"
+    ) {
+      event.returnValue = result;
+    } else if (result != void 0 && !result) {
       event.preventDefault();
     }
   }
@@ -832,472 +864,12 @@ function isIEOrEdge() {
   }
   return ieOrEdge;
 }
-Zone.__load_patch("ZoneAwarePromise", (global, Zone2, api) => {
-  const ObjectGetOwnPropertyDescriptor2 = Object.getOwnPropertyDescriptor;
-  const ObjectDefineProperty2 = Object.defineProperty;
-  function readableObjectToString(obj) {
-    if (obj && obj.toString === Object.prototype.toString) {
-      const className = obj.constructor && obj.constructor.name;
-      return (className ? className : "") + ": " + JSON.stringify(obj);
-    }
-    return obj ? obj.toString() : Object.prototype.toString.call(obj);
-  }
-  const __symbol__ = api.symbol;
-  const _uncaughtPromiseErrors = [];
-  const isDisableWrappingUncaughtPromiseRejection = global[__symbol__("DISABLE_WRAPPING_UNCAUGHT_PROMISE_REJECTION")] !== false;
-  const symbolPromise = __symbol__("Promise");
-  const symbolThen = __symbol__("then");
-  const creationTrace = "__creationTrace__";
-  api.onUnhandledError = (e) => {
-    if (api.showUncaughtError()) {
-      const rejection = e && e.rejection;
-      if (rejection) {
-        console.error("Unhandled Promise rejection:", rejection instanceof Error ? rejection.message : rejection, "; Zone:", e.zone.name, "; Task:", e.task && e.task.source, "; Value:", rejection, rejection instanceof Error ? rejection.stack : void 0);
-      } else {
-        console.error(e);
-      }
-    }
-  };
-  api.microtaskDrainDone = () => {
-    while (_uncaughtPromiseErrors.length) {
-      const uncaughtPromiseError = _uncaughtPromiseErrors.shift();
-      try {
-        uncaughtPromiseError.zone.runGuarded(() => {
-          if (uncaughtPromiseError.throwOriginal) {
-            throw uncaughtPromiseError.rejection;
-          }
-          throw uncaughtPromiseError;
-        });
-      } catch (error) {
-        handleUnhandledRejection(error);
-      }
-    }
-  };
-  const UNHANDLED_PROMISE_REJECTION_HANDLER_SYMBOL = __symbol__("unhandledPromiseRejectionHandler");
-  function handleUnhandledRejection(e) {
-    api.onUnhandledError(e);
-    try {
-      const handler = Zone2[UNHANDLED_PROMISE_REJECTION_HANDLER_SYMBOL];
-      if (typeof handler === "function") {
-        handler.call(this, e);
-      }
-    } catch (err) {
-    }
-  }
-  function isThenable(value) {
-    return value && value.then;
-  }
-  function forwardResolution(value) {
-    return value;
-  }
-  function forwardRejection(rejection) {
-    return ZoneAwarePromise.reject(rejection);
-  }
-  const symbolState = __symbol__("state");
-  const symbolValue = __symbol__("value");
-  const symbolFinally = __symbol__("finally");
-  const symbolParentPromiseValue = __symbol__("parentPromiseValue");
-  const symbolParentPromiseState = __symbol__("parentPromiseState");
-  const source = "Promise.then";
-  const UNRESOLVED = null;
-  const RESOLVED = true;
-  const REJECTED = false;
-  const REJECTED_NO_CATCH = 0;
-  function makeResolver(promise, state) {
-    return (v) => {
-      try {
-        resolvePromise(promise, state, v);
-      } catch (err) {
-        resolvePromise(promise, false, err);
-      }
-    };
-  }
-  const once = function() {
-    let wasCalled = false;
-    return function wrapper(wrappedFunction) {
-      return function() {
-        if (wasCalled) {
-          return;
-        }
-        wasCalled = true;
-        wrappedFunction.apply(null, arguments);
-      };
-    };
-  };
-  const TYPE_ERROR = "Promise resolved with itself";
-  const CURRENT_TASK_TRACE_SYMBOL = __symbol__("currentTaskTrace");
-  function resolvePromise(promise, state, value) {
-    const onceWrapper = once();
-    if (promise === value) {
-      throw new TypeError(TYPE_ERROR);
-    }
-    if (promise[symbolState] === UNRESOLVED) {
-      let then = null;
-      try {
-        if (typeof value === "object" || typeof value === "function") {
-          then = value && value.then;
-        }
-      } catch (err) {
-        onceWrapper(() => {
-          resolvePromise(promise, false, err);
-        })();
-        return promise;
-      }
-      if (state !== REJECTED && value instanceof ZoneAwarePromise && value.hasOwnProperty(symbolState) && value.hasOwnProperty(symbolValue) && value[symbolState] !== UNRESOLVED) {
-        clearRejectedNoCatch(value);
-        resolvePromise(promise, value[symbolState], value[symbolValue]);
-      } else if (state !== REJECTED && typeof then === "function") {
-        try {
-          then.call(value, onceWrapper(makeResolver(promise, state)), onceWrapper(makeResolver(promise, false)));
-        } catch (err) {
-          onceWrapper(() => {
-            resolvePromise(promise, false, err);
-          })();
-        }
-      } else {
-        promise[symbolState] = state;
-        const queue = promise[symbolValue];
-        promise[symbolValue] = value;
-        if (promise[symbolFinally] === symbolFinally) {
-          if (state === RESOLVED) {
-            promise[symbolState] = promise[symbolParentPromiseState];
-            promise[symbolValue] = promise[symbolParentPromiseValue];
-          }
-        }
-        if (state === REJECTED && value instanceof Error) {
-          const trace = Zone2.currentTask && Zone2.currentTask.data && Zone2.currentTask.data[creationTrace];
-          if (trace) {
-            ObjectDefineProperty2(value, CURRENT_TASK_TRACE_SYMBOL, { configurable: true, enumerable: false, writable: true, value: trace });
-          }
-        }
-        for (let i = 0; i < queue.length; ) {
-          scheduleResolveOrReject(promise, queue[i++], queue[i++], queue[i++], queue[i++]);
-        }
-        if (queue.length == 0 && state == REJECTED) {
-          promise[symbolState] = REJECTED_NO_CATCH;
-          let uncaughtPromiseError = value;
-          try {
-            throw new Error("Uncaught (in promise): " + readableObjectToString(value) + (value && value.stack ? "\n" + value.stack : ""));
-          } catch (err) {
-            uncaughtPromiseError = err;
-          }
-          if (isDisableWrappingUncaughtPromiseRejection) {
-            uncaughtPromiseError.throwOriginal = true;
-          }
-          uncaughtPromiseError.rejection = value;
-          uncaughtPromiseError.promise = promise;
-          uncaughtPromiseError.zone = Zone2.current;
-          uncaughtPromiseError.task = Zone2.currentTask;
-          _uncaughtPromiseErrors.push(uncaughtPromiseError);
-          api.scheduleMicroTask();
-        }
-      }
-    }
-    return promise;
-  }
-  const REJECTION_HANDLED_HANDLER = __symbol__("rejectionHandledHandler");
-  function clearRejectedNoCatch(promise) {
-    if (promise[symbolState] === REJECTED_NO_CATCH) {
-      try {
-        const handler = Zone2[REJECTION_HANDLED_HANDLER];
-        if (handler && typeof handler === "function") {
-          handler.call(this, { rejection: promise[symbolValue], promise });
-        }
-      } catch (err) {
-      }
-      promise[symbolState] = REJECTED;
-      for (let i = 0; i < _uncaughtPromiseErrors.length; i++) {
-        if (promise === _uncaughtPromiseErrors[i].promise) {
-          _uncaughtPromiseErrors.splice(i, 1);
-        }
-      }
-    }
-  }
-  function scheduleResolveOrReject(promise, zone, chainPromise, onFulfilled, onRejected) {
-    clearRejectedNoCatch(promise);
-    const promiseState = promise[symbolState];
-    const delegate = promiseState ? typeof onFulfilled === "function" ? onFulfilled : forwardResolution : typeof onRejected === "function" ? onRejected : forwardRejection;
-    zone.scheduleMicroTask(source, () => {
-      try {
-        const parentPromiseValue = promise[symbolValue];
-        const isFinallyPromise = !!chainPromise && symbolFinally === chainPromise[symbolFinally];
-        if (isFinallyPromise) {
-          chainPromise[symbolParentPromiseValue] = parentPromiseValue;
-          chainPromise[symbolParentPromiseState] = promiseState;
-        }
-        const value = zone.run(delegate, void 0, isFinallyPromise && delegate !== forwardRejection && delegate !== forwardResolution ? [] : [parentPromiseValue]);
-        resolvePromise(chainPromise, true, value);
-      } catch (error) {
-        resolvePromise(chainPromise, false, error);
-      }
-    }, chainPromise);
-  }
-  const ZONE_AWARE_PROMISE_TO_STRING = "function ZoneAwarePromise() { [native code] }";
-  const noop = function() {
-  };
-  const AggregateError = global.AggregateError;
-  class ZoneAwarePromise {
-    static toString() {
-      return ZONE_AWARE_PROMISE_TO_STRING;
-    }
-    static resolve(value) {
-      return resolvePromise(new this(null), RESOLVED, value);
-    }
-    static reject(error) {
-      return resolvePromise(new this(null), REJECTED, error);
-    }
-    static any(values) {
-      if (!values || typeof values[Symbol.iterator] !== "function") {
-        return Promise.reject(new AggregateError([], "All promises were rejected"));
-      }
-      const promises = [];
-      let count = 0;
-      try {
-        for (let v of values) {
-          count++;
-          promises.push(ZoneAwarePromise.resolve(v));
-        }
-      } catch (err) {
-        return Promise.reject(new AggregateError([], "All promises were rejected"));
-      }
-      if (count === 0) {
-        return Promise.reject(new AggregateError([], "All promises were rejected"));
-      }
-      let finished = false;
-      const errors = [];
-      return new ZoneAwarePromise((resolve, reject) => {
-        for (let i = 0; i < promises.length; i++) {
-          promises[i].then((v) => {
-            if (finished) {
-              return;
-            }
-            finished = true;
-            resolve(v);
-          }, (err) => {
-            errors.push(err);
-            count--;
-            if (count === 0) {
-              finished = true;
-              reject(new AggregateError(errors, "All promises were rejected"));
-            }
-          });
-        }
-      });
-    }
-    static race(values) {
-      let resolve;
-      let reject;
-      let promise = new this((res, rej) => {
-        resolve = res;
-        reject = rej;
-      });
-      function onResolve(value) {
-        resolve(value);
-      }
-      function onReject(error) {
-        reject(error);
-      }
-      for (let value of values) {
-        if (!isThenable(value)) {
-          value = this.resolve(value);
-        }
-        value.then(onResolve, onReject);
-      }
-      return promise;
-    }
-    static all(values) {
-      return ZoneAwarePromise.allWithCallback(values);
-    }
-    static allSettled(values) {
-      const P = this && this.prototype instanceof ZoneAwarePromise ? this : ZoneAwarePromise;
-      return P.allWithCallback(values, {
-        thenCallback: (value) => ({ status: "fulfilled", value }),
-        errorCallback: (err) => ({ status: "rejected", reason: err })
-      });
-    }
-    static allWithCallback(values, callback) {
-      let resolve;
-      let reject;
-      let promise = new this((res, rej) => {
-        resolve = res;
-        reject = rej;
-      });
-      let unresolvedCount = 2;
-      let valueIndex = 0;
-      const resolvedValues = [];
-      for (let value of values) {
-        if (!isThenable(value)) {
-          value = this.resolve(value);
-        }
-        const curValueIndex = valueIndex;
-        try {
-          value.then((value2) => {
-            resolvedValues[curValueIndex] = callback ? callback.thenCallback(value2) : value2;
-            unresolvedCount--;
-            if (unresolvedCount === 0) {
-              resolve(resolvedValues);
-            }
-          }, (err) => {
-            if (!callback) {
-              reject(err);
-            } else {
-              resolvedValues[curValueIndex] = callback.errorCallback(err);
-              unresolvedCount--;
-              if (unresolvedCount === 0) {
-                resolve(resolvedValues);
-              }
-            }
-          });
-        } catch (thenErr) {
-          reject(thenErr);
-        }
-        unresolvedCount++;
-        valueIndex++;
-      }
-      unresolvedCount -= 2;
-      if (unresolvedCount === 0) {
-        resolve(resolvedValues);
-      }
-      return promise;
-    }
-    constructor(executor) {
-      const promise = this;
-      if (!(promise instanceof ZoneAwarePromise)) {
-        throw new Error("Must be an instanceof Promise.");
-      }
-      promise[symbolState] = UNRESOLVED;
-      promise[symbolValue] = [];
-      try {
-        const onceWrapper = once();
-        executor && executor(onceWrapper(makeResolver(promise, RESOLVED)), onceWrapper(makeResolver(promise, REJECTED)));
-      } catch (error) {
-        resolvePromise(promise, false, error);
-      }
-    }
-    get [Symbol.toStringTag]() {
-      return "Promise";
-    }
-    get [Symbol.species]() {
-      return ZoneAwarePromise;
-    }
-    then(onFulfilled, onRejected) {
-      let C = this.constructor?.[Symbol.species];
-      if (!C || typeof C !== "function") {
-        C = this.constructor || ZoneAwarePromise;
-      }
-      const chainPromise = new C(noop);
-      const zone = Zone2.current;
-      if (this[symbolState] == UNRESOLVED) {
-        this[symbolValue].push(zone, chainPromise, onFulfilled, onRejected);
-      } else {
-        scheduleResolveOrReject(this, zone, chainPromise, onFulfilled, onRejected);
-      }
-      return chainPromise;
-    }
-    catch(onRejected) {
-      return this.then(null, onRejected);
-    }
-    finally(onFinally) {
-      let C = this.constructor?.[Symbol.species];
-      if (!C || typeof C !== "function") {
-        C = ZoneAwarePromise;
-      }
-      const chainPromise = new C(noop);
-      chainPromise[symbolFinally] = symbolFinally;
-      const zone = Zone2.current;
-      if (this[symbolState] == UNRESOLVED) {
-        this[symbolValue].push(zone, chainPromise, onFinally, onFinally);
-      } else {
-        scheduleResolveOrReject(this, zone, chainPromise, onFinally, onFinally);
-      }
-      return chainPromise;
-    }
-  }
-  ZoneAwarePromise["resolve"] = ZoneAwarePromise.resolve;
-  ZoneAwarePromise["reject"] = ZoneAwarePromise.reject;
-  ZoneAwarePromise["race"] = ZoneAwarePromise.race;
-  ZoneAwarePromise["all"] = ZoneAwarePromise.all;
-  const NativePromise = global[symbolPromise] = global["Promise"];
-  global["Promise"] = ZoneAwarePromise;
-  const symbolThenPatched = __symbol__("thenPatched");
-  function patchThen(Ctor) {
-    const proto = Ctor.prototype;
-    const prop = ObjectGetOwnPropertyDescriptor2(proto, "then");
-    if (prop && (prop.writable === false || !prop.configurable)) {
-      return;
-    }
-    const originalThen = proto.then;
-    proto[symbolThen] = originalThen;
-    Ctor.prototype.then = function(onResolve, onReject) {
-      const wrapped = new ZoneAwarePromise((resolve, reject) => {
-        originalThen.call(this, resolve, reject);
-      });
-      return wrapped.then(onResolve, onReject);
-    };
-    Ctor[symbolThenPatched] = true;
-  }
-  api.patchThen = patchThen;
-  function zoneify(fn) {
-    return function(self2, args) {
-      let resultPromise = fn.apply(self2, args);
-      if (resultPromise instanceof ZoneAwarePromise) {
-        return resultPromise;
-      }
-      let ctor = resultPromise.constructor;
-      if (!ctor[symbolThenPatched]) {
-        patchThen(ctor);
-      }
-      return resultPromise;
-    };
-  }
-  if (NativePromise) {
-    patchThen(NativePromise);
-    patchMethod(global, "fetch", (delegate) => zoneify(delegate));
-  }
-  Promise[Zone2.__symbol__("uncaughtPromiseErrors")] = _uncaughtPromiseErrors;
-  return ZoneAwarePromise;
-});
-Zone.__load_patch("toString", (global) => {
-  const originalFunctionToString = Function.prototype.toString;
-  const ORIGINAL_DELEGATE_SYMBOL = zoneSymbol("OriginalDelegate");
-  const PROMISE_SYMBOL = zoneSymbol("Promise");
-  const ERROR_SYMBOL = zoneSymbol("Error");
-  const newFunctionToString = function toString() {
-    if (typeof this === "function") {
-      const originalDelegate = this[ORIGINAL_DELEGATE_SYMBOL];
-      if (originalDelegate) {
-        if (typeof originalDelegate === "function") {
-          return originalFunctionToString.call(originalDelegate);
-        } else {
-          return Object.prototype.toString.call(originalDelegate);
-        }
-      }
-      if (this === Promise) {
-        const nativePromise = global[PROMISE_SYMBOL];
-        if (nativePromise) {
-          return originalFunctionToString.call(nativePromise);
-        }
-      }
-      if (this === Error) {
-        const nativeError = global[ERROR_SYMBOL];
-        if (nativeError) {
-          return originalFunctionToString.call(nativeError);
-        }
-      }
-    }
-    return originalFunctionToString.call(this);
-  };
-  newFunctionToString[ORIGINAL_DELEGATE_SYMBOL] = originalFunctionToString;
-  Function.prototype.toString = newFunctionToString;
-  const originalObjectToString = Object.prototype.toString;
-  const PROMISE_OBJECT_TO_STRING = "[object Promise]";
-  Object.prototype.toString = function() {
-    if (typeof Promise === "function" && this instanceof Promise) {
-      return PROMISE_OBJECT_TO_STRING;
-    }
-    return originalObjectToString.call(this);
-  };
-});
+function isFunction(value) {
+  return typeof value === "function";
+}
+function isNumber(value) {
+  return typeof value === "number";
+}
 var passiveSupported = false;
 if (typeof window !== "undefined") {
   try {
@@ -1477,6 +1049,10 @@ function patchEventTarget(_global2, api, apis, patchOptions) {
             if (existingTask === task) {
               existingTasks.splice(i, 1);
               task.isRemoved = true;
+              if (task.removeAbortListener) {
+                task.removeAbortListener();
+                task.removeAbortListener = null;
+              }
               if (existingTasks.length === 0) {
                 task.allRemoved = true;
                 task.target[symbolEventName] = null;
@@ -1509,6 +1085,16 @@ function patchEventTarget(_global2, api, apis, patchOptions) {
     const compare = patchOptions2 && patchOptions2.diff ? patchOptions2.diff : compareTaskCallbackVsDelegate;
     const unpatchedEvents = Zone[zoneSymbol("UNPATCHED_EVENTS")];
     const passiveEvents = _global2[zoneSymbol("PASSIVE_EVENTS")];
+    function copyEventListenerOptions(options) {
+      if (typeof options === "object" && options !== null) {
+        const newOptions = { ...options };
+        if (options.signal) {
+          newOptions.signal = options.signal;
+        }
+        return newOptions;
+      }
+      return options;
+    }
     const makeAddListener = function(nativeListener, addSource, customScheduleFn, customCancelFn, returnTarget2 = false, prepend = false) {
       return function() {
         const target = this || _global2;
@@ -1534,7 +1120,11 @@ function patchEventTarget(_global2, api, apis, patchOptions) {
           return;
         }
         const passive = passiveSupported && !!passiveEvents && passiveEvents.indexOf(eventName) !== -1;
-        const options = buildEventListenerOptions(arguments[2], passive);
+        const options = copyEventListenerOptions(buildEventListenerOptions(arguments[2], passive));
+        const signal = options?.signal;
+        if (signal?.aborted) {
+          return;
+        }
         if (unpatchedEvents) {
           for (let i = 0; i < unpatchedEvents.length; i++) {
             if (eventName === unpatchedEvents[i]) {
@@ -1590,13 +1180,22 @@ function patchEventTarget(_global2, api, apis, patchOptions) {
         if (data) {
           data.taskData = taskData;
         }
+        if (signal) {
+          taskData.options.signal = void 0;
+        }
         const task = zone.scheduleEventTask(source, delegate, data, customScheduleFn, customCancelFn);
+        if (signal) {
+          taskData.options.signal = signal;
+          const onAbort = () => task.zone.cancelTask(task);
+          nativeListener.call(signal, "abort", onAbort, { once: true });
+          task.removeAbortListener = () => signal.removeEventListener("abort", onAbort);
+        }
         taskData.target = null;
         if (data) {
           data.taskData = null;
         }
         if (once) {
-          options.once = true;
+          taskData.options.once = true;
         }
         if (!(!passiveSupported && typeof task.options === "boolean")) {
           task.options = options;
@@ -1651,7 +1250,7 @@ function patchEventTarget(_global2, api, apis, patchOptions) {
             if (existingTasks.length === 0) {
               existingTask.allRemoved = true;
               target[symbolEventName] = null;
-              if (typeof eventName === "string") {
+              if (!capture && typeof eventName === "string") {
                 const onPropertySymbol = ZONE_SYMBOL_PREFIX + "ON_PROPERTY" + eventName;
                 target[onPropertySymbol] = null;
               }
@@ -1773,8 +1372,8 @@ function findEventTasks(target, eventName) {
     return captureTrueTasks ? captureFalseTasks.concat(captureTrueTasks) : captureFalseTasks.slice();
   }
 }
-function patchEventPrototype(global, api) {
-  const Event = global["Event"];
+function patchEventPrototype(global2, api) {
+  const Event = global2["Event"];
   if (Event && Event.prototype) {
     api.patchMethod(Event.prototype, "stopImmediatePropagation", (delegate) => function(self2, args) {
       self2[IMMEDIATE_PROPAGATION_SYMBOL] = true;
@@ -1782,36 +1381,153 @@ function patchEventPrototype(global, api) {
     });
   }
 }
-function patchCallbacks(api, target, targetName, method, callbacks) {
-  const symbol = Zone.__symbol__(method);
-  if (target[symbol]) {
+function patchQueueMicrotask(global2, api) {
+  api.patchMethod(global2, "queueMicrotask", (delegate) => {
+    return function(self2, args) {
+      Zone.current.scheduleMicroTask("queueMicrotask", args[0]);
+    };
+  });
+}
+var taskSymbol = zoneSymbol("zoneTask");
+function patchTimer(window2, setName, cancelName, nameSuffix) {
+  let setNative = null;
+  let clearNative = null;
+  setName += nameSuffix;
+  cancelName += nameSuffix;
+  const tasksByHandleId = {};
+  function scheduleTask(task) {
+    const data = task.data;
+    data.args[0] = function() {
+      return task.invoke.apply(this, arguments);
+    };
+    const handleOrId = setNative.apply(window2, data.args);
+    if (isNumber(handleOrId)) {
+      data.handleId = handleOrId;
+    } else {
+      data.handle = handleOrId;
+      data.isRefreshable = isFunction(handleOrId.refresh);
+    }
+    return task;
+  }
+  function clearTask(task) {
+    const { handle, handleId } = task.data;
+    return clearNative.call(window2, handle ?? handleId);
+  }
+  setNative = patchMethod(window2, setName, (delegate) => function(self2, args) {
+    if (isFunction(args[0])) {
+      const options = {
+        isRefreshable: false,
+        isPeriodic: nameSuffix === "Interval",
+        delay: nameSuffix === "Timeout" || nameSuffix === "Interval" ? args[1] || 0 : void 0,
+        args
+      };
+      const callback = args[0];
+      args[0] = function timer() {
+        try {
+          return callback.apply(this, arguments);
+        } finally {
+          const { handle: handle2, handleId: handleId2, isPeriodic: isPeriodic2, isRefreshable: isRefreshable2 } = options;
+          if (!isPeriodic2 && !isRefreshable2) {
+            if (handleId2) {
+              delete tasksByHandleId[handleId2];
+            } else if (handle2) {
+              handle2[taskSymbol] = null;
+            }
+          }
+        }
+      };
+      const task = scheduleMacroTaskWithCurrentZone(setName, args[0], options, scheduleTask, clearTask);
+      if (!task) {
+        return task;
+      }
+      const { handleId, handle, isRefreshable, isPeriodic } = task.data;
+      if (handleId) {
+        tasksByHandleId[handleId] = task;
+      } else if (handle) {
+        handle[taskSymbol] = task;
+        if (isRefreshable && !isPeriodic) {
+          const originalRefresh = handle.refresh;
+          handle.refresh = function() {
+            const { zone, state } = task;
+            if (state === "notScheduled") {
+              task._state = "scheduled";
+              zone._updateTaskCount(task, 1);
+            } else if (state === "running") {
+              task._state = "scheduling";
+            }
+            return originalRefresh.call(this);
+          };
+        }
+      }
+      return handle ?? handleId ?? task;
+    } else {
+      return delegate.apply(window2, args);
+    }
+  });
+  clearNative = patchMethod(window2, cancelName, (delegate) => function(self2, args) {
+    const id = args[0];
+    let task;
+    if (isNumber(id)) {
+      task = tasksByHandleId[id];
+      delete tasksByHandleId[id];
+    } else {
+      task = id?.[taskSymbol];
+      if (task) {
+        id[taskSymbol] = null;
+      } else {
+        task = id;
+      }
+    }
+    if (task?.type) {
+      if (task.cancelFn) {
+        task.zone.cancelTask(task);
+      }
+    } else {
+      delegate.apply(window2, args);
+    }
+  });
+}
+function patchCustomElements(_global2, api) {
+  const { isBrowser: isBrowser2, isMix: isMix2 } = api.getGlobalObjects();
+  if (!isBrowser2 && !isMix2 || !_global2["customElements"] || !("customElements" in _global2)) {
     return;
   }
-  const nativeDelegate = target[symbol] = target[method];
-  target[method] = function(name, opts, options) {
-    if (opts && opts.prototype) {
-      callbacks.forEach(function(callback) {
-        const source = `${targetName}.${method}::` + callback;
-        const prototype = opts.prototype;
-        try {
-          if (prototype.hasOwnProperty(callback)) {
-            const descriptor = api.ObjectGetOwnPropertyDescriptor(prototype, callback);
-            if (descriptor && descriptor.value) {
-              descriptor.value = api.wrapWithCurrentZone(descriptor.value, source);
-              api._redefineProperty(opts.prototype, callback, descriptor);
-            } else if (prototype[callback]) {
-              prototype[callback] = api.wrapWithCurrentZone(prototype[callback], source);
-            }
-          } else if (prototype[callback]) {
-            prototype[callback] = api.wrapWithCurrentZone(prototype[callback], source);
-          }
-        } catch {
-        }
-      });
-    }
-    return nativeDelegate.call(target, name, opts, options);
-  };
-  api.attachOriginToPatched(target[method], nativeDelegate);
+  const callbacks = [
+    "connectedCallback",
+    "disconnectedCallback",
+    "adoptedCallback",
+    "attributeChangedCallback",
+    "formAssociatedCallback",
+    "formDisabledCallback",
+    "formResetCallback",
+    "formStateRestoreCallback"
+  ];
+  api.patchCallbacks(api, _global2.customElements, "customElements", "define", callbacks);
+}
+function eventTargetPatch(_global2, api) {
+  if (Zone[api.symbol("patchEventTarget")]) {
+    return;
+  }
+  const { eventNames, zoneSymbolEventNames: zoneSymbolEventNames2, TRUE_STR: TRUE_STR2, FALSE_STR: FALSE_STR2, ZONE_SYMBOL_PREFIX: ZONE_SYMBOL_PREFIX2 } = api.getGlobalObjects();
+  for (let i = 0; i < eventNames.length; i++) {
+    const eventName = eventNames[i];
+    const falseEventName = eventName + FALSE_STR2;
+    const trueEventName = eventName + TRUE_STR2;
+    const symbol = ZONE_SYMBOL_PREFIX2 + falseEventName;
+    const symbolCapture = ZONE_SYMBOL_PREFIX2 + trueEventName;
+    zoneSymbolEventNames2[eventName] = {};
+    zoneSymbolEventNames2[eventName][FALSE_STR2] = symbol;
+    zoneSymbolEventNames2[eventName][TRUE_STR2] = symbolCapture;
+  }
+  const EVENT_TARGET = _global2["EventTarget"];
+  if (!EVENT_TARGET || !EVENT_TARGET.prototype) {
+    return;
+  }
+  api.patchEventTarget(_global2, api, [EVENT_TARGET && EVENT_TARGET.prototype]);
+  return true;
+}
+function patchEvent(global2, api) {
+  api.patchEventPrototype(global2, api);
 }
 function filterProperties(target, onProperties, ignoreProperties) {
   if (!ignoreProperties || ignoreProperties.length === 0) {
@@ -1877,377 +1593,789 @@ function propertyDescriptorPatch(api, _global2) {
     target && target.prototype && patchFilteredProperties(target.prototype, getOnEventNames(target.prototype), ignoreProperties);
   }
 }
-Zone.__load_patch("util", (global, Zone2, api) => {
-  const eventNames = getOnEventNames(global);
-  api.patchOnProperties = patchOnProperties;
-  api.patchMethod = patchMethod;
-  api.bindArguments = bindArguments;
-  api.patchMacroTask = patchMacroTask;
-  const SYMBOL_BLACK_LISTED_EVENTS = Zone2.__symbol__("BLACK_LISTED_EVENTS");
-  const SYMBOL_UNPATCHED_EVENTS = Zone2.__symbol__("UNPATCHED_EVENTS");
-  if (global[SYMBOL_UNPATCHED_EVENTS]) {
-    global[SYMBOL_BLACK_LISTED_EVENTS] = global[SYMBOL_UNPATCHED_EVENTS];
-  }
-  if (global[SYMBOL_BLACK_LISTED_EVENTS]) {
-    Zone2[SYMBOL_BLACK_LISTED_EVENTS] = Zone2[SYMBOL_UNPATCHED_EVENTS] = global[SYMBOL_BLACK_LISTED_EVENTS];
-  }
-  api.patchEventPrototype = patchEventPrototype;
-  api.patchEventTarget = patchEventTarget;
-  api.isIEOrEdge = isIEOrEdge;
-  api.ObjectDefineProperty = ObjectDefineProperty;
-  api.ObjectGetOwnPropertyDescriptor = ObjectGetOwnPropertyDescriptor;
-  api.ObjectCreate = ObjectCreate;
-  api.ArraySlice = ArraySlice;
-  api.patchClass = patchClass;
-  api.wrapWithCurrentZone = wrapWithCurrentZone;
-  api.filterProperties = filterProperties;
-  api.attachOriginToPatched = attachOriginToPatched;
-  api._redefineProperty = Object.defineProperty;
-  api.patchCallbacks = patchCallbacks;
-  api.getGlobalObjects = () => ({
-    globalSources,
-    zoneSymbolEventNames,
-    eventNames,
-    isBrowser,
-    isMix,
-    isNode,
-    TRUE_STR,
-    FALSE_STR,
-    ZONE_SYMBOL_PREFIX,
-    ADD_EVENT_LISTENER_STR,
-    REMOVE_EVENT_LISTENER_STR
+function patchBrowser(Zone2) {
+  Zone2.__load_patch("legacy", (global2) => {
+    const legacyPatch = global2[Zone2.__symbol__("legacyPatch")];
+    if (legacyPatch) {
+      legacyPatch();
+    }
   });
-});
-function patchQueueMicrotask(global, api) {
-  api.patchMethod(global, "queueMicrotask", (delegate) => {
-    return function(self2, args) {
-      Zone.current.scheduleMicroTask("queueMicrotask", args[0]);
-    };
+  Zone2.__load_patch("timers", (global2) => {
+    const set = "set";
+    const clear = "clear";
+    patchTimer(global2, set, clear, "Timeout");
+    patchTimer(global2, set, clear, "Interval");
+    patchTimer(global2, set, clear, "Immediate");
   });
-}
-var taskSymbol = zoneSymbol("zoneTask");
-function patchTimer(window2, setName, cancelName, nameSuffix) {
-  let setNative = null;
-  let clearNative = null;
-  setName += nameSuffix;
-  cancelName += nameSuffix;
-  const tasksByHandleId = {};
-  function scheduleTask(task) {
-    const data = task.data;
-    data.args[0] = function() {
-      return task.invoke.apply(this, arguments);
-    };
-    data.handleId = setNative.apply(window2, data.args);
-    return task;
-  }
-  function clearTask(task) {
-    return clearNative.call(window2, task.data.handleId);
-  }
-  setNative = patchMethod(window2, setName, (delegate) => function(self2, args) {
-    if (typeof args[0] === "function") {
-      const options = {
-        isPeriodic: nameSuffix === "Interval",
-        delay: nameSuffix === "Timeout" || nameSuffix === "Interval" ? args[1] || 0 : void 0,
-        args
-      };
-      const callback = args[0];
-      args[0] = function timer() {
-        try {
-          return callback.apply(this, arguments);
-        } finally {
-          if (!options.isPeriodic) {
-            if (typeof options.handleId === "number") {
-              delete tasksByHandleId[options.handleId];
-            } else if (options.handleId) {
-              options.handleId[taskSymbol] = null;
+  Zone2.__load_patch("requestAnimationFrame", (global2) => {
+    patchTimer(global2, "request", "cancel", "AnimationFrame");
+    patchTimer(global2, "mozRequest", "mozCancel", "AnimationFrame");
+    patchTimer(global2, "webkitRequest", "webkitCancel", "AnimationFrame");
+  });
+  Zone2.__load_patch("blocking", (global2, Zone3) => {
+    const blockingMethods = ["alert", "prompt", "confirm"];
+    for (let i = 0; i < blockingMethods.length; i++) {
+      const name = blockingMethods[i];
+      patchMethod(global2, name, (delegate, symbol, name2) => {
+        return function(s, args) {
+          return Zone3.current.run(delegate, global2, args, name2);
+        };
+      });
+    }
+  });
+  Zone2.__load_patch("EventTarget", (global2, Zone3, api) => {
+    patchEvent(global2, api);
+    eventTargetPatch(global2, api);
+    const XMLHttpRequestEventTarget = global2["XMLHttpRequestEventTarget"];
+    if (XMLHttpRequestEventTarget && XMLHttpRequestEventTarget.prototype) {
+      api.patchEventTarget(global2, api, [XMLHttpRequestEventTarget.prototype]);
+    }
+  });
+  Zone2.__load_patch("MutationObserver", (global2, Zone3, api) => {
+    patchClass("MutationObserver");
+    patchClass("WebKitMutationObserver");
+  });
+  Zone2.__load_patch("IntersectionObserver", (global2, Zone3, api) => {
+    patchClass("IntersectionObserver");
+  });
+  Zone2.__load_patch("FileReader", (global2, Zone3, api) => {
+    patchClass("FileReader");
+  });
+  Zone2.__load_patch("on_property", (global2, Zone3, api) => {
+    propertyDescriptorPatch(api, global2);
+  });
+  Zone2.__load_patch("customElements", (global2, Zone3, api) => {
+    patchCustomElements(global2, api);
+  });
+  Zone2.__load_patch("XHR", (global2, Zone3) => {
+    patchXHR(global2);
+    const XHR_TASK = zoneSymbol("xhrTask");
+    const XHR_SYNC = zoneSymbol("xhrSync");
+    const XHR_LISTENER = zoneSymbol("xhrListener");
+    const XHR_SCHEDULED = zoneSymbol("xhrScheduled");
+    const XHR_URL = zoneSymbol("xhrURL");
+    const XHR_ERROR_BEFORE_SCHEDULED = zoneSymbol("xhrErrorBeforeScheduled");
+    function patchXHR(window2) {
+      const XMLHttpRequest = window2["XMLHttpRequest"];
+      if (!XMLHttpRequest) {
+        return;
+      }
+      const XMLHttpRequestPrototype = XMLHttpRequest.prototype;
+      function findPendingTask(target) {
+        return target[XHR_TASK];
+      }
+      let oriAddListener = XMLHttpRequestPrototype[ZONE_SYMBOL_ADD_EVENT_LISTENER];
+      let oriRemoveListener = XMLHttpRequestPrototype[ZONE_SYMBOL_REMOVE_EVENT_LISTENER];
+      if (!oriAddListener) {
+        const XMLHttpRequestEventTarget = window2["XMLHttpRequestEventTarget"];
+        if (XMLHttpRequestEventTarget) {
+          const XMLHttpRequestEventTargetPrototype = XMLHttpRequestEventTarget.prototype;
+          oriAddListener = XMLHttpRequestEventTargetPrototype[ZONE_SYMBOL_ADD_EVENT_LISTENER];
+          oriRemoveListener = XMLHttpRequestEventTargetPrototype[ZONE_SYMBOL_REMOVE_EVENT_LISTENER];
+        }
+      }
+      const READY_STATE_CHANGE = "readystatechange";
+      const SCHEDULED = "scheduled";
+      function scheduleTask(task) {
+        const data = task.data;
+        const target = data.target;
+        target[XHR_SCHEDULED] = false;
+        target[XHR_ERROR_BEFORE_SCHEDULED] = false;
+        const listener = target[XHR_LISTENER];
+        if (!oriAddListener) {
+          oriAddListener = target[ZONE_SYMBOL_ADD_EVENT_LISTENER];
+          oriRemoveListener = target[ZONE_SYMBOL_REMOVE_EVENT_LISTENER];
+        }
+        if (listener) {
+          oriRemoveListener.call(target, READY_STATE_CHANGE, listener);
+        }
+        const newListener = target[XHR_LISTENER] = () => {
+          if (target.readyState === target.DONE) {
+            if (!data.aborted && target[XHR_SCHEDULED] && task.state === SCHEDULED) {
+              const loadTasks = target[Zone3.__symbol__("loadfalse")];
+              if (target.status !== 0 && loadTasks && loadTasks.length > 0) {
+                const oriInvoke = task.invoke;
+                task.invoke = function() {
+                  const loadTasks2 = target[Zone3.__symbol__("loadfalse")];
+                  for (let i = 0; i < loadTasks2.length; i++) {
+                    if (loadTasks2[i] === task) {
+                      loadTasks2.splice(i, 1);
+                    }
+                  }
+                  if (!data.aborted && task.state === SCHEDULED) {
+                    oriInvoke.call(task);
+                  }
+                };
+                loadTasks.push(task);
+              } else {
+                task.invoke();
+              }
+            } else if (!data.aborted && target[XHR_SCHEDULED] === false) {
+              target[XHR_ERROR_BEFORE_SCHEDULED] = true;
             }
           }
+        };
+        oriAddListener.call(target, READY_STATE_CHANGE, newListener);
+        const storedTask = target[XHR_TASK];
+        if (!storedTask) {
+          target[XHR_TASK] = task;
         }
-      };
-      const task = scheduleMacroTaskWithCurrentZone(setName, args[0], options, scheduleTask, clearTask);
-      if (!task) {
+        sendNative.apply(target, data.args);
+        target[XHR_SCHEDULED] = true;
         return task;
       }
-      const handle = task.data.handleId;
-      if (typeof handle === "number") {
-        tasksByHandleId[handle] = task;
-      } else if (handle) {
-        handle[taskSymbol] = task;
+      function placeholderCallback() {
       }
-      if (handle && handle.ref && handle.unref && typeof handle.ref === "function" && typeof handle.unref === "function") {
-        task.ref = handle.ref.bind(handle);
-        task.unref = handle.unref.bind(handle);
+      function clearTask(task) {
+        const data = task.data;
+        data.aborted = true;
+        return abortNative.apply(data.target, data.args);
       }
-      if (typeof handle === "number" || handle) {
-        return handle;
-      }
-      return task;
-    } else {
-      return delegate.apply(window2, args);
-    }
-  });
-  clearNative = patchMethod(window2, cancelName, (delegate) => function(self2, args) {
-    const id = args[0];
-    let task;
-    if (typeof id === "number") {
-      task = tasksByHandleId[id];
-    } else {
-      task = id && id[taskSymbol];
-      if (!task) {
-        task = id;
-      }
-    }
-    if (task && typeof task.type === "string") {
-      if (task.state !== "notScheduled" && (task.cancelFn && task.data.isPeriodic || task.runCount === 0)) {
-        if (typeof id === "number") {
-          delete tasksByHandleId[id];
-        } else if (id) {
-          id[taskSymbol] = null;
+      const openNative = patchMethod(XMLHttpRequestPrototype, "open", () => function(self2, args) {
+        self2[XHR_SYNC] = args[2] == false;
+        self2[XHR_URL] = args[1];
+        return openNative.apply(self2, args);
+      });
+      const XMLHTTPREQUEST_SOURCE = "XMLHttpRequest.send";
+      const fetchTaskAborting = zoneSymbol("fetchTaskAborting");
+      const fetchTaskScheduling = zoneSymbol("fetchTaskScheduling");
+      const sendNative = patchMethod(XMLHttpRequestPrototype, "send", () => function(self2, args) {
+        if (Zone3.current[fetchTaskScheduling] === true) {
+          return sendNative.apply(self2, args);
         }
-        task.zone.cancelTask(task);
-      }
-    } else {
-      delegate.apply(window2, args);
-    }
-  });
-}
-function patchCustomElements(_global2, api) {
-  const { isBrowser: isBrowser2, isMix: isMix2 } = api.getGlobalObjects();
-  if (!isBrowser2 && !isMix2 || !_global2["customElements"] || !("customElements" in _global2)) {
-    return;
-  }
-  const callbacks = ["connectedCallback", "disconnectedCallback", "adoptedCallback", "attributeChangedCallback"];
-  api.patchCallbacks(api, _global2.customElements, "customElements", "define", callbacks);
-}
-function eventTargetPatch(_global2, api) {
-  if (Zone[api.symbol("patchEventTarget")]) {
-    return;
-  }
-  const { eventNames, zoneSymbolEventNames: zoneSymbolEventNames2, TRUE_STR: TRUE_STR2, FALSE_STR: FALSE_STR2, ZONE_SYMBOL_PREFIX: ZONE_SYMBOL_PREFIX2 } = api.getGlobalObjects();
-  for (let i = 0; i < eventNames.length; i++) {
-    const eventName = eventNames[i];
-    const falseEventName = eventName + FALSE_STR2;
-    const trueEventName = eventName + TRUE_STR2;
-    const symbol = ZONE_SYMBOL_PREFIX2 + falseEventName;
-    const symbolCapture = ZONE_SYMBOL_PREFIX2 + trueEventName;
-    zoneSymbolEventNames2[eventName] = {};
-    zoneSymbolEventNames2[eventName][FALSE_STR2] = symbol;
-    zoneSymbolEventNames2[eventName][TRUE_STR2] = symbolCapture;
-  }
-  const EVENT_TARGET = _global2["EventTarget"];
-  if (!EVENT_TARGET || !EVENT_TARGET.prototype) {
-    return;
-  }
-  api.patchEventTarget(_global2, api, [EVENT_TARGET && EVENT_TARGET.prototype]);
-  return true;
-}
-function patchEvent(global, api) {
-  api.patchEventPrototype(global, api);
-}
-Zone.__load_patch("legacy", (global) => {
-  const legacyPatch = global[Zone.__symbol__("legacyPatch")];
-  if (legacyPatch) {
-    legacyPatch();
-  }
-});
-Zone.__load_patch("timers", (global) => {
-  const set = "set";
-  const clear = "clear";
-  patchTimer(global, set, clear, "Timeout");
-  patchTimer(global, set, clear, "Interval");
-  patchTimer(global, set, clear, "Immediate");
-});
-Zone.__load_patch("requestAnimationFrame", (global) => {
-  patchTimer(global, "request", "cancel", "AnimationFrame");
-  patchTimer(global, "mozRequest", "mozCancel", "AnimationFrame");
-  patchTimer(global, "webkitRequest", "webkitCancel", "AnimationFrame");
-});
-Zone.__load_patch("blocking", (global, Zone2) => {
-  const blockingMethods = ["alert", "prompt", "confirm"];
-  for (let i = 0; i < blockingMethods.length; i++) {
-    const name = blockingMethods[i];
-    patchMethod(global, name, (delegate, symbol, name2) => {
-      return function(s, args) {
-        return Zone2.current.run(delegate, global, args, name2);
-      };
-    });
-  }
-});
-Zone.__load_patch("EventTarget", (global, Zone2, api) => {
-  patchEvent(global, api);
-  eventTargetPatch(global, api);
-  const XMLHttpRequestEventTarget = global["XMLHttpRequestEventTarget"];
-  if (XMLHttpRequestEventTarget && XMLHttpRequestEventTarget.prototype) {
-    api.patchEventTarget(global, api, [XMLHttpRequestEventTarget.prototype]);
-  }
-});
-Zone.__load_patch("MutationObserver", (global, Zone2, api) => {
-  patchClass("MutationObserver");
-  patchClass("WebKitMutationObserver");
-});
-Zone.__load_patch("IntersectionObserver", (global, Zone2, api) => {
-  patchClass("IntersectionObserver");
-});
-Zone.__load_patch("FileReader", (global, Zone2, api) => {
-  patchClass("FileReader");
-});
-Zone.__load_patch("on_property", (global, Zone2, api) => {
-  propertyDescriptorPatch(api, global);
-});
-Zone.__load_patch("customElements", (global, Zone2, api) => {
-  patchCustomElements(global, api);
-});
-Zone.__load_patch("XHR", (global, Zone2) => {
-  patchXHR(global);
-  const XHR_TASK = zoneSymbol("xhrTask");
-  const XHR_SYNC = zoneSymbol("xhrSync");
-  const XHR_LISTENER = zoneSymbol("xhrListener");
-  const XHR_SCHEDULED = zoneSymbol("xhrScheduled");
-  const XHR_URL = zoneSymbol("xhrURL");
-  const XHR_ERROR_BEFORE_SCHEDULED = zoneSymbol("xhrErrorBeforeScheduled");
-  function patchXHR(window2) {
-    const XMLHttpRequest = window2["XMLHttpRequest"];
-    if (!XMLHttpRequest) {
-      return;
-    }
-    const XMLHttpRequestPrototype = XMLHttpRequest.prototype;
-    function findPendingTask(target) {
-      return target[XHR_TASK];
-    }
-    let oriAddListener = XMLHttpRequestPrototype[ZONE_SYMBOL_ADD_EVENT_LISTENER];
-    let oriRemoveListener = XMLHttpRequestPrototype[ZONE_SYMBOL_REMOVE_EVENT_LISTENER];
-    if (!oriAddListener) {
-      const XMLHttpRequestEventTarget = window2["XMLHttpRequestEventTarget"];
-      if (XMLHttpRequestEventTarget) {
-        const XMLHttpRequestEventTargetPrototype = XMLHttpRequestEventTarget.prototype;
-        oriAddListener = XMLHttpRequestEventTargetPrototype[ZONE_SYMBOL_ADD_EVENT_LISTENER];
-        oriRemoveListener = XMLHttpRequestEventTargetPrototype[ZONE_SYMBOL_REMOVE_EVENT_LISTENER];
-      }
-    }
-    const READY_STATE_CHANGE = "readystatechange";
-    const SCHEDULED = "scheduled";
-    function scheduleTask(task) {
-      const data = task.data;
-      const target = data.target;
-      target[XHR_SCHEDULED] = false;
-      target[XHR_ERROR_BEFORE_SCHEDULED] = false;
-      const listener = target[XHR_LISTENER];
-      if (!oriAddListener) {
-        oriAddListener = target[ZONE_SYMBOL_ADD_EVENT_LISTENER];
-        oriRemoveListener = target[ZONE_SYMBOL_REMOVE_EVENT_LISTENER];
-      }
-      if (listener) {
-        oriRemoveListener.call(target, READY_STATE_CHANGE, listener);
-      }
-      const newListener = target[XHR_LISTENER] = () => {
-        if (target.readyState === target.DONE) {
-          if (!data.aborted && target[XHR_SCHEDULED] && task.state === SCHEDULED) {
-            const loadTasks = target[Zone2.__symbol__("loadfalse")];
-            if (target.status !== 0 && loadTasks && loadTasks.length > 0) {
-              const oriInvoke = task.invoke;
-              task.invoke = function() {
-                const loadTasks2 = target[Zone2.__symbol__("loadfalse")];
-                for (let i = 0; i < loadTasks2.length; i++) {
-                  if (loadTasks2[i] === task) {
-                    loadTasks2.splice(i, 1);
-                  }
-                }
-                if (!data.aborted && task.state === SCHEDULED) {
-                  oriInvoke.call(task);
-                }
-              };
-              loadTasks.push(task);
-            } else {
-              task.invoke();
-            }
-          } else if (!data.aborted && target[XHR_SCHEDULED] === false) {
-            target[XHR_ERROR_BEFORE_SCHEDULED] = true;
+        if (self2[XHR_SYNC]) {
+          return sendNative.apply(self2, args);
+        } else {
+          const options = {
+            target: self2,
+            url: self2[XHR_URL],
+            isPeriodic: false,
+            args,
+            aborted: false
+          };
+          const task = scheduleMacroTaskWithCurrentZone(XMLHTTPREQUEST_SOURCE, placeholderCallback, options, scheduleTask, clearTask);
+          if (self2 && self2[XHR_ERROR_BEFORE_SCHEDULED] === true && !options.aborted && task.state === SCHEDULED) {
+            task.invoke();
           }
         }
-      };
-      oriAddListener.call(target, READY_STATE_CHANGE, newListener);
-      const storedTask = target[XHR_TASK];
-      if (!storedTask) {
-        target[XHR_TASK] = task;
-      }
-      sendNative.apply(target, data.args);
-      target[XHR_SCHEDULED] = true;
-      return task;
-    }
-    function placeholderCallback() {
-    }
-    function clearTask(task) {
-      const data = task.data;
-      data.aborted = true;
-      return abortNative.apply(data.target, data.args);
-    }
-    const openNative = patchMethod(XMLHttpRequestPrototype, "open", () => function(self2, args) {
-      self2[XHR_SYNC] = args[2] == false;
-      self2[XHR_URL] = args[1];
-      return openNative.apply(self2, args);
-    });
-    const XMLHTTPREQUEST_SOURCE = "XMLHttpRequest.send";
-    const fetchTaskAborting = zoneSymbol("fetchTaskAborting");
-    const fetchTaskScheduling = zoneSymbol("fetchTaskScheduling");
-    const sendNative = patchMethod(XMLHttpRequestPrototype, "send", () => function(self2, args) {
-      if (Zone2.current[fetchTaskScheduling] === true) {
-        return sendNative.apply(self2, args);
-      }
-      if (self2[XHR_SYNC]) {
-        return sendNative.apply(self2, args);
-      } else {
-        const options = { target: self2, url: self2[XHR_URL], isPeriodic: false, args, aborted: false };
-        const task = scheduleMacroTaskWithCurrentZone(XMLHTTPREQUEST_SOURCE, placeholderCallback, options, scheduleTask, clearTask);
-        if (self2 && self2[XHR_ERROR_BEFORE_SCHEDULED] === true && !options.aborted && task.state === SCHEDULED) {
-          task.invoke();
-        }
-      }
-    });
-    const abortNative = patchMethod(XMLHttpRequestPrototype, "abort", () => function(self2, args) {
-      const task = findPendingTask(self2);
-      if (task && typeof task.type == "string") {
-        if (task.cancelFn == null || task.data && task.data.aborted) {
-          return;
-        }
-        task.zone.cancelTask(task);
-      } else if (Zone2.current[fetchTaskAborting] === true) {
-        return abortNative.apply(self2, args);
-      }
-    });
-  }
-});
-Zone.__load_patch("geolocation", (global) => {
-  if (global["navigator"] && global["navigator"].geolocation) {
-    patchPrototype(global["navigator"].geolocation, ["getCurrentPosition", "watchPosition"]);
-  }
-});
-Zone.__load_patch("PromiseRejectionEvent", (global, Zone2) => {
-  function findPromiseRejectionHandler(evtName) {
-    return function(e) {
-      const eventTasks = findEventTasks(global, evtName);
-      eventTasks.forEach((eventTask) => {
-        const PromiseRejectionEvent = global["PromiseRejectionEvent"];
-        if (PromiseRejectionEvent) {
-          const evt = new PromiseRejectionEvent(evtName, { promise: e.promise, reason: e.rejection });
-          eventTask.invoke(evt);
+      });
+      const abortNative = patchMethod(XMLHttpRequestPrototype, "abort", () => function(self2, args) {
+        const task = findPendingTask(self2);
+        if (task && typeof task.type == "string") {
+          if (task.cancelFn == null || task.data && task.data.aborted) {
+            return;
+          }
+          task.zone.cancelTask(task);
+        } else if (Zone3.current[fetchTaskAborting] === true) {
+          return abortNative.apply(self2, args);
         }
       });
+    }
+  });
+  Zone2.__load_patch("geolocation", (global2) => {
+    if (global2["navigator"] && global2["navigator"].geolocation) {
+      patchPrototype(global2["navigator"].geolocation, ["getCurrentPosition", "watchPosition"]);
+    }
+  });
+  Zone2.__load_patch("PromiseRejectionEvent", (global2, Zone3) => {
+    function findPromiseRejectionHandler(evtName) {
+      return function(e) {
+        const eventTasks = findEventTasks(global2, evtName);
+        eventTasks.forEach((eventTask) => {
+          const PromiseRejectionEvent = global2["PromiseRejectionEvent"];
+          if (PromiseRejectionEvent) {
+            const evt = new PromiseRejectionEvent(evtName, {
+              promise: e.promise,
+              reason: e.rejection
+            });
+            eventTask.invoke(evt);
+          }
+        });
+      };
+    }
+    if (global2["PromiseRejectionEvent"]) {
+      Zone3[zoneSymbol("unhandledPromiseRejectionHandler")] = findPromiseRejectionHandler("unhandledrejection");
+      Zone3[zoneSymbol("rejectionHandledHandler")] = findPromiseRejectionHandler("rejectionhandled");
+    }
+  });
+  Zone2.__load_patch("queueMicrotask", (global2, Zone3, api) => {
+    patchQueueMicrotask(global2, api);
+  });
+}
+function patchPromise(Zone2) {
+  Zone2.__load_patch("ZoneAwarePromise", (global2, Zone3, api) => {
+    const ObjectGetOwnPropertyDescriptor2 = Object.getOwnPropertyDescriptor;
+    const ObjectDefineProperty2 = Object.defineProperty;
+    function readableObjectToString(obj) {
+      if (obj && obj.toString === Object.prototype.toString) {
+        const className = obj.constructor && obj.constructor.name;
+        return (className ? className : "") + ": " + JSON.stringify(obj);
+      }
+      return obj ? obj.toString() : Object.prototype.toString.call(obj);
+    }
+    const __symbol__2 = api.symbol;
+    const _uncaughtPromiseErrors = [];
+    const isDisableWrappingUncaughtPromiseRejection = global2[__symbol__2("DISABLE_WRAPPING_UNCAUGHT_PROMISE_REJECTION")] !== false;
+    const symbolPromise = __symbol__2("Promise");
+    const symbolThen = __symbol__2("then");
+    const creationTrace = "__creationTrace__";
+    api.onUnhandledError = (e) => {
+      if (api.showUncaughtError()) {
+        const rejection = e && e.rejection;
+        if (rejection) {
+          console.error("Unhandled Promise rejection:", rejection instanceof Error ? rejection.message : rejection, "; Zone:", e.zone.name, "; Task:", e.task && e.task.source, "; Value:", rejection, rejection instanceof Error ? rejection.stack : void 0);
+        } else {
+          console.error(e);
+        }
+      }
     };
+    api.microtaskDrainDone = () => {
+      while (_uncaughtPromiseErrors.length) {
+        const uncaughtPromiseError = _uncaughtPromiseErrors.shift();
+        try {
+          uncaughtPromiseError.zone.runGuarded(() => {
+            if (uncaughtPromiseError.throwOriginal) {
+              throw uncaughtPromiseError.rejection;
+            }
+            throw uncaughtPromiseError;
+          });
+        } catch (error) {
+          handleUnhandledRejection(error);
+        }
+      }
+    };
+    const UNHANDLED_PROMISE_REJECTION_HANDLER_SYMBOL = __symbol__2("unhandledPromiseRejectionHandler");
+    function handleUnhandledRejection(e) {
+      api.onUnhandledError(e);
+      try {
+        const handler = Zone3[UNHANDLED_PROMISE_REJECTION_HANDLER_SYMBOL];
+        if (typeof handler === "function") {
+          handler.call(this, e);
+        }
+      } catch (err) {
+      }
+    }
+    function isThenable(value) {
+      return value && value.then;
+    }
+    function forwardResolution(value) {
+      return value;
+    }
+    function forwardRejection(rejection) {
+      return ZoneAwarePromise.reject(rejection);
+    }
+    const symbolState = __symbol__2("state");
+    const symbolValue = __symbol__2("value");
+    const symbolFinally = __symbol__2("finally");
+    const symbolParentPromiseValue = __symbol__2("parentPromiseValue");
+    const symbolParentPromiseState = __symbol__2("parentPromiseState");
+    const source = "Promise.then";
+    const UNRESOLVED = null;
+    const RESOLVED = true;
+    const REJECTED = false;
+    const REJECTED_NO_CATCH = 0;
+    function makeResolver(promise, state) {
+      return (v) => {
+        try {
+          resolvePromise(promise, state, v);
+        } catch (err) {
+          resolvePromise(promise, false, err);
+        }
+      };
+    }
+    const once = function() {
+      let wasCalled = false;
+      return function wrapper(wrappedFunction) {
+        return function() {
+          if (wasCalled) {
+            return;
+          }
+          wasCalled = true;
+          wrappedFunction.apply(null, arguments);
+        };
+      };
+    };
+    const TYPE_ERROR = "Promise resolved with itself";
+    const CURRENT_TASK_TRACE_SYMBOL = __symbol__2("currentTaskTrace");
+    function resolvePromise(promise, state, value) {
+      const onceWrapper = once();
+      if (promise === value) {
+        throw new TypeError(TYPE_ERROR);
+      }
+      if (promise[symbolState] === UNRESOLVED) {
+        let then = null;
+        try {
+          if (typeof value === "object" || typeof value === "function") {
+            then = value && value.then;
+          }
+        } catch (err) {
+          onceWrapper(() => {
+            resolvePromise(promise, false, err);
+          })();
+          return promise;
+        }
+        if (state !== REJECTED && value instanceof ZoneAwarePromise && value.hasOwnProperty(symbolState) && value.hasOwnProperty(symbolValue) && value[symbolState] !== UNRESOLVED) {
+          clearRejectedNoCatch(value);
+          resolvePromise(promise, value[symbolState], value[symbolValue]);
+        } else if (state !== REJECTED && typeof then === "function") {
+          try {
+            then.call(value, onceWrapper(makeResolver(promise, state)), onceWrapper(makeResolver(promise, false)));
+          } catch (err) {
+            onceWrapper(() => {
+              resolvePromise(promise, false, err);
+            })();
+          }
+        } else {
+          promise[symbolState] = state;
+          const queue = promise[symbolValue];
+          promise[symbolValue] = value;
+          if (promise[symbolFinally] === symbolFinally) {
+            if (state === RESOLVED) {
+              promise[symbolState] = promise[symbolParentPromiseState];
+              promise[symbolValue] = promise[symbolParentPromiseValue];
+            }
+          }
+          if (state === REJECTED && value instanceof Error) {
+            const trace = Zone3.currentTask && Zone3.currentTask.data && Zone3.currentTask.data[creationTrace];
+            if (trace) {
+              ObjectDefineProperty2(value, CURRENT_TASK_TRACE_SYMBOL, {
+                configurable: true,
+                enumerable: false,
+                writable: true,
+                value: trace
+              });
+            }
+          }
+          for (let i = 0; i < queue.length; ) {
+            scheduleResolveOrReject(promise, queue[i++], queue[i++], queue[i++], queue[i++]);
+          }
+          if (queue.length == 0 && state == REJECTED) {
+            promise[symbolState] = REJECTED_NO_CATCH;
+            let uncaughtPromiseError = value;
+            try {
+              throw new Error("Uncaught (in promise): " + readableObjectToString(value) + (value && value.stack ? "\n" + value.stack : ""));
+            } catch (err) {
+              uncaughtPromiseError = err;
+            }
+            if (isDisableWrappingUncaughtPromiseRejection) {
+              uncaughtPromiseError.throwOriginal = true;
+            }
+            uncaughtPromiseError.rejection = value;
+            uncaughtPromiseError.promise = promise;
+            uncaughtPromiseError.zone = Zone3.current;
+            uncaughtPromiseError.task = Zone3.currentTask;
+            _uncaughtPromiseErrors.push(uncaughtPromiseError);
+            api.scheduleMicroTask();
+          }
+        }
+      }
+      return promise;
+    }
+    const REJECTION_HANDLED_HANDLER = __symbol__2("rejectionHandledHandler");
+    function clearRejectedNoCatch(promise) {
+      if (promise[symbolState] === REJECTED_NO_CATCH) {
+        try {
+          const handler = Zone3[REJECTION_HANDLED_HANDLER];
+          if (handler && typeof handler === "function") {
+            handler.call(this, { rejection: promise[symbolValue], promise });
+          }
+        } catch (err) {
+        }
+        promise[symbolState] = REJECTED;
+        for (let i = 0; i < _uncaughtPromiseErrors.length; i++) {
+          if (promise === _uncaughtPromiseErrors[i].promise) {
+            _uncaughtPromiseErrors.splice(i, 1);
+          }
+        }
+      }
+    }
+    function scheduleResolveOrReject(promise, zone, chainPromise, onFulfilled, onRejected) {
+      clearRejectedNoCatch(promise);
+      const promiseState = promise[symbolState];
+      const delegate = promiseState ? typeof onFulfilled === "function" ? onFulfilled : forwardResolution : typeof onRejected === "function" ? onRejected : forwardRejection;
+      zone.scheduleMicroTask(source, () => {
+        try {
+          const parentPromiseValue = promise[symbolValue];
+          const isFinallyPromise = !!chainPromise && symbolFinally === chainPromise[symbolFinally];
+          if (isFinallyPromise) {
+            chainPromise[symbolParentPromiseValue] = parentPromiseValue;
+            chainPromise[symbolParentPromiseState] = promiseState;
+          }
+          const value = zone.run(delegate, void 0, isFinallyPromise && delegate !== forwardRejection && delegate !== forwardResolution ? [] : [parentPromiseValue]);
+          resolvePromise(chainPromise, true, value);
+        } catch (error) {
+          resolvePromise(chainPromise, false, error);
+        }
+      }, chainPromise);
+    }
+    const ZONE_AWARE_PROMISE_TO_STRING = "function ZoneAwarePromise() { [native code] }";
+    const noop = function() {
+    };
+    const AggregateError = global2.AggregateError;
+    class ZoneAwarePromise {
+      static toString() {
+        return ZONE_AWARE_PROMISE_TO_STRING;
+      }
+      static resolve(value) {
+        if (value instanceof ZoneAwarePromise) {
+          return value;
+        }
+        return resolvePromise(new this(null), RESOLVED, value);
+      }
+      static reject(error) {
+        return resolvePromise(new this(null), REJECTED, error);
+      }
+      static withResolvers() {
+        const result = {};
+        result.promise = new ZoneAwarePromise((res, rej) => {
+          result.resolve = res;
+          result.reject = rej;
+        });
+        return result;
+      }
+      static any(values) {
+        if (!values || typeof values[Symbol.iterator] !== "function") {
+          return Promise.reject(new AggregateError([], "All promises were rejected"));
+        }
+        const promises = [];
+        let count = 0;
+        try {
+          for (let v of values) {
+            count++;
+            promises.push(ZoneAwarePromise.resolve(v));
+          }
+        } catch (err) {
+          return Promise.reject(new AggregateError([], "All promises were rejected"));
+        }
+        if (count === 0) {
+          return Promise.reject(new AggregateError([], "All promises were rejected"));
+        }
+        let finished = false;
+        const errors = [];
+        return new ZoneAwarePromise((resolve, reject) => {
+          for (let i = 0; i < promises.length; i++) {
+            promises[i].then((v) => {
+              if (finished) {
+                return;
+              }
+              finished = true;
+              resolve(v);
+            }, (err) => {
+              errors.push(err);
+              count--;
+              if (count === 0) {
+                finished = true;
+                reject(new AggregateError(errors, "All promises were rejected"));
+              }
+            });
+          }
+        });
+      }
+      static race(values) {
+        let resolve;
+        let reject;
+        let promise = new this((res, rej) => {
+          resolve = res;
+          reject = rej;
+        });
+        function onResolve(value) {
+          resolve(value);
+        }
+        function onReject(error) {
+          reject(error);
+        }
+        for (let value of values) {
+          if (!isThenable(value)) {
+            value = this.resolve(value);
+          }
+          value.then(onResolve, onReject);
+        }
+        return promise;
+      }
+      static all(values) {
+        return ZoneAwarePromise.allWithCallback(values);
+      }
+      static allSettled(values) {
+        const P = this && this.prototype instanceof ZoneAwarePromise ? this : ZoneAwarePromise;
+        return P.allWithCallback(values, {
+          thenCallback: (value) => ({ status: "fulfilled", value }),
+          errorCallback: (err) => ({ status: "rejected", reason: err })
+        });
+      }
+      static allWithCallback(values, callback) {
+        let resolve;
+        let reject;
+        let promise = new this((res, rej) => {
+          resolve = res;
+          reject = rej;
+        });
+        let unresolvedCount = 2;
+        let valueIndex = 0;
+        const resolvedValues = [];
+        for (let value of values) {
+          if (!isThenable(value)) {
+            value = this.resolve(value);
+          }
+          const curValueIndex = valueIndex;
+          try {
+            value.then((value2) => {
+              resolvedValues[curValueIndex] = callback ? callback.thenCallback(value2) : value2;
+              unresolvedCount--;
+              if (unresolvedCount === 0) {
+                resolve(resolvedValues);
+              }
+            }, (err) => {
+              if (!callback) {
+                reject(err);
+              } else {
+                resolvedValues[curValueIndex] = callback.errorCallback(err);
+                unresolvedCount--;
+                if (unresolvedCount === 0) {
+                  resolve(resolvedValues);
+                }
+              }
+            });
+          } catch (thenErr) {
+            reject(thenErr);
+          }
+          unresolvedCount++;
+          valueIndex++;
+        }
+        unresolvedCount -= 2;
+        if (unresolvedCount === 0) {
+          resolve(resolvedValues);
+        }
+        return promise;
+      }
+      constructor(executor) {
+        const promise = this;
+        if (!(promise instanceof ZoneAwarePromise)) {
+          throw new Error("Must be an instanceof Promise.");
+        }
+        promise[symbolState] = UNRESOLVED;
+        promise[symbolValue] = [];
+        try {
+          const onceWrapper = once();
+          executor && executor(onceWrapper(makeResolver(promise, RESOLVED)), onceWrapper(makeResolver(promise, REJECTED)));
+        } catch (error) {
+          resolvePromise(promise, false, error);
+        }
+      }
+      get [Symbol.toStringTag]() {
+        return "Promise";
+      }
+      get [Symbol.species]() {
+        return ZoneAwarePromise;
+      }
+      then(onFulfilled, onRejected) {
+        let C = this.constructor?.[Symbol.species];
+        if (!C || typeof C !== "function") {
+          C = this.constructor || ZoneAwarePromise;
+        }
+        const chainPromise = new C(noop);
+        const zone = Zone3.current;
+        if (this[symbolState] == UNRESOLVED) {
+          this[symbolValue].push(zone, chainPromise, onFulfilled, onRejected);
+        } else {
+          scheduleResolveOrReject(this, zone, chainPromise, onFulfilled, onRejected);
+        }
+        return chainPromise;
+      }
+      catch(onRejected) {
+        return this.then(null, onRejected);
+      }
+      finally(onFinally) {
+        let C = this.constructor?.[Symbol.species];
+        if (!C || typeof C !== "function") {
+          C = ZoneAwarePromise;
+        }
+        const chainPromise = new C(noop);
+        chainPromise[symbolFinally] = symbolFinally;
+        const zone = Zone3.current;
+        if (this[symbolState] == UNRESOLVED) {
+          this[symbolValue].push(zone, chainPromise, onFinally, onFinally);
+        } else {
+          scheduleResolveOrReject(this, zone, chainPromise, onFinally, onFinally);
+        }
+        return chainPromise;
+      }
+    }
+    ZoneAwarePromise["resolve"] = ZoneAwarePromise.resolve;
+    ZoneAwarePromise["reject"] = ZoneAwarePromise.reject;
+    ZoneAwarePromise["race"] = ZoneAwarePromise.race;
+    ZoneAwarePromise["all"] = ZoneAwarePromise.all;
+    const NativePromise = global2[symbolPromise] = global2["Promise"];
+    global2["Promise"] = ZoneAwarePromise;
+    const symbolThenPatched = __symbol__2("thenPatched");
+    function patchThen(Ctor) {
+      const proto = Ctor.prototype;
+      const prop = ObjectGetOwnPropertyDescriptor2(proto, "then");
+      if (prop && (prop.writable === false || !prop.configurable)) {
+        return;
+      }
+      const originalThen = proto.then;
+      proto[symbolThen] = originalThen;
+      Ctor.prototype.then = function(onResolve, onReject) {
+        const wrapped = new ZoneAwarePromise((resolve, reject) => {
+          originalThen.call(this, resolve, reject);
+        });
+        return wrapped.then(onResolve, onReject);
+      };
+      Ctor[symbolThenPatched] = true;
+    }
+    api.patchThen = patchThen;
+    function zoneify(fn) {
+      return function(self2, args) {
+        let resultPromise = fn.apply(self2, args);
+        if (resultPromise instanceof ZoneAwarePromise) {
+          return resultPromise;
+        }
+        let ctor = resultPromise.constructor;
+        if (!ctor[symbolThenPatched]) {
+          patchThen(ctor);
+        }
+        return resultPromise;
+      };
+    }
+    if (NativePromise) {
+      patchThen(NativePromise);
+      patchMethod(global2, "fetch", (delegate) => zoneify(delegate));
+    }
+    Promise[Zone3.__symbol__("uncaughtPromiseErrors")] = _uncaughtPromiseErrors;
+    return ZoneAwarePromise;
+  });
+}
+function patchToString(Zone2) {
+  Zone2.__load_patch("toString", (global2) => {
+    const originalFunctionToString = Function.prototype.toString;
+    const ORIGINAL_DELEGATE_SYMBOL = zoneSymbol("OriginalDelegate");
+    const PROMISE_SYMBOL = zoneSymbol("Promise");
+    const ERROR_SYMBOL = zoneSymbol("Error");
+    const newFunctionToString = function toString() {
+      if (typeof this === "function") {
+        const originalDelegate = this[ORIGINAL_DELEGATE_SYMBOL];
+        if (originalDelegate) {
+          if (typeof originalDelegate === "function") {
+            return originalFunctionToString.call(originalDelegate);
+          } else {
+            return Object.prototype.toString.call(originalDelegate);
+          }
+        }
+        if (this === Promise) {
+          const nativePromise = global2[PROMISE_SYMBOL];
+          if (nativePromise) {
+            return originalFunctionToString.call(nativePromise);
+          }
+        }
+        if (this === Error) {
+          const nativeError = global2[ERROR_SYMBOL];
+          if (nativeError) {
+            return originalFunctionToString.call(nativeError);
+          }
+        }
+      }
+      return originalFunctionToString.call(this);
+    };
+    newFunctionToString[ORIGINAL_DELEGATE_SYMBOL] = originalFunctionToString;
+    Function.prototype.toString = newFunctionToString;
+    const originalObjectToString = Object.prototype.toString;
+    const PROMISE_OBJECT_TO_STRING = "[object Promise]";
+    Object.prototype.toString = function() {
+      if (typeof Promise === "function" && this instanceof Promise) {
+        return PROMISE_OBJECT_TO_STRING;
+      }
+      return originalObjectToString.call(this);
+    };
+  });
+}
+function patchCallbacks(api, target, targetName, method, callbacks) {
+  const symbol = Zone.__symbol__(method);
+  if (target[symbol]) {
+    return;
   }
-  if (global["PromiseRejectionEvent"]) {
-    Zone2[zoneSymbol("unhandledPromiseRejectionHandler")] = findPromiseRejectionHandler("unhandledrejection");
-    Zone2[zoneSymbol("rejectionHandledHandler")] = findPromiseRejectionHandler("rejectionhandled");
-  }
-});
-Zone.__load_patch("queueMicrotask", (global, Zone2, api) => {
-  patchQueueMicrotask(global, api);
-});
+  const nativeDelegate = target[symbol] = target[method];
+  target[method] = function(name, opts, options) {
+    if (opts && opts.prototype) {
+      callbacks.forEach(function(callback) {
+        const source = `${targetName}.${method}::` + callback;
+        const prototype = opts.prototype;
+        try {
+          if (prototype.hasOwnProperty(callback)) {
+            const descriptor = api.ObjectGetOwnPropertyDescriptor(prototype, callback);
+            if (descriptor && descriptor.value) {
+              descriptor.value = api.wrapWithCurrentZone(descriptor.value, source);
+              api._redefineProperty(opts.prototype, callback, descriptor);
+            } else if (prototype[callback]) {
+              prototype[callback] = api.wrapWithCurrentZone(prototype[callback], source);
+            }
+          } else if (prototype[callback]) {
+            prototype[callback] = api.wrapWithCurrentZone(prototype[callback], source);
+          }
+        } catch {
+        }
+      });
+    }
+    return nativeDelegate.call(target, name, opts, options);
+  };
+  api.attachOriginToPatched(target[method], nativeDelegate);
+}
+function patchUtil(Zone2) {
+  Zone2.__load_patch("util", (global2, Zone3, api) => {
+    const eventNames = getOnEventNames(global2);
+    api.patchOnProperties = patchOnProperties;
+    api.patchMethod = patchMethod;
+    api.bindArguments = bindArguments;
+    api.patchMacroTask = patchMacroTask;
+    const SYMBOL_BLACK_LISTED_EVENTS = Zone3.__symbol__("BLACK_LISTED_EVENTS");
+    const SYMBOL_UNPATCHED_EVENTS = Zone3.__symbol__("UNPATCHED_EVENTS");
+    if (global2[SYMBOL_UNPATCHED_EVENTS]) {
+      global2[SYMBOL_BLACK_LISTED_EVENTS] = global2[SYMBOL_UNPATCHED_EVENTS];
+    }
+    if (global2[SYMBOL_BLACK_LISTED_EVENTS]) {
+      Zone3[SYMBOL_BLACK_LISTED_EVENTS] = Zone3[SYMBOL_UNPATCHED_EVENTS] = global2[SYMBOL_BLACK_LISTED_EVENTS];
+    }
+    api.patchEventPrototype = patchEventPrototype;
+    api.patchEventTarget = patchEventTarget;
+    api.isIEOrEdge = isIEOrEdge;
+    api.ObjectDefineProperty = ObjectDefineProperty;
+    api.ObjectGetOwnPropertyDescriptor = ObjectGetOwnPropertyDescriptor;
+    api.ObjectCreate = ObjectCreate;
+    api.ArraySlice = ArraySlice;
+    api.patchClass = patchClass;
+    api.wrapWithCurrentZone = wrapWithCurrentZone;
+    api.filterProperties = filterProperties;
+    api.attachOriginToPatched = attachOriginToPatched;
+    api._redefineProperty = Object.defineProperty;
+    api.patchCallbacks = patchCallbacks;
+    api.getGlobalObjects = () => ({
+      globalSources,
+      zoneSymbolEventNames,
+      eventNames,
+      isBrowser,
+      isMix,
+      isNode,
+      TRUE_STR,
+      FALSE_STR,
+      ZONE_SYMBOL_PREFIX,
+      ADD_EVENT_LISTENER_STR,
+      REMOVE_EVENT_LISTENER_STR
+    });
+  });
+}
+function patchCommon(Zone2) {
+  patchPromise(Zone2);
+  patchToString(Zone2);
+  patchUtil(Zone2);
+}
+var Zone$1 = loadZone();
+patchCommon(Zone$1);
+patchBrowser(Zone$1);
 /*! Bundled license information:
 
 zone.js/fesm2015/zone.js:
   (**
    * @license Angular v<unknown>
-   * (c) 2010-2022 Google LLC. https://angular.io/
+   * (c) 2010-2024 Google LLC. https://angular.io/
    * License: MIT
    *)
 */

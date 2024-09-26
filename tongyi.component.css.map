@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/tongyi/tongyi.component.scss"],
+  "sourcesContent": [".box {\n    .slogan {\n        .logo {\n            height: 2.5rem;\n            width: auto;\n        }\n\n        .slogan-video {\n            width: 60%;\n            height: auto;\n            border-radius: 10px;\n        }\n\n        .url {\n            text-decoration: none;\n            color: rgb(94, 88, 231);\n\n            &:hover {\n                color: rgb(49, 41, 234);\n            }\n        }\n    }\n\n    .goTopBtn {\n        position: fixed !important;\n        bottom: 1rem;\n        right: 1rem;\n        background-color: rgb(94, 88, 231);\n\n        &:hover {\n            background-color: rgb(49, 41, 234);\n        }\n    }\n}"],
+  "mappings": ";AAEQ,CAAA,IAAA,CAAA,OAAA,CAAA;AACI,UAAA;AACA,SAAA;;AAGJ,CALA,IAKA,CALA,OAKA,CAAA;AACI,SAAA;AACA,UAAA;AACA,iBAAA;;AAGJ,CAXA,IAWA,CAXA,OAWA,CAAA;AACI,mBAAA;AACA,SAAA,IAAA,EAAA,EAAA,EAAA,EAAA;;AAEA,CAfJ,IAeI,CAfJ,OAeI,CAJJ,GAII;AACI,SAAA,IAAA,EAAA,EAAA,EAAA,EAAA;;AAKZ,CArBI,IAqBJ,CAAA;AACI,YAAA;AACA,UAAA;AACA,SAAA;AACA,oBAAA,IAAA,EAAA,EAAA,EAAA,EAAA;;AAEA,CA3BA,IA2BA,CANJ,QAMI;AACI,oBAAA,IAAA,EAAA,EAAA,EAAA,EAAA;;",
+  "names": []
+}
